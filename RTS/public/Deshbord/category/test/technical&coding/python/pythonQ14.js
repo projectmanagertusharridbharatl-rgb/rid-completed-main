@@ -1,558 +1,455 @@
 const questions = [
-  {
-    "num": 1,
-    "question_en": "What is the output of print(2 ** 3)?",
-    "question_hi": "print(2 ** 3) का आउटपुट क्या होगा?",
-    "options_en": ["6", "8", "9", "5"],
-    "options_hi": ["6", "8", "9", "5"],
-    "answer_en": "8",
-    "answer_hi": "8",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 2,
-    "question_en": "Which keyword is used to create a function in Python?",
-    "question_hi": "Python में function बनाने के लिए कौन-सा keyword उपयोग होता है?",
-    "options_en": ["function", "def", "define", "func"],
-    "options_hi": ["function", "def", "define", "func"],
-    "answer_en": "def",
-    "answer_hi": "def",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 3,
-    "question_en": "What data type is the result of: type(3.5)?",
-    "question_hi": "type(3.5) का परिणाम किस डेटा टाइप का होगा?",
-    "options_en": ["int", "float", "str", "complex"],
-    "options_hi": ["int", "float", "str", "complex"],
-    "answer_en": "float",
-    "answer_hi": "float",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 4,
-    "question_en": "What is the correct file extension for Python files?",
-    "question_hi": "Python फ़ाइलों के लिए सही फ़ाइल एक्सटेंशन क्या है?",
-    "options_en": [".py", ".pt", ".pyt", ".python"],
-    "options_hi": [".py", ".pt", ".pyt", ".python"],
-    "answer_en": ".py",
-    "answer_hi": ".py",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 5,
-    "question_en": "What does the 'len()' function do?",
-    "question_hi": "'len()' function क्या करता है?",
-    "options_en": ["Returns length", "Returns type", "Counts digits", "Checks truth value"],
-    "options_hi": ["लंबाई return करता है", "Type return करता है", "Digits count करता है", "Truth value check करता है"],
-    "answer_en": "Returns length",
-    "answer_hi": "लंबाई return करता है",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 6,
-    "question_en": "How do you start a comment in Python?",
-    "question_hi": "Python में comment कैसे शुरू करते हैं?",
-    "options_en": ["//", "/*", "#", "--"],
-    "options_hi": ["//", "/*", "#", "--"],
-    "answer_en": "#",
-    "answer_hi": "#",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 7,
-    "question_en": "What is the output of: print('5' + '5')?",
-    "question_hi": "print('5' + '5') का आउटपुट क्या होगा?",
-    "options_en": ["10", "55", "TypeError", "5"],
-    "options_hi": ["10", "55", "TypeError", "5"],
-    "answer_en": "55",
-    "answer_hi": "55",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 8,
-    "question_en": "What is the correct way to create a dictionary?",
-    "question_hi": "Dictionary बनाने का सही तरीका क्या है?",
-    "options_en": ["{}", "[]", "()", "<>"],
-    "options_hi": ["{}", "[]", "()", "<>"],
-    "answer_en": "{}",
-    "answer_hi": "{}",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 9,
-    "question_en": "Which method can add an item to a list?",
-    "question_hi": "List में item add करने के लिए कौन-सा method है?",
-    "options_en": ["add()", "append()", "insert()", "extend()"],
-    "options_hi": ["add()", "append()", "insert()", "extend()"],
-    "answer_en": "append()",
-    "answer_hi": "append()",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 10,
-    "question_en": "What is the output of type(True)?",
-    "question_hi": "type(True) का आउटपुट क्या होगा?",
-    "options_en": ["bool", "int", "str", "float"],
-    "options_hi": ["bool", "int", "str", "float"],
-    "answer_en": "bool",
-    "answer_hi": "bool",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 11,
-    "question_en": "How do you create a variable with the numeric value 5?",
-    "question_hi": "5 value वाला variable कैसे बनाते हैं?",
-    "options_en": ["num = 5", "int num = 5", "num := 5", "num == 5"],
-    "options_hi": ["num = 5", "int num = 5", "num := 5", "num == 5"],
-    "answer_en": "num = 5",
-    "answer_hi": "num = 5",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 12,
-    "question_en": "What will print(type([])) return?",
-    "question_hi": "print(type([])) क्या return करेगा?",
-    "options_en": ["list", "<class 'list'>", "[]", "object"],
-    "options_hi": ["list", "<class 'list'>", "[]", "object"],
-    "answer_en": "<class 'list'>",
-    "answer_hi": "<class 'list'>",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 13,
-    "question_en": "What is used to handle exceptions in Python?",
-    "question_hi": "Python में exceptions handle करने के लिए क्या use होता है?",
-    "options_en": ["catch", "handle", "try/except", "trap"],
-    "options_hi": ["catch", "handle", "try/except", "trap"],
-    "answer_en": "try/except",
-    "answer_hi": "try/except",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 14,
-    "question_en": "Which operator is used for floor division?",
-    "question_hi": "Floor division के लिए कौन-सा operator use होता है?",
-    "options_en": ["/", "%", "//", "**"],
-    "options_hi": ["/", "%", "//", "**"],
-    "answer_en": "//",
-    "answer_hi": "//",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 15,
-    "question_en": "How do you insert comments in Python?",
-    "question_hi": "Python में comment कैसे डालते हैं?",
-    "options_en": ["# comment", "// comment", "/* comment */", "-- comment"],
-    "options_hi": ["# comment", "// comment", "/* comment */", "-- comment"],
-    "answer_en": "# comment",
-    "answer_hi": "# comment",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 16,
-    "question_en": "What is the output of bool(0)?",
-    "question_hi": "bool(0) का आउटपुट क्या होगा?",
-    "options_en": ["True", "False", "0", "None"],
-    "options_hi": ["True", "False", "0", "None"],
-    "answer_en": "False",
-    "answer_hi": "False",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 17,
-    "question_en": "Which data structure is immutable?",
-    "question_hi": "कौन-सा data structure immutable है?",
-    "options_en": ["list", "set", "dict", "tuple"],
-    "options_hi": ["list", "set", "dict", "tuple"],
-    "answer_en": "tuple",
-    "answer_hi": "tuple",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 18,
-    "question_en": "What is the purpose of the pass statement?",
-    "question_hi": "pass statement का उद्देश्य क्या है?",
-    "options_en": ["Skip iteration", "End loop", "Do nothing", "Break loop"],
-    "options_hi": ["Iteration skip करना", "Loop end करना", "कुछ नहीं करना", "Loop break करना"],
-    "answer_en": "Do nothing",
-    "answer_hi": "कुछ नहीं करना",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 19,
-    "question_en": "Which module is used to generate random numbers?",
-    "question_hi": "Random numbers generate करने के लिए कौन-सा module use होता है?",
-    "options_en": ["math", "random", "os", "sys"],
-    "options_hi": ["math", "random", "os", "sys"],
-    "answer_en": "random",
-    "answer_hi": "random",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 20,
-    "question_en": "What does the 'in' keyword check?",
-    "question_hi": "'in' keyword क्या check करता है?",
-    "options_en": ["Existence in sequence", "Assignment", "Type", "Conversion"],
-    "options_hi": ["Sequence में existence", "Assignment", "Type", "Conversion"],
-    "answer_en": "Existence in sequence",
-    "answer_hi": "Sequence में existence",
-    "attempted": false,
-    "selected": ""
-  },
-
     {
-    "num": 21,
-    "question_en": "What is the correct way to define a class?",
-    "question_hi": "Class define करने का सही तरीका क्या है?",
-    "options_en": ["def MyClass:", "class MyClass:", "MyClass:", "define MyClass:"],
-    "options_hi": ["def MyClass:", "class MyClass:", "MyClass:", "define MyClass:"],
-    "answer_en": "class MyClass:",
-    "answer_hi": "class MyClass:",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 22,
-    "question_en": "Which method is called when an object is created?",
-    "question_hi": "Object create होने पर कौन-सा method call होता है?",
-    "options_en": ["__start__", "__create__", "__init__", "__make__"],
-    "options_hi": ["__start__", "__create__", "__init__", "__make__"],
-    "answer_en": "__init__",
-    "answer_hi": "__init__",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 23,
-    "question_en": "How do you access values in a list?",
-    "question_hi": "List में values access करने का तरीका क्या है?",
-    "options_en": ["list{0}", "list[0]", "list(0)", "list<0>"],
-    "options_hi": ["list{0}", "list[0]", "list(0)", "list<0>"],
-    "answer_en": "list[0]",
-    "answer_hi": "list[0]",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 24,
-    "question_en": "What is the correct syntax to define a lambda function?",
-    "question_hi": "Lambda function define करने का सही syntax क्या है?",
-    "options_en": ["lambda x: x+1", "def x(): x+1", "func x: x+1", "lambda = x+1"],
-    "options_hi": ["lambda x: x+1", "def x(): x+1", "func x: x+1", "lambda = x+1"],
-    "answer_en": "lambda x: x+1",
-    "answer_hi": "lambda x: x+1",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 25,
-    "question_en": "What is the purpose of 'self' in Python classes?",
-    "question_hi": "Python classes में 'self' का उद्देश्य क्या है?",
-    "options_en": ["Refers to class", "Refers to instance", "Refers to method", "Refers to file"],
-    "options_hi": ["Class को refer करता है", "Instance को refer करता है", "Method को refer करता है", "File को refer करता है"],
-    "answer_en": "Refers to instance",
-    "answer_hi": "Instance को refer करता है",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 26,
-    "question_en": "Which keyword is used to inherit a class?",
-    "question_hi": "Class inherit करने के लिए कौन-सा keyword है?",
-    "options_en": ["inherit", "extends", "super", "class"],
-    "options_hi": ["inherit", "extends", "super", "class"],
-    "answer_en": "class",
-    "answer_hi": "class",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 27,
-    "question_en": "Which method returns the number of items in a list?",
-    "question_hi": "List में items की संख्या return करने वाला method कौन-सा है?",
-    "options_en": ["size()", "length()", "len()", "count()"],
-    "options_hi": ["size()", "length()", "len()", "count()"],
-    "answer_en": "len()",
-    "answer_hi": "len()",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 28,
-    "question_en": "What is slicing used for in Python?",
-    "question_hi": "Python में slicing का उपयोग किस लिए किया जाता है?",
-    "options_en": ["Copy elements", "Access parts of sequence", "Sort items", "Update values"],
-    "options_hi": ["Elements copy करना", "Sequence के parts access करना", "Items sort करना", "Values update करना"],
-    "answer_en": "Access parts of sequence",
-    "answer_hi": "Sequence के parts access करना",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 29,
-    "question_en": "Which statement is used to exit a loop?",
-    "question_hi": "Loop exit करने के लिए कौन-सा statement use होता है?",
-    "options_en": ["exit", "stop", "end", "break"],
-    "options_hi": ["exit", "stop", "end", "break"],
-    "answer_en": "break",
-    "answer_hi": "break",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 30,
-    "question_en": "How do you convert a string to an integer?",
-    "question_hi": "String को integer में convert करने का तरीका क्या है?",
-    "options_en": ["int('5')", "str(5)", "float('5')", "toInt('5')"],
-    "options_hi": ["int('5')", "str(5)", "float('5')", "toInt('5')"],
-    "answer_en": "int('5')",
-    "answer_hi": "int('5')",
-    "attempted": false,
-    "selected": ""
-  },
-
-
+        "num": 1,
+        "question_en": "What is the output of print([x if x % 2 == 0 else None for x in range(5)])?",
+        "question_hi": "print([x if x % 2 == 0 else None for x in range(5)]) का आउटपुट क्या होगा?",
+        "options_en": ["[0, None, 2, None, 4]", "[0, 2, 4]", "[None, 1, None, 3, None]", "Error"],
+        "options_hi": ["[0, None, 2, None, 4]", "[0, 2, 4]", "[None, 1, None, 3, None]", "त्रुटि"],
+        "answer_en": "[0, None, 2, None, 4]",
+        "answer_hi": "[0, None, 2, None, 4]"
+    },
     {
-    "num": 31,
-    "question_en": "What does the open() function return?",
-    "question_hi": "open() function क्या return करता है?",
-    "options_en": ["File object", "String", "List", "Boolean"],
-    "options_hi": ["File object", "String", "List", "Boolean"],
-    "answer_en": "File object",
-    "answer_hi": "File object",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 32,
-    "question_en": "Which keyword is used to define an anonymous function?",
-    "question_hi": "Anonymous function define करने के लिए कौन-सा keyword है?",
-    "options_en": ["anon", "lambda", "func", "def"],
-    "options_hi": ["anon", "lambda", "func", "def"],
-    "answer_en": "lambda",
-    "answer_hi": "lambda",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 33,
-    "question_en": "What is the output of: 'abc'.upper()?",
-    "question_hi": "'abc'.upper() का आउटपुट क्या होगा?",
-    "options_en": ["abc", "ABC", "Abc", "Syntax Error"],
-    "options_hi": ["abc", "ABC", "Abc", "Syntax Error"],
-    "answer_en": "ABC",
-    "answer_hi": "ABC",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 34,
-    "question_en": "How do you handle an exception?",
-    "question_hi": "Exception को handle करने का तरीका क्या है?",
-    "options_en": ["try/except", "if/else", "catch/finally", "try/catch"],
-    "options_hi": ["try/except", "if/else", "catch/finally", "try/catch"],
-    "answer_en": "try/except",
-    "answer_hi": "try/except",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 35,
-    "question_en": "What is a correct way to define a list?",
-    "question_hi": "List define करने का सही तरीका क्या है?",
-    "options_en": ["(1,2,3)", "{1,2,3}", "[1,2,3]", "<1,2,3>"],
-    "options_hi": ["(1,2,3)", "{1,2,3}", "[1,2,3]", "<1,2,3>"],
-    "answer_en": "[1,2,3]",
-    "answer_hi": "[1,2,3]",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 36,
-    "question_en": "Which function is used to get user input?",
-    "question_hi": "User input लेने के लिए कौन-सा function use होता है?",
-    "options_en": ["scanf()", "input()", "get()", "read()"],
-    "options_hi": ["scanf()", "input()", "get()", "read()"],
-    "answer_en": "input()",
-    "answer_hi": "input()",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 37,
-    "question_en": "How to remove whitespace from a string?",
-    "question_hi": "String से whitespace कैसे हटाएँ?",
-    "options_en": ["strip()", "trim()", "remove()", "erase()"],
-    "options_hi": ["strip()", "trim()", "remove()", "erase()"],
-    "answer_en": "strip()",
-    "answer_hi": "strip()",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 38,
-    "question_en": "What does the 'is' operator compare?",
-    "question_hi": "'is' operator क्या compare करता है?",
-    "options_en": ["Values", "Memory locations", "Types", "Keys"],
-    "options_hi": ["Values", "Memory locations", "Types", "Keys"],
-    "answer_en": "Memory locations",
-    "answer_hi": "Memory locations",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 39,
-    "question_en": "Which statement is used to skip iteration in a loop?",
-    "question_hi": "Loop में iteration skip करने के लिए कौन-सा statement use होता है?",
-    "options_en": ["break", "pass", "continue", "exit"],
-    "options_hi": ["break", "pass", "continue", "exit"],
-    "answer_en": "continue",
-    "answer_hi": "continue",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 40,
-    "question_en": "What is the result of: 10 % 3?",
-    "question_hi": "10 % 3 का परिणाम क्या होगा?",
-    "options_en": ["1", "3", "0", "10"],
-    "options_hi": ["1", "3", "0", "10"],
-    "answer_en": "1",
-    "answer_hi": "1",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 41,
-    "question_en": "How do you check if a value exists in a dictionary?",
-    "question_hi": "Dictionary में value exist करती है या नहीं कैसे check करें?",
-    "options_en": ["in", "has", "exists", "check"],
-    "options_hi": ["in", "has", "exists", "check"],
-    "answer_en": "in",
-    "answer_hi": "in",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 42,
-    "question_en": "Which keyword is used to create a generator?",
-    "question_hi": "Generator create करने के लिए कौन-सा keyword use होता है?",
-    "options_en": ["generate", "yield", "return", "yield return"],
-    "options_hi": ["generate", "yield", "return", "yield return"],
-    "answer_en": "yield",
-    "answer_hi": "yield",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 43,
-    "question_en": "Which function is used to sort a list in Python?",
-    "question_hi": "Python में list sort करने के लिए कौन-सा function use होता है?",
-    "options_en": ["sorted()", "order()", "arrange()", "sortlist()"],
-    "options_hi": ["sorted()", "order()", "arrange()", "sortlist()"],
-    "answer_en": "sorted()",
-    "answer_hi": "sorted()",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 44,
-    "question_en": "What will type(None) return?",
-    "question_hi": "type(None) क्या return करेगा?",
-    "options_en": ["NoneType", "null", "None", "undefined"],
-    "options_hi": ["NoneType", "null", "None", "undefined"],
-    "answer_en": "NoneType",
-    "answer_hi": "NoneType",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 45,
-    "question_en": "What is the default return value of a function if not specified?",
-    "question_hi": "Function में return value specify न करने पर default value क्या होती है?",
-    "options_en": ["None", "0", "False", "Empty string"],
-    "options_hi": ["None", "0", "False", "Empty string"],
-    "answer_en": "None",
-    "answer_hi": "None",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 46,
-    "question_en": "What is the output of: bool('False')?",
-    "question_hi": "bool('False') का आउटपुट क्या होगा?",
-    "options_en": ["False", "True", "Error", "None"],
-    "options_hi": ["False", "True", "Error", "None"],
-    "answer_en": "True",
-    "answer_hi": "True",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 47,
-    "question_en": "What is the use of 'with' statement in file handling?",
-    "question_hi": "File handling में 'with' statement का उपयोग क्या है?",
-    "options_en": ["Manages file context", "Closes file manually", "Opens in GUI", "Locks file"],
-    "options_hi": ["Manages file context", "Closes file manually", "Opens in GUI", "Locks file"],
-    "answer_en": "Manages file context",
-    "answer_hi": "Manages file context",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 48,
-    "question_en": "How do you install external packages in Python?",
-    "question_hi": "Python में external packages कैसे install करते हैं?",
-    "options_en": ["pip install package", "install package", "python install", "pkg add package"],
-    "options_hi": ["pip install package", "install package", "python install", "pkg add package"],
-    "answer_en": "pip install package",
-    "answer_hi": "pip install package",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 49,
-    "question_en": "What is the use of 'enumerate()'?",
-    "question_hi": "'enumerate()' का उपयोग क्या है?",
-    "options_en": ["Index and value", "Count items", "Loop once", "Map items"],
-    "options_hi": ["Index and value", "Count items", "Loop once", "Map items"],
-    "answer_en": "Index and value",
-    "answer_hi": "Index and value",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 50,
-    "question_en": "How do you create a set in Python?",
-    "question_hi": "Python में set कैसे बनाते हैं?",
-    "options_en": ["set()", "{}", "[]", "set[]"],
-    "options_hi": ["set()", "{}", "[]", "set[]"],
-    "answer_en": "set()",
-    "answer_hi": "set()",
-    "attempted": false,
-    "selected": ""
-  }
-];
+        "num": 2,
+        "question_en": "What does print((lambda x: x**2)(5)) output?",
+        "question_hi": "print((lambda x: x**2)(5)) का आउटपुट क्या होगा?",
+        "options_en": ["25", "10", "125", "Error"],
+        "options_hi": ["25", "10", "125", "त्रुटि"],
+        "answer_en": "25",
+        "answer_hi": "25"
+    },
+    {
+        "num": 3,
+        "question_en": "What is the output of print({x: x**2 for x in range(3)})?",
+        "question_hi": "print({x: x**2 for x in range(3)}) का आउटपुट क्या होगा?",
+        "options_en": ["{0: 0, 1: 1, 2: 4}", "{1: 1, 2: 4}", "[0, 1, 4]", "Error"],
+        "options_hi": ["{0: 0, 1: 1, 2: 4}", "{1: 1, 2: 4}", "[0, 1, 4]", "त्रुटि"],
+        "answer_en": "{0: 0, 1: 1, 2: 4}",
+        "answer_hi": "{0: 0, 1: 1, 2: 4}"
+    },
+    {
+        "num": 4,
+        "question_en": "What does print([x+y for x in [1,2] for y in [3,4]]) output?",
+        "question_hi": "print([x+y for x in [1,2] for y in [3,4]]) का आउटपुट क्या होगा?",
+        "options_en": ["[4, 5, 5, 6]", "[4, 5]", "[1, 2, 3, 4]", "Error"],
+        "options_hi": ["[4, 5, 5, 6]", "[4, 5]", "[1, 2, 3, 4]", "त्रुटि"],
+        "answer_en": "[4, 5, 5, 6]",
+        "answer_hi": "[4, 5, 5, 6]"
+    },
+    {
+        "num": 5,
+        "question_en": "What is the output of print((1, 2) + (3, 4))?",
+        "question_hi": "print((1, 2) + (3, 4)) का आउटपुट क्या होगा?",
+        "options_en": ["(1, 2, 3, 4)", "(4, 6)", "(1, 2)(3, 4)", "Error"],
+        "options_hi": ["(1, 2, 3, 4)", "(4, 6)", "(1, 2)(3, 4)", "त्रुटि"],
+        "answer_en": "(1, 2, 3, 4)",
+        "answer_hi": "(1, 2, 3, 4)"
+    },
+    {
+        "num": 6,
+        "question_en": "What does print([1, 2, 3][::-1]) output?",
+        "question_hi": "print([1, 2, 3][::-1]) का आउटपुट क्या होगा?",
+        "options_en": ["[3, 2, 1]", "[1, 2, 3]", "[3]", "Error"],
+        "options_hi": ["[3, 2, 1]", "[1, 2, 3]", "[3]", "त्रुटि"],
+        "answer_en": "[3, 2, 1]",
+        "answer_hi": "[3, 2, 1]"
+    },
+    {
+        "num": 7,
+        "question_en": "What is the output of print('hello'.upper().lower())?",
+        "question_hi": "print('hello'.upper().lower()) का आउटपुट क्या होगा?",
+        "options_en": ["hello", "HELLO", "Hello", "Error"],
+        "options_hi": ["hello", "HELLO", "Hello", "त्रुटि"],
+        "answer_en": "hello",
+        "answer_hi": "hello"
+    },
+    {
+        "num": 8,
+        "question_en": "What does print(len('hello world'.split())) output?",
+        "question_hi": "print(len('hello world'.split())) का आउटपुट क्या होगा?",
+        "options_en": ["2", "11", "1", "Error"],
+        "options_hi": ["2", "11", "1", "त्रुटि"],
+        "answer_en": "2",
+        "answer_hi": "2"
+    },
+    {
+        "num": 9,
+        "question_en": "What is the output of print([x*2 for x in range(3)])?",
+        "question_hi": "print([x*2 for x in range(3)]) का आउटपुट क्या होगा?",
+        "options_en": ["[0, 2, 4]", "[0, 1, 2]", "[2, 4, 6]", "Error"],
+        "options_hi": ["[0, 2, 4]", "[0, 1, 2]", "[2, 4, 6]", "त्रुटि"],
+        "answer_en": "[0, 2, 4]",
+        "answer_hi": "[0, 2, 4]"
+    },
+    {
+        "num": 10,
+        "question_en": "What does print('abc'.find('b')) output?",
+        "question_hi": "print('abc'.find('b')) का आउटपुट क्या होगा?",
+        "options_en": ["1", "0", "-1", "Error"],
+        "options_hi": ["1", "0", "-1", "त्रुटि"],
+        "answer_en": "1",
+        "answer_hi": "1"
+    },
+    {
+        "num": 11,
+        "question_en": "What is the output of print('hello'.replace('l', 'x'))?",
+        "question_hi": "print('hello'.replace('l', 'x')) का आउटपुट क्या होगा?",
+        "options_en": ["hexxo", "hexo", "hellx", "Error"],
+        "options_hi": ["hexxo", "hexo", "hellx", "त्रुटि"],
+        "answer_en": "hexxo",
+        "answer_hi": "hexxo"
+    },
+    {
+        "num": 12,
+        "question_en": "What does print(' hello '.strip()) output?",
+        "question_hi": "print(' hello '.strip()) का आउटपुट क्या होगा?",
+        "options_en": ["hello", " hello", "hello ", "Error"],
+        "options_hi": ["hello", " hello", "hello ", "त्रुटि"],
+        "answer_en": "hello",
+        "answer_hi": "hello"
+    },
+    {
+        "num": 13,
+        "question_en": "What is the output of print([1, 2] * 2)?",
+        "question_hi": "print([1, 2] * 2) का आउटपुट क्या होगा?",
+        "options_en": ["[1, 2, 1, 2]", "[2, 4]", "[1, 2, 2]", "Error"],
+        "options_hi": ["[1, 2, 1, 2]", "[2, 4]", "[1, 2, 2]", "त्रुटि"],
+        "answer_en": "[1, 2, 1, 2]",
+        "answer_hi": "[1, 2, 1, 2]"
+    },
+    {
+        "num": 14,
+        "question_en": "What does print('hello'[::-1]) output?",
+        "question_hi": "print('hello'[::-1]) का आउटपुट क्या होगा?",
+        "options_en": ["olleh", "hello", "h", "Error"],
+        "options_hi": ["olleh", "hello", "h", "त्रुटि"],
+        "answer_en": "olleh",
+        "answer_hi": "olleh"
+    },
+    {
+        "num": 15,
+        "question_en": "What is the output of print(max([1, 2, 3], key=lambda x: -x))?",
+        "question_hi": "print(max([1, 2, 3], key=lambda x: -x)) का आउटपुट क्या होगा?",
+        "options_en": ["1", "3", "2", "Error"],
+        "options_hi": ["1", "3", "2", "त्रुटि"],
+        "answer_en": "1",
+        "answer_hi": "1"
+    },
+    {
+        "num": 16,
+        "question_en": "What does print(sorted([3, 1, 2], reverse=True)) output?",
+        "question_hi": "print(sorted([3, 1, 2], reverse=True)) का आउटपुट क्या होगा?",
+        "options_en": ["[3, 2, 1]", "[1, 2, 3]", "[3, 1, 2]", "Error"],
+        "options_hi": ["[3, 2, 1]", "[1, 2, 3]", "[3, 1, 2]", "त्रुटि"],
+        "answer_en": "[3, 2, 1]",
+        "answer_hi": "[3, 2, 1]"
+    },
+    {
+        "num": 17,
+        "question_en": "What is the output of print('hello'.count('l'))?",
+        "question_hi": "print('hello'.count('l')) का आउटपुट क्या होगा?",
+        "options_en": ["2", "1", "3", "Error"],
+        "options_hi": ["2", "1", "3", "त्रुटि"],
+        "answer_en": "2",
+        "answer_hi": "2"
+    },
+    {
+        "num": 18,
+        "question_en": "What does print([x for x in 'abc']) output?",
+        "question_hi": "print([x for x in 'abc']) का आउटपुट क्या होगा?",
+        "options_en": ["['a', 'b', 'c']", "['abc']", "[97, 98, 99]", "Error"],
+        "options_hi": ["['a', 'b', 'c']", "['abc']", "[97, 98, 99]", "त्रुटि"],
+        "answer_en": "['a', 'b', 'c']",
+        "answer_hi": "['a', 'b', 'c']"
+    },
+    {
+        "num": 19,
+        "question_en": "What is the output of print('hello'.startswith('he'))?",
+        "question_hi": "print('hello'.startswith('he')) का आउटपुट क्या होगा?",
+        "options_en": ["True", "False", "he", "Error"],
+        "options_hi": ["True", "False", "he", "त्रुटि"],
+        "answer_en": "True",
+        "answer_hi": "True"
+    },
+    {
+        "num": 20,
+        "question_en": "What does print('hello'.endswith('lo')) output?",
+        "question_hi": "print('hello'.endswith('lo')) का आउटपुट क्या होगा?",
+        "options_en": ["True", "False", "lo", "Error"],
+        "options_hi": ["True", "False", "lo", "त्रुटि"],
+        "answer_en": "True",
+        "answer_hi": "True"
+    },
+    {
+        "num": 21,
+        "question_en": "What is the output of print('hello'.capitalize())?",
+        "question_hi": "print('hello'.capitalize()) का आउटपुट क्या होगा?",
+        "options_en": ["Hello", "HELLO", "hello", "Error"],
+        "options_hi": ["Hello", "HELLO", "hello", "त्रुटि"],
+        "answer_en": "Hello",
+        "answer_hi": "Hello"
+    },
+    {
+        "num": 22,
+        "question_en": "What does print('hello'.title()) output?",
+        "question_hi": "print('hello'.title()) का आउटपुट क्या होगा?",
+        "options_en": ["Hello", "HELLO", "hello", "Error"],
+        "options_hi": ["Hello", "HELLO", "hello", "त्रुटि"],
+        "answer_en": "Hello",
+        "answer_hi": "Hello"
+    },
+    {
+        "num": 23,
+        "question_en": "What is the output of print('hello'.swapcase())?",
+        "question_hi": "print('hello'.swapcase()) का आउटपुट क्या होगा?",
+        "options_en": ["HELLO", "Hello", "hELLO", "Error"],
+        "options_hi": ["HELLO", "Hello", "hELLO", "त्रुटि"],
+        "answer_en": "HELLO",
+        "answer_hi": "HELLO"
+    },
+    {
+        "num": 24,
+        "question_en": "What does print('hello'.isalpha()) output?",
+        "question_hi": "print('hello'.isalpha()) का आउटपुट क्या होगा?",
+        "options_en": ["True", "False", "Error", "None"],
+        "options_hi": ["True", "False", "त्रुटि", "None"],
+        "answer_en": "True",
+        "answer_hi": "True"
+    },
+    {
+        "num": 25,
+        "question_en": "What is the output of print('123'.isdigit())?",
+        "question_hi": "print('123'.isdigit()) का आउटपुट क्या होगा?",
+        "options_en": ["True", "False", "123", "Error"],
+        "options_hi": ["True", "False", "123", "त्रुटि"],
+        "answer_en": "True",
+        "answer_hi": "True"
+    },
+    {
+        "num": 26,
+        "question_en": "What does print('hello world'.split(' ')) output?",
+        "question_hi": "print('hello world'.split(' ')) का आउटपुट क्या होगा?",
+        "options_en": ["['hello', 'world']", "['hello world']", "['h', 'e', 'l', 'l', 'o']", "Error"],
+        "options_hi": ["['hello', 'world']", "['hello world']", "['h', 'e', 'l', 'l', 'o']", "त्रुटि"],
+        "answer_en": "['hello', 'world']",
+        "answer_hi": "['hello', 'world']"
+    },
+    {
+        "num": 27,
+        "question_en": "What is the output of print('-'.join(['a', 'b', 'c']))?",
+        "question_hi": "print('-'.join(['a', 'b', 'c'])) का आउटपुट क्या होगा?",
+        "options_en": ["a-b-c", "a b c", "abc", "Error"],
+        "options_hi": ["a-b-c", "a b c", "abc", "त्रुटि"],
+        "answer_en": "a-b-c",
+        "answer_hi": "a-b-c"
+    },
+    {
+        "num": 28,
+        "question_en": "What does print('hello'.center(10, '-')) output?",
+        "question_hi": "print('hello'.center(10, '-')) का आउटपुट क्या होगा?",
+        "options_en": ["--hello---", "hello-----", "--hello--", "Error"],
+        "options_hi": ["--hello---", "hello-----", "--hello--", "त्रुटि"],
+        "answer_en": "--hello---",
+        "answer_hi": "--hello---"
+    },
+    {
+        "num": 29,
+        "question_en": "What is the output of print('hello'.ljust(10, '-'))?",
+        "question_hi": "print('hello'.ljust(10, '-')) का आउटपुट क्या होगा?",
+        "options_en": ["hello-----", "--hello---", "-----hello", "Error"],
+        "options_hi": ["hello-----", "--hello---", "-----hello", "त्रुटि"],
+        "answer_en": "hello-----",
+        "answer_hi": "hello-----"
+    },
+    {
+        "num": 30,
+        "question_en": "What does print('hello'.rjust(10, '-')) output?",
+        "question_hi": "print('hello'.rjust(10, '-')) का आउटपुट क्या होगा?",
+        "options_en": ["-----hello", "hello-----", "--hello---", "Error"],
+        "options_hi": ["-----hello", "hello-----", "--hello---", "त्रुटि"],
+        "answer_en": "-----hello",
+        "answer_hi": "-----hello"
+    },
+    {
+        "num": 31,
+        "question_en": "What is the output of print('hello'.zfill(10))?",
+        "question_hi": "print('hello'.zfill(10)) का आउटपुट क्या होगा?",
+        "options_en": ["00000hello", "hello00000", " hello ", "Error"],
+        "options_hi": ["00000hello", "hello00000", " hello ", "त्रुटि"],
+        "answer_en": "00000hello",
+        "answer_hi": "00000hello"
+    },
+    {
+        "num": 32,
+        "question_en": "What does print('hello world'.partition(' ')) output?",
+        "question_hi": "print('hello world'.partition(' ')) का आउटपुट क्या होगा?",
+        "options_en":[ "('hello', ' ', 'world')", "['hello', 'world']", "('hello world')", "Error"],
+        "options_hi": ["('hello', ' ', 'world')", "['hello', 'world']", "('hello world')", "त्रुटि"],
+        "answer_en": "('hello', ' ', 'world')",
+        "answer_hi": "('hello', ' ', 'world')"
+    },
+    {
+        "num": 33,
+        "question_en": "What is the output of print('hello'.index('e'))?",
+        "question_hi": "print('hello'.index('e')) का आउटपुट क्या होगा?",
+        "options_en": ["1", "0", "2", "Error"],
+        "options_hi": ["1", "0", "2", "त्रुटि"],
+        "answer_en": "1",
+        "answer_hi": "1"
+    },
+    {
+        "num": 34,
+        "question_en": "What does print('hello'.rfind('l')) output?",
+        "question_hi": "print('hello'.rfind('l')) का आउटपुट क्या होगा?",
+        "options_en": ["3", "2", "4", "Error"],
+        "options_hi": ["3", "2", "4", "त्रुटि"],
+        "answer_en": "3",
+        "answer_hi": "3"
+    },
+    {
+        "num": 35,
+        "question_en": "What is the output of print('hello'.encode())?",
+        "question_hi": "print('hello'.encode()) का आउटपुट क्या होगा?",
+        "options_en": ["b'hello'", "hello", "104 101 108 108 111", "Error"],
+        "options_hi": ["b'hello'", "hello", "104 101 108 108 111", "त्रुटि"],
+        "answer_en": "b'hello'",
+        "answer_hi": "b'hello'"
+    },
+    {
+        "num": 36,
+        "question_en": "What does print(b'hello'.decode()) output?",
+        "question_hi": "print(b'hello'.decode()) का आउटपुट क्या होगा?",
+        "options_en": ["hello", "b'hello'", "104 101 108 108 111", "Error"],
+        "options_hi": ["hello", "b'hello'", "104 101 108 108 111", "त्रुटि"],
+        "answer_en": "hello",
+        "answer_hi": "hello"
+    },
+    {
+        "num": 37,
+        "question_en": "What is the output of print('hello'.isalnum())?",
+        "question_hi": "print('hello'.isalnum()) का आउटपुट क्या होगा?",
+        "options_en": ["True", "False", "Error", "None"],
+        "options_hi": ["True", "False", "त्रुटि", "None"],
+        "answer_en": "True",
+        "answer_hi": "True"
+    },
+    {
+        "num": 38,
+        "question_en": "What does print('hello123'.isalnum()) output?",
+        "question_hi": "print('hello123'.isalnum()) का आउटपुट क्या होगा?",
+        "options_en": ["True", "False", "Error", "None"],
+        "options_hi": ["True", "False", "त्रुटि", "None"],
+        "answer_en": "True",
+        "answer_hi": "True"
+    },
+    {
+        "num": 39,
+        "question_en": "What is the output of print('hello'.islower())?",
+        "question_hi": "print('hello'.islower()) का आउटपुट क्या होगा?",
+        "options_en": ["True", "False", "Error", "None"],
+        "options_hi": ["True", "False", "त्रुटि", "None"],
+        "answer_en": "True",
+        "answer_hi": "True"
+    },
+    {
+        "num": 40,
+        "question_en": "What does print('HELLO'.isupper()) output?",
+        "question_hi": "print('HELLO'.isupper()) का आउटपुट क्या होगा?",
+        "options_en": ["True", "False", "Error", "None"],
+        "options_hi": ["True", "False", "त्रुटि", "None"],
+        "answer_en": "True",
+        "answer_hi": "True"
+    },
+    {
+        "num": 41,
+        "question_en": "What is the output of print('   '.isspace())?",
+        "question_hi": "print('   '.isspace()) का आउटपुट क्या होगा?",
+        "options_en": ["True", "False", "Error", "None"],
+        "options_hi": ["True", "False", "त्रुटि", "None"],
+        "answer_en": "True",
+        "answer_hi": "True"
+    },
+    {
+        "num": 42,
+        "question_en": "What does print('Hello World'.istitle()) output?",
+        "question_hi": "print('Hello World'.istitle()) का आउटपुट क्या होगा?",
+        "options_en": ["True", "False", "Error", "None"],
+        "options_hi": ["True", "False", "त्रुटि", "None"],
+        "answer_en": "True",
+        "answer_hi": "True"
+    },
+    {
+        "num": 43,
+        "question_en": "What is the output of print('hello'.isprintable())?",
+        "question_hi": "print('hello'.isprintable()) का आउटपुट क्या होगा?",
+        "options_en": ["True", "False", "Error", "None"],
+        "options_hi": ["True", "False", "त्रुटि", "None"],
+        "answer_en": "True",
+        "answer_hi": "True"
+    },
+    {
+        "num": 44,
+        "question_en": "What does print('hello'.isascii()) output?",
+        "question_hi": "print('hello'.isascii()) का आउटपुट क्या होगा?",
+        "options_en": ["True", "False", "Error", "None"],
+        "options_hi": ["True", "False", "त्रुटि", "None"],
+        "answer_en": "True",
+        "answer_hi": "True"
+    },
+    {
+        "num": 45,
+        "question_en": "What is the output of print('hello'.isidentifier())?",
+        "question_hi": "print('hello'.isidentifier()) का आउटपウट क्या होगा?",
+        "options_en": ["True", "False", "Error", "None"],
+        "options_hi": ["True", "False", "त्रुटि", "None"],
+        "answer_en": "True",
+        "answer_hi": "True"
+    },
+    {
+        "num": 46,
+        "question_en": "What does print('hello'.removeprefix('he')) output?",
+        "question_hi": "print('hello'.removeprefix('he')) का आउटपुट क्या होगा?",
+        "options_en": ["llo", "hello", "he", "Error"],
+        "options_hi": ["llo", "hello", "he", "त्रुटि"],
+        "answer_en": "llo",
+        "answer_hi": "llo"
+    },
+    {
+        "num": 47,
+        "question_en": "What is the output of print('hello'.removesuffix('lo'))?",
+        "question_hi": "print('hello'.removesuffix('lo')) का आउटपुट क्या होगा?",
+        "options_en": ["hel", "hello", "lo", "Error"],
+        "options_hi": ["hel", "hello", "lo", "त्रुटि"],
+        "answer_en": "hel",
+        "answer_hi": "hel"
+    },
+    {
+        "num": 48,
+        "question_en": "What does print('hello'.casefold() == 'HELLO'.casefold()) output?",
+        "question_hi": "print('hello'.casefold() == 'HELLO'.casefold()) का आउटपुट क्या होगा?",
+        "options_en": ["True", "False", "Error", "None"],
+        "options_hi": ["True", "False", "त्रुटि", "None"],
+        "answer_en": "True",
+        "answer_hi": "True"
+    },
+    {
+        "num": 49,
+        "question_en": "What is the output of print('hello'.maketrans('hel', '123'))?",
+        "question_hi": "print('hello'.maketrans('hel', '123')) का आउटपुट क्या होगा?",
+        "options_en": ["{104: 49, 101: 50, 108: 51}", "123", "hello", "Error"],
+        "options_hi": ["{104: 49, 101: 50, 108: 51}", "123", "hello", "त्रुटि"],
+        "answer_en": "{104: 49, 101: 50, 108: 51}",
+        "answer_hi": "{104: 49, 101: 50, 108: 51}"
+    },
+    {
+        "num": 50,
+        "question_en": "What does print('hello'.translate({104: 72, 101: 69})) output?",
+        "question_hi": "print('hello'.translate({104: 72, 101: 69})) का आउटपुट क्या होगा?",
+        "options_en": ["HEllo", "hello", "HELLO", "Error"],
+        "options_hi": ["HEllo", "hello", "HELLO", "त्रुटि"],
+        "answer_en": "HEllo",
+        "answer_hi": "HEllo"
+    }
+]
 
 
 let currentQuestion = 0; 

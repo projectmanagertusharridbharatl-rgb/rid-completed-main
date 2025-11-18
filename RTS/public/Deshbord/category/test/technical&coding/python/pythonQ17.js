@@ -1,558 +1,1054 @@
-const questions = [
+const questions =[
   {
     "num": 1,
-    "question_en": "What is the output of print(2 ** 3)?",
-    "question_hi": "print(2 ** 3) का आउटपुट क्या होगा?",
-    "options_en": ["6", "8", "9", "5"],
-    "options_hi": ["6", "8", "9", "5"],
-    "answer_en": "8",
-    "answer_hi": "8",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 2,
-    "question_en": "Which keyword is used to create a function in Python?",
-    "question_hi": "Python में function बनाने के लिए कौन-सा keyword उपयोग होता है?",
-    "options_en": ["function", "def", "define", "func"],
-    "options_hi": ["function", "def", "define", "func"],
-    "answer_en": "def",
-    "answer_hi": "def",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 3,
-    "question_en": "What data type is the result of: type(3.5)?",
-    "question_hi": "type(3.5) का परिणाम किस डेटा टाइप का होगा?",
-    "options_en": ["int", "float", "str", "complex"],
-    "options_hi": ["int", "float", "str", "complex"],
-    "answer_en": "float",
-    "answer_hi": "float",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 4,
-    "question_en": "What is the correct file extension for Python files?",
-    "question_hi": "Python फ़ाइलों के लिए सही फ़ाइल एक्सटेंशन क्या है?",
-    "options_en": [".py", ".pt", ".pyt", ".python"],
-    "options_hi": [".py", ".pt", ".pyt", ".python"],
-    "answer_en": ".py",
-    "answer_hi": ".py",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 5,
-    "question_en": "What does the 'len()' function do?",
-    "question_hi": "'len()' function क्या करता है?",
-    "options_en": ["Returns length", "Returns type", "Counts digits", "Checks truth value"],
-    "options_hi": ["लंबाई return करता है", "Type return करता है", "Digits count करता है", "Truth value check करता है"],
-    "answer_en": "Returns length",
-    "answer_hi": "लंबाई return करता है",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 6,
-    "question_en": "How do you start a comment in Python?",
-    "question_hi": "Python में comment कैसे शुरू करते हैं?",
-    "options_en": ["//", "/*", "#", "--"],
-    "options_hi": ["//", "/*", "#", "--"],
+    "question_en": "Which symbol is used to start a comment in Python?",
+    "question_hi": "Python में टिप्पणी (comment) शुरू करने के लिए कौन-सा चिन्ह उपयोग किया जाता है?",
+    "options_en": [
+      "//",
+      "#",
+      "/* */",
+      "--"
+    ],
+    "options_hi": [
+      "//",
+      "#",
+      "/* */",
+      "--"
+    ],
     "answer_en": "#",
     "answer_hi": "#",
     "attempted": false,
     "selected": ""
   },
   {
+    "num": 2,
+    "question_en": "Which function in Python converts a string into an integer?",
+    "question_hi": "Python में कौन-सा फ़ंक्शन किसी स्ट्रिंग को इंटीजर में बदलता है?",
+    "options_en": [
+      "str()",
+      "int()",
+      "float()",
+      "eval()"
+    ],
+    "options_hi": [
+      "str()",
+      "int()",
+      "float()",
+      "eval()"
+    ],
+    "answer_en": "int()",
+    "answer_hi": "int()",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 3,
+    "question_en": "What is the correct file extension for Python files?",
+    "question_hi": "Python फ़ाइलों के लिए सही एक्सटेंशन क्या है?",
+    "options_en": [
+      ".pyt",
+      ".pt",
+      ".py",
+      ".pyth"
+    ],
+    "options_hi": [
+      ".pyt",
+      ".pt",
+      ".py",
+      ".pyth"
+    ],
+    "answer_en": ".py",
+    "answer_hi": ".py",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 4,
+    "question_en": "Which keyword is used to return a value from a function?",
+    "question_hi": "किस कीवर्ड का उपयोग किसी फ़ंक्शन से मान लौटाने के लिए किया जाता है?",
+    "options_en": [
+      "send",
+      "return",
+      "give",
+      "yield"
+    ],
+    "options_hi": [
+      "send",
+      "return",
+      "give",
+      "yield"
+    ],
+    "answer_en": "return",
+    "answer_hi": "return",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 5,
+    "question_en": "What does the len() function do in Python?",
+    "question_hi": "Python में len() फ़ंक्शन क्या करता है?",
+    "options_en": [
+      "Returns length of object",
+      "Returns type of object",
+      "Deletes object",
+      "Creates object"
+    ],
+    "options_hi": [
+      "ऑब्जेक्ट की लंबाई लौटाता है",
+      "ऑब्जेक्ट का प्रकार लौटाता है",
+      "ऑब्जेक्ट को हटाता है",
+      "ऑब्जेक्ट बनाता है"
+    ],
+    "answer_en": "Returns length of object",
+    "answer_hi": "ऑब्जेक्ट की लंबाई लौटाता है",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 6,
+    "question_en": "Which function is used to display output in Python?",
+    "question_hi": "Python में आउटपुट दिखाने के लिए कौन-सा फ़ंक्शन उपयोग किया जाता है?",
+    "options_en": [
+      "display()",
+      "echo()",
+      "print()",
+      "show()"
+    ],
+    "options_hi": [
+      "display()",
+      "echo()",
+      "print()",
+      "show()"
+    ],
+    "answer_en": "print()",
+    "answer_hi": "print()",
+    "attempted": false,
+    "selected": ""
+  },
+  {
     "num": 7,
-    "question_en": "What is the output of: print('5' + '5')?",
-    "question_hi": "print('5' + '5') का आउटपुट क्या होगा?",
-    "options_en": ["10", "55", "TypeError", "5"],
-    "options_hi": ["10", "55", "TypeError", "5"],
-    "answer_en": "55",
-    "answer_hi": "55",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 8,
-    "question_en": "What is the correct way to create a dictionary?",
-    "question_hi": "Dictionary बनाने का सही तरीका क्या है?",
-    "options_en": ["{}", "[]", "()", "<>"],
-    "options_hi": ["{}", "[]", "()", "<>"],
-    "answer_en": "{}",
-    "answer_hi": "{}",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 9,
-    "question_en": "Which method can add an item to a list?",
-    "question_hi": "List में item add करने के लिए कौन-सा method है?",
-    "options_en": ["add()", "append()", "insert()", "extend()"],
-    "options_hi": ["add()", "append()", "insert()", "extend()"],
-    "answer_en": "append()",
-    "answer_hi": "append()",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 10,
-    "question_en": "What is the output of type(True)?",
-    "question_hi": "type(True) का आउटपुट क्या होगा?",
-    "options_en": ["bool", "int", "str", "float"],
-    "options_hi": ["bool", "int", "str", "float"],
+    "question_en": "Which data type is used to store True or False values in Python?",
+    "question_hi": "Python में True या False मानों को संग्रहीत करने के लिए कौन-सा डेटा टाइप उपयोग किया जाता है?",
+    "options_en": [
+      "int",
+      "bool",
+      "str",
+      "float"
+    ],
+    "options_hi": [
+      "int",
+      "bool",
+      "str",
+      "float"
+    ],
     "answer_en": "bool",
     "answer_hi": "bool",
     "attempted": false,
     "selected": ""
   },
   {
+    "num": 8,
+    "question_en": "What is the output of type(10.5)?",
+    "question_hi": "type(10.5) का आउटपुट क्या होगा?",
+    "options_en": [
+      "<class 'int'>",
+      "<class 'float'>",
+      "<class 'str'>",
+      "<class 'double'>"
+    ],
+    "options_hi": [
+      "<class 'int'>",
+      "<class 'float'>",
+      "<class 'str'>",
+      "<class 'double'>"
+    ],
+    "answer_en": "<class 'float'>",
+    "answer_hi": "<class 'float'>",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 9,
+    "question_en": "Which keyword is used to create a loop in Python?",
+    "question_hi": "Python में लूप बनाने के लिए कौन-सा कीवर्ड उपयोग किया जाता है?",
+    "options_en": [
+      "for",
+      "loop",
+      "iterate",
+      "repeat"
+    ],
+    "options_hi": [
+      "for",
+      "loop",
+      "iterate",
+      "repeat"
+    ],
+    "answer_en": "for",
+    "answer_hi": "for",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 10,
+    "question_en": "Which operator is used for exponentiation in Python?",
+    "question_hi": "Python में घातांक (exponentiation) के लिए कौन-सा ऑपरेटर उपयोग होता है?",
+    "options_en": [
+      "^",
+      "**",
+      "//",
+      "^^"
+    ],
+    "options_hi": [
+      "^",
+      "**",
+      "//",
+      "^^"
+    ],
+    "answer_en": "**",
+    "answer_hi": "**",
+    "attempted": false,
+    "selected": ""
+  },
+  {
     "num": 11,
-    "question_en": "How do you create a variable with the numeric value 5?",
-    "question_hi": "5 value वाला variable कैसे बनाते हैं?",
-    "options_en": ["num = 5", "int num = 5", "num := 5", "num == 5"],
-    "options_hi": ["num = 5", "int num = 5", "num := 5", "num == 5"],
-    "answer_en": "num = 5",
-    "answer_hi": "num = 5",
+    "question_en": "Which function converts a number to a string in Python?",
+    "question_hi": "Python में कौन-सा फ़ंक्शन किसी संख्या को स्ट्रिंग में बदलता है?",
+    "options_en": [
+      "str()",
+      "string()",
+      "text()",
+      "chr()"
+    ],
+    "options_hi": [
+      "str()",
+      "string()",
+      "text()",
+      "chr()"
+    ],
+    "answer_en": "str()",
+    "answer_hi": "str()",
     "attempted": false,
     "selected": ""
   },
   {
     "num": 12,
-    "question_en": "What will print(type([])) return?",
-    "question_hi": "print(type([])) क्या return करेगा?",
-    "options_en": ["list", "<class 'list'>", "[]", "object"],
-    "options_hi": ["list", "<class 'list'>", "[]", "object"],
-    "answer_en": "<class 'list'>",
-    "answer_hi": "<class 'list'>",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 13,
-    "question_en": "What is used to handle exceptions in Python?",
-    "question_hi": "Python में exceptions handle करने के लिए क्या use होता है?",
-    "options_en": ["catch", "handle", "try/except", "trap"],
-    "options_hi": ["catch", "handle", "try/except", "trap"],
-    "answer_en": "try/except",
-    "answer_hi": "try/except",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 14,
-    "question_en": "Which operator is used for floor division?",
-    "question_hi": "Floor division के लिए कौन-सा operator use होता है?",
-    "options_en": ["/", "%", "//", "**"],
-    "options_hi": ["/", "%", "//", "**"],
-    "answer_en": "//",
-    "answer_hi": "//",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 15,
-    "question_en": "How do you insert comments in Python?",
-    "question_hi": "Python में comment कैसे डालते हैं?",
-    "options_en": ["# comment", "// comment", "/* comment */", "-- comment"],
-    "options_hi": ["# comment", "// comment", "/* comment */", "-- comment"],
-    "answer_en": "# comment",
-    "answer_hi": "# comment",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 16,
-    "question_en": "What is the output of bool(0)?",
-    "question_hi": "bool(0) का आउटपुट क्या होगा?",
-    "options_en": ["True", "False", "0", "None"],
-    "options_hi": ["True", "False", "0", "None"],
-    "answer_en": "False",
-    "answer_hi": "False",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 17,
-    "question_en": "Which data structure is immutable?",
-    "question_hi": "कौन-सा data structure immutable है?",
-    "options_en": ["list", "set", "dict", "tuple"],
-    "options_hi": ["list", "set", "dict", "tuple"],
-    "answer_en": "tuple",
-    "answer_hi": "tuple",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 18,
-    "question_en": "What is the purpose of the pass statement?",
-    "question_hi": "pass statement का उद्देश्य क्या है?",
-    "options_en": ["Skip iteration", "End loop", "Do nothing", "Break loop"],
-    "options_hi": ["Iteration skip करना", "Loop end करना", "कुछ नहीं करना", "Loop break करना"],
-    "answer_en": "Do nothing",
-    "answer_hi": "कुछ नहीं करना",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 19,
-    "question_en": "Which module is used to generate random numbers?",
-    "question_hi": "Random numbers generate करने के लिए कौन-सा module use होता है?",
-    "options_en": ["math", "random", "os", "sys"],
-    "options_hi": ["math", "random", "os", "sys"],
-    "answer_en": "random",
-    "answer_hi": "random",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 20,
-    "question_en": "What does the 'in' keyword check?",
-    "question_hi": "'in' keyword क्या check करता है?",
-    "options_en": ["Existence in sequence", "Assignment", "Type", "Conversion"],
-    "options_hi": ["Sequence में existence", "Assignment", "Type", "Conversion"],
-    "answer_en": "Existence in sequence",
-    "answer_hi": "Sequence में existence",
-    "attempted": false,
-    "selected": ""
-  },
-
-    {
-    "num": 21,
-    "question_en": "What is the correct way to define a class?",
-    "question_hi": "Class define करने का सही तरीका क्या है?",
-    "options_en": ["def MyClass:", "class MyClass:", "MyClass:", "define MyClass:"],
-    "options_hi": ["def MyClass:", "class MyClass:", "MyClass:", "define MyClass:"],
-    "answer_en": "class MyClass:",
-    "answer_hi": "class MyClass:",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 22,
-    "question_en": "Which method is called when an object is created?",
-    "question_hi": "Object create होने पर कौन-सा method call होता है?",
-    "options_en": ["__start__", "__create__", "__init__", "__make__"],
-    "options_hi": ["__start__", "__create__", "__init__", "__make__"],
-    "answer_en": "__init__",
-    "answer_hi": "__init__",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 23,
-    "question_en": "How do you access values in a list?",
-    "question_hi": "List में values access करने का तरीका क्या है?",
-    "options_en": ["list{0}", "list[0]", "list(0)", "list<0>"],
-    "options_hi": ["list{0}", "list[0]", "list(0)", "list<0>"],
-    "answer_en": "list[0]",
-    "answer_hi": "list[0]",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 24,
-    "question_en": "What is the correct syntax to define a lambda function?",
-    "question_hi": "Lambda function define करने का सही syntax क्या है?",
-    "options_en": ["lambda x: x+1", "def x(): x+1", "func x: x+1", "lambda = x+1"],
-    "options_hi": ["lambda x: x+1", "def x(): x+1", "func x: x+1", "lambda = x+1"],
-    "answer_en": "lambda x: x+1",
-    "answer_hi": "lambda x: x+1",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 25,
-    "question_en": "What is the purpose of 'self' in Python classes?",
-    "question_hi": "Python classes में 'self' का उद्देश्य क्या है?",
-    "options_en": ["Refers to class", "Refers to instance", "Refers to method", "Refers to file"],
-    "options_hi": ["Class को refer करता है", "Instance को refer करता है", "Method को refer करता है", "File को refer करता है"],
-    "answer_en": "Refers to instance",
-    "answer_hi": "Instance को refer करता है",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 26,
-    "question_en": "Which keyword is used to inherit a class?",
-    "question_hi": "Class inherit करने के लिए कौन-सा keyword है?",
-    "options_en": ["inherit", "extends", "super", "class"],
-    "options_hi": ["inherit", "extends", "super", "class"],
-    "answer_en": "class",
-    "answer_hi": "class",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 27,
-    "question_en": "Which method returns the number of items in a list?",
-    "question_hi": "List में items की संख्या return करने वाला method कौन-सा है?",
-    "options_en": ["size()", "length()", "len()", "count()"],
-    "options_hi": ["size()", "length()", "len()", "count()"],
-    "answer_en": "len()",
-    "answer_hi": "len()",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 28,
-    "question_en": "What is slicing used for in Python?",
-    "question_hi": "Python में slicing का उपयोग किस लिए किया जाता है?",
-    "options_en": ["Copy elements", "Access parts of sequence", "Sort items", "Update values"],
-    "options_hi": ["Elements copy करना", "Sequence के parts access करना", "Items sort करना", "Values update करना"],
-    "answer_en": "Access parts of sequence",
-    "answer_hi": "Sequence के parts access करना",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 29,
-    "question_en": "Which statement is used to exit a loop?",
-    "question_hi": "Loop exit करने के लिए कौन-सा statement use होता है?",
-    "options_en": ["exit", "stop", "end", "break"],
-    "options_hi": ["exit", "stop", "end", "break"],
-    "answer_en": "break",
-    "answer_hi": "break",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 30,
-    "question_en": "How do you convert a string to an integer?",
-    "question_hi": "String को integer में convert करने का तरीका क्या है?",
-    "options_en": ["int('5')", "str(5)", "float('5')", "toInt('5')"],
-    "options_hi": ["int('5')", "str(5)", "float('5')", "toInt('5')"],
-    "answer_en": "int('5')",
-    "answer_hi": "int('5')",
-    "attempted": false,
-    "selected": ""
-  },
-
-
-    {
-    "num": 31,
-    "question_en": "What does the open() function return?",
-    "question_hi": "open() function क्या return करता है?",
-    "options_en": ["File object", "String", "List", "Boolean"],
-    "options_hi": ["File object", "String", "List", "Boolean"],
-    "answer_en": "File object",
-    "answer_hi": "File object",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 32,
-    "question_en": "Which keyword is used to define an anonymous function?",
-    "question_hi": "Anonymous function define करने के लिए कौन-सा keyword है?",
-    "options_en": ["anon", "lambda", "func", "def"],
-    "options_hi": ["anon", "lambda", "func", "def"],
-    "answer_en": "lambda",
-    "answer_hi": "lambda",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 33,
-    "question_en": "What is the output of: 'abc'.upper()?",
-    "question_hi": "'abc'.upper() का आउटपुट क्या होगा?",
-    "options_en": ["abc", "ABC", "Abc", "Syntax Error"],
-    "options_hi": ["abc", "ABC", "Abc", "Syntax Error"],
-    "answer_en": "ABC",
-    "answer_hi": "ABC",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 34,
-    "question_en": "How do you handle an exception?",
-    "question_hi": "Exception को handle करने का तरीका क्या है?",
-    "options_en": ["try/except", "if/else", "catch/finally", "try/catch"],
-    "options_hi": ["try/except", "if/else", "catch/finally", "try/catch"],
-    "answer_en": "try/except",
-    "answer_hi": "try/except",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 35,
-    "question_en": "What is a correct way to define a list?",
-    "question_hi": "List define करने का सही तरीका क्या है?",
-    "options_en": ["(1,2,3)", "{1,2,3}", "[1,2,3]", "<1,2,3>"],
-    "options_hi": ["(1,2,3)", "{1,2,3}", "[1,2,3]", "<1,2,3>"],
-    "answer_en": "[1,2,3]",
-    "answer_hi": "[1,2,3]",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 36,
-    "question_en": "Which function is used to get user input?",
-    "question_hi": "User input लेने के लिए कौन-सा function use होता है?",
-    "options_en": ["scanf()", "input()", "get()", "read()"],
-    "options_hi": ["scanf()", "input()", "get()", "read()"],
-    "answer_en": "input()",
-    "answer_hi": "input()",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 37,
-    "question_en": "How to remove whitespace from a string?",
-    "question_hi": "String से whitespace कैसे हटाएँ?",
-    "options_en": ["strip()", "trim()", "remove()", "erase()"],
-    "options_hi": ["strip()", "trim()", "remove()", "erase()"],
-    "answer_en": "strip()",
-    "answer_hi": "strip()",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 38,
-    "question_en": "What does the 'is' operator compare?",
-    "question_hi": "'is' operator क्या compare करता है?",
-    "options_en": ["Values", "Memory locations", "Types", "Keys"],
-    "options_hi": ["Values", "Memory locations", "Types", "Keys"],
-    "answer_en": "Memory locations",
-    "answer_hi": "Memory locations",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 39,
-    "question_en": "Which statement is used to skip iteration in a loop?",
-    "question_hi": "Loop में iteration skip करने के लिए कौन-सा statement use होता है?",
-    "options_en": ["break", "pass", "continue", "exit"],
-    "options_hi": ["break", "pass", "continue", "exit"],
-    "answer_en": "continue",
-    "answer_hi": "continue",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 40,
-    "question_en": "What is the result of: 10 % 3?",
-    "question_hi": "10 % 3 का परिणाम क्या होगा?",
-    "options_en": ["1", "3", "0", "10"],
-    "options_hi": ["1", "3", "0", "10"],
-    "answer_en": "1",
-    "answer_hi": "1",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 41,
-    "question_en": "How do you check if a value exists in a dictionary?",
-    "question_hi": "Dictionary में value exist करती है या नहीं कैसे check करें?",
-    "options_en": ["in", "has", "exists", "check"],
-    "options_hi": ["in", "has", "exists", "check"],
+    "question_en": "Which Python keyword is used to check if a value exists in a list?",
+    "question_hi": "किस Python कीवर्ड का उपयोग यह जांचने के लिए किया जाता है कि कोई मान लिस्ट में मौजूद है या नहीं?",
+    "options_en": [
+      "exists",
+      "include",
+      "in",
+      "contain"
+    ],
+    "options_hi": [
+      "exists",
+      "include",
+      "in",
+      "contain"
+    ],
     "answer_en": "in",
     "answer_hi": "in",
     "attempted": false,
     "selected": ""
   },
   {
-    "num": 42,
-    "question_en": "Which keyword is used to create a generator?",
-    "question_hi": "Generator create करने के लिए कौन-सा keyword use होता है?",
-    "options_en": ["generate", "yield", "return", "yield return"],
-    "options_hi": ["generate", "yield", "return", "yield return"],
-    "answer_en": "yield",
-    "answer_hi": "yield",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 43,
-    "question_en": "Which function is used to sort a list in Python?",
-    "question_hi": "Python में list sort करने के लिए कौन-सा function use होता है?",
-    "options_en": ["sorted()", "order()", "arrange()", "sortlist()"],
-    "options_hi": ["sorted()", "order()", "arrange()", "sortlist()"],
-    "answer_en": "sorted()",
-    "answer_hi": "sorted()",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 44,
-    "question_en": "What will type(None) return?",
-    "question_hi": "type(None) क्या return करेगा?",
-    "options_en": ["NoneType", "null", "None", "undefined"],
-    "options_hi": ["NoneType", "null", "None", "undefined"],
-    "answer_en": "NoneType",
-    "answer_hi": "NoneType",
-    "attempted": false,
-    "selected": ""
-  },
-  {
-    "num": 45,
-    "question_en": "What is the default return value of a function if not specified?",
-    "question_hi": "Function में return value specify न करने पर default value क्या होती है?",
-    "options_en": ["None", "0", "False", "Empty string"],
-    "options_hi": ["None", "0", "False", "Empty string"],
+    "num": 13,
+    "question_en": "What is the default value of a variable that is declared but not assigned in Python?",
+    "question_hi": "Python में घोषित लेकिन असाइन न की गई वैरिएबल का डिफ़ॉल्ट मान क्या होता है?",
+    "options_en": [
+      "0",
+      "None",
+      "Null",
+      "Undefined"
+    ],
+    "options_hi": [
+      "0",
+      "None",
+      "Null",
+      "Undefined"
+    ],
     "answer_en": "None",
     "answer_hi": "None",
     "attempted": false,
     "selected": ""
   },
   {
+    "num": 14,
+    "question_en": "Which keyword is used to stop a loop in Python?",
+    "question_hi": "Python में लूप को रोकने के लिए कौन-सा कीवर्ड उपयोग किया जाता है?",
+    "options_en": [
+      "exit",
+      "stop",
+      "break",
+      "end"
+    ],
+    "options_hi": [
+      "exit",
+      "stop",
+      "break",
+      "end"
+    ],
+    "answer_en": "break",
+    "answer_hi": "break",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 15,
+    "question_en": "Which of the following data types is mutable in Python?",
+    "question_hi": "निम्न में से कौन-सा डेटा टाइप Python में परिवर्तनीय (mutable) है?",
+    "options_en": [
+      "tuple",
+      "string",
+      "list",
+      "int"
+    ],
+    "options_hi": [
+      "tuple",
+      "string",
+      "list",
+      "int"
+    ],
+    "answer_en": "list",
+    "answer_hi": "list",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 16,
+    "question_en": "Which function is used to get user input in Python?",
+    "question_hi": "Python में यूज़र इनपुट प्राप्त करने के लिए कौन-सा फ़ंक्शन उपयोग किया जाता है?",
+    "options_en": [
+      "read()",
+      "scan()",
+      "input()",
+      "get()"
+    ],
+    "options_hi": [
+      "read()",
+      "scan()",
+      "input()",
+      "get()"
+    ],
+    "answer_en": "input()",
+    "answer_hi": "input()",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 17,
+    "question_en": "Which keyword is used to handle exceptions in Python?",
+    "question_hi": "Python में अपवादों (exceptions) को संभालने के लिए कौन-सा कीवर्ड उपयोग होता है?",
+    "options_en": [
+      "try",
+      "except",
+      "error",
+      "catch"
+    ],
+    "options_hi": [
+      "try",
+      "except",
+      "error",
+      "catch"
+    ],
+    "answer_en": "except",
+    "answer_hi": "except",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 18,
+    "question_en": "What is the output of len('Python')?",
+    "question_hi": "len('Python') का आउटपुट क्या होगा?",
+    "options_en": [
+      "5",
+      "6",
+      "7",
+      "Error"
+    ],
+    "options_hi": [
+      "5",
+      "6",
+      "7",
+      "Error"
+    ],
+    "answer_en": "6",
+    "answer_hi": "6",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 19,
+    "question_en": "Which of the following is a valid variable name in Python?",
+    "question_hi": "निम्न में से कौन-सा Python में एक वैध वेरिएबल नाम है?",
+    "options_en": [
+      "1name",
+      "first_name",
+      "@name",
+      "for"
+    ],
+    "options_hi": [
+      "1name",
+      "first_name",
+      "@name",
+      "for"
+    ],
+    "answer_en": "first_name",
+    "answer_hi": "first_name",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 20,
+    "question_en": "Which function is used to find the maximum value in a list?",
+    "question_hi": "कौन-सा फ़ंक्शन किसी सूची में अधिकतम मान खोजने के लिए उपयोग होता है?",
+    "options_en": [
+      "max()",
+      "high()",
+      "maximum()",
+      "top()"
+    ],
+    "options_hi": [
+      "max()",
+      "high()",
+      "maximum()",
+      "top()"
+    ],
+    "answer_en": "max()",
+    "answer_hi": "max()",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 21,
+    "question_en": "Which method removes all items from a list?",
+    "question_hi": "कौन-सी मेथड किसी सूची से सभी आइटम्स को हटाती है?",
+    "options_en": [
+      "delete()",
+      "clear()",
+      "remove()",
+      "pop()"
+    ],
+    "options_hi": [
+      "delete()",
+      "clear()",
+      "remove()",
+      "pop()"
+    ],
+    "answer_en": "clear()",
+    "answer_hi": "clear()",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 22,
+    "question_en": "Which function returns the smallest item in a list?",
+    "question_hi": "कौन-सा फ़ंक्शन सूची में सबसे छोटा आइटम लौटाता है?",
+    "options_en": [
+      "small()",
+      "min()",
+      "low()",
+      "least()"
+    ],
+    "options_hi": [
+      "small()",
+      "min()",
+      "low()",
+      "least()"
+    ],
+    "answer_en": "min()",
+    "answer_hi": "min()",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 23,
+    "question_en": "Which statement is used to skip an iteration in a loop?",
+    "question_hi": "कौन-सा स्टेटमेंट लूप में किसी एक iteration को स्किप करने के लिए उपयोग किया जाता है?",
+    "options_en": [
+      "pass",
+      "continue",
+      "skip",
+      "next"
+    ],
+    "options_hi": [
+      "pass",
+      "continue",
+      "skip",
+      "next"
+    ],
+    "answer_en": "continue",
+    "answer_hi": "continue",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 24,
+    "question_en": "Which keyword is used to define a class in Python?",
+    "question_hi": "Python में किसी क्लास को परिभाषित करने के लिए कौन-सा कीवर्ड उपयोग होता है?",
+    "options_en": [
+      "function",
+      "define",
+      "class",
+      "object"
+    ],
+    "options_hi": [
+      "function",
+      "define",
+      "class",
+      "object"
+    ],
+    "answer_en": "class",
+    "answer_hi": "class",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 25,
+    "question_en": "Which function is used to find the absolute value of a number?",
+    "question_hi": "कौन-सा फ़ंक्शन किसी संख्या का परिमाण (absolute value) निकालता है?",
+    "options_en": [
+      "abs()",
+      "absolute()",
+      "fabs()",
+      "mag()"
+    ],
+    "options_hi": [
+      "abs()",
+      "absolute()",
+      "fabs()",
+      "mag()"
+    ],
+    "answer_en": "abs()",
+    "answer_hi": "abs()",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 26,
+    "question_en": "Which of these is used to include external modules in Python?",
+    "question_hi": "Python में बाहरी मॉड्यूल्स को शामिल करने के लिए निम्न में से किसका उपयोग किया जाता है?",
+    "options_en": [
+      "include",
+      "add",
+      "import",
+      "module"
+    ],
+    "options_hi": [
+      "include",
+      "add",
+      "import",
+      "module"
+    ],
+    "answer_en": "import",
+    "answer_hi": "import",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 27,
+    "question_en": "Which method adds an item to the end of a list?",
+    "question_hi": "कौन-सी मेथड किसी सूची के अंत में एक आइटम जोड़ती है?",
+    "options_en": [
+      "append()",
+      "push()",
+      "add()",
+      "insert()"
+    ],
+    "options_hi": [
+      "append()",
+      "push()",
+      "add()",
+      "insert()"
+    ],
+    "answer_en": "append()",
+    "answer_hi": "append()",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 28,
+    "question_en": "Which method removes and returns the last item of a list?",
+    "question_hi": "कौन-सी मेथड सूची का आख़िरी आइटम हटाकर लौटाती है?",
+    "options_en": [
+      "pop()",
+      "remove()",
+      "delete()",
+      "discard()"
+    ],
+    "options_hi": [
+      "pop()",
+      "remove()",
+      "delete()",
+      "discard()"
+    ],
+    "answer_en": "pop()",
+    "answer_hi": "pop()",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 29,
+    "question_en": "Which data type stores key-value pairs in Python?",
+    "question_hi": "Python में key-value जोड़ी किस डेटा टाइप में संग्रहीत होती है?",
+    "options_en": [
+      "dict",
+      "list",
+      "set",
+      "tuple"
+    ],
+    "options_hi": [
+      "dict",
+      "list",
+      "set",
+      "tuple"
+    ],
+    "answer_en": "dict",
+    "answer_hi": "dict",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 30,
+    "question_en": "Which method adds an item to a set?",
+    "question_hi": "कौन-सी मेथड सेट में एक आइटम जोड़ती है?",
+    "options_en": [
+      "add()",
+      "append()",
+      "insert()",
+      "push()"
+    ],
+    "options_hi": [
+      "add()",
+      "append()",
+      "insert()",
+      "push()"
+    ],
+    "answer_en": "add()",
+    "answer_hi": "add()",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 31,
+    "question_en": "Which operator is used for floor division in Python?",
+    "question_hi": "Python में floor division के लिए कौन-सा ऑपरेटर उपयोग होता है?",
+    "options_en": [
+      "//",
+      "/",
+      "%",
+      "**"
+    ],
+    "options_hi": [
+      "//",
+      "/",
+      "%",
+      "**"
+    ],
+    "answer_en": "//",
+    "answer_hi": "//",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 32,
+    "question_en": "Which function returns the ASCII character for an integer?",
+    "question_hi": "कौन-सा फ़ंक्शन किसी पूर्णांक के लिए ASCII कैरेक्टर लौटाता है?",
+    "options_en": [
+      "chr()",
+      "ord()",
+      "ascii()",
+      "char()"
+    ],
+    "options_hi": [
+      "chr()",
+      "ord()",
+      "ascii()",
+      "char()"
+    ],
+    "answer_en": "chr()",
+    "answer_hi": "chr()",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 33,
+    "question_en": "Which function returns the integer ASCII value of a character?",
+    "question_hi": "कौन-सा फ़ंक्शन किसी कैरेक्टर का ASCII मान लौटाता है?",
+    "options_en": [
+      "ord()",
+      "chr()",
+      "ascii()",
+      "code()"
+    ],
+    "options_hi": [
+      "ord()",
+      "chr()",
+      "ascii()",
+      "code()"
+    ],
+    "answer_en": "ord()",
+    "answer_hi": "ord()",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 34,
+    "question_en": "Which keyword is used to create an anonymous function in Python?",
+    "question_hi": "Python में anonymous फ़ंक्शन (lambda) बनाने के लिए कौन-सा कीवर्ड उपयोग होता है?",
+    "options_en": [
+      "lambda",
+      "def",
+      "func",
+      "anon"
+    ],
+    "options_hi": [
+      "lambda",
+      "def",
+      "func",
+      "anon"
+    ],
+    "answer_en": "lambda",
+    "answer_hi": "lambda",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 35,
+    "question_en": "Which method returns a view of dictionary keys?",
+    "question_hi": "कौन-सी मेथड डिक्शनरी की keys का view लौटाती है?",
+    "options_en": [
+      "keys()",
+      "items()",
+      "values()",
+      "get()"
+    ],
+    "options_hi": [
+      "keys()",
+      "items()",
+      "values()",
+      "get()"
+    ],
+    "answer_en": "keys()",
+    "answer_hi": "keys()",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 36,
+    "question_en": "Which method returns a list of dictionary values?",
+    "question_hi": "कौन-सी मेथड डिक्शनरी के मानों (values) की सूची लौटाती है?",
+    "options_en": [
+      "values()",
+      "keys()",
+      "items()",
+      "get()"
+    ],
+    "options_hi": [
+      "values()",
+      "keys()",
+      "items()",
+      "get()"
+    ],
+    "answer_en": "values()",
+    "answer_hi": "values()",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 37,
+    "question_en": "Which built-in function sorts an iterable and returns a list?",
+    "question_hi": "कौन-सा बिल्ट-इन फ़ंक्शन एक iterable को sort कर के सूची लौटाता है?",
+    "options_en": [
+      "sorted()",
+      "sort()",
+      "order()",
+      "arrange()"
+    ],
+    "options_hi": [
+      "sorted()",
+      "sort()",
+      "order()",
+      "arrange()"
+    ],
+    "answer_en": "sorted()",
+    "answer_hi": "sorted()",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 38,
+    "question_en": "Which list method sorts the list in-place?",
+    "question_hi": "कौन-सी लिस्ट मेथड सूची को in-place sort करती है?",
+    "options_en": [
+      "sort()",
+      "sorted()",
+      "order()",
+      "arrange()"
+    ],
+    "options_hi": [
+      "sort()",
+      "sorted()",
+      "order()",
+      "arrange()"
+    ],
+    "answer_en": "sort()",
+    "answer_hi": "sort()",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 39,
+    "question_en": "Which method copies a list shallowly?",
+    "question_hi": "कौन-सी मेथड सूची की shallow copy बनाती है?",
+    "options_en": [
+      "copy()",
+      "clone()",
+      "duplicate()",
+      "deepcopy()"
+    ],
+    "options_hi": [
+      "copy()",
+      "clone()",
+      "duplicate()",
+      "deepcopy()"
+    ],
+    "answer_en": "copy()",
+    "answer_hi": "copy()",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 40,
+    "question_en": "Which module is used for regular expressions in Python? (Qset 2)",
+    "question_hi": "Python में regular expressions के लिए कौन-सा मॉड्यूल उपयोग होता है? (Qset 2)",
+    "options_en": [
+      "re",
+      "regex",
+      "rexp",
+      "expr"
+    ],
+    "options_hi": [
+      "re",
+      "regex",
+      "rexp",
+      "expr"
+    ],
+    "answer_en": "re",
+    "answer_hi": "re",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 41,
+    "question_en": "Which statement is used to create an empty block placeholder? (Qset 2)",
+    "question_hi": "खाली ब्लॉक के लिए placeholder बनाने के लिए कौन-सा स्टेटमेंट उपयोग होता है? (Qset 2)",
+    "options_en": [
+      "pass",
+      "noop",
+      "skip",
+      "continue"
+    ],
+    "options_hi": [
+      "pass",
+      "noop",
+      "skip",
+      "continue"
+    ],
+    "answer_en": "pass",
+    "answer_hi": "pass",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 42,
+    "question_en": "Which keyword is used to define an asynchronous function? (Qset 2)",
+    "question_hi": "असिंक्रोनस फ़ंक्शन परिभाषित करने के लिए कौन-सा कीवर्ड उपयोग होता है? (Qset 2)",
+    "options_en": [
+      "async",
+      "await",
+      "defer",
+      "background"
+    ],
+    "options_hi": [
+      "async",
+      "await",
+      "defer",
+      "background"
+    ],
+    "answer_en": "async",
+    "answer_hi": "async",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 43,
+    "question_en": "Which keyword is used to wait for an awaitable in async code? (Qset 2)",
+    "question_hi": "async कोड में awaitable के लिए किस कीवर्ड का उपयोग किया जाता है? (Qset 2)",
+    "options_en": [
+      "await",
+      "async",
+      "yield",
+      "sleep"
+    ],
+    "options_hi": [
+      "await",
+      "async",
+      "yield",
+      "sleep"
+    ],
+    "answer_en": "await",
+    "answer_hi": "await",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 44,
+    "question_en": "Which function opens a file in Python? (Qset 2)",
+    "question_hi": "Python में फ़ाइल खोलने के लिए कौन-सा फ़ंक्शन उपयोग किया जाता है? (Qset 2)",
+    "options_en": [
+      "open()",
+      "file()",
+      "fopen()",
+      "read()"
+    ],
+    "options_hi": [
+      "open()",
+      "file()",
+      "fopen()",
+      "read()"
+    ],
+    "answer_en": "open()",
+    "answer_hi": "open()",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 45,
+    "question_en": "Which mode opens a file for writing (overwrites)? (Qset 2)",
+    "question_hi": "किस mode में फ़ाइल लिखने के लिए खोली जाती है (overwrite)? (Qset 2)",
+    "options_en": [
+      "w",
+      "r",
+      "a",
+      "x"
+    ],
+    "options_hi": [
+      "w",
+      "r",
+      "a",
+      "x"
+    ],
+    "answer_en": "w",
+    "answer_hi": "w",
+    "attempted": false,
+    "selected": ""
+  },
+  {
     "num": 46,
-    "question_en": "What is the output of: bool('False')?",
-    "question_hi": "bool('False') का आउटपुट क्या होगा?",
-    "options_en": ["False", "True", "Error", "None"],
-    "options_hi": ["False", "True", "Error", "None"],
-    "answer_en": "True",
-    "answer_hi": "True",
+    "question_en": "Which mode opens a file for appending? (Qset 2)",
+    "question_hi": "किस mode में फ़ाइल append के लिए खोली जाती है? (Qset 2)",
+    "options_en": [
+      "a",
+      "w",
+      "r",
+      "x"
+    ],
+    "options_hi": [
+      "a",
+      "w",
+      "r",
+      "x"
+    ],
+    "answer_en": "a",
+    "answer_hi": "a",
     "attempted": false,
     "selected": ""
   },
   {
     "num": 47,
-    "question_en": "What is the use of 'with' statement in file handling?",
-    "question_hi": "File handling में 'with' statement का उपयोग क्या है?",
-    "options_en": ["Manages file context", "Closes file manually", "Opens in GUI", "Locks file"],
-    "options_hi": ["Manages file context", "Closes file manually", "Opens in GUI", "Locks file"],
-    "answer_en": "Manages file context",
-    "answer_hi": "Manages file context",
+    "question_en": "Which method returns a substring count in a string? (Qset 2)",
+    "question_hi": "कौन-सी मेथड किसी स्ट्रिंग में किसी सबस्ट्रिंग की गिनती लौटाती है? (Qset 2)",
+    "options_en": [
+      "count()",
+      "find()",
+      "index()",
+      "search()"
+    ],
+    "options_hi": [
+      "count()",
+      "find()",
+      "index()",
+      "search()"
+    ],
+    "answer_en": "count()",
+    "answer_hi": "count()",
     "attempted": false,
     "selected": ""
   },
   {
     "num": 48,
-    "question_en": "How do you install external packages in Python?",
-    "question_hi": "Python में external packages कैसे install करते हैं?",
-    "options_en": ["pip install package", "install package", "python install", "pkg add package"],
-    "options_hi": ["pip install package", "install package", "python install", "pkg add package"],
-    "answer_en": "pip install package",
-    "answer_hi": "pip install package",
+    "question_en": "Which method returns the index of a substring or raises ValueError? (Qset 2)",
+    "question_hi": "कौन-सी मेथड किसी सबस्ट्रिंग का index लौटाती है या ValueError उठाती है? (Qset 2)",
+    "options_en": [
+      "index()",
+      "find()",
+      "locate()",
+      "pos()"
+    ],
+    "options_hi": [
+      "index()",
+      "find()",
+      "locate()",
+      "pos()"
+    ],
+    "answer_en": "index()",
+    "answer_hi": "index()",
     "attempted": false,
     "selected": ""
   },
   {
     "num": 49,
-    "question_en": "What is the use of 'enumerate()'?",
-    "question_hi": "'enumerate()' का उपयोग क्या है?",
-    "options_en": ["Index and value", "Count items", "Loop once", "Map items"],
-    "options_hi": ["Index and value", "Count items", "Loop once", "Map items"],
-    "answer_en": "Index and value",
-    "answer_hi": "Index and value",
+    "question_en": "Which string method converts to lowercase? (Qset 2)",
+    "question_hi": "कौन-सी स्ट्रिंग मेथड lowercase में बदलती है? (Qset 2)",
+    "options_en": [
+      "lower()",
+      "down()",
+      "to_lower()",
+      "min()"
+    ],
+    "options_hi": [
+      "lower()",
+      "down()",
+      "to_lower()",
+      "min()"
+    ],
+    "answer_en": "lower()",
+    "answer_hi": "lower()",
     "attempted": false,
     "selected": ""
   },
   {
     "num": 50,
-    "question_en": "How do you create a set in Python?",
-    "question_hi": "Python में set कैसे बनाते हैं?",
-    "options_en": ["set()", "{}", "[]", "set[]"],
-    "options_hi": ["set()", "{}", "[]", "set[]"],
-    "answer_en": "set()",
-    "answer_hi": "set()",
+    "question_en": "Which string method removes whitespace from both ends? (Qset 2)",
+    "question_hi": "कौन-सी स्ट्रिंग मेथड दोनों किनारों से whitespace हटाती है? (Qset 2)",
+    "options_en": [
+      "strip()",
+      "trim()",
+      "chomp()",
+      "remove()"
+    ],
+    "options_hi": [
+      "strip()",
+      "trim()",
+      "chomp()",
+      "remove()"
+    ],
+    "answer_en": "strip()",
+    "answer_hi": "strip()",
     "attempted": false,
     "selected": ""
-  }
-];
+  }]
 
 
 let currentQuestion = 0; 
