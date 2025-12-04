@@ -196,7 +196,21 @@ const configureRoutes = () => {
   app.get("/serverpdf", (req, res) => {
     res.sendFile(path.join(__dirname, "public", "serverpdf.html"));
   });
+//=================== Certificate Routes ========================
 
+  const applicationRoutes = require("./routes/applicationRoutes");
+app.use("/api", applicationRoutes);
+
+// Add these routes in the static routes section:
+
+app.get("/certificate", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "Certificate-Verification/certificate.html"));
+});
+
+app.get("/apply-certificate", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "Certificate-Verification/Applay-certificate.html"));
+});
+  //==============================================
   app.get("/get-pdf", (req, res) => {
     const pdfPath = path.join(__dirname, "ebookdata", "azenglish.pdf");
     const pdfStream = fs.createReadStream(pdfPath);

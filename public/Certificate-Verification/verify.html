@@ -10,9 +10,39 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
-</head>
 
+</head>
+<style>
+  .buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  text-decoration: none;   /* ✅ UNDERLINE REMOVED */
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  background: linear-gradient(135deg, #16a34a, #22c55e); /* ✅ Green Gradient */
+}
+
+
+</style>
 <body>
   <header>
     <div class="header">
@@ -46,28 +76,43 @@
     </header>
 
     <form id="verifyForm" style="margin-top: 200px;" class="animate__animated animate__pulse animate__faster">
+
       <div class="lower-content">
         <section>
           <div class="form-group">
             <label>Certificate ID or Number
               <span style="color: red; font-weight: bold">*</span></label>
-            <input id="certificateId" type="text" name="" placeholder="eg: RIDXR32354" required />
+            <input id="appIdInput" type="text" name="" placeholder="eg: RIDXR32354" required />
 
           </div>
         </section>
         <div id="span-message">
           <span id="innerspan">hello</span><span id="message">world</span>
         </div>
+
         <div class="buttons">
-          <button type="submit" onclick="func()">
-            <span class="material-symbols-outlined" style="font-size: 20px">
-              new_releases </span>Verify Certificate
-          </button>
-          <button>
-            <span class="material-symbols-outlined" style="font-size: 20px">
-              download </span><a id="detailCertificatePath" target="_blank">Download Certificate</a>
-          </button>
+
+          <!-- Apply Certificate Button -->
+          <a href="/Certificate-Verification/Applay-certificate.html" class="btn">
+            <span class="material-symbols-outlined">new_releases</span>
+            Apply For Certificate
+          </a>
+
+       <button type="button" class="btn" onclick="verify()">
+  <span class="material-symbols-outlined">new_releases</span>
+  Verify Certificate
+</button>
+
+
+
+          <!-- Download Certificate Button -->
+          <a id="detailCertificatePath" target="_blank" class="btn">
+            <span class="material-symbols-outlined">download</span>
+            Download Certificate
+          </a>
+
         </div>
+
         <div style="display: flex; gap: 20px; align-items: center">
           <div id="result" style="display: none"></div>
           <button type="button" id="infoButton" class="info-button"
@@ -140,7 +185,80 @@
     </div>
   </div>
 
-  <script src="verify.js"></script>
+  <script>
+async function verify() {
+  const appId = document.getElementById("appIdInput").value.trim();
+  
+  if (!appId) {
+    alert("Please enter Application ID");
+    return;
+  }
+
+  try {
+    const response = await fetch(`/api/verify/${appId}`);
+    const data = await response.json();
+
+    if (data.success) {
+      if (data.status === "VERIFIED") {
+        // Show download button
+        const downloadBtn = document.getElementById("detailCertificatePath");
+        downloadBtn.href = `/api/download/${appId}`;
+        downloadBtn.style.display = "inline-flex";
+        
+        // Show success message
+        document.getElementById("result").innerHTML = `
+          <div style="color: #16a34a; font-weight: bold;">
+            ✅ Certificate Verified! Ready to download.
+          </div>
+        `;
+        document.getElementById("result").style.display = "block";
+        
+        // Show certificate details
+        document.getElementById("certificateDetails").style.display = "block";
+        document.getElementById("detailCertificateId").textContent = data.applicationId;
+        document.getElementById("detailInternName").textContent = data.name;
+        document.getElementById("detailIssueDate").textContent = new Date().toLocaleDateString();
+        document.getElementById("detailDescription").textContent = `Certificate for ${data.course} - ${data.projectName}`;
+        
+        // Enable download via ID button
+        document.getElementById("downloadById").onclick = function() {
+          window.location.href = `/api/download/${appId}`;
+        };
+        
+      } else {
+        document.getElementById("result").innerHTML = `
+          <div style="color: #d97706; font-weight: bold;">
+            ⏳ Certificate Pending Verification
+          </div>
+          <p>Your certificate is under review. You'll receive an email when verified.</p>
+        `;
+        document.getElementById("result").style.display = "block";
+      }
+    } else {
+      document.getElementById("result").innerHTML = `
+        <div style="color: #dc2626; font-weight: bold;">
+          ❌ Invalid Application ID
+        </div>
+        <p>Please check your Application ID and try again.</p>
+      `;
+      document.getElementById("result").style.display = "block";
+    }
+  } catch (error) {
+    console.error(error);
+    alert("Yore verifying certificate Successfull.");
+  }
+}
+
+// Auto-focus on input
+document.getElementById("appIdInput").focus();
+
+// Enter key support
+document.getElementById("appIdInput").addEventListener("keypress", function(e) {
+  if (e.key === "Enter") {
+    verify();
+  }
+});
+</script>
 </body>
 
 </html>
