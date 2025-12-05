@@ -31,8 +31,9 @@
                 <button class="btn" onclick="prevQuestion()">Previous</button>
                 <button class="btn btn-next" onclick="nextQuestion()">Next</button>
             </div>
+            <button class="btn btn-service" onclick="backToTestService()">Back to Test Service</button>
         </div>
-
+        
         <div class="sidebar">
             <div class="sidebar-content">
                 <div class="status-indicator">
@@ -46,7 +47,16 @@
             </div>
         </div>
     </div>
-
+    
+    <script>
+      
+        function backToTestService() {
+            alert('Redirecting to Test Service...');
+            // In a real implementation, this would redirect to the test service page
+            window.location.href = '/RTS/public/Deshbord/category/test/jee/main/purchase-test.html';
+        }
+      
+    </script>
     <script src="/RTS/public/js/jee/mains/15-test.js"></script>
 </body>
 
