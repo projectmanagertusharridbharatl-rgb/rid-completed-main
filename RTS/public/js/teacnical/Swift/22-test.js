@@ -1,1122 +1,1120 @@
 const questions = [
     {
         "num": 1,
-        "question_en": "What is the chemical formula of Phosphoric Acid?",
-        "question_hi": "फॉस्फोरिक एसिड का रासायनिक सूत्र क्या है?",
-        "options_en": ["H₃PO₄", "H₂PO₄", "HPO₄", "H₄PO₄"],
-        "options_hi": ["H₃PO₄", "H₂PO₄", "HPO₄", "H₄PO₄"],
-        "answer_en": "H₃PO₄",
-        "answer_hi": "H₃PO₄",
+        "question_en": "What is the purpose of the `#[repr(simd)]` attribute on a struct?",
+        "question_hi": "स्ट्रक्चर पर `#[repr(simd)]` एट्रिब्यूट का उद्देश्य क्या है?",
+        "options_en": ["Enable SIMD vectorization for the type", "Force struct alignment", "Disable padding", "Enable parallel processing"],
+        "options_hi": ["टाइप के लिए SIMD वेक्टराइजेशन एनेबल करना", "स्ट्रक्चर अलाइनमेंट फोर्स करना", "पैडिंग डिसेबल करना", "पैरेलल प्रोसेसिंग एनेबल करना"],
+        "answer_en": "Enable SIMD vectorization for the type",
+        "answer_hi": "टाइप के लिए SIMD वेक्टराइजेशन एनेबल करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 2,
-        "question_en": "Who wrote 'Othello'?",
-        "question_hi": "'ओथेलो' किसने लिखा?",
-        "options_en": ["Christopher Marlowe", "William Shakespeare", "Ben Jonson", "John Webster"],
-        "options_hi": ["क्रिस्टोफर मार्लो", "विलियम शेक्सपियर", "बेन जॉनसन", "जॉन वेबस्टर"],
-        "answer_en": "William Shakespeare",
-        "answer_hi": "विलियम शेक्सपियर",
+        "question_en": "What does the `core::intrinsics::forget` function do differently from `mem::forget`?",
+        "question_hi": "`core::intrinsics::forget` फंक्शन `mem::forget` से अलग क्या करता है?",
+        "options_en": ["It's a compiler intrinsic with different guarantees", "It's faster", "It works only with Copy types", "It deallocates memory"],
+        "options_hi": ["यह अलग गारंटी के साथ एक कंपाइलर इंट्रिन्सिक है", "यह तेज है", "यह केवल Copy टाइप्स के साथ काम करता है", "यह मेमोरी डीलोकेट करता है"],
+        "answer_en": "It's a compiler intrinsic with different guarantees",
+        "answer_hi": "यह अलग गारंटी के साथ एक कंपाइलर इंट्रिन्सिक है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 3,
-        "question_en": "What is the value of 25²?",
-        "question_hi": "25² का मान क्या है?",
-        "options_en": ["525", "625", "725", "825"],
-        "options_hi": ["525", "625", "725", "825"],
-        "answer_en": "625",
-        "answer_hi": "625",
+        "question_en": "What is the purpose of the `#[cfg(panic = \"abort\")]` attribute?",
+        "question_hi": "`#[cfg(panic = \"abort\")]` एट्रिब्यूट का उद्देश्य क्या है?",
+        "options_en": ["Conditional compilation when panic strategy is abort", "Enable panic abort", "Disable panic unwinding", "Force immediate termination"],
+        "options_hi": ["पैनिक स्ट्रैटेजी abort होने पर कंडीशनल कंपाइलेशन", "पैनिक abort एनेबल करना", "पैनिक अनवाइंडिंग डिसेबल करना", "तुरंत टर्मिनेशन फोर्स करना"],
+        "answer_en": "Conditional compilation when panic strategy is abort",
+        "answer_hi": "पैनिक स्ट्रैटेजी abort होने पर कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 4,
-        "question_en": "Which part of the human ear is responsible for balance?",
-        "question_hi": "मानव कान का कौन सा भाग संतुलन के लिए जिम्मेदार है?",
-        "options_en": ["Cochlea", "Eardrum", "Semicircular Canals", "Hammer"],
-        "options_hi": ["कोक्लीया", "ईयरड्रम", "सेमिसर्कुलर कैनाल", "हथौड़ा"],
-        "answer_en": "Semicircular Canals",
-        "answer_hi": "सेमिसर्कुलर कैनाल",
+        "question_en": "What does the `core::arch::x86_64::_mm_prefetch` intrinsic optimize?",
+        "question_hi": "`core::arch::x86_64::_mm_prefetch` इंट्रिन्सिक क्या ऑप्टिमाइज़ करता है?",
+        "options_en": ["Cache performance by prefetching data", "Memory allocation", "CPU pipeline", "Branch prediction"],
+        "options_hi": ["डेटा प्रीफेच करके कैश परफॉर्मेंस", "मेमोरी अलोकेशन", "CPU पाइपलाइन", "ब्रांच प्रेडिक्शन"],
+        "answer_en": "Cache performance by prefetching data",
+        "answer_hi": "डेटा प्रीफेच करके कैश परफॉर्मेंस",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 5,
-        "question_en": "What is the SI unit of luminous flux?",
-        "question_hi": "ज्योति फ्लक्स की SI इकाई क्या है?",
-        "options_en": ["Lumen", "Lux", "Candela", "Watt"],
-        "options_hi": ["लुमेन", "लक्स", "कैंडेला", "वाट"],
-        "answer_en": "Lumen",
-        "answer_hi": "लुमेन",
+        "question_en": "What is the difference between `#[inline(always)]` and `#[inline(never)]`?",
+        "question_hi": "`#[inline(always)]` और `#[inline(never)]` में क्या अंतर है?",
+        "options_en": ["always forces inlining, never prevents it", "always is faster", "never works only in debug mode", "always ignores code size"],
+        "options_hi": ["always इनलाइनिंग फोर्स करता है, never उसे रोकता है", "always तेज है", "never केवल डिबग मोड में काम करता है", "always कोड साइज इग्नोर करता है"],
+        "answer_en": "always forces inlining, never prevents it",
+        "answer_hi": "always इनलाइनिंग फोर्स करता है, never उसे रोकता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 6,
-        "question_en": "Who wrote 'Rashmirathi'?",
-        "question_hi": "'रश्मिरथी' किसने लिखी?",
-        "options_en": ["Ramdhari Singh Dinkar", "Harivansh Rai Bachchan", "Suryakant Tripathi Nirala", "Maithili Sharan Gupt"],
-        "options_hi": ["रामधारी सिंह दिनकर", "हरिवंश राय बच्चन", "सूर्यकांत त्रिपाठी निराला", "मैथिलीशरण गुप्त"],
-        "answer_en": "Ramdhari Singh Dinkar",
-        "answer_hi": "रामधारी सिंह दिनकर",
+        "question_en": "What does the `core::sync::atomic::AtomicPtr::fetch_update` method provide?",
+        "question_hi": "`core::sync::atomic::AtomicPtr::fetch_update` मेथड क्या प्रदान करता है?",
+        "options_en": ["Atomic compare-and-swap with transformation", "Pointer arithmetic", "Memory allocation", "Thread synchronization"],
+        "options_hi": ["ट्रांसफॉर्मेशन के साथ एटॉमिक कम्पेयर-एंड-स्वैप", "पॉइंटर अर्थमैटिक", "मेमोरी अलोकेशन", "थ्रेड सिंक्रोनाइज़ेशन"],
+        "answer_en": "Atomic compare-and-swap with transformation",
+        "answer_hi": "ट्रांसफॉर्मेशन के साथ एटॉमिक कम्पेयर-एंड-स्वैप",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 7,
-        "question_en": "Which country is known as the 'Land of the White Elephant'?",
-        "question_hi": "किस देश को 'व्हाइट एलीफेंट की भूमि' के रूप में जाना जाता है?",
-        "options_en": ["Thailand", "India", "Sri Lanka", "Myanmar"],
-        "options_hi": ["थाईलैंड", "भारत", "श्रीलंका", "म्यांमार"],
-        "answer_en": "Thailand",
-        "answer_hi": "थाईलैंड",
+        "question_en": "What is the purpose of the `#[cfg(target_has_atomic = \"128\")]` attribute?",
+        "question_hi": "`#[cfg(target_has_atomic = \"128\")]` एट्रिब्यूट का उद्देश्य क्या है?",
+        "options_en": ["Conditional compilation for 128-bit atomic support", "128-bit memory alignment", "Large atomic operations", "SIMD 128-bit support"],
+        "options_hi": ["128-बिट एटॉमिक सपोर्ट के लिए कंडीशनल कंपाइलेशन", "128-बिट मेमोरी अलाइनमेंट", "लार्ज एटॉमिक ऑपरेशन्स", "SIMD 128-बिट सपोर्ट"],
+        "answer_en": "Conditional compilation for 128-bit atomic support",
+        "answer_hi": "128-बिट एटॉमिक सपोर्ट के लिए कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 8,
-        "question_en": "What is the solution of 4x - 7 = 5?",
-        "question_hi": "4x - 7 = 5 का हल क्या है?",
-        "options_en": ["x = 3", "x = 4", "x = 5", "x = 6"],
-        "options_hi": ["x = 3", "x = 4", "x = 5", "x = 6"],
-        "answer_en": "x = 3",
-        "answer_hi": "x = 3",
+        "question_en": "What does the `core::mem::MaybeUninit::uninit_array` function create?",
+        "question_hi": "`core::mem::MaybeUninit::uninit_array` फंक्शन क्या बनाता है?",
+        "options_en": ["Array of uninitialized MaybeUninit elements", "Initialized array", "Zeroed array", "Raw memory array"],
+        "options_hi": ["अनइनिशियलाइज्ड MaybeUninit एलिमेंट्स का ऐरे", "इनिशियलाइज्ड ऐरे", "जीरोड ऐरे", "रॉ मेमोरी ऐरे"],
+        "answer_en": "Array of uninitialized MaybeUninit elements",
+        "answer_hi": "अनइनिशियलाइज्ड MaybeUninit एलिमेंट्स का ऐरे",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 9,
-        "question_en": "Which gas is used in fluorescent lamps?",
-        "question_hi": "फ्लोरोसेंट लैंप में कौन सी गैस प्रयोग की जाती है?",
-        "options_en": ["Neon", "Argon", "Mercury Vapor", "Xenon"],
-        "options_hi": ["नियॉन", "आर्गन", "पारा वाष्प", "जेनॉन"],
-        "answer_en": "Mercury Vapor",
-        "answer_hi": "पारा वाष्प",
+        "question_en": "What is the purpose of the `core::hint::unreachable_unchecked` in optimized code?",
+        "question_hi": "ऑप्टिमाइज्ड कोड में `core::hint::unreachable_unchecked` का उद्देश्य क्या है?",
+        "options_en": ["Allow compiler to optimize based on unreachable paths", "Cause immediate crash", "Disable bounds checking", "Enable debug assertions"],
+        "options_hi": ["कंपाइलर को अनरीचेबल पाथ्स के आधार पर ऑप्टिमाइज़ करने देना", "तुरंत क्रैश करना", "बाउंड्स चेकिंग डिसेबल करना", "डिबग असेर्शन्स एनेबल करना"],
+        "answer_en": "Allow compiler to optimize based on unreachable paths",
+        "answer_hi": "कंपाइलर को अनरीचेबल पाथ्स के आधार पर ऑप्टिमाइज़ करने देना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 10,
-        "question_en": "What is the chemical symbol for Antimony?",
-        "question_hi": "एंटीमनी का रासायनिक प्रतीक क्या है?",
-        "options_en": ["At", "An", "Sb", "Am"],
-        "options_hi": ["At", "An", "Sb", "Am"],
-        "answer_en": "Sb",
-        "answer_hi": "Sb",
+        "question_en": "What does the `#[repr(align(32))]` attribute ensure for a struct?",
+        "question_hi": "स्ट्रक्चर के लिए `#[repr(align(32))]` एट्रिब्यूट क्या सुनिश्चित करता है?",
+        "options_en": ["32-byte alignment for AVX instructions", "32-bit alignment", "32-element padding", "32-byte size"],
+        "options_hi": ["AVX इंस्ट्रक्शन्स के लिए 32-बाइट अलाइनमेंट", "32-बिट अलाइनमेंट", "32-एलिमेंट पैडिंग", "32-बाइट साइज"],
+        "answer_en": "32-byte alignment for AVX instructions",
+        "answer_hi": "AVX इंस्ट्रक्शन्स के लिए 32-बाइट अलाइनमेंट",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 11,
-        "question_en": "Who discovered the electron?",
-        "question_hi": "इलेक्ट्रॉन की खोज किसने की?",
-        "options_en": ["J.J. Thomson", "Ernest Rutherford", "James Chadwick", "Niels Bohr"],
-        "options_hi": ["जे.जे. थॉमसन", "अर्नेस्ट रदरफोर्ड", "जेम्स चैडविक", "नील्स बोहर"],
-        "answer_en": "J.J. Thomson",
-        "answer_hi": "जे.जे. थॉमसन",
+        "question_en": "What is the purpose of the `core::sync::atomic::fence` with `Ordering::SeqCst`?",
+        "question_hi": "`Ordering::SeqCst` के साथ `core::sync::atomic::fence` का उद्देश्य क्या है?",
+        "options_en": ["Strongest memory ordering guarantees", "Weak ordering only", "Thread-local ordering", "Compiler-only barrier"],
+        "options_hi": ["सबसे मजबूत मेमोरी ऑर्डरिंग गारंटी", "केवल वीक ऑर्डरिंग", "थ्रेड-लोकल ऑर्डरिंग", "केवल कंपाइलर बैरियर"],
+        "answer_en": "Strongest memory ordering guarantees",
+        "answer_hi": "सबसे मजबूत मेमोरी ऑर्डरिंग गारंटी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 12,
-        "question_en": "What is the value of ³√64?",
-        "question_hi": "³√64 का मान क्या है?",
-        "options_en": ["2", "4", "6", "8"],
-        "options_hi": ["2", "4", "6", "8"],
-        "answer_en": "4",
-        "answer_hi": "4",
+        "question_en": "What does the `#[cfg(target_os = \"emscripten\")]` attribute target?",
+        "question_hi": "`#[cfg(target_os = \"emscripten\")]` एट्रिब्यूट किसे टारगेट करता है?",
+        "options_en": ["Emscripten WebAssembly platform", "Embedded systems", "Emscripten JavaScript", "Web browsers"],
+        "options_hi": ["Emscripten WebAssembly प्लेटफॉर्म", "एम्बेडेड सिस्टम्स", "Emscripten JavaScript", "वेब ब्राउज़र्स"],
+        "answer_en": "Emscripten WebAssembly platform",
+        "answer_hi": "Emscripten WebAssembly प्लेटफॉर्म",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 13,
-        "question_en": "Which planet has the shortest day?",
-        "question_hi": "किस ग्रह का दिन सबसे छोटा है?",
-        "options_en": ["Jupiter", "Saturn", "Venus", "Mercury"],
-        "options_hi": ["बृहस्पति", "शनि", "शुक्र", "बुध"],
-        "answer_en": "Jupiter",
-        "answer_hi": "बृहस्पति",
+        "question_en": "What is the difference between `core::ptr::read` and `core::ptr::read_volatile`?",
+        "question_hi": "`core::ptr::read` और `core::ptr::read_volatile` में क्या अंतर है?",
+        "options_en": ["read_volatile prevents compiler optimizations", "read is faster", "read_volatile works only with atomics", "read requires alignment"],
+        "options_hi": ["read_volatile कंपाइलर ऑप्टिमाइज़ेशन को रोकता है", "read तेज है", "read_volatile केवल एटॉमिक्स के साथ काम करता है", "read को अलाइनमेंट की जरूरत है"],
+        "answer_en": "read_volatile prevents compiler optimizations",
+        "answer_hi": "read_volatile कंपाइलर ऑप्टिमाइज़ेशन को रोकता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 14,
-        "question_en": "What is the formula for area of a rhombus?",
-        "question_hi": "समचतुर्भुज के क्षेत्रफल का सूत्र क्या है?",
-        "options_en": ["½ × d₁ × d₂", "side²", "base × height", "πr²"],
-        "options_hi": ["½ × d₁ × d₂", "भुजा²", "आधार × ऊंचाई", "πr²"],
-        "answer_en": "½ × d₁ × d₂",
-        "answer_hi": "½ × d₁ × d₂",
+        "question_en": "What does the `core::arch::global_asm!` macro allow you to do?",
+        "question_hi": "`core::arch::global_asm!` मैक्रो आपको क्या करने की अनुमति देता है?",
+        "options_en": ["Include assembly in global module scope", "Inline assembly in functions", "Platform-specific code", "Assembly macro generation"],
+        "options_hi": ["ग्लोबल मॉड्यूल स्कोप में असेंबली इन्क्लूड करना", "फंक्शन्स में इनलाइन असेंबली", "प्लेटफॉर्म-स्पेसिफिक कोड", "असेंबली मैक्रो जनरेशन"],
+        "answer_en": "Include assembly in global module scope",
+        "answer_hi": "ग्लोबल मॉड्यूल स्कोप में असेंबली इन्क्लूड करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 15,
-        "question_en": "Which vitamin is essential for collagen synthesis?",
-        "question_hi": "कोलेजन संश्लेषण के लिए कौन सा विटामिन आवश्यक है?",
-        "options_en": ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin K"],
-        "options_hi": ["विटामिन A", "विटामिन C", "विटामिन D", "विटामिन K"],
-        "answer_en": "Vitamin C",
-        "answer_hi": "विटामिन C",
+        "question_en": "What is the purpose of the `#[cfg(not(no_asm))]` attribute?",
+        "question_hi": "`#[cfg(not(no_asm))]` एट्रिब्यूट का उद्देश्य क्या है?",
+        "options_en": ["Conditional compilation when inline assembly is available", "Disable assembly", "Enable assembly optimization", "Platform assembly support"],
+        "options_hi": ["इनलाइन असेंबली उपलब्ध होने पर कंडीशनल कंपाइलेशन", "असेंबली डिसेबल करना", "असेंबली ऑप्टिमाइज़ेशन एनेबल करना", "प्लेटफॉर्म असेंबली सपोर्ट"],
+        "answer_en": "Conditional compilation when inline assembly is available",
+        "answer_hi": "इनलाइन असेंबली उपलब्ध होने पर कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 16,
-        "question_en": "What is the chemical name of Green Vitriol?",
-        "question_hi": "ग्रीन विट्रियल का रासायनिक नाम क्या है?",
-        "options_en": ["Ferrous Sulfate", "Copper Sulfate", "Zinc Sulfate", "Magnesium Sulfate"],
-        "options_hi": ["फेरस सल्फेट", "कॉपर सल्फेट", "जिंक सल्फेट", "मैग्नीशियम सल्फेट"],
-        "answer_en": "Ferrous Sulfate",
-        "answer_hi": "फेरस सल्फेट",
+        "question_en": "What does the `core::intrinsics::rotate_left` function optimize?",
+        "question_hi": "`core::intrinsics::rotate_left` फंक्शन क्या ऑप्टिमाइज़ करता है?",
+        "options_en": ["Bit rotation using CPU instructions", "Memory rotation", "Array rotation", "Pointer rotation"],
+        "options_hi": ["CPU इंस्ट्रक्शन्स का उपयोग करके बिट रोटेशन", "मेमोरी रोटेशन", "ऐरे रोटेशन", "पॉइंटर रोटेशन"],
+        "answer_en": "Bit rotation using CPU instructions",
+        "answer_hi": "CPU इंस्ट्रक्शन्स का उपयोग करके बिट रोटेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 17,
-        "question_en": "Who was the first Indian woman to climb Mount Everest?",
-        "question_hi": "माउंट एवरेस्ट पर चढ़ने वाली पहली भारतीय महिला कौन थीं?",
-        "options_en": ["Bachendri Pal", "Santosh Yadav", "Arunima Sinha", "Premlata Agarwal"],
-        "options_hi": ["बछेंद्री पाल", "संतोष यादव", "अरुणिमा सिन्हा", "प्रेमलता अग्रवाल"],
-        "answer_en": "Bachendri Pal",
-        "answer_hi": "बछेंद्री पाल",
+        "question_en": "What is the purpose of the `#[cfg(target_feature = \"avx2\")]` attribute?",
+        "question_hi": "`#[cfg(target_feature = \"avx2\")]` एट्रिब्यूट का उद्देश्य क्या है?",
+        "options_en": ["Conditional compilation for AVX2 instruction support", "AVX2 code generation", "Vector math optimization", "SIMD 256-bit support"],
+        "options_hi": ["AVX2 इंस्ट्रक्शन सपोर्ट के लिए कंडीशनल कंपाइलेशन", "AVX2 कोड जनरेशन", "वेक्टर मैथ ऑप्टिमाइज़ेशन", "SIMD 256-बिट सपोर्ट"],
+        "answer_en": "Conditional compilation for AVX2 instruction support",
+        "answer_hi": "AVX2 इंस्ट्रक्शन सपोर्ट के लिए कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 18,
-        "question_en": "What is the value of cos 45°?",
-        "question_hi": "cos 45° का मान क्या है?",
-        "options_en": ["1/√2", "√3/2", "1/2", "1"],
-        "options_hi": ["1/√2", "√3/2", "1/2", "1"],
-        "answer_en": "1/√2",
-        "answer_hi": "1/√2",
+        "question_en": "What does the `core::mem::transmute_copy` function require for safety?",
+        "question_hi": "सुरक्षा के लिए `core::mem::transmute_copy` फंक्शन को क्या चाहिए?",
+        "options_en": ["Source and destination types must have same size", "Types must be Copy", "Memory must be aligned", "Pointers must be valid"],
+        "options_hi": ["सोर्स और डेस्टिनेशन टाइप्स का साइज समान होना चाहिए", "टाइप्स Copy होने चाहिए", "मेमोरी अलाइन्ड होनी चाहिए", "पॉइंटर्स वैलिड होने चाहिए"],
+        "answer_en": "Source and destination types must have same size",
+        "answer_hi": "सोर्स और डेस्टिनेशन टाइप्स का साइज समान होना चाहिए",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 19,
-        "question_en": "Which part of the cell contains chromosomes?",
-        "question_hi": "कोशिका का कौन सा भाग गुणसूत्र रखता है?",
-        "options_en": ["Cytoplasm", "Nucleus", "Mitochondria", "Ribosome"],
-        "options_hi": ["कोशिका द्रव्य", "केंद्रक", "माइटोकॉन्ड्रिया", "राइबोसोम"],
-        "answer_en": "Nucleus",
-        "answer_hi": "केंद्रक",
+        "question_en": "What is the purpose of the `core::sync::atomic::AtomicU16` type?",
+        "question_hi": "`core::sync::atomic::AtomicU16` टाइप का उद्देश्य क्या है?",
+        "options_en": ["Thread-safe atomic operations on 16-bit unsigned integers", "16-bit memory addresses", "Small atomic counters", "Hardware register access"],
+        "options_hi": ["16-बिट अनसाइन्ड इंटीजर्स पर थ्रेड-सेफ एटॉमिक ऑपरेशन्स", "16-बिट मेमोरी एड्रेसेस", "स्मॉल एटॉमिक काउंटर्स", "हार्डवेयर रजिस्टर एक्सेस"],
+        "answer_en": "Thread-safe atomic operations on 16-bit unsigned integers",
+        "answer_hi": "16-बिट अनसाइन्ड इंटीजर्स पर थ्रेड-सेफ एटॉमिक ऑपरेशन्स",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 20,
-        "question_en": "What is the speed of sound in water?",
-        "question_hi": "पानी में ध्वनि की गति क्या है?",
-        "options_en": ["340 m/s", "1500 m/s", "5000 m/s", "300000 m/s"],
-        "options_hi": ["340 m/s", "1500 m/s", "5000 m/s", "300000 m/s"],
-        "answer_en": "1500 m/s",
-        "answer_hi": "1500 m/s",
+        "question_en": "What does the `#[cfg(not(no_i128))]` attribute enable?",
+        "question_hi": "`#[cfg(not(no_i128))]` एट्रिब्यूट क्या एनेबल करता है?",
+        "options_en": ["Conditional compilation for 128-bit integer support", "128-bit floating point", "Large number support", "Big integer arithmetic"],
+        "options_hi": ["128-बिट इंटीजर सपोर्ट के लिए कंडीशनल कंपाइलेशन", "128-बिट फ्लोटिंग पॉइंट", "लार्ज नंबर सपोर्ट", "बिग इंटीजर अर्थमैटिक"],
+        "answer_en": "Conditional compilation for 128-bit integer support",
+        "answer_hi": "128-बिट इंटीजर सपोर्ट के लिए कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 21,
-        "question_en": "Which is the largest delta in the world?",
-        "question_hi": "दुनिया का सबसे बड़ा डेल्टा कौन सा है?",
-        "options_en": ["Ganges-Brahmaputra", "Nile Delta", "Mississippi Delta", "Mekong Delta"],
-        "options_hi": ["गंगा-ब्रह्मपुत्र", "नील डेल्टा", "मिसिसिपी डेल्टा", "मेकांग डेल्टा"],
-        "answer_en": "Ganges-Brahmaputra",
-        "answer_hi": "गंगा-ब्रह्मपुत्र",
+        "question_en": "What is the purpose of the `core::arch::x86_64::_mm256_load_ps` intrinsic?",
+        "question_hi": "`core::arch::x86_64::_mm256_load_ps` इंट्रिन्सिक का उद्देश्य क्या है?",
+        "options_en": ["Load 256-bit vector of single-precision floats", "Load 256-bit integer", "Store vector data", "Move aligned data"],
+        "options_hi": ["सिंगल-प्रिसिजन फ्लोट्स का 256-बिट वेक्टर लोड करना", "256-बिट इंटीजर लोड करना", "वेक्टर डेटा स्टोर करना", "अलाइन्ड डेटा मूव करना"],
+        "answer_en": "Load 256-bit vector of single-precision floats",
+        "answer_hi": "सिंगल-प्रिसिजन फ्लोट्स का 256-बि�ट वेक्टर लोड करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 22,
-        "question_en": "What is the chemical formula of Ozone?",
-        "question_hi": "ओजोन का रासायनिक सूत्र क्या है?",
-        "options_en": ["O₂", "O₃", "O₄", "HO"],
-        "options_hi": ["O₂", "O₃", "O₄", "HO"],
-        "answer_en": "O₃",
-        "answer_hi": "O₃",
+        "question_en": "What does the `#[repr(C, u8)]` combination on an enum ensure?",
+        "question_hi": "एनम पर `#[repr(C, u8)]` कॉम्बिनेशन क्या सुनिश्चित करता है?",
+        "options_en": ["C-compatible layout with u8 discriminant", "u8 size with C alignment", "C layout and u8 packing", "Platform-specific u8 representation"],
+        "options_hi": ["u8 डिस्क्रिमिनेंट के साथ C-कम्पैटिबल लेआउट", "C अलाइनमेंट के साथ u8 साइज", "C लेआउट और u8 पैकिंग", "प्लेटफॉर्म-स्पेसिफिक u8 रिप्रेजेंटेशन"],
+        "answer_en": "C-compatible layout with u8 discriminant",
+        "answer_hi": "u8 डिस्क्रिमिनेंट के साथ C-कम्पैटिबल लेआउट",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 23,
-        "question_en": "Who wrote 'King Lear'?",
-        "question_hi": "'किंग लियर' किसने लिखा?",
-        "options_en": ["Christopher Marlowe", "William Shakespeare", "Ben Jonson", "John Webster"],
-        "options_hi": ["क्रिस्टोफर मार्लो", "विलियम शेक्सपियर", "बेन जॉनसन", "जॉन वेबस्टर"],
-        "answer_en": "William Shakespeare",
-        "answer_hi": "विलियम शेक्सपियर",
+        "question_en": "What is the purpose of the `core::sync::atomic::AtomicBool::fetch_nand` method?",
+        "question_hi": "`core::sync::atomic::AtomicBool::fetch_nand` मेथड का उद्देश्य क्या है?",
+        "options_en": ["Atomic NAND operation returning previous value", "Logical AND operation", "Bitwise NAND", "Boolean negation"],
+        "options_hi": ["पिछली वैल्यू रिटर्न करते हुए एटॉमिक NAND ऑपरेशन", "लॉजिकल AND ऑपरेशन", "बिटवाइज NAND", "बूलियन नेगेशन"],
+        "answer_en": "Atomic NAND operation returning previous value",
+        "answer_hi": "पिछली वैल्यू रिटर्न करते हुए एटॉमिक NAND ऑपरेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 24,
-        "question_en": "What is the formula for refractive index?",
-        "question_hi": "अपवर्तनांक का सूत्र क्या है?",
-        "options_en": ["sin i/sin r", "sin r/sin i", "1/sin i", "1/sin r"],
-        "options_hi": ["sin i/sin r", "sin r/sin i", "1/sin i", "1/sin r"],
-        "answer_en": "sin i/sin r",
-        "answer_hi": "sin i/sin r",
+        "question_en": "What does the `#[cfg(target_arch = \"aarch64\")]` attribute target?",
+        "question_hi": "`#[cfg(target_arch = \"aarch64\")]` एट्रिब्यूट किसे टारगेट करता है?",
+        "options_en": ["ARM 64-bit architecture", "ARM 32-bit", "Android ARM", "Apple Silicon"],
+        "options_hi": ["ARM 64-बिट आर्किटेक्चर", "ARM 32-बिट", "एंड्रॉयड ARM", "एप्पल सिलिकॉन"],
+        "answer_en": "ARM 64-bit architecture",
+        "answer_hi": "ARM 64-बिट आर्किटेक्चर",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 25,
-        "question_en": "Which gas is produced during fermentation?",
-        "question_hi": "किण्वन के दौरान कौन सी गैस उत्पन्न होती है?",
-        "options_en": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
-        "options_hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "नाइट्रोजन", "हाइड्रोजन"],
-        "answer_en": "Carbon Dioxide",
-        "answer_hi": "कार्बन डाइऑक्साइड",
+        "question_en": "What is the purpose of the `core::mem::MaybeUninit::slice_assume_init_ref`?",
+        "question_hi": "`core::mem::MaybeUninit::slice_assume_init_ref` का उद्देश्य क्या है?",
+        "options_en": ["Get reference to slice of initialized values", "Initialize slice elements", "Check slice initialization", "Copy slice data"],
+        "options_hi": ["इनिशियलाइज्ड वैल्यूज के स्लाइस का रेफरेंस प्राप्त करना", "स्लाइस एलिमेंट्स इनिशियलाइज़ करना", "स्लाइस इनिशियलाइज़ेशन चेक करना", "स्लाइस डेटा कॉपी करना"],
+        "answer_en": "Get reference to slice of initialized values",
+        "answer_hi": "इनिशियलाइज्ड वैल्यूज के स्लाइस का रेफरेंस प्राप्त करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 26,
-        "question_en": "What is the value of (a + b)³?",
-        "question_hi": "(a + b)³ का मान क्या है?",
-        "options_en": ["a³ + b³", "a³ + 3a²b + 3ab² + b³", "a³ - 3a²b + 3ab² - b³", "a³ + b³ + 3ab"],
-        "options_hi": ["a³ + b³", "a³ + 3a²b + 3ab² + b³", "a³ - 3a²b + 3ab² - b³", "a³ + b³ + 3ab"],
-        "answer_en": "a³ + 3a²b + 3ab² + b³",
-        "answer_hi": "a³ + 3a²b + 3ab² + b³",
+        "question_en": "What does the `core::sync::atomic::Ordering::Release` prevent?",
+        "question_hi": "`core::sync::atomic::Ordering::Release` क्या रोकता है?",
+        "options_en": ["Previous operations from being reordered after", "Subsequent operations from being reordered before", "All reordering", "Only compiler reordering"],
+        "options_hi": ["प्रीवियस ऑपरेशन्स को इसके बाद रीऑर्डर होने से रोकता है", "सब्सीक्वेंट ऑपरेशन्स को इससे पहले रीऑर्डर होने से रोकता है", "सभी रीऑर्डरिंग", "केवल कंपाइलर रीऑर्डरिंग"],
+        "answer_en": "Previous operations from being reordered after",
+        "answer_hi": "प्रीवियस ऑपरेशन्स को इसके बाद रीऑर्डर होने से रोकता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 27,
-        "question_en": "Which is the largest saltwater lake in India?",
-        "question_hi": "भारत की सबसे बड़ी खारे पानी की झील कौन सी है?",
-        "options_en": ["Chilika Lake", "Sambhar Lake", "Pulicat Lake", "Loktak Lake"],
-        "options_hi": ["चिल्का झील", "सांभर झील", "पुलिकट झील", "लोकटक झील"],
-        "answer_en": "Chilika Lake",
-        "answer_hi": "चिल्का झील",
+        "question_en": "What is the purpose of the `#[cfg(target_vendor = \"apple\")]` attribute?",
+        "question_hi": "`#[cfg(target_vendor = \"apple\")]` एट्रिब्यूट का उद्देश्य क्या है?",
+        "options_en": ["Conditional compilation for Apple platforms", "iOS and macOS only", "Apple hardware features", "Swift interoperability"],
+        "options_hi": ["एप्पल प्लेटफॉर्म्स के लिए कंडीशनल कंपाइलेशन", "केवल iOS और macOS", "एप्पल हार्डवेयर फीचर्स", "Swift इंटरऑपरेबिलिटी"],
+        "answer_en": "Conditional compilation for Apple platforms",
+        "answer_hi": "एप्पल प्लेटफॉर्म्स के लिए कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 28,
-        "question_en": "What is the chemical symbol for Bismuth?",
-        "question_hi": "बिस्मथ का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Bi", "Bs", "Bt", "Bm"],
-        "options_hi": ["Bi", "Bs", "Bt", "Bm"],
-        "answer_en": "Bi",
-        "answer_hi": "Bi",
+        "question_en": "What does the `core::arch::x86_64::_mm_set1_epi8` intrinsic create?",
+        "question_hi": "`core::arch::x86_64::_mm_set1_epi8` इंट्रिन्सिक क्या बनाता है?",
+        "options_en": ["SIMD vector with all bytes set to same value", "Single byte vector", "8-bit integer array", "Repeated byte pattern"],
+        "options_hi": ["सभी बाइट्स को समान वैल्यू पर सेट करके SIMD वेक्टर", "सिंगल बाइट वेक्टर", "8-बिट इंटीजर ऐरे", "रिपीटेड बाइट पैटर्न"],
+        "answer_en": "SIMD vector with all bytes set to same value",
+        "answer_hi": "सभी बाइट्स को समान वैल्यू पर सेट करके SIMD वेक्टर",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 29,
-        "question_en": "Who is known as the Father of Genetics?",
-        "question_hi": "आनुवंशिकी के पिता के रूप में किसे जाना जाता है?",
-        "options_en": ["Gregor Mendel", "Charles Darwin", "James Watson", "Francis Crick"],
-        "options_hi": ["ग्रेगर मेंडल", "चार्ल्स डार्विन", "जेम्स वाटसन", "फ्रांसिस क्रिक"],
-        "answer_en": "Gregor Mendel",
-        "answer_hi": "ग्रेगर मेंडल",
+        "question_en": "What is the purpose of the `core::ptr::NonNull::cast` method?",
+        "question_hi": "`core::ptr::NonNull::cast` मेथड का उद्देश्य क्या है?",
+        "options_en": ["Cast NonNull pointer to different type", "Change pointer value", "Convert to raw pointer", "Adjust pointer alignment"],
+        "options_hi": ["NonNull पॉइंटर को अलग टाइप में कास्ट करना", "पॉइंटर वैल्यू बदलना", "रॉ पॉइंटर में कन्वर्ट करना", "पॉइंटर अलाइनमेंट एडजस्ट करना"],
+        "answer_en": "Cast NonNull pointer to different type",
+        "answer_hi": "NonNull पॉइंटर को अलग टाइप में कास्ट करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 30,
-        "question_en": "Which part of the plant is modified into a potato?",
-        "question_hi": "पौधे का कौन सा भाग आलू में रूपांतरित होता है?",
-        "options_en": ["Root", "Stem", "Leaf", "Flower"],
-        "options_hi": ["जड़", "तना", "पत्ती", "फूल"],
-        "answer_en": "Stem",
-        "answer_hi": "तना",
+        "question_en": "What does the `#[cfg(not(no_panic_unwind))]` attribute enable?",
+        "question_hi": "`#[cfg(not(no_panic_unwind))]` एट्रिब्यूट क्या एनेबल करता है?",
+        "options_en": ["Conditional compilation when panic unwinding is available", "Disable panic unwinding", "Enable panic recovery", "Stack unwinding support"],
+        "options_hi": ["पैनिक अनवाइंडिंग उपलब्ध होने पर कंडीशनल कंपाइलेशन", "पैनिक अनवाइंडिंग डिसेबल करना", "पैनिक रिकवरी एनेबल करना", "स्टैक अनवाइंडिंग सपोर्ट"],
+        "answer_en": "Conditional compilation when panic unwinding is available",
+        "answer_hi": "पैनिक अनवाइंडिंग उपलब्ध होने पर कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 31,
-        "question_en": "What is the unit of magnetic induction?",
-        "question_hi": "चुंबकीय प्रेरण की इकाई क्या है?",
-        "options_en": ["Tesla", "Weber", "Henry", "Farad"],
-        "options_hi": ["टेस्ला", "वेबर", "हेनरी", "फैरड"],
-        "answer_en": "Tesla",
-        "answer_hi": "टेस्ला",
+        "question_en": "What is the purpose of the `core::sync::atomic::AtomicI32::fetch_max` method?",
+        "question_hi": "`core::sync::atomic::AtomicI32::fetch_max` मेथड का उद्देश्य क्या है?",
+        "options_en": ["Atomic maximum operation returning previous value", "Find maximum value", "Compare and set maximum", "Atomic comparison"],
+        "options_hi": ["पिछली वैल्यू रिटर्न करते हुए एटॉमिक मैक्सिमम ऑपरेशन", "मैक्सिमम वैल्यू ढूंढना", "कम्पेयर और मैक्सिमम सेट करना", "एटॉमिक कम्पेयरिजन"],
+        "answer_en": "Atomic maximum operation returning previous value",
+        "answer_hi": "पिछली वैल्यू रिटर्न करते हुए एटॉमिक मैक्सिमम ऑपरेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 32,
-        "question_en": "Which is the most abundant element in the universe?",
-        "question_hi": "ब्रह्मांड में सबसे प्रचुर तत्व कौन सा है?",
-        "options_en": ["Oxygen", "Hydrogen", "Helium", "Carbon"],
-        "options_hi": ["ऑक्सीजन", "हाइड्रोजन", "हीलियम", "कार्बन"],
-        "answer_en": "Hydrogen",
-        "answer_hi": "हाइड्रोजन",
+        "question_en": "What does the `#[cfg(target_abi = \"eabi\")]` attribute target?",
+        "question_hi": "`#[cfg(target_abi = \"eabi\")]` एट्रिब्यूट किसे टारगेट करता है?",
+        "options_en": ["Embedded ABI for ARM systems", "Linux ABI", "Windows ABI", "Generic EABI"],
+        "options_hi": ["ARM सिस्टम्स के लिए एम्बेडेड ABI", "लिनक्स ABI", "विंडोज ABI", "जेनेरिक EABI"],
+        "answer_en": "Embedded ABI for ARM systems",
+        "answer_hi": "ARM सिस्टम्स के लिए एम्बेडेड ABI",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 33,
-        "question_en": "What is the chemical formula of Calcium Phosphate?",
-        "question_hi": "कैल्शियम फॉस्फेट का रासायनिक सूत्र क्या है?",
-        "options_en": ["Ca₃(PO₄)₂", "CaPO₄", "Ca₂PO₄", "Ca(PO₄)₂"],
-        "options_hi": ["Ca₃(PO₄)₂", "CaPO₄", "Ca₂PO₄", "Ca(PO₄)₂"],
-        "answer_en": "Ca₃(PO₄)₂",
-        "answer_hi": "Ca₃(PO₄)₂",
+        "question_en": "What is the purpose of the `core::mem::MaybeUninit::write_slice` method?",
+        "question_hi": "`core::mem::MaybeUninit::write_slice` मेथड का उद्देश्य क्या है?",
+        "options_en": ["Initialize slice of MaybeUninit from slice of values", "Write to initialized slice", "Copy slice data", "Initialize with default values"],
+        "options_hi": ["वैल्यूज के स्लाइस से MaybeUninit के स्लाइस को इनिशियलाइज़ करना", "इनिशियलाइज्ड स्लाइस में राइट करना", "स्लाइस डेटा कॉपी करना", "डिफॉल्ट वैल्यूज के साथ इनिशियलाइज़ करना"],
+        "answer_en": "Initialize slice of MaybeUninit from slice of values",
+        "answer_hi": "वैल्यूज के स्लाइस से MaybeUninit के स्लाइस को इनिशियलाइज़ करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 34,
-        "question_en": "Who invented the Steam Engine?",
-        "question_hi": "स्टीम इंजन का आविष्कार किसने किया?",
-        "options_en": ["James Watt", "Thomas Newcomen", "George Stephenson", "Richard Trevithick"],
-        "options_hi": ["जेम्स वाट", "थॉमस न्यूकमेन", "जॉर्ज स्टीफेंसन", "रिचर्ड ट्रेविथिक"],
-        "answer_en": "James Watt",
-        "answer_hi": "जेम्स वाट",
+        "question_en": "What does the `core::sync::atomic::AtomicUsize::fetch_sub` with `Ordering::AcqRel` provide?",
+        "question_hi": "`Ordering::AcqRel` के साथ `core::sync::atomic::AtomicUsize::fetch_sub` क्या प्रदान करता है?",
+        "options_en": ["Both acquire and release semantics for subtraction", "Only acquire semantics", "Only release semantics", "Relaxed ordering"],
+        "options_hi": ["सबट्रैक्शन के लिए एक्वायर और रिलीज दोनों सेमैंटिक्स", "केवल एक्वायर सेमैंटिक्स", "केवल रिलीज सेमैंटिक्स", "रिलैक्स्ड ऑर्डरिंग"],
+        "answer_en": "Both acquire and release semantics for subtraction",
+        "answer_hi": "सबट्रैक्शन के लिए एक्वायर और रिलीज दोनों सेमैंटिक्स",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 35,
-        "question_en": "What is the value of 17 × 18?",
-        "question_hi": "17 × 18 का मान क्या है?",
-        "options_en": ["296", "306", "316", "326"],
-        "options_hi": ["296", "306", "316", "326"],
-        "answer_en": "306",
-        "answer_hi": "306",
+        "question_en": "What is the purpose of the `#[cfg(target_has_atomic_equal_alignment = \"ptr\")]` attribute?",
+        "question_hi": "`#[cfg(target_has_atomic_equal_alignment = \"ptr\")]` एट्रिब्यूट का उद्देश्य क्या है?",
+        "options_en": ["Check if atomic pointers have same alignment as regular pointers", "Verify pointer alignment", "Check atomic size", "Platform alignment support"],
+        "options_hi": ["चेक करना कि एटॉमिक पॉइंटर्स की अलाइनमेंट रेगुलर पॉइंटर्स के समान है", "पॉइंटर अलाइनमेंट वेरिफाई करना", "एटॉमिक साइज चेक करना", "प्लेटफॉर्म अलाइनमेंट सपोर्ट"],
+        "answer_en": "Check if atomic pointers have same alignment as regular pointers",
+        "answer_hi": "चेक करना कि एटॉमिक पॉइंटर्स की अलाइनमेंट रेगुलर पॉइंटर्स के समान है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 36,
-        "question_en": "Which gas is used in neon signs?",
-        "question_hi": "नियॉन साइनों में कौन सी गैस प्रयोग की जाती है?",
-        "options_en": ["Helium", "Neon", "Argon", "Xenon"],
-        "options_hi": ["हीलियम", "नियॉन", "आर्गन", "जेनॉन"],
-        "answer_en": "Neon",
-        "answer_hi": "नियॉन",
+        "question_en": "What does the `core::arch::x86_64::_mm_shuffle_epi8` intrinsic do?",
+        "question_hi": "`core::arch::x86_64::_mm_shuffle_epi8` इंट्रिन्सिक क्या करता है?",
+        "options_en": ["Shuffle bytes in SIMD vector according to mask", "Shift bytes left", "Rotate bytes", "Reverse byte order"],
+        "options_hi": ["मास्क के अनुसार SIMD वेक्टर में बाइट्स शफल करना", "बाइट्स को लेफ्ट शिफ्ट करना", "बाइट्स रोटेट करना", "बाइट ऑर्डर रिवर्स करना"],
+        "answer_en": "Shuffle bytes in SIMD vector according to mask",
+        "answer_hi": "मास्क के अनुसार SIMD वेक्टर में बाइट्स शफल करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 37,
-        "question_en": "What is the chemical symbol for Iodine?",
-        "question_hi": "आयोडीन का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Io", "Id", "I", "In"],
-        "options_hi": ["Io", "Id", "I", "In"],
-        "answer_en": "I",
-        "answer_hi": "I",
+        "question_en": "What is the purpose of the `#[cfg(not(no_thin_lto))]` attribute?",
+        "question_hi": "`#[cfg(not(no_thin_lto))]` एट्रिब्यूट का उद्देश्य क्या है?",
+        "options_en": ["Conditional compilation when ThinLTO is available", "Disable LTO", "Enable link-time optimization", "Thin binary generation"],
+        "options_hi": ["ThinLTO उपलब्ध होने पर कंडीशनल कंपाइलेशन", "LTO डिसेबल करना", "लिंक-टाइम ऑप्टिमाइज़ेशन एनेबल करना", "थिन बाइनरी जनरेशन"],
+        "answer_en": "Conditional compilation when ThinLTO is available",
+        "answer_hi": "ThinLTO उपलब्ध होने पर कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 38,
-        "question_en": "Who wrote 'Mrichchhakatika'?",
-        "question_hi": "'मृच्छकटिका' किसने लिखा?",
-        "options_en": ["Sudraka", "Kalidasa", "Bhavabhuti", "Bhasa"],
-        "options_hi": ["शूद्रक", "कालिदास", "भवभूति", "भास"],
-        "answer_en": "Sudraka",
-        "answer_hi": "शूद्रक",
+        "question_en": "What does the `core::sync::atomic::AtomicPtr::into_inner` method do?",
+        "question_hi": "`core::sync::atomic::AtomicPtr::into_inner` मेथड क्या करता है?",
+        "options_en": ["Consume AtomicPtr and return the raw pointer", "Get inner value", "Convert to shared pointer", "Extract pointer value"],
+        "options_hi": ["AtomicPtr को कंज्यूम करना और रॉ पॉइंटर रिटर्न करना", "इनर वैल्यू प्राप्त करना", "शेयर्ड पॉइंटर में कन्वर्ट करना", "पॉइंटर वैल्यू एक्सट्रैक्ट करना"],
+        "answer_en": "Consume AtomicPtr and return the raw pointer",
+        "answer_hi": "AtomicPtr को कंज्यूम करना और रॉ पॉइंटर रिटर्न करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 39,
-        "question_en": "What is the formula for centripetal force?",
-        "question_hi": "अभिकेंद्रीय बल का सूत्र क्या है?",
-        "options_en": ["mv²/r", "ma", "mg", "kx"],
-        "options_hi": ["mv²/r", "ma", "mg", "kx"],
-        "answer_en": "mv²/r",
-        "answer_hi": "mv²/r",
+        "question_en": "What is the purpose of the `#[cfg(target_endian = \"big\")]` attribute?",
+        "question_hi": "`#[cfg(target_endian = \"big\")]` एट्रिब्यूट का उद्देश्य क्या है?",
+        "options_en": ["Conditional compilation for big-endian systems", "Enable big-endian mode", "Byte order conversion", "Network byte order"],
+        "options_hi": ["बिग-एंडियन सिस्टम्स के लिए कंडीशनल कंपाइलेशन", "बिग-एंडियन मोड एनेबल करना", "बाइट ऑर्डर कन्वर्जन", "नेटवर्क बाइट ऑर्डर"],
+        "answer_en": "Conditional compilation for big-endian systems",
+        "answer_hi": "बिग-एंडियन सिस्टम्स के लिए कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 40,
-        "question_en": "Which vitamin deficiency causes Pellagra?",
-        "question_hi": "किस विटामिन की कमी से पेलाग्रा होता है?",
-        "options_en": ["Vitamin B1", "Vitamin B3", "Vitamin B12", "Vitamin C"],
-        "options_hi": ["विटामिन B1", "विटामिन B3", "विटामिन B12", "विटामिन C"],
-        "answer_en": "Vitamin B3",
-        "answer_hi": "विटामिन B3",
+        "question_en": "What does the `core::intrinsics::sqrtf32` function provide?",
+        "question_hi": "`core::intrinsics::sqrtf32` फंक्शन क्या प्रदान करता है?",
+        "options_en": ["Hardware-accelerated square root for f32", "Software square root", "Fast math approximation", "Vector square root"],
+        "options_hi": ["f32 के लिए हार्डवेयर-एक्सेलेरेटेड स्क्वायर रूट", "सॉफ्टवेयर स्क्वायर रूट", "फास्ट मैथ अप्रॉक्सिमेशन", "वेक्टर स्क्वायर रूट"],
+        "answer_en": "Hardware-accelerated square root for f32",
+        "answer_hi": "f32 के लिए हार्डवेयर-एक्सेलेरेटेड स्क्वायर रूट",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 41,
-        "question_en": "What is the capital of Argentina?",
-        "question_hi": "अर्जेंटीना की राजधानी क्या है?",
-        "options_en": ["Buenos Aires", "Santiago", "Lima", "Brasilia"],
-        "options_hi": ["ब्यूनस आयर्स", "सैंटियागो", "लिमा", "ब्रासीलिया"],
-        "answer_en": "Buenos Aires",
-        "answer_hi": "ब्यूनस आयर्स",
+        "question_en": "What is the purpose of the `core::mem::MaybeUninit::array_from_fn` function?",
+        "question_hi": "`core::mem::MaybeUninit::array_from_fn` फंक्शन का उद्देश्य क्या है?",
+        "options_en": ["Create array of MaybeUninit using initialization function", "Initialize array elements", "Map function over array", "Create array from iterator"],
+        "options_hi": ["इनिशियलाइज़ेशन फंक्शन का उपयोग करके MaybeUninit का ऐरे बनाना", "ऐरे एलिमेंट्स इनिशियलाइज़ करना", "ऐरे पर फंक्शन मैप करना", "इटरेटर से ऐरे बनाना"],
+        "answer_en": "Create array of MaybeUninit using initialization function",
+        "answer_hi": "इनिशियलाइज़ेशन फंक्शन का उपयोग करके MaybeUninit का ऐरे बनाना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 42,
-        "question_en": "What is the chemical formula of Butane?",
-        "question_hi": "ब्यूटेन का रासायनिक सूत्र क्या है?",
-        "options_en": ["C₃H₈", "C₄H₁₀", "C₅H₁₂", "C₆H₁₄"],
-        "options_hi": ["C₃H₈", "C₄H₁₀", "C₅H₁₂", "C₆H₁₄"],
-        "answer_en": "C₄H₁₀",
-        "answer_hi": "C₄H₁₀",
+        "question_en": "What does the `#[cfg(not(no_macro_export))]` attribute enable?",
+        "question_hi": "`#[cfg(not(no_macro_export))]` एट्रिब्यूट क्या एनेबल करता है?",
+        "options_en": ["Conditional compilation when macro export is available", "Disable macro export", "Enable macro expansion", "Public macro support"],
+        "options_hi": ["मैक्रो एक्सपोर्ट उपलब्ध होने पर कंडीशनल कंपाइलेशन", "मैक्रो एक्सपोर्ट डिसेबल करना", "मैक्रो एक्सपेंशन एनेबल करना", "पब्लिक मैक्रो सपोर्ट"],
+        "answer_en": "Conditional compilation when macro export is available",
+        "answer_hi": "मैक्रो एक्सपोर्ट उपलब्ध होने पर कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 43,
-        "question_en": "Who discovered the neutron?",
-        "question_hi": "न्यूट्रॉन की खोज किसने की?",
-        "options_en": ["James Chadwick", "Ernest Rutherford", "J.J. Thomson", "Niels Bohr"],
-        "options_hi": ["जेम्स चैडविक", "अर्नेस्ट रदरफोर्ड", "जे.जे. थॉमसन", "नील्स बोहर"],
-        "answer_en": "James Chadwick",
-        "answer_hi": "जेम्स चैडविक",
+        "question_en": "What is the purpose of the `core::sync::atomic::AtomicU64::fetch_min` method?",
+        "question_hi": "`core::sync::atomic::AtomicU64::fetch_min` मेथड का उद्देश्य क्या है?",
+        "options_en": ["Atomic minimum operation returning previous value", "Find minimum value", "Compare and set minimum", "Atomic comparison"],
+        "options_hi": ["पिछली वैल्यू रिटर्न करते हुए एटॉमिक मिनिमम ऑपरेशन", "मिनिमम वैल्यू ढूंढना", "कम्पेयर और मिनिमम सेट करना", "एटॉमिक कम्पेयरिजन"],
+        "answer_en": "Atomic minimum operation returning previous value",
+        "answer_hi": "पिछली वैल्यू रिटर्न करते हुए एटॉमिक मिनिमम ऑपरेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 44,
-        "question_en": "What is the value of tan 0°?",
-        "question_hi": "tan 0° का मान क्या है?",
-        "options_en": ["0", "1", "∞", "Undefined"],
-        "options_hi": ["0", "1", "∞", "अपरिभाषित"],
-        "answer_en": "0",
-        "answer_hi": "0",
+        "question_en": "What does the `#[cfg(target_pointer_width = \"32\")]` condition ensure?",
+        "question_hi": "`#[cfg(target_pointer_width = \"32\")]` कंडीशन क्या सुनिश्चित करती है?",
+        "options_en": ["32-bit pointer platform", "32-bit integers", "32-byte alignment", "32-bit memory addresses"],
+        "options_hi": ["32-बिट पॉइंटर प्लेटफॉर्म", "32-बिट इंटीजर्स", "32-बाइट अलाइनमेंट", "32-बिट मेमोरी एड्रेसेस"],
+        "answer_en": "32-bit pointer platform",
+        "answer_hi": "32-बिट पॉइंटर प्लेटफॉर्म",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 45,
-        "question_en": "Which is the brightest planet in the night sky?",
-        "question_hi": "रात के आकाश में सबसे चमकीला ग्रह कौन सा है?",
-        "options_en": ["Venus", "Mars", "Jupiter", "Saturn"],
-        "options_hi": ["शुक्र", "मंगल", "बृहस्पति", "शनि"],
-        "answer_en": "Venus",
-        "answer_hi": "शुक्र",
+        "question_en": "What is the purpose of the `core::arch::x86_64::_mm_add_epi16` intrinsic?",
+        "question_hi": "`core::arch::x86_64::_mm_add_epi16` इंट्रिन्सिक का उद्देश्य क्या है?",
+        "options_en": ["Add packed 16-bit integers in SIMD vectors", "Add 16-bit scalars", "Vector addition", "Integer arithmetic"],
+        "options_hi": ["SIMD वेक्टर्स में पैक्ड 16-बिट इंटीजर्स एड करना", "16-बिट स्केलर्स एड करना", "वेक्टर एडिशन", "इंटीजर अर्थमैटिक"],
+        "answer_en": "Add packed 16-bit integers in SIMD vectors",
+        "answer_hi": "SIMD वेक्टर्स में पैक्ड 16-बिट इंटीजर्स एड करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 46,
-        "question_en": "What is the chemical name of Epsom Salt?",
-        "question_hi": "एप्सम साल्ट का रासायनिक नाम क्या है?",
-        "options_en": ["Magnesium Sulfate", "Calcium Sulfate", "Sodium Sulfate", "Potassium Sulfate"],
-        "options_hi": ["मैग्नीशियम सल्फेट", "कैल्शियम सल्फेट", "सोडियम सल्फेट", "पोटेशियम सल्फेट"],
-        "answer_en": "Magnesium Sulfate",
-        "answer_hi": "मैग्नीशियम सल्फेट",
+        "question_en": "What does the `#[cfg(not(no_ffi))]` attribute enable?",
+        "question_hi": "`#[cfg(not(no_ffi))]` एट्रिब्यूट क्या एनेबल करता है?",
+        "options_en": ["Conditional compilation when FFI is available", "Disable foreign function interface", "Enable C interoperability", "FFI feature detection"],
+        "options_hi": ["FFI उपलब्ध होने पर कंडीशनल कंपाइलेशन", "फॉरेन फंक्शन इंटरफेस डिसेबल करना", "C इंटरऑपरेबिलिटी एनेबल करना", "FFI फीचर डिटेक्शन"],
+        "answer_en": "Conditional compilation when FFI is available",
+        "answer_hi": "FFI उपलब्ध होने पर कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 47,
-        "question_en": "Who wrote 'The Catcher in the Rye'?",
-        "question_hi": "'द कैचर इन द राई' किसने लिखा?",
-        "options_en": ["J.D. Salinger", "F. Scott Fitzgerald", "Ernest Hemingway", "John Steinbeck"],
-        "options_hi": ["जे.डी. सेलिंजर", "एफ. स्कॉट फिट्जगेराल्ड", "अर्नेस्ट हेमिंग्वे", "जॉन स्टीनबेक"],
-        "answer_en": "J.D. Salinger",
-        "answer_hi": "जे.डी. सेलिंजर",
+        "question_en": "What is the purpose of the `core::sync::atomic::AtomicBool::get_mut` method?",
+        "question_hi": "`core::sync::atomic::AtomicBool::get_mut` मेथड का उद्देश्य क्या है?",
+        "options_en": ["Get mutable reference to underlying bool", "Get atomic value", "Extract boolean value", "Convert to regular bool"],
+        "options_hi": ["अंडरलाइंग bool का म्यूटेबल रेफरेंस प्राप्त करना", "एटॉमिक वैल्यू प्राप्त करना", "बूलियन वैल्यू एक्सट्रैक्ट करना", "रेगुलर bool में कन्वर्ट करना"],
+        "answer_en": "Get mutable reference to underlying bool",
+        "answer_hi": "अंडरलाइंग bool का म्यूटेबल रेफरेंस प्राप्त करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 48,
-        "question_en": "What is the formula for surface area of a cylinder?",
-        "question_hi": "बेलन के पृष्ठीय क्षेत्रफल का सूत्र क्या है?",
-        "options_en": ["2πr(h + r)", "2πrh", "πr²h", "2πr²"],
-        "options_hi": ["2πr(h + r)", "2πrh", "πr²h", "2πr²"],
-        "answer_en": "2πr(h + r)",
-        "answer_hi": "2πr(h + r)",
+        "question_en": "What does the `#[cfg(target_family = \"wasm\")]` attribute target?",
+        "question_hi": "`#[cfg(target_family = \"wasm\")]` एट्रिब्यूट किसे टारगेट करता है?",
+        "options_en": ["WebAssembly platform family", "WASI systems", "Web browsers", "JavaScript environments"],
+        "options_hi": ["WebAssembly प्लेटफॉर्म फैमिली", "WASI सिस्टम्स", "वेब ब्राउज़र्स", "JavaScript एनवायरनमेंट्स"],
+        "answer_en": "WebAssembly platform family",
+        "answer_hi": "WebAssembly प्लेटफॉर्म फैमिली",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 49,
-        "question_en": "Which blood cells produce antibodies?",
-        "question_hi": "कौन सी रक्त कोशिकाएं एंटीबॉडी उत्पन्न करती हैं?",
-        "options_en": ["Red Blood Cells", "White Blood Cells", "Platelets", "Plasma Cells"],
-        "options_hi": ["लाल रक्त कोशिकाएं", "श्वेत रक्त कोशिकाएं", "प्लेटलेट्स", "प्लाज्मा कोशिकाएं"],
-        "answer_en": "Plasma Cells",
-        "answer_hi": "प्लाज्मा कोशिकाएं",
+        "question_en": "What is the purpose of the `core::mem::MaybeUninit::assume_init_drop`?",
+        "question_hi": "`core::mem::MaybeUninit::assume_init_drop` का उद्देश्य क्या है?",
+        "options_en": ["Assume initialized and run destructor", "Drop uninitialized memory", "Prevent destruction", "Safe drop operation"],
+        "options_hi": ["इनिशियलाइज्ड मानना और डिस्ट्रक्टर रन करना", "अनइनिशियलाइज्ड मेमोरी ड्रॉप करना", "डिस्ट्रक्शन रोकना", "सेफ ड्रॉप ऑपरेशन"],
+        "answer_en": "Assume initialized and run destructor",
+        "answer_hi": "इनिशियलाइज्ड मानना और डिस्ट्रक्टर रन करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 50,
-        "question_en": "What is the unit of electric conductivity?",
-        "question_hi": "विद्युत चालकता की इकाई क्या है?",
-        "options_en": ["Siemens", "Ohm", "Mho", "Both Siemens and Mho"],
-        "options_hi": ["सीमेंस", "ओम", "म्हो", "सीमेंस और म्हो दोनों"],
-        "answer_en": "Both Siemens and Mho",
-        "answer_hi": "सीमेंस और म्हो दोनों",
+        "question_en": "What does the `core::sync::atomic::AtomicIsize::fetch_add` with `Ordering::Relaxed` guarantee?",
+        "question_hi": "`Ordering::Relaxed` के साथ `core::sync::atomic::AtomicIsize::fetch_add` क्या गारंटी देता है?",
+        "options_en": ["Only atomicity, no ordering guarantees", "Sequential consistency", "Acquire-release semantics", "Thread-local ordering"],
+        "options_hi": ["केवल एटॉमिसिटी, कोई ऑर्डरिंग गारंटी नहीं", "सीक्वेंशियल कंसिस्टेंसी", "एक्वायर-रिलीज सेमैंटिक्स", "थ्रेड-लोकल ऑर्डरिंग"],
+        "answer_en": "Only atomicity, no ordering guarantees",
+        "answer_hi": "केवल एटॉमिसिटी, कोई ऑर्डरिंग गारंटी नहीं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 51,
-        "question_en": "Which is the largest peninsula in the world?",
-        "question_hi": "दुनिया का सबसे बड़ा प्रायद्वीप कौन सा है?",
-        "options_en": ["Arabian Peninsula", "Indian Peninsula", "Scandinavian Peninsula", "Iberian Peninsula"],
-        "options_hi": ["अरब प्रायद्वीप", "भारतीय प्रायद्वीप", "स्कैंडिनेवियाई प्रायद्वीप", "इबेरियन प्रायद्वीप"],
-        "answer_en": "Arabian Peninsula",
-        "answer_hi": "अरब प्रायद्वीप",
+        "question_en": "What is the purpose of the `#[cfg(not(no_builtin_macros))]` attribute?",
+        "question_hi": "`#[cfg(not(no_builtin_macros))]` एट्रिब्यूट का उद्देश्य क्या है?",
+        "options_en": ["Conditional compilation when builtin macros are available", "Disable builtin macros", "Enable macro system", "Compiler macro support"],
+        "options_hi": ["बिल्टइन मैक्रोस उपलब्ध होने पर कंडीशनल कंपाइलेशन", "बिल्टइन मैक्रोस डिसेबल करना", "मैक्रो सिस्टम एनेबल करना", "कंपाइलर मैक्रो सपोर्ट"],
+        "answer_en": "Conditional compilation when builtin macros are available",
+        "answer_hi": "बिल्टइन मैक्रोस उपलब्ध होने पर कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 52,
-        "question_en": "What is the chemical formula of Hydrogen Sulfide?",
-        "question_hi": "हाइड्रोजन सल्फाइड का रासायनिक सूत्र क्या है?",
-        "options_en": ["H₂S", "HS", "H₂SO₄", "HSO₄"],
-        "options_hi": ["H₂S", "HS", "H₂SO₄", "HSO₄"],
-        "answer_en": "H₂S",
-        "answer_hi": "H₂S",
+        "question_en": "What does the `core::arch::x86_64::_mm_mul_ps` intrinsic compute?",
+        "question_hi": "`core::arch::x86_64::_mm_mul_ps` इंट्रिन्सिक क्या कंप्यूट करता है?",
+        "options_en": ["Multiply packed single-precision floats", "Multiply integers", "Vector multiplication", "Float arithmetic"],
+        "options_hi": ["पैक्ड सिंगल-प्रिसिजन फ्लोट्स मल्टीप्लाई करना", "इंटीजर्स मल्टीप्लाई करना", "वेक्टर मल्टीप्लिकेशन", "फ्लोट अर्थमैटिक"],
+        "answer_en": "Multiply packed single-precision floats",
+        "answer_hi": "पैक्ड सिंगल-प्रिसिजन फ्लोट्स मल्टीप्लाई करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 53,
-        "question_en": "Who wrote 'Kadambari'?",
-        "question_hi": "'कादंबरी' किसने लिखी?",
-        "options_en": ["Banabhatta", "Kalidasa", "Bhavabhuti", "Dandin"],
-        "options_hi": ["बाणभट्ट", "कालिदास", "भवभूति", "दंडी"],
-        "answer_en": "Banabhatta",
-        "answer_hi": "बाणभट्ट",
+        "question_en": "What is the purpose of the `core::sync::atomic::AtomicU8::compare_exchange_weak`?",
+        "question_hi": "`core::sync::atomic::AtomicU8::compare_exchange_weak` का उद्देश्य क्या है?",
+        "options_en": ["Atomic compare-and-swap that may fail spuriously", "Weak comparison", "Non-atomic exchange", "Relaxed ordering only"],
+        "options_hi": ["एटॉमिक कम्पेयर-एंड-स्वैप जो स्प्यूरियसली फेल हो सकता है", "वीक कम्पेयरिजन", "नॉन-एटॉमिक एक्सचेंज", "केवल रिलैक्स्ड ऑर्डरिंग"],
+        "answer_en": "Atomic compare-and-swap that may fail spuriously",
+        "answer_hi": "एटॉमिक कम्पेयर-एंड-स्वैप जो स्प्यूरियसली फेल हो सकता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 54,
-        "question_en": "What is the formula for impulse?",
-        "question_hi": "आवेग का सूत्र क्या है?",
-        "options_en": ["Force × Time", "Mass × Velocity", "Force × Distance", "Mass × Acceleration"],
-        "options_hi": ["बल × समय", "द्रव्यमान × वेग", "बल × दूरी", "द्रव्यमान × त्वरण"],
-        "answer_en": "Force × Time",
-        "answer_hi": "बल × समय",
+        "question_en": "What does the `#[cfg(not(no_derive))]` attribute enable?",
+        "question_hi": "`#[cfg(not(no_derive))]` एट्रिब्यूट क्या एनेबल करता है?",
+        "options_en": ["Conditional compilation when derive macros are available", "Disable derive macros", "Enable trait derivation", "Automatic derivation"],
+        "options_hi": ["डेराइव मैक्रोस उपलब्ध होने पर कंडीशनल कंपाइलेशन", "डेराइव मैक्रोस डिसेबल करना", "ट्रेट डेरिवेशन एनेबल करना", "ऑटोमैटिक डेरिवेशन"],
+        "answer_en": "Conditional compilation when derive macros are available",
+        "answer_hi": "डेराइव मैक्रोस उपलब्ध होने पर कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 55,
-        "question_en": "Which vitamin deficiency causes Hemorrhagic disease?",
-        "question_hi": "किस विटामिन की कमी से हेमोरेजिक रोग होता है?",
-        "options_en": ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin K"],
-        "options_hi": ["विटामिन A", "विटामिन C", "विटामिन D", "विटामिन K"],
-        "answer_en": "Vitamin K",
-        "answer_hi": "विटामिन K",
+        "question_en": "What is the purpose of the `core::mem::MaybeUninit::slice_as_mut_ptr` method?",
+        "question_hi": "`core::mem::MaybeUninit::slice_as_mut_ptr` मेथड का उद्देश्य क्या है?",
+        "options_en": ["Get mutable raw pointer to slice of MaybeUninit", "Convert slice to pointer", "Get slice data pointer", "Mutable slice access"],
+        "options_hi": ["MaybeUninit के स्लाइस का म्यूटेबल रॉ पॉइंटर प्राप्त करना", "स्लाइस को पॉइंटर में कन्वर्ट करना", "स्लाइस डेटा पॉइंटर प्राप्त करना", "म्यूटेबल स्लाइस एक्सेस"],
+        "answer_en": "Get mutable raw pointer to slice of MaybeUninit",
+        "answer_hi": "MaybeUninit के स्लाइस का म्यूटेबल रॉ पॉइंटर प्राप्त करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 56,
-        "question_en": "What is the chemical symbol for Barium?",
-        "question_hi": "बेरियम का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Ba", "Br", "Bi", "Bm"],
-        "options_hi": ["Ba", "Br", "Bi", "Bm"],
-        "answer_en": "Ba",
-        "answer_hi": "Ba",
+        "question_en": "What does the `core::sync::atomic::AtomicI16::fetch_xor` method provide?",
+        "question_hi": "`core::sync::atomic::AtomicI16::fetch_xor` मेथड क्या प्रदान करता है?",
+        "options_en": ["Atomic XOR operation returning previous value", "Bitwise XOR", "Logical XOR", "Exclusive OR operation"],
+        "options_hi": ["पिछली वैल्यू रिटर्न करते हुए एटॉमिक XOR ऑपरेशन", "बिटवाइज XOR", "लॉजिकल XOR", "एक्सक्लूसिव OR ऑपरेशन"],
+        "answer_en": "Atomic XOR operation returning previous value",
+        "answer_hi": "पिछली वैल्यू रिटर्न करते हुए एटॉमिक XOR ऑपरेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 57,
-        "question_en": "Who is known as the Father of the Indian Space Program?",
-        "question_hi": "भारतीय अंतरिक्ष कार्यक्रम के पिता के रूप में किसे जाना जाता है?",
-        "options_en": ["Vikram Sarabhai", "Homi Bhabha", "A.P.J. Abdul Kalam", "Satish Dhawan"],
-        "options_hi": ["विक्रम साराभाई", "होमी भाभा", "ए.पी.जे. अब्दुल कलाम", "सतीश धवन"],
-        "answer_en": "Vikram Sarabhai",
-        "answer_hi": "विक्रम साराभाई",
+        "question_en": "What is the purpose of the `#[cfg(target_os = \"none\")]` attribute?",
+        "question_hi": "`#[cfg(target_os = \"none\")]` एट्रिब्यूट का उद्देश्य क्या है?",
+        "options_en": ["Conditional compilation for bare-metal systems", "No operating system", "Embedded systems", "Kernel development"],
+        "options_hi": ["बेयर-मेटल सिस्टम्स के लिए कंडीशनल कंपाइलेशन", "कोई ऑपरेटिंग सिस्टम नहीं", "एम्बेडेड सिस्टम्स", "करनेल डेवलपमेंट"],
+        "answer_en": "Conditional compilation for bare-metal systems",
+        "answer_hi": "बेयर-मेटल सिस्टम्स के लिए कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 58,
-        "question_en": "What is the value of cosec 45°?",
-        "question_hi": "cosec 45° का मान क्या है?",
-        "options_en": ["1", "√2", "2", "1/√2"],
-        "options_hi": ["1", "√2", "2", "1/√2"],
-        "answer_en": "√2",
-        "answer_hi": "√2",
+        "question_en": "What does the `core::arch::x86_64::_mm_testz_si128` intrinsic test?",
+        "question_hi": "`core::arch::x86_64::_mm_testz_si128` इंट्रिन्सिक क्या टेस्ट करता है?",
+        "options_en": ["Test if all bits in SIMD vector are zero", "Test for zero values", "Check vector equality", "Bitwise zero test"],
+        "options_hi": ["टेस्ट करना कि SIMD वेक्टर में सभी बिट्स जीरो हैं", "जीरो वैल्यूज के लिए टेस्ट करना", "वेक्टर इक्वलिटी चेक करना", "बिटवाइज जीरो टेस्ट"],
+        "answer_en": "Test if all bits in SIMD vector are zero",
+        "answer_hi": "टेस्ट करना कि SIMD वेक्टर में सभी बिट्स जीरो हैं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 59,
-        "question_en": "Which gas is used in chemical warfare?",
-        "question_hi": "रासायनिक युद्ध में कौन सी गैस प्रयोग की जाती है?",
-        "options_en": ["Mustard Gas", "Oxygen", "Nitrogen", "Helium"],
-        "options_hi": ["सरसों गैस", "ऑक्सीजन", "नाइट्रोजन", "हीलियम"],
-        "answer_en": "Mustard Gas",
-        "answer_hi": "सरसों गैस",
+        "question_en": "What is the purpose of the `core::sync::atomic::AtomicBool::as_mut_ptr` method?",
+        "question_hi": "`core::sync::atomic::AtomicBool::as_mut_ptr` मेथड का उद्देश्य क्या है?",
+        "options_en": ["Get mutable raw pointer to underlying bool", "Convert to pointer", "Get atomic address", "Mutable atomic access"],
+        "options_hi": ["अंडरलाइंग bool का म्यूटेबल रॉ पॉइंटर प्राप्त करना", "पॉइंटर में कन्वर्ट करना", "एटॉमिक एड्रेस प्राप्त करना", "म्यूटेबल एटॉमिक एक्सेस"],
+        "answer_en": "Get mutable raw pointer to underlying bool",
+        "answer_hi": "अंडरलाइंग bool का म्यूटेबल रॉ पॉइंटर प्राप्त करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 60,
-        "question_en": "What is the unit of angular velocity?",
-        "question_hi": "कोणीय वेग की इकाई क्या है?",
-        "options_en": ["rad/s", "m/s", "Hz", "rpm"],
-        "options_hi": ["rad/s", "m/s", "Hz", "rpm"],
-        "answer_en": "rad/s",
-        "answer_hi": "rad/s",
+        "question_en": "What does the `#[cfg(not(no_unsafe_op_in_unsafe_fn))]` attribute enable?",
+        "question_hi": "`#[cfg(not(no_unsafe_op_in_unsafe_fn))]` एट्रिब्यूट क्या एनेबल करता है?",
+        "options_en": ["Conditional compilation when unsafe ops in unsafe fns are allowed", "Disable unsafe operations", "Enable unsafe blocks", "Safety checking"],
+        "options_hi": ["अनसेफ फंक्शन्स में अनसेफ ऑपरेशन्स की अनुमति होने पर कंडीशनल कंपाइलेशन", "अनसेफ ऑपरेशन्स डिसेबल करना", "अनसेफ ब्लॉक्स एनेबल करना", "सेफ्टी चेकिंग"],
+        "answer_en": "Conditional compilation when unsafe ops in unsafe fns are allowed",
+        "answer_hi": "अनसेफ फंक्शन्स में अनसेफ ऑपरेशन्स की अनुमति होने पर कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 61,
-        "question_en": "Which is the national river of India?",
-        "question_hi": "भारत की राष्ट्रीय नदी कौन सी है?",
-        "options_en": ["Ganga", "Yamuna", "Brahmaputra", "Godavari"],
-        "options_hi": ["गंगा", "यमुना", "ब्रह्मपुत्र", "गोदावरी"],
-        "answer_en": "Ganga",
-        "answer_hi": "गंगा",
+        "question_en": "What is the purpose of the `core::arch::x86_64::_mm256_setzero_si256` intrinsic?",
+        "question_hi": "`core::arch::x86_64::_mm256_setzero_si256` इंट्रिन्सिक का उद्देश्य क्या है?",
+        "options_en": ["Create 256-bit SIMD vector of zeros", "Zero memory region", "Initialize vector to zero", "Clear SIMD register"],
+        "options_hi": ["जीरोस का 256-बिट SIMD वेक्टर बनाना", "मेमोरी रीजन जीरो करना", "वेक्टर को जीरो से इनिशियलाइज़ करना", "SIMD रजिस्टर क्लियर करना"],
+        "answer_en": "Create 256-bit SIMD vector of zeros",
+        "answer_hi": "जीरोस का 256-बिट SIMD वेक्टर बनाना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 62,
-        "question_en": "What is the chemical formula of Potassium Hydroxide?",
-        "question_hi": "पोटेशियम हाइड्रॉक्साइड का रासायनिक सूत्र क्या है?",
-        "options_en": ["KOH", "K₂OH", "K(OH)₂", "KHO"],
-        "options_hi": ["KOH", "K₂OH", "K(OH)₂", "KHO"],
-        "answer_en": "KOH",
-        "answer_hi": "KOH",
+        "question_en": "What does the `core::sync::atomic::AtomicU32::fetch_and` method return?",
+        "question_hi": "`core::sync::atomic::AtomicU32::fetch_and` मेथड क्या रिटर्न करता है?",
+        "options_en": ["Previous value before the AND operation", "New value after AND", "Always returns 0", "The AND result"],
+        "options_hi": ["AND ऑपरेशन से पहले की पिछली वैल्यू", "AND के बाद की नई वैल्यू", "हमेशा 0 रिटर्न करता है", "AND रिजल्ट"],
+        "answer_en": "Previous value before the AND operation",
+        "answer_hi": "AND ऑपरेशन से पहले की पिछली वैल्यू",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 63,
-        "question_en": "Who wrote 'Brave New World'?",
-        "question_hi": "'ब्रेव न्यू वर्ल्ड' किसने लिखा?",
-        "options_en": ["Aldous Huxley", "George Orwell", "Ray Bradbury", "H.G. Wells"],
-        "options_hi": ["एल्डस हक्सले", "जॉर्ज ऑरवेल", "रे ब्रैडबरी", "एच.जी. वेल्स"],
-        "answer_en": "Aldous Huxley",
-        "answer_hi": "एल्डस हक्सले",
+        "question_en": "What is the purpose of the `#[cfg(not(no_global_oom_handling))]` attribute?",
+        "question_hi": "`#[cfg(not(no_global_oom_handling))]` एट्रिब्यूट का उद्देश्य क्या है?",
+        "options_en": ["Conditional compilation when global OOM handling is available", "Disable OOM handling", "Enable custom allocator", "Memory management"],
+        "options_hi": ["ग्लोबल OOM हैंडलिंग उपलब्ध होने पर कंडीशनल कंपाइलेशन", "OOM हैंडलिंग डिसेबल करना", "कस्टम अलोकेटर एनेबल करना", "मेमोरी मैनेजमेंट"],
+        "answer_en": "Conditional compilation when global OOM handling is available",
+        "answer_hi": "ग्लोबल OOM हैंडलिंग उपलब्ध होने पर कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 64,
-        "question_en": "What is the formula for strain?",
-        "question_hi": "विकृति का सूत्र क्या है?",
-        "options_en": ["ΔL/L", "F/A", "Stress/Strain", "F × ΔL"],
-        "options_hi": ["ΔL/L", "F/A", "प्रतिबल/विकृति", "F × ΔL"],
-        "answer_en": "ΔL/L",
-        "answer_hi": "ΔL/L",
+        "question_en": "What does the `core::arch::x86_64::_mm_cmpgt_epi8` intrinsic compare?",
+        "question_hi": "`core::arch::x86_64::_mm_cmpgt_epi8` इंट्रिन्सिक क्या तुलना करता है?",
+        "options_en": ["Compare packed 8-bit integers for greater than", "Compare floats", "Vector comparison", "Integer greater than"],
+        "options_hi": ["पैक्ड 8-बिट इंटीजर्स की ग्रेटर दैन के लिए तुलना करना", "फ्लोट्स की तुलना करना", "वेक्टर कम्पेयरिजन", "इंटीजर ग्रेटर दैन"],
+        "answer_en": "Compare packed 8-bit integers for greater than",
+        "answer_hi": "पैक्ड 8-बिट इंटीजर्स की ग्रेटर दैन के लिए तुलना करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 65,
-        "question_en": "Which vitamin is essential for nerve function?",
-        "question_hi": "तंत्रिका कार्य के लिए कौन सा विटामिन आवश्यक है?",
-        "options_en": ["Vitamin B1", "Vitamin B12", "Vitamin C", "Vitamin D"],
-        "options_hi": ["विटामिन B1", "विटामिन B12", "विटामिन C", "विटामिन D"],
-        "answer_en": "Vitamin B12",
-        "answer_hi": "विटामिन B12",
+        "question_en": "What is the purpose of the `core::sync::atomic::AtomicPtr::from_mut` method?",
+        "question_hi": "`core::sync::atomic::AtomicPtr::from_mut` मेथड का उद्देश्य क्या है?",
+        "options_en": ["Create AtomicPtr from mutable reference to pointer", "Convert from mutable pointer", "Get atomic from mutable", "Mutable atomic creation"],
+        "options_hi": ["पॉइंटर के म्यूटेबल रेफरेंस से AtomicPtr बनाना", "म्यूटेबल पॉइंटर से कन्वर्ट करना", "म्यूटेबल से एटॉमिक प्राप्त करना", "म्यूटेबल एटॉमिक क्रिएशन"],
+        "answer_en": "Create AtomicPtr from mutable reference to pointer",
+        "answer_hi": "पॉइंटर के म्यूटेबल रेफरेंस से AtomicPtr बनाना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 66,
-        "question_en": "What is the chemical symbol for Strontium?",
-        "question_hi": "स्ट्रोंटियम का रासायनिक प्रतीक क्या है?",
-        "options_en": ["St", "Sr", "Sm", "Sn"],
-        "options_hi": ["St", "Sr", "Sm", "Sn"],
-        "answer_en": "Sr",
-        "answer_hi": "Sr",
+        "question_en": "What does the `#[cfg(not(no_borrow))]` attribute enable?",
+        "question_hi": "`#[cfg(not(no_borrow))]` एट्रिब्यूट क्या एनेबल करता है?",
+        "options_en": ["Conditional compilation when borrow checker is available", "Disable borrowing", "Enable reference system", "Ownership system"],
+        "options_hi": ["बोरो चेकर उपलब्ध होने पर कंडीशनल कंपाइलेशन", "बोरोइंग डिसेबल करना", "रिफरेंस सिस्टम एनेबल करना", "ओनरशिप सिस्टम"],
+        "answer_en": "Conditional compilation when borrow checker is available",
+        "answer_hi": "बोरो चेकर उपलब्ध होने पर कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 67,
-        "question_en": "Who was the first Indian woman to win a Grand Slam title?",
-        "question_hi": "ग्रैंड स्लैम खिताब जीतने वाली पहली भारतीय महिला कौन थीं?",
-        "options_en": ["Sania Mirza", "Mahesh Bhupathi", "Leander Paes", "None of these"],
-        "options_hi": ["सानिया मिर्जा", "महेश भूपति", "लिएंडर पेस", "इनमें से कोई नहीं"],
-        "answer_en": "Sania Mirza",
-        "answer_hi": "सानिया मिर्जा",
+        "question_en": "What is the purpose of the `core::arch::x86_64::_mm_store_si128` intrinsic?",
+        "question_hi": "`core::arch::x86_64::_mm_store_si128` इंट्रिन्सिक का उद्देश्य क्या है?",
+        "options_en": ["Store 128-bit SIMD vector to aligned memory", "Store to unaligned memory", "Save vector data", "Memory store operation"],
+        "options_hi": ["अलाइन्ड मेमोरी में 128-बिट SIMD वेक्टर स्टोर करना", "अनअलाइन्ड मेमोरी में स्टोर करना", "वेक्टर डेटा सेव करना", "मेमोरी स्टोर ऑपरेशन"],
+        "answer_en": "Store 128-bit SIMD vector to aligned memory",
+        "answer_hi": "अलाइन्ड मेमोरी में 128-बिट SIMD वेक्टर स्टोर करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 68,
-        "question_en": "What is the value of sec 0°?",
-        "question_hi": "sec 0° का मान क्या है?",
-        "options_en": ["0", "1", "∞", "Undefined"],
-        "options_hi": ["0", "1", "∞", "अपरिभाषित"],
-        "answer_en": "1",
-        "answer_hi": "1",
+        "question_en": "What does the `core::sync::atomic::AtomicI8::fetch_or` method provide?",
+        "question_hi": "`core::sync::atomic::AtomicI8::fetch_or` मेथड क्या प्रदान करता है?",
+        "options_en": ["Atomic OR operation returning previous value", "Bitwise OR", "Logical OR", "Inclusive OR operation"],
+        "options_hi": ["पिछली वैल्यू रिटर्न करते हुए एटॉमिक OR ऑपरेशन", "बिटवाइज OR", "लॉजिकल OR", "इनक्लूसिव OR ऑपरेशन"],
+        "answer_en": "Atomic OR operation returning previous value",
+        "answer_hi": "पिछली वैल्यू रिटर्न करते हुए एटॉमिक OR ऑपरेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 69,
-        "question_en": "Which gas is used in plasma displays?",
-        "question_hi": "प्लाज्मा डिस्प्ले में कौन सी गैस प्रयोग की जाती है?",
-        "options_en": ["Neon", "Xenon", "Argon", "Helium"],
-        "options_hi": ["नियॉन", "जेनॉन", "आर्गन", "हीलियम"],
-        "answer_en": "Xenon",
-        "answer_hi": "जेनॉन",
+        "question_en": "What is the purpose of the `#[cfg(target_env = \"msvc\")]` attribute?",
+        "question_hi": "`#[cfg(target_env = \"msvc\")]` एट्रिब्यूट का उद्देश्य क्या है?",
+        "options_en": ["Conditional compilation for MSVC toolchain", "Windows development", "Visual Studio compatibility", "Microsoft ecosystem"],
+        "options_hi": ["MSVC टूलचेन के लिए कंडीशनल कंपाइलेशन", "विंडोज डेवलपमेंट", "विजुअल स्टूडियो कम्पैटिबिलिटी", "माइक्रोसॉफ्ट इकोसिस्टम"],
+        "answer_en": "Conditional compilation for MSVC toolchain",
+        "answer_hi": "MSVC टूलचेन के लिए कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 70,
-        "question_en": "What is the unit of thermal conductivity?",
-        "question_hi": "ऊष्मीय चालकता की इकाई क्या है?",
-        "options_en": ["W/mK", "J/s", "cal/g°C", "BTU/h"],
-        "options_hi": ["W/mK", "J/s", "cal/g°C", "BTU/h"],
-        "answer_en": "W/mK",
-        "answer_hi": "W/mK",
+        "question_en": "What does the `core::arch::x86_64::_mm_slli_epi16` intrinsic do?",
+        "question_hi": "`core::arch::x86_64::_mm_slli_epi16` इंट्रिन्सिक क्या करता है?",
+        "options_en": ["Shift packed 16-bit integers left by specified count", "Shift left logical", "Vector shift", "Integer shift"],
+        "options_hi": ["पैक्ड 16-बिट इंटीजर्स को स्पेसिफाइड काउंट से लेफ्ट शिफ्ट करना", "लेफ्ट लॉजिकल शिफ्ट", "वेक्टर शिफ्ट", "इंटीजर शिफ्ट"],
+        "answer_en": "Shift packed 16-bit integers left by specified count",
+        "answer_hi": "पैक्ड 16-बिट इंटीजर्स को स्पेसिफाइड काउंट से लेफ्ट शिफ्ट करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 71,
-        "question_en": "Which is the national aquatic animal of India?",
-        "question_hi": "भारत का राष्ट्रीय जलीय जीव कौन सा है?",
-        "options_en": ["Ganges River Dolphin", "Crocodile", "Turtle", "Fish"],
-        "options_hi": ["गंगा नदी डॉल्फिन", "मगरमच्छ", "कछुआ", "मछली"],
-        "answer_en": "Ganges River Dolphin",
-        "answer_hi": "गंगा नदी डॉल्फिन",
+        "question_en": "What is the purpose of the `core::sync::atomic::AtomicU128::new` method?",
+        "question_hi": "`core::sync::atomic::AtomicU128::new` मेथड का उद्देश्य क्या है?",
+        "options_en": ["Create new AtomicU128 with initial value", "Initialize atomic", "Atomic constructor", "128-bit atomic creation"],
+        "options_hi": ["इनिशियल वैल्यू के साथ नया AtomicU128 बनाना", "एटॉमिक इनिशियलाइज़ करना", "एटॉमिक कंस्ट्रक्टर", "128-बिट एटॉमिक क्रिएशन"],
+        "answer_en": "Create new AtomicU128 with initial value",
+        "answer_hi": "इनिशियल वैल्यू के साथ नया AtomicU128 बनाना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 72,
-        "question_en": "What is the chemical formula of Sodium Bicarbonate?",
-        "question_hi": "सोडियम बाइकार्बोनेट का रासायनिक सूत्र क्या है?",
-        "options_en": ["NaHCO₃", "Na₂CO₃", "NaOH", "NaCl"],
-        "options_hi": ["NaHCO₃", "Na₂CO₃", "NaOH", "NaCl"],
-        "answer_en": "NaHCO₃",
-        "answer_hi": "NaHCO₃",
+        "question_en": "What does the `#[cfg(not(no_default_lib_allocator))]` attribute enable?",
+        "question_hi": "`#[cfg(not(no_default_lib_allocator))]` एट्रिब्यूट क्या एनेबल करता है?",
+        "options_en": ["Conditional compilation when default lib allocator is available", "Disable default allocator", "Enable custom allocator", "Memory allocator system"],
+        "options_hi": ["डिफॉल्ट लाइब अलोकेटर उपलब्ध होने पर कंडीशनल कंपाइलेशन", "डिफॉल्ट अलोकेटर डिसेबल करना", "कस्टम अलोकेटर एनेबल करना", "मेमोरी अलोकेटर सिस्टम"],
+        "answer_en": "Conditional compilation when default lib allocator is available",
+        "answer_hi": "डिफॉल्ट लाइब अलोकेटर उपलब्ध होने पर कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 73,
-        "question_en": "Who wrote 'The Picture of Dorian Gray'?",
-        "question_hi": "'द पिक्चर ऑफ डोरियन ग्रे' किसने लिखा?",
-        "options_en": ["Oscar Wilde", "Charles Dickens", "Jane Austen", "Emily Bronte"],
-        "options_hi": ["ऑस्कर वाइल्ड", "चार्ल्स डिकेंस", "जेन ऑस्टेन", "एमिली ब्रोंटे"],
-        "answer_en": "Oscar Wilde",
-        "answer_hi": "ऑस्कर वाइल्ड",
+        "question_en": "What is the purpose of the `core::arch::x86_64::_mm256_add_pd` intrinsic?",
+        "question_hi": "`core::arch::x86_64::_mm256_add_pd` इंट्रिन्सिक का उद्देश्य क्या है?",
+        "options_en": ["Add packed double-precision floats in 256-bit vector", "Add doubles", "Vector float addition", "Double arithmetic"],
+        "options_hi": ["256-बिट वेक्टर में पैक्ड डबल-प्रिसिजन फ्लोट्स एड करना", "डबल्स एड करना", "वेक्टर फ्लोट एडिशन", "डबल अर्थमैटिक"],
+        "answer_en": "Add packed double-precision floats in 256-bit vector",
+        "answer_hi": "256-बिट वेक्टर में पैक्ड डबल-प्रिसिजन फ्लोट्स एड करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 74,
-        "question_en": "What is the formula for torque?",
-        "question_hi": "टॉर्क का सूत्र क्या है?",
-        "options_en": ["Force × Distance", "Mass × Acceleration", "Work/Time", "Pressure × Area"],
-        "options_hi": ["बल × दूरी", "द्रव्यमान × त्वरण", "कार्य/समय", "दाब × क्षेत्रफल"],
-        "answer_en": "Force × Distance",
-        "answer_hi": "बल × दूरी",
+        "question_en": "What does the `core::sync::atomic::AtomicBool::store` with `Ordering::Release` ensure?",
+        "question_hi": "`Ordering::Release` के साथ `core::sync::atomic::AtomicBool::store` क्या सुनिश्चित करता है?",
+        "options_en": ["Previous operations complete before this store is visible", "Subsequent operations complete after", "All operations are ordered", "Only atomicity"],
+        "options_hi": ["प्रीवियस ऑपरेशन्स इस स्टोर के विजिबल होने से पहले कंप्लीट हो जाते हैं", "सब्सीक्वेंट ऑपरेशन्स इसके बाद कंप्लीट होते हैं", "सभी ऑपरेशन्स ऑर्डर्ड हैं", "केवल एटॉमिसिटी"],
+        "answer_en": "Previous operations complete before this store is visible",
+        "answer_hi": "प्रीवियस ऑपरेशन्स इस स्टोर के विजिबल होने से पहले कंप्लीट हो जाते हैं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 75,
-        "question_en": "Which vitamin is essential for antioxidant activity?",
-        "question_hi": "एंटीऑक्सीडेंट गतिविधि के लिए कौन सा विटामिन आवश्यक है?",
-        "options_en": ["Vitamin C", "Vitamin E", "Both", "None"],
-        "options_hi": ["विटामिन C", "विटामिन E", "दोनों", "कोई नहीं"],
-        "answer_en": "Both",
-        "answer_hi": "दोनों",
+        "question_en": "What is the purpose of the `#[cfg(not(no_default_lib_allocator_type))]` attribute?",
+        "question_hi": "`#[cfg(not(no_default_lib_allocator_type))]` एट्रिब्यूट का उद्देश्य क्या है?",
+        "options_en": ["Conditional compilation when default allocator type is available", "Disable allocator types", "Enable memory types", "Allocator system"],
+        "options_hi": ["डिफॉल्ट अलोकेटर टाइप उपलब्ध होने पर कंडीशनल कंपाइलेशन", "अलोकेटर टाइप्स डिसेबल करना", "मेमोरी टाइप्स एनेबल करना", "अलोकेटर सिस्टम"],
+        "answer_en": "Conditional compilation when default allocator type is available",
+        "answer_hi": "डिफॉल्ट अलोकेटर टाइप उपलब्ध होने पर कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 76,
-        "question_en": "What is the chemical symbol for Cadmium?",
-        "question_hi": "कैडमियम का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Cd", "Cm", "Ca", "Cr"],
-        "options_hi": ["Cd", "Cm", "Ca", "Cr"],
-        "answer_en": "Cd",
-        "answer_hi": "Cd",
+        "question_en": "What does the `core::arch::x86_64::_mm_extract_epi16` intrinsic extract?",
+        "question_hi": "`core::arch::x86_64::_mm_extract_epi16` इंट्रिन्सिक क्या एक्सट्रैक्ट करता है?",
+        "options_en": ["Extract specified 16-bit integer from SIMD vector", "Extract element", "Get vector component", "Integer extraction"],
+        "options_hi": ["SIMD वेक्टर से स्पेसिफाइड 16-बिट इंटीजर एक्सट्रैक्ट करना", "एलिमेंट एक्सट्रैक्ट करना", "वेक्टर कंपोनेंट प्राप्त करना", "इंटीजर एक्सट्रैक्शन"],
+        "answer_en": "Extract specified 16-bit integer from SIMD vector",
+        "answer_hi": "SIMD वेक्टर से स्पेसिफाइड 16-बिट इंटीजर एक्सट्रैक्ट करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 77,
-        "question_en": "Who is known as the Father of Indian Cinema?",
-        "question_hi": "भारतीय सिनेमा के पिता के रूप में किसे जाना जाता है?",
-        "options_en": ["Dadasaheb Phalke", "Satyajit Ray", "Raj Kapoor", "Guru Dutt"],
-        "options_hi": ["दादासाहेब फाल्के", "सत्यजित रे", "राज कपूर", "गुरु दत्त"],
-        "answer_en": "Dadasaheb Phalke",
-        "answer_hi": "दादासाहेब फाल्के",
+        "question_en": "What is the purpose of the `core::sync::atomic::AtomicIsize::into_inner` method?",
+        "question_hi": "`core::sync::atomic::AtomicIsize::into_inner` मेथड का उद्देश्य क्या है?",
+        "options_en": ["Consume AtomicIsize and return the inner isize", "Get inner value", "Convert to regular isize", "Extract atomic value"],
+        "options_hi": ["AtomicIsize को कंज्यूम करना और इनर isize रिटर्न करना", "इनर वैल्यू प्राप्त करना", "रेगुलर isize में कन्वर्ट करना", "एटॉमिक वैल्यू एक्सट्रैक्ट करना"],
+        "answer_en": "Consume AtomicIsize and return the inner isize",
+        "answer_hi": "AtomicIsize को कंज्यूम करना और इनर isize रिटर्न करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 78,
-        "question_en": "What is the value of cot 90°?",
-        "question_hi": "cot 90° का मान क्या है?",
-        "options_en": ["0", "1", "∞", "Undefined"],
-        "options_hi": ["0", "1", "∞", "अपरिभाषित"],
-        "answer_en": "0",
-        "answer_hi": "0",
+        "question_en": "What does the `#[cfg(not(no_default_lib_allocator_fn))]` attribute enable?",
+        "question_hi": "`#[cfg(not(no_default_lib_allocator_fn))]` एट्रिब्यूट क्या एनेबल करता है?",
+        "options_en": ["Conditional compilation when default allocator functions are available", "Disable allocator functions", "Enable memory functions", "Allocation system"],
+        "options_hi": ["डिफॉल्ट अलोकेटर फंक्शन्स उपलब्ध होने पर कंडीशनल कंपाइलेशन", "अलोकेटर फंक्शन्स डिसेबल करना", "मेमोरी फंक्शन्स एनेबल करना", "अलोकेशन सिस्टम"],
+        "answer_en": "Conditional compilation when default allocator functions are available",
+        "answer_hi": "डिफॉल्ट अलोकेटर फंक्शन्स उपलब्ध होने पर कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 79,
-        "question_en": "Which gas is used in fire suppression systems?",
-        "question_hi": "आग दमन प्रणालियों में कौन सी गैस प्रयोग की जाती है?",
-        "options_en": ["Carbon Dioxide", "Oxygen", "Nitrogen", "Helium"],
-        "options_hi": ["कार्बन डाइऑक्साइड", "ऑक्सीजन", "नाइट्रोजन", "हीलियम"],
-        "answer_en": "Carbon Dioxide",
-        "answer_hi": "कार्बन डाइऑक्साइड",
+        "question_en": "What is the purpose of the `core::arch::x86_64::_mm256_set1_epi32` intrinsic?",
+        "question_hi": "`core::arch::x86_64::_mm256_set1_epi32` इंट्रिन्सिक का उद्देश्य क्या है?",
+        "options_en": ["Create 256-bit SIMD vector with all 32-bit integers set to same value", "Set vector elements", "Initialize with pattern", "Broadcast value"],
+        "options_hi": ["सभी 32-बिट इंटीजर्स को समान वैल्यू पर सेट करके 256-बिट SIMD वेक्टर बनाना", "वेक्टर एलिमेंट्स सेट करना", "पैटर्न के साथ इनिशियलाइज़ करना", "वैल्यू ब्रॉडकास्ट करना"],
+        "answer_en": "Create 256-bit SIMD vector with all 32-bit integers set to same value",
+        "answer_hi": "सभी 32-बिट इंटीजर्स को समान वैल्यू पर सेट करके 256-बिट SIMD वेक्टर बनाना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 80,
-        "question_en": "What is the unit of viscosity?",
-        "question_hi": "श्यानता की इकाई क्या है?",
-        "options_en": ["Poise", "Pascal", "Newton", "Joule"],
-        "options_hi": ["पॉइज", "पास्कल", "न्यूटन", "जूल"],
-        "answer_en": "Poise",
-        "answer_hi": "पॉइज",
+        "question_en": "What does the `core::sync::atomic::AtomicU8::from_mut` method create?",
+        "question_hi": "`core::sync::atomic::AtomicU8::from_mut` मेथड क्या बनाता है?",
+        "options_en": ["AtomicU8 from mutable reference to u8", "Convert from mutable u8", "Get atomic from mutable", "Mutable atomic wrapper"],
+        "options_hi": ["u8 के म्यूटेबल रेफरेंस से AtomicU8 बनाना", "म्यूटेबल u8 से कन्वर्ट करना", "म्यूटेबल से एटॉमिक प्राप्त करना", "म्यूटेबल एटॉमिक रैपर"],
+        "answer_en": "AtomicU8 from mutable reference to u8",
+        "answer_hi": "u8 के म्यूटेबल रेफरेंस से AtomicU8 बनाना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 81,
-        "question_en": "Which is the national fruit of India?",
-        "question_hi": "भारत का राष्ट्रीय फल कौन सा है?",
-        "options_en": ["Mango", "Apple", "Banana", "Orange"],
-        "options_hi": ["आम", "सेब", "केला", "संतरा"],
-        "answer_en": "Mango",
-        "answer_hi": "आम",
+        "question_en": "What is the purpose of the `#[cfg(not(no_default_lib_allocator_macro))]` attribute?",
+        "question_hi": "`#[cfg(not(no_default_lib_allocator_macro))]` एट्रिब्यूट का उद्देश्य क्या है?",
+        "options_en": ["Conditional compilation when default allocator macros are available", "Disable allocator macros", "Enable memory macros", "Macro system"],
+        "options_hi": ["डिफॉल्ट अलोकेटर मैक्रोस उपलब्ध होने पर कंडीशनल कंपाइलेशन", "अलोकेटर मैक्रोस डिसेबल करना", "मेमोरी मैक्रोस एनेबल करना", "मैक्रो सिस्टम"],
+        "answer_en": "Conditional compilation when default allocator macros are available",
+        "answer_hi": "डिफॉल्ट अलोकेटर मैक्रोस उपलब्ध होने पर कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 82,
-        "question_en": "What is the chemical formula of Aluminum Chloride?",
-        "question_hi": "एल्युमिनियम क्लोराइड का रासायनिक सूत्र क्या है?",
-        "options_en": ["AlCl₃", "AlCl", "Al₂Cl₃", "AlCl₂"],
-        "options_hi": ["AlCl₃", "AlCl", "Al₂Cl₃", "AlCl₂"],
-        "answer_en": "AlCl₃",
-        "answer_hi": "AlCl₃",
+        "question_en": "What does the `core::arch::x86_64::_mm_movemask_epi8` intrinsic create?",
+        "question_hi": "`core::arch::x86_64::_mm_movemask_epi8` इंट्रिन्सिक क्या बनाता है?",
+        "options_en": ["Bitmask from most significant bits of 8-bit elements", "Create mask", "Extract sign bits", "Bitmask generation"],
+        "options_hi": ["8-बिट एलिमेंट्स के मोस्ट सिग्निफिकेंट बिट्स से बिटमास्क बनाना", "मास्क बनाना", "साइन बिट्स एक्सट्रैक्ट करना", "बिटमास्क जनरेशन"],
+        "answer_en": "Bitmask from most significant bits of 8-bit elements",
+        "answer_hi": "8-बिट एलिमेंट्स के मोस्ट सिग्निफिकेंट बिट्स से बिटमास्क बनाना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 83,
-        "question_en": "Who wrote 'The Kite Runner'?",
-        "question_hi": "'द काइट रनर' किसने लिखा?",
-        "options_en": ["Khaled Hosseini", "Paulo Coelho", "Jhumpa Lahiri", "Arundhati Roy"],
-        "options_hi": ["खालिद हुसैनी", "पाउलो कोएल्हो", "झुम्पा लाहिड़ी", "अरुंधति रॉय"],
-        "answer_en": "Khaled Hosseini",
-        "answer_hi": "खालिद हुसैनी",
+        "question_en": "What is the purpose of the `core::sync::atomic::AtomicI64::as_ptr` method?",
+        "question_hi": "`core::sync::atomic::AtomicI64::as_ptr` मेथड का उद्देश्य क्या है?",
+        "options_en": ["Get raw pointer to underlying i64", "Convert to pointer", "Get atomic address", "Pointer access"],
+        "options_hi": ["अंडरलाइंग i64 का रॉ पॉइंटर प्राप्त करना", "पॉइंटर में कन्वर्ट करना", "एटॉमिक एड्रेस प्राप्त करना", "पॉइंटर एक्सेस"],
+        "answer_en": "Get raw pointer to underlying i64",
+        "answer_hi": "अंडरलाइंग i64 का रॉ पॉइंटर प्राप्त करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 84,
-        "question_en": "What is the formula for Hubble's constant?",
-        "question_hi": "हबल स्थिरांक का सूत्र क्या है?",
-        "options_en": ["v = H₀d", "E = mc²", "F = ma", "PV = nRT"],
-        "options_hi": ["v = H₀d", "E = mc²", "F = ma", "PV = nRT"],
-        "answer_en": "v = H₀d",
-        "answer_hi": "v = H₀d",
+        "question_en": "What does the `#[cfg(not(no_default_lib_allocator_const_fn))]` attribute enable?",
+        "question_hi": "`#[cfg(not(no_default_lib_allocator_const_fn))]` एट्रिब्यूट क्या एनेबल करता है?",
+        "options_en": ["Conditional compilation when const allocator functions are available", "Disable const allocators", "Enable const memory", "Const allocation"],
+        "options_hi": ["कॉन्स्ट अलोकेटर फंक्शन्स उपलब्ध होने पर कंडीशनल कंपाइलेशन", "कॉन्स्ट अलोकेटर्स डिसेबल करना", "कॉन्स्ट मेमोरी एनेबल करना", "कॉन्स्ट अलोकेशन"],
+        "answer_en": "Conditional compilation when const allocator functions are available",
+        "answer_hi": "कॉन्स्ट अलोकेटर फंक्शन्स उपलब्ध होने पर कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 85,
-        "question_en": "Which vitamin is essential for red blood cell formation?",
-        "question_hi": "लाल रक्त कोशिका निर्माण के लिए कौन सा विटामिन आवश्यक है?",
-        "options_en": ["Vitamin B12", "Vitamin C", "Vitamin D", "Vitamin E"],
-        "options_hi": ["विटामिन B12", "विटामिन C", "विटामिन D", "विटामिन E"],
-        "answer_en": "Vitamin B12",
-        "answer_hi": "विटामिन B12",
+        "question_en": "What is the purpose of the `core::arch::x86_64::_mm256_cmp_ps` intrinsic?",
+        "question_hi": "`core::arch::x86_64::_mm256_cmp_ps` इंट्रिन्सिक का उद्देश्य क्या है?",
+        "options_en": ["Compare packed single-precision floats in 256-bit vector", "Compare floats", "Vector comparison", "Float comparison"],
+        "options_hi": ["256-बिट वेक्टर में पैक्ड सिंगल-प्रिसिजन फ्लोट्स की तुलना करना", "फ्लोट्स की तुलना करना", "वेक्टर कम्पेयरिजन", "फ्लोट कम्पेयरिजन"],
+        "answer_en": "Compare packed single-precision floats in 256-bit vector",
+        "answer_hi": "256-बिट वेक्टर में पैक्ड सिंगल-प्रिसिजन फ्लोट्स की तुलना करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 86,
-        "question_en": "What is the chemical symbol for Selenium?",
-        "question_hi": "सेलेनियम का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Se", "Sl", "Sn", "Sm"],
-        "options_hi": ["Se", "Sl", "Sn", "Sm"],
-        "answer_en": "Se",
-        "answer_hi": "Se",
+        "question_en": "What does the `core::sync::atomic::AtomicUsize::fetch_update` with `Ordering::SeqCst` guarantee?",
+        "question_hi": "`Ordering::SeqCst` के साथ `core::sync::atomic::AtomicUsize::fetch_update` क्या गारंटी देता है?",
+        "options_en": ["Strongest ordering for atomic update operation", "Weak ordering", "Acquire-release only", "Thread-local consistency"],
+        "options_hi": ["एटॉमिक अपडेट ऑपरेशन के लिए सबसे मजबूत ऑर्डरिंग", "वीक ऑर्डरिंग", "केवल एक्वायर-रिलीज", "थ्रेड-लोकल कंसिस्टेंसी"],
+        "answer_en": "Strongest ordering for atomic update operation",
+        "answer_hi": "एटॉमिक अपडेट ऑपरेशन के लिए सबसे मजबूत ऑर्डरिंग",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 87,
-        "question_en": "Who was the first Indian woman to win an Asian Games gold?",
-        "question_hi": "एशियाई खेलों में स्वर्ण पदक जीतने वाली पहली भारतीय महिला कौन थीं?",
-        "options_en": ["Kamaljit Sandhu", "P.T. Usha", "Milkha Singh", "None of these"],
-        "options_hi": ["कमलजीत संधू", "पी.टी. उषा", "मिल्खा सिंह", "इनमें से कोई नहीं"],
-        "answer_en": "Kamaljit Sandhu",
-        "answer_hi": "कमलजीत संधू",
+        "question_en": "What is the purpose of the `#[cfg(not(no_default_lib_allocator_static))]` attribute?",
+        "question_hi": "`#[cfg(not(no_default_lib_allocator_static))]` एट्रिब्यूट का उद्देश्य क्या है?",
+        "options_en": ["Conditional compilation when static allocator is available", "Disable static allocator", "Enable static memory", "Static allocation"],
+        "options_hi": ["स्टैटिक अलोकेटर उपलब्ध होने पर कंडीशनल कंपाइलेशन", "स्टैटिक अलोकेटर डिसेबल करना", "स्टैटिक मेमोरी एनेबल करना", "स्टैटिक अलोकेशन"],
+        "answer_en": "Conditional compilation when static allocator is available",
+        "answer_hi": "स्टैटिक अलोकेटर उपलब्ध होने पर कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 88,
-        "question_en": "What is the value of sin 270°?",
-        "question_hi": "sin 270° का मान क्या है?",
-        "options_en": ["0", "1", "-1", "0.5"],
-        "options_hi": ["0", "1", "-1", "0.5"],
-        "answer_en": "-1",
-        "answer_hi": "-1",
+        "question_en": "What does the `core::arch::x86_64::_mm256_permutevar8x32_epi32` intrinsic do?",
+        "question_hi": "`core::arch::x86_64::_mm256_permutevar8x32_epi32` इंट्रिन्सिक क्या करता है?",
+        "options_en": ["Permute 32-bit integers in 256-bit vector using index vector", "Permute elements", "Rearrange vector", "Index-based permutation"],
+        "options_hi": ["इंडेक्स वेक्टर का उपयोग करके 256-बिट वेक्टर में 32-बिट इंटीजर्स को परम्यूट करना", "एलिमेंट्स परम्यूट करना", "वेक्टर रीअरेंज करना", "इंडेक्स-बेस्ड परम्यूटेशन"],
+        "answer_en": "Permute 32-bit integers in 256-bit vector using index vector",
+        "answer_hi": "इंडेक्स वेक्टर का उपयोग करके 256-बिट वेक्टर में 32-बिट इंटीजर्स को परम्यूट करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 89,
-        "question_en": "Which gas is used in meteorology for weather balloons?",
-        "question_hi": "मौसम विज्ञान में मौसम गुब्बारों के लिए कौन सी गैस प्रयोग की जाती है?",
-        "options_en": ["Helium", "Hydrogen", "Oxygen", "Nitrogen"],
-        "options_hi": ["हीलियम", "हाइड्रोजन", "ऑक्सीजन", "नाइट्रोजन"],
-        "answer_en": "Helium",
-        "answer_hi": "हीलियम",
+        "question_en": "What is the purpose of the `core::sync::atomic::AtomicPtr::compare_exchange`?",
+        "question_hi": "`core::sync::atomic::AtomicPtr::compare_exchange` का उद्देश्य क्या है?",
+        "options_en": ["Atomic compare-and-swap for pointer values", "Compare pointers", "Exchange pointer values", "Pointer atomic operation"],
+        "options_hi": ["पॉइंटर वैल्यूज के लिए एटॉमिक कम्पेयर-एंड-स्वैप", "पॉइंटर्स की तुलना करना", "पॉइंटर वैल्यूज एक्सचेंज करना", "पॉइंटर एटॉमिक ऑपरेशन"],
+        "answer_en": "Atomic compare-and-swap for pointer values",
+        "answer_hi": "पॉइंटर वैल्यूज के लिए एटॉमिक कम्पेयर-एंड-स्वैप",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 90,
-        "question_en": "What is the unit of radioactivity?",
-        "question_hi": "रेडियोधर्मिता की इकाई क्या है?",
-        "options_en": ["Becquerel", "Curie", "Both", "None"],
-        "options_hi": ["बेकरेल", "क्यूरी", "दोनों", "कोई नहीं"],
-        "answer_en": "Both",
-        "answer_hi": "दोनों",
+        "question_en": "What does the `#[cfg(not(no_default_lib_allocator_impl))]` attribute enable?",
+        "question_hi": "`#[cfg(not(no_default_lib_allocator_impl))]` एट्रिब्यूट क्या एनेबल करता है?",
+        "options_en": ["Conditional compilation when default allocator implementation is available", "Disable allocator impl", "Enable memory impl", "Implementation system"],
+        "options_hi": ["डिफॉल्ट अलोकेटर इम्प्लीमेंटेशन उपलब्ध होने पर कंडीशनल कंपाइलेशन", "अलोकेटर इम्प्लीमेंटेशन डिसेबल करना", "मेमोरी इम्प्लीमेंटेशन एनेबल करना", "इम्प्लीमेंटेशन सिस्टम"],
+        "answer_en": "Conditional compilation when default allocator implementation is available",
+        "answer_hi": "डिफॉल्ट अलोकेटर इम्प्लीमेंटेशन उपलब्ध होने पर कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 91,
-        "question_en": "Which is the national calendar of India?",
-        "question_hi": "भारत का राष्ट्रीय कैलेंडर कौन सा है?",
-        "options_en": ["Saka Calendar", "Vikram Samvat", "Hijri Calendar", "Gregorian Calendar"],
-        "options_hi": ["शक कैलेंडर", "विक्रम संवत", "हिजरी कैलेंडर", "ग्रेगोरियन कैलेंडर"],
-        "answer_en": "Saka Calendar",
-        "answer_hi": "शक कैलेंडर",
+        "question_en": "What is the purpose of the `core::arch::x86_64::_mm256_blendv_ps` intrinsic?",
+        "question_hi": "`core::arch::x86_64::_mm256_blendv_ps` इंट्रिन्सिक का उद्देश्य क्या है?",
+        "options_en": ["Blend single-precision floats from two vectors using mask", "Blend vectors", "Conditional selection", "Mask-based blending"],
+        "options_hi": ["मास्क का उपयोग करके दो वेक्टर्स से सिंगल-प्रिसिजन फ्लोट्स ब्लेंड करना", "वेक्टर्स ब्लेंड करना", "कंडीशनल सिलेक्शन", "मास्क-बेस्ड ब्लेंडिंग"],
+        "answer_en": "Blend single-precision floats from two vectors using mask",
+        "answer_hi": "मास्क का उपयोग करके दो वेक्टर्स से सिंगल-प्रिसिजन फ्लोट्स ब्लेंड करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 92,
-        "question_en": "What is the chemical formula of Ferric Oxide?",
-        "question_hi": "फेरिक ऑक्साइड का रासायनिक सूत्र क्या है?",
-        "options_en": ["FeO", "Fe₂O₃", "Fe₃O₄", "Fe(OH)₃"],
-        "options_hi": ["FeO", "Fe₂O₃", "Fe₃O₄", "Fe(OH)₃"],
-        "answer_en": "Fe₂O₃",
-        "answer_hi": "Fe₂O₃",
+        "question_en": "What does the `core::sync::atomic::AtomicBool::get_mut_slice` method provide?",
+        "question_hi": "`core::sync::atomic::AtomicBool::get_mut_slice` मेथड क्या प्रदान करता है?",
+        "options_en": ["Mutable slice to slice of AtomicBool", "Get slice of booleans", "Convert to boolean slice", "Slice atomic access"],
+        "options_hi": ["AtomicBool के स्लाइस का म्यूटेबल स्लाइस", "बूलियन्स का स्लाइस प्राप्त करना", "बूलियन स्लाइस में कन्वर्ट करना", "स्लाइस एटॉमिक एक्सेस"],
+        "answer_en": "Mutable slice to slice of AtomicBool",
+        "answer_hi": "AtomicBool के स्लाइस का म्यूटेबल स्लाइस",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 93,
-        "question_en": "Who wrote 'The God of Small Things'?",
-        "question_hi": "'द गॉड ऑफ स्मॉल थिंग्स' किसने लिखा?",
-        "options_en": ["Arundhati Roy", "Jhumpa Lahiri", "Anita Desai", "Shashi Tharoor"],
-        "options_hi": ["अरुंधति रॉय", "झुम्पा लाहिड़ी", "अनिता देसाई", "शशि थरूर"],
-        "answer_en": "Arundhati Roy",
-        "answer_hi": "अरुंधति रॉय",
+        "question_en": "What is the purpose of the `#[cfg(not(no_default_lib_allocator_trait))]` attribute?",
+        "question_hi": "`#[cfg(not(no_default_lib_allocator_trait))]` एट्रिब्यूट का उद्देश्य क्या है?",
+        "options_en": ["Conditional compilation when default allocator trait is available", "Disable allocator trait", "Enable memory trait", "Trait system"],
+        "options_hi": ["डिफॉल्ट अलोकेटर ट्रेट उपलब्ध होने पर कंडीशनल कंपाइलेशन", "अलोकेटर ट्रेट डिसेबल करना", "मेमोरी ट्रेट एनेबल करना", "ट्रेट सिस्टम"],
+        "answer_en": "Conditional compilation when default allocator trait is available",
+        "answer_hi": "डिफॉल्ट अलोकेटर ट्रेट उपलब्ध होने पर कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 94,
-        "question_en": "What is the formula for Planck's constant?",
-        "question_hi": "प्लैंक स्थिरांक का सूत्र क्या है?",
-        "options_en": ["h", "E", "c", "λ"],
-        "options_hi": ["h", "E", "c", "λ"],
-        "answer_en": "h",
-        "answer_hi": "h",
+        "question_en": "What does the `core::arch::x86_64::_mm256_sqrt_pd` intrinsic compute?",
+        "question_hi": "`core::arch::x86_64::_mm256_sqrt_pd` इंट्रिन्सिक क्या कंप्यूट करता है?",
+        "options_en": ["Square root of packed double-precision floats", "Square root of doubles", "Vector square root", "Double math"],
+        "options_hi": ["पैक्ड डबल-प्रिसिजन फ्लोट्स का स्क्वायर रूट", "डबल्स का स्क्वायर रूट", "वेक्टर स्क्वायर रूट", "डबल मैथ"],
+        "answer_en": "Square root of packed double-precision floats",
+        "answer_hi": "पैक्ड डबल-प्रिसिजन फ्लोट्स का स्क्वायर रूट",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 95,
-        "question_en": "Which vitamin is essential for protein metabolism?",
-        "question_hi": "प्रोटीन चयापचय के लिए कौन सा विटामिन आवश्यक है?",
-        "options_en": ["Vitamin B6", "Vitamin C", "Vitamin D", "Vitamin E"],
-        "options_hi": ["विटामिन B6", "विटामिन C", "विटामिन D", "विटामिन E"],
-        "answer_en": "Vitamin B6",
-        "answer_hi": "विटामिन B6",
+        "question_en": "What is the purpose of the `core::sync::atomic::AtomicIsize::from_mut_slice` method?",
+        "question_hi": "`core::sync::atomic::AtomicIsize::from_mut_slice` मेथड का उद्देश्य क्या है?",
+        "options_en": ["Create slice of AtomicIsize from mutable slice of isize", "Convert from mutable slice", "Get atomic slice", "Mutable atomic conversion"],
+        "options_hi": ["isize के म्यूटेबल स्लाइस से AtomicIsize का स्लाइस बनाना", "म्यूटेबल स्लाइस से कन्वर्ट करना", "एटॉमिक स्लाइस प्राप्त करना", "म्यूटेबल एटॉमिक कन्वर्जन"],
+        "answer_en": "Create slice of AtomicIsize from mutable slice of isize",
+        "answer_hi": "isize के म्यूटेबल स्लाइस से AtomicIsize का स्लाइस बनाना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 96,
-        "question_en": "What is the chemical symbol for Tellurium?",
-        "question_hi": "टेल्यूरियम का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Te", "Tl", "Tr", "Tu"],
-        "options_hi": ["Te", "Tl", "Tr", "Tu"],
-        "answer_en": "Te",
-        "answer_hi": "Te",
+        "question_en": "What does the `#[cfg(not(no_default_lib_allocator_global))]` attribute enable?",
+        "question_hi": "`#[cfg(not(no_default_lib_allocator_global))]` एट्रिब्यूट क्या एनेबल करता है?",
+        "options_en": ["Conditional compilation when global allocator is available", "Disable global allocator", "Enable global memory", "Global allocation"],
+        "options_hi": ["ग्लोबल अलोकेटर उपलब्ध होने पर कंडीशनल कंपाइलेशन", "ग्लोबल अलोकेटर डिसेबल करना", "ग्लोबल मेमोरी एनेबल करना", "ग्लोबल अलोकेशन"],
+        "answer_en": "Conditional compilation when global allocator is available",
+        "answer_hi": "ग्लोबल अलोकेटर उपलब्ध होने पर कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 97,
-        "question_en": "Who is known as the Flying Sikh of India?",
-        "question_hi": "भारत के फ्लाइंग सिख के रूप में किसे जाना जाता है?",
-        "options_en": ["Milkha Singh", "P.T. Usha", "Bhaag Milkha Bhaag", "None of these"],
-        "options_hi": ["मिल्खा सिंह", "पी.टी. उषा", "भाग मिल्खा भाग", "इनमें से कोई नहीं"],
-        "answer_en": "Milkha Singh",
-        "answer_hi": "मिल्खा सिंह",
+        "question_en": "What is the purpose of the `core::arch::x86_64::_mm256_fmadd_ps` intrinsic?",
+        "question_hi": "`core::arch::x86_64::_mm256_fmadd_ps` इंट्रिन्सिक का उद्देश्य क्या है?",
+        "options_en": ["Fused multiply-add of packed single-precision floats", "Fused math operation", "Vector FMA", "Float FMA"],
+        "options_hi": ["पैक्ड सिंगल-प्रिसिजन फ्लोट्स का फ्यूज्ड मल्टीप्लाई-एड", "फ्यूज्ड मैथ ऑपरेशन", "वेक्टर FMA", "फ्लोट FMA"],
+        "answer_en": "Fused multiply-add of packed single-precision floats",
+        "answer_hi": "पैक्ड सिंगल-प्रिसिजन फ्लोट्स का फ्यूज्ड मल्टीप्लाई-एड",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 98,
-        "question_en": "What is the value of cos 270°?",
-        "question_hi": "cos 270° का मान क्या है?",
-        "options_en": ["0", "1", "-1", "0.5"],
-        "options_hi": ["0", "1", "-1", "0.5"],
-        "answer_en": "0",
-        "answer_hi": "0",
+        "question_en": "What does the `core::sync::atomic::AtomicU16::as_mut_slice` method return?",
+        "question_hi": "`core::sync::atomic::AtomicU16::as_mut_slice` मेथड क्या रिटर्न करता है?",
+        "options_en": ["Mutable slice to slice of AtomicU16", "Get slice of u16", "Convert to u16 slice", "Slice atomic access"],
+        "options_hi": ["AtomicU16 के स्लाइस का म्यूटेबल स्लाइस", "u16 का स्लाइस प्राप्त करना", "u16 स्लाइस में कन्वर्ट करना", "स्लाइस एटॉमिक एक्सेस"],
+        "answer_en": "Mutable slice to slice of AtomicU16",
+        "answer_hi": "AtomicU16 के स्लाइस का म्यूटेबल स्लाइस",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 99,
-        "question_en": "Which gas is used in scuba diving tanks?",
-        "question_hi": "स्कूबा डाइविंग टैंकों में कौन सी गैस प्रयोग की जाती है?",
-        "options_en": ["Compressed Air", "Oxygen", "Helium", "Nitrogen"],
-        "options_hi": ["संपीड़ित हवा", "ऑक्सीजन", "हीलियम", "नाइट्रोजन"],
-        "answer_en": "Compressed Air",
-        "answer_hi": "संपीड़ित हवा",
+        "question_en": "What is the purpose of the `#[cfg(not(no_default_lib_allocator_boxed))]` attribute?",
+        "question_hi": "`#[cfg(not(no_default_lib_allocator_boxed))]` एट्रिब्यूट का उद्देश्य क्या है?",
+        "options_en": ["Conditional compilation when Box allocator is available", "Disable Box allocator", "Enable boxed memory", "Box allocation"],
+        "options_hi": ["Box अलोकेटर उपलब्ध होने पर कंडीशनल कंपाइलेशन", "Box अलोकेटर डिसेबल करना", "बॉक्स्ड मेमोरी एनेबल करना", "Box अलोकेशन"],
+        "answer_en": "Conditional compilation when Box allocator is available",
+        "answer_hi": "Box अलोकेटर उपलब्ध होने पर कंडीशनल कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 100,
-        "question_en": "What is the unit of electric field intensity?",
-        "question_hi": "विद्युत क्षेत्र तीव्रता की इकाई क्या है?",
-        "options_en": ["Newton/Coulomb", "Volt/Meter", "Both", "None"],
-        "options_hi": ["न्यूटन/कूलम्ब", "वोल्ट/मीटर", "दोनों", "कोई नहीं"],
-        "answer_en": "Both",
-        "answer_hi": "दोनों",
+        "question_en": "What does the `core::arch::x86_64::_mm256_round_ps` intrinsic do?",
+        "question_hi": "`core::arch::x86_64::_mm256_round_ps` इंट्रिन्सिक क्या करता है?",
+        "options_en": ["Round packed single-precision floats to nearest integer", "Round floats", "Vector rounding", "Float rounding"],
+        "options_hi": ["पैक्ड सिंगल-प्रिसिजन फ्लोट्स को नियरेस्ट इंटीजर में राउंड करना", "फ्लोट्स राउंड करना", "वेक्टर राउंडिंग", "फ्लोट राउंडिंग"],
+        "answer_en": "Round packed single-precision floats to nearest integer",
+        "answer_hi": "पैक्ड सिंगल-प्रिसिजन फ्लोट्स को नियरेस्ट इंटीजर में राउंड करना",
         "attempted": false,
         "selected": ""
     }
-        
-// Add more questions here...
 ];
-
-
-let currentQuestion = 0; 
+// --------------------------- GLOBAL VARS -----------------------------
+let currentQuestion = 0;
 let language = "en";
-// let timeLeft = 180 * 60; // 180 minutes
-let timeLeft = 60 * 60; // 60 minutes
+let timeLeft = 60 * 60;   // 60 minutes timer
 let timerInterval;
 
-// ----------------- Quiz Logic -----------------
+// --------------------------- LOAD QUESTION ----------------------------
 function loadQuestion(index) {
     const q = questions[index];
-    document.getElementById("question").textContent = `${q.num}. ${
-        language === "en" ? q.question_en : q.question_hi
-    }`;
-    document.getElementById("questionCounter").textContent = `Question ${index + 1} of ${questions.length}`;
+
+    document.getElementById("question").textContent =
+        `${q.num}. ${language === "en" ? q.question_en : q.question_hi}`;
+
+    document.getElementById("questionCounter").textContent =
+        `Question ${index + 1} of ${questions.length}`;
 
     const optionsElement = document.getElementById("options");
     optionsElement.innerHTML = "";
@@ -1126,6 +1124,7 @@ function loadQuestion(index) {
     options.forEach((option) => {
         const isSelected = q.selected === option;
         const optionDiv = document.createElement("div");
+
         optionDiv.className = "option-box";
         optionDiv.style = `
             border: 2px solid ${isSelected ? "#007bff" : "#ccc"};
@@ -1134,12 +1133,11 @@ function loadQuestion(index) {
             border-radius: 8px;
             margin: 6px 0;
             cursor: pointer;
-            transition: all 0.2s;
         `;
 
         optionDiv.innerHTML = `
-            <input type="radio" name="option" value="${option}" ${isSelected ? "checked" : ""} style="margin-right:8px;">
-            ${option}
+            <input type="radio" name="option"
+            value="${option}" ${isSelected ? "checked" : ""} /> ${option}
         `;
 
         optionDiv.addEventListener("click", () => {
@@ -1153,12 +1151,14 @@ function loadQuestion(index) {
     updateNavigation();
 }
 
+// --------------------------- MARK ATTEMPT ----------------------------
 function markAttempted(index, selectedAnswer) {
     questions[index].attempted = true;
     questions[index].selected = selectedAnswer;
     updateNavigation();
 }
 
+// --------------------------- NEXT / PREV -----------------------------
 function nextQuestion() {
     if (currentQuestion < questions.length - 1) {
         currentQuestion++;
@@ -1173,296 +1173,150 @@ function prevQuestion() {
     }
 }
 
+// --------------------------- LANGUAGE CHANGE -------------------------
 function changeLanguage() {
     language = document.getElementById("languageSelect").value;
     loadQuestion(currentQuestion);
 }
 
-function submitQuiz() {
-    clearInterval(timerInterval);
-    let attempted = 0,
-        notAttempted = 0,
-        score = 0;
-
-    questions.forEach((q) => {
-        if (q.attempted) {
-            attempted++;
-            if (q.selected === q.answer_en || q.selected === q.answer_hi) score++;
-        } else notAttempted++;
-    });
-
-    alert(
-        `Quiz submitted!\nAttempted: ${attempted}\nNot Attempted: ${notAttempted}\nScore: ${score}/${questions.length}`
-    );
-}
-
+// --------------------------- TIMER -------------------------------
 function startTimer() {
     const timerElement = document.getElementById("timer");
     clearInterval(timerInterval);
+
     timerInterval = setInterval(() => {
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
-            alert("Time's up!");
+            alert("⏳ Time Over!");
             submitQuiz();
-        } else {
-            const hours = Math.floor(timeLeft / 3600);
-            const minutes = Math.floor((timeLeft % 3600) / 60);
-            const seconds = timeLeft % 60;
-            timerElement.textContent = `Time Left: ${hours
-                .toString()
-                .padStart(2, "0")}:${minutes
-                .toString()
-                .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
-            timeLeft--;
+            return;
         }
+
+        const h = Math.floor(timeLeft / 3600);
+        const m = Math.floor((timeLeft % 3600) / 60);
+        const s = timeLeft % 60;
+
+        timerElement.textContent =
+            `Time Left: ${h.toString().padStart(2, "0")}:${m
+                .toString().padStart(2, "0")}:${s.toString().padStart(2, "0")}`;
+
+        timeLeft--;
     }, 1000);
 }
 
+// --------------------------- SUBMIT QUIZ ---------------------
+function submitQuiz() {
+    let confirmation = confirm("Are you sure you want to submit the test?");
+    if (!confirmation) return;
 
+    clearInterval(timerInterval);
 
+    // Calculate time spent
+    const totalTimeSpent = (60 * 60) - timeLeft;
+    const mins = Math.floor(totalTimeSpent / 60);
+    const secs = totalTimeSpent % 60;
 
+    // Save to localStorage
+    localStorage.setItem("timeTaken", `${mins} min ${secs} sec`);
 
+    let attempted = 0;
+    let notAttempted = 0;
+    let score = 0;
+    const results = [];
 
-
-
-
-
-
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////all file and folder me code add karna hai 
-
-
-// submit 
-function jumpToQuestion(index) {
-            currentQuestion = index;
-            loadQuestion(index);
+    questions.forEach(q => {
+        if (q.attempted) {
+            attempted++;
+            if (q.selected === q.answer_en || q.selected === q.answer_hi) {
+                score++;
+            }
+        } else {
+            notAttempted++;
         }
 
-        function submitQuiz() {
-            let confirmation = confirm("Are you sure you want to submit the test?");
-            
-            if (!confirmation) {
-                return; // अगर यूज़र 'Cancel' करता है तो आगे नहीं बढ़ेंगे
-            }
+        results.push({
+            question: language === "en" ? q.question_en : q.question_hi,
+            selected: q.selected || "Not Answered",
+            correct: language === "en" ? q.answer_en : q.answer_hi
+        });
+    });
 
-            let attempted = 0;
-            let notAttempted = 0;
-            let score = 0;
-            const results = [];
+    // Save result data
+    localStorage.setItem("attempted", attempted);
+    localStorage.setItem("notAttempted", notAttempted);
+    localStorage.setItem("score", score);
+    localStorage.setItem("results", JSON.stringify(results));
 
-            questions.forEach(q => {
-                if (q.attempted) {
-                    attempted++;
-                    if (q.selected === q.answer) {
-                        score++;
-                    }
-                } else {
-                    notAttempted++;
-                }
-                results.push({ question: q.question, selected: q.selected || "Not Answered", correct: q.answer });
-            });
+    // Stop camera stream if active
+    if (videoStream) {
+        videoStream.getTracks().forEach(track => track.stop());
+    }
 
-            localStorage.setItem("attempted", attempted);
-            localStorage.setItem("notAttempted", notAttempted);
-            localStorage.setItem("score", score);
-            localStorage.setItem("results", JSON.stringify(results));
+    // Redirect
+    window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
+}
 
-            // रिजल्ट देखने से पहले एक और कन्फर्मेशन ले सकते हैं
-            let viewResult = confirm("Test submitted successfully! Do you want to view your result?");
-            if (viewResult) {
-                window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
-            }
-        }
-        window.onload = () => {
-            loadQuestion(currentQuestion);
-        };
-
-
+// --------------------------- NAVIGATION ------------------------------
 function updateNavigation() {
     const nav = document.getElementById("circleContainer");
     nav.innerHTML = "";
+
     questions.forEach((q, i) => {
         let color = "gray";
         if (i === currentQuestion) color = "blue";
         else if (q.attempted) color = "green";
-        nav.innerHTML += `<div class='circle' style='background-color:${color}' onclick='loadQuestion(${i})'>${i + 1}</div>`;
+
+        const circle = document.createElement("div");
+        circle.className = "circle";
+        circle.style.background = color;
+        circle.textContent = i + 1;
+        circle.onclick = () => jumpToQuestion(i);
+        nav.appendChild(circle);
     });
 }
 
-// ----------------- Camera & Movement Logic -----------------
+function jumpToQuestion(i) {
+    currentQuestion = i;
+    loadQuestion(i);
+}
+
+// --------------------------- CAMERA ----------------------
 let videoStream;
-let movementCount = 0;
 
 function startCamera() {
     const container = document.createElement("div");
     container.id = "camera-container";
     container.style.position = "fixed";
     container.style.top = "10px";
-    container.style.left = "10px"; // ✅ Left side
+    container.style.left = "10px";
     container.style.width = "130px";
     container.style.height = "130px";
-    container.style.zIndex = "9999";
     container.style.borderRadius = "50%";
     container.style.overflow = "hidden";
-    container.style.border = "3px solid red";
-    container.style.boxShadow = "0 0 10px rgba(0,0,0,0.3)";
-    container.style.cursor = "grab";
-    container.style.minWidth = "80px";
-    container.style.minHeight = "80px";
-    container.style.maxWidth = "250px";
-    container.style.maxHeight = "250px";
     container.style.background = "#000";
+    container.style.border = "3px solid red";
+    container.style.zIndex = "9999";
     document.body.appendChild(container);
 
     const video = document.createElement("video");
-    video.setAttribute("autoplay", true);
-    video.setAttribute("playsinline", true);
+    video.autoplay = true;
+    video.playsInline = true;
     video.style.width = "100%";
     video.style.height = "100%";
     video.style.objectFit = "cover";
     container.appendChild(video);
 
-    // ✅ Resize handle
-    const resizeHandle = document.createElement("div");
-    resizeHandle.style.position = "absolute";
-    resizeHandle.style.bottom = "2px";
-    resizeHandle.style.right = "2px";
-    resizeHandle.style.width = "15px";
-    resizeHandle.style.height = "15px";
-    resizeHandle.style.background = "rgba(255,255,255,0.7)";
-    resizeHandle.style.borderRadius = "4px";
-    resizeHandle.style.cursor = "se-resize";
-    container.appendChild(resizeHandle);
-
-    // ✅ Drag logic
-    let isDragging = false;
-    let offsetX, offsetY;
-
-    container.addEventListener("mousedown", (e) => {
-        if (e.target === resizeHandle) return;
-        isDragging = true;
-        offsetX = e.clientX - container.offsetLeft;
-        offsetY = e.clientY - container.offsetTop;
-        container.style.cursor = "grabbing";
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isDragging) return;
-        let x = e.clientX - offsetX;
-        let y = e.clientY - offsetY;
-        x = Math.max(0, Math.min(window.innerWidth - container.offsetWidth, x));
-        y = Math.max(0, Math.min(window.innerHeight - container.offsetHeight, y));
-        container.style.left = `${x}px`;
-        container.style.top = `${y}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isDragging = false;
-        container.style.cursor = "grab";
-    });
-
-    // ✅ Resize logic
-    let isResizing = false;
-    let startWidth, startHeight, startX, startY;
-
-    resizeHandle.addEventListener("mousedown", (e) => {
-        e.stopPropagation();
-        isResizing = true;
-        startWidth = container.offsetWidth;
-        startHeight = container.offsetHeight;
-        startX = e.clientX;
-        startY = e.clientY;
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isResizing) return;
-        const dx = e.clientX - startX;
-        const dy = e.clientY - startY;
-        const newSize = Math.max(80, Math.min(250, Math.max(startWidth + dx, startHeight + dy)));
-        container.style.width = `${newSize}px`;
-        container.style.height = `${newSize}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isResizing = false;
-    });
-
-    // ✅ Camera stream
     navigator.mediaDevices.getUserMedia({ video: true })
         .then(stream => {
             video.srcObject = stream;
             videoStream = stream;
-            detectMovement(video);
         })
-        .catch(err => {
-            console.error("Camera error:", err);
-            alert("Camera not accessible!");
-        });
+        .catch(() => alert("Camera not accessible!"));
 }
 
-function detectMovement(video) {
-    const canvas = document.createElement("canvas");
-    const ctx = canvas.getContext("2d");
-    canvas.width = 160;
-    canvas.height = 160;
-    let lastImageData = null;
-
-    setInterval(() => {
-        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-
-        if (lastImageData) {
-            let diff = 0;
-            for (let i = 0; i < imageData.data.length; i += 4) {
-                diff += Math.abs(imageData.data[i] - lastImageData.data[i]);
-            }
-
-            if (diff > 1000000) {
-                movementCount++;
-                if (movementCount === 1) {
-                    alert("⚠️ Alert 1: Face is not move");
-                } else if (movementCount === 2) {
-                    alert("⚠️ Alert 2: Head is not move");
-                } else if (movementCount === 3) {
-                    alert("⚠️ Alert 3: Test series is restarting...");
-                    restartTest();
-                }
-            }
-        }
-        lastImageData = imageData;
-    }, 2000);
-}
-
-function restartTest() {
-    if (videoStream) {
-        videoStream.getTracks().forEach(track => track.stop());
-    }
-    const camContainer = document.getElementById("camera-container");
-    if (camContainer) camContainer.remove();
-
-    movementCount = 0;
-    currentQuestion = 0;
-    timeLeft = 180 * 60;
-
-    questions.forEach(q => {
-        q.attempted = false;
-        q.selected = null;
-    });
-
-    loadQuestion(currentQuestion);
-    startTimer();
-    startCamera();
-}
-
-// ----------------- Page Load -----------------
+// --------------------------- PAGE LOAD --------------------------
 window.onload = function () {
     loadQuestion(currentQuestion);
     startTimer();
-    startCamera(); // ✅ Camera starts with test
+    startCamera();
 };
-
-
-///////////////////////////////////////

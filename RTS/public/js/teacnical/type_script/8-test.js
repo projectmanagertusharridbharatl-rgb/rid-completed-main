@@ -1,1164 +1,1167 @@
-const questions = [
+const questions =[
     {
-        "num": 1,
-        "question_en": "The SI unit of luminous flux is:",
-        "question_hi": "ज्योति फ्लक्स की SI इकाई है:",
-        "options_en": ["Lux", "Lumen", "Candela", "Watt"],
-        "options_hi": ["लक्स", "लुमेन", "कैंडेला", "वाट"],
-        "answer_en": "Lumen",
-        "answer_hi": "लुमेन",
+        "num": 101,
+        "question_en": "What is the main advantage of using TypeScript over JavaScript?",
+        "question_hi": "JavaScript पर TypeScript use करने का main advantage क्या है?",
+        "options_en": ["Static type checking", "Faster execution", "Smaller file size", "Better browser support"],
+        "options_hi": ["Static type checking", "Faster execution", "Smaller file size", "Better browser support"],
+        "answer_en": "Static type checking",
+        "answer_hi": "Static type checking",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 2,
-        "question_en": "The process of converting AC to DC is called:",
-        "question_hi": "AC को DC में परिवर्तित करने की प्रक्रिया कहलाती है:",
-        "options_en": ["Amplification", "Rectification", "Modulation", "Oscillation"],
-        "options_hi": ["प्रवर्धन", "दिष्टकरण", "मॉडुलन", "दोलन"],
-        "answer_en": "Rectification",
-        "answer_hi": "दिष्टकरण",
+        "num": 102,
+        "question_en": "Which year was TypeScript first released?",
+        "question_hi": "TypeScript पहली बार किस year release हुआ था?",
+        "options_en": ["2012", "2010", "2014", "2016"],
+        "options_hi": ["2012", "2010", "2014", "2016"],
+        "answer_en": "2012",
+        "answer_hi": "2012",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 3,
-        "question_en": "The element with atomic number 17 is:",
-        "question_hi": "परमाणु संख्या 17 वाला तत्व है:",
-        "options_en": ["Sulfur", "Chlorine", "Argon", "Phosphorus"],
-        "options_hi": ["सल्फर", "क्लोरीन", "आर्गन", "फॉस्फोरस"],
-        "answer_en": "Chlorine",
-        "answer_hi": "क्लोरीन",
+        "num": 103,
+        "question_en": "What does TypeScript compile to?",
+        "question_hi": "TypeScript किसमें compile होता है?",
+        "options_en": ["JavaScript", "Python", "Java", "C++"],
+        "options_hi": ["JavaScript", "Python", "Java", "C++"],
+        "answer_en": "JavaScript",
+        "answer_hi": "JavaScript",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 4,
-        "question_en": "The process of removing salt from seawater is called:",
-        "question_hi": "समुद्री जल से नमक हटाने की प्रक्रिया कहलाती है:",
-        "options_en": ["Filtration", "Distillation", "Desalination", "Sedimentation"],
-        "options_hi": ["निस्यंदन", "आसवन", "अलवणीकरण", "अवसादन"],
-        "answer_en": "Desalination",
-        "answer_hi": "अलवणीकरण",
+        "num": 104,
+        "question_en": "Which of these is NOT a TypeScript primitive type?",
+        "question_hi": "निम्न में से कौन TypeScript primitive type नहीं है?",
+        "options_en": ["array", "string", "boolean", "number"],
+        "options_hi": ["array", "string", "boolean", "number"],
+        "answer_en": "array",
+        "answer_hi": "array",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 5,
-        "question_en": "The study of insects is called:",
-        "question_hi": "कीटों का अध्ययन कहलाता है:",
-        "options_en": ["Entomology", "Ornithology", "Herpetology", "Ichthyology"],
-        "options_hi": ["कीटविज्ञान", "पक्षीविज्ञान", "सरीसृपविज्ञान", "मत्स्यविज्ञान"],
-        "answer_en": "Entomology",
-        "answer_hi": "कीटविज्ञान",
+        "num": 105,
+        "question_en": "How do you declare a variable that can be a string or null?",
+        "question_hi": "Variable जो string या null हो सकती है, कैसे declare करें?",
+        "options_en": ["let name: string | null;", "let name: string || null;", "let name: string && null;", "let name: string & null;"],
+        "options_hi": ["let name: string | null;", "let name: string || null;", "let name: string && null;", "let name: string & null;"],
+        "answer_en": "let name: string | null;",
+        "answer_hi": "let name: string | null;",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 6,
-        "question_en": "The metal used in fireworks to produce green color is:",
-        "question_hi": "आतिशबाजी में हरा रंग उत्पन्न करने के लिए प्रयुक्त धातु है:",
-        "options_en": ["Sodium", "Copper", "Barium", "Strontium"],
-        "options_hi": ["सोडियम", "तांबा", "बेरियम", "स्ट्रोंशियम"],
-        "answer_en": "Barium",
-        "answer_hi": "बेरियम",
+        "num": 106,
+        "question_en": "What is the type of: let x = [1, 2, 3];",
+        "question_hi": "let x = [1, 2, 3]; का type क्या होगा?",
+        "options_en": ["number[]", "any[]", "array", "number"],
+        "options_hi": ["number[]", "any[]", "array", "number"],
+        "answer_en": "number[]",
+        "answer_hi": "number[]",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 7,
-        "question_en": "The instrument used to measure electric current is:",
-        "question_hi": "विद्युत धारा मापने के लिए प्रयुक्त उपकरण है:",
-        "options_en": ["Voltmeter", "Ammeter", "Galvanometer", "Ohmmeter"],
-        "options_hi": ["वोल्टमीटर", "एमीटर", "गैल्वेनोमीटर", "ओममीटर"],
-        "answer_en": "Ammeter",
-        "answer_hi": "एमीटर",
+        "num": 107,
+        "question_en": "Which keyword is used for constant variables?",
+        "question_hi": "Constant variables के लिए कौन सा keyword use होता है?",
+        "options_en": ["const", "let", "var", "static"],
+        "options_hi": ["const", "let", "var", "static"],
+        "answer_en": "const",
+        "answer_hi": "const",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 8,
-        "question_en": "The process of cell division in reproductive cells is called:",
-        "question_hi": "प्रजनन कोशिकाओं में कोशिका विभाजन की प्रक्रिया कहलाती है:",
-        "options_en": ["Mitosis", "Meiosis", "Binary fission", "Budding"],
-        "options_hi": ["समसूत्रीविभाजन", "अर्धसूत्रीविभाजन", "द्विखंडन", "मुकुलन"],
-        "answer_en": "Meiosis",
-        "answer_hi": "अर्धसूत्रीविभाजन",
+        "num": 108,
+        "question_en": "What is the difference between 'let' and 'const'?",
+        "question_hi": "'let' और 'const' में क्या difference है?",
+        "options_en": ["const cannot be reassigned", "let cannot be reassigned", "No difference", "const has function scope"],
+        "options_hi": ["const reassign नहीं किया जा सकता", "let reassign नहीं किया जा सकता", "कोई difference नहीं", "const का function scope होता है"],
+        "answer_en": "const cannot be reassigned",
+        "answer_hi": "const reassign नहीं किया जा सकता",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 9,
-        "question_en": "The chemical formula of quicklime is:",
-        "question_hi": "बिना बुझा चूना का रासायनिक सूत्र है:",
-        "options_en": ["CaO", "Ca(OH)₂", "CaCO₃", "CaSO₄"],
-        "options_hi": ["CaO", "Ca(OH)₂", "CaCO₃", "CaSO₄"],
-        "answer_en": "CaO",
-        "answer_hi": "CaO",
+        "num": 109,
+        "question_en": "How do you make a function parameter optional?",
+        "question_hi": "Function parameter को optional कैसे बनाएं?",
+        "options_en": ["param?: type", "param: type?", "optional param: type", "param: optional type"],
+        "options_hi": ["param?: type", "param: type?", "optional param: type", "param: optional type"],
+        "answer_en": "param?: type",
+        "answer_hi": "param?: type",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 10,
-        "question_en": "The SI unit of electric charge is:",
-        "question_hi": "विद्युत आवेश की SI इकाई है:",
-        "options_en": ["Ampere", "Volt", "Coulomb", "Ohm"],
-        "options_hi": ["एम्पियर", "वोल्ट", "कूलॉम", "ओम"],
-        "answer_en": "Coulomb",
-        "answer_hi": "कूलॉम",
+        "num": 110,
+        "question_en": "What is the default value of an uninitialized variable?",
+        "question_hi": "Uninitialized variable की default value क्या होती है?",
+        "options_en": ["undefined", "null", "0", ""],
+        "options_hi": ["undefined", "null", "0", ""],
+        "answer_en": "undefined",
+        "answer_hi": "undefined",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 11,
-        "question_en": "The process of conversion of vapor to liquid is called:",
-        "question_hi": "वाष्प का द्रव में परिवर्तन की प्रक्रिया कहलाती है:",
-        "options_en": ["Evaporation", "Condensation", "Sublimation", "Fusion"],
-        "options_hi": ["वाष्पीकरण", "संघनन", "उर्ध्वपातन", "संलयन"],
-        "answer_en": "Condensation",
-        "answer_hi": "संघनन",
+        "num": 111,
+        "question_en": "Which type represents the absence of value intentionally?",
+        "question_hi": "Intentional value की absence को कौन सा type represent करता है?",
+        "options_en": ["null", "undefined", "void", "never"],
+        "options_hi": ["null", "undefined", "void", "never"],
+        "answer_en": "null",
+        "answer_hi": "null",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 12,
-        "question_en": "The metal used in thermometers is:",
-        "question_hi": "थर्मामीटर में प्रयुक्त धातु है:",
-        "options_en": ["Mercury", "Aluminum", "Copper", "Iron"],
-        "options_hi": ["पारा", "एल्युमिनियम", "तांबा", "लोहा"],
-        "answer_en": "Mercury",
-        "answer_hi": "पारा",
+        "num": 112,
+        "question_en": "What is the type of: typeof 'hello'",
+        "question_hi": "typeof 'hello' का type क्या होगा?",
+        "options_en": ["string", "String", "any", "unknown"],
+        "options_hi": ["string", "String", "any", "unknown"],
+        "answer_en": "string",
+        "answer_hi": "string",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 13,
-        "question_en": "The study of blood is called:",
-        "question_hi": "रक्त का अध्ययन कहलाता है:",
-        "options_en": ["Cardiology", "Hematology", "Neurology", "Pathology"],
-        "options_hi": ["हृदय विज्ञान", "रक्त विज्ञान", "स्नायु विज्ञान", "रोग विज्ञान"],
-        "answer_en": "Hematology",
-        "answer_hi": "रक्त विज्ञान",
+        "num": 113,
+        "question_en": "How do you specify a function return type?",
+        "question_hi": "Function return type कैसे specify करें?",
+        "options_en": ["function name(): returnType {}", "function name(): returnType {}", "function name() returnType {}", "function name() -> returnType {}"],
+        "options_hi": ["function name(): returnType {}", "function name(): returnType {}", "function name() returnType {}", "function name() -> returnType {}"],
+        "answer_en": "function name(): returnType {}",
+        "answer_hi": "function name(): returnType {}",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 14,
-        "question_en": "The chemical formula of methane is:",
-        "question_hi": "मीथेन का रासायनिक सूत्र है:",
-        "options_en": ["CH₄", "C₂H₆", "C₃H₈", "C₄H₁₀"],
-        "options_hi": ["CH₄", "C₂H₆", "C₃H₈", "C₄H₁₀"],
-        "answer_en": "CH₄",
-        "answer_hi": "CH₄",
+        "num": 114,
+        "question_en": "What is the return type of a function that doesn't return anything?",
+        "question_hi": "Function जो कुछ return नहीं करती, उसका return type क्या होता है?",
+        "options_en": ["void", "undefined", "null", "any"],
+        "options_hi": ["void", "undefined", "null", "any"],
+        "answer_en": "void",
+        "answer_hi": "void",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 15,
-        "question_en": "The device used to measure atmospheric humidity is:",
-        "question_hi": "वायुमंडलीय आर्द्रता मापने के लिए प्रयुक्त उपकरण है:",
-        "options_en": ["Barometer", "Hygrometer", "Anemometer", "Thermometer"],
-        "options_hi": ["बैरोमीटर", "हाइग्रोमीटर", "एनीमोमीटर", "थर्मामीटर"],
-        "answer_en": "Hygrometer",
-        "answer_hi": "हाइग्रोमीटर",
+        "num": 115,
+        "question_en": "Which type should you use when you don't know the type?",
+        "question_hi": "जब आप type नहीं जानते तो कौन सा type use करना चाहिए?",
+        "options_en": ["unknown", "any", "void", "never"],
+        "options_hi": ["unknown", "any", "void", "never"],
+        "answer_en": "unknown",
+        "answer_hi": "unknown",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 16,
-        "question_en": "The process of converting light energy to chemical energy is:",
-        "question_hi": "प्रकाश ऊर्जा को रासायनिक ऊर्जा में परिवर्तित करने की प्रक्रिया है:",
-        "options_en": ["Respiration", "Photosynthesis", "Transpiration", "Fermentation"],
-        "options_hi": ["श्वसन", "प्रकाश संश्लेषण", "वाष्पोत्सर्जन", "किण्वन"],
-        "answer_en": "Photosynthesis",
-        "answer_hi": "प्रकाश संश्लेषण",
+        "num": 116,
+        "question_en": "What is the problem with using 'any' type?",
+        "question_hi": "'any' type use करने में क्या problem है?",
+        "options_en": ["Loses type safety", "Makes code faster", "Makes code smaller", "Better performance"],
+        "options_hi": ["Type safety lose हो जाती है", "Code faster हो जाता है", "Code smaller हो जाता है", "Better performance"],
+        "answer_en": "Loses type safety",
+        "answer_hi": "Type safety lose हो जाती है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 17,
-        "question_en": "The metal used in making electric wires is:",
-        "question_hi": "विद्युत तार बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Copper", "Aluminum", "Silver", "Both A and B"],
-        "options_hi": ["तांबा", "एल्युमिनियम", "चांदी", "A और B दोनों"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "num": 117,
+        "question_en": "How do you create a type for an object with specific properties?",
+        "question_hi": "Specific properties वाले object के लिए type कैसे create करें?",
+        "options_en": ["interface or type alias", "class", "enum", "namespace"],
+        "options_hi": ["interface या type alias", "class", "enum", "namespace"],
+        "answer_en": "interface or type alias",
+        "answer_hi": "interface या type alias",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 18,
-        "question_en": "The study of fungi is called:",
-        "question_hi": "कवक का अध्ययन कहलाता है:",
-        "options_en": ["Mycology", "Bacteriology", "Virology", "Phycology"],
-        "options_hi": ["कवक विज्ञान", "जीवाणु विज्ञान", "वायरस विज्ञान", "शैवाल विज्ञान"],
-        "answer_en": "Mycology",
-        "answer_hi": "कवक विज्ञान",
+        "num": 118,
+        "question_en": "What is the difference between 'interface' and 'type'?",
+        "question_hi": "'interface' और 'type' में क्या difference है?",
+        "options_en": ["interface can be extended, type can use unions", "No difference", "type can be extended, interface can use unions", "interface is for classes only"],
+        "options_hi": ["interface extend किया जा सकता है, type unions use कर सकता है", "कोई difference नहीं", "type extend किया जा सकता है, interface unions use कर सकता है", "interface केवल classes के लिए है"],
+        "answer_en": "interface can be extended, type can use unions",
+        "answer_hi": "interface extend किया जा सकता है, type unions use कर सकता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 19,
-        "question_en": "The chemical formula of common salt is:",
-        "question_hi": "साधारण नमक का रासायनिक सूत्र है:",
-        "options_en": ["NaCl", "KCl", "CaCl₂", "MgCl₂"],
-        "options_hi": ["NaCl", "KCl", "CaCl₂", "MgCl₂"],
-        "answer_en": "NaCl",
-        "answer_hi": "NaCl",
+        "num": 119,
+        "question_en": "How do you make all properties in an interface optional?",
+        "question_hi": "Interface में सभी properties को optional कैसे बनाएं?",
+        "options_en": ["Use Partial utility type", "Add ? to each property", "Use Optional utility type", "Cannot be done"],
+        "options_hi": ["Partial utility type use करें", "हर property में ? add करें", "Optional utility type use करें", "Cannot be done"],
+        "answer_en": "Use Partial utility type",
+        "answer_hi": "Partial utility type use करें",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 20,
-        "question_en": "The SI unit of power is:",
-        "question_hi": "शक्ति की SI इकाई है:",
-        "options_en": ["Joule", "Watt", "Newton", "Pascal"],
-        "options_hi": ["जूल", "वाट", "न्यूटन", "पास्कल"],
-        "answer_en": "Watt",
-        "answer_hi": "वाट",
+        "num": 120,
+        "question_en": "What is a generic in TypeScript?",
+        "question_hi": "TypeScript में generic क्या है?",
+        "options_en": ["Reusable component that works with multiple types", "Specific type", "Any type", "Unknown type"],
+        "options_hi": ["Reusable component जो multiple types के साथ work करता है", "Specific type", "Any type", "Unknown type"],
+        "answer_en": "Reusable component that works with multiple types",
+        "answer_hi": "Reusable component जो multiple types के साथ work करता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 21,
-        "question_en": "The process of conversion of nitrogen to ammonia is called:",
-        "question_hi": "नाइट्रोजन का अमोनिया में परिवर्तन की प्रक्रिया कहलाती है:",
-        "options_en": ["Nitrogen fixation", "Nitrification", "Denitrification", "Ammonification"],
-        "options_hi": ["नाइट्रोजन स्थिरीकरण", "नाइट्रीकरण", "विनाइट्रीकरण", "अमोनीकरण"],
-        "answer_en": "Nitrogen fixation",
-        "answer_hi": "नाइट्रोजन स्थिरीकरण",
+        "num": 121,
+        "question_en": "How do you declare a generic function?",
+        "question_hi": "Generic function कैसे declare करें?",
+        "options_en": ["function name<T>(arg: T): T {}", "function name<generic>(arg: generic): generic {}", "function name<T>(arg: any): any {}", "function name(arg: T): T {}"],
+        "options_hi": ["function name<T>(arg: T): T {}", "function name<generic>(arg: generic): generic {}", "function name<T>(arg: any): any {}", "function name(arg: T): T {}"],
+        "answer_en": "function name<T>(arg: T): T {}",
+        "answer_hi": "function name<T>(arg: T): T {}",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 22,
-        "question_en": "The metal used in aircraft manufacturing is:",
-        "question_hi": "वायुयान निर्माण में प्रयुक्त धातु है:",
-        "options_en": ["Aluminum", "Iron", "Copper", "Lead"],
-        "options_hi": ["एल्युमिनियम", "लोहा", "तांबा", "सीसा"],
-        "answer_en": "Aluminum",
-        "answer_hi": "एल्युमिनियम",
+        "num": 122,
+        "question_en": "What is the purpose of 'extends' in generics?",
+        "question_hi": "Generics में 'extends' का purpose क्या है?",
+        "options_en": ["To constrain generic types", "To extend classes", "To implement interfaces", "To create new types"],
+        "options_hi": ["Generic types constrain करने के लिए", "Classes extend करने के लिए", "Interfaces implement करने के लिए", "New types create करने के लिए"],
+        "answer_en": "To constrain generic types",
+        "answer_hi": "Generic types constrain करने के लिए",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 23,
-        "question_en": "The study of birds is called:",
-        "question_hi": "पक्षियों का अध्ययन कहलाता है:",
-        "options_en": ["Ornithology", "Entomology", "Herpetology", "Ichthyology"],
-        "options_hi": ["पक्षीविज्ञान", "कीटविज्ञान", "सरीसृपविज्ञान", "मत्स्यविज्ञान"],
-        "answer_en": "Ornithology",
-        "answer_hi": "पक्षीविज्ञान",
+        "num": 123,
+        "question_en": "How do you create a class in TypeScript?",
+        "question_hi": "TypeScript में class कैसे create करें?",
+        "options_en": ["class Name {}", "interface Name {}", "type Name = {}", "function Name() {}"],
+        "options_hi": ["class Name {}", "interface Name {}", "type Name = {}", "function Name() {}"],
+        "answer_en": "class Name {}",
+        "answer_hi": "class Name {}",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 24,
-        "question_en": "The chemical formula of glucose is:",
-        "question_hi": "ग्लूकोज का रासायनिक सूत्र है:",
-        "options_en": ["C₆H₁₂O₆", "C₁₂H₂₂O₁₁", "C₂H₅OH", "CH₃COOH"],
-        "options_hi": ["C₆H₁₂O₆", "C₁₂H₂₂O₁₁", "C₂H₅OH", "CH₃COOH"],
-        "answer_en": "C₆H₁₂O₆",
-        "answer_hi": "C₆H₁₂O₆",
+        "num": 124,
+        "question_en": "What are access modifiers in TypeScript?",
+        "question_hi": "TypeScript में access modifiers क्या हैं?",
+        "options_en": ["public, private, protected", "static, readonly, abstract", "extends, implements", "interface, type, class"],
+        "options_hi": ["public, private, protected", "static, readonly, abstract", "extends, implements", "interface, type, class"],
+        "answer_en": "public, private, protected",
+        "answer_hi": "public, private, protected",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 25,
-        "question_en": "The SI unit of frequency is:",
-        "question_hi": "आवृत्ति की SI इकाई है:",
-        "options_en": ["Hertz", "Decibel", "Newton", "Joule"],
-        "options_hi": ["हर्ट्ज", "डेसिबल", "न्यूटन", "जूल"],
-        "answer_en": "Hertz",
-        "answer_hi": "हर्ट्ज",
+        "num": 125,
+        "question_en": "What is the default access modifier?",
+        "question_hi": "Default access modifier कौन सा है?",
+        "options_en": ["public", "private", "protected", "internal"],
+        "options_hi": ["public", "private", "protected", "internal"],
+        "answer_en": "public",
+        "answer_hi": "public",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 26,
-        "question_en": "The process of conversion of solid to liquid is called:",
-        "question_hi": "ठोस का द्रव में परिवर्तन की प्रक्रिया कहलाती है:",
-        "options_en": ["Melting", "Freezing", "Evaporation", "Condensation"],
-        "options_hi": ["गलन", "हिमीकरण", "वाष्पीकरण", "संघनन"],
-        "answer_en": "Melting",
-        "answer_hi": "गलन",
+        "num": 126,
+        "question_en": "How do you make a property accessible only within the class?",
+        "question_hi": "Property को केवल class के अंदर accessible कैसे बनाएं?",
+        "options_en": ["private propertyName;", "protected propertyName;", "public propertyName;", "internal propertyName;"],
+        "options_hi": ["private propertyName;", "protected propertyName;", "public propertyName;", "internal propertyName;"],
+        "answer_en": "private propertyName;",
+        "answer_hi": "private propertyName;",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 27,
-        "question_en": "The metal used in storage batteries is:",
-        "question_hi": "संचायक बैटरियों में प्रयुक्त धातु है:",
-        "options_en": ["Lead", "Zinc", "Copper", "Aluminum"],
-        "options_hi": ["सीसा", "जस्ता", "तांबा", "एल्युमिनियम"],
-        "answer_en": "Lead",
-        "answer_hi": "सीसा",
+        "num": 127,
+        "question_en": "What does 'readonly' do to a property?",
+        "question_hi": "'readonly' property के साथ क्या करता है?",
+        "options_en": ["Makes it read-only after initialization", "Makes it write-only", "Makes it optional", "Makes it required"],
+        "options_hi": ["Initialization के बाद read-only बनाता है", "Write-only बनाता है", "Optional बनाता है", "Required बनाता है"],
+        "answer_en": "Makes it read-only after initialization",
+        "answer_hi": "Initialization के बाद read-only बनाता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 28,
-        "question_en": "The study of viruses is called:",
-        "question_hi": "वायरस का अध्ययन कहलाता है:",
-        "options_en": ["Virology", "Bacteriology", "Mycology", "Parasitology"],
-        "options_hi": ["वायरस विज्ञान", "जीवाणु विज्ञान", "कवक विज्ञान", "परजीवी विज्ञान"],
-        "answer_en": "Virology",
-        "answer_hi": "वायरस विज्ञान",
+        "num": 128,
+        "question_en": "How do you define a static property?",
+        "question_hi": "Static property कैसे define करें?",
+        "options_en": ["static propertyName;", "readonly propertyName;", "const propertyName;", "let propertyName;"],
+        "options_hi": ["static propertyName;", "readonly propertyName;", "const propertyName;", "let propertyName;"],
+        "answer_en": "static propertyName;",
+        "answer_hi": "static propertyName;",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 29,
-        "question_en": "The chemical formula of sulfuric acid is:",
-        "question_hi": "सल्फ्यूरिक अम्ल का रासायनिक सूत्र है:",
-        "options_en": ["H₂SO₄", "HCl", "HNO₃", "H₃PO₄"],
-        "options_hi": ["H₂SO₄", "HCl", "HNO₃", "H₃PO₄"],
-        "answer_en": "H₂SO₄",
-        "answer_hi": "H₂SO₄",
+        "num": 129,
+        "question_en": "What is an abstract class?",
+        "question_hi": "Abstract class क्या है?",
+        "options_en": ["Class that cannot be instantiated directly", "Class that can be instantiated", "Interface", "Type alias"],
+        "options_hi": ["Class जो directly instantiate नहीं किया जा सकता", "Class जो instantiate किया जा सकता है", "Interface", "Type alias"],
+        "answer_en": "Class that cannot be instantiated directly",
+        "answer_hi": "Class जो directly instantiate नहीं किया जा सकता",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 30,
-        "question_en": "The SI unit of electric potential is:",
-        "question_hi": "विद्युत विभव की SI इकाई है:",
-        "options_en": ["Volt", "Ampere", "Ohm", "Watt"],
-        "options_hi": ["वोल्ट", "एम्पियर", "ओम", "वाट"],
-        "answer_en": "Volt",
-        "answer_hi": "वोल्ट",
+        "num": 130,
+        "question_en": "How do you declare an abstract method?",
+        "question_hi": "Abstract method कैसे declare करें?",
+        "options_en": ["abstract methodName(): returnType;", "methodName(): returnType;", "virtual methodName(): returnType;", "override methodName(): returnType;"],
+        "options_hi": ["abstract methodName(): returnType;", "methodName(): returnType;", "virtual methodName(): returnType;", "override methodName(): returnType;"],
+        "answer_en": "abstract methodName(): returnType;",
+        "answer_hi": "abstract methodName(): returnType;",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 31,
-        "question_en": "The process of conversion of liquid to solid is called:",
-        "question_hi": "द्रव का ठोस में परिवर्तन की प्रक्रिया कहलाती है:",
-        "options_en": ["Freezing", "Melting", "Evaporation", "Condensation"],
-        "options_hi": ["हिमीकरण", "गलन", "वाष्पीकरण", "संघनन"],
-        "answer_en": "Freezing",
-        "answer_hi": "हिमीकरण",
+        "num": 131,
+        "question_en": "What is method overriding?",
+        "question_hi": "Method overriding क्या है?",
+        "options_en": ["Redefining method in child class", "Defining new method", "Deleting method", "Renaming method"],
+        "options_hi": ["Child class में method redefine करना", "New method define करना", "Method delete करना", "Method rename करना"],
+        "answer_en": "Redefining method in child class",
+        "answer_hi": "Child class में method redefine करना",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 32,
-        "question_en": "The metal used in making permanent magnets is:",
-        "question_hi": "स्थायी चुंबक बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Iron", "Steel", "Cobalt", "All of these"],
-        "options_hi": ["लोहा", "इस्पात", "कोबाल्ट", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "num": 132,
+        "question_en": "How do you call parent class constructor?",
+        "question_hi": "Parent class constructor को कैसे call करें?",
+        "options_en": ["super()", "base()", "parent()", "this()"],
+        "options_hi": ["super()", "base()", "parent()", "this()"],
+        "answer_en": "super()",
+        "answer_hi": "super()",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 33,
-        "question_en": "The study of algae is called:",
-        "question_hi": "शैवाल का अध्ययन कहलाता है:",
-        "options_en": ["Phycology", "Mycology", "Bryology", "Pteridology"],
-        "options_hi": ["शैवाल विज्ञान", "कवक विज्ञान", "ब्रायोफाइट विज्ञान", "फर्न विज्ञान"],
-        "answer_en": "Phycology",
-        "answer_hi": "शैवाल विज्ञान",
+        "num": 133,
+        "question_en": "What is an interface?",
+        "question_hi": "Interface क्या है?",
+        "options_en": ["Contract that defines structure", "Class implementation", "Type definition", "Function signature"],
+        "options_hi": ["Contract जो structure define करता है", "Class implementation", "Type definition", "Function signature"],
+        "answer_en": "Contract that defines structure",
+        "answer_hi": "Contract जो structure define करता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 34,
-        "question_en": "The chemical formula of carbon dioxide is:",
-        "question_hi": "कार्बन डाइऑक्साइड का रासायनिक सूत्र है:",
-        "options_en": ["CO₂", "CO", "C₂O", "CO₃"],
-        "options_hi": ["CO₂", "CO", "C₂O", "CO₃"],
-        "answer_en": "CO₂",
-        "answer_hi": "CO₂",
+        "num": 134,
+        "question_en": "How do you implement an interface in a class?",
+        "question_hi": "Class में interface कैसे implement करें?",
+        "options_en": ["class Name implements InterfaceName {}", "class Name extends InterfaceName {}", "class Name : InterfaceName {}", "class Name = InterfaceName {}"],
+        "options_hi": ["class Name implements InterfaceName {}", "class Name extends InterfaceName {}", "class Name : InterfaceName {}", "class Name = InterfaceName {}"],
+        "answer_en": "class Name implements InterfaceName {}",
+        "answer_hi": "class Name implements InterfaceName {}",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 35,
-        "question_en": "The SI unit of resistance is:",
-        "question_hi": "प्रतिरोध की SI इकाई है:",
-        "options_en": ["Ohm", "Volt", "Ampere", "Watt"],
-        "options_hi": ["ओम", "वोल्ट", "एम्पियर", "वाट"],
-        "answer_en": "Ohm",
-        "answer_hi": "ओम",
+        "num": 135,
+        "question_en": "Can interfaces have implementation?",
+        "question_hi": "क्या interfaces में implementation हो सकती है?",
+        "options_en": ["No, only declaration", "Yes", "Only in abstract classes", "Only with default methods"],
+        "options_hi": ["नहीं, केवल declaration", "हाँ", "केवल abstract classes में", "केवल default methods के साथ"],
+        "answer_en": "No, only declaration",
+        "answer_hi": "नहीं, केवल declaration",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 36,
-        "question_en": "The process of conversion of liquid to vapor is called:",
-        "question_hi": "द्रव का वाष्प में परिवर्तन की प्रक्रिया कहलाती है:",
-        "options_en": ["Evaporation", "Condensation", "Sublimation", "Freezing"],
-        "options_hi": ["वाष्पीकरण", "संघनन", "उर्ध्वपातन", "हिमीकरण"],
-        "answer_en": "Evaporation",
-        "answer_hi": "वाष्पीकरण",
+        "num": 136,
+        "question_en": "What is interface inheritance?",
+        "question_hi": "Interface inheritance क्या है?",
+        "options_en": ["One interface extending another", "Class implementing interface", "Interface implementing class", "Class extending interface"],
+        "options_hi": ["एक interface दूसरे को extend कर रहा है", "Class interface implement कर रही है", "Interface class implement कर रहा है", "Class interface extend कर रही है"],
+        "answer_en": "One interface extending another",
+        "answer_hi": "एक interface दूसरे को extend कर रहा है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 37,
-        "question_en": "The metal used in making coins is:",
-        "question_hi": "सिक्के बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Copper", "Nickel", "Aluminum", "All of these"],
-        "options_hi": ["तांबा", "निकल", "एल्युमिनियम", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "num": 137,
+        "question_en": "How do you extend an interface?",
+        "question_hi": "Interface को कैसे extend करें?",
+        "options_en": ["interface A extends B {}", "interface A implements B {}", "interface A : B {}", "interface A = B {}"],
+        "options_hi": ["interface A extends B {}", "interface A implements B {}", "interface A : B {}", "interface A = B {}"],
+        "answer_en": "interface A extends B {}",
+        "answer_hi": "interface A extends B {}",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 38,
-        "question_en": "The study of tissues is called:",
-        "question_hi": "ऊतकों का अध्ययन कहलाता है:",
-        "options_en": ["Histology", "Cytology", "Anatomy", "Physiology"],
-        "options_hi": ["ऊतक विज्ञान", "कोशिका विज्ञान", "शरीर रचना विज्ञान", "शरीर क्रिया विज्ञान"],
-        "answer_en": "Histology",
-        "answer_hi": "ऊतक विज्ञान",
+        "num": 138,
+        "question_en": "What is a hybrid interface?",
+        "question_hi": "Hybrid interface क्या है?",
+        "options_en": ["Interface with multiple types", "Interface with one type", "Class interface", "Abstract interface"],
+        "options_hi": ["Multiple types वाला interface", "One type वाला interface", "Class interface", "Abstract interface"],
+        "answer_en": "Interface with multiple types",
+        "answer_hi": "Multiple types वाला interface",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 39,
-        "question_en": "The chemical formula of ammonia is:",
-        "question_hi": "अमोनिया का रासायनिक सूत्र है:",
-        "options_en": ["NH₃", "NH₄", "N₂H₄", "HNO₃"],
-        "options_hi": ["NH₃", "NH₄", "N₂H₄", "HNO₃"],
-        "answer_en": "NH₃",
-        "answer_hi": "NH₃",
+        "num": 139,
+        "question_en": "What is function overloading?",
+        "question_hi": "Function overloading क्या है?",
+        "options_en": ["Multiple function signatures with one implementation", "Multiple implementations", "Single signature", "No signature"],
+        "options_hi": ["एक implementation के साथ multiple function signatures", "Multiple implementations", "Single signature", "No signature"],
+        "answer_en": "Multiple function signatures with one implementation",
+        "answer_hi": "एक implementation के साथ multiple function signatures",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 40,
-        "question_en": "The SI unit of energy is:",
-        "question_hi": "ऊर्जा की SI इकाई है:",
-        "options_en": ["Joule", "Watt", "Newton", "Pascal"],
-        "options_hi": ["जूल", "वाट", "न्यूटन", "पास्कल"],
-        "answer_en": "Joule",
-        "answer_hi": "जूल",
+        "num": 140,
+        "question_en": "How do you declare function overloads?",
+        "question_hi": "Function overloads कैसे declare करें?",
+        "options_en": ["Multiple signatures followed by implementation", "Multiple implementations", "Using override keyword", "Using overload keyword"],
+        "options_hi": ["Multiple signatures जिसके बाद implementation आता है", "Multiple implementations", "override keyword use करके", "overload keyword use करके"],
+        "answer_en": "Multiple signatures followed by implementation",
+        "answer_hi": "Multiple signatures जिसके बाद implementation आता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 41,
-        "question_en": "The process of conversion of glucose to energy in cells is called:",
-        "question_hi": "कोशिकाओं में ग्लूकोज का ऊर्जा में परिवर्तन की प्रक्रिया कहलाती है:",
-        "options_en": ["Respiration", "Photosynthesis", "Transpiration", "Digestion"],
-        "options_hi": ["श्वसन", "प्रकाश संश्लेषण", "वाष्पोत्सर्जन", "पाचन"],
-        "answer_en": "Respiration",
-        "answer_hi": "श्वसन",
+        "num": 141,
+        "question_en": "What is a namespace?",
+        "question_hi": "Namespace क्या है?",
+        "options_en": ["Way to organize code", "Type definition", "Function", "Class"],
+        "options_hi": ["Code organize करने का तरीका", "Type definition", "Function", "Class"],
+        "answer_en": "Way to organize code",
+        "answer_hi": "Code organize करने का तरीका",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 42,
-        "question_en": "The metal used in making jewelry is:",
-        "question_hi": "आभूषण बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Gold", "Silver", "Platinum", "All of these"],
-        "options_hi": ["सोना", "चांदी", "प्लैटिनम", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "num": 142,
+        "question_en": "How do you declare a namespace?",
+        "question_hi": "Namespace कैसे declare करें?",
+        "options_en": ["namespace Name {}", "module Name {}", "package Name {}", "library Name {}"],
+        "options_hi": ["namespace Name {}", "module Name {}", "package Name {}", "library Name {}"],
+        "answer_en": "namespace Name {}",
+        "answer_hi": "namespace Name {}",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 43,
-        "question_en": "The study of bacteria is called:",
-        "question_hi": "जीवाणुओं का अध्ययन कहलाता है:",
-        "options_en": ["Bacteriology", "Virology", "Mycology", "Parasitology"],
-        "options_hi": ["जीवाणु विज्ञान", "वायरस विज्ञान", "कवक विज्ञान", "परजीवी विज्ञान"],
-        "answer_en": "Bacteriology",
-        "answer_hi": "जीवाणु विज्ञान",
+        "num": 143,
+        "question_en": "What are modules in TypeScript?",
+        "question_hi": "TypeScript में modules क्या हैं?",
+        "options_en": ["ES6 modules for code organization", "Namespaces", "Classes", "Interfaces"],
+        "options_hi": ["Code organization के लिए ES6 modules", "Namespaces", "Classes", "Interfaces"],
+        "answer_en": "ES6 modules for code organization",
+        "answer_hi": "Code organization के लिए ES6 modules",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 44,
-        "question_en": "The chemical formula of water is:",
-        "question_hi": "जल का रासायनिक सूत्र है:",
-        "options_en": ["H₂O", "H₂O₂", "HO", "H₃O"],
-        "options_hi": ["H₂O", "H₂O₂", "HO", "H₃O"],
-        "answer_en": "H₂O",
-        "answer_hi": "H₂O",
+        "num": 144,
+        "question_en": "How do you export a function from a module?",
+        "question_hi": "Module से function कैसे export करें?",
+        "options_en": ["export function name() {}", "function export name() {}", "export: function name() {}", "function name() export {}"],
+        "options_hi": ["export function name() {}", "function export name() {}", "export: function name() {}", "function name() export {}"],
+        "answer_en": "export function name() {}",
+        "answer_hi": "export function name() {}",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 45,
-        "question_en": "The SI unit of force is:",
-        "question_hi": "बल की SI इकाई है:",
-        "options_en": ["Newton", "Joule", "Watt", "Pascal"],
-        "options_hi": ["न्यूटन", "जूल", "वाट", "पास्कल"],
-        "answer_en": "Newton",
-        "answer_hi": "न्यूटन",
+        "num": 145,
+        "question_en": "How do you import a function from a module?",
+        "question_hi": "Module से function कैसे import करें?",
+        "options_en": ["import { name } from './module';", "import name from './module';", "require('./module').name;", "include './module';"],
+        "options_hi": ["import { name } from './module';", "import name from './module';", "require('./module').name;", "include './module';"],
+        "answer_en": "import { name } from './module';",
+        "answer_hi": "import { name } from './module';",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 46,
-        "question_en": "The process of conversion of food to simpler substances is called:",
-        "question_hi": "भोजन का सरल पदार्थों में परिवर्तन की प्रक्रिया कहलाती है:",
-        "options_en": ["Digestion", "Respiration", "Photosynthesis", "Transpiration"],
-        "options_hi": ["पाचन", "श्वसन", "प्रकाश संश्लेषण", "वाष्पोत्सर्जन"],
-        "answer_en": "Digestion",
-        "answer_hi": "पाचन",
+        "num": 146,
+        "question_en": "What is default export?",
+        "question_hi": "Default export क्या है?",
+        "options_en": ["Main export from a module", "Optional export", "Private export", "Public export"],
+        "options_hi": ["Module का main export", "Optional export", "Private export", "Public export"],
+        "answer_en": "Main export from a module",
+        "answer_hi": "Module का main export",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 47,
-        "question_en": "The metal used in making cans for food storage is:",
-        "question_hi": "भोजन भंडारण के लिए डिब्बे बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Aluminum", "Tin", "Steel", "All of these"],
-        "options_hi": ["एल्युमिनियम", "टिन", "इस्पात", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "num": 147,
+        "question_en": "How do you use default export?",
+        "question_hi": "Default export कैसे use करें?",
+        "options_en": ["export default function;", "export function default;", "default export function;", "function export default;"],
+        "options_hi": ["export default function;", "export function default;", "default export function;", "function export default;"],
+        "answer_en": "export default function;",
+        "answer_hi": "export default function;",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 48,
-        "question_en": "The study of cells is called:",
-        "question_hi": "कोशिकाओं का अध्ययन कहलाता है:",
-        "options_en": ["Cytology", "Histology", "Anatomy", "Physiology"],
-        "options_hi": ["कोशिका विज्ञान", "ऊतक विज्ञान", "शरीर रचना विज्ञान", "शरीर क्रिया विज्ञान"],
-        "answer_en": "Cytology",
-        "answer_hi": "कोशिका विज्ञान",
+        "num": 148,
+        "question_en": "What are decorators?",
+        "question_hi": "Decorators क्या हैं?",
+        "options_en": ["Functions that modify classes/methods", "Type definitions", "Interfaces", "Classes"],
+        "options_hi": ["Functions जो classes/methods modify करते हैं", "Type definitions", "Interfaces", "Classes"],
+        "answer_en": "Functions that modify classes/methods",
+        "answer_hi": "Functions जो classes/methods modify करते हैं",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 49,
-        "question_en": "The chemical formula of hydrogen peroxide is:",
-        "question_hi": "हाइड्रोजन पेरोक्साइड का रासायनिक सूत्र है:",
-        "options_en": ["H₂O₂", "H₂O", "HO₂", "H₃O"],
-        "options_hi": ["H₂O₂", "H₂O", "HO₂", "H₃O"],
-        "answer_en": "H₂O₂",
-        "answer_hi": "H₂O₂",
+        "num": 149,
+        "question_en": "How do you apply a decorator?",
+        "question_hi": "Decorator कैसे apply करें?",
+        "options_en": ["@decorator above declaration", "@decorator below declaration", "decorator() before declaration", "decorator() after declaration"],
+        "options_hi": ["Declaration के ऊपर @decorator", "Declaration के नीचे @decorator", "Declaration से पहले decorator()", "Declaration के बाद decorator()"],
+        "answer_en": "@decorator above declaration",
+        "answer_hi": "Declaration के ऊपर @decorator",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 50,
-        "question_en": "The SI unit of pressure is:",
-        "question_hi": "दाब की SI इकाई है:",
-        "options_en": ["Pascal", "Newton", "Joule", "Watt"],
-        "options_hi": ["पास्कल", "न्यूटन", "जूल", "वाट"],
-        "answer_en": "Pascal",
-        "answer_hi": "पास्कल",
+        "num": 150,
+        "question_en": "What is a class decorator?",
+        "question_hi": "Class decorator क्या है?",
+        "options_en": ["Decorator that applies to class", "Decorator for methods", "Decorator for properties", "Decorator for parameters"],
+        "options_hi": ["Decorator जो class पर apply होता है", "Methods के लिए decorator", "Properties के लिए decorator", "Parameters के लिए decorator"],
+        "answer_en": "Decorator that applies to class",
+        "answer_hi": "Decorator जो class पर apply होता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 51,
-        "question_en": "The process of conversion of light to electrical energy in plants is:",
-        "question_hi": "पौधों में प्रकाश का विद्युत ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["Photosynthesis", "Respiration", "Transpiration", "Digestion"],
-        "options_hi": ["प्रकाश संश्लेषण", "श्वसन", "वाष्पोत्सर्जन", "पाचन"],
-        "answer_en": "Photosynthesis",
-        "answer_hi": "प्रकाश संश्लेषण",
+        "num": 151,
+        "question_en": "What is a method decorator?",
+        "question_hi": "Method decorator क्या है?",
+        "options_en": ["Decorator that applies to methods", "Decorator for classes", "Decorator for properties", "Decorator for parameters"],
+        "options_hi": ["Decorator जो methods पर apply होता है", "Classes के लिए decorator", "Properties के लिए decorator", "Parameters के लिए decorator"],
+        "answer_en": "Decorator that applies to methods",
+        "answer_hi": "Decorator जो methods पर apply होता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 52,
-        "question_en": "The metal used in making surgical instruments is:",
-        "question_hi": "शल्य चिकित्सा उपकरण बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Stainless steel", "Copper", "Aluminum", "Lead"],
-        "options_hi": ["स्टेनलेस स्टील", "तांबा", "एल्युमिनियम", "सीसा"],
-        "answer_en": "Stainless steel",
-        "answer_hi": "स्टेनलेस स्टील",
+        "num": 152,
+        "question_en": "What is a property decorator?",
+        "question_hi": "Property decorator क्या है?",
+        "options_en": ["Decorator that applies to properties", "Decorator for classes", "Decorator for methods", "Decorator for parameters"],
+        "options_hi": ["Decorator जो properties पर apply होता है", "Classes के लिए decorator", "Methods के लिए decorator", "Parameters के लिए decorator"],
+        "answer_en": "Decorator that applies to properties",
+        "answer_hi": "Decorator जो properties पर apply होता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 53,
-        "question_en": "The study of the structure of organisms is called:",
-        "question_hi": "जीवों की संरचना का अध्ययन कहलाता है:",
-        "options_en": ["Anatomy", "Physiology", "Morphology", "Histology"],
-        "options_hi": ["शरीर रचना विज्ञान", "शरीर क्रिया विज्ञान", "आकृति विज्ञान", "ऊतक विज्ञान"],
-        "answer_en": "Anatomy",
-        "answer_hi": "शरीर रचना विज्ञान",
+        "num": 153,
+        "question_en": "What is a parameter decorator?",
+        "question_hi": "Parameter decorator क्या है?",
+        "options_en": ["Decorator that applies to parameters", "Decorator for classes", "Decorator for methods", "Decorator for properties"],
+        "options_hi": ["Decorator जो parameters पर apply होता है", "Classes के लिए decorator", "Methods के लिए decorator", "Properties के लिए decorator"],
+        "answer_en": "Decorator that applies to parameters",
+        "answer_hi": "Decorator जो parameters पर apply होता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 54,
-        "question_en": "The chemical formula of nitric acid is:",
-        "question_hi": "नाइट्रिक अम्ल का रासायनिक सूत्र है:",
-        "options_en": ["HNO₃", "H₂SO₄", "HCl", "H₃PO₄"],
-        "options_hi": ["HNO₃", "H₂SO₄", "HCl", "H₃PO₄"],
-        "answer_en": "HNO₃",
-        "answer_hi": "HNO₃",
+        "num": 154,
+        "question_en": "What are mixins?",
+        "question_hi": "Mixins क्या हैं?",
+        "options_en": ["Way to combine classes", "Type definitions", "Interfaces", "Functions"],
+        "options_hi": ["Classes combine करने का तरीका", "Type definitions", "Interfaces", "Functions"],
+        "answer_en": "Way to combine classes",
+        "answer_hi": "Classes combine करने का तरीका",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 55,
-        "question_en": "The SI unit of work is:",
-        "question_hi": "कार्य की SI इकाई है:",
-        "options_en": ["Joule", "Watt", "Newton", "Pascal"],
-        "options_hi": ["जूल", "वाट", "न्यूटन", "पास्कल"],
-        "answer_en": "Joule",
-        "answer_hi": "जूल",
+        "num": 155,
+        "question_en": "What is declaration merging?",
+        "question_hi": "Declaration merging क्या है?",
+        "options_en": ["Combining multiple declarations", "Separating declarations", "Deleting declarations", "Ignoring declarations"],
+        "options_hi": ["Multiple declarations combine करना", "Declarations separate करना", "Declarations delete करना", "Declarations ignore करना"],
+        "answer_en": "Combining multiple declarations",
+        "answer_hi": "Multiple declarations combine करना",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 56,
-        "question_en": "The process of conversion of chemical energy to electrical energy is:",
-        "question_hi": "रासायनिक ऊर्जा का विद्युत ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["In battery", "In generator", "In motor", "In transformer"],
-        "options_hi": ["बैटरी में", "जनरेटर में", "मोटर में", "ट्रांसफॉर्मर में"],
-        "answer_en": "In battery",
-        "answer_hi": "बैटरी में",
+        "num": 156,
+        "question_en": "What types support declaration merging?",
+        "question_hi": "कौन से types declaration merging support करते हैं?",
+        "options_en": ["Interfaces and namespaces", "Classes and functions", "Types and enums", "All types"],
+        "options_hi": ["Interfaces और namespaces", "Classes और functions", "Types और enums", "सभी types"],
+        "answer_en": "Interfaces and namespaces",
+        "answer_hi": "Interfaces और namespaces",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 57,
-        "question_en": "The metal used in making radiators is:",
-        "question_hi": "रेडिएटर बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Copper", "Aluminum", "Both A and B", "Iron"],
-        "options_hi": ["तांबा", "एल्युमिनियम", "A और B दोनों", "लोहा"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "num": 157,
+        "question_en": "What is global augmentation?",
+        "question_hi": "Global augmentation क्या है?",
+        "options_en": ["Adding to global scope", "Subtracting from global scope", "Deleting global scope", "Ignoring global scope"],
+        "options_hi": ["Global scope में add करना", "Global scope से subtract करना", "Global scope delete करना", "Global scope ignore करना"],
+        "answer_en": "Adding to global scope",
+        "answer_hi": "Global scope में add करना",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 58,
-        "question_en": "The study of the function of organisms is called:",
-        "question_hi": "जीवों के कार्य का अध्ययन कहलाता है:",
-        "options_en": ["Physiology", "Anatomy", "Morphology", "Histology"],
-        "options_hi": ["शरीर क्रिया विज्ञान", "शरीर रचना विज्ञान", "आकृति विज्ञान", "ऊतक विज्ञान"],
-        "answer_en": "Physiology",
-        "answer_hi": "शरीर क्रिया विज्ञान",
+        "num": 158,
+        "question_en": "What is module augmentation?",
+        "question_hi": "Module augmentation क्या है?",
+        "options_en": ["Adding to existing module declarations", "Subtracting from module declarations", "Deleting module declarations", "Ignoring module declarations"],
+        "options_hi": ["Existing module declarations में add करना", "Module declarations से subtract करना", "Module declarations delete करना", "Module declarations ignore करना"],
+        "answer_en": "Adding to existing module declarations",
+        "answer_hi": "Existing module declarations में add करना",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 59,
-        "question_en": "The chemical formula of hydrochloric acid is:",
-        "question_hi": "हाइड्रोक्लोरिक अम्ल का रासायनिक सूत्र है:",
-        "options_en": ["HCl", "H₂SO₄", "HNO₃", "H₃PO₄"],
-        "options_hi": ["HCl", "H₂SO₄", "HNO₃", "H₃PO₄"],
-        "answer_en": "HCl",
-        "answer_hi": "HCl",
+        "num": 159,
+        "question_en": "What are utility types?",
+        "question_hi": "Utility types क्या हैं?",
+        "options_en": ["Built-in types for common transformations", "User-defined types", "Primitive types", "Any types"],
+        "options_hi": ["Common transformations के लिए built-in types", "User-defined types", "Primitive types", "Any types"],
+        "answer_en": "Built-in types for common transformations",
+        "answer_hi": "Common transformations के लिए built-in types",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 60,
-        "question_en": "The SI unit of temperature is:",
-        "question_hi": "तापमान की SI इकाई है:",
-        "options_en": ["Kelvin", "Celsius", "Fahrenheit", "All of these"],
-        "options_hi": ["केल्विन", "सेल्सियस", "फारेनहाइट", "ये सभी"],
-        "answer_en": "Kelvin",
-        "answer_hi": "केल्विन",
+        "num": 160,
+        "question_en": "What does Partial<T> do?",
+        "question_hi": "Partial<T> क्या करता है?",
+        "options_en": ["Makes all properties optional", "Makes all properties required", "Makes all properties readonly", "Picks some properties"],
+        "options_hi": ["सभी properties को optional बनाता है", "सभी properties को required बनाता है", "सभी properties को readonly बनाता है", "कुछ properties pick करता है"],
+        "answer_en": "Makes all properties optional",
+        "answer_hi": "सभी properties को optional बनाता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 61,
-        "question_en": "The process of conversion of electrical energy to mechanical energy is:",
-        "question_hi": "विद्युत ऊर्जा का यांत्रिक ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["In motor", "In generator", "In battery", "In transformer"],
-        "options_hi": ["मोटर में", "जनरेटर में", "बैटरी में", "ट्रांसफॉर्मर में"],
-        "answer_en": "In motor",
-        "answer_hi": "मोटर में",
+        "num": 161,
+        "question_en": "What does Required<T> do?",
+        "question_hi": "Required<T> क्या करता है?",
+        "options_en": ["Makes all properties required", "Makes all properties optional", "Makes all properties readonly", "Picks some properties"],
+        "options_hi": ["सभी properties को required बनाता है", "सभी properties को optional बनाता है", "सभी properties को readonly बनाता है", "कुछ properties pick करता है"],
+        "answer_en": "Makes all properties required",
+        "answer_hi": "सभी properties को required बनाता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 62,
-        "question_en": "The metal used in making electrical contacts is:",
-        "question_hi": "विद्युत संपर्क बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Silver", "Copper", "Gold", "All of these"],
-        "options_hi": ["चांदी", "तांबा", "सोना", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "num": 162,
+        "question_en": "What does Readonly<T> do?",
+        "question_hi": "Readonly<T> क्या करता है?",
+        "options_en": ["Makes all properties readonly", "Makes all properties required", "Makes all properties optional", "Picks some properties"],
+        "options_hi": ["सभी properties को readonly बनाता है", "सभी properties को required बनाता है", "सभी properties को optional बनाता है", "कुछ properties pick करता है"],
+        "answer_en": "Makes all properties readonly",
+        "answer_hi": "सभी properties को readonly बनाता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 63,
-        "question_en": "The study of heredity is called:",
-        "question_hi": "आनुवंशिकता का अध्ययन कहलाता है:",
-        "options_en": ["Genetics", "Evolution", "Ecology", "Taxonomy"],
-        "options_hi": ["आनुवंशिकी", "विकास", "पारिस्थितिकी", "वर्गीकरण विज्ञान"],
-        "answer_en": "Genetics",
-        "answer_hi": "आनुवंशिकी",
+        "num": 163,
+        "question_en": "What does Pick<T, K> do?",
+        "question_hi": "Pick<T, K> क्या करता है?",
+        "options_en": ["Picks specific properties from T", "Picks all properties", "Picks random properties", "Picks no properties"],
+        "options_hi": ["T से specific properties pick करता है", "सभी properties pick करता है", "Random properties pick करता है", "कोई properties pick नहीं करता"],
+        "answer_en": "Picks specific properties from T",
+        "answer_hi": "T से specific properties pick करता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 64,
-        "question_en": "The chemical formula of ozone is:",
-        "question_hi": "ओजोन का रासायनिक सूत्र है:",
-        "options_en": ["O₃", "O₂", "O₄", "HO₃"],
-        "options_hi": ["O₃", "O₂", "O₄", "HO₃"],
-        "answer_en": "O₃",
-        "answer_hi": "O₃",
+        "num": 164,
+        "question_en": "What does Omit<T, K> do?",
+        "question_hi": "Omit<T, K> क्या करता है?",
+        "options_en": ["Omits specific properties from T", "Omits all properties", "Omits no properties", "Omits random properties"],
+        "options_hi": ["T से specific properties omit करता है", "सभी properties omit करता है", "कोई properties omit नहीं करता", "Random properties omit करता है"],
+        "answer_en": "Omits specific properties from T",
+        "answer_hi": "T से specific properties omit करता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 65,
-        "question_en": "The SI unit of electric current is:",
-        "question_hi": "विद्युत धारा की SI इकाई है:",
-        "options_en": ["Ampere", "Volt", "Ohm", "Watt"],
-        "options_hi": ["एम्पियर", "वोल्ट", "ओम", "वाट"],
-        "answer_en": "Ampere",
-        "answer_hi": "एम्पियर",
+        "num": 165,
+        "question_en": "What does Record<K, T> do?",
+        "question_hi": "Record<K, T> क्या करता है?",
+        "options_en": ["Creates object type with keys K and values T", "Creates array type", "Creates function type", "Creates class type"],
+        "options_hi": ["Keys K और values T वाला object type create करता है", "Array type create करता है", "Function type create करता है", "Class type create करता है"],
+        "answer_en": "Creates object type with keys K and values T",
+        "answer_hi": "Keys K और values T वाला object type create करता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 66,
-        "question_en": "The process of conversion of mechanical energy to electrical energy is:",
-        "question_hi": "यांत्रिक ऊर्जा का विद्युत ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["In generator", "In motor", "In battery", "In transformer"],
-        "options_hi": ["जनरेटर में", "मोटर में", "बैटरी में", "ट्रांसफॉर्मर में"],
-        "answer_en": "In generator",
-        "answer_hi": "जनरेटर में",
+        "num": 166,
+        "question_en": "What does Exclude<T, U> do?",
+        "question_hi": "Exclude<T, U> क्या करता है?",
+        "options_en": ["Excludes types from T that are assignable to U", "Includes types from T", "Excludes all types", "Includes all types"],
+        "options_hi": ["T से उन types को exclude करता है जो U को assignable हैं", "T से types include करता है", "सभी types exclude करता है", "सभी types include करता है"],
+        "answer_en": "Excludes types from T that are assignable to U",
+        "answer_hi": "T से उन types को exclude करता है जो U को assignable हैं",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 67,
-        "question_en": "The metal used in making mirrors is:",
-        "question_hi": "दर्पण बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Silver", "Aluminum", "Both A and B", "Copper"],
-        "options_hi": ["चांदी", "एल्युमिनियम", "A और B दोनों", "तांबा"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "num": 167,
+        "question_en": "What does Extract<T, U> do?",
+        "question_hi": "Extract<T, U> क्या करता है?",
+        "options_en": ["Extracts types from T that are assignable to U", "Extracts all types", "Extracts no types", "Extracts random types"],
+        "options_hi": ["T से उन types को extract करता है जो U को assignable हैं", "सभी types extract करता है", "कोई types extract नहीं करता", "Random types extract करता है"],
+        "answer_en": "Extracts types from T that are assignable to U",
+        "answer_hi": "T से उन types को extract करता है जो U को assignable हैं",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 68,
-        "question_en": "The study of classification of organisms is called:",
-        "question_hi": "जीवों के वर्गीकरण का अध्ययन कहलाता है:",
-        "options_en": ["Taxonomy", "Genetics", "Ecology", "Evolution"],
-        "options_hi": ["वर्गीकरण विज्ञान", "आनुवंशिकी", "पारिस्थितिकी", "विकास"],
-        "answer_en": "Taxonomy",
-        "answer_hi": "वर्गीकरण विज्ञान",
+        "num": 168,
+        "question_en": "What does NonNullable<T> do?",
+        "question_hi": "NonNullable<T> क्या करता है?",
+        "options_en": ["Excludes null and undefined from T", "Includes null and undefined", "Excludes all types", "Includes all types"],
+        "options_hi": ["T से null और undefined exclude करता है", "Null और undefined include करता है", "सभी types exclude करता है", "सभी types include करता है"],
+        "answer_en": "Excludes null and undefined from T",
+        "answer_hi": "T से null और undefined exclude करता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 69,
-        "question_en": "The chemical formula of calcium carbonate is:",
-        "question_hi": "कैल्शियम कार्बोनेट का रासायनिक सूत्र है:",
-        "options_en": ["CaCO₃", "CaO", "Ca(OH)₂", "CaSO₄"],
-        "options_hi": ["CaCO₃", "CaO", "Ca(OH)₂", "CaSO₄"],
-        "answer_en": "CaCO₃",
-        "answer_hi": "CaCO₃",
+        "num": 169,
+        "question_en": "What does Parameters<T> do?",
+        "question_hi": "Parameters<T> क्या करता है?",
+        "options_en": ["Gets parameters of function type T", "Gets return type", "Gets properties", "Gets methods"],
+        "options_hi": ["Function type T के parameters प्राप्त करता है", "Return type प्राप्त करता है", "Properties प्राप्त करता है", "Methods प्राप्त करता है"],
+        "answer_en": "Gets parameters of function type T",
+        "answer_hi": "Function type T के parameters प्राप्त करता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 70,
-        "question_en": "The SI unit of luminous intensity is:",
-        "question_hi": "ज्योति तीव्रता की SI इकाई है:",
-        "options_en": ["Candela", "Lumen", "Lux", "Watt"],
-        "options_hi": ["कैंडेला", "लुमेन", "लक्स", "वाट"],
-        "answer_en": "Candela",
-        "answer_hi": "कैंडेला",
+        "num": 170,
+        "question_en": "What does ReturnType<T> do?",
+        "question_hi": "ReturnType<T> क्या करता है?",
+        "options_en": ["Gets return type of function type T", "Gets parameters", "Gets properties", "Gets methods"],
+        "options_hi": ["Function type T का return type प्राप्त करता है", "Parameters प्राप्त करता है", "Properties प्राप्त करता है", "Methods प्राप्त करता है"],
+        "answer_en": "Gets return type of function type T",
+        "answer_hi": "Function type T का return type प्राप्त करता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 71,
-        "question_en": "The process of conversion of nuclear energy to electrical energy is:",
-        "question_hi": "नाभिकीय ऊर्जा का विद्युत ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["In nuclear power plant", "In solar cell", "In battery", "In generator"],
-        "options_hi": ["नाभिकीय ऊर्जा संयंत्र में", "सौर सेल में", "बैटरी में", "जनरेटर में"],
-        "answer_en": "In nuclear power plant",
-        "answer_hi": "नाभिकीय ऊर्जा संयंत्र में",
+        "num": 171,
+        "question_en": "What does InstanceType<T> do?",
+        "question_hi": "InstanceType<T> क्या करता है?",
+        "options_en": ["Gets instance type of constructor function T", "Gets static type", "Gets return type", "Gets parameters"],
+        "options_hi": ["Constructor function T का instance type प्राप्त करता है", "Static type प्राप्त करता है", "Return type प्राप्त करता है", "Parameters प्राप्त करता है"],
+        "answer_en": "Gets instance type of constructor function T",
+        "answer_hi": "Constructor function T का instance type प्राप्त करता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 72,
-        "question_en": "The metal used in making electrical wires is:",
-        "question_hi": "विद्युत तार बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Copper", "Aluminum", "Both A and B", "Iron"],
-        "options_hi": ["तांबा", "एल्युमिनियम", "A और B दोनों", "लोहा"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "num": 172,
+        "question_en": "What does ThisParameterType<T> do?",
+        "question_hi": "ThisParameterType<T> क्या करता है?",
+        "options_en": ["Gets this parameter type of function type T", "Gets return type", "Gets parameters", "Gets properties"],
+        "options_hi": ["Function type T के this parameter type प्राप्त करता है", "Return type प्राप्त करता है", "Parameters प्राप्त करता है", "Properties प्राप्त करता है"],
+        "answer_en": "Gets this parameter type of function type T",
+        "answer_hi": "Function type T के this parameter type प्राप्त करता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 73,
-        "question_en": "The study of the relationship between organisms and their environment is called:",
-        "question_hi": "जीवों और उनके पर्यावरण के बीच संबंध का अध्ययन कहलाता है:",
-        "options_en": ["Ecology", "Genetics", "Evolution", "Taxonomy"],
-        "options_hi": ["पारिस्थितिकी", "आनुवंशिकी", "विकास", "वर्गीकरण विज्ञान"],
-        "answer_en": "Ecology",
-        "answer_hi": "पारिस्थितिकी",
+        "num": 173,
+        "question_en": "What does OmitThisParameter<T> do?",
+        "question_hi": "OmitThisParameter<T> क्या करता है?",
+        "options_en": ["Removes this parameter from function type T", "Adds this parameter", "Changes this parameter", "Ignores this parameter"],
+        "options_hi": ["Function type T से this parameter remove करता है", "This parameter add करता है", "This parameter change करता है", "This parameter ignore करता है"],
+        "answer_en": "Removes this parameter from function type T",
+        "answer_hi": "Function type T से this parameter remove करता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 74,
-        "question_en": "The chemical formula of sodium hydroxide is:",
-        "question_hi": "सोडियम हाइड्रॉक्साइड का रासायनिक सूत्र है:",
-        "options_en": ["NaOH", "NaCl", "Na₂CO₃", "NaHCO₃"],
-        "options_hi": ["NaOH", "NaCl", "Na₂CO₃", "NaHCO₃"],
-        "answer_en": "NaOH",
-        "answer_hi": "NaOH",
+        "num": 174,
+        "question_en": "What does ThisType<T> do?",
+        "question_hi": "ThisType<T> क्या करता है?",
+        "options_en": ["Marks this type in object literal", "Marks return type", "Marks parameter type", "Marks property type"],
+        "options_hi": ["Object literal में this type mark करता है", "Return type mark करता है", "Parameter type mark करता है", "Property type mark करता है"],
+        "answer_en": "Marks this type in object literal",
+        "answer_hi": "Object literal में this type mark करता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 75,
-        "question_en": "The SI unit of amount of substance is:",
-        "question_hi": "पदार्थ की मात्रा की SI इकाई है:",
-        "options_en": ["Mole", "Gram", "Kilogram", "Liter"],
-        "options_hi": ["मोल", "ग्राम", "किलोग्राम", "लीटर"],
-        "answer_en": "Mole",
-        "answer_hi": "मोल",
+        "num": 175,
+        "question_en": "What are conditional types?",
+        "question_hi": "Conditional types क्या हैं?",
+        "options_en": ["Types that depend on conditions", "Types that are always true", "Types that are always false", "Types without conditions"],
+        "options_hi": ["Conditions पर depend करने वाले types", "हमेशा true रहने वाले types", "हमेशा false रहने वाले types", "Conditions के बिना types"],
+        "answer_en": "Types that depend on conditions",
+        "answer_hi": "Conditions पर depend करने वाले types",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 76,
-        "question_en": "The process of conversion of solar energy to electrical energy is:",
-        "question_hi": "सौर ऊर्जा का विद्युत ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["In solar cell", "In battery", "In generator", "In motor"],
-        "options_hi": ["सौर सेल में", "बैटरी में", "जनरेटर में", "मोटर में"],
-        "answer_en": "In solar cell",
-        "answer_hi": "सौर सेल में",
+        "num": 176,
+        "question_en": "What is the syntax for conditional types?",
+        "question_hi": "Conditional types का syntax क्या है?",
+        "options_en": ["T extends U ? X : Y", "T extends U : X ? Y", "T ? U extends X : Y", "extends T U ? X : Y"],
+        "options_hi": ["T extends U ? X : Y", "T extends U : X ? Y", "T ? U extends X : Y", "extends T U ? X : Y"],
+        "answer_en": "T extends U ? X : Y",
+        "answer_hi": "T extends U ? X : Y",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 77,
-        "question_en": "The metal used in making aircraft bodies is:",
-        "question_hi": "वायुयान के धड़ बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Aluminum", "Titanium", "Both A and B", "Steel"],
-        "options_hi": ["एल्युमिनियम", "टाइटेनियम", "A और B दोनों", "इस्पात"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "num": 177,
+        "question_en": "What are mapped types?",
+        "question_hi": "Mapped types क्या हैं?",
+        "options_en": ["Types that map over properties of another type", "Types that create arrays", "Types that create functions", "Types that create classes"],
+        "options_hi": ["Types जो another type की properties पर map करते हैं", "Types जो arrays create करते हैं", "Types जो functions create करते हैं", "Types जो classes create करते हैं"],
+        "answer_en": "Types that map over properties of another type",
+        "answer_hi": "Types जो another type की properties पर map करते हैं",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 78,
-        "question_en": "The study of the development of organisms is called:",
-        "question_hi": "जीवों के विकास का अध्ययन कहलाता है:",
-        "options_en": ["Embryology", "Genetics", "Evolution", "Ecology"],
-        "options_hi": ["भ्रूण विज्ञान", "आनुवंशिकी", "विकास", "पारिस्थितिकी"],
-        "answer_en": "Embryology",
-        "answer_hi": "भ्रूण विज्ञान",
+        "num": 178,
+        "question_en": "What is the syntax for mapped types?",
+        "question_hi": "Mapped types का syntax क्या है?",
+        "options_en": ["{ [K in keyof T]: U }", "{ [K of keyof T]: U }", "{ [K from keyof T]: U }", "{ [K for keyof T]: U }"],
+        "options_hi": ["{ [K in keyof T]: U }", "{ [K of keyof T]: U }", "{ [K from keyof T]: U }", "{ [K for keyof T]: U }"],
+        "answer_en": "{ [K in keyof T]: U }",
+        "answer_hi": "{ [K in keyof T]: U }",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 79,
-        "question_en": "The chemical formula of potassium nitrate is:",
-        "question_hi": "पोटैशियम नाइट्रेट का रासायनिक सूत्र है:",
-        "options_en": ["KNO₃", "KCl", "K₂SO₄", "KOH"],
-        "options_hi": ["KNO₃", "KCl", "K₂SO₄", "KOH"],
-        "answer_en": "KNO₃",
-        "answer_hi": "KNO₃",
+        "num": 179,
+        "question_en": "What are template literal types?",
+        "question_hi": "Template literal types क्या हैं?",
+        "options_en": ["String types that use template literal syntax", "Number types", "Boolean types", "Array types"],
+        "options_hi": ["String types जो template literal syntax use करते हैं", "Number types", "Boolean types", "Array types"],
+        "answer_en": "String types that use template literal syntax",
+        "answer_hi": "String types जो template literal syntax use करते हैं",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 80,
-        "question_en": "The SI unit of time is:",
-        "question_hi": "समय की SI इकाई है:",
-        "options_en": ["Second", "Minute", "Hour", "Day"],
-        "options_hi": ["सेकंड", "मिनट", "घंटा", "दिन"],
-        "answer_en": "Second",
-        "answer_hi": "सेकंड",
+        "num": 180,
+        "question_en": "What is the syntax for template literal types?",
+        "question_hi": "Template literal types का syntax क्या है?",
+        "options_en": ["`${A}${B}`", "${A}${B}", "`A B`", "A B"],
+        "options_hi": ["`${A}${B}`", "${A}${B}", "`A B`", "A B"],
+        "answer_en": "`${A}${B}`",
+        "answer_hi": "`${A}${B}`",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 81,
-        "question_en": "The process of conversion of wind energy to electrical energy is:",
-        "question_hi": "पवन ऊर्जा का विद्युत ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["In wind turbine", "In solar cell", "In battery", "In generator"],
-        "options_hi": ["पवन टरबाइन में", "सौर सेल में", "बैटरी में", "जनरेटर में"],
-        "answer_en": "In wind turbine",
-        "answer_hi": "पवन टरबाइन में",
+        "num": 181,
+        "question_en": "What are recursive types?",
+        "question_hi": "Recursive types क्या हैं?",
+        "options_en": ["Types that reference themselves", "Types that reference other types", "Types that don't reference anything", "Types that reference arrays"],
+        "options_hi": ["Types जो खुद को reference करते हैं", "Types जो other types को reference करते हैं", "Types जो कुछ reference नहीं करते", "Types जो arrays को reference करते हैं"],
+        "answer_en": "Types that reference themselves",
+        "answer_hi": "Types जो खुद को reference करते हैं",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 82,
-        "question_en": "The metal used in making ship hulls is:",
-        "question_hi": "जहाज के पतवार बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Steel", "Aluminum", "Copper", "Lead"],
-        "options_hi": ["इस्पात", "एल्युमिनियम", "तांबा", "सीसा"],
-        "answer_en": "Steel",
-        "answer_hi": "इस्पात",
+        "num": 182,
+        "question_en": "What is type inference?",
+        "question_hi": "Type inference क्या है?",
+        "options_en": ["Automatic type detection by TypeScript", "Manual type declaration", "Type checking", "Type conversion"],
+        "options_hi": ["TypeScript द्वारा automatic type detection", "Manual type declaration", "Type checking", "Type conversion"],
+        "answer_en": "Automatic type detection by TypeScript",
+        "answer_hi": "TypeScript द्वारा automatic type detection",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 83,
-        "question_en": "The study of the behavior of organisms is called:",
-        "question_hi": "जीवों के व्यवहार का अध्ययन कहलाता है:",
-        "options_en": ["Ethology", "Ecology", "Psychology", "Sociology"],
-        "options_hi": ["व्यवहार विज्ञान", "पारिस्थितिकी", "मनोविज्ञान", "समाजशास्त्र"],
-        "answer_en": "Ethology",
-        "answer_hi": "व्यवहार विज्ञान",
+        "num": 183,
+        "question_en": "What is contextual typing?",
+        "question_hi": "Contextual typing क्या है?",
+        "options_en": ["Type inference based on context", "Manual typing", "No typing", "Random typing"],
+        "options_hi": ["Context के आधार पर type inference", "Manual typing", "No typing", "Random typing"],
+        "answer_en": "Type inference based on context",
+        "answer_hi": "Context के आधार पर type inference",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 84,
-        "question_en": "The chemical formula of magnesium oxide is:",
-        "question_hi": "मैग्नीशियम ऑक्साइड का रासायनिक सूत्र है:",
-        "options_en": ["MgO", "Mg(OH)₂", "MgCO₃", "MgSO₄"],
-        "options_hi": ["MgO", "Mg(OH)₂", "MgCO₃", "MgSO₄"],
-        "answer_en": "MgO",
-        "answer_hi": "MgO",
+        "num": 184,
+        "question_en": "What is type compatibility?",
+        "question_hi": "Type compatibility क्या है?",
+        "options_en": ["When types can be used in place of each other", "When types are identical", "When types are different", "When types are unknown"],
+        "options_hi": ["जब types एक दूसरे की जगह use किए जा सकते हैं", "जब types identical होते हैं", "जब types different होते हैं", "जब types unknown होते हैं"],
+        "answer_en": "When types can be used in place of each other",
+        "answer_hi": "जब types एक दूसरे की जगह use किए जा सकते हैं",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 85,
-        "question_en": "The SI unit of length is:",
-        "question_hi": "लंबाई की SI इकाई है:",
-        "options_en": ["Meter", "Centimeter", "Kilometer", "Millimeter"],
-        "options_hi": ["मीटर", "सेंटीमीटर", "किलोमीटर", "मिलीमीटर"],
-        "answer_en": "Meter",
-        "answer_hi": "मीटर",
+        "num": 185,
+        "question_en": "What is structural typing?",
+        "question_hi": "Structural typing क्या है?",
+        "options_en": ["Type compatibility based on structure", "Type compatibility based on name", "Type compatibility based on size", "Type compatibility based on location"],
+        "options_hi": ["Structure के आधार पर type compatibility", "Name के आधार पर type compatibility", "Size के आधार पर type compatibility", "Location के आधार पर type compatibility"],
+        "answer_en": "Type compatibility based on structure",
+        "answer_hi": "Structure के आधार पर type compatibility",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 86,
-        "question_en": "The process of conversion of geothermal energy to electrical energy is:",
-        "question_hi": "भूतापीय ऊर्जा का विद्युत ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["In geothermal power plant", "In solar cell", "In wind turbine", "In battery"],
-        "options_hi": ["भूतापीय ऊर्जा संयंत्र में", "सौर सेल में", "पवन टरबाइन में", "बैटरी में"],
-        "answer_en": "In geothermal power plant",
-        "answer_hi": "भूतापीय ऊर्जा संयंत्र में",
+        "num": 186,
+        "question_en": "What is nominal typing?",
+        "question_hi": "Nominal typing क्या है?",
+        "options_en": ["Type compatibility based on name", "Type compatibility based on structure", "Type compatibility based on size", "Type compatibility based on location"],
+        "options_hi": ["Name के आधार पर type compatibility", "Structure के आधार पर type compatibility", "Size के आधार पर type compatibility", "Location के आधार पर type compatibility"],
+        "answer_en": "Type compatibility based on name",
+        "answer_hi": "Name के आधार पर type compatibility",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 87,
-        "question_en": "The metal used in making dental fillings is:",
-        "question_hi": "दंत भराव बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Mercury amalgam", "Gold", "Silver", "All of these"],
-        "options_hi": ["पारा अमलगम", "सोना", "चांदी", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "num": 187,
+        "question_en": "Which typing does TypeScript use?",
+        "question_hi": "TypeScript कौन सा typing use करता है?",
+        "options_en": ["Structural typing", "Nominal typing", "Both", "Neither"],
+        "options_hi": ["Structural typing", "Nominal typing", "दोनों", "कोई नहीं"],
+        "answer_en": "Structural typing",
+        "answer_hi": "Structural typing",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 88,
-        "question_en": "The study of the form and structure of organisms is called:",
-        "question_hi": "जीवों के रूप और संरचना का अध्ययन कहलाता है:",
-        "options_en": ["Morphology", "Anatomy", "Physiology", "Histology"],
-        "options_hi": ["आकृति विज्ञान", "शरीर रचना विज्ञान", "शरीर क्रिया विज्ञान", "ऊतक विज्ञान"],
-        "answer_en": "Morphology",
-        "answer_hi": "आकृति विज्ञान",
+        "num": 188,
+        "question_en": "What is type assertion?",
+        "question_hi": "Type assertion क्या है?",
+        "options_en": ["Telling TypeScript the type of value", "Asking TypeScript the type", "Ignoring TypeScript type", "Changing TypeScript type"],
+        "options_hi": ["TypeScript को value का type बताना", "TypeScript से type पूछना", "TypeScript type ignore करना", "TypeScript type change करना"],
+        "answer_en": "Telling TypeScript the type of value",
+        "answer_hi": "TypeScript को value का type बताना",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 89,
-        "question_en": "The chemical formula of calcium oxide is:",
-        "question_hi": "कैल्शियम ऑक्साइड का रासायनिक सूत्र है:",
-        "options_en": ["CaO", "Ca(OH)₂", "CaCO₃", "CaSO₄"],
-        "options_hi": ["CaO", "Ca(OH)₂", "CaCO₃", "CaSO₄"],
-        "answer_en": "CaO",
-        "answer_hi": "CaO",
+        "num": 189,
+        "question_en": "What is type guard?",
+        "question_hi": "Type guard क्या है?",
+        "options_en": ["Runtime check that narrows type", "Compile time check", "No check", "Random check"],
+        "options_hi": ["Runtime check जो type narrow करता है", "Compile time check", "No check", "Random check"],
+        "answer_en": "Runtime check that narrows type",
+        "answer_hi": "Runtime check जो type narrow करता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 90,
-        "question_en": "The SI unit of mass is:",
-        "question_hi": "द्रव्यमान की SI इकाई है:",
-        "options_en": ["Kilogram", "Gram", "Pound", "Ounce"],
-        "options_hi": ["किलोग्राम", "ग्राम", "पाउंड", "औंस"],
-        "answer_en": "Kilogram",
-        "answer_hi": "किलोग्राम",
+        "num": 190,
+        "question_en": "What is type predicate?",
+        "question_hi": "Type predicate क्या है?",
+        "options_en": ["Function that returns type predicate", "Function that returns value", "Function that creates value", "Function that deletes value"],
+        "options_hi": ["Function जो type predicate return करता है", "Function जो value return करता है", "Function जो value create करता है", "Function जो value delete करता है"],
+        "answer_en": "Function that returns type predicate",
+        "answer_hi": "Function जो type predicate return करता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 91,
-        "question_en": "The process of conversion of tidal energy to electrical energy is:",
-        "question_hi": "ज्वारीय ऊर्जा का विद्युत ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["In tidal power plant", "In solar cell", "In wind turbine", "In battery"],
-        "options_hi": ["ज्वारीय ऊर्जा संयंत्र में", "सौर सेल में", "पवन टरबाइन में", "बैटरी में"],
-        "answer_en": "In tidal power plant",
-        "answer_hi": "ज्वारीय ऊर्जा संयंत्र में",
+        "num": 191,
+        "question_en": "What is discriminated union?",
+        "question_hi": "Discriminated union क्या है?",
+        "options_en": ["Union type with common discriminant property", "Union type without common property", "Single type", "Any type"],
+        "options_hi": ["Common discriminant property वाला union type", "Common property के बिना union type", "Single type", "Any type"],
+        "answer_en": "Union type with common discriminant property",
+        "answer_hi": "Common discriminant property वाला union type",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 92,
-        "question_en": "The metal used in making musical instruments is:",
-        "question_hi": "संगीत वाद्ययंत्र बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Brass", "Copper", "Silver", "All of these"],
-        "options_hi": ["पीतल", "तांबा", "चांदी", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "num": 192,
+        "question_en": "What is exhaustiveness checking?",
+        "question_hi": "Exhaustiveness checking क्या है?",
+        "options_en": ["Checking all union cases are handled", "Checking some cases", "Checking no cases", "Random checking"],
+        "options_hi": ["सभी union cases handled हैं यह check करना", "कुछ cases check करना", "कोई cases check नहीं करना", "Random checking"],
+        "answer_en": "Checking all union cases are handled",
+        "answer_hi": "सभी union cases handled हैं यह check करना",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 93,
-        "question_en": "The study of the nervous system is called:",
-        "question_hi": "तंत्रिका तंत्र का अध्ययन कहलाता है:",
-        "options_en": ["Neurology", "Cardiology", "Hematology", "Endocrinology"],
-        "options_hi": ["स्नायु विज्ञान", "हृदय विज्ञान", "रक्त विज्ञान", "अंतःस्राव विज्ञान"],
-        "answer_en": "Neurology",
-        "answer_hi": "स्नायु विज्ञान",
+        "num": 193,
+        "question_en": "What is the 'never' type used for in exhaustiveness checking?",
+        "question_hi": "Exhaustiveness checking में 'never' type किसके लिए use होता है?",
+        "options_en": ["To represent impossible case", "To represent possible case", "To represent any case", "To represent unknown case"],
+        "options_hi": ["Impossible case represent करने के लिए", "Possible case represent करने के लिए", "Any case represent करने के लिए", "Unknown case represent करने के लिए"],
+        "answer_en": "To represent impossible case",
+        "answer_hi": "Impossible case represent करने के लिए",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 94,
-        "question_en": "The chemical formula of sodium carbonate is:",
-        "question_hi": "सोडियम कार्बोनेट का रासायनिक सूत्र है:",
-        "options_en": ["Na₂CO₃", "NaHCO₃", "NaOH", "NaCl"],
-        "options_hi": ["Na₂CO₃", "NaHCO₃", "NaOH", "NaCl"],
-        "answer_en": "Na₂CO₃",
-        "answer_hi": "Na₂CO₃",
+        "num": 194,
+        "question_en": "What is brand checking?",
+        "question_hi": "Brand checking क्या है?",
+        "options_en": ["Checking unique brand of type", "Checking no brand", "Checking random brand", "Checking multiple brands"],
+        "options_hi": ["Type के unique brand को check करना", "No brand check करना", "Random brand check करना", "Multiple brands check करना"],
+        "answer_en": "Checking unique brand of type",
+        "answer_hi": "Type के unique brand को check करना",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 95,
-        "question_en": "The SI unit of electric capacitance is:",
-        "question_hi": "विद्युत धारिता की SI इकाई है:",
-        "options_en": ["Farad", "Henry", "Tesla", "Weber"],
-        "options_hi": ["फैरड", "हेनरी", "टेस्ला", "वेबर"],
-        "answer_en": "Farad",
-        "answer_hi": "फैरड",
+        "num": 195,
+        "question_en": "What is opaque type?",
+        "question_hi": "Opaque type क्या है?",
+        "options_en": ["Type that hides implementation details", "Type that shows implementation", "Type that has no implementation", "Type that has random implementation"],
+        "options_hi": ["Type जो implementation details hide करता है", "Type जो implementation show करता है", "Type जिसकी कोई implementation नहीं है", "Type जिसकी random implementation है"],
+        "answer_en": "Type that hides implementation details",
+        "answer_hi": "Type जो implementation details hide करता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 96,
-        "question_en": "The process of conversion of biomass to electrical energy is:",
-        "question_hi": "बायोमास का विद्युत ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["In biomass power plant", "In solar cell", "In wind turbine", "In battery"],
-        "options_hi": ["बायोमास ऊर्जा संयंत्र में", "सौर सेल में", "पवन टरबाइन में", "बैटरी में"],
-        "answer_en": "In biomass power plant",
-        "answer_hi": "बायोमास ऊर्जा संयंत्र में",
+        "num": 196,
+        "question_en": "What is assertion function?",
+        "question_hi": "Assertion function क्या है?",
+        "options_en": ["Function that asserts condition at runtime", "Function that returns value", "Function that creates value", "Function that deletes value"],
+        "options_hi": ["Function जो runtime पर condition assert करता है", "Function जो value return करता है", "Function जो value create करता है", "Function जो value delete करता है"],
+        "answer_en": "Function that asserts condition at runtime",
+        "answer_hi": "Function जो runtime पर condition assert करता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 97,
-        "question_en": "The metal used in making bulletproof vests is:",
-        "question_hi": "बुलेटप्रूफ वेस्ट बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Kevlar (not metal)", "Steel", "Titanium", "All of these"],
-        "options_hi": ["केवलार (धातु नहीं)", "इस्पात", "टाइटेनियम", "ये सभी"],
-        "answer_en": "Kevlar (not metal)",
-        "answer_hi": "केवलार (धातु नहीं)",
+        "num": 197,
+        "question_en": "What is the 'satisfies' operator?",
+        "question_hi": "'satisfies' operator क्या है?",
+        "options_en": ["Checks if value satisfies type without changing type", "Changes type", "Ignores type", "Deletes type"],
+        "options_hi": ["Check करता है कि value type satisfy करती है बिना type change किए", "Type change करता है", "Type ignore करता है", "Type delete करता है"],
+        "answer_en": "Checks if value satisfies type without changing type",
+        "answer_hi": "Check करता है कि value type satisfy करती है बिना type change किए",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 98,
-        "question_en": "The study of the endocrine system is called:",
-        "question_hi": "अंतःस्राव तंत्र का अध्ययन कहलाता है:",
-        "options_en": ["Endocrinology", "Neurology", "Cardiology", "Hematology"],
-        "options_hi": ["अंतःस्राव विज्ञान", "स्नायु विज्ञान", "हृदय विज्ञान", "रक्त विज्ञान"],
-        "answer_en": "Endocrinology",
-        "answer_hi": "अंतःस्राव विज्ञान",
+        "num": 198,
+        "question_en": "What is const assertion?",
+        "question_hi": "Const assertion क्या है?",
+        "options_en": ["Makes literal types readonly", "Makes literal types writable", "Makes literal types deletable", "Makes literal types optional"],
+        "options_hi": ["Literal types को readonly बनाता है", "Literal types को writable बनाता है", "Literal types को deletable बनाता है", "Literal types को optional बनाता है"],
+        "answer_en": "Makes literal types readonly",
+        "answer_hi": "Literal types को readonly बनाता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 99,
-        "question_en": "The chemical formula of potassium hydroxide is:",
-        "question_hi": "पोटैशियम हाइड्रॉक्साइड का रासायनिक सूत्र है:",
-        "options_en": ["KOH", "KCl", "K₂SO₄", "KNO₃"],
-        "options_hi": ["KOH", "KCl", "K₂SO₄", "KNO₃"],
-        "answer_en": "KOH",
-        "answer_hi": "KOH",
+        "num": 199,
+        "question_en": "What does 'as const' do to object literals?",
+        "question_hi": "'as const' object literals के साथ क्या करता है?",
+        "options_en": ["Makes all properties readonly", "Makes all properties writable", "Makes all properties deletable", "Makes all properties optional"],
+        "options_hi": ["सभी properties को readonly बनाता है", "सभी properties को writable बनाता है", "सभी properties को deletable बनाता है", "सभी properties को optional बनाता है"],
+        "answer_en": "Makes all properties readonly",
+        "answer_hi": "सभी properties को readonly बनाता है",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 100,
-        "question_en": "The SI unit of magnetic flux is:",
-        "question_hi": "चुंबकीय फ्लक्स की SI इकाई है:",
-        "options_en": ["Weber", "Tesla", "Henry", "Farad"],
-        "options_hi": ["वेबर", "टेस्ला", "हेनरी", "फैरड"],
-        "answer_en": "Weber",
-        "answer_hi": "वेबर",
+        "num": 200,
+        "question_en": "What is the main purpose of TypeScript's type system?",
+        "question_hi": "TypeScript के type system का main purpose क्या है?",
+        "options_en": ["Catch errors at compile time", "Make code run faster", "Reduce file size", "Improve browser compatibility"],
+        "options_hi": ["Compile time पर errors catch करना", "Code को faster run करना", "File size reduce करना", "Browser compatibility improve करना"],
+        "answer_en": "Catch errors at compile time",
+        "answer_hi": "Compile time पर errors catch करना",
         "attempted": false,
         "selected": ""
     }
-        
-// Add more questions here...
 ];
 
-
-let currentQuestion = 0; 
+let currentQuestion = 0;
 let language = "en";
-// let timeLeft = 180 * 60; // 180 minutes
-let timeLeft = 60 * 60; // 60 minutes
+let timeLeft = 60 * 60; 
 let timerInterval;
 
-// ----------------- Quiz Logic -----------------
+// ----------------- Load Question -----------------
 function loadQuestion(index) {
     const q = questions[index];
-    document.getElementById("question").textContent = `${q.num}. ${
-        language === "en" ? q.question_en : q.question_hi
-    }`;
-    document.getElementById("questionCounter").textContent = `Question ${index + 1} of ${questions.length}`;
+    if (!q) return; //  undefined error fix
+   questions[index].visited = true;
+    document.getElementById("question").textContent =
+       `${q.num}. ${language === "en" ? q.question_en : q.question_hi}`;
+
+    document.getElementById("questionCounter").textContent =
+       ` Question ${index + 1} of ${questions.length}`;
 
     const optionsElement = document.getElementById("options");
     optionsElement.innerHTML = "";
 
     const options = language === "en" ? q.options_en : q.options_hi;
 
-    options.forEach((option) => {
+    options.forEach(option => {
         const isSelected = q.selected === option;
-        const optionDiv = document.createElement("div");
-        optionDiv.className = "option-box";
-        optionDiv.style = `
+
+        const div = document.createElement("div");
+        div.className = "option-box";
+
+        div.style = `
             border: 2px solid ${isSelected ? "#007bff" : "#ccc"};
             background-color: ${isSelected ? "#e7f1ff" : "white"};
             padding: 10px;
             border-radius: 8px;
             margin: 6px 0;
             cursor: pointer;
-            transition: all 0.2s;
         `;
 
-        optionDiv.innerHTML = `
-            <input type="radio" name="option" value="${option}" ${isSelected ? "checked" : ""} style="margin-right:8px;">
+        div.innerHTML = `
+            <input type="radio" name="option" value="${option}" 
+            ${isSelected ? "checked" : ""} style="margin-right:8px;">
             ${option}
         `;
 
-        optionDiv.addEventListener("click", () => {
+        div.addEventListener("click", () => {
             markAttempted(index, option);
             loadQuestion(index);
         });
 
-        optionsElement.appendChild(optionDiv);
+        optionsElement.appendChild(div);
     });
 
     updateNavigation();
 }
 
+// ----------------- Attempt Mark -----------------
 function markAttempted(index, selectedAnswer) {
     questions[index].attempted = true;
     questions[index].selected = selectedAnswer;
     updateNavigation();
 }
 
+// ----------------- Next / Previous -----------------
 function nextQuestion() {
     if (currentQuestion < questions.length - 1) {
         currentQuestion++;
@@ -1178,229 +1181,122 @@ function changeLanguage() {
     loadQuestion(currentQuestion);
 }
 
+// ----------------- Final Submit -----------------
 function submitQuiz() {
-    clearInterval(timerInterval);
-    let attempted = 0,
-        notAttempted = 0,
-        score = 0;
+    let confirmation = confirm("Are you sure you want to submit the test?");
+    if (!confirmation) return;
 
-    questions.forEach((q) => {
+    let attempted = 0;
+    let notAttempted = 0;
+    let score = 0;
+    const results = [];
+
+    questions.forEach(q => {
         if (q.attempted) {
             attempted++;
-            if (q.selected === q.answer_en || q.selected === q.answer_hi) score++;
-        } else notAttempted++;
+
+            if (q.selected === q.answer_en || q.selected === q.answer_hi) {
+                score++;
+            }
+        } else {
+            notAttempted++;
+        }
+
+        results.push({
+            question: language === "en" ? q.question_en : q.question_hi,
+            selected: q.selected || "Not Answered",
+            correct: language === "en" ? q.answer_en : q.answer_hi
+        });
     });
 
-    alert(
-        `Quiz submitted!\nAttempted: ${attempted}\nNot Attempted: ${notAttempted}\nScore: ${score}/${questions.length}`
-    );
+    localStorage.setItem("attempted", attempted);
+    localStorage.setItem("notAttempted", notAttempted);
+    localStorage.setItem("score", score);
+    localStorage.setItem("results", JSON.stringify(results));
+
+    let viewResult = confirm("Test submitted! Do you want to view result?");
+    if (viewResult) {
+        window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
+    }
 }
 
+// ----------------- Navigation Circles -----------------
+function updateNavigation() {
+    const nav = document.getElementById("circleContainer");
+    nav.innerHTML = "";
+
+    questions.forEach((q, i) => {
+        let color = "gray"; // default: not visited
+
+        if (i === currentQuestion) {
+            color = "blue"; // current question
+        } 
+        else if (q.attempted) {
+            color = "green"; // answered
+        } 
+        else if (q.visited) {
+            color = "white"; // visited but not answered
+        }
+
+        nav.innerHTML += `
+            <div class="circle" style="background:${color}; border:1px solid black;"
+            onclick="jumpToQuestion(${i})">${i + 1}</div>
+        `;
+    });
+}
+
+function jumpToQuestion(index) {
+    currentQuestion = index;
+    loadQuestion(index);
+}
+
+// ----------------- Timer -----------------
 function startTimer() {
     const timerElement = document.getElementById("timer");
-    clearInterval(timerInterval);
+
     timerInterval = setInterval(() => {
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
             alert("Time's up!");
             submitQuiz();
         } else {
-            const hours = Math.floor(timeLeft / 3600);
-            const minutes = Math.floor((timeLeft % 3600) / 60);
-            const seconds = timeLeft % 60;
-            timerElement.textContent = `Time Left: ${hours
-                .toString()
-                .padStart(2, "0")}:${minutes
-                .toString()
-                .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+            const hours = String(Math.floor(timeLeft / 3600)).padStart(2, "0");
+            const minutes = String(Math.floor((timeLeft % 3600) / 60)).padStart(2, "0");
+            const seconds = String(timeLeft % 60).padStart(2, "0");
+
+            timerElement.textContent = `Time Left: ${hours}:${minutes}:${seconds}`;
             timeLeft--;
         }
     }, 1000);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////all file and folder me code add karna hai 
-
-
-// submit 
-function jumpToQuestion(index) {
-            currentQuestion = index;
-            loadQuestion(index);
-        }
-
-        function submitQuiz() {
-            let confirmation = confirm("Are you sure you want to submit the test?");
-            
-            if (!confirmation) {
-                return; // अगर यूज़र 'Cancel' करता है तो आगे नहीं बढ़ेंगे
-            }
-
-            let attempted = 0;
-            let notAttempted = 0;
-            let score = 0;
-            const results = [];
-
-            questions.forEach(q => {
-                if (q.attempted) {
-                    attempted++;
-                    if (q.selected === q.answer) {
-                        score++;
-                    }
-                } else {
-                    notAttempted++;
-                }
-                results.push({ question: q.question, selected: q.selected || "Not Answered", correct: q.answer });
-            });
-
-            localStorage.setItem("attempted", attempted);
-            localStorage.setItem("notAttempted", notAttempted);
-            localStorage.setItem("score", score);
-            localStorage.setItem("results", JSON.stringify(results));
-
-            // रिजल्ट देखने से पहले एक और कन्फर्मेशन ले सकते हैं
-            let viewResult = confirm("Test submitted successfully! Do you want to view your result?");
-            if (viewResult) {
-                window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
-            }
-        }
-        window.onload = () => {
-            loadQuestion(currentQuestion);
-        };
-
-
-function updateNavigation() {
-    const nav = document.getElementById("circleContainer");
-    nav.innerHTML = "";
-    questions.forEach((q, i) => {
-        let color = "gray";
-        if (i === currentQuestion) color = "blue";
-        else if (q.attempted) color = "green";
-        nav.innerHTML += `<div class='circle' style='background-color:${color}' onclick='loadQuestion(${i})'>${i + 1}</div>`;
-    });
-}
-
-// ----------------- Camera & Movement Logic -----------------
+// ----------------- Camera & Movement Detection -----------------
 let videoStream;
 let movementCount = 0;
 
 function startCamera() {
     const container = document.createElement("div");
     container.id = "camera-container";
-    container.style.position = "fixed";
-    container.style.top = "10px";
-    container.style.left = "10px"; // ✅ Left side
-    container.style.width = "130px";
-    container.style.height = "130px";
-    container.style.zIndex = "9999";
-    container.style.borderRadius = "50%";
-    container.style.overflow = "hidden";
-    container.style.border = "3px solid red";
-    container.style.boxShadow = "0 0 10px rgba(0,0,0,0.3)";
-    container.style.cursor = "grab";
-    container.style.minWidth = "80px";
-    container.style.minHeight = "80px";
-    container.style.maxWidth = "250px";
-    container.style.maxHeight = "250px";
-    container.style.background = "#000";
+    container.style = `
+        position:fixed; top:10px; left:10px; width:130px; height:130px;
+        border-radius:50%; overflow:hidden; border:3px solid red; z-index:9999;
+    `;
+
     document.body.appendChild(container);
 
     const video = document.createElement("video");
-    video.setAttribute("autoplay", true);
-    video.setAttribute("playsinline", true);
-    video.style.width = "100%";
-    video.style.height = "100%";
-    video.style.objectFit = "cover";
+    video.autoplay = true;
+    video.playsinline = true;
+    video.style = "width:100%; height:100%; object-fit:cover;";
     container.appendChild(video);
 
-    // ✅ Resize handle
-    const resizeHandle = document.createElement("div");
-    resizeHandle.style.position = "absolute";
-    resizeHandle.style.bottom = "2px";
-    resizeHandle.style.right = "2px";
-    resizeHandle.style.width = "15px";
-    resizeHandle.style.height = "15px";
-    resizeHandle.style.background = "rgba(255,255,255,0.7)";
-    resizeHandle.style.borderRadius = "4px";
-    resizeHandle.style.cursor = "se-resize";
-    container.appendChild(resizeHandle);
-
-    // ✅ Drag logic
-    let isDragging = false;
-    let offsetX, offsetY;
-
-    container.addEventListener("mousedown", (e) => {
-        if (e.target === resizeHandle) return;
-        isDragging = true;
-        offsetX = e.clientX - container.offsetLeft;
-        offsetY = e.clientY - container.offsetTop;
-        container.style.cursor = "grabbing";
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isDragging) return;
-        let x = e.clientX - offsetX;
-        let y = e.clientY - offsetY;
-        x = Math.max(0, Math.min(window.innerWidth - container.offsetWidth, x));
-        y = Math.max(0, Math.min(window.innerHeight - container.offsetHeight, y));
-        container.style.left = `${x}px`;
-        container.style.top = `${y}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isDragging = false;
-        container.style.cursor = "grab";
-    });
-
-    // ✅ Resize logic
-    let isResizing = false;
-    let startWidth, startHeight, startX, startY;
-
-    resizeHandle.addEventListener("mousedown", (e) => {
-        e.stopPropagation();
-        isResizing = true;
-        startWidth = container.offsetWidth;
-        startHeight = container.offsetHeight;
-        startX = e.clientX;
-        startY = e.clientY;
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isResizing) return;
-        const dx = e.clientX - startX;
-        const dy = e.clientY - startY;
-        const newSize = Math.max(80, Math.min(250, Math.max(startWidth + dx, startHeight + dy)));
-        container.style.width = `${newSize}px`;
-        container.style.height = `${newSize}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isResizing = false;
-    });
-
-    // ✅ Camera stream
     navigator.mediaDevices.getUserMedia({ video: true })
         .then(stream => {
             video.srcObject = stream;
             videoStream = stream;
             detectMovement(video);
         })
-        .catch(err => {
-            console.error("Camera error:", err);
-            alert("Camera not accessible!");
-        });
+        .catch(() => alert("Camera access denied!"));
 }
 
 function detectMovement(video) {
@@ -1408,51 +1304,51 @@ function detectMovement(video) {
     const ctx = canvas.getContext("2d");
     canvas.width = 160;
     canvas.height = 160;
-    let lastImageData = null;
+
+    let lastData = null;
 
     setInterval(() => {
-        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(video, 0, 0, 160, 160);
+        const data = ctx.getImageData(0, 0, 160, 160);
 
-        if (lastImageData) {
+        if (lastData) {
             let diff = 0;
-            for (let i = 0; i < imageData.data.length; i += 4) {
-                diff += Math.abs(imageData.data[i] - lastImageData.data[i]);
+            for (let i = 0; i < data.data.length; i += 4) {
+                diff += Math.abs(data.data[i] - lastData.data[i]);
             }
 
             if (diff > 1000000) {
                 movementCount++;
-                if (movementCount === 1) {
-                    alert("⚠️ Alert 1: Face is not move");
-                } else if (movementCount === 2) {
-                    alert("⚠️ Alert 2: Head is not move");
-                } else if (movementCount === 3) {
-                    alert("⚠️ Alert 3: Test series is restarting...");
+
+                if (movementCount === 1) alert("⚠ Alert 1: No movement detected!");
+                if (movementCount === 2) alert("⚠ Alert 2: Head not moving!");
+                if (movementCount === 3) {
+                    alert("⚠ Alert 3: Restarting test...");
                     restartTest();
                 }
             }
         }
-        lastImageData = imageData;
+        lastData = data;
+
     }, 2000);
 }
 
 function restartTest() {
-    if (videoStream) {
-        videoStream.getTracks().forEach(track => track.stop());
-    }
-    const camContainer = document.getElementById("camera-container");
-    if (camContainer) camContainer.remove();
+    if (videoStream) videoStream.getTracks().forEach(t => t.stop());
+
+    const cam = document.getElementById("camera-container");
+    if (cam) cam.remove();
 
     movementCount = 0;
     currentQuestion = 0;
-    timeLeft = 180 * 60;
+    timeLeft = 60 * 60;
 
     questions.forEach(q => {
         q.attempted = false;
         q.selected = null;
     });
 
-    loadQuestion(currentQuestion);
+    loadQuestion(0);
     startTimer();
     startCamera();
 }
@@ -1461,8 +1357,5 @@ function restartTest() {
 window.onload = function () {
     loadQuestion(currentQuestion);
     startTimer();
-    startCamera(); // ✅ Camera starts with test
+    startCamera();
 };
-
-
-///////////////////////////////////////

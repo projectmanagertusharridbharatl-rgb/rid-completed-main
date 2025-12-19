@@ -1,1122 +1,1120 @@
 const questions = [
     {
         "num": 1,
-        "question_en": "What is the value of (a + b)³?",
-        "question_hi": "(a + b)³ का मान क्या है?",
-        "options_en": ["a³ + b³", "a³ + 3a²b + 3ab² + b³", "a³ + b³ + 3ab", "a³ + b³ + ab"],
-        "options_hi": ["a³ + b³", "a³ + 3a²b + 3ab² + b³", "a³ + b³ + 3ab", "a³ + b³ + ab"],
-        "answer_en": "a³ + 3a²b + 3ab² + b³",
-        "answer_hi": "a³ + 3a²b + 3ab² + b³",
+        "question_en": "What is the primary benefit of Rust's affine type system?",
+        "question_hi": "Rust के affine type system का प्राथमिक लाभ क्या है?",
+        "options_en": ["Prevents use-after-move at compile time", "Faster execution", "Smaller binary size", "Simpler syntax"],
+        "options_hi": ["कंपाइल समय पर use-after-move रोकता है", "तेज निष्पादन", "छोटा बाइनरी आकार", "सरल सिंटैक्स"],
+        "answer_en": "Prevents use-after-move at compile time",
+        "answer_hi": "कंपाइल समय पर use-after-move रोकता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 2,
-        "question_en": "Which of the following is a composite number?",
-        "question_hi": "निम्नलिखित में से कौन सी भाज्य संख्या है?",
-        "options_en": ["2", "3", "11", "15"],
-        "options_hi": ["2", "3", "11", "15"],
-        "answer_en": "15",
-        "answer_hi": "15",
+        "question_en": "What does the 'extern' keyword enable in Rust?",
+        "question_hi": "Rust में 'extern' कीवर्ड क्या सक्षम करता है?",
+        "options_en": ["FFI (Foreign Function Interface)", "External file access", "Network communication", "Database connectivity"],
+        "options_hi": ["FFI (विदेशी फ़ंक्शन इंटरफेस)", "बाहरी फ़ाइल एक्सेस", "नेटवर्क संचार", "डेटाबेस कनेक्टिविटी"],
+        "answer_en": "FFI (Foreign Function Interface)",
+        "answer_hi": "FFI (विदेशी फ़ंक्शन इंटरफेस)",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 3,
-        "question_en": "What is the chemical formula of Plaster of Paris?",
-        "question_hi": "प्लास्टर ऑफ पेरिस का रासायनिक सूत्र क्या है?",
-        "options_en": ["CaSO₄.2H₂O", "CaSO₄.½H₂O", "CaCO₃", "Ca(OH)₂"],
-        "options_hi": ["CaSO₄.2H₂O", "CaSO₄.½H₂O", "CaCO₃", "Ca(OH)₂"],
-        "answer_en": "CaSO₄.½H₂O",
-        "answer_hi": "CaSO₄.½H₂O",
+        "question_en": "What is the purpose of the 'std::process::abort' function?",
+        "question_hi": "'std::process::abort' फ़ंक्शन का उद्देश्य क्या है?",
+        "options_en": ["Terminate process immediately without cleanup", "Graceful shutdown", "Restart process", "Pause process"],
+        "options_hi": ["सफाई के बिना प्रक्रिया को तुरंत समाप्त", "सुगम शटडाउन", "प्रक्रिया पुनः आरंभ", "प्रक्रिया रोकें"],
+        "answer_en": "Terminate process immediately without cleanup",
+        "answer_hi": "सफाई के बिना प्रक्रिया को तुरंत समाप्त",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 4,
-        "question_en": "Who wrote 'Madhushala'?",
-        "question_hi": "'मधुशाला' किसने लिखी?",
-        "options_en": ["Harivansh Rai Bachchan", "Mahadevi Verma", "Suryakant Tripathi", "Sumitranandan Pant"],
-        "options_hi": ["हरिवंश राय बच्चन", "महादेवी वर्मा", "सूर्यकांत त्रिपाठी", "सुमित्रानंदन पंत"],
-        "answer_en": "Harivansh Rai Bachchan",
-        "answer_hi": "हरिवंश राय बच्चन",
+        "question_en": "What does 'std::mem::forget' prevent from running?",
+        "question_hi": "'std::mem::forget' क्या चलने से रोकता है?",
+        "options_en": ["Destructors and Drop implementations", "Garbage collector", "Memory allocator", "Thread scheduler"],
+        "options_hi": ["डिस्ट्रक्टर्स और Drop इम्प्लीमेंटेशन", "गार्बेज कलेक्टर", "मेमोरी आवंटक", "थ्रेड शेड्यूलर"],
+        "answer_en": "Destructors and Drop implementations",
+        "answer_hi": "डिस्ट्रक्टर्स और Drop इम्प्लीमेंटेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 5,
-        "question_en": "What is the SI unit of luminous intensity?",
-        "question_hi": "ज्योति तीव्रता की SI इकाई क्या है?",
-        "options_en": ["Lumen", "Lux", "Candela", "Watt"],
-        "options_hi": ["लुमेन", "लक्स", "कैंडेला", "वाट"],
-        "answer_en": "Candela",
-        "answer_hi": "कैंडेला",
+        "question_en": "What is the main use of 'std::sync::mpsc::RecvError'?",
+        "question_hi": "'std::sync::mpsc::RecvError' का मुख्य उपयोग क्या है?",
+        "options_en": ["Indicate all senders are disconnected", "Network errors", "Memory errors", "File errors"],
+        "options_hi": ["संकेत करें कि सभी सेंडर डिस्कनेक्ट हैं", "नेटवर्क त्रुटियाँ", "मेमोरी त्रुटियाँ", "फ़ाइल त्रुटियाँ"],
+        "answer_en": "Indicate all senders are disconnected",
+        "answer_hi": "संकेत करें कि सभी सेंडर डिस्कनेक्ट हैं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 6,
-        "question_en": "Which organ produces bile juice in human body?",
-        "question_hi": "मानव शरीर में पित्त रस कौन सा अंग उत्पन्न करता है?",
-        "options_en": ["Liver", "Pancreas", "Gallbladder", "Stomach"],
-        "options_hi": ["यकृत", "अग्न्याशय", "पित्ताशय", "आमाशय"],
-        "answer_en": "Liver",
-        "answer_hi": "यकृत",
+        "question_en": "What does the '#[repr(C)]' attribute ensure?",
+        "question_hi": "'#[repr(C)]' एट्रिब्यूट क्या सुनिश्चित करता है?",
+        "options_en": ["C-compatible memory layout", "Rust optimization", "Thread safety", "Memory safety"],
+        "options_hi": ["C-संगत मेमोरी लेआउट", "Rust अनुकूलन", "थ्रेड सुरक्षा", "मेमोरी सुरक्षा"],
+        "answer_en": "C-compatible memory layout",
+        "answer_hi": "C-संगत मेमोरी लेआउट",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 7,
-        "question_en": "What is the antonym of 'Generous'?",
-        "question_hi": "'Generous' का विलोम शब्द क्या है?",
-        "options_en": ["Kind", "Stingy", "Helpful", "Charitable"],
-        "options_hi": ["दयालु", "कंजूस", "सहायक", "दानशील"],
-        "answer_en": "Stingy",
-        "answer_hi": "कंजूस",
+        "question_en": "What is the purpose of 'std::num::Saturating'?",
+        "question_hi": "'std::num::Saturating' का उद्देश्य क्या है?",
+        "options_en": ["Saturating arithmetic operations", "Memory saturation", "Thread saturation", "CPU saturation"],
+        "options_hi": ["सैचुरेटिंग अंकगणितीय संचालन", "मेमोरी सैचुरेशन", "थ्रेड सैचुरेशन", "CPU सैचुरेशन"],
+        "answer_en": "Saturating arithmetic operations",
+        "answer_hi": "सैचुरेटिंग अंकगणितीय संचालन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 8,
-        "question_en": "Who was the first woman Prime Minister of India?",
-        "question_hi": "भारत की पहली महिला प्रधानमंत्री कौन थीं?",
-        "options_en": ["Sarojini Naidu", "Indira Gandhi", "Pratibha Patil", "Sonia Gandhi"],
-        "options_hi": ["सरोजिनी नायडू", "इंदिरा गांधी", "प्रतिभा पाटिल", "सोनिया गांधी"],
-        "answer_en": "Indira Gandhi",
-        "answer_hi": "इंदिरा गांधी",
+        "question_en": "What does 'std::thread::scope' allow?",
+        "question_hi": "'std::thread::scope' क्या अनुमति देता है?",
+        "options_en": ["Spawn threads that borrow from stack", "Global thread creation", "Thread priority setting", "Thread naming"],
+        "options_hi": ["स्टैक से उधार लेने वाले थ्रेड्स स्पॉन", "ग्लोबल थ्रेड निर्माण", "थ्रेड प्राथमिकता सेटिंग", "थ्रेड नामकरण"],
+        "answer_en": "Spawn threads that borrow from stack",
+        "answer_hi": "स्टैक से उधार लेने वाले थ्रेड्स स्पॉन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 9,
-        "question_en": "Solve: 2x² - 8 = 0",
-        "question_hi": "हल करें: 2x² - 8 = 0",
-        "options_en": ["x = ±1", "x = ±2", "x = ±3", "x = ±4"],
-        "options_hi": ["x = ±1", "x = ±2", "x = ±3", "x = ±4"],
-        "answer_en": "x = ±2",
-        "answer_hi": "x = ±2",
+        "question_en": "What is the main use of 'std::sync::LazyLock'?",
+        "question_hi": "'std::sync::LazyLock' का मुख्य उपयोग क्या है?",
+        "options_en": ["Lazy initialization with thread safety", "Memory lazy loading", "File lazy loading", "Network lazy loading"],
+        "options_hi": ["थ्रेड सुरक्षा के साथ आलसी आरंभीकरण", "मेमोरी आलसी लोडिंग", "फ़ाइल आलसी लोडिंग", "नेटवर्क आलसी लोडिंग"],
+        "answer_en": "Lazy initialization with thread safety",
+        "answer_hi": "थ्रेड सुरक्षा के साथ आलसी आरंभीकरण",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 10,
-        "question_en": "Which gas is produced during anaerobic respiration?",
-        "question_hi": "अवायवीय श्वसन के दौरान कौन सी गैस उत्पन्न होती है?",
-        "options_en": ["Oxygen", "Carbon dioxide", "Lactic acid", "Ethanol"],
-        "options_hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "लैक्टिक अम्ल", "एथनॉल"],
-        "answer_en": "Ethanol",
-        "answer_hi": "एथनॉल",
+        "question_en": "What does 'std::mem::discriminant' return?",
+        "question_hi": "'std::mem::discriminant' क्या लौटाता है?",
+        "options_en": ["Unique identifier for enum variants", "Memory address", "Type size", "Alignment value"],
+        "options_hi": ["एनम वेरिएंट्स के लिए अद्वितीय पहचानकर्ता", "मेमोरी एड्रेस", "प्रकार आकार", "अलाइनमेंट मान"],
+        "answer_en": "Unique identifier for enum variants",
+        "answer_hi": "एनम वेरिएंट्स के लिए अद्वितीय पहचानकर्ता",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 11,
-        "question_en": "What is the formula for gravitational force?",
-        "question_hi": "गुरुत्वाकर्षण बल का सूत्र क्या है?",
-        "options_en": ["F = G(m1m2)/r²", "F = ma", "F = mg", "F = kx"],
-        "options_hi": ["F = G(m1m2)/r²", "F = ma", "F = mg", "F = kx"],
-        "answer_en": "F = G(m1m2)/r²",
-        "answer_hi": "F = G(m1m2)/r²",
+        "question_en": "What is the purpose of 'std::hint::black_box'?",
+        "question_hi": "'std::hint::black_box' का उद्देश्य क्या है?",
+        "options_en": ["Prevent compiler optimizations", "Create black box testing", "Hide implementation", "Encrypt data"],
+        "options_hi": ["कंपाइलर अनुकूलन रोकें", "ब्लैक बॉक्स टेस्टिंग बनाएं", "कार्यान्वयन छुपाएं", "डेटा एन्क्रिप्ट"],
+        "answer_en": "Prevent compiler optimizations",
+        "answer_hi": "कंपाइलर अनुकूलन रोकें",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 12,
-        "question_en": "Which of these is a vestigial organ in humans?",
-        "question_hi": "निम्नलिखित में से कौन सा मानव में अवशेषी अंग है?",
-        "options_en": ["Heart", "Appendix", "Lungs", "Kidney"],
-        "options_hi": ["हृदय", "अपेंडिक्स", "फेफड़े", "वृक्क"],
-        "answer_en": "Appendix",
-        "answer_hi": "अपेंडिक्स",
+        "question_en": "What does 'std::panic::UnwindSafe' guarantee?",
+        "question_hi": "'std::panic::UnwindSafe' क्या गारंटी देता है?",
+        "options_en": ["Type can safely cross panic boundaries", "No panics will occur", "Memory safety during panic", "Thread safety during panic"],
+        "options_hi": ["प्रकार सुरक्षित रूप से पैनिक सीमाओं को पार कर सकता है", "कोई पैनिक नहीं होगा", "पैनिक के दौरान मेमोरी सुरक्षा", "पैनिक के दौरान थ्रेड सुरक्षा"],
+        "answer_en": "Type can safely cross panic boundaries",
+        "answer_hi": "प्रकार सुरक्षित रूप से पैनिक सीमाओं को पार कर सकता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 13,
-        "question_en": "What is the synonym of 'Meticulous'?",
-        "question_hi": "'Meticulous' का समानार्थी शब्द क्या है?",
-        "options_en": ["Careless", "Detailed", "Rough", "Sloppy"],
-        "options_hi": ["लापरवाह", "विस्तृत", "कच्चा", "असावधान"],
-        "answer_en": "Detailed",
-        "answer_hi": "विस्तृत",
+        "question_en": "What is the main use of 'std::sync::Barrier'?",
+        "question_hi": "'std::sync::Barrier' का मुख्य उपयोग क्या है?",
+        "options_en": ["Synchronize multiple threads at a point", "Create memory barriers", "File synchronization", "Network synchronization"],
+        "options_hi": ["एक बिंदु पर कई थ्रेड्स सिंक्रनाइज़", "मेमोरी बैरियर्स बनाएं", "फ़ाइल सिंक्रनाइज़ेशन", "नेटवर्क सिंक्रनाइज़ेशन"],
+        "answer_en": "Synchronize multiple threads at a point",
+        "answer_hi": "एक बिंदु पर कई थ्रेड्स सिंक्रनाइज़",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 14,
-        "question_en": "Who founded the city of Jaipur?",
-        "question_hi": "जयपुर शहर की स्थापना किसने की?",
-        "options_en": ["Maharana Pratap", "Raja Man Singh", "Sawai Jai Singh II", "Prithviraj Chauhan"],
-        "options_hi": ["महाराणा प्रताप", "राजा मान सिंह", "सवाई जय सिंह II", "पृथ्वीराज चौहान"],
-        "answer_en": "Sawai Jai Singh II",
-        "answer_hi": "सवाई जय सिंह II",
+        "question_en": "What does 'std::io::IsTerminal' trait provide?",
+        "question_hi": "'std::io::IsTerminal' ट्रेट क्या प्रदान करता है?",
+        "options_en": ["Check if stream is a terminal", "Terminal emulation", "Stream redirection", "Output formatting"],
+        "options_hi": ["जांचें कि क्या स्ट्रीम टर्मिनल है", "टर्मिनल एमुलेशन", "स्ट्रीम रीडायरेक्शन", "आउटपुट फॉर्मेटिंग"],
+        "answer_en": "Check if stream is a terminal",
+        "answer_hi": "जांचें कि क्या स्ट्रीम टर्मिनल है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 15,
-        "question_en": "What is the value of sin 45°?",
-        "question_hi": "sin 45° का मान क्या है?",
-        "options_en": ["0", "1", "1/√2", "√3/2"],
-        "options_hi": ["0", "1", "1/√2", "√3/2"],
-        "answer_en": "1/√2",
-        "answer_hi": "1/√2",
+        "question_en": "What is the purpose of 'std::backtrace::Backtrace'?",
+        "question_hi": "'std::backtrace::Backtrace' का उद्देश्य क्या है?",
+        "options_en": ["Capture call stack for debugging", "Memory tracing", "Performance profiling", "Code coverage"],
+        "options_hi": ["डिबगिंग के लिए कॉल स्टैक कैप्चर", "मेमोरी ट्रेसिंग", "प्रदर्शन प्रोफाइलिंग", "कोड कवरेज"],
+        "answer_en": "Capture call stack for debugging",
+        "answer_hi": "डिबगिंग के लिए कॉल स्टैक कैप्चर",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 16,
-        "question_en": "Which element has the highest atomic number?",
-        "question_hi": "किस तत्व की परमाणु संख्या सबसे अधिक है?",
-        "options_en": ["Uranium", "Plutonium", "Oganesson", "Radium"],
-        "options_hi": ["यूरेनियम", "प्लूटोनियम", "ओगनेसन", "रेडियम"],
-        "answer_en": "Oganesson",
-        "answer_hi": "ओगनेसन",
+        "question_en": "What does 'std::sync::PoisonError' indicate?",
+        "question_hi": "'std::sync::PoisonError' क्या दर्शाता है?",
+        "options_en": ["Mutex was poisoned by a panic", "Memory corruption", "Thread poisoning", "File corruption"],
+        "options_hi": ["म्यूटेक्स पैनिक द्वारा जहरीला हो गया", "मेमोरी करप्शन", "थ्रेड पॉइजनिंग", "फ़ाइल करप्शन"],
+        "answer_en": "Mutex was poisoned by a panic",
+        "answer_hi": "म्यूटेक्स पैनिक द्वारा जहरीला हो गया",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 17,
-        "question_en": "What is the unit of electric potential difference?",
-        "question_hi": "विद्युत विभवांतर की इकाई क्या है?",
-        "options_en": ["Ampere", "Volt", "Ohm", "Watt"],
-        "options_hi": ["एम्पियर", "वोल्ट", "ओम", "वाट"],
-        "answer_en": "Volt",
-        "answer_hi": "वोल्ट",
+        "question_en": "What is the main use of 'std::task::Poll'?",
+        "question_hi": "'std::task::Poll' का मुख्य उपयोग क्या है?",
+        "options_en": ["Async task polling status", "Thread polling", "Memory polling", "File polling"],
+        "options_hi": ["एसिंक टास्क पोलिंग स्थिति", "थ्रेड पोलिंग", "मेमोरी पोलिंग", "फ़ाइल पोलिंग"],
+        "answer_en": "Async task polling status",
+        "answer_hi": "एसिंक टास्क पोलिंग स्थिति",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 18,
-        "question_en": "Which vitamin deficiency causes Rickets?",
-        "question_hi": "किस विटामिन की कमी से रिकेट्स रोग होता है?",
-        "options_en": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
-        "options_hi": ["विटामिन A", "विटामिन B", "विटामिन C", "विटामिन D"],
-        "answer_en": "Vitamin D",
-        "answer_hi": "विटामिन D",
+        "question_en": "What does 'std::future::Future' trait represent?",
+        "question_hi": "'std::future::Future' ट्रेट क्या दर्शाता है?",
+        "options_en": ["Asynchronous computation", "Future date/time", "Memory future", "Thread future"],
+        "options_hi": ["अतुल्यकालिक गणना", "भविष्य की तिथि/समय", "मेमोरी भविष्य", "थ्रेड भविष्य"],
+        "answer_en": "Asynchronous computation",
+        "answer_hi": "अतुल्यकालिक गणना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 19,
-        "question_en": "What is the plural of 'Ox'?",
-        "question_hi": "'Ox' का बहुवचन क्या है?",
-        "options_en": ["Oxes", "Oxen", "Oxs", "Oxies"],
-        "options_hi": ["ऑक्सेस", "ऑक्सेन", "ऑक्स्स", "ऑक्सीज़"],
-        "answer_en": "Oxen",
-        "answer_hi": "ऑक्सेन",
+        "question_en": "What is the purpose of 'std::pin::Pin'?",
+        "question_hi": "'std::pin::Pin' का उद्देश्य क्या है?",
+        "options_en": ["Prevent moving of self-referential types", "Pin memory locations", "Pin threads", "Pin files"],
+        "options_hi": ["स्व-संदर्भित प्रकारों के स्थानांतरण को रोकें", "मेमोरी लोकेशन पिन", "थ्रेड्स पिन", "फ़ाइलें पिन"],
+        "answer_en": "Prevent moving of self-referential types",
+        "answer_hi": "स्व-संदर्भित प्रकारों के स्थानांतरण को रोकें",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 20,
-        "question_en": "Where is the Hawa Mahal located?",
-        "question_hi": "हवा महल कहाँ स्थित है?",
-        "options_en": ["Delhi", "Jaipur", "Udaipur", "Jodhpur"],
-        "options_hi": ["दिल्ली", "जयपुर", "उदयपुर", "जोधपुर"],
-        "answer_en": "Jaipur",
-        "answer_hi": "जयपुर",
+        "question_en": "What does 'std::mem::ManuallyDrop' prevent?",
+        "question_hi": "'std::mem::ManuallyDrop' क्या रोकता है?",
+        "options_en": ["Automatic destructor calls", "Manual memory management", "Thread drops", "File closures"],
+        "options_hi": ["स्वचालित डिस्ट्रक्टर कॉल", "मैनुअल मेमोरी प्रबंधन", "थ्रेड ड्रॉप", "फ़ाइल क्लोजर"],
+        "answer_en": "Automatic destructor calls",
+        "answer_hi": "स्वचालित डिस्ट्रक्टर कॉल",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 21,
-        "question_en": "What is the volume of a cube with side 3 cm?",
-        "question_hi": "3 सेमी भुजा वाले घन का आयतन क्या है?",
-        "options_en": ["9 cm³", "18 cm³", "27 cm³", "36 cm³"],
-        "options_hi": ["9 सेमी³", "18 सेमी³", "27 सेमी³", "36 सेमी³"],
-        "answer_en": "27 cm³",
-        "answer_hi": "27 सेमी³",
+        "question_en": "What is the main use of 'std::sync::mpsc::TryRecvError'?",
+        "question_hi": "'std::sync::mpsc::TryRecvError' का मुख्य उपयोग क्या है?",
+        "options_en": ["Non-blocking receive failure cases", "Blocking receive errors", "Send errors", "Channel creation errors"],
+        "options_hi": ["गैर-अवरुद्ध रिसीव विफलता मामले", "अवरुद्ध रिसीव त्रुटियाँ", "भेजने की त्रुटियाँ", "चैनल निर्माण त्रुटियाँ"],
+        "answer_en": "Non-blocking receive failure cases",
+        "answer_hi": "गैर-अवरुद्ध रिसीव विफलता मामले",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 22,
-        "question_en": "Which gas is used in fluorescent tubes?",
-        "question_hi": "फ्लोरोसेंट ट्यूबों में किस गैस का उपयोग किया जाता है?",
-        "options_en": ["Oxygen", "Nitrogen", "Mercury vapor", "Argon"],
-        "options_hi": ["ऑक्सीजन", "नाइट्रोजन", "पारा वाष्प", "आर्गन"],
-        "answer_en": "Mercury vapor",
-        "answer_hi": "पारा वाष्प",
+        "question_en": "What does 'std::num::TryFromIntError' represent?",
+        "question_hi": "'std::num::TryFromIntError' क्या दर्शाता है?",
+        "options_en": ["Integer conversion overflow", "Float conversion error", "String conversion error", "Memory conversion error"],
+        "options_hi": ["पूर्णांक रूपांतरण ओवरफ्लो", "फ्लोट रूपांतरण त्रुटि", "स्ट्रिंग रूपांतरण त्रुटि", "मेमोरी रूपांतरण त्रुटि"],
+        "answer_en": "Integer conversion overflow",
+        "answer_hi": "पूर्णांक रूपांतरण ओवरफ्लो",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 23,
-        "question_en": "What is the speed of light in water?",
-        "question_hi": "पानी में प्रकाश की गति क्या है?",
-        "options_en": ["3×10⁸ m/s", "2.25×10⁸ m/s", "3×10⁶ m/s", "2.25×10⁶ m/s"],
-        "options_hi": ["3×10⁸ मी/से", "2.25×10⁸ मी/से", "3×10⁶ मी/से", "2.25×10⁶ मी/से"],
-        "answer_en": "2.25×10⁸ m/s",
-        "answer_hi": "2.25×10⁸ मी/से",
+        "question_en": "What is the purpose of 'std::sync::WaitTimeoutResult'?",
+        "question_hi": "'std::sync::WaitTimeoutResult' का उद्देश्य क्या है?",
+        "options_en": ["Result of timed waiting operations", "Thread timeout", "Memory timeout", "File timeout"],
+        "options_hi": ["समयबद्ध प्रतीक्षा संचालन का परिणाम", "थ्रेड टाइमआउट", "मेमोरी टाइमआउट", "फ़ाइल टाइमआउट"],
+        "answer_en": "Result of timed waiting operations",
+        "answer_hi": "समयबद्ध प्रतीक्षा संचालन का परिणाम",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 24,
-        "question_en": "Which cell organelle contains digestive enzymes?",
-        "question_hi": "किस कोशिका अंग में पाचक एंजाइम पाए जाते हैं?",
-        "options_en": ["Mitochondria", "Lysosome", "Nucleus", "Ribosome"],
-        "options_hi": ["माइटोकॉन्ड्रिया", "लाइसोसोम", "केंद्रक", "राइबोसोम"],
-        "answer_en": "Lysosome",
-        "answer_hi": "लाइसोसोम",
+        "question_en": "What does 'std::io::Take' limit?",
+        "question_hi": "'std::io::Take' क्या सीमित करता है?",
+        "options_en": ["Number of bytes read from a reader", "Memory usage", "Thread count", "File size"],
+        "options_hi": ["रीडर से पढ़े गए बाइट्स की संख्या", "मेमोरी उपयोग", "थ्रेड संख्या", "फ़ाइल आकार"],
+        "answer_en": "Number of bytes read from a reader",
+        "answer_hi": "रीडर से पढ़े गए बाइट्स की संख्या",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 25,
-        "question_en": "What is the meaning of 'उत्साह'?",
-        "question_hi": "'उत्साह' का अर्थ क्या है?",
-        "options_en": ["Sadness", "Enthusiasm", "Anger", "Fear"],
-        "options_hi": ["दुख", "उत्साह", "गुस्सा", "डर"],
-        "answer_en": "Enthusiasm",
-        "answer_hi": "उत्साह",
+        "question_en": "What is the main use of 'std::collections::TryReserveError'?",
+        "question_hi": "'std::collections::TryReserveError' का मुख्य उपयोग क्या है?",
+        "options_en": ["Memory allocation failure in collections", "Collection size limit", "Thread reservation", "File reservation"],
+        "options_hi": ["संग्रह में मेमोरी आवंटन विफलता", "संग्रह आकार सीमा", "थ्रेड आरक्षण", "फ़ाइल आरक्षण"],
+        "answer_en": "Memory allocation failure in collections",
+        "answer_hi": "संग्रह में मेमोरी आवंटन विफलता",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 26,
-        "question_en": "Who was the first Indian to win an Oscar?",
-        "question_hi": "ऑस्कर जीतने वाले पहले भारतीय कौन थे?",
-        "options_en": ["A.R. Rahman", "Satyajit Ray", "Bhanu Athaiya", "Gulzar"],
-        "options_hi": ["ए.आर. रहमान", "सत्यजित रे", "भानु अथैया", "गुलज़ार"],
-        "answer_en": "Bhanu Athaiya",
-        "answer_hi": "भानु अथैया",
+        "question_en": "What does 'std::path::MAIN_SEPARATOR' represent?",
+        "question_hi": "'std::path::MAIN_SEPARATOR' क्या दर्शाता है?",
+        "options_en": ["Platform-specific path separator", "File extension separator", "Directory separator", "Network path separator"],
+        "options_hi": ["प्लेटफ़ॉर्म-विशिष्ट पथ विभाजक", "फ़ाइल एक्सटेंशन विभाजक", "निर्देशिका विभाजक", "नेटवर्क पथ विभाजक"],
+        "answer_en": "Platform-specific path separator",
+        "answer_hi": "प्लेटफ़ॉर्म-विशिष्ट पथ विभाजक",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 27,
-        "question_en": "What is the value of tan 60°?",
-        "question_hi": "tan 60° का मान क्या है?",
-        "options_en": ["1", "√3", "1/√3", "0"],
-        "options_hi": ["1", "√3", "1/√3", "0"],
-        "answer_en": "√3",
-        "answer_hi": "√3",
+        "question_en": "What is the purpose of 'std::sync::atomic::fence'?",
+        "question_hi": "'std::sync::atomic::fence' का उद्देश्य क्या है?",
+        "options_en": ["Memory ordering barrier", "Thread fencing", "Memory protection", "Atomic operation"],
+        "options_hi": ["मेमोरी ऑर्डरिंग बैरियर", "थ्रेड फेंसिंग", "मेमोरी सुरक्षा", "परमाणु संचालन"],
+        "answer_en": "Memory ordering barrier",
+        "answer_hi": "मेमोरी ऑर्डरिंग बैरियर",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 28,
-        "question_en": "Which acid is known as 'King of Chemicals'?",
-        "question_hi": "किस अम्ल को 'रसायनों का राजा' कहा जाता है?",
-        "options_en": ["Hydrochloric acid", "Sulfuric acid", "Nitric acid", "Acetic acid"],
-        "options_hi": ["हाइड्रोक्लोरिक अम्ल", "सल्फ्यूरिक अम्ल", "नाइट्रिक अम्ल", "एसिटिक अम्ल"],
-        "answer_en": "Sulfuric acid",
-        "answer_hi": "सल्फ्यूरिक अम्ल",
+        "question_en": "What does 'std::io::Lines' return from BufRead?",
+        "question_hi": "BufRead से 'std::io::Lines' क्या लौटाता है?",
+        "options_en": ["Iterator over lines of text", "Single line", "All lines as string", "Line numbers"],
+        "options_hi": ["टेक्स्ट की पंक्तियों पर इटरेटर", "एकल पंक्ति", "स्ट्रिंग के रूप में सभी पंक्तियाँ", "पंक्ति संख्याएँ"],
+        "answer_en": "Iterator over lines of text",
+        "answer_hi": "टेक्स्ट की पंक्तियों पर इटरेटर",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 29,
-        "question_en": "What is Archimedes' principle?",
-        "question_hi": "आर्किमिडीज का सिद्धांत क्या है?",
-        "options_en": ["F = ma", "P = F/A", "Buoyant force equals weight of displaced fluid", "V = IR"],
-        "options_hi": ["F = ma", "P = F/A", "उत्प्लावन बल विस्थापित द्रव के भार के बराबर होता है", "V = IR"],
-        "answer_en": "Buoyant force equals weight of displaced fluid",
-        "answer_hi": "उत्प्लावन बल विस्थापित द्रव के भार के बराबर होता है",
+        "question_en": "What is the main use of 'std::num::ParseFloatError'?",
+        "question_hi": "'std::num::ParseFloatError' का मुख्य उपयोग क्या है?",
+        "options_en": ["Float parsing failure", "Integer parsing failure", "String parsing failure", "Memory parsing failure"],
+        "options_hi": ["फ्लोट पार्सिंग विफलता", "पूर्णांक पार्सिंग विफलता", "स्ट्रिंग पार्सिंग विफलता", "मेमोरी पार्सिंग विफलता"],
+        "answer_en": "Float parsing failure",
+        "answer_hi": "फ्लोट पार्सिंग विफलता",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 30,
-        "question_en": "Which blood cells help in clotting?",
-        "question_hi": "कौन सी रक्त कोशिकाएं थक्का जमाने में मदद करती हैं?",
-        "options_en": ["Red blood cells", "White blood cells", "Platelets", "Plasma"],
-        "options_hi": ["लाल रक्त कोशिकाएं", "श्वेत रक्त कोशिकाएं", "प्लेटलेट्स", "प्लाज्मा"],
-        "answer_en": "Platelets",
-        "answer_hi": "प्लेटलेट्स",
+        "question_en": "What does 'std::sync::mpsc::SendError' indicate?",
+        "question_hi": "'std::sync::mpsc::SendError' क्या दर्शाता है?",
+        "options_en": ["Receiver is disconnected", "Sender is disconnected", "Channel is full", "Memory error"],
+        "options_hi": ["रिसीवर डिस्कनेक्ट है", "सेंडर डिस्कनेक्ट है", "चैनल भरा हुआ है", "मेमोरी त्रुटि"],
+        "answer_en": "Receiver is disconnected",
+        "answer_hi": "रिसीवर डिस्कनेक्ट है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 31,
-        "question_en": "What is the future tense of 'go'?",
-        "question_hi": "'go' का future tense क्या है?",
-        "options_en": ["goed", "went", "will go", "gone"],
-        "options_hi": ["गोएड", "वेंट", "विल गो", "गॉन"],
-        "answer_en": "will go",
-        "answer_hi": "विल गो",
+        "question_en": "What is the purpose of 'std::io::Repeat'?",
+        "question_hi": "'std::io::Repeat' का उद्देश्य क्या है?",
+        "options_en": ["Infinitely repeat a single byte", "Repeat file contents", "Repeat string", "Repeat memory"],
+        "options_hi": ["एकल बाइट को अनंत रूप से दोहराएं", "फ़ाइल सामग्री दोहराएं", "स्ट्रिंग दोहराएं", "मेमोरी दोहराएं"],
+        "answer_en": "Infinitely repeat a single byte",
+        "answer_hi": "एकल बाइट को अनंत रूप से दोहराएं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 32,
-        "question_en": "Who built the Qutub Minar?",
-        "question_hi": "कुतुब मीनार किसने बनवाया?",
-        "options_en": ["Qutub-ud-din Aibak", "Iltutmish", "Alauddin Khilji", "Firoz Shah Tughlaq"],
-        "options_hi": ["कुतुब-उद-दीन ऐबक", "इल्तुतमिश", "अलाउद्दीन खिलजी", "फिरोज शाह तुगलक"],
-        "answer_en": "Qutub-ud-din Aibak",
-        "answer_hi": "कुतुब-उद-दीन ऐबक",
+        "question_en": "What does 'std::collections::hash_map::Entry' represent?",
+        "question_hi": "'std::collections::hash_map::Entry' क्या दर्शाता है?",
+        "options_en": ["Occupied or vacant hash map slot", "Hash map key", "Hash map value", "Hash map iterator"],
+        "options_hi": ["कब्जे वाला या खाली हैश मैप स्लॉट", "हैश मैप कुंजी", "हैश मैप मान", "हैश मैप इटरेटर"],
+        "answer_en": "Occupied or vacant hash map slot",
+        "answer_hi": "कब्जे वाला या खाली हैश मैप स्लॉट",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 33,
-        "question_en": "What is the value of 2⁵?",
-        "question_hi": "2⁵ का मान क्या है?",
-        "options_en": ["16", "32", "64", "128"],
-        "options_hi": ["16", "32", "64", "128"],
-        "answer_en": "32",
-        "answer_hi": "32",
+        "question_en": "What is the main use of 'std::sync::Condvar::wait_timeout'?",
+        "question_hi": "'std::sync::Condvar::wait_timeout' का मुख्य उपयोग क्या है?",
+        "options_en": ["Wait with timeout on condition variable", "Wait indefinitely", "Signal condition", "Broadcast condition"],
+        "options_hi": ["कंडीशन वेरिएबल पर टाइमआउट के साथ प्रतीक्षा", "अनिश्चित काल तक प्रतीक्षा", "कंडीशन सिग्नल", "कंडीशन ब्रॉडकास्ट"],
+        "answer_en": "Wait with timeout on condition variable",
+        "answer_hi": "कंडीशन वेरिएबल पर टाइमआउट के साथ प्रतीक्षा",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 34,
-        "question_en": "Which metal is used in making aircrafts?",
-        "question_hi": "वायुयान बनाने में किस धातु का उपयोग किया जाता है?",
-        "options_en": ["Iron", "Aluminum", "Copper", "Lead"],
-        "options_hi": ["लोहा", "एल्युमिनियम", "तांबा", "सीसा"],
-        "answer_en": "Aluminum",
-        "answer_hi": "एल्युमिनियम",
+        "question_en": "What does 'std::mem::zeroed' initialize with?",
+        "question_hi": "'std::mem::zeroed' किससे आरंभ करता है?",
+        "options_en": ["All bits set to zero", "Default values", "Random values", "Uninitialized memory"],
+        "options_hi": ["सभी बिट्स शून्य पर सेट", "डिफ़ॉल्ट मान", "यादृच्छिक मान", "अप्रारंभिक मेमोरी"],
+        "answer_en": "All bits set to zero",
+        "answer_hi": "सभी बिट्स शून्य पर सेट",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 35,
-        "question_en": "What is the unit of magnetic field strength?",
-        "question_hi": "चुंबकीय क्षेत्र शक्ति की इकाई क्या है?",
-        "options_en": ["Tesla", "Weber", "Henry", "Gauss"],
-        "options_hi": ["टेस्ला", "वेबर", "हेनरी", "गॉस"],
-        "answer_en": "Tesla",
-        "answer_hi": "टेस्ला",
+        "question_en": "What is the purpose of 'std::io::Empty'?",
+        "question_hi": "'std::io::Empty' का उद्देश्य क्या है?",
+        "options_en": ["Zero-length Read implementation", "Empty file", "Null stream", "Memory stream"],
+        "options_hi": ["शून्य-लंबाई रीड इम्प्लीमेंटेशन", "खाली फ़ाइल", "नल स्ट्रीम", "मेमोरी स्ट्रीम"],
+        "answer_en": "Zero-length Read implementation",
+        "answer_hi": "शून्य-लंबाई रीड इम्प्लीमेंटेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 36,
-        "question_en": "Which part of human eye controls the amount of light entering?",
-        "question_hi": "मानव आंख का कौन सा भाग प्रवेश करने वाले प्रकाश की मात्रा को नियंत्रित करता है?",
-        "options_en": ["Cornea", "Iris", "Retina", "Lens"],
-        "options_hi": ["कॉर्निया", "आईरिस", "रेटिना", "लेंस"],
-        "answer_en": "Iris",
-        "answer_hi": "आईरिस",
+        "question_en": "What does 'std::sync::Arc::get_mut' require?",
+        "question_hi": "'std::sync::Arc::get_mut' की क्या आवश्यकता है?",
+        "options_en": ["No other Arc or Weak pointers exist", "Thread safety", "Memory alignment", "Atomic operations"],
+        "options_hi": ["कोई अन्य Arc या Weak पॉइंटर्स मौजूद नहीं हैं", "थ्रेड सुरक्षा", "मेमोरी अलाइनमेंट", "परमाणु संचालन"],
+        "answer_en": "No other Arc or Weak pointers exist",
+        "answer_hi": "कोई अन्य Arc या Weak पॉइंटर्स मौजूद नहीं हैं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 37,
-        "question_en": "What is the synonym of 'Abundant'?",
-        "question_hi": "'Abundant' का समानार्थी शब्द क्या है?",
-        "options_en": ["Scarce", "Plentiful", "Rare", "Limited"],
-        "options_hi": ["दुर्लभ", "प्रचुर", "विरल", "सीमित"],
-        "answer_en": "Plentiful",
-        "answer_hi": "प्रचुर",
+        "question_en": "What is the main use of 'std::num::NonZeroUsize'?",
+        "question_hi": "'std::num::NonZeroUsize' का मुख्य उपयोग क्या है?",
+        "options_en": ["Memory optimization for non-zero sizes", "Zero size handling", "Negative sizes", "Floating sizes"],
+        "options_hi": ["गैर-शून्य आकारों के लिए मेमोरी अनुकूलन", "शून्य आकार प्रबंधन", "नकारात्मक आकार", "फ्लोटिंग आकार"],
+        "answer_en": "Memory optimization for non-zero sizes",
+        "answer_hi": "गैर-शून्य आकारों के लिए मेमोरी अनुकूलन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 38,
-        "question_en": "Where is the Golden Temple located?",
-        "question_hi": "गोल्डन टेम्पल कहाँ स्थित है?",
-        "options_en": ["Delhi", "Amritsar", "Chandigarh", "Jaipur"],
-        "options_hi": ["दिल्ली", "अमृतसर", "चंडीगढ़", "जयपुर"],
-        "answer_en": "Amritsar",
-        "answer_hi": "अमृतसर",
+        "question_en": "What does 'std::io::Sink' implement?",
+        "question_hi": "'std::io::Sink' क्या लागू करता है?",
+        "options_en": ["Write that discards all data", "Read from null", "Memory sink", "File sink"],
+        "options_hi": ["लेखन जो सभी डेटा को त्यागता है", "नल से पढ़ें", "मेमोरी सिंक", "फ़ाइल सिंक"],
+        "answer_en": "Write that discards all data",
+        "answer_hi": "लेखन जो सभी डेटा को त्यागता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 39,
-        "question_en": "What is the value of 100 ÷ (2 + 3)²?",
-        "question_hi": "100 ÷ (2 + 3)² का मान क्या है?",
-        "options_en": ["4", "5", "20", "25"],
-        "options_hi": ["4", "5", "20", "25"],
-        "answer_en": "4",
-        "answer_hi": "4",
+        "question_en": "What is the purpose of 'std::sync::OnceLock'?",
+        "question_hi": "'std::sync::OnceLock' का उद्देश्य क्या है?",
+        "options_en": ["Thread-safe one-time initialization", "Memory locking", "File locking", "Network locking"],
+        "options_hi": ["थ्रेड-सुरक्षित एक-बार आरंभीकरण", "मेमोरी लॉकिंग", "फ़ाइल लॉकिंग", "नेटवर्क लॉकिंग"],
+        "answer_en": "Thread-safe one-time initialization",
+        "answer_hi": "थ्रेड-सुरक्षित एक-बार आरंभीकरण",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 40,
-        "question_en": "Which gas is used in cigarette lighters?",
-        "question_hi": "सिगरेट लाइटर में किस गैस का उपयोग किया जाता है?",
-        "options_en": ["Oxygen", "Butane", "Propane", "Methane"],
-        "options_hi": ["ऑक्सीजन", "ब्यूटेन", "प्रोपेन", "मीथेन"],
-        "answer_en": "Butane",
-        "answer_hi": "ब्यूटेन",
+        "question_en": "What does 'std::mem::size_of_val' return?",
+        "question_hi": "'std::mem::size_of_val' क्या लौटाता है?",
+        "options_en": ["Size of referenced value in bytes", "Size of type", "Memory address", "Alignment"],
+        "options_hi": ["बाइट्स में संदर्भित मान का आकार", "प्रकार का आकार", "मेमोरी एड्रेस", "अलाइनमेंट"],
+        "answer_en": "Size of referenced value in bytes",
+        "answer_hi": "बाइट्स में संदर्भित मान का आकार",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 41,
-        "question_en": "What is the formula for momentum?",
-        "question_hi": "संवेग का सूत्र क्या है?",
-        "options_en": ["mv", "ma", "Fd", "½mv²"],
-        "options_hi": ["mv", "ma", "Fd", "½mv²"],
-        "answer_en": "mv",
-        "answer_hi": "mv",
+        "question_en": "What is the main use of 'std::sync::mpsc::sync_channel'?",
+        "question_hi": "'std::sync::mpsc::sync_channel' का मुख्य उपयोग क्या है?",
+        "options_en": ["Bounded synchronous message passing", "Unbounded async messaging", "File messaging", "Network messaging"],
+        "options_hi": ["बाउंडेड सिंक्रोनस मैसेज पासिंग", "अनबाउंडेड एसिंक मैसेजिंग", "फ़ाइल मैसेजिंग", "नेटवर्क मैसेजिंग"],
+        "answer_en": "Bounded synchronous message passing",
+        "answer_hi": "बाउंडेड सिंक्रोनस मैसेज पासिंग",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 42,
-        "question_en": "Which vitamin deficiency causes Night Blindness?",
-        "question_hi": "किस विटामिन की कमी से रतौंधी होती है?",
-        "options_en": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
-        "options_hi": ["विटामिन A", "विटामिन B", "विटामिन C", "विटामिन D"],
-        "answer_en": "Vitamin A",
-        "answer_hi": "विटामिन A",
+        "question_en": "What does 'std::num::Wrapping' prevent?",
+        "question_hi": "'std::num::Wrapping' क्या रोकता है?",
+        "options_en": ["Integer overflow panics", "Memory overflow", "Thread overflow", "File overflow"],
+        "options_hi": ["पूर्णांक ओवरफ्लो पैनिक", "मेमोरी ओवरफ्लो", "थ्रेड ओवरफ्लो", "फ़ाइल ओवरफ्लो"],
+        "answer_en": "Integer overflow panics",
+        "answer_hi": "पूर्णांक ओवरफ्लो पैनिक",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 43,
-        "question_en": "What is the antonym of 'Expand'?",
-        "question_hi": "'Expand' का विलोम शब्द क्या है?",
-        "options_en": ["Grow", "Contract", "Increase", "Extend"],
-        "options_hi": ["बढ़ना", "सिकुड़ना", "बढ़ाना", "फैलाना"],
-        "answer_en": "Contract",
-        "answer_hi": "सिकुड़ना",
+        "question_en": "What is the purpose of 'std::io::Bytes'?",
+        "question_hi": "'std::io::Bytes' का उद्देश्य क्या है?",
+        "options_en": ["Iterator over bytes from a reader", "Single byte reader", "Byte array", "Memory bytes"],
+        "options_hi": ["रीडर से बाइट्स पर इटरेटर", "सिंगल बाइट रीडर", "बाइट ऐरे", "मेमोरी बाइट्स"],
+        "answer_en": "Iterator over bytes from a reader",
+        "answer_hi": "रीडर से बाइट्स पर इटरेटर",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 44,
-        "question_en": "Who was the first Indian to climb Mount Everest?",
-        "question_hi": "माउंट एवरेस्ट पर चढ़ने वाले पहले भारतीय कौन थे?",
-        "options_en": ["Tenzing Norgay", "Bachendri Pal", "Avtar Singh Cheema", "Mohan Singh"],
-        "options_hi": ["तेंजिंग नोर्गे", "बचेंद्री पाल", "अवतार सिंह चीमा", "मोहन सिंह"],
-        "answer_en": "Avtar Singh Cheema",
-        "answer_hi": "अवतार सिंह चीमा",
+        "question_en": "What does 'std::sync::MutexGuard' provide?",
+        "question_hi": "'std::sync::MutexGuard' क्या प्रदान करता है?",
+        "options_en": ["RAII lock management for Mutex", "Memory guard", "Thread guard", "File guard"],
+        "options_hi": ["Mutex के लिए RAII लॉक प्रबंधन", "मेमोरी गार्ड", "थ्रेड गार्ड", "फ़ाइल गार्ड"],
+        "answer_en": "RAII lock management for Mutex",
+        "answer_hi": "Mutex के लिए RAII लॉक प्रबंधन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 45,
-        "question_en": "What is the value of log₂8?",
-        "question_hi": "log₂8 का मान क्या है?",
-        "options_en": ["2", "3", "4", "5"],
-        "options_hi": ["2", "3", "4", "5"],
-        "answer_en": "3",
-        "answer_hi": "3",
+        "question_en": "What is the main use of 'std::collections::BinaryHeap::peek'?",
+        "question_hi": "'std::collections::BinaryHeap::peek' का मुख्य उपयोग क्या है?",
+        "options_en": ["View largest element without removing", "Remove largest element", "Check if empty", "Get size"],
+        "options_hi": ["हटाए बिना सबसे बड़ा तत्व देखें", "सबसे बड़ा तत्व हटाएं", "जांचें कि खाली है", "आकार प्राप्त"],
+        "answer_en": "View largest element without removing",
+        "answer_hi": "हटाए बिना सबसे बड़ा तत्व देखें",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 46,
-        "question_en": "Which element has the chemical symbol 'Pb'?",
-        "question_hi": "किस तत्व का रासायनिक प्रतीक 'Pb' है?",
-        "options_en": ["Platinum", "Lead", "Potassium", "Phosphorus"],
-        "options_hi": ["प्लैटिनम", "सीसा", "पोटैशियम", "फॉस्फोरस"],
-        "answer_en": "Lead",
-        "answer_hi": "सीसा",
+        "question_en": "What does 'std::process::ChildStdin' represent?",
+        "question_hi": "'std::process::ChildStdin' क्या दर्शाता है?",
+        "options_en": ["Input stream to child process", "Output from child", "Child process errors", "Child process status"],
+        "options_hi": ["चाइल्ड प्रक्रिया के लिए इनपुट स्ट्रीम", "चाइल्ड से आउटपुट", "चाइल्ड प्रक्रिया त्रुटियाँ", "चाइल्ड प्रक्रिया स्थिति"],
+        "answer_en": "Input stream to child process",
+        "answer_hi": "चाइल्ड प्रक्रिया के लिए इनपुट स्ट्रीम",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 47,
-        "question_en": "What is the SI unit of capacitance?",
-        "question_hi": "धारिता की SI इकाई क्या है?",
-        "options_en": ["Farad", "Henry", "Ohm", "Siemens"],
-        "options_hi": ["फैरड", "हेनरी", "ओम", "सीमेंस"],
-        "answer_en": "Farad",
-        "answer_hi": "फैरड",
+        "question_en": "What is the purpose of 'std::sync::RwLockReadGuard'?",
+        "question_hi": "'std::sync::RwLockReadGuard' का उद्देश्य क्या है?",
+        "options_en": ["RAII for shared read access", "Exclusive write access", "Memory read guard", "File read guard"],
+        "options_hi": ["साझा पठन पहुंच के लिए RAII", "विशिष्ट लेखन पहुंच", "मेमोरी रीड गार्ड", "फ़ाइल रीड गार्ड"],
+        "answer_en": "RAII for shared read access",
+        "answer_hi": "साझा पठन पहुंच के लिए RAII",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 48,
-        "question_en": "Which gland controls metabolism in human body?",
-        "question_hi": "मानव शरीर में चयापचय कौन सी ग्रंथि नियंत्रित करती है?",
-        "options_en": ["Thyroid", "Pituitary", "Adrenal", "Pancreas"],
-        "options_hi": ["थायरॉइड", "पिट्यूटरी", "एड्रेनल", "अग्न्याशय"],
-        "answer_en": "Thyroid",
-        "answer_hi": "थायरॉइड",
+        "question_en": "What does 'std::io::SeekFrom::End' represent?",
+        "question_hi": "'std::io::SeekFrom::End' क्या दर्शाता है?",
+        "options_en": ["Offset from end of stream", "Offset from start", "Current position", "Absolute position"],
+        "options_hi": ["स्ट्रीम के अंत से ऑफसेट", "शुरुआत से ऑफसेट", "वर्तमान स्थिति", "निरपेक्ष स्थिति"],
+        "answer_en": "Offset from end of stream",
+        "answer_hi": "स्ट्रीम के अंत से ऑफसेट",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 49,
-        "question_en": "What is the meaning of 'साहस'?",
-        "question_hi": "'साहस' का अर्थ क्या है?",
-        "options_en": ["Fear", "Courage", "Weakness", "Doubt"],
-        "options_hi": ["डर", "साहस", "कमजोरी", "संदेह"],
-        "answer_en": "Courage",
-        "answer_hi": "साहस",
+        "question_en": "What is the main use of 'std::sync::atomic::AtomicPtr'?",
+        "question_hi": "'std::sync::atomic::AtomicPtr' का मुख्य उपयोग क्या है?",
+        "options_en": ["Thread-safe pointer operations", "Memory pointer", "File pointer", "Network pointer"],
+        "options_hi": ["थ्रेड-सुरक्षित पॉइंटर संचालन", "मेमोरी पॉइंटर", "फ़ाइल पॉइंटर", "नेटवर्क पॉइंटर"],
+        "answer_en": "Thread-safe pointer operations",
+        "answer_hi": "थ्रेड-सुरक्षित पॉइंटर संचालन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 50,
-        "question_en": "Who composed the Indian National Song 'Vande Mataram'?",
-        "question_hi": "भारतीय राष्ट्रीय गीत 'वंदे मातरम्' की रचना किसने की?",
-        "options_en": ["Rabindranath Tagore", "Bankim Chandra Chatterjee", "Sarojini Naidu", "Mahatma Gandhi"],
-        "options_hi": ["रबींद्रनाथ टैगोर", "बंकिम चंद्र चटर्जी", "सरोजिनी नायडू", "महात्मा गांधी"],
-        "answer_en": "Bankim Chandra Chatterjee",
-        "answer_hi": "बंकिम चंद्र चटर्जी",
+        "question_en": "What does 'std::collections::VecDeque::push_front' do?",
+        "question_hi": "'std::collections::VecDeque::push_front' क्या करता है?",
+        "options_en": ["Add element to the front", "Add to the back", "Remove from front", "Remove from back"],
+        "options_hi": ["सामने तत्व जोड़ें", "पीछे जोड़ें", "सामने से हटाएं", "पीछे से हटाएं"],
+        "answer_en": "Add element to the front",
+        "answer_hi": "सामने तत्व जोड़ें",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 51,
-        "question_en": "What is the surface area of a sphere with radius 7 cm?",
-        "question_hi": "7 सेमी त्रिज्या वाले गोले का पृष्ठीय क्षेत्रफल क्या है?",
-        "options_en": ["154π cm²", "196π cm²", "616 cm²", "308π cm²"],
-        "options_hi": ["154π सेमी²", "196π सेमी²", "616 सेमी²", "308π सेमी²"],
-        "answer_en": "196π cm²",
-        "answer_hi": "196π सेमी²",
+        "question_en": "What is the purpose of 'std::sync::mpsc::Receiver::iter'?",
+        "question_hi": "'std::sync::mpsc::Receiver::iter' का उद्देश्य क्या है?",
+        "options_en": ["Blocking iterator over received messages", "Non-blocking iteration", "Message filtering", "Message transformation"],
+        "options_hi": ["प्राप्त संदेशों पर अवरुद्ध इटरेटर", "गैर-अवरुद्ध पुनरावृत्ति", "संदेश फिल्टरिंग", "संदेश परिवर्तन"],
+        "answer_en": "Blocking iterator over received messages",
+        "answer_hi": "प्राप्त संदेशों पर अवरुद्ध इटरेटर",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 52,
-        "question_en": "Which gas is used in making soda water?",
-        "question_hi": "सोडा वाटर बनाने में किस गैस का उपयोग किया जाता है?",
-        "options_en": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
-        "options_hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "नाइट्रोजन", "हाइड्रोजन"],
-        "answer_en": "Carbon dioxide",
-        "answer_hi": "कार्बन डाइऑक्साइड",
+        "question_en": "What does 'std::io::Error::from_raw_os_error' create?",
+        "question_hi": "'std::io::Error::from_raw_os_error' क्या बनाता है?",
+        "options_en": ["IO error from OS error code", "Custom IO error", "Network error", "File error"],
+        "options_hi": ["OS त्रुटि कोड से IO त्रुटि", "कस्टम IO त्रुटि", "नेटवर्क त्रुटि", "फ़ाइल त्रुटि"],
+        "answer_en": "IO error from OS error code",
+        "answer_hi": "OS त्रुटि कोड से IO त्रुटि",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 53,
-        "question_en": "What is the refractive index of diamond?",
-        "question_hi": "हीरे का अपवर्तनांक क्या है?",
-        "options_en": ["1.33", "1.52", "2.42", "1.65"],
-        "options_hi": ["1.33", "1.52", "2.42", "1.65"],
-        "answer_en": "2.42",
-        "answer_hi": "2.42",
+        "question_en": "What is the main use of 'std::sync::Once::is_completed'?",
+        "question_hi": "'std::sync::Once::is_completed' का मुख्य उपयोग क्या है?",
+        "options_en": ["Check if initialization has run", "Check if running", "Check if failed", "Check if pending"],
+        "options_hi": ["जांचें कि आरंभीकरण चल चुका है", "जांचें कि चल रहा है", "जांचें कि विफल", "जांचें कि लंबित"],
+        "answer_en": "Check if initialization has run",
+        "answer_hi": "जांचें कि आरंभीकरण चल चुका है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 54,
-        "question_en": "Which cell organelle is called 'Protein Factory'?",
-        "question_hi": "किस कोशिका अंग को 'प्रोटीन फैक्ट्री' कहा जाता है?",
-        "options_en": ["Mitochondria", "Ribosome", "Nucleus", "Golgi apparatus"],
-        "options_hi": ["माइटोकॉन्ड्रिया", "राइबोसोम", "केंद्रक", "गॉल्जी उपकरण"],
-        "answer_en": "Ribosome",
-        "answer_hi": "राइबोसोम",
+        "question_en": "What does 'std::mem::replace' return?",
+        "question_hi": "'std::mem::replace' क्या लौटाता है?",
+        "options_en": ["The old value being replaced", "The new value", "Both values", "Nothing"],
+        "options_hi": ["प्रतिस्थापित किया जा रहा पुराना मान", "नया मान", "दोनों मान", "कुछ नहीं"],
+        "answer_en": "The old value being replaced",
+        "answer_hi": "प्रतिस्थापित किया जा रहा पुराना मान",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 55,
-        "question_en": "What is the superlative degree of 'Good'?",
-        "question_hi": "'Good' की superlative degree क्या है?",
-        "options_en": ["Good", "Better", "Best", "Well"],
-        "options_hi": ["गुड", "बेटर", "बेस्ट", "वेल"],
-        "answer_en": "Best",
-        "answer_hi": "बेस्ट",
+        "question_en": "What is the purpose of 'std::sync::Condvar::notify_one'?",
+        "question_hi": "'std::sync::Condvar::notify_one' का उद्देश्य क्या है?",
+        "options_en": ["Wake one waiting thread", "Wake all threads", "Stop one thread", "Start one thread"],
+        "options_hi": ["एक प्रतीक्षारत थ्रेड जगाएं", "सभी थ्रेड्स जगाएं", "एक थ्रेड रोकें", "एक थ्रेड शुरू"],
+        "answer_en": "Wake one waiting thread",
+        "answer_hi": "एक प्रतीक्षारत थ्रेड जगाएं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 56,
-        "question_en": "Where is the Sanchi Stupa located?",
-        "question_hi": "सांची स्तूप कहाँ स्थित है?",
-        "options_en": ["Madhya Pradesh", "Uttar Pradesh", "Bihar", "Maharashtra"],
-        "options_hi": ["मध्य प्रदेश", "उत्तर प्रदेश", "बिहार", "महाराष्ट्र"],
-        "answer_en": "Madhya Pradesh",
-        "answer_hi": "मध्य प्रदेश",
+        "question_en": "What does 'std::collections::HashMap::entry' return?",
+        "question_hi": "'std::collections::HashMap::entry' क्या लौटाता है?",
+        "options_en": ["Entry API for key", "Value for key", "Whether key exists", "Hash of key"],
+        "options_hi": ["कुंजी के लिए एंट्री API", "कुंजी के लिए मान", "क्या कुंजी मौजूद है", "कुंजी का हैश"],
+        "answer_en": "Entry API for key",
+        "answer_hi": "कुंजी के लिए एंट्री API",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 57,
-        "question_en": "What is the value of 3³ + 4³?",
-        "question_hi": "3³ + 4³ का मान क्या है?",
-        "options_en": ["27", "64", "91", "125"],
-        "options_hi": ["27", "64", "91", "125"],
-        "answer_en": "91",
-        "answer_hi": "91",
+        "question_en": "What is the main use of 'std::sync::Arc::try_unwrap'?",
+        "question_hi": "'std::sync::Arc::try_unwrap' का मुख्य उपयोग क्या है?",
+        "options_en": ["Retrieve value if last Arc", "Always retrieve value", "Clone value", "Drop value"],
+        "options_hi": ["मान प्राप्त करें यदि अंतिम Arc", "हमेशा मान प्राप्त", "मान क्लोन", "मान ड्रॉप"],
+        "answer_en": "Retrieve value if last Arc",
+        "answer_hi": "मान प्राप्त करें यदि अंतिम Arc",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 58,
-        "question_en": "Which acid is present in ant sting?",
-        "question_hi": "चींटी के डंक में कौन सा अम्ल पाया जाता है?",
-        "options_en": ["Formic acid", "Acetic acid", "Citric acid", "Lactic acid"],
-        "options_hi": ["फॉर्मिक अम्ल", "एसिटिक अम्ल", "सिट्रिक अम्ल", "लैक्टिक अम्ल"],
-        "answer_en": "Formic acid",
-        "answer_hi": "फॉर्मिक अम्ल",
+        "question_en": "What does 'std::io::BufReader::buffer' provide access to?",
+        "question_hi": "'std::io::BufReader::buffer' किसे एक्सेस प्रदान करता है?",
+        "options_en": ["Internal buffer contents", "File contents", "Memory buffer", "Network buffer"],
+        "options_hi": ["आंतरिक बफर सामग्री", "फ़ाइल सामग्री", "मेमोरी बफर", "नेटवर्क बफर"],
+        "answer_en": "Internal buffer contents",
+        "answer_hi": "आंतरिक बफर सामग्री",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 59,
-        "question_en": "What is Pascal's law?",
-        "question_hi": "पास्कल का नियम क्या है?",
-        "options_en": ["P = F/A", "Pressure applied to confined fluid is transmitted equally", "F = ma", "V = IR"],
-        "options_hi": ["P = F/A", "सीमित द्रव पर लगाया गया दाब समान रूप से संचरित होता है", "F = ma", "V = IR"],
-        "answer_en": "Pressure applied to confined fluid is transmitted equally",
-        "answer_hi": "सीमित द्रव पर लगाया गया दाब समान रूप से संचरित होता है",
+        "question_en": "What is the purpose of 'std::sync::mpsc::SyncSender::try_send'?",
+        "question_hi": "'std::sync::mpsc::SyncSender::try_send' का उद्देश्य क्या है?",
+        "options_en": ["Non-blocking send attempt", "Blocking send", "Async send", "Guaranteed send"],
+        "options_hi": ["गैर-अवरुद्ध भेजने का प्रयास", "अवरुद्ध भेजें", "एसिंक भेजें", "गारंटीकृत भेजें"],
+        "answer_en": "Non-blocking send attempt",
+        "answer_hi": "गैर-अवरुद्ध भेजने का प्रयास",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 60,
-        "question_en": "Which blood cells transport oxygen?",
-        "question_hi": "कौन सी रक्त कोशिकाएं ऑक्सीजन का परिवहन करती हैं?",
-        "options_en": ["Red blood cells", "White blood cells", "Platelets", "Plasma"],
-        "options_hi": ["लाल रक्त कोशिकाएं", "श्वेत रक्त कोशिकाएं", "प्लेटलेट्स", "प्लाज्मा"],
-        "answer_en": "Red blood cells",
-        "answer_hi": "लाल रक्त कोशिकाएं",
+        "question_en": "What does 'std::collections::BinaryHeap::into_sorted_vec' return?",
+        "question_hi": "'std::collections::BinaryHeap::into_sorted_vec' क्या लौटाता है?",
+        "options_en": ["Sorted vector consuming the heap", "Heap as vector", "Unsorted vector", "Empty vector"],
+        "options_hi": ["हीप को उपभोग करते हुए क्रमबद्ध वेक्टर", "वेक्टर के रूप में हीप", "अक्रमबद्ध वेक्टर", "खाली वेक्टर"],
+        "answer_en": "Sorted vector consuming the heap",
+        "answer_hi": "हीप को उपभोग करते हुए क्रमबद्ध वेक्टर",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 61,
-        "question_en": "What is the present continuous tense of 'run'?",
-        "question_hi": "'run' का present continuous tense क्या है?",
-        "options_en": ["run", "ran", "running", "will run"],
-        "options_hi": ["रन", "रैन", "रनिंग", "विल रन"],
-        "answer_en": "running",
-        "answer_hi": "रनिंग",
+        "question_en": "What is the main use of 'std::sync::atomic::AtomicBool::compare_exchange'?",
+        "question_hi": "'std::sync::atomic::AtomicBool::compare_exchange' का मुख्य उपयोग क्या है?",
+        "options_en": ["Atomic compare-and-swap operation", "Boolean comparison", "Memory comparison", "Thread comparison"],
+        "options_hi": ["परमाणु तुलना-और-स्वैप संचालन", "बूलियन तुलना", "मेमोरी तुलना", "थ्रेड तुलना"],
+        "answer_en": "Atomic compare-and-swap operation",
+        "answer_hi": "परमाणु तुलना-और-स्वैप संचालन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 62,
-        "question_en": "Who was the first Indian to receive Bharat Ratna?",
-        "question_hi": "भारत रत्न प्राप्त करने वाले पहले भारतीय कौन थे?",
-        "options_en": ["Jawaharlal Nehru", "C. Rajagopalachari", "S. Radhakrishnan", "B.R. Ambedkar"],
-        "options_hi": ["जवाहरलाल नेहरू", "सी. राजगोपालाचारी", "एस. राधाकृष्णन", "बी.आर. अंबेडकर"],
-        "answer_en": "C. Rajagopalachari",
-        "answer_hi": "सी. राजगोपालाचारी",
+        "question_en": "What does 'std::io::Chain' combine?",
+        "question_hi": "'std::io::Chain' क्या संयोजित करता है?",
+        "options_en": ["Two readers sequentially", "Multiple readers", "Reader and writer", "File and network"],
+        "options_hi": ["दो रीडर क्रमिक रूप से", "एकाधिक रीडर", "रीडर और राइटर", "फ़ाइल और नेटवर्क"],
+        "answer_en": "Two readers sequentially",
+        "answer_hi": "दो रीडर क्रमिक रूप से",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 63,
-        "question_en": "What is the value of 12²?",
-        "question_hi": "12² का मान क्या है?",
-        "options_en": ["121", "144", "169", "196"],
-        "options_hi": ["121", "144", "169", "196"],
-        "answer_en": "144",
-        "answer_hi": "144",
+        "question_en": "What is the purpose of 'std::sync::RwLock::try_read'?",
+        "question_hi": "'std::sync::RwLock::try_read' का उद्देश्य क्या है?",
+        "options_en": ["Non-blocking read lock attempt", "Blocking read lock", "Write lock attempt", "Upgrade lock"],
+        "options_hi": ["गैर-अवरुद्ध रीड लॉक प्रयास", "अवरुद्ध रीड लॉक", "राइट लॉक प्रयास", "लॉक अपग्रेड"],
+        "answer_en": "Non-blocking read lock attempt",
+        "answer_hi": "गैर-अवरुद्ध रीड लॉक प्रयास",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 64,
-        "question_en": "Which metal is used in making mirrors?",
-        "question_hi": "दर्पण बनाने में किस धातु का उपयोग किया जाता है?",
-        "options_en": ["Silver", "Aluminum", "Both A and B", "Copper"],
-        "options_hi": ["चांदी", "एल्युमिनियम", "A और B दोनों", "तांबा"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "What does 'std::mem::align_of_val' return?",
+        "question_hi": "'std::mem::align_of_val' क्या लौटाता है?",
+        "options_en": ["Alignment of referenced value", "Alignment of type", "Size of value", "Memory address"],
+        "options_hi": ["संदर्भित मान का अलाइनमेंट", "प्रकार का अलाइनमेंट", "मान का आकार", "मेमोरी एड्रेस"],
+        "answer_en": "Alignment of referenced value",
+        "answer_hi": "संदर्भित मान का अलाइनमेंट",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 65,
-        "question_en": "What is the unit of inductance?",
-        "question_hi": "प्रेरकत्व की इकाई क्या है?",
-        "options_en": ["Henry", "Farad", "Ohm", "Siemens"],
-        "options_hi": ["हेनरी", "फैरड", "ओम", "सीमेंस"],
-        "answer_en": "Henry",
-        "answer_hi": "हेनरी",
+        "question_en": "What is the main use of 'std::sync::mpsc::Receiver::recv_timeout'?",
+        "question_hi": "'std::sync::mpsc::Receiver::recv_timeout' का मुख्य उपयोग क्या है?",
+        "options_en": ["Blocking receive with timeout", "Non-blocking receive", "Immediate receive", "Guaranteed receive"],
+        "options_hi": ["टाइमआउट के साथ अवरुद्ध रिसीव", "गैर-अवरुद्ध रिसीव", "तत्काल रिसीव", "गारंटीकृत रिसीव"],
+        "answer_en": "Blocking receive with timeout",
+        "answer_hi": "टाइमआउट के साथ अवरुद्ध रिसीव",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 66,
-        "question_en": "Which part of human ear maintains balance?",
-        "question_hi": "मानव कान का कौन सा भाग संतुलन बनाए रखता है?",
-        "options_en": ["Cochlea", "Eardrum", "Semicircular canals", "Pinna"],
-        "options_hi": ["कोक्लीया", "ईयरड्रम", "अर्धवृत्ताकार नलिकाएं", "पिन्ना"],
-        "answer_en": "Semicircular canals",
-        "answer_hi": "अर्धवृत्ताकार नलिकाएं",
+        "question_en": "What does 'std::collections::VecDeque::make_contiguous' do?",
+        "question_hi": "'std::collections::VecDeque::make_contiguous' क्या करता है?",
+        "options_en": ["Rearrange elements into contiguous slice", "Make memory contiguous", "Sort elements", "Remove gaps"],
+        "options_hi": ["तत्वों को सन्निहित स्लाइस में पुनर्व्यवस्थित", "मेमोरी सन्निहित बनाएं", "तत्वों को सॉर्ट", "अंतराल हटाएं"],
+        "answer_en": "Rearrange elements into contiguous slice",
+        "answer_hi": "तत्वों को सन्निहित स्लाइस में पुनर्व्यवस्थित",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 67,
-        "question_en": "What is the synonym of 'Rapid'?",
-        "question_hi": "'Rapid' का समानार्थी शब्द क्या है?",
-        "options_en": ["Slow", "Fast", "Gradual", "Leisurely"],
-        "options_hi": ["धीमा", "तेज", "क्रमिक", "आराम से"],
-        "answer_en": "Fast",
-        "answer_hi": "तेज",
+        "question_en": "What is the purpose of 'std::sync::atomic::AtomicUsize::fetch_add'?",
+        "question_hi": "'std::sync::atomic::AtomicUsize::fetch_add' का उद्देश्य क्या है?",
+        "options_en": ["Atomically add and return previous value", "Just add", "Add and return new value", "Check then add"],
+        "options_hi": ["परमाणु रूप से जोड़ें और पिछला मान लौटाएं", "बस जोड़ें", "जोड़ें और नया मान लौटाएं", "जांचें फिर जोड़ें"],
+        "answer_en": "Atomically add and return previous value",
+        "answer_hi": "परमाणु रूप से जोड़ें और पिछला मान लौटाएं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 68,
-        "question_en": "Where is the Khajuraho Temple located?",
-        "question_hi": "खजुराहो मंदिर कहाँ स्थित है?",
-        "options_en": ["Madhya Pradesh", "Rajasthan", "Uttar Pradesh", "Gujarat"],
-        "options_hi": ["मध्य प्रदेश", "राजस्थान", "उत्तर प्रदेश", "गुजरात"],
-        "answer_en": "Madhya Pradesh",
-        "answer_hi": "मध्य प्रदेश",
+        "question_en": "What does 'std::io::Read::read_to_end' do?",
+        "question_hi": "'std::io::Read::read_to_end' क्या करता है?",
+        "options_en": ["Read all bytes until EOF", "Read fixed number of bytes", "Read to string", "Read line by line"],
+        "options_hi": ["EOF तक सभी बाइट्स पढ़ें", "निश्चित संख्या में बाइट्स पढ़ें", "स्ट्रिंग में पढ़ें", "लाइन दर लाइन पढ़ें"],
+        "answer_en": "Read all bytes until EOF",
+        "answer_hi": "EOF तक सभी बाइट्स पढ़ें",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 69,
-        "question_en": "What is the value of (8 × 9) ÷ (4 + 2)?",
-        "question_hi": "(8 × 9) ÷ (4 + 2) का मान क्या है?",
-        "options_en": ["12", "18", "24", "36"],
-        "options_hi": ["12", "18", "24", "36"],
-        "answer_en": "12",
-        "answer_hi": "12",
+        "question_en": "What is the main use of 'std::sync::Mutex::try_lock'?",
+        "question_hi": "'std::sync::Mutex::try_lock' का मुख्य उपयोग क्या है?",
+        "options_en": ["Non-blocking mutex lock attempt", "Blocking lock", "Read lock", "Write lock"],
+        "options_hi": ["गैर-अवरुद्ध म्यूटेक्स लॉक प्रयास", "अवरुद्ध लॉक", "रीड लॉक", "राइट लॉक"],
+        "answer_en": "Non-blocking mutex lock attempt",
+        "answer_hi": "गैर-अवरुद्ध म्यूटेक्स लॉक प्रयास",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 70,
-        "question_en": "Which gas is used in weather balloons?",
-        "question_hi": "मौसम गुब्बारों में किस गैस का उपयोग किया जाता है?",
-        "options_en": ["Oxygen", "Hydrogen", "Helium", "Nitrogen"],
-        "options_hi": ["ऑक्सीजन", "हाइड्रोजन", "हीलियम", "नाइट्रोजन"],
-        "answer_en": "Helium",
-        "answer_hi": "हीलियम",
+        "question_en": "What does 'std::collections::HashSet::take' do?",
+        "question_hi": "'std::collections::HashSet::take' क्या करता है?",
+        "options_en": ["Remove and return value if present", "Just remove", "Check if present", "Add value"],
+        "options_hi": ["हटाएं और मान लौटाएं यदि मौजूद", "बस हटाएं", "जांचें कि मौजूद है", "मान जोड़ें"],
+        "answer_en": "Remove and return value if present",
+        "answer_hi": "हटाएं और मान लौटाएं यदि मौजूद",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 71,
-        "question_en": "What is the formula for pressure?",
-        "question_hi": "दाब का सूत्र क्या है?",
-        "options_en": ["F/A", "Fd", "ma", "mv"],
-        "options_hi": ["F/A", "Fd", "ma", "mv"],
-        "answer_en": "F/A",
-        "answer_hi": "F/A",
+        "question_en": "What is the purpose of 'std::sync::Arc::strong_count'?",
+        "question_hi": "'std::sync::Arc::strong_count' का उद्देश्य क्या है?",
+        "options_en": ["Get number of strong references", "Get weak reference count", "Check if unique", "Get total count"],
+        "options_hi": ["मजबूत संदर्भों की संख्या प्राप्त", "कमजोर संदर्भ गिनती प्राप्त", "जांचें कि अद्वितीय है", "कुल गिनती प्राप्त"],
+        "answer_en": "Get number of strong references",
+        "answer_hi": "मजबूत संदर्भों की संख्या प्राप्त",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 72,
-        "question_en": "Which vitamin deficiency causes Beri-Beri?",
-        "question_hi": "किस विटामिन की कमी से बेरी-बेरी रोग होता है?",
-        "options_en": ["Vitamin B1", "Vitamin B2", "Vitamin B6", "Vitamin B12"],
-        "options_hi": ["विटामिन B1", "विटामिन B2", "विटामिन B6", "विटामिन B12"],
-        "answer_en": "Vitamin B1",
-        "answer_hi": "विटामिन B1",
+        "question_en": "What does 'std::io::StdinLock' provide?",
+        "question_hi": "'std::io::StdinLock' क्या प्रदान करता है?",
+        "options_en": ["Locked reference to standard input", "Global stdin access", "Thread-safe stdin", "Buffered stdin"],
+        "options_hi": ["मानक इनपुट का लॉक किया गया संदर्भ", "ग्लोबल stdin एक्सेस", "थ्रेड-सुरक्षित stdin", "बफर किया गया stdin"],
+        "answer_en": "Locked reference to standard input",
+        "answer_hi": "मानक इनपुट का लॉक किया गया संदर्भ",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 73,
-        "question_en": "What is the antonym of 'Ancient'?",
-        "question_hi": "'Ancient' का विलोम शब्द क्या है?",
-        "options_en": ["Old", "Modern", "Historic", "Traditional"],
-        "options_hi": ["पुराना", "आधुनिक", "ऐतिहासिक", "पारंपरिक"],
-        "answer_en": "Modern",
-        "answer_hi": "आधुनिक",
+        "question_en": "What is the main use of 'std::sync::mpsc::Sender::send'?",
+        "question_hi": "'std::sync::mpsc::Sender::send' का मुख्य उपयोग क्या है?",
+        "options_en": ["Blocking send operation", "Non-blocking send", "Async send", "Guaranteed send"],
+        "options_hi": ["अवरुद्ध भेजने का संचालन", "गैर-अवरुद्ध भेजें", "एसिंक भेजें", "गारंटीकृत भेजें"],
+        "answer_en": "Blocking send operation",
+        "answer_hi": "अवरुद्ध भेजने का संचालन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 74,
-        "question_en": "Who was the first Indian woman to win an Olympic medal?",
-        "question_hi": "ओलंपिक पदक जीतने वाली पहली भारतीय महिला कौन थीं?",
-        "options_en": ["P.T. Usha", "Karnam Malleswari", "Mary Kom", "Saina Nehwal"],
-        "options_hi": ["पी.टी. उषा", "कर्णम मल्लेश्वरी", "मैरी कॉम", "साइना नेहवाल"],
-        "answer_en": "Karnam Malleswari",
-        "answer_hi": "कर्णम मल्लेश्वरी",
+        "question_en": "What does 'std::collections::BTreeMap::range' return?",
+        "question_hi": "'std::collections::BTreeMap::range' क्या लौटाता है?",
+        "options_en": ["Iterator over key-range subset", "All keys", "All values", "Random subset"],
+        "options_hi": ["कुंजी-रेंज सबसेट पर इटरेटर", "सभी कुंजियाँ", "सभी मान", "यादृच्छिक सबसेट"],
+        "answer_en": "Iterator over key-range subset",
+        "answer_hi": "कुंजी-रेंज सबसेट पर इटरेटर",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 75,
-        "question_en": "What is the value of √121?",
-        "question_hi": "√121 का मान क्या है?",
-        "options_en": ["10", "11", "12", "13"],
-        "options_hi": ["10", "11", "12", "13"],
-        "answer_en": "11",
-        "answer_hi": "11",
+        "question_en": "What is the purpose of 'std::sync::Condvar::notify_all'?",
+        "question_hi": "'std::sync::Condvar::notify_all' का उद्देश्य क्या है?",
+        "options_en": ["Wake all waiting threads", "Wake one thread", "Stop all threads", "Start all threads"],
+        "options_hi": ["सभी प्रतीक्षारत थ्रेड्स जगाएं", "एक थ्रेड जगाएं", "सभी थ्रेड्स रोकें", "सभी थ्रेड्स शुरू"],
+        "answer_en": "Wake all waiting threads",
+        "answer_hi": "सभी प्रतीक्षारत थ्रेड्स जगाएं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 76,
-        "question_en": "Which element has the chemical symbol 'Hg'?",
-        "question_hi": "किस तत्व का रासायनिक प्रतीक 'Hg' है?",
-        "options_en": ["Mercury", "Hydrogen", "Helium", "Germanium"],
-        "options_hi": ["पारा", "हाइड्रोजन", "हीलियम", "जर्मेनियम"],
-        "answer_en": "Mercury",
-        "answer_hi": "पारा",
+        "question_en": "What does 'std::mem::transmute_copy' do?",
+        "question_hi": "'std::mem::transmute_copy' क्या करता है?",
+        "options_en": ["Reinterpret bytes without moving", "Copy and transmute", "Move and transmute", "Safe transmute"],
+        "options_hi": ["बाइट्स को स्थानांतरित किए बिना पुनर्व्याख्या", "कॉपी और ट्रांसम्यूट", "मूव और ट्रांसम्यूट", "सुरक्षित ट्रांसम्यूट"],
+        "answer_en": "Reinterpret bytes without moving",
+        "answer_hi": "बाइट्स को स्थानांतरित किए बिना पुनर्व्याख्या",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 77,
-        "question_en": "What is the SI unit of magnetic flux?",
-        "question_hi": "चुंबकीय फ्लक्स की SI इकाई क्या है?",
-        "options_en": ["Tesla", "Weber", "Henry", "Gauss"],
-        "options_hi": ["टेस्ला", "वेबर", "हेनरी", "गॉस"],
-        "answer_en": "Weber",
-        "answer_hi": "वेबर",
+        "question_en": "What is the main use of 'std::sync::RwLock::try_write'?",
+        "question_hi": "'std::sync::RwLock::try_write' का मुख्य उपयोग क्या है?",
+        "options_en": ["Non-blocking write lock attempt", "Blocking write lock", "Read lock attempt", "Upgrade lock"],
+        "options_hi": ["गैर-अवरुद्ध राइट लॉक प्रयास", "अवरुद्ध राइट लॉक", "रीड लॉक प्रयास", "लॉक अपग्रेड"],
+        "answer_en": "Non-blocking write lock attempt",
+        "answer_hi": "गैर-अवरुद्ध राइट लॉक प्रयास",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 78,
-        "question_en": "Which gland produces adrenaline?",
-        "question_hi": "कौन सी ग्रंथि एड्रेनालाईन उत्पन्न करती है?",
-        "options_en": ["Thyroid", "Adrenal", "Pituitary", "Pancreas"],
-        "options_hi": ["थायरॉइड", "एड्रेनल", "पिट्यूटरी", "अग्न्याशय"],
-        "answer_en": "Adrenal",
-        "answer_hi": "एड्रेनल",
+        "question_en": "What does 'std::io::Write::flush' ensure?",
+        "question_hi": "'std::io::Write::flush' क्या सुनिश्चित करता है?",
+        "options_en": ["All buffered data is written", "File is closed", "Memory is freed", "Stream is ready"],
+        "options_hi": ["सभी बफर किया गया डेटा लिखा गया है", "फ़ाइल बंद है", "मेमोरी मुक्त है", "स्ट्रीम तैयार है"],
+        "answer_en": "All buffered data is written",
+        "answer_hi": "सभी बफर किया गया डेटा लिखा गया है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 79,
-        "question_en": "What is the meaning of 'समृद्ध'?",
-        "question_hi": "'समृद्ध' का अर्थ क्या है?",
-        "options_en": ["Poor", "Rich", "Happy", "Sad"],
-        "options_hi": ["गरीब", "समृद्ध", "खुश", "दुखी"],
-        "answer_en": "Rich",
-        "answer_hi": "समृद्ध",
+        "question_en": "What is the purpose of 'std::sync::atomic::AtomicIsize'?",
+        "question_hi": "'std::sync::atomic::AtomicIsize' का उद्देश्य क्या है?",
+        "options_en": ["Thread-safe signed integer operations", "Memory operations", "File operations", "Network operations"],
+        "options_hi": ["थ्रेड-सुरक्षित साइन्ड इंटीजर संचालन", "मेमोरी संचालन", "फ़ाइल संचालन", "नेटवर्क संचालन"],
+        "answer_en": "Thread-safe signed integer operations",
+        "answer_hi": "थ्रेड-सुरक्षित साइन्ड इंटीजर संचालन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 80,
-        "question_en": "Who discovered the sea route to India?",
-        "question_hi": "भारत के समुद्री मार्ग की खोज किसने की?",
-        "options_en": ["Christopher Columbus", "Vasco da Gama", "Marco Polo", "Ferdinand Magellan"],
-        "options_hi": ["क्रिस्टोफर कोलंबस", "वास्को डी गामा", "मार्को पोलो", "फर्डिनेंड मैगलन"],
-        "answer_en": "Vasco da Gama",
-        "answer_hi": "वास्को डी गामा",
+        "question_en": "What does 'std::collections::Vec::split_off' do?",
+        "question_hi": "'std::collections::Vec::split_off' क्या करता है?",
+        "options_en": ["Splits vector at index, returns second part", "Splits into equal parts", "Removes elements", "Adds elements"],
+        "options_hi": ["इंडेक्स पर वेक्टर विभाजित, दूसरा भाग लौटाता", "बराबर भागों में विभाजित", "तत्व हटाता", "तत्व जोड़ता"],
+        "answer_en": "Splits vector at index, returns second part",
+        "answer_hi": "इंडेक्स पर वेक्टर विभाजित, दूसरा भाग लौटाता",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 81,
-        "question_en": "What is the circumference of a circle with diameter 14 cm?",
-        "question_hi": "14 सेमी व्यास वाले वृत्त की परिधि क्या है?",
-        "options_en": ["22 cm", "44 cm", "66 cm", "88 cm"],
-        "options_hi": ["22 सेमी", "44 सेमी", "66 सेमी", "88 सेमी"],
-        "answer_en": "44 cm",
-        "answer_hi": "44 सेमी",
+        "question_en": "What is the main use of 'std::sync::mpsc::SyncSender::send'?",
+        "question_hi": "'std::sync::mpsc::SyncSender::send' का मुख्य उपयोग क्या है?",
+        "options_en": ["Blocking send that may wait for space", "Non-blocking send", "Async send", "Instant send"],
+        "options_hi": ["अवरुद्ध भेजें जो स्थान के लिए प्रतीक्षा कर सकता है", "गैर-अवरुद्ध भेजें", "एसिंक भेजें", "तत्काल भेजें"],
+        "answer_en": "Blocking send that may wait for space",
+        "answer_hi": "अवरुद्ध भेजें जो स्थान के लिए प्रतीक्षा कर सकता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 82,
-        "question_en": "Which gas is used in making ammonia?",
-        "question_hi": "अमोनिया बनाने में किस गैस का उपयोग किया जाता है?",
-        "options_en": ["Oxygen", "Nitrogen", "Hydrogen", "Both B and C"],
-        "options_hi": ["ऑक्सीजन", "नाइट्रोजन", "हाइड्रोजन", "B और C दोनों"],
-        "answer_en": "Both B and C",
-        "answer_hi": "B और C दोनों",
+        "question_en": "What does 'std::io::Seek::stream_position' return?",
+        "question_hi": "'std::io::Seek::stream_position' क्या लौटाता है?",
+        "options_en": ["Current position in stream", "Stream length", "Stream capacity", "Stream offset"],
+        "options_hi": ["स्ट्रीम में वर्तमान स्थिति", "स्ट्रीम लंबाई", "स्ट्रीम क्षमता", "स्ट्रीम ऑफसेट"],
+        "answer_en": "Current position in stream",
+        "answer_hi": "स्ट्रीम में वर्तमान स्थिति",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 83,
-        "question_en": "What is the focal length of a convex lens with power +2D?",
-        "question_hi": "+2D क्षमता वाले उत्तल लेंस की फोकस दूरी क्या है?",
-        "options_en": ["0.5 m", "1 m", "2 m", "4 m"],
-        "options_hi": ["0.5 मी", "1 मी", "2 मी", "4 मी"],
-        "answer_en": "0.5 m",
-        "answer_hi": "0.5 मी",
+        "question_en": "What is the purpose of 'std::sync::atomic::AtomicU8'?",
+        "question_hi": "'std::sync::atomic::AtomicU8' का उद्देश्य क्या है?",
+        "options_en": ["Thread-safe 8-bit unsigned integer", "Memory byte", "File byte", "Network byte"],
+        "options_hi": ["थ्रेड-सुरक्षित 8-बिट अनसाइन्ड इंटीजर", "मेमोरी बाइट", "फ़ाइल बाइट", "नेटवर्क बाइट"],
+        "answer_en": "Thread-safe 8-bit unsigned integer",
+        "answer_hi": "थ्रेड-सुरक्षित 8-बिट अनसाइन्ड इंटीजर",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 84,
-        "question_en": "Which cell organelle contains DNA?",
-        "question_hi": "किस कोशिका अंग में DNA पाया जाता है?",
-        "options_en": ["Mitochondria", "Nucleus", "Both A and B", "Ribosome"],
-        "options_hi": ["माइटोकॉन्ड्रिया", "केंद्रक", "A और B दोनों", "राइबोसोम"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "What does 'std::collections::BinaryHeap::pop' return?",
+        "question_hi": "'std::collections::BinaryHeap::pop' क्या लौटाता है?",
+        "options_en": ["Largest element", "Smallest element", "Random element", "First element"],
+        "options_hi": ["सबसे बड़ा तत्व", "सबसे छोटा तत्व", "यादृच्छिक तत्व", "पहला तत्व"],
+        "answer_en": "Largest element",
+        "answer_hi": "सबसे बड़ा तत्व",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 85,
-        "question_en": "What is the passive voice of 'He writes a letter'?",
-        "question_hi": "'He writes a letter' का passive voice क्या है?",
-        "options_en": ["A letter is written by him", "A letter was written by him", "He is writing a letter", "A letter writes him"],
-        "options_hi": ["ए लेटर इज रिटन बाय हिम", "ए लेटर वाज रिटन बाय हिम", "ही इज राइटिंग ए लेटर", "ए लेटर राइट्स हिम"],
-        "answer_en": "A letter is written by him",
-        "answer_hi": "ए लेटर इज रिटन बाय हिम",
+        "question_en": "What is the main use of 'std::sync::Arc::weak_count'?",
+        "question_hi": "'std::sync::Arc::weak_count' का मुख्य उपयोग क्या है?",
+        "options_en": ["Get number of weak references", "Get strong reference count", "Check if unique", "Get total count"],
+        "options_hi": ["कमजोर संदर्भों की संख्या प्राप्त", "मजबूत संदर्भ गिनती प्राप्त", "जांचें कि अद्वितीय है", "कुल गिनती प्राप्त"],
+        "answer_en": "Get number of weak references",
+        "answer_hi": "कमजोर संदर्भों की संख्या प्राप्त",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 86,
-        "question_en": "Where is the Meenakshi Temple located?",
-        "question_hi": "मीनाक्षी मंदिर कहाँ स्थित है?",
-        "options_en": ["Madurai", "Chennai", "Bangalore", "Hyderabad"],
-        "options_hi": ["मदुरै", "चेन्नई", "बैंगलोर", "हैदराबाद"],
-        "answer_en": "Madurai",
-        "answer_hi": "मदुरै",
+        "question_en": "What does 'std::io::BufWriter::into_inner' return?",
+        "question_hi": "'std::io::BufWriter::into_inner' क्या लौटाता है?",
+        "options_en": ["Underlying writer with flushed buffer", "Buffer contents", "Writer without buffer", "Empty writer"],
+        "options_hi": ["फ्लश किए गए बफर के साथ अंतर्निहित राइटर", "बफर सामग्री", "बफर के बिना राइटर", "खाली राइटर"],
+        "answer_en": "Underlying writer with flushed buffer",
+        "answer_hi": "फ्लश किए गए बफर के साथ अंतर्निहित राइटर",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 87,
-        "question_en": "What is the value of 7! ÷ 5!?",
-        "question_hi": "7! ÷ 5! का मान क्या है?",
-        "options_en": ["42", "210", "5040", "2520"],
-        "options_hi": ["42", "210", "5040", "2520"],
-        "answer_en": "42",
-        "answer_hi": "42",
+        "question_en": "What is the purpose of 'std::sync::mpsc::channel'?",
+        "question_hi": "'std::sync::mpsc::channel' का उद्देश्य क्या है?",
+        "options_en": ["Create unbounded asynchronous channel", "Create bounded channel", "Create sync channel", "Create file channel"],
+        "options_hi": ["अनबाउंडेड एसिंक्रोनस चैनल बनाएं", "बाउंडेड चैनल बनाएं", "सिंक चैनल बनाएं", "फ़ाइल चैनल बनाएं"],
+        "answer_en": "Create unbounded asynchronous channel",
+        "answer_hi": "अनबाउंडेड एसिंक्रोनस चैनल बनाएं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 88,
-        "question_en": "Which acid is present in tamarind?",
-        "question_hi": "इमली में कौन सा अम्ल पाया जाता है?",
-        "options_en": ["Tartaric acid", "Citric acid", "Malic acid", "Oxalic acid"],
-        "options_hi": ["टार्टरिक अम्ल", "सिट्रिक अम्ल", "मैलिक अम्ल", "ऑक्सैलिक अम्ल"],
-        "answer_en": "Tartaric acid",
-        "answer_hi": "टार्टरिक अम्ल",
+        "question_en": "What does 'std::collections::HashMap::retain' do?",
+        "question_hi": "'std::collections::HashMap::retain' क्या करता है?",
+        "options_en": ["Keep only elements matching predicate", "Remove all elements", "Add elements", "Sort elements"],
+        "options_hi": ["केवल प्रिडिकेट से मेल खाने वाले तत्व रखें", "सभी तत्व हटाएं", "तत्व जोड़ें", "तत्वों को सॉर्ट"],
+        "answer_en": "Keep only elements matching predicate",
+        "answer_hi": "केवल प्रिडिकेट से मेल खाने वाले तत्व रखें",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 89,
-        "question_en": "What is Hooke's law?",
-        "question_hi": "हुक का नियम क्या है?",
-        "options_en": ["F = ma", "F = kx", "P = F/A", "V = IR"],
-        "options_hi": ["F = ma", "F = kx", "P = F/A", "V = IR"],
-        "answer_en": "F = kx",
-        "answer_hi": "F = kx",
+        "question_en": "What is the main use of 'std::sync::atomic::Ordering::SeqCst'?",
+        "question_hi": "'std::sync::atomic::Ordering::SeqCst' का मुख्य उपयोग क्या है?",
+        "options_en": ["Sequentially consistent memory ordering", "Relaxed ordering", "Release ordering", "Acquire ordering"],
+        "options_hi": ["क्रमिक रूप से सुसंगत मेमोरी ऑर्डरिंग", "आराम से ऑर्डरिंग", "रिलीज ऑर्डरिंग", "अधिग्रहण ऑर्डरिंग"],
+        "answer_en": "Sequentially consistent memory ordering",
+        "answer_hi": "क्रमिक रूप से सुसंगत मेमोरी ऑर्डरिंग",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 90,
-        "question_en": "Which blood cells produce antibodies?",
-        "question_hi": "कौन सी रक्त कोशिकाएं एंटीबॉडी उत्पन्न करती हैं?",
-        "options_en": ["Red blood cells", "White blood cells", "Platelets", "Plasma cells"],
-        "options_hi": ["लाल रक्त कोशिकाएं", "श्वेत रक्त कोशिकाएं", "प्लेटलेट्स", "प्लाज्मा कोशिकाएं"],
-        "answer_en": "Plasma cells",
-        "answer_hi": "प्लाज्मा कोशिकाएं",
+        "question_en": "What does 'std::io::Read::read_exact' ensure?",
+        "question_hi": "'std::io::Read::read_exact' क्या सुनिश्चित करता है?",
+        "options_en": ["Exactly requested number of bytes are read", "At least some bytes are read", "All available bytes are read", "Bytes are read quickly"],
+        "options_hi": ["बिल्कुल अनुरोधित संख्या में बाइट्स पढ़े जाते हैं", "कम से कम कुछ बाइट्स पढ़े जाते हैं", "सभी उपलब्ध बाइट्स पढ़े जाते हैं", "बाइट्स तेजी से पढ़े जाते हैं"],
+        "answer_en": "Exactly requested number of bytes are read",
+        "answer_hi": "बिल्कुल अनुरोधित संख्या में बाइट्स पढ़े जाते हैं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 91,
-        "question_en": "What is the past perfect tense of 'eat'?",
-        "question_hi": "'eat' का past perfect tense क्या है?",
-        "options_en": ["ate", "eaten", "had eaten", "will have eaten"],
-        "options_hi": ["एट", "ईटेन", "हैड ईटेन", "विल हैव ईटेन"],
-        "answer_en": "had eaten",
-        "answer_hi": "हैड ईटेन",
+        "question_en": "What is the purpose of 'std::sync::Mutex::into_inner'?",
+        "question_hi": "'std::sync::Mutex::into_inner' का उद्देश्य क्या है?",
+        "options_en": ["Consume mutex and return guarded data", "Get lock guard", "Check mutex state", "Unlock mutex"],
+        "options_hi": ["म्यूटेक्स उपभोग और गार्डेड डेटा लौटाएं", "लॉक गार्ड प्राप्त", "म्यूटेक्स स्थिति जांच", "म्यूटेक्स अनलॉक"],
+        "answer_en": "Consume mutex and return guarded data",
+        "answer_hi": "म्यूटेक्स उपभोग और गार्डेड डेटा लौटाएं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 92,
-        "question_en": "Who was the first Indian woman President?",
-        "question_hi": "भारत की पहली महिला राष्ट्रपति कौन थीं?",
-        "options_en": ["Indira Gandhi", "Pratibha Patil", "Sarojini Naidu", "Sonia Gandhi"],
-        "options_hi": ["इंदिरा गांधी", "प्रतिभा पाटिल", "सरोजिनी नायडू", "सोनिया गांधी"],
-        "answer_en": "Pratibha Patil",
-        "answer_hi": "प्रतिभा पाटिल",
+        "question_en": "What does 'std::collections::VecDeque::get' return?",
+        "question_hi": "'std::collections::VecDeque::get' क्या लौटाता है?",
+        "options_en": ["Option with reference to element", "Direct reference", "Copied value", "Element index"],
+        "options_hi": ["तत्व के संदर्भ के साथ Option", "सीधा संदर्भ", "कॉपी किया गया मान", "तत्व इंडेक्स"],
+        "answer_en": "Option with reference to element",
+        "answer_hi": "तत्व के संदर्भ के साथ Option",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 93,
-        "question_en": "What is the value of 15² - 10²?",
-        "question_hi": "15² - 10² का मान क्या है?",
-        "options_en": ["25", "125", "225", "325"],
-        "options_hi": ["25", "125", "225", "325"],
-        "answer_en": "125",
-        "answer_hi": "125",
+        "question_en": "What is the main use of 'std::sync::atomic::AtomicI32'?",
+        "question_hi": "'std::sync::atomic::AtomicI32' का मुख्य उपयोग क्या है?",
+        "options_en": ["Thread-safe 32-bit signed integer", "Memory integer", "File integer", "Network integer"],
+        "options_hi": ["थ्रेड-सुरक्षित 32-बिट साइन्ड इंटीजर", "मेमोरी इंटीजर", "फ़ाइल इंटीजर", "नेटवर्क इंटीजर"],
+        "answer_en": "Thread-safe 32-bit signed integer",
+        "answer_hi": "थ्रेड-सुरक्षित 32-बिट साइन्ड इंटीजर",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 94,
-        "question_en": "Which metal is used in making electric fuses?",
-        "question_hi": "विद्युत फ्यूज बनाने में किस धातु का उपयोग किया जाता है?",
-        "options_en": ["Copper", "Aluminum", "Lead-tin alloy", "Silver"],
-        "options_hi": ["तांबा", "एल्युमिनियम", "सीसा-टिन मिश्र धातु", "चांदी"],
-        "answer_en": "Lead-tin alloy",
-        "answer_hi": "सीसा-टिन मिश्र धातु",
+        "question_en": "What does 'std::io::Lines::next' return?",
+        "question_hi": "'std::io::Lines::next' क्या लौटाता है?",
+        "options_en": ["Option with next line as Result", "Direct next line", "All remaining lines", "Line number"],
+        "options_hi": ["अगली पंक्ति के साथ Option जैसे Result", "सीधी अगली पंक्ति", "सभी शेष पंक्तियाँ", "पंक्ति संख्या"],
+        "answer_en": "Option with next line as Result",
+        "answer_hi": "अगली पंक्ति के साथ Option जैसे Result",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 95,
-        "question_en": "What is the unit of radioactivity?",
-        "question_hi": "रेडियोधर्मिता की इकाई क्या है?",
-        "options_en": ["Becquerel", "Curie", "Both A and B", "Roentgen"],
-        "options_hi": ["बेकरेल", "क्यूरी", "A और B दोनों", "रेंटजन"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "What is the purpose of 'std::sync::RwLockWriteGuard'?",
+        "question_hi": "'std::sync::RwLockWriteGuard' का उद्देश्य क्या है?",
+        "options_en": ["RAII for exclusive write access", "Shared read access", "Memory write guard", "File write guard"],
+        "options_hi": ["विशिष्ट लेखन पहुंच के लिए RAII", "साझा पठन पहुंच", "मेमोरी राइट गार्ड", "फ़ाइल राइट गार्ड"],
+        "answer_en": "RAII for exclusive write access",
+        "answer_hi": "विशिष्ट लेखन पहुंच के लिए RAII",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 96,
-        "question_en": "Which part of plant conducts water?",
-        "question_hi": "पौधे का कौन सा भाग पानी का संवहन करता है?",
-        "options_en": ["Xylem", "Phloem", "Root", "Leaf"],
-        "options_hi": ["जाइलम", "फ्लोएम", "जड़", "पत्ती"],
-        "answer_en": "Xylem",
-        "answer_hi": "जाइलम",
+        "question_en": "What does 'std::collections::BTreeSet::first' return?",
+        "question_hi": "'std::collections::BTreeSet::first' क्या लौटाता है?",
+        "options_en": ["Smallest element", "Largest element", "Random element", "First inserted element"],
+        "options_hi": ["सबसे छोटा तत्व", "सबसे बड़ा तत्व", "यादृच्छिक तत्व", "पहला डाला गया तत्व"],
+        "answer_en": "Smallest element",
+        "answer_hi": "सबसे छोटा तत्व",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 97,
-        "question_en": "What is the synonym of 'Diligent'?",
-        "question_hi": "'Diligent' का समानार्थी शब्द क्या है?",
-        "options_en": ["Lazy", "Hardworking", "Careless", "Slow"],
-        "options_hi": ["आलसी", "मेहनती", "लापरवाह", "धीमा"],
-        "answer_en": "Hardworking",
-        "answer_hi": "मेहनती",
+        "question_en": "What is the main use of 'std::sync::mpsc::SyncSender::try_send'?",
+        "question_hi": "'std::sync::mpsc::SyncSender::try_send' का मुख्य उपयोग क्या है?",
+        "options_en": ["Non-blocking send that fails if full", "Blocking send", "Async send", "Guaranteed send"],
+        "options_hi": ["गैर-अवरुद्ध भेजें जो पूर्ण होने पर विफल", "अवरुद्ध भेजें", "एसिंक भेजें", "गारंटीकृत भेजें"],
+        "answer_en": "Non-blocking send that fails if full",
+        "answer_hi": "गैर-अवरुद्ध भेजें जो पूर्ण होने पर विफल",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 98,
-        "question_en": "Where is the Brihadeeswarar Temple located?",
-        "question_hi": "बृहदीश्वर मंदिर कहाँ स्थित है?",
-        "options_en": ["Tamil Nadu", "Karnataka", "Andhra Pradesh", "Kerala"],
-        "options_hi": ["तमिलनाडु", "कर्नाटक", "आंध्र प्रदेश", "केरल"],
-        "answer_en": "Tamil Nadu",
-        "answer_hi": "तमिलनाडु",
+        "question_en": "What does 'std::io::SeekFrom::Start' represent?",
+        "question_hi": "'std::io::SeekFrom::Start' क्या दर्शाता है?",
+        "options_en": ["Offset from beginning of stream", "Offset from end", "Current position", "Relative position"],
+        "options_hi": ["स्ट्रीम की शुरुआत से ऑफसेट", "अंत से ऑफसेट", "वर्तमान स्थिति", "सापेक्ष स्थिति"],
+        "answer_en": "Offset from beginning of stream",
+        "answer_hi": "स्ट्रीम की शुरुआत से ऑफसेट",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 99,
-        "question_en": "What is the value of 2⁶?",
-        "question_hi": "2⁶ का मान क्या है?",
-        "options_en": ["32", "64", "128", "256"],
-        "options_hi": ["32", "64", "128", "256"],
-        "answer_en": "64",
-        "answer_hi": "64",
+        "question_en": "What is the purpose of 'std::sync::atomic::compiler_fence'?",
+        "question_hi": "'std::sync::atomic::compiler_fence' का उद्देश्य क्या है?",
+        "options_en": ["Compiler memory ordering without CPU fence", "CPU memory fence", "Thread fence", "Memory allocation"],
+        "options_hi": ["CPU फेंस के बिना कंपाइलर मेमोरी ऑर्डरिंग", "CPU मेमोरी फेंस", "थ्रेड फेंस", "मेमोरी आवंटन"],
+        "answer_en": "Compiler memory ordering without CPU fence",
+        "answer_hi": "CPU फेंस के बिना कंपाइलर मेमोरी ऑर्डरिंग",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 100,
-        "question_en": "Which gas is used in making polystyrene?",
-        "question_hi": "पॉलीस्टाइरीन बनाने में किस गैस का उपयोग किया जाता है?",
-        "options_en": ["Oxygen", "Nitrogen", "Carbon dioxide", "Helium"],
-        "options_hi": ["ऑक्सीजन", "नाइट्रोजन", "कार्बन डाइऑक्साइड", "हीलियम"],
-        "answer_en": "Carbon dioxide",
-        "answer_hi": "कार्बन डाइऑक्साइड",
+        "question_en": "What does 'std::collections::LinkedList::append' do?",
+        "question_hi": "'std::collections::LinkedList::append' क्या करता है?",
+        "options_en": ["Move all elements from another list", "Copy elements", "Add single element", "Remove elements"],
+        "options_hi": ["दूसरी सूची से सभी तत्वों को स्थानांतरित", "तत्वों की प्रतिलिपि", "एकल तत्व जोड़ें", "तत्व हटाएं"],
+        "answer_en": "Move all elements from another list",
+        "answer_hi": "दूसरी सूची से सभी तत्वों को स्थानांतरित",
         "attempted": false,
         "selected": ""
     }
-        
-// Add more questions here...
 ];
-
-
-let currentQuestion = 0; 
+// --------------------------- GLOBAL VARS -----------------------------
+let currentQuestion = 0;
 let language = "en";
-// let timeLeft = 180 * 60; // 180 minutes
-let timeLeft = 60 * 60; // 60 minutes
+let timeLeft = 60 * 60;   // 60 minutes timer
 let timerInterval;
 
-// ----------------- Quiz Logic -----------------
+// --------------------------- LOAD QUESTION ----------------------------
 function loadQuestion(index) {
     const q = questions[index];
-    document.getElementById("question").textContent = `${q.num}. ${
-        language === "en" ? q.question_en : q.question_hi
-    }`;
-    document.getElementById("questionCounter").textContent = `Question ${index + 1} of ${questions.length}`;
+
+    document.getElementById("question").textContent =
+        `${q.num}. ${language === "en" ? q.question_en : q.question_hi}`;
+
+    document.getElementById("questionCounter").textContent =
+        `Question ${index + 1} of ${questions.length}`;
 
     const optionsElement = document.getElementById("options");
     optionsElement.innerHTML = "";
@@ -1126,6 +1124,7 @@ function loadQuestion(index) {
     options.forEach((option) => {
         const isSelected = q.selected === option;
         const optionDiv = document.createElement("div");
+
         optionDiv.className = "option-box";
         optionDiv.style = `
             border: 2px solid ${isSelected ? "#007bff" : "#ccc"};
@@ -1134,12 +1133,11 @@ function loadQuestion(index) {
             border-radius: 8px;
             margin: 6px 0;
             cursor: pointer;
-            transition: all 0.2s;
         `;
 
         optionDiv.innerHTML = `
-            <input type="radio" name="option" value="${option}" ${isSelected ? "checked" : ""} style="margin-right:8px;">
-            ${option}
+            <input type="radio" name="option"
+            value="${option}" ${isSelected ? "checked" : ""} /> ${option}
         `;
 
         optionDiv.addEventListener("click", () => {
@@ -1153,12 +1151,14 @@ function loadQuestion(index) {
     updateNavigation();
 }
 
+// --------------------------- MARK ATTEMPT ----------------------------
 function markAttempted(index, selectedAnswer) {
     questions[index].attempted = true;
     questions[index].selected = selectedAnswer;
     updateNavigation();
 }
 
+// --------------------------- NEXT / PREV -----------------------------
 function nextQuestion() {
     if (currentQuestion < questions.length - 1) {
         currentQuestion++;
@@ -1173,296 +1173,150 @@ function prevQuestion() {
     }
 }
 
+// --------------------------- LANGUAGE CHANGE -------------------------
 function changeLanguage() {
     language = document.getElementById("languageSelect").value;
     loadQuestion(currentQuestion);
 }
 
-function submitQuiz() {
-    clearInterval(timerInterval);
-    let attempted = 0,
-        notAttempted = 0,
-        score = 0;
-
-    questions.forEach((q) => {
-        if (q.attempted) {
-            attempted++;
-            if (q.selected === q.answer_en || q.selected === q.answer_hi) score++;
-        } else notAttempted++;
-    });
-
-    alert(
-        `Quiz submitted!\nAttempted: ${attempted}\nNot Attempted: ${notAttempted}\nScore: ${score}/${questions.length}`
-    );
-}
-
+// --------------------------- TIMER -------------------------------
 function startTimer() {
     const timerElement = document.getElementById("timer");
     clearInterval(timerInterval);
+
     timerInterval = setInterval(() => {
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
-            alert("Time's up!");
+            alert("⏳ Time Over!");
             submitQuiz();
-        } else {
-            const hours = Math.floor(timeLeft / 3600);
-            const minutes = Math.floor((timeLeft % 3600) / 60);
-            const seconds = timeLeft % 60;
-            timerElement.textContent = `Time Left: ${hours
-                .toString()
-                .padStart(2, "0")}:${minutes
-                .toString()
-                .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
-            timeLeft--;
+            return;
         }
+
+        const h = Math.floor(timeLeft / 3600);
+        const m = Math.floor((timeLeft % 3600) / 60);
+        const s = timeLeft % 60;
+
+        timerElement.textContent =
+            `Time Left: ${h.toString().padStart(2, "0")}:${m
+                .toString().padStart(2, "0")}:${s.toString().padStart(2, "0")}`;
+
+        timeLeft--;
     }, 1000);
 }
 
+// --------------------------- SUBMIT QUIZ ---------------------
+function submitQuiz() {
+    let confirmation = confirm("Are you sure you want to submit the test?");
+    if (!confirmation) return;
 
+    clearInterval(timerInterval);
 
+    // Calculate time spent
+    const totalTimeSpent = (60 * 60) - timeLeft;
+    const mins = Math.floor(totalTimeSpent / 60);
+    const secs = totalTimeSpent % 60;
 
+    // Save to localStorage
+    localStorage.setItem("timeTaken", `${mins} min ${secs} sec`);
 
+    let attempted = 0;
+    let notAttempted = 0;
+    let score = 0;
+    const results = [];
 
-
-
-
-
-
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////all file and folder me code add karna hai 
-
-
-// submit 
-function jumpToQuestion(index) {
-            currentQuestion = index;
-            loadQuestion(index);
+    questions.forEach(q => {
+        if (q.attempted) {
+            attempted++;
+            if (q.selected === q.answer_en || q.selected === q.answer_hi) {
+                score++;
+            }
+        } else {
+            notAttempted++;
         }
 
-        function submitQuiz() {
-            let confirmation = confirm("Are you sure you want to submit the test?");
-            
-            if (!confirmation) {
-                return; // अगर यूज़र 'Cancel' करता है तो आगे नहीं बढ़ेंगे
-            }
+        results.push({
+            question: language === "en" ? q.question_en : q.question_hi,
+            selected: q.selected || "Not Answered",
+            correct: language === "en" ? q.answer_en : q.answer_hi
+        });
+    });
 
-            let attempted = 0;
-            let notAttempted = 0;
-            let score = 0;
-            const results = [];
+    // Save result data
+    localStorage.setItem("attempted", attempted);
+    localStorage.setItem("notAttempted", notAttempted);
+    localStorage.setItem("score", score);
+    localStorage.setItem("results", JSON.stringify(results));
 
-            questions.forEach(q => {
-                if (q.attempted) {
-                    attempted++;
-                    if (q.selected === q.answer) {
-                        score++;
-                    }
-                } else {
-                    notAttempted++;
-                }
-                results.push({ question: q.question, selected: q.selected || "Not Answered", correct: q.answer });
-            });
+    // Stop camera stream if active
+    if (videoStream) {
+        videoStream.getTracks().forEach(track => track.stop());
+    }
 
-            localStorage.setItem("attempted", attempted);
-            localStorage.setItem("notAttempted", notAttempted);
-            localStorage.setItem("score", score);
-            localStorage.setItem("results", JSON.stringify(results));
+    // Redirect
+    window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
+}
 
-            // रिजल्ट देखने से पहले एक और कन्फर्मेशन ले सकते हैं
-            let viewResult = confirm("Test submitted successfully! Do you want to view your result?");
-            if (viewResult) {
-                window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
-            }
-        }
-        window.onload = () => {
-            loadQuestion(currentQuestion);
-        };
-
-
+// --------------------------- NAVIGATION ------------------------------
 function updateNavigation() {
     const nav = document.getElementById("circleContainer");
     nav.innerHTML = "";
+
     questions.forEach((q, i) => {
         let color = "gray";
         if (i === currentQuestion) color = "blue";
         else if (q.attempted) color = "green";
-        nav.innerHTML += `<div class='circle' style='background-color:${color}' onclick='loadQuestion(${i})'>${i + 1}</div>`;
+
+        const circle = document.createElement("div");
+        circle.className = "circle";
+        circle.style.background = color;
+        circle.textContent = i + 1;
+        circle.onclick = () => jumpToQuestion(i);
+        nav.appendChild(circle);
     });
 }
 
-// ----------------- Camera & Movement Logic -----------------
+function jumpToQuestion(i) {
+    currentQuestion = i;
+    loadQuestion(i);
+}
+
+// --------------------------- CAMERA ----------------------
 let videoStream;
-let movementCount = 0;
 
 function startCamera() {
     const container = document.createElement("div");
     container.id = "camera-container";
     container.style.position = "fixed";
     container.style.top = "10px";
-    container.style.left = "10px"; // ✅ Left side
+    container.style.left = "10px";
     container.style.width = "130px";
     container.style.height = "130px";
-    container.style.zIndex = "9999";
     container.style.borderRadius = "50%";
     container.style.overflow = "hidden";
-    container.style.border = "3px solid red";
-    container.style.boxShadow = "0 0 10px rgba(0,0,0,0.3)";
-    container.style.cursor = "grab";
-    container.style.minWidth = "80px";
-    container.style.minHeight = "80px";
-    container.style.maxWidth = "250px";
-    container.style.maxHeight = "250px";
     container.style.background = "#000";
+    container.style.border = "3px solid red";
+    container.style.zIndex = "9999";
     document.body.appendChild(container);
 
     const video = document.createElement("video");
-    video.setAttribute("autoplay", true);
-    video.setAttribute("playsinline", true);
+    video.autoplay = true;
+    video.playsInline = true;
     video.style.width = "100%";
     video.style.height = "100%";
     video.style.objectFit = "cover";
     container.appendChild(video);
 
-    // ✅ Resize handle
-    const resizeHandle = document.createElement("div");
-    resizeHandle.style.position = "absolute";
-    resizeHandle.style.bottom = "2px";
-    resizeHandle.style.right = "2px";
-    resizeHandle.style.width = "15px";
-    resizeHandle.style.height = "15px";
-    resizeHandle.style.background = "rgba(255,255,255,0.7)";
-    resizeHandle.style.borderRadius = "4px";
-    resizeHandle.style.cursor = "se-resize";
-    container.appendChild(resizeHandle);
-
-    // ✅ Drag logic
-    let isDragging = false;
-    let offsetX, offsetY;
-
-    container.addEventListener("mousedown", (e) => {
-        if (e.target === resizeHandle) return;
-        isDragging = true;
-        offsetX = e.clientX - container.offsetLeft;
-        offsetY = e.clientY - container.offsetTop;
-        container.style.cursor = "grabbing";
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isDragging) return;
-        let x = e.clientX - offsetX;
-        let y = e.clientY - offsetY;
-        x = Math.max(0, Math.min(window.innerWidth - container.offsetWidth, x));
-        y = Math.max(0, Math.min(window.innerHeight - container.offsetHeight, y));
-        container.style.left = `${x}px`;
-        container.style.top = `${y}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isDragging = false;
-        container.style.cursor = "grab";
-    });
-
-    // ✅ Resize logic
-    let isResizing = false;
-    let startWidth, startHeight, startX, startY;
-
-    resizeHandle.addEventListener("mousedown", (e) => {
-        e.stopPropagation();
-        isResizing = true;
-        startWidth = container.offsetWidth;
-        startHeight = container.offsetHeight;
-        startX = e.clientX;
-        startY = e.clientY;
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isResizing) return;
-        const dx = e.clientX - startX;
-        const dy = e.clientY - startY;
-        const newSize = Math.max(80, Math.min(250, Math.max(startWidth + dx, startHeight + dy)));
-        container.style.width = `${newSize}px`;
-        container.style.height = `${newSize}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isResizing = false;
-    });
-
-    // ✅ Camera stream
     navigator.mediaDevices.getUserMedia({ video: true })
         .then(stream => {
             video.srcObject = stream;
             videoStream = stream;
-            detectMovement(video);
         })
-        .catch(err => {
-            console.error("Camera error:", err);
-            alert("Camera not accessible!");
-        });
+        .catch(() => alert("Camera not accessible!"));
 }
 
-function detectMovement(video) {
-    const canvas = document.createElement("canvas");
-    const ctx = canvas.getContext("2d");
-    canvas.width = 160;
-    canvas.height = 160;
-    let lastImageData = null;
-
-    setInterval(() => {
-        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-
-        if (lastImageData) {
-            let diff = 0;
-            for (let i = 0; i < imageData.data.length; i += 4) {
-                diff += Math.abs(imageData.data[i] - lastImageData.data[i]);
-            }
-
-            if (diff > 1000000) {
-                movementCount++;
-                if (movementCount === 1) {
-                    alert("⚠️ Alert 1: Face is not move");
-                } else if (movementCount === 2) {
-                    alert("⚠️ Alert 2: Head is not move");
-                } else if (movementCount === 3) {
-                    alert("⚠️ Alert 3: Test series is restarting...");
-                    restartTest();
-                }
-            }
-        }
-        lastImageData = imageData;
-    }, 2000);
-}
-
-function restartTest() {
-    if (videoStream) {
-        videoStream.getTracks().forEach(track => track.stop());
-    }
-    const camContainer = document.getElementById("camera-container");
-    if (camContainer) camContainer.remove();
-
-    movementCount = 0;
-    currentQuestion = 0;
-    timeLeft = 180 * 60;
-
-    questions.forEach(q => {
-        q.attempted = false;
-        q.selected = null;
-    });
-
-    loadQuestion(currentQuestion);
-    startTimer();
-    startCamera();
-}
-
-// ----------------- Page Load -----------------
+// --------------------------- PAGE LOAD --------------------------
 window.onload = function () {
     loadQuestion(currentQuestion);
     startTimer();
-    startCamera(); // ✅ Camera starts with test
+    startCamera();
 };
-
-
-///////////////////////////////////////

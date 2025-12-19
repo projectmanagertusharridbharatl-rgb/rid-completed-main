@@ -1,1165 +1,1167 @@
 const questions = [
-    
     {
         "num": 1,
-        "question_en": "What is the dimensional formula of Planck's constant?",
-        "question_hi": "प्लैंक स्थिरांक का विमीय सूत्र क्या है?",
-        "options_en": ["[ML²T⁻¹]", "[ML²T⁻²]", "[MLT⁻¹]", "[ML²T⁻³]"],
-        "options_hi": ["[ML²T⁻¹]", "[ML²T⁻²]", "[MLT⁻¹]", "[ML²T⁻³]"],
-        "answer_en": "[ML²T⁻¹]",
-        "answer_hi": "[ML²T⁻¹]",
+        "question_en": "What is TypeScript?",
+        "question_hi": "TypeScript क्या है?",
+        "options_en": ["A superset of JavaScript", "A subset of JavaScript", "A completely different language", "A database language"],
+        "options_hi": ["JavaScript का सुपरसेट", "JavaScript का सबसेट", "एक पूरी तरह अलग भाषा", "एक डेटाबेस भाषा"],
+        "answer_en": "A superset of JavaScript",
+        "answer_hi": "JavaScript का सुपरसेट",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 2,
-        "question_en": "The SI unit of electric flux is:",
-        "question_hi": "विद्युत फ्लक्स की SI इकाई है:",
-        "options_en": ["Weber", "Tesla", "Volt-meter", "Farad"],
-        "options_hi": ["वेबर", "टेस्ला", "वोल्ट-मीटर", "फैरड"],
-        "answer_en": "Volt-meter",
-        "answer_hi": "वोल्ट-मीटर",
+        "question_en": "Who developed TypeScript?",
+        "question_hi": "TypeScript को किसने विकसित किया?",
+        "options_en": ["Microsoft", "Google", "Facebook", "Apple"],
+        "options_hi": ["माइक्रोसॉफ्ट", "गूगल", "फेसबुक", "एप्पल"],
+        "answer_en": "Microsoft",
+        "answer_hi": "माइक्रोसॉफ्ट",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 3,
-        "question_en": "Which law governs the force between two point charges?",
-        "question_hi": "दो बिंदु आवेशों के बीच बल किस नियम द्वारा शासित होता है?",
-        "options_en": ["Ohm's Law", "Coulomb's Law", "Faraday's Law", "Ampere's Law"],
-        "options_hi": ["ओम का नियम", "कूलॉम का नियम", "फैराडे का नियम", "एम्पीयर का नियम"],
-        "answer_en": "Coulomb's Law",
-        "answer_hi": "कूलॉम का नियम",
+        "question_en": "Which year was TypeScript first released?",
+        "question_hi": "TypeScript पहली बार किस वर्ष रिलीज़ हुआ?",
+        "options_en": ["2012", "2010", "2014", "2016"],
+        "options_hi": ["2012", "2010", "2014", "2016"],
+        "answer_en": "2012",
+        "answer_hi": "2012",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 4,
-        "question_en": "The energy of a photon is given by:",
-        "question_hi": "एक फोटॉन की ऊर्जा किसके द्वारा दी जाती है?",
-        "options_en": ["E = mc²", "E = hν", "E = ½mv²", "E = kx²"],
-        "options_hi": ["E = mc²", "E = hν", "E = ½mv²", "E = kx²"],
-        "answer_en": "E = hν",
-        "answer_hi": "E = hν",
+        "question_en": "What is the main feature of TypeScript?",
+        "question_hi": "TypeScript की मुख्य विशेषता क्या है?",
+        "options_en": ["Static typing", "Dynamic typing", "No typing", "Weak typing"],
+        "options_hi": ["स्टैटिक टाइपिंग", "डायनामिक टाइपिंग", "कोई टाइपिंग नहीं", "वीक टाइपिंग"],
+        "answer_en": "Static typing",
+        "answer_hi": "स्टैटिक टाइपिंग",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 5,
-        "question_en": "A convex lens has a focal length of 20 cm. Its power is:",
-        "question_hi": "एक उत्तल लेंस की फोकस दूरी 20 cm है। इसकी क्षमता है:",
-        "options_en": ["+5 D", "-5 D", "+0.05 D", "-0.05 D"],
-        "options_hi": ["+5 D", "-5 D", "+0.05 D", "-0.05 D"],
-        "answer_en": "+5 D",
-        "answer_hi": "+5 D",
+        "question_en": "Which file extension is used for TypeScript files?",
+        "question_hi": "TypeScript फाइलों के लिए किस फाइल एक्सटेंशन का उपयोग किया जाता है?",
+        "options_en": [".ts", ".js", ".typescript", ".tsc"],
+        "options_hi": [".ts", ".js", ".typescript", ".tsc"],
+        "answer_en": ".ts",
+        "answer_hi": ".ts",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 6,
-        "question_en": "Which of the following is NOT a fundamental force?",
-        "question_hi": "निम्नलिखित में से कौन सा एक मौलिक बल नहीं है?",
-        "options_en": ["Gravitational", "Electromagnetic", "Frictional", "Strong Nuclear"],
-        "options_hi": ["गुरुत्वाकर्षण", "विद्युत चुम्बकीय", "घर्षण", "प्रबल नाभिकीय"],
-        "answer_en": "Frictional",
-        "answer_hi": "घर्षण",
+        "question_en": "How do you compile TypeScript to JavaScript?",
+        "question_hi": "TypeScript को JavaScript में कैसे कंपाइल करते हैं?",
+        "options_en": ["tsc command", "node command", "npm command", "typescript command"],
+        "options_hi": ["tsc कमांड", "node कमांड", "npm कमांड", "typescript कमांड"],
+        "answer_en": "tsc command",
+        "answer_hi": "tsc कमांड",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 7,
-        "question_en": "In Young's double-slit experiment, if the slit separation is doubled, the fringe width becomes:",
-        "question_hi": "यंग के द्विक रेखा-छिद्र प्रयोग में, यदि रेखा-छिद्र पृथक्करण दोगुना कर दिया जाए, तो फ्रिंज चौड़ाई हो जाती है:",
-        "options_en": ["Half", "Double", "Same", "Four times"],
-        "options_hi": ["आधी", "दोगुनी", "समान", "चार गुनी"],
-        "answer_en": "Half",
-        "answer_hi": "आधी",
+        "question_en": "What does TSC stand for?",
+        "question_hi": "TSC का क्या अर्थ है?",
+        "options_en": ["TypeScript Compiler", "TypeScript Code", "TypeScript Converter", "TypeScript Controller"],
+        "options_hi": ["TypeScript कंपाइलर", "TypeScript कोड", "TypeScript कनवर्टर", "TypeScript कंट्रोलर"],
+        "answer_en": "TypeScript Compiler",
+        "answer_hi": "TypeScript कंपाइलर",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 8,
-        "question_en": "The de Broglie wavelength is inversely proportional to:",
-        "question_hi": "डी-ब्रॉग्ली तरंगदैर्घ्य किसके व्युत्क्रमानुपाती होती है?",
-        "options_en": ["Energy", "Momentum", "Velocity", "Mass"],
-        "options_hi": ["ऊर्जा", "संवेग", "वेग", "द्रव्यमान"],
-        "answer_en": "Momentum",
-        "answer_hi": "संवेग",
+        "question_en": "Which of the following is a basic TypeScript type?",
+        "question_hi": "निम्नलिखित में से कौन सा एक बेसिक TypeScript टाइप है?",
+        "options_en": ["string", "array", "object", "all of the above"],
+        "options_hi": ["string", "array", "object", "उपरोक्त सभी"],
+        "answer_en": "all of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 9,
-        "question_en": "A particle executes SHM with amplitude A. At what displacement is its speed half the maximum speed?",
-        "question_hi": "एक कण A आयाम से सरल आवर्त गति करता है। किस विस्थापन पर इसकी गति अधिकतम गति की आधी होगी?",
-        "options_en": ["A/2", "A/√2", "A√3/2", "2A/3"],
-        "options_hi": ["A/2", "A/√2", "A√3/2", "2A/3"],
-        "answer_en": "A√3/2",
-        "answer_hi": "A√3/2",
+        "question_en": "How do you define a variable with type in TypeScript?",
+        "question_hi": "TypeScript में टाइप के साथ वेरिएबल कैसे परिभाषित करते हैं?",
+        "options_en": ["let name: string;", "string let name;", "let name string;", "string: let name;"],
+        "options_hi": ["let name: string;", "string let name;", "let name string;", "string: let name;"],
+        "answer_en": "let name: string;",
+        "answer_hi": "let name: string;",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 10,
-        "question_en": "The work done in moving a charge between two points in an equipotential surface is:",
-        "question_hi": "एक समविभव सतह पर दो बिंदुओं के बीच आवेश को ले जाने में किया गया कार्य है:",
-        "options_en": ["Zero", "Positive", "Negative", "Infinite"],
-        "options_hi": ["शून्य", "धनात्मक", "ऋणात्मक", "अनंत"],
-        "answer_en": "Zero",
-        "answer_hi": "शून्य",
+        "question_en": "What is the 'any' type used for?",
+        "question_hi": "'any' टाइप का उपयोग किसके लिए किया जाता है?",
+        "options_en": ["When the type is unknown or dynamic", "Only for numbers", "Only for strings", "Only for objects"],
+        "options_hi": ["जब टाइप अज्ञात या डायनामिक हो", "केवल नंबर के लिए", "केवल स्ट्रिंग के लिए", "केवल ऑब्जेक्ट के लिए"],
+        "answer_en": "When the type is unknown or dynamic",
+        "answer_hi": "जब टाइप अज्ञात या डायनामिक हो",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 11,
-        "question_en": "The IUPAC name of CH₃-CH=CH₂ is:",
-        "question_hi": "CH₃-CH=CH₂ का IUPAC नाम है:",
-        "options_en": ["Ethene", "Propene", "Butene", "Methane"],
-        "options_hi": ["एथीन", "प्रोपीन", "ब्यूटीन", "मीथेन"],
-        "answer_en": "Propene",
-        "answer_hi": "प्रोपीन",
+        "question_en": "How do you define an array of numbers in TypeScript?",
+        "question_hi": "TypeScript में नंबर की ऐरे कैसे परिभाषित करते हैं?",
+        "options_en": ["number[]", "Array<number>", "Both A and B", "NumberArray"],
+        "options_hi": ["number[]", "Array<number>", "A और B दोनों", "NumberArray"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 12,
-        "question_en": "Which of the following is a noble gas?",
-        "question_hi": "निम्नलिखित में से कौन सी एक अक्रिय गैस है?",
-        "options_en": ["Chlorine", "Oxygen", "Argon", "Nitrogen"],
-        "options_hi": ["क्लोरीन", "ऑक्सीजन", "आर्गन", "नाइट्रोजन"],
-        "answer_en": "Argon",
-        "answer_hi": "आर्गन",
+        "question_en": "What is a tuple in TypeScript?",
+        "question_hi": "TypeScript में tuple क्या है?",
+        "options_en": ["Array with fixed types and length", "Array with same types", "Object with key-value pairs", "Function type"],
+        "options_hi": ["फिक्स्ड टाइप और लंबाई वाली ऐरे", "समान टाइप वाली ऐरे", "की-वैल्यू पेयर वाला ऑब्जेक्ट", "फंक्शन टाइप"],
+        "answer_en": "Array with fixed types and length",
+        "answer_hi": "फिक्स्ड टाइप और लंबाई वाली ऐरे",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 13,
-        "question_en": "The pH of a neutral solution at 25°C is:",
-        "question_hi": "25°C पर एक उदासीन विलयन का pH होता है:",
-        "options_en": ["0", "7", "10", "14"],
-        "options_hi": ["0", "7", "10", "14"],
-        "answer_en": "7",
-        "answer_hi": "7",
+        "question_en": "How do you define a tuple type?",
+        "question_hi": "tuple टाइप कैसे परिभाषित करते हैं?",
+        "options_en": ["[string, number]", "tuple(string, number)", "Array<string, number>", "(string, number)"],
+        "options_hi": ["[string, number]", "tuple(string, number)", "Array<string, number>", "(string, number)"],
+        "answer_en": "[string, number]",
+        "answer_hi": "[string, number]",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 14,
-        "question_en": "Which hybridization is found in methane (CH₄)?",
-        "question_hi": "मीथेन (CH₄) में कौन सा संकरण पाया जाता है?",
-        "options_en": ["sp", "sp²", "sp³", "sp³d"],
-        "options_hi": ["sp", "sp²", "sp³", "sp³d"],
-        "answer_en": "sp³",
-        "answer_hi": "sp³",
+        "question_en": "What is an enum in TypeScript?",
+        "question_hi": "TypeScript में enum क्या है?",
+        "options_en": ["A way to define named constants", "A type of array", "A function type", "A class type"],
+        "options_hi": ["नामित कॉन्स्टेंट को परिभाषित करने का तरीका", "एक प्रकार की ऐरे", "एक फंक्शन टाइप", "एक क्लास टाइप"],
+        "answer_en": "A way to define named constants",
+        "answer_hi": "नामित कॉन्स्टेंट को परिभाषित करने का तरीका",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 15,
-        "question_en": "The number of π-bonds in benzene (C₆H₆) is:",
-        "question_hi": "बेंजीन (C₆H₆) में π-बंधों की संख्या है:",
-        "options_en": ["3", "6", "9", "12"],
-        "options_hi": ["3", "6", "9", "12"],
-        "answer_en": "3",
-        "answer_hi": "3",
+        "question_en": "How do you define an enum?",
+        "question_hi": "enum कैसे परिभाषित करते हैं?",
+        "options_en": ["enum Color { Red, Green, Blue }", "enum = { Red, Green, Blue }", "define enum Color { Red, Green, Blue }", "Color enum { Red, Green, Blue }"],
+        "options_hi": ["enum Color { Red, Green, Blue }", "enum = { Red, Green, Blue }", "define enum Color { Red, Green, Blue }", "Color enum { Red, Green, Blue }"],
+        "answer_en": "enum Color { Red, Green, Blue }",
+        "answer_hi": "enum Color { Red, Green, Blue }",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 16,
-        "question_en": "Which element has the electronic configuration [Ar] 3d⁵ 4s¹?",
-        "question_hi": "किस तत्व का इलेक्ट्रॉनिक विन्यास [Ar] 3d⁵ 4s¹ है?",
-        "options_en": ["Iron (Fe)", "Chromium (Cr)", "Manganese (Mn)", "Cobalt (Co)"],
-        "options_hi": ["आयरन (Fe)", "क्रोमियम (Cr)", "मैंगनीज (Mn)", "कोबाल्ट (Co)"],
-        "answer_en": "Chromium (Cr)",
-        "answer_hi": "क्रोमियम (Cr)",
+        "question_en": "What is the 'void' type used for?",
+        "question_hi": "'void' टाइप का उपयोग किसके लिए किया जाता है?",
+        "options_en": ["Functions that don't return a value", "Empty objects", "Null values", "Undefined values"],
+        "options_hi": ["ऐसे फंक्शन जो कोई मान वापस नहीं करते", "खाली ऑब्जेक्ट", "null मान", "undefined मान"],
+        "answer_en": "Functions that don't return a value",
+        "answer_hi": "ऐसे फंक्शन जो कोई मान वापस नहीं करते",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 17,
-        "question_en": "In SN2 reactions, the rate depends on:",
-        "question_hi": "SN2 अभिक्रियाओं में, दर निर्भर करती है:",
-        "options_en": ["Concentration of nucleophile only", "Concentration of substrate only", "Both nucleophile and substrate", "Temperature only"],
-        "options_hi": ["केवल न्यूक्लियोफाइल की सांद्रता", "केवल सब्सट्रेट की सांद्रता", "न्यूक्लियोफाइल और सब्सट्रेट दोनों", "केवल तापमान"],
-        "answer_en": "Both nucleophile and substrate",
-        "answer_hi": "न्यूक्लियोफाइल और सब्सट्रेट दोनों",
+        "question_en": "What is the 'never' type used for?",
+        "question_hi": "'never' टाइप का उपयोग किसके लिए किया जाता है?",
+        "options_en": ["Functions that never return", "Null values", "Undefined values", "All values"],
+        "options_hi": ["ऐसे फंक्शन जो कभी वापस नहीं आते", "null मान", "undefined मान", "सभी मान"],
+        "answer_en": "Functions that never return",
+        "answer_hi": "ऐसे फंक्शन जो कभी वापस नहीं आते",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 18,
-        "question_en": "The shape of [Ni(CN)₄]²⁻ is:",
-        "question_hi": "[Ni(CN)₄]²⁻ की आकृति है:",
-        "options_en": ["Tetrahedral", "Square planar", "Octahedral", "Linear"],
-        "options_hi": ["चतुष्फलकीय", "वर्ग समतलीय", "अष्टफलकीय", "रैखिक"],
-        "answer_en": "Square planar",
-        "answer_hi": "वर्ग समतलीय",
+        "question_en": "How do you define a function type?",
+        "question_hi": "फंक्शन टाइप कैसे परिभाषित करते हैं?",
+        "options_en": ["(param: string) => number", "function(param: string): number", "Both A and B", "None of the above"],
+        "options_hi": ["(param: string) => number", "function(param: string): number", "A और B दोनों", "उपरोक्त में से कोई नहीं"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 19,
-        "question_en": "Which is NOT a colligative property?",
-        "question_hi": "कौन सा एक अणुसंख्य गुणधर्म नहीं है?",
-        "options_en": ["Osmotic pressure", "Lowering of vapor pressure", "Elevation in boiling point", "Refractive index"],
-        "options_hi": ["परासरण दाब", "वाष्प दाब का अवनमन", "क्वथनांक में उन्नयन", "अपवर्तनांक"],
-        "answer_en": "Refractive index",
-        "answer_hi": "अपवर्तनांक",
+        "question_en": "What is type inference in TypeScript?",
+        "question_hi": "TypeScript में टाइप इन्फरेंस क्या है?",
+        "options_en": ["Automatic type detection", "Manual type declaration", "Type checking", "Type conversion"],
+        "options_hi": ["ऑटोमैटिक टाइप डिटेक्शन", "मैनुअल टाइप डिक्लेरेशन", "टाइप चेकिंग", "टाइप कन्वर्जन"],
+        "answer_en": "Automatic type detection",
+        "answer_hi": "ऑटोमैटिक टाइप डिटेक्शन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 20,
-        "question_en": "The number of unpaired electrons in O₂ molecule is:",
-        "question_hi": "O₂ अणु में अयुग्मित इलेक्ट्रॉनों की संख्या है:",
-        "options_en": ["0", "1", "2", "3"],
-        "options_hi": ["0", "1", "2", "3"],
-        "answer_en": "2",
-        "answer_hi": "2",
+        "question_en": "How do you define an interface?",
+        "question_hi": "इंटरफेस कैसे परिभाषित करते हैं?",
+        "options_en": ["interface Person { name: string }", "interface = { name: string }", "define interface Person { name: string }", "Person interface { name: string }"],
+        "options_hi": ["interface Person { name: string }", "interface = { name: string }", "define interface Person { name: string }", "Person interface { name: string }"],
+        "answer_en": "interface Person { name: string }",
+        "answer_hi": "interface Person { name: string }",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 21,
-        "question_en": "The derivative of sin(x) with respect to x is:",
-        "question_hi": "x के संबंध में sin(x) का अवकलज है:",
-        "options_en": ["cos(x)", "-cos(x)", "tan(x)", "sec(x)"],
-        "options_hi": ["cos(x)", "-cos(x)", "tan(x)", "sec(x)"],
-        "answer_en": "cos(x)",
-        "answer_hi": "cos(x)",
+        "question_en": "What is the difference between interface and type?",
+        "question_hi": "interface और type में क्या अंतर है?",
+        "options_en": ["interface can be extended, type can use unions", "No difference", "type can be extended, interface can use unions", "Both are same"],
+        "options_hi": ["interface को एक्सटेंड किया जा सकता है, type यूनियन का उपयोग कर सकता है", "कोई अंतर नहीं", "type को एक्सटेंड किया जा सकता है, interface यूनियन का उपयोग कर सकता है", "दोनों समान हैं"],
+        "answer_en": "interface can be extended, type can use unions",
+        "answer_hi": "interface को एक्सटेंड किया जा सकता है, type यूनियन का उपयोग कर सकता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 22,
-        "question_en": "The value of ∫(1/x) dx is:",
-        "question_hi": "∫(1/x) dx का मान है:",
-        "options_en": ["ln|x| + C", "x²/2 + C", "1/x² + C", "eˣ + C"],
-        "options_hi": ["ln|x| + C", "x²/2 + C", "1/x² + C", "eˣ + C"],
-        "answer_en": "ln|x| + C",
-        "answer_hi": "ln|x| + C",
+        "question_en": "How do you make a property optional in an interface?",
+        "question_hi": "इंटरफेस में प्रॉपर्टी को ऑप्शनल कैसे बनाते हैं?",
+        "options_en": ["name?: string", "name: string?", "optional name: string", "name: optional string"],
+        "options_hi": ["name?: string", "name: string?", "optional name: string", "name: optional string"],
+        "answer_en": "name?: string",
+        "answer_hi": "name?: string",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 23,
-        "question_en": "If A is a 3×3 matrix with |A| = 2, then |3A| is:",
-        "question_hi": "यदि A एक 3×3 आव्यूह है जिसमें |A| = 2 है, तो |3A| है:",
-        "options_en": ["6", "18", "54", "2"],
-        "options_hi": ["6", "18", "54", "2"],
-        "answer_en": "54",
-        "answer_hi": "54",
+        "question_en": "What is a union type?",
+        "question_hi": "यूनियन टाइप क्या है?",
+        "options_en": ["A type that can be one of several types", "A type that combines multiple types", "A type for arrays", "A type for objects"],
+        "options_hi": ["एक टाइप जो कई टाइप में से एक हो सकता है", "एक टाइप जो एकाधिक टाइप को संयोजित करता है", "ऐरे के लिए एक टाइप", "ऑब्जेक्ट के लिए एक टाइप"],
+        "answer_en": "A type that can be one of several types",
+        "answer_hi": "एक टाइप जो कई टाइप में से एक हो सकता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 24,
-        "question_en": "The probability of getting a prime number when a die is rolled is:",
-        "question_hi": "एक पासा फेंकने पर एक अभाज्य संख्या आने की प्रायिकता है:",
-        "options_en": ["1/2", "1/3", "1/6", "2/3"],
-        "options_hi": ["1/2", "1/3", "1/6", "2/3"],
-        "answer_en": "1/2",
-        "answer_hi": "1/2",
+        "question_en": "How do you define a union type?",
+        "question_hi": "यूनियन टाइप कैसे परिभाषित करते हैं?",
+        "options_en": ["string | number", "string & number", "string or number", "string, number"],
+        "options_hi": ["string | number", "string & number", "string or number", "string, number"],
+        "answer_en": "string | number",
+        "answer_hi": "string | number",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 25,
-        "question_en": "The number of diagonals in a hexagon is:",
-        "question_hi": "एक षट्भुज में विकर्णों की संख्या है:",
-        "options_en": ["6", "9", "12", "15"],
-        "options_hi": ["6", "9", "12", "15"],
-        "answer_en": "9",
-        "answer_hi": "9",
+        "question_en": "What is an intersection type?",
+        "question_hi": "इंटरसेक्शन टाइप क्या है?",
+        "options_en": ["A type that combines multiple types", "A type that can be one of several types", "A type for arrays", "A type for functions"],
+        "options_hi": ["एक टाइप जो एकाधिक टाइप को संयोजित करता है", "एक टाइप जो कई टाइप में से एक हो सकता है", "ऐरे के लिए एक टाइप", "फंक्शन के लिए एक टाइप"],
+        "answer_en": "A type that combines multiple types",
+        "answer_hi": "एक टाइप जो एकाधिक टाइप को संयोजित करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 26,
-        "question_en": "The solution of dy/dx = y/x is:",
-        "question_hi": "dy/dx = y/x का हल है:",
-        "options_en": ["y = kx", "y = k/x", "y = keˣ", "y = kx²"],
-        "options_hi": ["y = kx", "y = k/x", "y = keˣ", "y = kx²"],
-        "answer_en": "y = kx",
-        "answer_hi": "y = kx",
+        "question_en": "How do you define an intersection type?",
+        "question_hi": "इंटरसेक्शन टाइप कैसे परिभाषित करते हैं?",
+        "options_en": ["TypeA & TypeB", "TypeA | TypeB", "TypeA + TypeB", "TypeA and TypeB"],
+        "options_hi": ["TypeA & TypeB", "TypeA | TypeB", "TypeA + TypeB", "TypeA and TypeB"],
+        "answer_en": "TypeA & TypeB",
+        "answer_hi": "TypeA & TypeB",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 27,
-        "question_en": "The modulus of the complex number (1 + i) is:",
-        "question_hi": "सम्मिश्र संख्या (1 + i) का मापांक है:",
-        "options_en": ["1", "√2", "2", "1/√2"],
-        "options_hi": ["1", "√2", "2", "1/√2"],
-        "answer_en": "√2",
-        "answer_hi": "√2",
+        "question_en": "What is type assertion?",
+        "question_hi": "टाइप असर्शन क्या है?",
+        "options_en": ["Telling the compiler about the type", "Runtime type checking", "Type conversion", "Type declaration"],
+        "options_hi": ["कंपाइलर को टाइप के बारे में बताना", "रनटाइम टाइप चेकिंग", "टाइप कन्वर्जन", "टाइप डिक्लेरेशन"],
+        "answer_en": "Telling the compiler about the type",
+        "answer_hi": "कंपाइलर को टाइप के बारे में बताना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 28,
-        "question_en": "The value of lim(x→0) (sinx/x) is:",
-        "question_hi": "lim(x→0) (sinx/x) का मान है:",
-        "options_en": ["0", "1", "∞", "Undefined"],
-        "options_hi": ["0", "1", "∞", "अपरिभाषित"],
-        "answer_en": "1",
-        "answer_hi": "1",
+        "question_en": "How do you perform type assertion?",
+        "question_hi": "टाइप असर्शन कैसे करते हैं?",
+        "options_en": ["value as string", "<string>value", "Both A and B", "assert value is string"],
+        "options_hi": ["value as string", "<string>value", "A और B दोनों", "assert value is string"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 29,
-        "question_en": "The area of a circle with radius r is given by:",
-        "question_hi": "त्रिज्या r वाले वृत्त का क्षेत्रफल दिया जाता है:",
-        "options_en": ["πr", "2πr", "πr²", "4πr²"],
-        "options_hi": ["πr", "2πr", "πr²", "4πr²"],
-        "answer_en": "πr²",
-        "answer_hi": "πr²",
+        "question_en": "What are generics in TypeScript?",
+        "question_hi": "TypeScript में जेनेरिक क्या हैं?",
+        "options_en": ["Creating reusable components", "Specific types", "Fixed types", "Basic types"],
+        "options_hi": ["पुन: प्रयोज्य घटक बनाना", "विशिष्ट प्रकार", "फिक्स्ड टाइप", "बेसिक टाइप"],
+        "answer_en": "Creating reusable components",
+        "answer_hi": "पुन: प्रयोज्य घटक बनाना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 30,
-        "question_en": "The sum of the series 1 + 2 + 3 + ... + n is:",
-        "question_hi": "श्रेणी 1 + 2 + 3 + ... + n का योग है:",
-        "options_en": ["n(n+1)/2", "n(n-1)/2", "n²", "2n"],
-        "options_hi": ["n(n+1)/2", "n(n-1)/2", "n²", "2n"],
-        "answer_en": "n(n+1)/2",
-        "answer_hi": "n(n+1)/2",
+        "question_en": "How do you define a generic function?",
+        "question_hi": "जेनेरिक फंक्शन कैसे परिभाषित करते हैं?",
+        "options_en": ["function identity<T>(arg: T): T", "function identity<T>(arg): T", "function identity(arg: T): T", "function<T> identity(arg: T): T"],
+        "options_hi": ["function identity<T>(arg: T): T", "function identity<T>(arg): T", "function identity(arg: T): T", "function<T> identity(arg: T): T"],
+        "answer_en": "function identity<T>(arg: T): T",
+        "answer_hi": "function identity<T>(arg: T): T",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 31,
-        "question_en": "The time period of a simple pendulum depends on:",
-        "question_hi": "एक सरल लोलक का आवर्तकाल निर्भर करता है:",
-        "options_en": ["Only length", "Only mass", "Both length and mass", "Length and acceleration due to gravity"],
-        "options_hi": ["केवल लंबाई पर", "केवल द्रव्यमान पर", "लंबाई और द्रव्यमान दोनों पर", "लंबाई और गुरुत्वीय त्वरण पर"],
-        "answer_en": "Length and acceleration due to gravity",
-        "answer_hi": "लंबाई और गुरुत्वीय त्वरण पर",
+        "question_en": "What is a generic constraint?",
+        "question_hi": "जेनेरिक कंस्ट्रेंट क्या है?",
+        "options_en": ["Restricting generic type parameters", "Making generics required", "Generic type checking", "All of the above"],
+        "options_hi": ["जेनेरिक टाइप पैरामीटर को रिस्ट्रिक्ट करना", "जेनेरिक को आवश्यक बनाना", "जेनेरिक टाइप चेकिंग", "उपरोक्त सभी"],
+        "answer_en": "Restricting generic type parameters",
+        "answer_hi": "जेनेरिक टाइप पैरामीटर को रिस्ट्रिक्ट करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 32,
-        "question_en": "The unit of resistivity is:",
-        "question_hi": "प्रतिरोधकता की इकाई है:",
-        "options_en": ["Ohm", "Ohm-meter", "Ohm/meter", "Ohm/meter²"],
-        "options_hi": ["ओम", "ओम-मीटर", "ओम/मीटर", "ओम/मीटर²"],
-        "answer_en": "Ohm-meter",
-        "answer_hi": "ओम-मीटर",
+        "question_en": "How do you add a constraint to a generic?",
+        "question_hi": "जेनेरिक में कंस्ट्रेंट कैसे जोड़ते हैं?",
+        "options_en": ["<T extends constraint>", "<T: constraint>", "<T implements constraint>", "<T with constraint>"],
+        "options_hi": ["<T extends constraint>", "<T: constraint>", "<T implements constraint>", "<T with constraint>"],
+        "answer_en": "<T extends constraint>",
+        "answer_hi": "<T extends constraint>",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 33,
-        "question_en": "Which of the following is a diamagnetic material?",
-        "question_hi": "निम्नलिखित में से कौन सा एक प्रतिचुम्बकीय पदार्थ है?",
-        "options_en": ["Aluminum", "Copper", "Iron", "Nickel"],
-        "options_hi": ["एल्युमिनियम", "तांबा", "लोहा", "निकेल"],
-        "answer_en": "Copper",
-        "answer_hi": "तांबा",
+        "question_en": "What are classes in TypeScript?",
+        "question_hi": "TypeScript में क्लास क्या हैं?",
+        "options_en": ["Blueprints for creating objects", "Functions", "Interfaces", "Types"],
+        "options_hi": ["ऑब्जेक्ट बनाने के लिए ब्लूप्रिंट", "फंक्शन", "इंटरफेस", "टाइप"],
+        "answer_en": "Blueprints for creating objects",
+        "answer_hi": "ऑब्जेक्ट बनाने के लिए ब्लूप्रिंट",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 34,
-        "question_en": "The ratio of rms velocity to average velocity of gas molecules at a given temperature is:",
-        "question_hi": "दिए गए तापमान पर गैस अणुओं के वर्ग माध्य मूल वेग और औसत वेग का अनुपात है:",
-        "options_en": ["1.086:1", "1:1.086", "1:1", "1.224:1"],
-        "options_hi": ["1.086:1", "1:1.086", "1:1", "1.224:1"],
-        "answer_en": "1.086:1",
-        "answer_hi": "1.086:1",
+        "question_en": "How do you define a class?",
+        "question_hi": "क्लास कैसे परिभाषित करते हैं?",
+        "options_en": ["class Person { }", "class = Person { }", "define class Person { }", "Person class { }"],
+        "options_hi": ["class Person { }", "class = Person { }", "define class Person { }", "Person class { }"],
+        "answer_en": "class Person { }",
+        "answer_hi": "class Person { }",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 35,
-        "question_en": "A transformer works on the principle of:",
-        "question_hi": "एक ट्रांसफार्मर किस सिद्धांत पर कार्य करता है?",
-        "options_en": ["Self induction", "Mutual induction", "Electromagnetic induction", "All of these"],
-        "options_hi": ["स्वप्रेरण", "पारस्परिक प्रेरण", "विद्युत चुम्बकीय प्रेरण", "ये सभी"],
-        "answer_en": "Mutual induction",
-        "answer_hi": "पारस्परिक प्रेरण",
+        "question_en": "What are access modifiers?",
+        "question_hi": "एक्सेस मॉडिफायर क्या हैं?",
+        "options_en": ["public, private, protected", "static, readonly", "abstract, sealed", "All of the above"],
+        "options_hi": ["public, private, protected", "static, readonly", "abstract, sealed", "उपरोक्त सभी"],
+        "answer_en": "public, private, protected",
+        "answer_hi": "public, private, protected",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 36,
-        "question_en": "The half-life of a radioactive element is 10 days. The mean life is approximately:",
-        "question_hi": "एक रेडियोधर्मी तत्व का अर्ध-जीवन 10 दिन है। माध्य जीवन लगभग है:",
-        "options_en": ["6.93 days", "14.43 days", "20 days", "30 days"],
-        "options_hi": ["6.93 दिन", "14.43 दिन", "20 दिन", "30 दिन"],
-        "answer_en": "14.43 days",
-        "answer_hi": "14.43 दिन",
+        "question_en": "What does 'public' mean?",
+        "question_hi": "'public' का क्या अर्थ है?",
+        "options_en": ["Accessible from anywhere", "Only within class", "Only within class and subclasses", "Not accessible"],
+        "options_hi": ["कहीं से भी एक्सेसिबल", "केवल क्लास के भीतर", "केवल क्लास और सबक्लास के भीतर", "एक्सेसिबल नहीं"],
+        "answer_en": "Accessible from anywhere",
+        "answer_hi": "कहीं से भी एक्सेसिबल",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 37,
-        "question_en": "The critical angle for a medium is 30°. Its refractive index is:",
-        "question_hi": "एक माध्यम के लिए क्रांतिक कोण 30° है। इसका अपवर्तनांक है:",
-        "options_en": ["1", "1.5", "2", "2.5"],
-        "options_hi": ["1", "1.5", "2", "2.5"],
-        "answer_en": "2",
-        "answer_hi": "2",
+        "question_en": "What does 'private' mean?",
+        "question_hi": "'private' का क्या अर्थ है?",
+        "options_en": ["Only within class", "Accessible from anywhere", "Only within class and subclasses", "Not accessible"],
+        "options_hi": ["केवल क्लास के भीतर", "कहीं से भी एक्सेसिबल", "केवल क्लास और सबक्लास के भीतर", "एक्सेसिबल नहीं"],
+        "answer_en": "Only within class",
+        "answer_hi": "केवल क्लास के भीतर",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 38,
-        "question_en": "The energy stored in a capacitor is given by:",
-        "question_hi": "एक संधारित्र में संचित ऊर्जा दी जाती है:",
-        "options_en": ["½CV", "½CV²", "CV", "CV²"],
-        "options_hi": ["½CV", "½CV²", "CV", "CV²"],
-        "answer_en": "½CV²",
-        "answer_hi": "½CV²",
+        "question_en": "What does 'protected' mean?",
+        "question_hi": "'protected' का क्या अर्थ है?",
+        "options_en": ["Only within class and subclasses", "Only within class", "Accessible from anywhere", "Not accessible"],
+        "options_hi": ["केवल क्लास और सबक्लास के भीतर", "केवल क्लास के भीतर", "कहीं से भी एक्सेसिबल", "एक्सेसिबल नहीं"],
+        "answer_en": "Only within class and subclasses",
+        "answer_hi": "केवल क्लास और सबक्लास के भीतर",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 39,
-        "question_en": "The dimensional formula for torque is same as that of:",
-        "question_hi": "बल आघूर्ण का विमीय सूत्र किसके समान होता है?",
-        "options_en": ["Work", "Power", "Angular momentum", "Force"],
-        "options_hi": ["कार्य", "शक्ति", "कोणीय संवेग", "बल"],
-        "answer_en": "Work",
-        "answer_hi": "कार्य",
+        "question_en": "What is 'readonly' modifier?",
+        "question_hi": "'readonly' मॉडिफायर क्या है?",
+        "options_en": ["Makes property immutable", "Makes property private", "Makes property optional", "Makes property public"],
+        "options_hi": ["प्रॉपर्टी को अपरिवर्तनीय बनाता है", "प्रॉपर्टी को प्राइवेट बनाता है", "प्रॉपर्टी को ऑप्शनल बनाता है", "प्रॉपर्टी को पब्लिक बनाता है"],
+        "answer_en": "Makes property immutable",
+        "answer_hi": "प्रॉपर्टी को अपरिवर्तनीय बनाता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 40,
-        "question_en": "A body is moving with uniform acceleration. Its velocity after 5 seconds is 25 m/s and after 8 seconds is 34 m/s. The acceleration is:",
-        "question_hi": "एक पिंड एकसमान त्वरण से गतिमान है। 5 सेकंड के बाद इसका वेग 25 m/s है और 8 सेकंड के बाद 34 m/s है। त्वरण है:",
-        "options_en": ["3 m/s²", "4 m/s²", "5 m/s²", "6 m/s²"],
-        "options_hi": ["3 m/s²", "4 m/s²", "5 m/s²", "6 m/s²"],
-        "answer_en": "3 m/s²",
-        "answer_hi": "3 m/s²",
+        "question_en": "What is a static property?",
+        "question_hi": "स्टैटिक प्रॉपर्टी क्या है?",
+        "options_en": ["Property on class itself, not instances", "Property on instances", "Immutable property", "Private property"],
+        "options_hi": ["क्लास पर प्रॉपर्टी, इंस्टेंस पर नहीं", "इंस्टेंस पर प्रॉपर्टी", "अपरिवर्तनीय प्रॉपर्टी", "प्राइवेट प्रॉपर्टी"],
+        "answer_en": "Property on class itself, not instances",
+        "answer_hi": "क्लास पर प्रॉपर्टी, इंस्टेंस पर नहीं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 41,
-        "question_en": "Which of the following is a metalloid?",
-        "question_hi": "निम्नलिखित में से कौन सा एक उपधातु है?",
-        "options_en": ["Sodium", "Silicon", "Chlorine", "Aluminum"],
-        "options_hi": ["सोडियम", "सिलिकॉन", "क्लोरीन", "एल्युमिनियम"],
-        "answer_en": "Silicon",
-        "answer_hi": "सिलिकॉन",
+        "question_en": "How do you define a static property?",
+        "question_hi": "स्टैटिक प्रॉपर्टी कैसे परिभाषित करते हैं?",
+        "options_en": ["static count: number;", "count static: number;", "static: count number;", "count: static number;"],
+        "options_hi": ["static count: number;", "count static: number;", "static: count number;", "count: static number;"],
+        "answer_en": "static count: number;",
+        "answer_hi": "static count: number;",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 42,
-        "question_en": "The oxidation state of chromium in K₂Cr₂O₇ is:",
-        "question_hi": "K₂Cr₂O₇ में क्रोमियम की ऑक्सीकरण अवस्था है:",
-        "options_en": ["+2", "+3", "+6", "+7"],
-        "options_hi": ["+2", "+3", "+6", "+7"],
-        "answer_en": "+6",
-        "answer_hi": "+6",
+        "question_en": "What is an abstract class?",
+        "question_hi": "एब्स्ट्रैक्ट क्लास क्या है?",
+        "options_en": ["Class that cannot be instantiated", "Class with no methods", "Class with only properties", "Class that is final"],
+        "options_hi": ["ऐसी क्लास जो इंस्टेंटिएट नहीं की जा सकती", "बिना मेथड वाली क्लास", "केवल प्रॉपर्टी वाली क्लास", "फाइनल क्लास"],
+        "answer_en": "Class that cannot be instantiated",
+        "answer_hi": "ऐसी क्लास जो इंस्टेंटिएट नहीं की जा सकती",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 43,
-        "question_en": "The shape of NH₃ molecule is:",
-        "question_hi": "NH₃ अणु की आकृति है:",
-        "options_en": ["Linear", "Trigonal planar", "Tetrahedral", "Trigonal pyramidal"],
-        "options_hi": ["रैखिक", "त्रिकोणीय समतलीय", "चतुष्फलकीय", "त्रिकोणीय पिरामिडी"],
-        "answer_en": "Trigonal pyramidal",
-        "answer_hi": "त्रिकोणीय पिरामिडी",
+        "question_en": "How do you define an abstract class?",
+        "question_hi": "एब्स्ट्रैक्ट क्लास कैसे परिभाषित करते हैं?",
+        "options_en": ["abstract class Animal { }", "class abstract Animal { }", "abstract: class Animal { }", "class Animal abstract { }"],
+        "options_hi": ["abstract class Animal { }", "class abstract Animal { }", "abstract: class Animal { }", "class Animal abstract { }"],
+        "answer_en": "abstract class Animal { }",
+        "answer_hi": "abstract class Animal { }",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 44,
-        "question_en": "Which of the following is NOT a thermodynamic function?",
-        "question_hi": "निम्नलिखित में से कौन सा एक ऊष्मागतिक फलन नहीं है?",
-        "options_en": ["Internal energy", "Enthalpy", "Work", "Entropy"],
-        "options_hi": ["आंतरिक ऊर्जा", "एन्थैल्पी", "कार्य", "एन्ट्रॉपी"],
-        "answer_en": "Work",
-        "answer_hi": "कार्य",
+        "question_en": "What is an abstract method?",
+        "question_hi": "एब्स्ट्रैक्ट मेथड क्या है?",
+        "options_en": ["Method without implementation", "Method that must be implemented", "Both A and B", "Concrete method"],
+        "options_hi": ["बिना इम्प्लीमेंटेशन के मेथड", "मेथड जिसे इम्प्लीमेंट करना होगा", "A और B दोनों", "कंक्रीट मेथड"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 45,
-        "question_en": "The number of σ bonds in ethyne (C₂H₂) is:",
-        "question_hi": "एथाइन (C₂H₂) में σ बंधों की संख्या है:",
-        "options_en": ["1", "2", "3", "5"],
-        "options_hi": ["1", "2", "3", "5"],
-        "answer_en": "3",
-        "answer_hi": "3",
+        "question_en": "How do you define an abstract method?",
+        "question_hi": "एब्स्ट्रैक्ट मेथड कैसे परिभाषित करते हैं?",
+        "options_en": ["abstract makeSound(): void;", "makeSound abstract(): void;", "abstract: makeSound(): void;", "makeSound(): abstract void;"],
+        "options_hi": ["abstract makeSound(): void;", "makeSound abstract(): void;", "abstract: makeSound(): void;", "makeSound(): abstract void;"],
+        "answer_en": "abstract makeSound(): void;",
+        "answer_hi": "abstract makeSound(): void;",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 46,
-        "question_en": "The catalyst used in Haber's process is:",
-        "question_hi": "हेबर प्रक्रम में प्रयुक्त उत्प्रेरक है:",
-        "options_en": ["Pt", "Fe", "Ni", "V₂O₅"],
-        "options_hi": ["Pt", "Fe", "Ni", "V₂O₅"],
-        "answer_en": "Fe",
-        "answer_hi": "Fe",
+        "question_en": "What is inheritance?",
+        "question_hi": "इनहेरिटेंस क्या है?",
+        "options_en": ["Creating new classes from existing ones", "Creating interfaces", "Creating types", "Creating functions"],
+        "options_hi": ["मौजूदा क्लास से नई क्लास बनाना", "इंटरफेस बनाना", "टाइप बनाना", "फंक्शन बनाना"],
+        "answer_en": "Creating new classes from existing ones",
+        "answer_hi": "मौजूदा क्लास से नई क्लास बनाना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 47,
-        "question_en": "The hardest substance known is:",
-        "question_hi": "ज्ञात सबसे कठोर पदार्थ है:",
-        "options_en": ["Graphite", "Diamond", "Quartz", "Boron nitride"],
-        "options_hi": ["ग्रेफाइट", "हीरा", "क्वार्ट्ज", "बोरॉन नाइट्राइड"],
-        "answer_en": "Diamond",
-        "answer_hi": "हीरा",
+        "question_en": "How do you implement inheritance?",
+        "question_hi": "इनहेरिटेंस कैसे इम्प्लीमेंट करते हैं?",
+        "options_en": ["class Dog extends Animal { }", "class Dog : Animal { }", "class Dog implements Animal { }", "class Dog -> Animal { }"],
+        "options_hi": ["class Dog extends Animal { }", "class Dog : Animal { }", "class Dog implements Animal { }", "class Dog -> Animal { }"],
+        "answer_en": "class Dog extends Animal { }",
+        "answer_hi": "class Dog extends Animal { }",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 48,
-        "question_en": "The element with atomic number 29 is:",
-        "question_hi": "परमाणु संख्या 29 वाला तत्व है:",
-        "options_en": ["Silver", "Copper", "Gold", "Zinc"],
-        "options_hi": ["चांदी", "तांबा", "सोना", "जस्ता"],
-        "answer_en": "Copper",
-        "answer_hi": "तांबा",
+        "question_en": "What is method overriding?",
+        "question_hi": "मेथड ओवरराइडिंग क्या है?",
+        "options_en": ["Redefining method in subclass", "Creating new method", "Hiding method", "Deleting method"],
+        "options_hi": ["सबक्लास में मेथड को पुन: परिभाषित करना", "नई मेथड बनाना", "मेथड को छिपाना", "मेथड को डिलीट करना"],
+        "answer_en": "Redefining method in subclass",
+        "answer_hi": "सबक्लास में मेथड को पुन: परिभाषित करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 49,
-        "question_en": "The IUPAC name of C₆H₅COOH is:",
-        "question_hi": "C₆H₅COOH का IUPAC नाम है:",
-        "options_en": ["Benzoic acid", "Benzene carboxylic acid", "Phenyl methanoic acid", "Both 1 and 2"],
-        "options_hi": ["बेंजोइक अम्ल", "बेंजीन कार्बोक्सिलिक अम्ल", "फेनिल मेथेनोइक अम्ल", "1 और 2 दोनों"],
-        "answer_en": "Both 1 and 2",
-        "answer_hi": "1 और 2 दोनों",
+        "question_en": "What is the 'super' keyword?",
+        "question_hi": "'super' कीवर्ड क्या है?",
+        "options_en": ["Refers to parent class", "Refers to current class", "Refers to subclass", "Refers to interface"],
+        "options_hi": ["पैरेंट क्लास को रेफर करता है", "करंट क्लास को रेफर करता है", "सबक्लास को रेफर करता है", "इंटरफेस को रेफर करता है"],
+        "answer_en": "Refers to parent class",
+        "answer_hi": "पैरेंट क्लास को रेफर करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 50,
-        "question_en": "The number of possible isomers for C₄H₁₀ is:",
-        "question_hi": "C₄H₁₀ के लिए संभावित समावयवियों की संख्या है:",
-        "options_en": ["1", "2", "3", "4"],
-        "options_hi": ["1", "2", "3", "4"],
-        "answer_en": "2",
-        "answer_hi": "2",
+        "question_en": "What are modules in TypeScript?",
+        "question_hi": "TypeScript में मॉड्यूल क्या हैं?",
+        "options_en": ["Way to organize code", "Classes", "Functions", "Types"],
+        "options_hi": ["कोड को व्यवस्थित करने का तरीका", "क्लास", "फंक्शन", "टाइप"],
+        "answer_en": "Way to organize code",
+        "answer_hi": "कोड को व्यवस्थित करने का तरीका",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 51,
-        "question_en": "The value of ∫₀¹ x(1-x) dx is:",
-        "question_hi": "∫₀¹ x(1-x) dx का मान है:",
-        "options_en": ["1/2", "1/6", "1/12", "1/4"],
-        "options_hi": ["1/2", "1/6", "1/12", "1/4"],
-        "answer_en": "1/6",
-        "answer_hi": "1/6",
+        "question_en": "How do you export a function?",
+        "question_hi": "फंक्शन को कैसे एक्सपोर्ट करते हैं?",
+        "options_en": ["export function name() { }", "function export name() { }", "export: function name() { }", "function name() export { }"],
+        "options_hi": ["export function name() { }", "function export name() { }", "export: function name() { }", "function name() export { }"],
+        "answer_en": "export function name() { }",
+        "answer_hi": "export function name() { }",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 52,
-        "question_en": "The number of terms in the expansion of (a+b)ⁿ is:",
-        "question_hi": "(a+b)ⁿ के विस्तार में पदों की संख्या है:",
-        "options_en": ["n", "n+1", "n-1", "2ⁿ"],
-        "options_hi": ["n", "n+1", "n-1", "2ⁿ"],
-        "answer_en": "n+1",
-        "answer_hi": "n+1",
+        "question_en": "How do you import a function?",
+        "question_hi": "फंक्शन को कैसे इम्पोर्ट करते हैं?",
+        "options_en": ["import { name } from './module'", "import name from './module'", "from './module' import name", "import './module' as name"],
+        "options_hi": ["import { name } from './module'", "import name from './module'", "from './module' import name", "import './module' as name"],
+        "answer_en": "import { name } from './module'",
+        "answer_hi": "import { name } from './module'",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 53,
-        "question_en": "The equation of the circle with center at (1,2) and radius 3 is:",
-        "question_hi": "(1,2) पर केंद्र और 3 त्रिज्या वाले वृत्त का समीकरण है:",
-        "options_en": ["(x-1)² + (y-2)² = 9", "(x+1)² + (y+2)² = 9", "(x-1)² + (y-2)² = 3", "(x+1)² + (y+2)² = 3"],
-        "options_hi": ["(x-1)² + (y-2)² = 9", "(x+1)² + (y+2)² = 9", "(x-1)² + (y-2)² = 3", "(x+1)² + (y+2)² = 3"],
-        "answer_en": "(x-1)² + (y-2)² = 9",
-        "answer_hi": "(x-1)² + (y-2)² = 9",
+        "question_en": "What is default export?",
+        "question_hi": "डिफॉल्ट एक्सपोर्ट क्या है?",
+        "options_en": ["Main export of a module", "Optional export", "Hidden export", "Private export"],
+        "options_hi": ["मॉड्यूल का मुख्य एक्सपोर्ट", "ऑप्शनल एक्सपोर्ट", "हिडन एक्सपोर्ट", "प्राइवेट एक्सपोर्ट"],
+        "answer_en": "Main export of a module",
+        "answer_hi": "मॉड्यूल का मुख्य एक्सपोर्ट",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 54,
-        "question_en": "If A and B are mutually exclusive events, then P(A∪B) is:",
-        "question_hi": "यदि A और B परस्पर अपवर्जी घटनाएँ हैं, तो P(A∪B) है:",
-        "options_en": ["P(A)+P(B)", "P(A)×P(B)", "P(A)-P(B)", "P(A)/P(B)"],
-        "options_hi": ["P(A)+P(B)", "P(A)×P(B)", "P(A)-P(B)", "P(A)/P(B)"],
-        "answer_en": "P(A)+P(B)",
-        "answer_hi": "P(A)+P(B)",
+        "question_en": "How do you do default export?",
+        "question_hi": "डिफॉल्ट एक्सपोर्ट कैसे करते हैं?",
+        "options_en": ["export default function() { }", "default export function() { }", "export function default() { }", "function export default() { }"],
+        "options_hi": ["export default function() { }", "default export function() { }", "export function default() { }", "function export default() { }"],
+        "answer_en": "export default function() { }",
+        "answer_hi": "export default function() { }",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 55,
-        "question_en": "The value of tan(π/4) is:",
-        "question_hi": "tan(π/4) का मान है:",
-        "options_en": ["0", "1", "√3", "Undefined"],
-        "options_hi": ["0", "1", "√3", "अपरिभाषित"],
-        "answer_en": "1",
-        "answer_hi": "1",
+        "question_en": "How do you import default export?",
+        "question_hi": "डिफॉल्ट एक्सपोर्ट को कैसे इम्पोर्ट करते हैं?",
+        "options_en": ["import name from './module'", "import { name } from './module'", "import default name from './module'", "from './module' import default name"],
+        "options_hi": ["import name from './module'", "import { name } from './module'", "import default name from './module'", "from './module' import default name"],
+        "answer_en": "import name from './module'",
+        "answer_hi": "import name from './module'",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 56,
-        "question_en": "The number of diagonals in a polygon with n sides is:",
-        "question_hi": "n भुजाओं वाले बहुभुज में विकर्णों की संख्या है:",
-        "options_en": ["n(n-1)/2", "n(n-3)/2", "n(n-1)", "n(n-3)"],
-        "options_hi": ["n(n-1)/2", "n(n-3)/2", "n(n-1)", "n(n-3)"],
-        "answer_en": "n(n-3)/2",
-        "answer_hi": "n(n-3)/2",
+        "question_en": "What are namespaces?",
+        "question_hi": "नेमस्पेस क्या हैं?",
+        "options_en": ["Logical grouping of code", "Physical file grouping", "Modules", "Classes"],
+        "options_hi": ["कोड का लॉजिकल ग्रुपिंग", "फिजिकल फाइल ग्रुपिंग", "मॉड्यूल", "क्लास"],
+        "answer_en": "Logical grouping of code",
+        "answer_hi": "कोड का लॉजिकल ग्रुपिंग",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 57,
-        "question_en": "The arithmetic mean of first n natural numbers is:",
-        "question_hi": "प्रथम n प्राकृतिक संख्याओं का समांतर माध्य है:",
-        "options_en": ["n/2", "(n+1)/2", "n(n+1)/2", "n²"],
-        "options_hi": ["n/2", "(n+1)/2", "n(n+1)/2", "n²"],
-        "answer_en": "(n+1)/2",
-        "answer_hi": "(n+1)/2",
+        "question_en": "How do you define a namespace?",
+        "question_hi": "नेमस्पेस कैसे परिभाषित करते हैं?",
+        "options_en": ["namespace MyNamespace { }", "namespace = MyNamespace { }", "define namespace MyNamespace { }", "MyNamespace namespace { }"],
+        "options_hi": ["namespace MyNamespace { }", "namespace = MyNamespace { }", "define namespace MyNamespace { }", "MyNamespace namespace { }"],
+        "answer_en": "namespace MyNamespace { }",
+        "answer_hi": "namespace MyNamespace { }",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 58,
-        "question_en": "The solution of the equation 2ˣ = 8 is:",
-        "question_hi": "समीकरण 2ˣ = 8 का हल है:",
-        "options_en": ["2", "3", "4", "5"],
-        "options_hi": ["2", "3", "4", "5"],
-        "answer_en": "3",
-        "answer_hi": "3",
+        "question_en": "What are decorators?",
+        "question_hi": "डेकोरेटर क्या हैं?",
+        "options_en": ["Special kind of declarations", "Functions", "Classes", "Interfaces"],
+        "options_hi": ["विशेष प्रकार की डिक्लेरेशन", "फंक्शन", "क्लास", "इंटरफेस"],
+        "answer_en": "Special kind of declarations",
+        "answer_hi": "विशेष प्रकार की डिक्लेरेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 59,
-        "question_en": "The distance between points (1,2) and (4,6) is:",
-        "question_hi": "बिंदुओं (1,2) और (4,6) के बीच की दूरी है:",
-        "options_en": ["3", "4", "5", "6"],
-        "options_hi": ["3", "4", "5", "6"],
-        "answer_en": "5",
-        "answer_hi": "5",
+        "question_en": "What is the syntax for decorators?",
+        "question_hi": "डेकोरेटर के लिए सिंटैक्स क्या है?",
+        "options_en": ["@decorator", "#decorator", "$decorator", "&decorator"],
+        "options_hi": ["@decorator", "#decorator", "$decorator", "&decorator"],
+        "answer_en": "@decorator",
+        "answer_hi": "@decorator",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 60,
-        "question_en": "The value of sin²θ + cos²θ is:",
-        "question_hi": "sin²θ + cos²θ का मान है:",
-        "options_en": ["0", "1", "2", "Depends on θ"],
-        "options_hi": ["0", "1", "2", "θ पर निर्भर"],
-        "answer_en": "1",
-        "answer_hi": "1",
+        "question_en": "What are type guards?",
+        "question_hi": "टाइप गार्ड क्या हैं?",
+        "options_en": ["Runtime checks that narrow types", "Compile time checks", "Type declarations", "Type conversions"],
+        "options_hi": ["रनटाइम चेक जो टाइप को नैरो करते हैं", "कंपाइल टाइम चेक", "टाइप डिक्लेरेशन", "टाइप कन्वर्जन"],
+        "answer_en": "Runtime checks that narrow types",
+        "answer_hi": "रनटाइम चेक जो टाइप को नैरो करते हैं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 61,
-        "question_en": "The work done in an isothermal process depends on:",
-        "question_hi": "एक समतापी प्रक्रम में किया गया कार्य निर्भर करता है:",
-        "options_en": ["Initial state only", "Final state only", "Both initial and final states", "Path between states"],
-        "options_hi": ["केवल प्रारंभिक अवस्था पर", "केवल अंतिम अवस्था पर", "प्रारंभिक और अंतिम दोनों अवस्थाओं पर", "अवस्थाओं के बीच के पथ पर"],
-        "answer_en": "Both initial and final states",
-        "answer_hi": "प्रारंभिक और अंतिम दोनों अवस्थाओं पर",
+        "question_en": "What is 'typeof' type guard?",
+        "question_hi": "'typeof' टाइप गार्ड क्या है?",
+        "options_en": ["Checks type using typeof operator", "Checks instance using instanceof", "Checks custom type", "All of the above"],
+        "options_hi": ["typeof ऑपरेटर का उपयोग करके टाइप चेक करता है", "instanceof का उपयोग करके इंस्टेंस चेक करता है", "कस्टम टाइप चेक करता है", "उपरोक्त सभी"],
+        "answer_en": "Checks type using typeof operator",
+        "answer_hi": "typeof ऑपरेटर का उपयोग करके टाइप चेक करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 62,
-        "question_en": "The unit of magnetic flux is:",
-        "question_hi": "चुंबकीय फ्लक्स की इकाई है:",
-        "options_en": ["Tesla", "Weber", "Henry", "Gauss"],
-        "options_hi": ["टेस्ला", "वेबर", "हेनरी", "गॉस"],
-        "answer_en": "Weber",
-        "answer_hi": "वेबर",
+        "question_en": "What is 'instanceof' type guard?",
+        "question_hi": "'instanceof' टाइप गार्ड क्या है?",
+        "options_en": ["Checks instance using instanceof operator", "Checks type using typeof", "Checks custom type", "All of the above"],
+        "options_hi": ["instanceof ऑपरेटर का उपयोग करके इंस्टेंस चेक करता है", "typeof का उपयोग करके टाइप चेक करता है", "कस्टम टाइप चेक करता है", "उपरोक्त सभी"],
+        "answer_en": "Checks instance using instanceof operator",
+        "answer_hi": "instanceof ऑपरेटर का उपयोग करके इंस्टेंस चेक करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 63,
-        "question_en": "In a p-n junction diode, the current flows when it is:",
-        "question_hi": "एक p-n संधि डायोड में, धारा प्रवाहित होती है जब यह होता है:",
-        "options_en": ["Forward biased", "Reverse biased", "Unbiased", "All of these"],
-        "options_hi": ["अग्र अभिनत", "पश्च अभिनत", "अनभिनत", "ये सभी"],
-        "answer_en": "Forward biased",
-        "answer_hi": "अग्र अभिनत",
+        "question_en": "What are utility types?",
+        "question_hi": "यूटिलिटी टाइप क्या हैं?",
+        "options_en": ["Built-in generic types for transformation", "Basic types", "Function types", "Class types"],
+        "options_hi": ["ट्रांसफॉर्मेशन के लिए बिल्ट-इन जेनेरिक टाइप", "बेसिक टाइप", "फंक्शन टाइप", "क्लास टाइप"],
+        "answer_en": "Built-in generic types for transformation",
+        "answer_hi": "ट्रांसफॉर्मेशन के लिए बिल्ट-इन जेनेरिक टाइप",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 64,
-        "question_en": "The energy of a hydrogen atom in its ground state is -13.6 eV. Its energy in the first excited state is:",
-        "question_hi": "अपनी मूल अवस्था में एक हाइड्रोजन परमाणु की ऊर्जा -13.6 eV है। पहली उत्तेजित अवस्था में इसकी ऊर्जा है:",
-        "options_en": ["-3.4 eV", "-6.8 eV", "-13.6 eV", "-27.2 eV"],
-        "options_hi": ["-3.4 eV", "-6.8 eV", "-13.6 eV", "-27.2 eV"],
-        "answer_en": "-3.4 eV",
-        "answer_hi": "-3.4 eV",
+        "question_en": "What is Partial<T>?",
+        "question_hi": "Partial<T> क्या है?",
+        "options_en": ["Makes all properties optional", "Makes all properties required", "Makes properties readonly", "Picks specific properties"],
+        "options_hi": ["सभी प्रॉपर्टी को ऑप्शनल बनाता है", "सभी प्रॉपर्टी को आवश्यक बनाता है", "प्रॉपर्टी को रीडओनली बनाता है", "विशिष्ट प्रॉपर्टी को चुनता है"],
+        "answer_en": "Makes all properties optional",
+        "answer_hi": "सभी प्रॉपर्टी को ऑप्शनल बनाता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 65,
-        "question_en": "The ratio of specific heats (Cp/Cv) for a diatomic gas is approximately:",
-        "question_hi": "एक द्विपरमाणुक गैस के लिए विशिष्ट ऊष्माओं का अनुपात (Cp/Cv) लगभग है:",
-        "options_en": ["1.33", "1.4", "1.67", "2"],
-        "options_hi": ["1.33", "1.4", "1.67", "2"],
-        "answer_en": "1.4",
-        "answer_hi": "1.4",
+        "question_en": "What is Required<T>?",
+        "question_hi": "Required<T> क्या है?",
+        "options_en": ["Makes all properties required", "Makes all properties optional", "Makes properties readonly", "Picks specific properties"],
+        "options_hi": ["सभी प्रॉपर्टी को आवश्यक बनाता है", "सभी प्रॉपर्टी को ऑप्शनल बनाता है", "प्रॉपर्टी को रीडओनली बनाता है", "विशिष्ट प्रॉपर्टी को चुनता है"],
+        "answer_en": "Makes all properties required",
+        "answer_hi": "सभी प्रॉपर्टी को आवश्यक बनाता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 66,
-        "question_en": "A ray of light passes from air to glass. Which property remains unchanged?",
-        "question_hi": "प्रकाश की एक किरण वायु से कांच में जाती है। कौन सा गुण अपरिवर्तित रहता है?",
-        "options_en": ["Velocity", "Wavelength", "Frequency", "Direction"],
-        "options_hi": ["वेग", "तरंगदैर्घ्य", "आवृत्ति", "दिशा"],
-        "answer_en": "Frequency",
-        "answer_hi": "आवृत्ति",
+        "question_en": "What is Readonly<T>?",
+        "question_hi": "Readonly<T> क्या है?",
+        "options_en": ["Makes all properties readonly", "Makes all properties optional", "Makes all properties required", "Picks specific properties"],
+        "options_hi": ["सभी प्रॉपर्टी को रीडओनली बनाता है", "सभी प्रॉपर्टी को ऑप्शनल बनाता है", "सभी प्रॉपर्टी को आवश्यक बनाता है", "विशिष्ट प्रॉपर्टी को चुनता है"],
+        "answer_en": "Makes all properties readonly",
+        "answer_hi": "सभी प्रॉपर्टी को रीडओनली बनाता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 67,
-        "question_en": "The dimensional formula for power is:",
-        "question_hi": "शक्ति का विमीय सूत्र है:",
-        "options_en": ["[ML²T⁻³]", "[ML²T⁻²]", "[MLT⁻²]", "[MLT⁻¹]"],
-        "options_hi": ["[ML²T⁻³]", "[ML²T⁻²]", "[MLT⁻²]", "[MLT⁻¹]"],
-        "answer_en": "[ML²T⁻³]",
-        "answer_hi": "[ML²T⁻³]",
+        "question_en": "What is Record<K, T>?",
+        "question_hi": "Record<K, T> क्या है?",
+        "options_en": ["Creates object type with given keys and type", "Creates array type", "Creates function type", "Creates tuple type"],
+        "options_hi": ["दी गई कुंजी और टाइप के साथ ऑब्जेक्ट टाइप बनाता है", "ऐरे टाइप बनाता है", "फंक्शन टाइप बनाता है", "टुपल टाइप बनाता है"],
+        "answer_en": "Creates object type with given keys and type",
+        "answer_hi": "दी गई कुंजी और टाइप के साथ ऑब्जेक्ट टाइप बनाता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 68,
-        "question_en": "A body of mass 2 kg moves with an acceleration of 3 m/s². The force acting on it is:",
-        "question_hi": "2 kg द्रव्यमान का एक पिंड 3 m/s² के त्वरण से गतिमान है। इस पर कार्यरत बल है:",
-        "options_en": ["1.5 N", "5 N", "6 N", "9 N"],
-        "options_hi": ["1.5 N", "5 N", "6 N", "9 N"],
-        "answer_en": "6 N",
-        "answer_hi": "6 N",
+        "question_en": "What is Pick<T, K>?",
+        "question_hi": "Pick<T, K> क्या है?",
+        "options_en": ["Picks specific properties from T", "Makes properties optional", "Makes properties required", "Makes properties readonly"],
+        "options_hi": ["T से विशिष्ट प्रॉपर्टी को चुनता है", "प्रॉपर्टी को ऑप्शनल बनाता है", "प्रॉपर्टी को आवश्यक बनाता है", "प्रॉपर्टी को रीडओनली बनाता है"],
+        "answer_en": "Picks specific properties from T",
+        "answer_hi": "T से विशिष्ट प्रॉपर्टी को चुनता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 69,
-        "question_en": "The efficiency of a Carnot engine working between 400 K and 300 K is:",
-        "question_hi": "400 K और 300 K के बीच कार्य कर रहे एक कार्नोट इंजन की दक्षता है:",
-        "options_en": ["25%", "50%", "75%", "100%"],
-        "options_hi": ["25%", "50%", "75%", "100%"],
-        "answer_en": "25%",
-        "answer_hi": "25%",
+        "question_en": "What is Omit<T, K>?",
+        "question_hi": "Omit<T, K> क्या है?",
+        "options_en": ["Omits specific properties from T", "Picks specific properties", "Makes properties optional", "Makes properties required"],
+        "options_hi": ["T से विशिष्ट प्रॉपर्टी को छोड़ता है", "विशिष्ट प्रॉपर्टी को चुनता है", "प्रॉपर्टी को ऑप्शनल बनाता है", "प्रॉपर्टी को आवश्यक बनाता है"],
+        "answer_en": "Omits specific properties from T",
+        "answer_hi": "T से विशिष्ट प्रॉपर्टी को छोड़ता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 70,
-        "question_en": "The resistance of a wire is R. If its length is doubled and area is halved, the new resistance will be:",
-        "question_hi": "एक तार का प्रतिरोध R है। यदि इसकी लंबाई दोगुनी कर दी जाए और क्षेत्रफल आधा कर दिया जाए, तो नया प्रतिरोध होगा:",
-        "options_en": ["R", "2R", "4R", "8R"],
-        "options_hi": ["R", "2R", "4R", "8R"],
-        "answer_en": "4R",
-        "answer_hi": "4R",
+        "question_en": "What is Exclude<T, U>?",
+        "question_hi": "Exclude<T, U> क्या है?",
+        "options_en": ["Excludes types from T that are assignable to U", "Includes types from T", "Picks properties", "Omits properties"],
+        "options_hi": ["T से उन टाइप को बाहर करता है जो U को असाइन करने योग्य हैं", "T से टाइप को शामिल करता है", "प्रॉपर्टी को चुनता है", "प्रॉपर्टी को छोड़ता है"],
+        "answer_en": "Excludes types from T that are assignable to U",
+        "answer_hi": "T से उन टाइप को बाहर करता है जो U को असाइन करने योग्य हैं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 71,
-        "question_en": "Which of the following is NOT a transition element?",
-        "question_hi": "निम्नलिखित में से कौन सा एक संक्रमण तत्व नहीं है?",
-        "options_en": ["Copper", "Zinc", "Iron", "Silver"],
-        "options_hi": ["तांबा", "जस्ता", "लोहा", "चांदी"],
-        "answer_en": "Zinc",
-        "answer_hi": "जस्ता",
+        "question_en": "What is Extract<T, U>?",
+        "question_hi": "Extract<T, U> क्या है?",
+        "options_en": ["Extracts types from T that are assignable to U", "Excludes types from T", "Picks properties", "Omits properties"],
+        "options_hi": ["T से उन टाइप को निकालता है जो U को असाइन करने योग्य हैं", "T से टाइप को बाहर करता है", "प्रॉपर्टी को चुनता है", "प्रॉपर्टी को छोड़ता है"],
+        "answer_en": "Extracts types from T that are assignable to U",
+        "answer_hi": "T से उन टाइप को निकालता है जो U को असाइन करने योग्य हैं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 72,
-        "question_en": "The number of moles in 44 g of CO₂ is:",
-        "question_hi": "44 g CO₂ में मोलों की संख्या है:",
-        "options_en": ["0.5", "1", "1.5", "2"],
-        "options_hi": ["0.5", "1", "1.5", "2"],
-        "answer_en": "1",
-        "answer_hi": "1",
+        "question_en": "What is NonNullable<T>?",
+        "question_hi": "NonNullable<T> क्या है?",
+        "options_en": ["Excludes null and undefined from T", "Includes null and undefined", "Makes properties optional", "Makes properties required"],
+        "options_hi": ["T से null और undefined को बाहर करता है", "null और undefined को शामिल करता है", "प्रॉपर्टी को ऑप्शनल बनाता है", "प्रॉपर्टी को आवश्यक बनाता है"],
+        "answer_en": "Excludes null and undefined from T",
+        "answer_hi": "T से null और undefined को बाहर करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 73,
-        "question_en": "The compound formed when ethanol is oxidized by acidified K₂Cr₂O₇ is:",
-        "question_hi": "जब एथेनॉल को अम्लीकृत K₂Cr₂O₇ द्वारा ऑक्सीकृत किया जाता है, तो बनने वाला यौगिक है:",
-        "options_en": ["Ethanal", "Ethanoic acid", "Ethene", "Ethane"],
-        "options_hi": ["एथेनाल", "एथेनोइक अम्ल", "एथीन", "एथेन"],
-        "answer_en": "Ethanoic acid",
-        "answer_hi": "एथेनोइक अम्ल",
+        "question_en": "What is ReturnType<T>?",
+        "question_hi": "ReturnType<T> क्या है?",
+        "options_en": ["Gets return type of function type T", "Gets parameter types", "Gets instance type", "Gets constructor type"],
+        "options_hi": ["फंक्शन टाइप T के रिटर्न टाइप को प्राप्त करता है", "पैरामीटर टाइप प्राप्त करता है", "इंस्टेंस टाइप प्राप्त करता है", "कंस्ट्रक्टर टाइप प्राप्त करता है"],
+        "answer_en": "Gets return type of function type T",
+        "answer_hi": "फंक्शन टाइप T के रिटर्न टाइप को प्राप्त करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 74,
-        "question_en": "The shape of XeF₄ molecule is:",
-        "question_hi": "XeF₄ अणु की आकृति है:",
-        "options_en": ["Tetrahedral", "Square planar", "Octahedral", "Trigonal bipyramidal"],
-        "options_hi": ["चतुष्फलकीय", "वर्ग समतलीय", "अष्टफलकीय", "त्रिकोणीय द्विपिरामिडी"],
-        "answer_en": "Square planar",
-        "answer_hi": "वर्ग समतलीय",
+        "question_en": "What is Parameters<T>?",
+        "question_hi": "Parameters<T> क्या है?",
+        "options_en": ["Gets parameter types of function type T", "Gets return type", "Gets instance type", "Gets constructor type"],
+        "options_hi": ["फंक्शन टाइप T के पैरामीटर टाइप को प्राप्त करता है", "रिटर्न टाइप प्राप्त करता है", "इंस्टेंस टाइप प्राप्त करता है", "कंस्ट्रक्टर टाइप प्राप्त करता है"],
+        "answer_en": "Gets parameter types of function type T",
+        "answer_hi": "फंक्शन टाइप T के पैरामीटर टाइप को प्राप्त करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 75,
-        "question_en": "The pH of 0.01 M HCl solution is:",
-        "question_hi": "0.01 M HCl विलयन का pH है:",
-        "options_en": ["1", "2", "7", "12"],
-        "options_hi": ["1", "2", "7", "12"],
-        "answer_en": "2",
-        "answer_hi": "2",
+        "question_en": "What is ConstructorParameters<T>?",
+        "question_hi": "ConstructorParameters<T> क्या है?",
+        "options_en": ["Gets constructor parameter types", "Gets method parameter types", "Gets return type", "Gets instance type"],
+        "options_hi": ["कंस्ट्रक्टर पैरामीटर टाइप प्राप्त करता है", "मेथड पैरामीटर टाइप प्राप्त करता है", "रिटर्न टाइप प्राप्त करता है", "इंस्टेंस टाइप प्राप्त करता है"],
+        "answer_en": "Gets constructor parameter types",
+        "answer_hi": "कंस्ट्रक्टर पैरामीटर टाइप प्राप्त करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 76,
-        "question_en": "The IUPAC name of CH₃-O-CH₃ is:",
-        "question_hi": "CH₃-O-CH₃ का IUPAC नाम है:",
-        "options_en": ["Dimethyl ether", "Methoxymethane", "Ethoxyethane", "Both 1 and 2"],
-        "options_hi": ["डाइमेथिल ईथर", "मेथॉक्सीमेथेन", "एथॉक्सीएथेन", "1 और 2 दोनों"],
-        "answer_en": "Both 1 and 2",
-        "answer_hi": "1 और 2 दोनों",
+        "question_en": "What is InstanceType<T>?",
+        "question_hi": "InstanceType<T> क्या है?",
+        "options_en": ["Gets instance type of constructor", "Gets return type", "Gets parameter types", "Gets constructor type"],
+        "options_hi": ["कंस्ट्रक्टर का इंस्टेंस टाइप प्राप्त करता है", "रिटर्न टाइप प्राप्त करता है", "पैरामीटर टाइप प्राप्त करता है", "कंस्ट्रक्टर टाइप प्राप्त करता है"],
+        "answer_en": "Gets instance type of constructor",
+        "answer_hi": "कंस्ट्रक्टर का इंस्टेंस टाइप प्राप्त करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 77,
-        "question_en": "The hybridization of carbon in C₂H₂ is:",
-        "question_hi": "C₂H₂ में कार्बन का संकरण है:",
-        "options_en": ["sp", "sp²", "sp³", "sp³d"],
-        "options_hi": ["sp", "sp²", "sp³", "sp³d"],
-        "answer_en": "sp",
-        "answer_hi": "sp",
+        "question_en": "What is ThisParameterType<T>?",
+        "question_hi": "ThisParameterType<T> क्या है?",
+        "options_en": ["Gets type of 'this' parameter", "Gets return type", "Gets parameter types", "Gets instance type"],
+        "options_hi": ["'this' पैरामीटर का टाइप प्राप्त करता है", "रिटर्न टाइप प्राप्त करता है", "पैरामीटर टाइप प्राप्त करता है", "इंस्टेंस टाइप प्राप्त करता है"],
+        "answer_en": "Gets type of 'this' parameter",
+        "answer_hi": "'this' पैरामीटर का टाइप प्राप्त करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 78,
-        "question_en": "The number of π-bonds in C₆H₆ is:",
-        "question_hi": "C₆H₆ में π-बंधों की संख्या है:",
-        "options_en": ["3", "6", "9", "12"],
-        "options_hi": ["3", "6", "9", "12"],
-        "answer_en": "3",
-        "answer_hi": "3",
+        "question_en": "What is OmitThisParameter<T>?",
+        "question_hi": "OmitThisParameter<T> क्या है?",
+        "options_en": ["Removes 'this' parameter from function type", "Adds 'this' parameter", "Gets 'this' parameter", "Changes 'this' parameter"],
+        "options_hi": ["फंक्शन टाइप से 'this' पैरामीटर को हटाता है", "'this' पैरामीटर जोड़ता है", "'this' पैरामीटर प्राप्त करता है", "'this' पैरामीटर बदलता है"],
+        "answer_en": "Removes 'this' parameter from function type",
+        "answer_hi": "फंक्शन टाइप से 'this' पैरामीटर को हटाता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 79,
-        "question_en": "The catalyst used in the contact process is:",
-        "question_hi": "संपर्क प्रक्रम में प्रयुक्त उत्प्रेरक है:",
-        "options_en": ["Fe", "Ni", "V₂O₅", "Pt"],
-        "options_hi": ["Fe", "Ni", "V₂O₅", "Pt"],
-        "answer_en": "V₂O₅",
-        "answer_hi": "V₂O₅",
+        "question_en": "What are conditional types?",
+        "question_hi": "कंडीशनल टाइप क्या हैं?",
+        "options_en": ["Types that depend on conditions", "Basic types", "Function types", "Class types"],
+        "options_hi": ["ऐसे टाइप जो शर्तों पर निर्भर करते हैं", "बेसिक टाइप", "फंक्शन टाइप", "क्लास टाइप"],
+        "answer_en": "Types that depend on conditions",
+        "answer_hi": "ऐसे टाइप जो शर्तों पर निर्भर करते हैं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 80,
-        "question_en": "The element with the highest electronegativity is:",
-        "question_hi": "सबसे अधिक विद्युतऋणात्मकता वाला तत्व है:",
-        "options_en": ["Fluorine", "Chlorine", "Oxygen", "Nitrogen"],
-        "options_hi": ["फ्लोरीन", "क्लोरीन", "ऑक्सीजन", "नाइट्रोजन"],
-        "answer_en": "Fluorine",
-        "answer_hi": "फ्लोरीन",
+        "question_en": "What is the syntax for conditional types?",
+        "question_hi": "कंडीशनल टाइप के लिए सिंटैक्स क्या है?",
+        "options_en": ["T extends U ? X : Y", "T extends U : X else Y", "if T extends U then X else Y", "T extends U -> X : Y"],
+        "options_hi": ["T extends U ? X : Y", "T extends U : X else Y", "if T extends U then X else Y", "T extends U -> X : Y"],
+        "answer_en": "T extends U ? X : Y",
+        "answer_hi": "T extends U ? X : Y",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 81,
-        "question_en": "The value of ∫(eˣ + 1) dx is:",
-        "question_hi": "∫(eˣ + 1) dx का मान है:",
-        "options_en": ["eˣ + x + C", "eˣ + C", "eˣ + x²/2 + C", "eˣ + 1 + C"],
-        "options_hi": ["eˣ + x + C", "eˣ + C", "eˣ + x²/2 + C", "eˣ + 1 + C"],
-        "answer_en": "eˣ + x + C",
-        "answer_hi": "eˣ + x + C",
+        "question_en": "What is 'infer' keyword in conditional types?",
+        "question_hi": "कंडीशनल टाइप में 'infer' कीवर्ड क्या है?",
+        "options_en": ["Infers types within conditional types", "Checks conditions", "Defines types", "Creates types"],
+        "options_hi": ["कंडीशनल टाइप के भीतर टाइप को इन्फर करता है", "शर्तों की जाँच करता है", "टाइप को परिभाषित करता है", "टाइप बनाता है"],
+        "answer_en": "Infers types within conditional types",
+        "answer_hi": "कंडीशनल टाइप के भीतर टाइप को इन्फर करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 82,
-        "question_en": "The number of terms in a quadratic equation is:",
-        "question_hi": "एक द्विघात समीकरण में पदों की संख्या है:",
-        "options_en": ["1", "2", "3", "4"],
-        "options_hi": ["1", "2", "3", "4"],
-        "answer_en": "3",
-        "answer_hi": "3",
+        "question_en": "What are mapped types?",
+        "question_hi": "मैप्ड टाइप क्या हैं?",
+        "options_en": ["Types that transform properties", "Basic types", "Function types", "Class types"],
+        "options_hi": ["ऐसे टाइप जो प्रॉपर्टी को ट्रांसफॉर्म करते हैं", "बेसिक टाइप", "फंक्शन टाइप", "क्लास टाइप"],
+        "answer_en": "Types that transform properties",
+        "answer_hi": "ऐसे टाइप जो प्रॉपर्टी को ट्रांसफॉर्म करते हैं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 83,
-        "question_en": "The sum of the roots of the equation x² - 5x + 6 = 0 is:",
-        "question_hi": "समीकरण x² - 5x + 6 = 0 के मूलों का योग है:",
-        "options_en": ["5", "-5", "6", "-6"],
-        "options_hi": ["5", "-5", "6", "-6"],
-        "answer_en": "5",
-        "answer_hi": "5",
+        "question_en": "What is the syntax for mapped types?",
+        "question_hi": "मैप्ड टाइप के लिए सिंटैक्स क्या है?",
+        "options_en": ["{ [K in keyof T]: U }", "{ K in keyof T: U }", "{ [K: keyof T]: U }", "{ for K in keyof T: U }"],
+        "options_hi": ["{ [K in keyof T]: U }", "{ K in keyof T: U }", "{ [K: keyof T]: U }", "{ for K in keyof T: U }"],
+        "answer_en": "{ [K in keyof T]: U }",
+        "answer_hi": "{ [K in keyof T]: U }",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 84,
-        "question_en": "The slope of the line y = 2x + 3 is:",
-        "question_hi": "रेखा y = 2x + 3 की ढाल है:",
-        "options_en": ["2", "3", "1/2", "-2"],
-        "options_hi": ["2", "3", "1/2", "-2"],
-        "answer_en": "2",
-        "answer_hi": "2",
+        "question_en": "What are template literal types?",
+        "question_hi": "टेम्पलेट लिटरल टाइप क्या हैं?",
+        "options_en": ["String types with patterns", "Number types", "Boolean types", "Object types"],
+        "options_hi": ["पैटर्न वाले स्ट्रिंग टाइप", "नंबर टाइप", "बूलियन टाइप", "ऑब्जेक्ट टाइप"],
+        "answer_en": "String types with patterns",
+        "answer_hi": "पैटर्न वाले स्ट्रिंग टाइप",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 85,
-        "question_en": "The value of log₁₀100 is:",
-        "question_hi": "log₁₀100 का मान है:",
-        "options_en": ["1", "2", "10", "100"],
-        "options_hi": ["1", "2", "10", "100"],
-        "answer_en": "2",
-        "answer_hi": "2",
+        "question_en": "What is the syntax for template literal types?",
+        "question_hi": "टेम्पलेट लिटरल टाइप के लिए सिंटैक्स क्या है?",
+        "options_en": ["`Hello ${World}`", "template `Hello ${World}`", "`Hello ${string}`", "All of the above"],
+        "options_hi": ["`Hello ${World}`", "template `Hello ${World}`", "`Hello ${string}`", "उपरोक्त सभी"],
+        "answer_en": "`Hello ${string}`",
+        "answer_hi": "`Hello ${string}`",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 86,
-        "question_en": "The probability of getting a head when a coin is tossed is:",
-        "question_hi": "एक सिक्का उछालने पर चित आने की प्रायिकता है:",
-        "options_en": ["0", "0.5", "1", "2"],
-        "options_hi": ["0", "0.5", "1", "2"],
-        "answer_en": "0.5",
-        "answer_hi": "0.5",
+        "question_en": "What is 'keyof' operator?",
+        "question_hi": "'keyof' ऑपरेटर क्या है?",
+        "options_en": ["Gets keys of object type", "Gets values of object", "Checks key existence", "Creates new keys"],
+        "options_hi": ["ऑब्जेक्ट टाइप की कुंजियाँ प्राप्त करता है", "ऑब्जेक्ट के मान प्राप्त करता है", "कुंजी के अस्तित्व की जाँच करता है", "नई कुंजियाँ बनाता है"],
+        "answer_en": "Gets keys of object type",
+        "answer_hi": "ऑब्जेक्ट टाइप की कुंजियाँ प्राप्त करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 87,
-        "question_en": "The area of a triangle with base 4 cm and height 6 cm is:",
-        "question_hi": "4 cm आधार और 6 cm ऊंचाई वाले त्रिभुज का क्षेत्रफल है:",
-        "options_en": ["10 cm²", "12 cm²", "24 cm²", "48 cm²"],
-        "options_hi": ["10 cm²", "12 cm²", "24 cm²", "48 cm²"],
-        "answer_en": "12 cm²",
-        "answer_hi": "12 cm²",
+        "question_en": "What is 'typeof' operator in types?",
+        "question_hi": "टाइप में 'typeof' ऑपरेटर क्या है?",
+        "options_en": ["Gets type of value", "Gets value of type", "Checks type", "Creates type"],
+        "options_hi": ["मान का टाइप प्राप्त करता है", "टाइप का मान प्राप्त करता है", "टाइप की जाँच करता है", "टाइप बनाता है"],
+        "answer_en": "Gets type of value",
+        "answer_hi": "मान का टाइप प्राप्त करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 88,
-        "question_en": "The value of sin(30°) is:",
-        "question_hi": "sin(30°) का मान है:",
-        "options_en": ["0", "0.5", "1/√2", "√3/2"],
-        "options_hi": ["0", "0.5", "1/√2", "√3/2"],
-        "answer_en": "0.5",
-        "answer_hi": "0.5",
+        "question_en": "What is index access type?",
+        "question_hi": "इंडेक्स एक्सेस टाइप क्या है?",
+        "options_en": ["Accessing type using index", "Accessing value using index", "Creating index", "Deleting index"],
+        "options_hi": ["इंडेक्स का उपयोग करके टाइप एक्सेस करना", "इंडेक्स का उपयोग करके मान एक्सेस करना", "इंडेक्स बनाना", "इंडेक्स डिलीट करना"],
+        "answer_en": "Accessing type using index",
+        "answer_hi": "इंडेक्स का उपयोग करके टाइप एक्सेस करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 89,
-        "question_en": "The number of vertices in a cube is:",
-        "question_hi": "एक घन में शीर्षों की संख्या है:",
-        "options_en": ["4", "6", "8", "12"],
-        "options_hi": ["4", "6", "8", "12"],
-        "answer_en": "8",
-        "answer_hi": "8",
+        "question_en": "What is the syntax for index access type?",
+        "question_hi": "इंडेक्स एक्सेस टाइप के लिए सिंटैक्स क्या है?",
+        "options_en": ["T[K]", "T.K", "T->K", "T(K)"],
+        "options_hi": ["T[K]", "T.K", "T->K", "T(K)"],
+        "answer_en": "T[K]",
+        "answer_hi": "T[K]",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 90,
-        "question_en": "The value of (1 + i)(1 - i) is:",
-        "question_hi": "(1 + i)(1 - i) का मान है:",
-        "options_en": ["0", "1", "2", "2i"],
-        "options_hi": ["0", "1", "2", "2i"],
-        "answer_en": "2",
-        "answer_hi": "2",
+        "question_en": "What are recursive types?",
+        "question_hi": "रिकर्सिव टाइप क्या हैं?",
+        "options_en": ["Types that reference themselves", "Basic types", "Function types", "Class types"],
+        "options_hi": ["ऐसे टाइप जो स्वयं को रेफरेंस करते हैं", "बेसिक टाइप", "फंक्शन टाइप", "क्लास टाइप"],
+        "answer_en": "Types that reference themselves",
+        "answer_hi": "ऐसे टाइप जो स्वयं को रेफरेंस करते हैं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 91,
-        "question_en": "The phenomenon of light responsible for the blue color of the sky is:",
-        "question_hi": "आकाश के नीले रंग के लिए जिम्मेदार प्रकाश की घटना है:",
-        "options_en": ["Reflection", "Refraction", "Scattering", "Dispersion"],
-        "options_hi": ["परावर्तन", "अपवर्तन", "प्रकीर्णन", "विक्षेपण"],
-        "answer_en": "Scattering",
-        "answer_hi": "प्रकीर्णन",
+        "question_en": "How do you define a recursive type?",
+        "question_hi": "रिकर्सिव टाइप कैसे परिभाषित करते हैं?",
+        "options_en": ["type Tree = { value: number; children: Tree[] }", "type Tree = { value: number; children: Array<Tree> }", "Both A and B", "None of the above"],
+        "options_hi": ["type Tree = { value: number; children: Tree[] }", "type Tree = { value: number; children: Array<Tree> }", "A और B दोनों", "उपरोक्त में से कोई नहीं"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 92,
-        "question_en": "The unit of inductance is:",
-        "question_hi": "प्रेरकत्व की इकाई है:",
-        "options_en": ["Farad", "Henry", "Ohm", "Tesla"],
-        "options_hi": ["फैरड", "हेनरी", "ओम", "टेस्ला"],
-        "answer_en": "Henry",
-        "answer_hi": "हेनरी",
+        "question_en": "What is 'asserts' keyword?",
+        "question_hi": "'asserts' कीवर्ड क्या है?",
+        "options_en": ["Assertion functions", "Type assertions", "Value assertions", "All of the above"],
+        "options_hi": ["असर्शन फंक्शन", "टाइप असर्शन", "वैल्यू असर्शन", "उपरोक्त सभी"],
+        "answer_en": "Assertion functions",
+        "answer_hi": "असर्शन फंक्शन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 93,
-        "question_en": "In a transistor, the relation between α (alpha) and β (beta) is:",
-        "question_hi": "एक ट्रांजिस्टर में, α (अल्फा) और β (बीटा) के बीच संबंध है:",
-        "options_en": ["β = α/(1-α)", "α = β/(1+β)", "Both 1 and 2", "None of these"],
-        "options_hi": ["β = α/(1-α)", "α = β/(1+β)", "1 और 2 दोनों", "इनमें से कोई नहीं"],
-        "answer_en": "Both 1 and 2",
-        "answer_hi": "1 और 2 दोनों",
+        "question_en": "What is 'satisfies' operator?",
+        "question_hi": "'satisfies' ऑपरेटर क्या है?",
+        "options_en": ["Checks if value satisfies type", "Checks if type satisfies value", "Creates type", "Deletes type"],
+        "options_hi": ["जाँच करता है कि मान टाइप को संतुष्ट करता है", "जाँच करता है कि टाइप मान को संतुष्ट करता है", "टाइप बनाता है", "टाइप डिलीट करता है"],
+        "answer_en": "Checks if value satisfies type",
+        "answer_hi": "जाँच करता है कि मान टाइप को संतुष्ट करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 94,
-        "question_en": "The energy gap between valence band and conduction band is maximum in:",
-        "question_hi": "संयोजकता बैंड और चालन बैंड के बीच ऊर्जा अंतर अधिकतम होता है:",
-        "options_en": ["Metals", "Semiconductors", "Insulators", "Superconductors"],
-        "options_hi": ["धातुओं में", "अर्धचालकों में", "कुचालकों में", "अतिचालकों में"],
-        "answer_en": "Insulators",
-        "answer_hi": "कुचालकों में",
+        "question_en": "What is 'const' assertion?",
+        "question_hi": "'const' असर्शन क्या है?",
+        "options_en": ["Makes values readonly literals", "Makes variables constant", "Both A and B", "None of the above"],
+        "options_hi": ["मानों को रीडओनली लिटरल बनाता है", "वेरिएबल को कॉन्स्टेंट बनाता है", "A और B दोनों", "उपरोक्त में से कोई नहीं"],
+        "answer_en": "Makes values readonly literals",
+        "answer_hi": "मानों को रीडओनली लिटरल बनाता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 95,
-        "question_en": "The ratio of intensities in Young's double slit experiment is 1:9. The ratio of amplitudes is:",
-        "question_hi": "यंग के द्विक रेखा-छिद्र प्रयोग में तीव्रताओं का अनुपात 1:9 है। आयामों का अनुपात है:",
-        "options_en": ["1:3", "1:9", "1:√3", "1:81"],
-        "options_hi": ["1:3", "1:9", "1:√3", "1:81"],
-        "answer_en": "1:3",
-        "answer_hi": "1:3",
+        "question_en": "What is 'as const' used for?",
+        "question_hi": "'as const' का उपयोग किसके लिए किया जाता है?",
+        "options_en": ["To make values readonly literals", "To make variables constant", "To assert types", "To check types"],
+        "options_hi": ["मानों को रीडओनली लिटरल बनाने के लिए", "वेरिएबल को कॉन्स्टेंट बनाने के लिए", "टाइप को असर्ट करने के लिए", "टाइप की जाँच करने के लिए"],
+        "answer_en": "To make values readonly literals",
+        "answer_hi": "मानों को रीडओनली लिटरल बनाने के लिए",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 96,
-        "question_en": "The dimensional formula for surface tension is:",
-        "question_hi": "पृष्ठ तनाव का विमीय सूत्र है:",
-        "options_en": ["[MLT⁻²]", "[ML⁻¹T⁻²]", "[ML²T⁻²]", "[MT⁻²]"],
-        "options_hi": ["[MLT⁻²]", "[ML⁻¹T⁻²]", "[ML²T⁻²]", "[MT⁻²]"],
-        "answer_en": "[MT⁻²]",
-        "answer_hi": "[MT⁻²]",
+        "question_en": "What are declaration files?",
+        "question_hi": "डिक्लेरेशन फाइल क्या हैं?",
+        "options_en": ["Files with type declarations", "Files with implementation", "Files with tests", "Files with configuration"],
+        "options_hi": ["टाइप डिक्लेरेशन वाली फाइल", "इम्प्लीमेंटेशन वाली फाइल", "टेस्ट वाली फाइल", "कॉन्फिगरेशन वाली फाइल"],
+        "answer_en": "Files with type declarations",
+        "answer_hi": "टाइप डिक्लेरेशन वाली फाइल",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 97,
-        "question_en": "A body is projected horizontally with velocity 10 m/s from a height of 20 m. Its time of flight is: (g = 10 m/s²)",
-        "question_hi": "एक पिंड को 20 m की ऊंचाई से 10 m/s के वेग से क्षैतिज रूप से प्रक्षेपित किया जाता है। इसका उड़ान काल है: (g = 10 m/s²)",
-        "options_en": ["1 s", "2 s", "3 s", "4 s"],
-        "options_hi": ["1 s", "2 s", "3 s", "4 s"],
-        "answer_en": "2 s",
-        "answer_hi": "2 s",
+        "question_en": "What is the extension for declaration files?",
+        "question_hi": "डिक्लेरेशन फाइल के लिए एक्सटेंशन क्या है?",
+        "options_en": [".d.ts", ".declaration", ".types", ".d"],
+        "options_hi": [".d.ts", ".declaration", ".types", ".d"],
+        "answer_en": ".d.ts",
+        "answer_hi": ".d.ts",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 98,
-        "question_en": "The efficiency of a machine can never be:",
-        "question_hi": "एक मशीन की दक्षता कभी नहीं हो सकती:",
-        "options_en": ["50%", "75%", "90%", "100%"],
-        "options_hi": ["50%", "75%", "90%", "100%"],
-        "answer_en": "100%",
-        "answer_hi": "100%",
+        "question_en": "What is 'declare' keyword?",
+        "question_hi": "'declare' कीवर्ड क्या है?",
+        "options_en": ["Declares types without implementation", "Implements types", "Defines values", "Creates values"],
+        "options_hi": ["बिना इम्प्लीमेंटेशन के टाइप घोषित करता है", "टाइप को इम्प्लीमेंट करता है", "मान को परिभाषित करता है", "मान बनाता है"],
+        "answer_en": "Declares types without implementation",
+        "answer_hi": "बिना इम्प्लीमेंटेशन के टाइप घोषित करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 99,
-        "question_en": "The resistance of a conductor increases with:",
-        "question_hi": "एक चालक का प्रतिरोध बढ़ता है:",
-        "options_en": ["Increase in temperature", "Decrease in temperature", "Increase in cross-section", "Decrease in length"],
-        "options_hi": ["तापमान में वृद्धि", "तापमान में कमी", "अनुप्रस्थ काट में वृद्धि", "लंबाई में कमी"],
-        "answer_en": "Increase in temperature",
-        "answer_hi": "तापमान में वृद्धि",
+        "question_en": "What is global declaration?",
+        "question_hi": "ग्लोबल डिक्लेरेशन क्या है?",
+        "options_en": ["Declaration in global scope", "Declaration in local scope", "Declaration in module", "Declaration in function"],
+        "options_hi": ["ग्लोबल स्कोप में डिक्लेरेशन", "लोकल स्कोप में डिक्लेरेशन", "मॉड्यूल में डिक्लेरेशन", "फंक्शन में डिक्लेरेशन"],
+        "answer_en": "Declaration in global scope",
+        "answer_hi": "ग्लोबल स्कोप में डिक्लेरेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 100,
-        "question_en": "The ratio of specific heats (γ) for a monoatomic gas is:",
-        "question_hi": "एक एकपरमाणुक गैस के लिए विशिष्ट ऊष्माओं का अनुपात (γ) है:",
-        "options_en": ["1.33", "1.4", "1.67", "2"],
-        "options_hi": ["1.33", "1.4", "1.67", "2"],
-        "answer_en": "1.67",
-        "answer_hi": "1.67",
+        "question_en": "What is module declaration?",
+        "question_hi": "मॉड्यूल डिक्लेरेशन क्या है?",
+        "options_en": ["Declaration for external modules", "Declaration for internal modules", "Declaration for classes", "Declaration for functions"],
+        "options_hi": ["एक्सटर्नल मॉड्यूल के लिए डिक्लेरेशन", "इंटर्नल मॉड्यूल के लिए डिक्लेरेशन", "क्लास के लिए डिक्लेरेशन", "फंक्शन के लिए डिक्लेरेशन"],
+        "answer_en": "Declaration for external modules",
+        "answer_hi": "एक्सटर्नल मॉड्यूल के लिए डिक्लेरेशन",
         "attempted": false,
         "selected": ""
     }
-
-// Add more questions here...
 ];
 
-
-let currentQuestion = 0; 
+let currentQuestion = 0;
 let language = "en";
-// let timeLeft = 180 * 60; // 180 minutes
-let timeLeft = 60 * 60; // 60 minutes
+let timeLeft = 60 * 60; 
 let timerInterval;
 
-// ----------------- Quiz Logic -----------------
+// ----------------- Load Question -----------------
 function loadQuestion(index) {
     const q = questions[index];
-    document.getElementById("question").textContent = `${q.num}. ${
-        language === "en" ? q.question_en : q.question_hi
-    }`;
-    document.getElementById("questionCounter").textContent = `Question ${index + 1} of ${questions.length}`;
+    if (!q) return; //  undefined error fix
+   questions[index].visited = true;
+    document.getElementById("question").textContent =
+       `${q.num}. ${language === "en" ? q.question_en : q.question_hi}`;
+
+    document.getElementById("questionCounter").textContent =
+       ` Question ${index + 1} of ${questions.length}`;
 
     const optionsElement = document.getElementById("options");
     optionsElement.innerHTML = "";
 
     const options = language === "en" ? q.options_en : q.options_hi;
 
-    options.forEach((option) => {
+    options.forEach(option => {
         const isSelected = q.selected === option;
-        const optionDiv = document.createElement("div");
-        optionDiv.className = "option-box";
-        optionDiv.style = `
+
+        const div = document.createElement("div");
+        div.className = "option-box";
+
+        div.style = `
             border: 2px solid ${isSelected ? "#007bff" : "#ccc"};
             background-color: ${isSelected ? "#e7f1ff" : "white"};
             padding: 10px;
             border-radius: 8px;
             margin: 6px 0;
             cursor: pointer;
-            transition: all 0.2s;
         `;
 
-        optionDiv.innerHTML = `
-            <input type="radio" name="option" value="${option}" ${isSelected ? "checked" : ""} style="margin-right:8px;">
+        div.innerHTML = `
+            <input type="radio" name="option" value="${option}" 
+            ${isSelected ? "checked" : ""} style="margin-right:8px;">
             ${option}
         `;
 
-        optionDiv.addEventListener("click", () => {
+        div.addEventListener("click", () => {
             markAttempted(index, option);
             loadQuestion(index);
         });
 
-        optionsElement.appendChild(optionDiv);
+        optionsElement.appendChild(div);
     });
 
     updateNavigation();
 }
 
+// ----------------- Attempt Mark -----------------
 function markAttempted(index, selectedAnswer) {
     questions[index].attempted = true;
     questions[index].selected = selectedAnswer;
     updateNavigation();
 }
 
+// ----------------- Next / Previous -----------------
 function nextQuestion() {
     if (currentQuestion < questions.length - 1) {
         currentQuestion++;
@@ -1179,229 +1181,122 @@ function changeLanguage() {
     loadQuestion(currentQuestion);
 }
 
+// ----------------- Final Submit -----------------
 function submitQuiz() {
-    clearInterval(timerInterval);
-    let attempted = 0,
-        notAttempted = 0,
-        score = 0;
+    let confirmation = confirm("Are you sure you want to submit the test?");
+    if (!confirmation) return;
 
-    questions.forEach((q) => {
+    let attempted = 0;
+    let notAttempted = 0;
+    let score = 0;
+    const results = [];
+
+    questions.forEach(q => {
         if (q.attempted) {
             attempted++;
-            if (q.selected === q.answer_en || q.selected === q.answer_hi) score++;
-        } else notAttempted++;
+
+            if (q.selected === q.answer_en || q.selected === q.answer_hi) {
+                score++;
+            }
+        } else {
+            notAttempted++;
+        }
+
+        results.push({
+            question: language === "en" ? q.question_en : q.question_hi,
+            selected: q.selected || "Not Answered",
+            correct: language === "en" ? q.answer_en : q.answer_hi
+        });
     });
 
-    alert(
-        `Quiz submitted!\nAttempted: ${attempted}\nNot Attempted: ${notAttempted}\nScore: ${score}/${questions.length}`
-    );
+    localStorage.setItem("attempted", attempted);
+    localStorage.setItem("notAttempted", notAttempted);
+    localStorage.setItem("score", score);
+    localStorage.setItem("results", JSON.stringify(results));
+
+    let viewResult = confirm("Test submitted! Do you want to view result?");
+    if (viewResult) {
+        window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
+    }
 }
 
+// ----------------- Navigation Circles -----------------
+function updateNavigation() {
+    const nav = document.getElementById("circleContainer");
+    nav.innerHTML = "";
+
+    questions.forEach((q, i) => {
+        let color = "gray"; // default: not visited
+
+        if (i === currentQuestion) {
+            color = "blue"; // current question
+        } 
+        else if (q.attempted) {
+            color = "green"; // answered
+        } 
+        else if (q.visited) {
+            color = "white"; // visited but not answered
+        }
+
+        nav.innerHTML += `
+            <div class="circle" style="background:${color}; border:1px solid black;"
+            onclick="jumpToQuestion(${i})">${i + 1}</div>
+        `;
+    });
+}
+
+function jumpToQuestion(index) {
+    currentQuestion = index;
+    loadQuestion(index);
+}
+
+// ----------------- Timer -----------------
 function startTimer() {
     const timerElement = document.getElementById("timer");
-    clearInterval(timerInterval);
+
     timerInterval = setInterval(() => {
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
             alert("Time's up!");
             submitQuiz();
         } else {
-            const hours = Math.floor(timeLeft / 3600);
-            const minutes = Math.floor((timeLeft % 3600) / 60);
-            const seconds = timeLeft % 60;
-            timerElement.textContent = `Time Left: ${hours
-                .toString()
-                .padStart(2, "0")}:${minutes
-                .toString()
-                .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+            const hours = String(Math.floor(timeLeft / 3600)).padStart(2, "0");
+            const minutes = String(Math.floor((timeLeft % 3600) / 60)).padStart(2, "0");
+            const seconds = String(timeLeft % 60).padStart(2, "0");
+
+            timerElement.textContent = `Time Left: ${hours}:${minutes}:${seconds}`;
             timeLeft--;
         }
     }, 1000);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////all file and folder me code add karna hai 
-
-
-// submit 
-function jumpToQuestion(index) {
-            currentQuestion = index;
-            loadQuestion(index);
-        }
-
-        function submitQuiz() {
-            let confirmation = confirm("Are you sure you want to submit the test?");
-            
-            if (!confirmation) {
-                return; // अगर यूज़र 'Cancel' करता है तो आगे नहीं बढ़ेंगे
-            }
-
-            let attempted = 0;
-            let notAttempted = 0;
-            let score = 0;
-            const results = [];
-
-            questions.forEach(q => {
-                if (q.attempted) {
-                    attempted++;
-                    if (q.selected === q.answer) {
-                        score++;
-                    }
-                } else {
-                    notAttempted++;
-                }
-                results.push({ question: q.question, selected: q.selected || "Not Answered", correct: q.answer });
-            });
-
-            localStorage.setItem("attempted", attempted);
-            localStorage.setItem("notAttempted", notAttempted);
-            localStorage.setItem("score", score);
-            localStorage.setItem("results", JSON.stringify(results));
-
-            // रिजल्ट देखने से पहले एक और कन्फर्मेशन ले सकते हैं
-            let viewResult = confirm("Test submitted successfully! Do you want to view your result?");
-            if (viewResult) {
-                window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
-            }
-        }
-        window.onload = () => {
-            loadQuestion(currentQuestion);
-        };
-
-
-function updateNavigation() {
-    const nav = document.getElementById("circleContainer");
-    nav.innerHTML = "";
-    questions.forEach((q, i) => {
-        let color = "gray";
-        if (i === currentQuestion) color = "blue";
-        else if (q.attempted) color = "green";
-        nav.innerHTML += `<div class='circle' style='background-color:${color}' onclick='loadQuestion(${i})'>${i + 1}</div>`;
-    });
-}
-
-// ----------------- Camera & Movement Logic -----------------
+// ----------------- Camera & Movement Detection -----------------
 let videoStream;
 let movementCount = 0;
 
 function startCamera() {
     const container = document.createElement("div");
     container.id = "camera-container";
-    container.style.position = "fixed";
-    container.style.top = "10px";
-    container.style.left = "10px"; // ✅ Left side
-    container.style.width = "130px";
-    container.style.height = "130px";
-    container.style.zIndex = "9999";
-    container.style.borderRadius = "50%";
-    container.style.overflow = "hidden";
-    container.style.border = "3px solid red";
-    container.style.boxShadow = "0 0 10px rgba(0,0,0,0.3)";
-    container.style.cursor = "grab";
-    container.style.minWidth = "80px";
-    container.style.minHeight = "80px";
-    container.style.maxWidth = "250px";
-    container.style.maxHeight = "250px";
-    container.style.background = "#000";
+    container.style = `
+        position:fixed; top:10px; left:10px; width:130px; height:130px;
+        border-radius:50%; overflow:hidden; border:3px solid red; z-index:9999;
+    `;
+
     document.body.appendChild(container);
 
     const video = document.createElement("video");
-    video.setAttribute("autoplay", true);
-    video.setAttribute("playsinline", true);
-    video.style.width = "100%";
-    video.style.height = "100%";
-    video.style.objectFit = "cover";
+    video.autoplay = true;
+    video.playsinline = true;
+    video.style = "width:100%; height:100%; object-fit:cover;";
     container.appendChild(video);
 
-    // ✅ Resize handle
-    const resizeHandle = document.createElement("div");
-    resizeHandle.style.position = "absolute";
-    resizeHandle.style.bottom = "2px";
-    resizeHandle.style.right = "2px";
-    resizeHandle.style.width = "15px";
-    resizeHandle.style.height = "15px";
-    resizeHandle.style.background = "rgba(255,255,255,0.7)";
-    resizeHandle.style.borderRadius = "4px";
-    resizeHandle.style.cursor = "se-resize";
-    container.appendChild(resizeHandle);
-
-    // ✅ Drag logic
-    let isDragging = false;
-    let offsetX, offsetY;
-
-    container.addEventListener("mousedown", (e) => {
-        if (e.target === resizeHandle) return;
-        isDragging = true;
-        offsetX = e.clientX - container.offsetLeft;
-        offsetY = e.clientY - container.offsetTop;
-        container.style.cursor = "grabbing";
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isDragging) return;
-        let x = e.clientX - offsetX;
-        let y = e.clientY - offsetY;
-        x = Math.max(0, Math.min(window.innerWidth - container.offsetWidth, x));
-        y = Math.max(0, Math.min(window.innerHeight - container.offsetHeight, y));
-        container.style.left = `${x}px`;
-        container.style.top = `${y}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isDragging = false;
-        container.style.cursor = "grab";
-    });
-
-    // ✅ Resize logic
-    let isResizing = false;
-    let startWidth, startHeight, startX, startY;
-
-    resizeHandle.addEventListener("mousedown", (e) => {
-        e.stopPropagation();
-        isResizing = true;
-        startWidth = container.offsetWidth;
-        startHeight = container.offsetHeight;
-        startX = e.clientX;
-        startY = e.clientY;
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isResizing) return;
-        const dx = e.clientX - startX;
-        const dy = e.clientY - startY;
-        const newSize = Math.max(80, Math.min(250, Math.max(startWidth + dx, startHeight + dy)));
-        container.style.width = `${newSize}px`;
-        container.style.height = `${newSize}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isResizing = false;
-    });
-
-    // ✅ Camera stream
     navigator.mediaDevices.getUserMedia({ video: true })
         .then(stream => {
             video.srcObject = stream;
             videoStream = stream;
             detectMovement(video);
         })
-        .catch(err => {
-            console.error("Camera error:", err);
-            alert("Camera not accessible!");
-        });
+        .catch(() => alert("Camera access denied!"));
 }
 
 function detectMovement(video) {
@@ -1409,51 +1304,51 @@ function detectMovement(video) {
     const ctx = canvas.getContext("2d");
     canvas.width = 160;
     canvas.height = 160;
-    let lastImageData = null;
+
+    let lastData = null;
 
     setInterval(() => {
-        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(video, 0, 0, 160, 160);
+        const data = ctx.getImageData(0, 0, 160, 160);
 
-        if (lastImageData) {
+        if (lastData) {
             let diff = 0;
-            for (let i = 0; i < imageData.data.length; i += 4) {
-                diff += Math.abs(imageData.data[i] - lastImageData.data[i]);
+            for (let i = 0; i < data.data.length; i += 4) {
+                diff += Math.abs(data.data[i] - lastData.data[i]);
             }
 
             if (diff > 1000000) {
                 movementCount++;
-                if (movementCount === 1) {
-                    alert("⚠️ Alert 1: Face is not move");
-                } else if (movementCount === 2) {
-                    alert("⚠️ Alert 2: Head is not move");
-                } else if (movementCount === 3) {
-                    alert("⚠️ Alert 3: Test series is restarting...");
+
+                if (movementCount === 1) alert("⚠ Alert 1: No movement detected!");
+                if (movementCount === 2) alert("⚠ Alert 2: Head not moving!");
+                if (movementCount === 3) {
+                    alert("⚠ Alert 3: Restarting test...");
                     restartTest();
                 }
             }
         }
-        lastImageData = imageData;
+        lastData = data;
+
     }, 2000);
 }
 
 function restartTest() {
-    if (videoStream) {
-        videoStream.getTracks().forEach(track => track.stop());
-    }
-    const camContainer = document.getElementById("camera-container");
-    if (camContainer) camContainer.remove();
+    if (videoStream) videoStream.getTracks().forEach(t => t.stop());
+
+    const cam = document.getElementById("camera-container");
+    if (cam) cam.remove();
 
     movementCount = 0;
     currentQuestion = 0;
-    timeLeft = 180 * 60;
+    timeLeft = 60 * 60;
 
     questions.forEach(q => {
         q.attempted = false;
         q.selected = null;
     });
 
-    loadQuestion(currentQuestion);
+    loadQuestion(0);
     startTimer();
     startCamera();
 }
@@ -1462,8 +1357,5 @@ function restartTest() {
 window.onload = function () {
     loadQuestion(currentQuestion);
     startTimer();
-    startCamera(); // ✅ Camera starts with test
+    startCamera();
 };
-
-
-///////////////////////////////////////

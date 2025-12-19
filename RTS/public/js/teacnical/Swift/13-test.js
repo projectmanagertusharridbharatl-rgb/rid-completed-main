@@ -1,1122 +1,1120 @@
 const questions = [
     {
         "num": 1,
-        "question_en": "Which is the summer capital of Jammu and Kashmir?",
-        "question_hi": "जम्मू और कश्मीर की ग्रीष्मकालीन राजधानी कौन सी है?",
-        "options_en": ["Jammu", "Srinagar", "Leh", "Anantnag"],
-        "options_hi": ["जम्मू", "श्रीनगर", "लेह", "अनंतनाग"],
-        "answer_en": "Srinagar",
-        "answer_hi": "श्रीनगर",
+        "question_en": "What is the purpose of Rust's module system?",
+        "question_hi": "Rust के मॉड्यूल सिस्टम का उद्देश्य क्या है?",
+        "options_en": ["Code organization and privacy", "Memory management", "Error handling", "Performance optimization"],
+        "options_hi": ["कोड संगठन और गोपनीयता", "मेमोरी प्रबंधन", "त्रुटि हैंडलिंग", "प्रदर्शन अनुकूलन"],
+        "answer_en": "Code organization and privacy",
+        "answer_hi": "कोड संगठन और गोपनीयता",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 2,
-        "question_en": "Dachigam National Park is famous for which animal?",
-        "question_hi": "दाचीगाम राष्ट्रीय उद्यान किस जानवर के लिए प्रसिद्ध है?",
-        "options_en": ["Snow Leopard", "Hangul", "Black Bear", "Musk Deer"],
-        "options_hi": ["हिम तेंदुआ", "हंगुल", "काला भालू", "कस्तूरी मृग"],
-        "answer_en": "Hangul",
-        "answer_hi": "हंगुल",
+        "question_en": "In Rust, what is the difference between 'let' and 'let mut'?",
+        "question_hi": "Rust में, 'let' और 'let mut' में क्या अंतर है?",
+        "options_en": ["mut allows mutation, let doesn't", "let is for constants", "mut is faster", "No difference"],
+        "options_hi": ["mut म्यूटेशन की अनुमति देता है, let नहीं", "let कॉन्स्टेंट्स के लिए है", "mut तेज है", "कोई अंतर नहीं"],
+        "answer_en": "mut allows mutation, let doesn't",
+        "answer_hi": "mut म्यूटेशन की अनुमति देता है, let नहीं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 3,
-        "question_en": "Which lake is known as 'Jewel in the crown of Kashmir'?",
-        "question_hi": "किस झील को 'कश्मीर के मुकुट में रत्न' के रूप में जाना जाता है?",
-        "options_en": ["Wular Lake", "Dal Lake", "Mansar Lake", "Pangong Lake"],
-        "options_hi": ["वुलर झील", "डल झील", "मानसर झील", "पैंगोंग झील"],
-        "answer_en": "Dal Lake",
-        "answer_hi": "डल झील",
+        "question_en": "What does the 'Result<T, E>' type represent in Rust?",
+        "question_hi": "Rust में 'Result<T, E>' प्रकार क्या दर्शाता है?",
+        "options_en": ["A value that can be Ok(T) or Err(E)", "A collection type", "A thread-safe type", "A reference type"],
+        "options_hi": ["एक मान जो Ok(T) या Err(E) हो सकता है", "एक कलेक्शन प्रकार", "एक थ्रेड-सुरक्षित प्रकार", "एक संदर्भ प्रकार"],
+        "answer_en": "A value that can be Ok(T) or Err(E)",
+        "answer_hi": "एक मान जो Ok(T) या Err(E) हो सकता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 4,
-        "question_en": "The famous Amarnath Cave is located in which district?",
-        "question_hi": "प्रसिद्ध अमरनाथ गुफा किस जिले में स्थित है?",
-        "options_en": ["Anantnag", "Ganderbal", "Pulwama", "Baramulla"],
-        "options_hi": ["अनंतनाग", "गांदरबल", "पुलवामा", "बारामुला"],
-        "answer_en": "Anantnag",
-        "answer_hi": "अनंतनाग",
+        "question_en": "What is the purpose of the 'match' keyword in Rust?",
+        "question_hi": "Rust में 'match' कीवर्ड का उद्देश्य क्या है?",
+        "options_en": ["Exhaustive pattern matching", "String comparison", "Loop control", "Variable declaration"],
+        "options_hi": ["व्यापक पैटर्न मिलान", "स्ट्रिंग तुलना", "लूप नियंत्रण", "वेरिएबल घोषणा"],
+        "answer_en": "Exhaustive pattern matching",
+        "answer_hi": "व्यापक पैटर्न मिलान",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 5,
-        "question_en": "Which pass connects Ladakh with Tibet?",
-        "question_hi": "कौन सा दर्रा लद्दाख को तिब्बत से जोड़ता है?",
-        "options_en": ["Zoji La", "Khardung La", "Chang La", "Umling La"],
-        "options_hi": ["जोजी ला", "खारदुंग ला", "चांग ला", "उमलिंग ला"],
-        "answer_en": "Khardung La",
-        "answer_hi": "खारदुंग ला",
+        "question_en": "What does 'RAII' stand for in Rust context?",
+        "question_hi": "Rust संदर्भ में 'RAII' का क्या अर्थ है?",
+        "options_en": ["Resource Acquisition Is Initialization", "Rust Automatic Initialization", "Runtime Allocation Interface", "Resource Allocation Interface"],
+        "options_hi": ["संसाधन अधिग्रहण आरंभीकरण है", "Rust स्वचालित आरंभीकरण", "रनटाइम आवंटन इंटरफेस", "संसाधन आवंटन इंटरफेस"],
+        "answer_en": "Resource Acquisition Is Initialization",
+        "answer_hi": "संसाधन अधिग्रहण आरंभीकरण है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 6,
-        "question_en": "What is the traditional boat of Kashmir called?",
-        "question_hi": "कश्मीर की पारंपरिक नाव को क्या कहा जाता है?",
-        "options_en": ["Shikara", "Donga", "Nauka", "Hij"],
-        "options_hi": ["शिकारा", "डोंगा", "नौका", "हिज"],
-        "answer_en": "Shikara",
-        "answer_hi": "शिकारा",
+        "question_en": "What is the main purpose of Rust's borrow checker?",
+        "question_hi": "Rust के उधार जाँचकर्ता का मुख्य उद्देश्य क्या है?",
+        "options_en": ["Prevent data races and memory errors", "Optimize performance", "Check syntax", "Manage dependencies"],
+        "options_hi": ["डेटा रेस और मेमोरी त्रुटियाँ रोकना", "प्रदर्शन अनुकूलित करना", "सिंटैक्स जांचना", "निर्भरताएँ प्रबंधित करना"],
+        "answer_en": "Prevent data races and memory errors",
+        "answer_hi": "डेटा रेस और मेमोरी त्रुटियाँ रोकना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 7,
-        "question_en": "Which famous Mughal garden is in Srinagar?",
-        "question_hi": "श्रीनगर में कौन सा प्रसिद्ध मुगल बाग है?",
-        "options_en": ["Shalimar Bagh", "Humayun's Tomb", "Red Fort Garden", "Agra Garden"],
-        "options_hi": ["शालीमार बाग", "हुमायूं का मकबरा", "लाल किला उद्यान", "आगरा उद्यान"],
-        "answer_en": "Shalimar Bagh",
-        "answer_hi": "शालीमार बाग",
+        "question_en": "What does the 'impl' keyword do in Rust?",
+        "question_hi": "Rust में 'impl' कीवर्ड क्या करता है?",
+        "options_en": ["Implement functionality for types", "Import modules", "Initialize variables", "Create interfaces"],
+        "options_hi": ["प्रकारों के लिए कार्यक्षमता लागू करना", "मॉड्यूल आयात करना", "वेरिएबल आरंभ करना", "इंटरफेस बनाना"],
+        "answer_en": "Implement functionality for types",
+        "answer_hi": "प्रकारों के लिए कार्यक्षमता लागू करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 8,
-        "question_en": "The famous Gulmarg is located in which district?",
-        "question_hi": "प्रसिद्ध गुलमर्ग किस जिले में स्थित है?",
-        "options_en": ["Baramulla", "Budgam", "Pulwama", "Kupwara"],
-        "options_hi": ["बारामुला", "बडगाम", "पुलवामा", "कुपवाड़ा"],
-        "answer_en": "Baramulla",
-        "answer_hi": "बारामुला",
+        "question_en": "What is the difference between 'String' and '&str' in Rust?",
+        "question_hi": "Rust में 'String' और '&str' में क्या अंतर है?",
+        "options_en": ["String is owned, &str is borrowed", "String is immutable", "&str is mutable", "No difference"],
+        "options_hi": ["String स्वामित्व वाला है, &str उधार लिया गया है", "String अपरिवर्तनीय है", "&str परिवर्तनशील है", "कोई अंतर नहीं"],
+        "answer_en": "String is owned, &str is borrowed",
+        "answer_hi": "String स्वामित्व वाला है, &str उधार लिया गया है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 9,
-        "question_en": "Which river flows through Srinagar?",
-        "question_hi": "कौन सी नदी श्रीनगर से होकर बहती है?",
-        "options_en": ["Jhelum", "Chenab", "Ravi", "Sutlej"],
-        "options_hi": ["झेलम", "चिनाब", "रावी", "सतलज"],
-        "answer_en": "Jhelum",
-        "answer_hi": "झेलम",
+        "question_en": "What does the 'unwrap()' method do on Result and Option?",
+        "question_hi": "Result और Option पर 'unwrap()' विधि क्या करती है?",
+        "options_en": ["Extracts value or panics on error/None", "Always returns value", "Converts types", "Ignores errors"],
+        "options_hi": ["मान निकालता है या त्रुटि/None पर पैनिक", "हमेशा मान लौटाता है", "प्रकार कनवर्ट", "त्रुटियों को अनदेखा"],
+        "answer_en": "Extracts value or panics on error/None",
+        "answer_hi": "मान निकालता है या त्रुटि/None पर पैनिक",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 10,
-        "question_en": "What is the traditional Kashmiri embroidery called?",
-        "question_hi": "पारंपरिक कश्मीरी कढ़ाई को क्या कहा जाता है?",
-        "options_en": ["Phulkari", "Kashida", "Chikan", "Zardozi"],
-        "options_hi": ["फुलकारी", "कशीदा", "चिकन", "जरदोजी"],
-        "answer_en": "Kashida",
-        "answer_hi": "कशीदा",
+        "question_en": "What is the purpose of the '?' operator in Rust?",
+        "question_hi": "Rust में '?' ऑपरेटर का उद्देश्य क्या है?",
+        "options_en": ["Early error propagation", "Optional chaining", "Null coalescing", "Type conversion"],
+        "options_hi": ["जल्दी त्रुटि प्रसार", "वैकल्पिक चेनिंग", "नल कोलेसिंग", "प्रकार रूपांतरण"],
+        "answer_en": "Early error propagation",
+        "answer_hi": "जल्दी त्रुटि प्रसार",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 11,
-        "question_en": "Which is the largest freshwater lake in Jammu and Kashmir?",
-        "question_hi": "जम्मू और कश्मीर की सबसे बड़ी मीठे पानी की झील कौन सी है?",
-        "options_en": ["Dal Lake", "Wular Lake", "Mansar Lake", "Pangong Lake"],
-        "options_hi": ["डल झील", "वुलर झील", "मानसर झील", "पैंगोंग झील"],
-        "answer_en": "Wular Lake",
-        "answer_hi": "वुलर झील",
+        "question_en": "What does 'Send' trait indicate in Rust?",
+        "question_hi": "Rust में 'Send' ट्रेट क्या दर्शाता है?",
+        "options_en": ["Safe to transfer between threads", "Safe to print", "Safe to copy", "Safe to compare"],
+        "options_hi": ["थ्रेड्स के बीच स्थानांतरण के लिए सुरक्षित", "प्रिंट करने के लिए सुरक्षित", "कॉपी करने के लिए सुरक्षित", "तुलना के लिए सुरक्षित"],
+        "answer_en": "Safe to transfer between threads",
+        "answer_hi": "थ्रेड्स के बीच स्थानांतरण के लिए सुरक्षित",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 12,
-        "question_en": "The famous Vaishno Devi Temple is located in which district?",
-        "question_hi": "प्रसिद्ध वैष्णो देवी मंदिर किस जिले में स्थित है?",
-        "options_en": ["Jammu", "Reasi", "Udhampur", "Kathua"],
-        "options_hi": ["जम्मू", "रेयासी", "उधमपुर", "कठुआ"],
-        "answer_en": "Reasi",
-        "answer_hi": "रेयासी",
+        "question_en": "What is a Rust procedural macro?",
+        "question_hi": "Rust प्रोसीजरल मैक्रो क्या है?",
+        "options_en": ["Function-like code generation", "Variable declaration", "Memory allocation", "Error handling"],
+        "options_hi": ["फ़ंक्शन-जैसा कोड जनरेशन", "वेरिएबल घोषणा", "मेमोरी आवंटन", "त्रुटि हैंडलिंग"],
+        "answer_en": "Function-like code generation",
+        "answer_hi": "फ़ंक्शन-जैसा कोड जनरेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 13,
-        "question_en": "Which is the highest peak in Jammu and Kashmir?",
-        "question_hi": "जम्मू और कश्मीर में सबसे ऊंची चोटी कौन सी है?",
-        "options_en": ["Nun Kun", "K2", "Nanda Devi", "Mount Everest"],
-        "options_hi": ["नुन कुन", "K2", "नंदा देवी", "माउंट एवरेस्ट"],
-        "answer_en": "Nun Kun",
-        "answer_hi": "नुन कुन",
+        "question_en": "What does the 'Clone' trait allow?",
+        "question_hi": "'Clone' ट्रेट क्या अनुमति देता है?",
+        "options_en": ["Explicit duplication of values", "Automatic copying", "Memory deallocation", "Type conversion"],
+        "options_hi": ["मानों की स्पष्ट नकल", "स्वचालित कॉपी", "मेमोरी डीलोकेशन", "प्रकार रूपांतरण"],
+        "answer_en": "Explicit duplication of values",
+        "answer_hi": "मानों की स्पष्ट नकल",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 14,
-        "question_en": "What is the traditional winter sport of Kashmir?",
-        "question_hi": "कश्मीर का पारंपरिक शीतकालीन खेल क्या है?",
-        "options_en": ["Skiing", "Ice Hockey", "Sledding", "Snowboarding"],
-        "options_hi": ["स्कीइंग", "आइस हॉकी", "स्लेडिंग", "स्नोबोर्डिंग"],
-        "answer_en": "Skiing",
-        "answer_hi": "स्कीइंग",
+        "question_en": "What is the purpose of 'Option<T>' type?",
+        "question_hi": "'Option<T>' प्रकार का उद्देश्य क्या है?",
+        "options_en": ["Represent optional values", "Handle errors", "Store collections", "Manage memory"],
+        "options_hi": ["वैकल्पिक मानों का प्रतिनिधित्व", "त्रुटियाँ संभालना", "कलेक्शन संग्रहीत", "मेमोरी प्रबंधन"],
+        "answer_en": "Represent optional values",
+        "answer_hi": "वैकल्पिक मानों का प्रतिनिधित्व",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 15,
-        "question_en": "Which famous pass is on the Srinagar-Leh highway?",
-        "question_hi": "श्रीनगर-लेह राजमार्ग पर कौन सा प्रसिद्ध दर्रा है?",
-        "options_en": ["Zoji La", "Nathu La", "Rohtang Pass", "Bara-lacha La"],
-        "options_hi": ["जोजी ला", "नाथू ला", "रोहतांग दर्रा", "बारा-लाचा ला"],
-        "answer_en": "Zoji La",
-        "answer_hi": "जोजी ला",
+        "question_en": "What does 'dyn' keyword indicate before a trait?",
+        "question_hi": "ट्रेट से पहले 'dyn' कीवर्ड क्या दर्शाता है?",
+        "options_en": ["Dynamic dispatch", "Dynamic memory", "Dynamic typing", "Dynamic linking"],
+        "options_hi": ["डायनामिक डिस्पैच", "डायनामिक मेमोरी", "डायनामिक टाइपिंग", "डायनामिक लिंकिंग"],
+        "answer_en": "Dynamic dispatch",
+        "answer_hi": "डायनामिक डिस्पैच",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 16,
-        "question_en": "The famous Pashmina wool comes from which animal?",
-        "question_hi": "प्रसिद्ध पश्मीना ऊन किस जानवर से आता है?",
-        "options_en": ["Sheep", "Yak", "Changthangi Goat", "Rabbit"],
-        "options_hi": ["भेड़", "याक", "चंगथांगी बकरी", "खरगोश"],
-        "answer_en": "Changthangi Goat",
-        "answer_hi": "चंगथांगी बकरी",
+        "question_en": "What is the main use of 'Vec<T>' in Rust?",
+        "question_hi": "Rust में 'Vec<T>' का मुख्य उपयोग क्या है?",
+        "options_en": ["Dynamic growable array", "Fixed array", "Hash map", "String type"],
+        "options_hi": ["डायनामिक बढ़ने योग्य ऐरे", "फिक्स्ड ऐरे", "हैश मैप", "स्ट्रिंग प्रकार"],
+        "answer_en": "Dynamic growable array",
+        "answer_hi": "डायनामिक बढ़ने योग्य ऐरे",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 17,
-        "question_en": "Which is the winter capital of Jammu and Kashmir?",
-        "question_hi": "जम्मू और कश्मीर की शीतकालीन राजधानी कौन सी है?",
-        "options_en": ["Srinagar", "Jammu", "Leh", "Kargil"],
-        "options_hi": ["श्रीनगर", "जम्मू", "लेह", "कारगिल"],
-        "answer_en": "Jammu",
-        "answer_hi": "जम्मू",
+        "question_en": "What does the 'Copy' trait indicate?",
+        "question_hi": "'Copy' ट्रेट क्या दर्शाता है?",
+        "options_en": ["Bitwise copy is sufficient", "Deep copy needed", "No copy allowed", "Mutable copy"],
+        "options_hi": ["बिटवाइज कॉपी पर्याप्त है", "डीप कॉपी आवश्यक", "कोई कॉपी अनुमति नहीं", "म्यूटेबल कॉपी"],
+        "answer_en": "Bitwise copy is sufficient",
+        "answer_hi": "बिटवाइज कॉपी पर्याप्त है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 18,
-        "question_en": "The famous Thiksey Monastery is in which district?",
-        "question_hi": "प्रसिद्ध थिकसे मठ किस जिले में है?",
-        "options_en": ["Leh", "Kargil", "Jammu", "Srinagar"],
-        "options_hi": ["लेह", "कारगिल", "जम्मू", "श्रीनगर"],
-        "answer_en": "Leh",
-        "answer_hi": "लेह",
+        "question_en": "What is the purpose of 'HashMap<K, V>'?",
+        "question_hi": "'HashMap<K, V>' का उद्देश्य क्या है?",
+        "options_en": ["Key-value storage with hashing", "Sorted storage", "Thread-safe storage", "Immutable storage"],
+        "options_hi": ["हैशिंग के साथ की-वैल्यू स्टोरेज", "क्रमबद्ध स्टोरेज", "थ्रेड-सुरक्षित स्टोरेज", "अपरिवर्तनीय स्टोरेज"],
+        "answer_en": "Key-value storage with hashing",
+        "answer_hi": "हैशिंग के साथ की-वैल्यू स्टोरेज",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 19,
-        "question_en": "Which festival is famously celebrated in Jammu as 'Baisakhi'?",
-        "question_hi": "जम्मू में कौन सा त्योहार 'बैसाखी' के रूप में प्रसिद्ध है?",
-        "options_en": ["Holi", "Diwali", "Lohri", "Maha Shivratri"],
-        "options_hi": ["होली", "दिवाली", "लोहड़ी", "महा शिवरात्रि"],
-        "answer_en": "Lohri",
-        "answer_hi": "लोहड़ी",
+        "question_en": "What does 'Sync' trait guarantee?",
+        "question_hi": "'Sync' ट्रेट क्या गारंटी देता है?",
+        "options_en": ["Safe to share between threads", "Safe to send", "Safe to copy", "Safe to print"],
+        "options_hi": ["थ्रेड्स के बीच साझा करने के लिए सुरक्षित", "भेजने के लिए सुरक्षित", "कॉपी करने के लिए सुरक्षित", "प्रिंट करने के लिए सुरक्षित"],
+        "answer_en": "Safe to share between threads",
+        "answer_hi": "थ्रेड्स के बीच साझा करने के लिए सुरक्षित",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 20,
-        "question_en": "The famous Betaab Valley is located in which district?",
-        "question_hi": "प्रसिद्ध बेताब वैली किस जिले में स्थित है?",
-        "options_en": ["Anantnag", "Baramulla", "Pulwama", "Budgam"],
-        "options_hi": ["अनंतनाग", "बारामुला", "पुलवामा", "बडगाम"],
-        "answer_en": "Anantnag",
-        "answer_hi": "अनंतनाग",
+        "question_en": "What is the main purpose of 'Box<T>'?",
+        "question_hi": "'Box<T>' का मुख्य उद्देश्य क्या है?",
+        "options_en": ["Heap allocation", "Reference counting", "Thread safety", "Stack allocation"],
+        "options_hi": ["हीप आवंटन", "संदर्भ गिनती", "थ्रेड सुरक्षा", "स्टैक आवंटन"],
+        "answer_en": "Heap allocation",
+        "answer_hi": "हीप आवंटन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 21,
-        "question_en": "What is the traditional Kashmiri cloak called?",
-        "question_hi": "पारंपरिक कश्मीरी चोगे को क्या कहा जाता है?",
-        "options_en": ["Pheran", "Shawl", "Choga", "Cape"],
-        "options_hi": ["फेरन", "शॉल", "चोगा", "केप"],
-        "answer_en": "Pheran",
-        "answer_hi": "फेरन",
+        "question_en": "What does the 'Drop' trait allow?",
+        "question_hi": "'Drop' ट्रेट क्या अनुमति देता है?",
+        "options_en": ["Custom cleanup logic", "Automatic allocation", "Error handling", "Type conversion"],
+        "options_hi": ["कस्टम सफाई लॉजिक", "स्वचालित आवंटन", "त्रुटि हैंडलिंग", "प्रकार रूपांतरण"],
+        "answer_en": "Custom cleanup logic",
+        "answer_hi": "कस्टम सफाई लॉजिक",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 22,
-        "question_en": "Which is the largest district in Jammu and Kashmir by area?",
-        "question_hi": "क्षेत्रफल की दृष्टि से जम्मू और कश्मीर का सबसे बड़ा जिला कौन सा है?",
-        "options_en": ["Leh", "Kargil", "Jammu", "Srinagar"],
-        "options_hi": ["लेह", "कारगिल", "जम्मू", "श्रीनगर"],
-        "answer_en": "Leh",
-        "answer_hi": "लेह",
+        "question_en": "What is 'Rc<T>' used for?",
+        "question_hi": "'Rc<T>' किसके लिए उपयोग किया जाता है?",
+        "options_en": ["Single-threaded reference counting", "Thread-safe counting", "Heap allocation", "Stack allocation"],
+        "options_hi": ["सिंगल-थ्रेडेड संदर्भ गिनती", "थ्रेड-सुरक्षित गिनती", "हीप आवंटन", "स्टैक आवंटन"],
+        "answer_en": "Single-threaded reference counting",
+        "answer_hi": "सिंगल-थ्रेडेड संदर्भ गिनती",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 23,
-        "question_en": "The famous Mata Vaishno Devi shrine is dedicated to which goddess?",
-        "question_hi": "प्रसिद्ध माता वैष्णो देवी मंदिर किस देवी को समर्पित है?",
-        "options_en": ["Lakshmi", "Saraswati", "Durga", "Vaishno Devi"],
-        "options_hi": ["लक्ष्मी", "सरस्वती", "दुर्गा", "वैष्णो देवी"],
-        "answer_en": "Vaishno Devi",
-        "answer_hi": "वैष्णो देवी",
+        "question_en": "What is the difference between 'Rc<T>' and 'Arc<T>'?",
+        "question_hi": "'Rc<T>' और 'Arc<T>' में क्या अंतर है?",
+        "options_en": ["Arc is thread-safe", "Rc is faster", "Arc is single-threaded", "No difference"],
+        "options_hi": ["Arc थ्रेड-सुरक्षित है", "Rc तेज है", "Arc सिंगल-थ्रेडेड है", "कोई अंतर नहीं"],
+        "answer_en": "Arc is thread-safe",
+        "answer_hi": "Arc थ्रेड-सुरक्षित है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 24,
-        "question_en": "Which famous lake is partly in India and partly in China?",
-        "question_hi": "कौन सी प्रसिद्ध झील आंशिक रूप से भारत में और आंशिक रूप से चीन में है?",
-        "options_en": ["Dal Lake", "Wular Lake", "Pangong Lake", "Mansar Lake"],
-        "options_hi": ["डल झील", "वुलर झील", "पैंगोंग झील", "मानसर झील"],
-        "answer_en": "Pangong Lake",
-        "answer_hi": "पैंगोंग झील",
+        "question_en": "What is the purpose of 'Mutex<T>'?",
+        "question_hi": "'Mutex<T>' का उद्देश्य क्या है?",
+        "options_en": ["Thread-safe interior mutability", "Memory allocation", "Error handling", "Type conversion"],
+        "options_hi": ["थ्रेड-सुरक्षित आंतरिक परिवर्तनशीलता", "मेमोरी आवंटन", "त्रुटि हैंडलिंग", "प्रकार रूपांतरण"],
+        "answer_en": "Thread-safe interior mutability",
+        "answer_hi": "थ्रेड-सुरक्षित आंतरिक परिवर्तनशीलता",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 25,
-        "question_en": "What is the traditional Kashmiri tea called?",
-        "question_hi": "पारंपरिक कश्मीरी चाय को क्या कहा जाता है?",
-        "options_en": ["Kashmiri Kahwa", "Masala Chai", "Butter Tea", "Green Tea"],
-        "options_hi": ["कश्मीरी कहवा", "मसाला चाय", "मक्खन चाय", "हरी चाय"],
-        "answer_en": "Kashmiri Kahwa",
-        "answer_hi": "कश्मीरी कहवा",
+        "question_en": "What does 'unwrap_or_default()' do?",
+        "question_hi": "'unwrap_or_default()' क्या करता है?",
+        "options_en": ["Returns value or default", "Always returns default", "Panics always", "Converts types"],
+        "options_hi": ["मान या डिफ़ॉल्ट लौटाता है", "हमेशा डिफ़ॉल्ट लौटाता है", "हमेशा पैनिक", "प्रकार कनवर्ट"],
+        "answer_en": "Returns value or default",
+        "answer_hi": "मान या डिफ़ॉल्ट लौटाता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 26,
-        "question_en": "Which famous Mughal emperor built Shalimar Bagh?",
-        "question_hi": "किस प्रसिद्ध मुगल सम्राट ने शालीमार बाग का निर्माण करवाया?",
-        "options_en": ["Akbar", "Jahangir", "Shah Jahan", "Aurangzeb"],
-        "options_hi": ["अकबर", "जहांगीर", "शाहजहां", "औरंगजेब"],
-        "answer_en": "Jahangir",
-        "answer_hi": "जहांगीर",
+        "question_en": "What is a Rust lifetime?",
+        "question_hi": "Rust लाइफटाइम क्या है?",
+        "options_en": ["Reference validity scope", "Program duration", "Memory allocation time", "Thread execution time"],
+        "options_hi": ["संदर्भ वैधता स्कोप", "प्रोग्राम अवधि", "मेमोरी आवंटन समय", "थ्रेड निष्पादन समय"],
+        "answer_en": "Reference validity scope",
+        "answer_hi": "संदर्भ वैधता स्कोप",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 27,
-        "question_en": "The famous Hemis Monastery is associated with which religion?",
-        "question_hi": "प्रसिद्ध हेमिस मठ किस धर्म से संबंधित है?",
-        "options_en": ["Hinduism", "Buddhism", "Islam", "Sikhism"],
-        "options_hi": ["हिंदू धर्म", "बौद्ध धर्म", "इस्लाम", "सिख धर्म"],
-        "answer_en": "Buddhism",
-        "answer_hi": "बौद्ध धर्म",
+        "question_en": "What does '&'a str' mean?",
+        "question_hi": "'&'a str' का क्या अर्थ है?",
+        "options_en": ["String slice with lifetime 'a'", "Mutable string", "Owned string", "Character array"],
+        "options_hi": ["लाइफटाइम 'a' वाली स्ट्रिंग स्लाइस", "म्यूटेबल स्ट्रिंग", "ओन्ड स्ट्रिंग", "कैरेक्टर ऐरे"],
+        "answer_en": "String slice with lifetime 'a'",
+        "answer_hi": "लाइफटाइम 'a' वाली स्ट्रिंग स्लाइस",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 28,
-        "question_en": "Which river is known as the 'Lifeline of Ladakh'?",
-        "question_hi": "किस नदी को 'लद्दाख की जीवन रेखा' के रूप में जाना जाता है?",
-        "options_en": ["Indus", "Jhelum", "Chenab", "Zanskar"],
-        "options_hi": ["सिंधु", "झेलम", "चिनाब", "जांस्कर"],
-        "answer_en": "Indus",
-        "answer_hi": "सिंधु",
+        "question_en": "What is the purpose of 'if let' syntax?",
+        "question_hi": "'if let' सिंटैक्स का उद्देश्य क्या है?",
+        "options_en": ["Concise single pattern matching", "Loop control", "Error handling", "Variable declaration"],
+        "options_hi": ["संक्षिप्त सिंगल पैटर्न मिलान", "लूप नियंत्रण", "त्रुटि हैंडलिंग", "वेरिएबल घोषणा"],
+        "answer_en": "Concise single pattern matching",
+        "answer_hi": "संक्षिप्त सिंगल पैटर्न मिलान",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 29,
-        "question_en": "What is the traditional Kashmiri carpet called?",
-        "question_hi": "पारंपरिक कश्मीरी कालीन को क्या कहा जाता है?",
-        "options_en": ["Kashmiri Rug", "Namda", "Gabba", "Kalim"],
-        "options_hi": ["कश्मीरी रग", "नमदा", "गब्बा", "कलीम"],
-        "answer_en": "Kalim",
-        "answer_hi": "कलीम",
+        "question_en": "What does 'Cow' stand for in Rust?",
+        "question_hi": "Rust में 'Cow' का क्या अर्थ है?",
+        "options_en": ["Clone On Write", "Copy On Write", "Check On Write", "Create On Write"],
+        "options_hi": ["लिखने पर क्लोन", "लिखने पर कॉपी", "लिखने पर जांच", "लिखने पर बनाएं"],
+        "answer_en": "Clone On Write",
+        "answer_hi": "लिखने पर क्लोन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 30,
-        "question_en": "Which famous mountain range separates Kashmir from Ladakh?",
-        "question_hi": "कौन सा प्रसिद्ध पर्वत श्रृंखला कश्मीर को लद्दाख से अलग करती है?",
-        "options_en": ["Pir Panjal", "Zanskar", "Great Himalayas", "Ladakh Range"],
-        "options_hi": ["पीर पंजाल", "जांस्कर", "ग्रेट हिमालय", "लद्दाख रेंज"],
-        "answer_en": "Zanskar",
-        "answer_hi": "जांस्कर",
+        "question_en": "What is the main use of 'Iterator' trait?",
+        "question_hi": "'Iterator' ट्रेट का मुख्य उपयोग क्या है?",
+        "options_en": ["Sequential element access", "Random access", "Memory management", "Error handling"],
+        "options_hi": ["क्रमिक तत्व पहुंच", "यादृच्छिक पहुंच", "मेमोरी प्रबंधन", "त्रुटि हैंडलिंग"],
+        "answer_en": "Sequential element access",
+        "answer_hi": "क्रमिक तत्व पहुंच",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 31,
-        "question_en": "The famous Jama Masjid in Srinagar was built by which ruler?",
-        "question_hi": "श्रीनगर में प्रसिद्ध जामा मस्जिद किस शासक ने बनवाई थी?",
-        "options_en": ["Sultan Sikandar", "Akbar", "Shah Jahan", "Aurangzeb"],
-        "options_hi": ["सुल्तान सिकंदर", "अकबर", "शाहजहां", "औरंगजेब"],
-        "answer_en": "Sultan Sikandar",
-        "answer_hi": "सुल्तान सिकंदर",
+        "question_en": "What does 'collect()' method do?",
+        "question_hi": "'collect()' विधि क्या करती है?",
+        "options_en": ["Converts iterator to collection", "Creates iterator", "Filters elements", "Sorts elements"],
+        "options_hi": ["इटरेटर को कलेक्शन में बदलता है", "इटरेटर बनाता है", "तत्व फिल्टर", "तत्व सॉर्ट"],
+        "answer_en": "Converts iterator to collection",
+        "answer_hi": "इटरेटर को कलेक्शन में बदलता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 32,
-        "question_en": "Which is the official language of Jammu and Kashmir?",
-        "question_hi": "जम्मू और कश्मीर की आधिकारिक भाषा कौन सी है?",
-        "options_en": ["Hindi", "Urdu", "Kashmiri", "Dogri"],
-        "options_hi": ["हिंदी", "उर्दू", "कश्मीरी", "डोगरी"],
-        "answer_en": "Urdu",
-        "answer_hi": "उर्दू",
+        "question_en": "What is 'unwrap_or_else()' used for?",
+        "question_hi": "'unwrap_or_else()' किसके लिए उपयोग किया जाता है?",
+        "options_en": ["Fallback with closure", "Always panic", "Ignore errors", "Convert types"],
+        "options_hi": ["क्लोजर के साथ फॉलबैक", "हमेशा पैनिक", "त्रुटियों को अनदेखा", "प्रकार कनवर्ट"],
+        "answer_en": "Fallback with closure",
+        "answer_hi": "क्लोजर के साथ फॉलबैक",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 33,
-        "question_en": "The famous Patnitop hill station is in which district?",
-        "question_hi": "प्रसिद्ध पत्नीटॉप हिल स्टेशन किस जिले में है?",
-        "options_en": ["Udhampur", "Jammu", "Reasi", "Doda"],
-        "options_hi": ["उधमपुर", "जम्मू", "रेयासी", "डोडा"],
-        "answer_en": "Udhampur",
-        "answer_hi": "उधमपुर",
+        "question_en": "What does 'Box::leak()' do?",
+        "question_hi": "'Box::leak()' क्या करता है?",
+        "options_en": ["Creates 'static reference", "Causes memory leak", "Deallocates memory", "Checks memory"],
+        "options_hi": ["'static संदर्भ बनाता है", "मेमोरी लीक का कारण", "मेमोरी डीलोकेट", "मेमोरी जांच"],
+        "answer_en": "Creates 'static reference",
+        "answer_hi": "'static संदर्भ बनाता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 34,
-        "question_en": "Which famous festival is celebrated at Hemis Monastery?",
-        "question_hi": "हेमिस मठ में कौन सा प्रसिद्ध त्योहार मनाया जाता है?",
-        "options_en": ["Hemis Festival", "Losar", "Saka Dawa", "Buddha Purnima"],
-        "options_hi": ["हेमिस उत्सव", "लोसार", "साका दावा", "बुद्ध पूर्णिमा"],
-        "answer_en": "Hemis Festival",
-        "answer_hi": "हेमिस उत्सव",
+        "question_en": "What is the purpose of 'std::mem::swap'?",
+        "question_hi": "'std::mem::swap' का उद्देश्य क्या है?",
+        "options_en": ["Exchange values between variables", "Allocate memory", "Deallocate memory", "Copy values"],
+        "options_hi": ["वेरिएबल्स के बीच मानों का आदान-प्रदान", "मेमोरी आवंटित", "मेमोरी डीलोकेट", "मान कॉपी"],
+        "answer_en": "Exchange values between variables",
+        "answer_hi": "वेरिएबल्स के बीच मानों का आदान-प्रदान",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 35,
-        "question_en": "What is the traditional name of Jammu city?",
-        "question_hi": "जम्मू शहर का पारंपरिक नाम क्या है?",
-        "options_en": ["City of Temples", "Winter Capital", "Duggar", "Jambu"],
-        "options_hi": ["मंदिरों का शहर", "शीतकालीन राजधानी", "डुग्गर", "जम्बू"],
-        "answer_en": "City of Temples",
-        "answer_hi": "मंदिरों का शहर",
+        "question_en": "What does 'as_ref()' method do?",
+        "question_hi": "'as_ref()' विधि क्या करती है?",
+        "options_en": ["Converts to reference", "Converts to owned", "Checks type", "Allocates memory"],
+        "options_hi": ["संदर्भ में कनवर्ट", "ओन्ड में कनवर्ट", "प्रकार जांच", "मेमोरी आवंटित"],
+        "answer_en": "Converts to reference",
+        "answer_hi": "संदर्भ में कनवर्ट",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 36,
-        "question_en": "Which famous pass is the highest motorable road in the world?",
-        "question_hi": "कौन सा प्रसिद्ध दर्रा दुनिया की सबसे ऊंची मोटर योग्य सड़क है?",
-        "options_en": ["Khardung La", "Umling La", "Chang La", "Tanglang La"],
-        "options_hi": ["खारदुंग ला", "उमलिंग ला", "चांग ला", "तांगलांग ला"],
-        "answer_en": "Umling La",
-        "answer_hi": "उमलिंग ला",
+        "question_en": "What is 'std::fs::File' used for?",
+        "question_hi": "'std::fs::File' किसके लिए उपयोग किया जाता है?",
+        "options_en": ["File I/O operations", "Network operations", "Memory mapping", "Thread management"],
+        "options_hi": ["फ़ाइल I/O ऑपरेशन", "नेटवर्क ऑपरेशन", "मेमोरी मैपिंग", "थ्रेड प्रबंधन"],
+        "answer_en": "File I/O operations",
+        "answer_hi": "फ़ाइल I/O ऑपरेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 37,
-        "question_en": "The famous Raghunath Temple is dedicated to which deity?",
-        "question_hi": "प्रसिद्ध रघुनाथ मंदिर किस देवता को समर्पित है?",
-        "options_en": ["Lord Shiva", "Lord Vishnu", "Lord Rama", "Goddess Durga"],
-        "options_hi": ["भगवान शिव", "भगवान विष्णु", "भगवान राम", "देवी दुर्गा"],
-        "answer_en": "Lord Rama",
-        "answer_hi": "भगवान राम",
+        "question_en": "What does '#[derive(Debug)]' do?",
+        "question_hi": "'#[derive(Debug)]' क्या करता है?",
+        "options_en": ["Auto-implements Debug trait", "Enables debugging", "Adds print statements", "Checks errors"],
+        "options_hi": ["Debug ट्रेट ऑटो-इम्प्लीमेंट", "डिबगिंग सक्षम", "प्रिंट स्टेटमेंट जोड़ता है", "त्रुटियाँ जांचता है"],
+        "answer_en": "Auto-implements Debug trait",
+        "answer_hi": "Debug ट्रेट ऑटो-इम्प्लीमेंट",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 38,
-        "question_en": "Which is the largest glacier in Jammu and Kashmir?",
-        "question_hi": "जम्मू और कश्मीर में सबसे बड़ा ग्लेशियर कौन सा है?",
-        "options_en": ["Siachen", "Biafo", "Hispar", "Nubra"],
-        "options_hi": ["सियाचिन", "बियाफो", "हिस्पर", "नुब्रा"],
-        "answer_en": "Siachen",
-        "answer_hi": "सियाचिन",
+        "question_en": "What is the purpose of 'std::thread::spawn'?",
+        "question_hi": "'std::thread::spawn' का उद्देश्य क्या है?",
+        "options_en": ["Create new thread", "Terminate thread", "Synchronize threads", "Allocate thread memory"],
+        "options_hi": ["नया थ्रेड बनाएं", "थ्रेड समाप्त", "थ्रेड्स सिंक्रनाइज़", "थ्रेड मेमोरी आवंटित"],
+        "answer_en": "Create new thread",
+        "answer_hi": "नया थ्रेड बनाएं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 39,
-        "question_en": "The famous Bahu Fort is located in which city?",
-        "question_hi": "प्रसिद्ध बाहू किला किस शहर में स्थित है?",
-        "options_en": ["Jammu", "Srinagar", "Leh", "Kargil"],
-        "options_hi": ["जम्मू", "श्रीनगर", "लेह", "कारगिल"],
-        "answer_en": "Jammu",
-        "answer_hi": "जम्मू",
+        "question_en": "What does 'join()' method do on a thread handle?",
+        "question_hi": "थ्रेड हैंडल पर 'join()' विधि क्या करती है?",
+        "options_en": ["Waits for thread completion", "Starts thread", "Terminates thread", "Checks thread status"],
+        "options_hi": ["थ्रेड पूर्णता की प्रतीक्षा", "थ्रेड शुरू", "थ्रेड समाप्त", "थ्रेड स्थिति जांच"],
+        "answer_en": "Waits for thread completion",
+        "answer_hi": "थ्रेड पूर्णता की प्रतीक्षा",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 40,
-        "question_en": "What is the traditional Kashmiri bread called?",
-        "question_hi": "पारंपरिक कश्मीरी रोटी को क्या कहा जाता है?",
-        "options_en": ["Naan", "Kulcha", "Sheermal", "Bakarkhani"],
-        "options_hi": ["नान", "कुल्चा", "शीरमल", "बकरखानी"],
-        "answer_en": "Sheermal",
-        "answer_hi": "शीरमल",
+        "question_en": "What is 'std::sync::mpsc' used for?",
+        "question_hi": "'std::sync::mpsc' किसके लिए उपयोग किया जाता है?",
+        "options_en": ["Multi-producer, single-consumer channels", "File I/O", "Memory allocation", "Error handling"],
+        "options_hi": ["मल्टी-प्रोड्यूसर, सिंगल-कंज्यूमर चैनल", "फ़ाइल I/O", "मेमोरी आवंटन", "त्रुटि हैंडलिंग"],
+        "answer_en": "Multi-producer, single-consumer channels",
+        "answer_hi": "मल्टी-प्रोड्यूसर, सिंगल-कंज्यूमर चैनल",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 41,
-        "question_en": "Which famous cricket ground is in Jammu?",
-        "question_hi": "जम्मू में कौन सा प्रसिद्ध क्रिकेट मैदान है?",
-        "options_en": ["MA Stadium", "Sher-i-Kashmir", "Bahu Fort Ground", "Jammu Stadium"],
-        "options_hi": ["एमए स्टेडियम", "शेर-ए-कश्मीर", "बाहू किला ग्राउंड", "जम्मू स्टेडियम"],
-        "answer_en": "MA Stadium",
-        "answer_hi": "एमए स्टेडियम",
+        "question_en": "What does 'std::collections::BinaryHeap' provide?",
+        "question_hi": "'std::collections::BinaryHeap' क्या प्रदान करता है?",
+        "options_en": ["Priority queue", "Sorted map", "Hash table", "Linked list"],
+        "options_hi": ["प्राथमिकता कतार", "क्रमबद्ध मानचित्र", "हैश तालिका", "लिंक्ड सूची"],
+        "answer_en": "Priority queue",
+        "answer_hi": "प्राथमिकता कतार",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 42,
-        "question_en": "The famous Nubra Valley is known for which animal?",
-        "question_hi": "प्रसिद्ध नुब्रा वैली किस जानवर के लिए जानी जाती है?",
-        "options_en": ["Yak", "Bactrian Camel", "Snow Leopard", "Tibetan Wolf"],
-        "options_hi": ["याक", "बैक्ट्रियन ऊंट", "हिम तेंदुआ", "तिब्बती भेड़िया"],
-        "answer_en": "Bactrian Camel",
-        "answer_hi": "बैक्ट्रियन ऊंट",
+        "question_en": "What is the purpose of 'std::net::TcpListener'?",
+        "question_hi": "'std::net::TcpListener' का उद्देश्य क्या है?",
+        "options_en": ["Listen for TCP connections", "Make TCP connections", "UDP communication", "File operations"],
+        "options_hi": ["TCP कनेक्शन सुनें", "TCP कनेक्शन बनाएं", "UDP संचार", "फ़ाइल ऑपरेशन"],
+        "answer_en": "Listen for TCP connections",
+        "answer_hi": "TCP कनेक्शन सुनें",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 43,
-        "question_en": "Which is the main festival of Kashmiri Pandits?",
-        "question_hi": "कश्मीरी पंडितों का मुख्य त्योहार कौन सा है?",
-        "options_en": ["Diwali", "Holi", "Navreh", "Maha Shivratri"],
-        "options_hi": ["दिवाली", "होली", "नवरेह", "महा शिवरात्रि"],
-        "answer_en": "Navreh",
-        "answer_hi": "नवरेह",
+        "question_en": "What does 'std::path::Path' represent?",
+        "question_hi": "'std::path::Path' क्या दर्शाता है?",
+        "options_en": ["Cross-platform file path", "Network path", "Memory path", "Thread path"],
+        "options_hi": ["क्रॉस-प्लेटफ़ॉर्म फ़ाइल पथ", "नेटवर्क पथ", "मेमोरी पथ", "थ्रेड पथ"],
+        "answer_en": "Cross-platform file path",
+        "answer_hi": "क्रॉस-प्लेटफ़ॉर्म फ़ाइल पथ",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 44,
-        "question_en": "The famous Drass is known as what?",
-        "question_hi": "प्रसिद्ध द्रास को क्या कहा जाता है?",
-        "options_en": ["Gateway to Ladakh", "Second Coldest Place", "Mini Kashmir", "The Drass Valley"],
-        "options_hi": ["लद्दाख का प्रवेश द्वार", "दूसरा सबसे ठंडा स्थान", "मिनी कश्मीर", "द्रास घाटी"],
-        "answer_en": "Second Coldest Place",
-        "answer_hi": "दूसरा सबसे ठंडा स्थान",
+        "question_en": "What is 'std::io::BufReader' used for?",
+        "question_hi": "'std::io::BufReader' किसके लिए उपयोग किया जाता है?",
+        "options_en": ["Efficient buffered reading", "Binary reading", "Text parsing", "Error handling"],
+        "options_hi": ["कुशल बफर किया गया पठन", "बाइनरी पठन", "टेक्स्ट पार्सिंग", "त्रुटि हैंडलिंग"],
+        "answer_en": "Efficient buffered reading",
+        "answer_hi": "कुशल बफर किया गया पठन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 45,
-        "question_en": "Which famous Sufi shrine is in Srinagar?",
-        "question_hi": "श्रीनगर में कौन सा प्रसिद्ध सूफी दरगाह है?",
-        "options_en": ["Hazratbal", "Dastgir Sahib", "Makhdoom Sahib", "All of these"],
-        "options_hi": ["हजरतबल", "दस्तगीर साहिब", "मखदूम साहिब", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "What does 'std::env::args' provide?",
+        "question_hi": "'std::env::args' क्या प्रदान करता है?",
+        "options_en": ["Command-line arguments", "Environment variables", "Current directory", "Program name"],
+        "options_hi": ["कमांड-लाइन तर्क", "पर्यावरण चर", "वर्तमान निर्देशिका", "प्रोग्राम नाम"],
+        "answer_en": "Command-line arguments",
+        "answer_hi": "कमांड-लाइन तर्क",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 46,
-        "question_en": "What is the traditional dance of Kashmir called?",
-        "question_hi": "कश्मीर के पारंपरिक नृत्य को क्या कहा जाता है?",
-        "options_en": ["Rouf", "Bhangra", "Garba", "Lavani"],
-        "options_hi": ["रूफ", "भांगड़ा", "गरबा", "लावणी"],
-        "answer_en": "Rouf",
-        "answer_hi": "रूफ",
+        "question_en": "What is the purpose of 'std::time::Duration'?",
+        "question_hi": "'std::time::Duration' का उद्देश्य क्या है?",
+        "options_en": ["Represent time span", "Get current time", "Format time", "Parse time strings"],
+        "options_hi": ["समय अवधि का प्रतिनिधित्व", "वर्तमान समय प्राप्त", "समय प्रारूप", "समय स्ट्रिंग पार्स"],
+        "answer_en": "Represent time span",
+        "answer_hi": "समय अवधि का प्रतिनिधित्व",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 47,
-        "question_en": "Which famous lake is known for its floating gardens?",
-        "question_hi": "कौन सी प्रसिद्ध झील अपने तैरते उद्यानों के लिए जानी जाती है?",
-        "options_en": ["Dal Lake", "Wular Lake", "Mansar Lake", "Pangong Lake"],
-        "options_hi": ["डल झील", "वुलर झील", "मानसर झील", "पैंगोंग झील"],
-        "answer_en": "Dal Lake",
-        "answer_hi": "डल झील",
+        "question_en": "What does 'std::process::Command' allow?",
+        "question_hi": "'std::process::Command' क्या अनुमति देता है?",
+        "options_en": ["Spawn and manage child processes", "Thread management", "Memory allocation", "File operations"],
+        "options_hi": ["चाइल्ड प्रक्रियाओं को स्पॉन और प्रबंधित", "थ्रेड प्रबंधन", "मेमोरी आवंटन", "फ़ाइल ऑपरेशन"],
+        "answer_en": "Spawn and manage child processes",
+        "answer_hi": "चाइल्ड प्रक्रियाओं को स्पॉन और प्रबंधित",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 48,
-        "question_en": "The famous Kargil War was fought in which year?",
-        "question_hi": "प्रसिद्ध कारगिल युद्ध किस वर्ष लड़ा गया था?",
-        "options_en": ["1998", "1999", "2000", "2001"],
-        "options_hi": ["1998", "1999", "2000", "2001"],
-        "answer_en": "1999",
-        "answer_hi": "1999",
+        "question_en": "What is 'std::cell::RefCell' used for?",
+        "question_hi": "'std::cell::RefCell' किसके लिए उपयोग किया जाता है?",
+        "options_en": ["Runtime-checked interior mutability", "Thread-safe mutability", "Compile-time checks", "Memory allocation"],
+        "options_hi": ["रनटाइम-चेक आंतरिक परिवर्तनशीलता", "थ्रेड-सुरक्षित परिवर्तनशीलता", "कंपाइल-टाइम जांच", "मेमोरी आवंटन"],
+        "answer_en": "Runtime-checked interior mutability",
+        "answer_hi": "रनटाइम-चेक आंतरिक परिवर्तनशीलता",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 49,
-        "question_en": "Which is the main river of Ladakh region?",
-        "question_hi": "लद्दाख क्षेत्र की मुख्य नदी कौन सी है?",
-        "options_en": ["Indus", "Jhelum", "Chenab", "Ravi"],
-        "options_hi": ["सिंधु", "झेलम", "चिनाब", "रावी"],
-        "answer_en": "Indus",
-        "answer_hi": "सिंधु",
+        "question_en": "What does 'std::sync::Once' guarantee?",
+        "question_hi": "'std::sync::Once' क्या गारंटी देता है?",
+        "options_en": ["One-time initialization", "Thread creation", "Memory safety", "Error handling"],
+        "options_hi": ["एक-बार आरंभीकरण", "थ्रेड निर्माण", "मेमोरी सुरक्षा", "त्रुटि हैंडलिंग"],
+        "answer_en": "One-time initialization",
+        "answer_hi": "एक-बार आरंभीकरण",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 50,
-        "question_en": "What is the traditional name of Ladakh?",
-        "question_hi": "लद्दाख का पारंपरिक नाम क्या है?",
-        "options_en": ["Little Tibet", "Moonland", "Cold Desert", "All of these"],
-        "options_hi": ["लिटिल तिब्बत", "चंद्रभूमि", "ठंडा रेगिस्तान", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "What is the purpose of 'std::mem::size_of'?",
+        "question_hi": "'std::mem::size_of' का उद्देश्य क्या है?",
+        "options_en": ["Get type size in bytes", "Allocate memory", "Deallocate memory", "Check alignment"],
+        "options_hi": ["बाइट्स में प्रकार आकार प्राप्त", "मेमोरी आवंटित", "मेमोरी डीलोकेट", "अलाइनमेंट जांच"],
+        "answer_en": "Get type size in bytes",
+        "answer_hi": "बाइट्स में प्रकार आकार प्राप्त",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 51,
-        "question_en": "Which famous mountain peak is called 'Killer Mountain'?",
-        "question_hi": "किस प्रसिद्ध पर्वत चोटी को 'किलर माउंटेन' कहा जाता है?",
-        "options_en": ["Nanga Parbat", "K2", "Mount Everest", "Nanda Devi"],
-        "options_hi": ["नंगा परबत", "K2", "माउंट एवरेस्ट", "नंदा देवी"],
-        "answer_en": "Nanga Parbat",
-        "answer_hi": "नंगा परबत",
+        "question_en": "What does 'std::convert::From' trait allow?",
+        "question_hi": "'std::convert::From' ट्रेट क्या अनुमति देता है?",
+        "options_en": ["Type conversions with from()", "Memory allocation", "Error handling", "Thread safety"],
+        "options_hi": ["from() के साथ प्रकार रूपांतरण", "मेमोरी आवंटन", "त्रुटि हैंडलिंग", "थ्रेड सुरक्षा"],
+        "answer_en": "Type conversions with from()",
+        "answer_hi": "from() के साथ प्रकार रूपांतरण",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 52,
-        "question_en": "The famous Chashme Shahi garden was built by whom?",
-        "question_hi": "प्रसिद्ध चश्मा शाही उद्यान किसने बनवाया था?",
-        "options_en": ["Shah Jahan", "Jahangir", "Akbar", "Aurangzeb"],
-        "options_hi": ["शाहजहां", "जहांगीर", "अकबर", "औरंगजेब"],
-        "answer_en": "Shah Jahan",
-        "answer_hi": "शाहजहां",
+        "question_en": "What is 'std::default::Default' trait for?",
+        "question_hi": "'std::default::Default' ट्रेट किसके लिए है?",
+        "options_en": ["Provide default values", "Memory management", "Error handling", "Type conversion"],
+        "options_hi": ["डिफ़ॉल्ट मान प्रदान", "मेमोरी प्रबंधन", "त्रुटि हैंडलिंग", "प्रकार रूपांतरण"],
+        "answer_en": "Provide default values",
+        "answer_hi": "डिफ़ॉल्ट मान प्रदान",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 53,
-        "question_en": "Which is the highest battlefield in the world?",
-        "question_hi": "दुनिया का सबसे ऊंचा युद्धक्षेत्र कौन सा है?",
-        "options_en": ["Kargil", "Siachen", "Leh", "Drass"],
-        "options_hi": ["कारगिल", "सियाचिन", "लेह", "द्रास"],
-        "answer_en": "Siachen",
-        "answer_hi": "सियाचिन",
+        "question_en": "What does 'std::ops::Deref' trait enable?",
+        "question_hi": "'std::ops::Deref' ट्रेट क्या सक्षम करता है?",
+        "options_en": ["Custom dereferencing", "Memory allocation", "Error propagation", "Thread safety"],
+        "options_hi": ["कस्टम डेरिफरेंसिंग", "मेमोरी आवंटन", "त्रुटि प्रसार", "थ्रेड सुरक्षा"],
+        "answer_en": "Custom dereferencing",
+        "answer_hi": "कस्टम डेरिफरेंसिंग",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 54,
-        "question_en": "What is the traditional woolen fabric of Kashmir called?",
-        "question_hi": "कश्मीर के पारंपरिक ऊनी कपड़े को क्या कहा जाता है?",
-        "options_en": ["Pashmina", "Shahtoosh", "Raffal", "All of these"],
-        "options_hi": ["पश्मीना", "शाहतूश", "रफल", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "What is the purpose of 'std::fmt::Display' trait?",
+        "question_hi": "'std::fmt::Display' ट्रेट का उद्देश्य क्या है?",
+        "options_en": ["User-facing output", "Debug output", "File output", "Network output"],
+        "options_hi": ["उपयोगकर्ता-सामने आउटपुट", "डिबग आउटपुट", "फ़ाइल आउटपुट", "नेटवर्क आउटपुट"],
+        "answer_en": "User-facing output",
+        "answer_hi": "उपयोगकर्ता-सामने आउटपुट",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 55,
-        "question_en": "Which famous lake is a Ramsar site?",
-        "question_hi": "कौन सी प्रसिद्ध झील एक रामसर स्थल है?",
-        "options_en": ["Wular Lake", "Dal Lake", "Mansar Lake", "All of these"],
-        "options_hi": ["वुलर झील", "डल झील", "मानसर झील", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "What does 'std::cmp::PartialEq' trait provide?",
+        "question_hi": "'std::cmp::PartialEq' ट्रेट क्या प्रदान करता है?",
+        "options_en": ["Equality comparison", "Ordering comparison", "Memory comparison", "Type comparison"],
+        "options_hi": ["समानता तुलना", "क्रम तुलना", "मेमोरी तुलना", "प्रकार तुलना"],
+        "answer_en": "Equality comparison",
+        "answer_hi": "समानता तुलना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 56,
-        "question_en": "The famous Shankaracharya Temple is dedicated to which deity?",
-        "question_hi": "प्रसिद्ध शंकराचार्य मंदिर किस देवता को समर्पित है?",
-        "options_en": ["Lord Shiva", "Lord Vishnu", "Lord Buddha", "Goddess Durga"],
-        "options_hi": ["भगवान शिव", "भगवान विष्णु", "भगवान बुद्ध", "देवी दुर्गा"],
-        "answer_en": "Lord Shiva",
-        "answer_hi": "भगवान शिव",
+        "question_en": "What is 'std::borrow::Borrow' trait used for?",
+        "question_hi": "'std::borrow::Borrow' ट्रेट किसके लिए उपयोग किया जाता है?",
+        "options_en": ["Generic borrowing", "Memory allocation", "Error handling", "Type conversion"],
+        "options_hi": ["सामान्य उधार", "मेमोरी आवंटन", "त्रुटि हैंडलिंग", "प्रकार रूपांतरण"],
+        "answer_en": "Generic borrowing",
+        "answer_hi": "सामान्य उधार",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 57,
-        "question_en": "Which is the main language spoken in Ladakh?",
-        "question_hi": "लद्दाख में मुख्य रूप से कौन सी भाषा बोली जाती है?",
-        "options_en": ["Ladakhi", "Hindi", "Urdu", "English"],
-        "options_hi": ["लद्दाखी", "हिंदी", "उर्दू", "अंग्रेजी"],
-        "answer_en": "Ladakhi",
-        "answer_hi": "लद्दाखी",
+        "question_en": "What does 'std::hash::Hash' trait enable?",
+        "question_hi": "'std::hash::Hash' ट्रेट क्या सक्षम करता है?",
+        "options_en": ["Hashing functionality", "Memory management", "Error handling", "Thread safety"],
+        "options_hi": ["हैशिंग कार्यक्षमता", "मेमोरी प्रबंधन", "त्रुटि हैंडलिंग", "थ्रेड सुरक्षा"],
+        "answer_en": "Hashing functionality",
+        "answer_hi": "हैशिंग कार्यक्षमता",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 58,
-        "question_en": "The famous Jhelum River originates from which spring?",
-        "question_hi": "प्रसिद्ध झेलम नदी किस झरने से निकलती है?",
-        "options_en": ["Verinag", "Kokernag", "Achabal", "Daksum"],
-        "options_hi": ["वेरीनाग", "कोकरनाग", "अचबल", "दक्सुम"],
-        "answer_en": "Verinag",
-        "answer_hi": "वेरीनाग",
+        "question_en": "What is the purpose of 'std::error::Error' trait?",
+        "question_hi": "'std::error::Error' ट्रेट का उद्देश्य क्या है?",
+        "options_en": ["Common error interface", "Memory allocation", "Thread management", "File operations"],
+        "options_hi": ["सामान्य त्रुटि इंटरफेस", "मेमोरी आवंटन", "थ्रेड प्रबंधन", "फ़ाइल ऑपरेशन"],
+        "answer_en": "Common error interface",
+        "answer_hi": "सामान्य त्रुटि इंटरफेस",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 59,
-        "question_en": "What is the traditional houseboat of Kashmir called?",
-        "question_hi": "कश्मीर की पारंपरिक हाउसबोट को क्या कहा जाता है?",
-        "options_en": ["Shikara", "Doonga", "Barge", "Ferry"],
-        "options_hi": ["शिकारा", "डूंगा", "बजरा", "फेरी"],
-        "answer_en": "Doonga",
-        "answer_hi": "डूंगा",
+        "question_en": "What does 'std::str::FromStr' trait allow?",
+        "question_hi": "'std::str::FromStr' ट्रेट क्या अनुमति देता है?",
+        "options_en": ["Parsing from strings", "String manipulation", "Memory allocation", "Error handling"],
+        "options_hi": ["स्ट्रिंग्स से पार्सिंग", "स्ट्रिंग मैनिपुलेशन", "मेमोरी आवंटन", "त्रुटि हैंडलिंग"],
+        "answer_en": "Parsing from strings",
+        "answer_hi": "स्ट्रिंग्स से पार्सिंग",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 60,
-        "question_en": "Which famous festival marks the beginning of spring in Kashmir?",
-        "question_hi": "कश्मीर में वसंत की शुरुआत का प्रतीक कौन सा प्रसिद्ध त्योहार है?",
-        "options_en": ["Baisakhi", "Navroz", "Sont", "Shivratri"],
-        "options_hi": ["बैसाखी", "नवरोज", "सोंट", "शिवरात्रि"],
-        "answer_en": "Sont",
-        "answer_hi": "सोंट",
+        "question_en": "What is 'std::num::ParseIntError' used for?",
+        "question_hi": "'std::num::ParseIntError' किसके लिए उपयोग किया जाता है?",
+        "options_en": ["Integer parsing errors", "Float parsing errors", "String errors", "Memory errors"],
+        "options_hi": ["पूर्णांक पार्सिंग त्रुटियाँ", "फ्लोट पार्सिंग त्रुटियाँ", "स्ट्रिंग त्रुटियाँ", "मेमोरी त्रुटियाँ"],
+        "answer_en": "Integer parsing errors",
+        "answer_hi": "पूर्णांक पार्सिंग त्रुटियाँ",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 61,
-        "question_en": "The famous Hari Parbat fort is associated with which goddess?",
-        "question_hi": "प्रसिद्ध हरी परबत किला किस देवी से संबंधित है?",
-        "options_en": ["Durga", "Kali", "Sharika", "Lakshmi"],
-        "options_hi": ["दुर्गा", "काली", "शारिका", "लक्ष्मी"],
-        "answer_en": "Sharika",
-        "answer_hi": "शारिका",
+        "question_en": "What does 'std::io::Error' represent?",
+        "question_hi": "'std::io::Error' क्या दर्शाता है?",
+        "options_en": ["I/O operation errors", "Network errors", "Memory errors", "Thread errors"],
+        "options_hi": ["I/O ऑपरेशन त्रुटियाँ", "नेटवर्क त्रुटियाँ", "मेमोरी त्रुटियाँ", "थ्रेड त्रुटियाँ"],
+        "answer_en": "I/O operation errors",
+        "answer_hi": "I/O ऑपरेशन त्रुटियाँ",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 62,
-        "question_en": "Which is the main fruit grown in Kashmir?",
-        "question_hi": "कश्मीर में उगाया जाने वाला मुख्य फल कौन सा है?",
-        "options_en": ["Apple", "Cherry", "Apricot", "Walnut"],
-        "options_hi": ["सेब", "चेरी", "खुबानी", "अखरोट"],
-        "answer_en": "Apple",
-        "answer_hi": "सेब",
+        "question_en": "What is the purpose of 'std::panic::catch_unwind'?",
+        "question_hi": "'std::panic::catch_unwind' का उद्देश्य क्या है?",
+        "options_en": ["Catch panics as Result", "Cause panics", "Ignore errors", "Handle memory"],
+        "options_hi": ["पैनिक को Result के रूप में पकड़ें", "पैनिक का कारण", "त्रुटियों को अनदेखा", "मेमोरी संभाल"],
+        "answer_en": "Catch panics as Result",
+        "answer_hi": "पैनिक को Result के रूप में पकड़ें",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 63,
-        "question_en": "The famous Kheer Bhawani temple is dedicated to which goddess?",
-        "question_hi": "प्रसिद्ध खीर भवानी मंदिर किस देवी को समर्पित है?",
-        "options_en": ["Durga", "Kali", "Lakshmi", "Ragnya"],
-        "options_hi": ["दुर्गा", "काली", "लक्ष्मी", "राग्न्या"],
-        "answer_en": "Ragnya",
-        "answer_hi": "राग्न्या",
+        "question_en": "What does 'std::sync::Barrier' synchronize?",
+        "question_hi": "'std::sync::Barrier' क्या सिंक्रनाइज़ करता है?",
+        "options_en": ["Multiple threads", "Memory access", "File operations", "Network calls"],
+        "options_hi": ["एकाधिक थ्रेड्स", "मेमोरी एक्सेस", "फ़ाइल ऑपरेशन", "नेटवर्क कॉल"],
+        "answer_en": "Multiple threads",
+        "answer_hi": "एकाधिक थ्रेड्स",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 64,
-        "question_en": "Which famous mountain pass is on the Leh-Manali highway?",
-        "question_hi": "लेह-मनाली राजमार्ग पर कौन सा प्रसिद्ध पर्वत दर्रा है?",
-        "options_en": ["Rohtang Pass", "Baralacha La", "Taglang La", "All of these"],
-        "options_hi": ["रोहतांग दर्रा", "बारालाचा ला", "तागलांग ला", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "What is 'std::sync::Condvar' used for?",
+        "question_hi": "'std::sync::Condvar' किसके लिए उपयोग किया जाता है?",
+        "options_en": ["Thread condition variables", "Memory conditions", "File conditions", "Network conditions"],
+        "options_hi": ["थ्रेड कंडीशन वेरिएबल", "मेमोरी कंडीशन", "फ़ाइल कंडीशन", "नेटवर्क कंडीशन"],
+        "answer_en": "Thread condition variables",
+        "answer_hi": "थ्रेड कंडीशन वेरिएबल",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 65,
-        "question_en": "What is the traditional headgear of Kashmiri men called?",
-        "question_hi": "कश्मीरी पुरुषों के पारंपरिक सिर के आवरण को क्या कहा जाता है?",
-        "options_en": ["Turban", "Cap", "Taranga", "Pheta"],
-        "options_hi": ["पगड़ी", "टोपी", "तरंगा", "फेटा"],
-        "answer_en": "Taranga",
-        "answer_hi": "तरंगा",
+        "question_en": "What does 'std::sync::mpsc::channel' return?",
+        "question_hi": "'std::sync::mpsc::channel' क्या लौटाता है?",
+        "options_en": ["(Sender, Receiver) pair", "Single sender", "Single receiver", "Error result"],
+        "options_hi": ["(Sender, Receiver) जोड़ी", "सिंगल सेंडर", "सिंगल रिसीवर", "त्रुटि परिणाम"],
+        "answer_en": "(Sender, Receiver) pair",
+        "answer_hi": "(Sender, Receiver) जोड़ी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 66,
-        "question_en": "The famous Martand Sun Temple was built by which king?",
-        "question_hi": "प्रसिद्ध मार्तंड सूर्य मंदिर किस राजा ने बनवाया था?",
-        "options_en": ["Lalitaditya", "Ashoka", "Kanishka", "Harsha"],
-        "options_hi": ["ललितादित्य", "अशोक", "कनिष्क", "हर्ष"],
-        "answer_en": "Lalitaditya",
-        "answer_hi": "ललितादित्य",
+        "question_en": "What is the purpose of 'std::sync::RwLock'?",
+        "question_hi": "'std::sync::RwLock' का उद्देश्य क्या है?",
+        "options_en": ["Reader-writer lock", "Mutual exclusion", "Memory lock", "File lock"],
+        "options_hi": ["रीडर-राइटर लॉक", "आपसी बहिष्कार", "मेमोरी लॉक", "फ़ाइल लॉक"],
+        "answer_en": "Reader-writer lock",
+        "answer_hi": "रीडर-राइटर लॉक",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 67,
-        "question_en": "Which is the main dance form of Ladakh?",
-        "question_hi": "लद्दाख का मुख्य नृत्य रूप कौन सा है?",
-        "options_en": ["Jabro", "Rouf", "Bhangra", "Garba"],
-        "options_hi": ["जबरो", "रूफ", "भांगड़ा", "गरबा"],
-        "answer_en": "Jabro",
-        "answer_hi": "जबरो",
+        "question_en": "What does 'std::sync::atomic' module provide?",
+        "question_hi": "'std::sync::atomic' मॉड्यूल क्या प्रदान करता है?",
+        "options_en": ["Atomic operations", "Thread management", "Memory allocation", "Error handling"],
+        "options_hi": ["परमाणु संचालन", "थ्रेड प्रबंधन", "मेमोरी आवंटन", "त्रुटि हैंडलिंग"],
+        "answer_en": "Atomic operations",
+        "answer_hi": "परमाणु संचालन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 68,
-        "question_en": "The famous Zojila Pass connects which two places?",
-        "question_hi": "प्रसिद्ध जोजिला दर्रा किन दो स्थानों को जोड़ता है?",
-        "options_en": ["Srinagar and Leh", "Leh and Manali", "Jammu and Srinagar", "Srinagar and Kargil"],
-        "options_hi": ["श्रीनगर और लेह", "लेह और मनाली", "जम्मू और श्रीनगर", "श्रीनगर और कारगिल"],
-        "answer_en": "Srinagar and Leh",
-        "answer_hi": "श्रीनगर और लेह",
+        "question_en": "What is 'std::sync::atomic::Ordering' used for?",
+        "question_hi": "'std::sync::atomic::Ordering' किसके लिए उपयोग किया जाता है?",
+        "options_en": ["Memory ordering semantics", "Thread ordering", "Memory allocation", "Error ordering"],
+        "options_hi": ["मेमोरी ऑर्डरिंग शब्दार्थ", "थ्रेड ऑर्डरिंग", "मेमोरी आवंटन", "त्रुटि ऑर्डरिंग"],
+        "answer_en": "Memory ordering semantics",
+        "answer_hi": "मेमोरी ऑर्डरिंग शब्दार्थ",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 69,
-        "question_en": "What is the traditional name of Srinagar?",
-        "question_hi": "श्रीनगर का पारंपरिक नाम क्या है?",
-        "options_en": ["City of Lakes", "Venice of East", "Paradise on Earth", "All of these"],
-        "options_hi": ["झीलों का शहर", "पूर्व का वेनिस", "पृथ्वी पर स्वर्ग", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "What does 'std::mem::forget' do?",
+        "question_hi": "'std::mem::forget' क्या करता है?",
+        "options_en": ["Prevents destructor run", "Causes memory leak", "Deallocates memory", "Checks memory"],
+        "options_hi": ["डिस्ट्रक्टर रन रोकता है", "मेमोरी लीक का कारण", "मेमोरी डीलोकेट", "मेमोरी जांच"],
+        "answer_en": "Prevents destructor run",
+        "answer_hi": "डिस्ट्रक्टर रन रोकता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 70,
-        "question_en": "Which famous garden is known as 'Garden of Bliss'?",
-        "question_hi": "कौन सा प्रसिद्ध बाग 'आनंद का बाग' के नाम से जाना जाता है?",
-        "options_en": ["Shalimar Bagh", "Nishat Bagh", "Chashme Shahi", "Harwan Garden"],
-        "options_hi": ["शालीमार बाग", "निशात बाग", "चश्मा शाही", "हरवन गार्डन"],
-        "answer_en": "Nishat Bagh",
-        "answer_hi": "निशात बाग",
+        "question_en": "What is 'std::mem::transmute' used for?",
+        "question_hi": "'std::mem::transmute' किसके लिए उपयोग किया जाता है?",
+        "options_en": ["Unsafe type reinterpretation", "Safe type conversion", "Memory allocation", "Error handling"],
+        "options_hi": ["असुरक्षित प्रकार पुनर्व्याख्या", "सुरक्षित प्रकार रूपांतरण", "मेमोरी आवंटन", "त्रुटि हैंडलिंग"],
+        "answer_en": "Unsafe type reinterpretation",
+        "answer_hi": "असुरक्षित प्रकार पुनर्व्याख्या",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 71,
-        "question_en": "The famous Leh Palace was built by which king?",
-        "question_hi": "प्रसिद्ध लेह पैलेस किस राजा ने बनवाया था?",
-        "options_en": ["Singge Namgyal", "Tsewang Namgyal", "Jamyang Namgyal", "Deldan Namgyal"],
-        "options_hi": ["सिंग्गे नामग्याल", "त्सेवांग नामग्याल", "जम्यांग नामग्याल", "देलदान नामग्याल"],
-        "answer_en": "Singge Namgyal",
-        "answer_hi": "सिंग्गे नामग्याल",
+        "question_en": "What does 'std::ptr::null' create?",
+        "question_hi": "'std::ptr::null' क्या बनाता है?",
+        "options_en": ["Null raw pointer", "Null reference", "Empty value", "Zero value"],
+        "options_hi": ["नल रॉ पॉइंटर", "नल संदर्भ", "खाली मान", "शून्य मान"],
+        "answer_en": "Null raw pointer",
+        "answer_hi": "नल रॉ पॉइंटर",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 72,
-        "question_en": "Which is the main festival of Ladakh?",
-        "question_hi": "लद्दाख का मुख्य त्योहार कौन सा है?",
-        "options_en": ["Losar", "Hemis", "Saka Dawa", "All of these"],
-        "options_hi": ["लोसार", "हेमिस", "साका दावा", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "What is the purpose of 'std::hint::spin_loop'?",
+        "question_hi": "'std::hint::spin_loop' का उद्देश्य क्या है?",
+        "options_en": ["Optimize busy-waiting", "Create infinite loops", "Terminate loops", "Check loop conditions"],
+        "options_hi": ["बिजी-वेटिंग अनुकूलित", "अनंत लूप बनाएं", "लूप समाप्त", "लूप स्थितियाँ जांच"],
+        "answer_en": "Optimize busy-waiting",
+        "answer_hi": "बिजी-वेटिंग अनुकूलित",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 73,
-        "question_en": "What is the traditional alcoholic beverage of Ladakh?",
-        "question_hi": "लद्दाख का पारंपरिक मादक पेय क्या है?",
-        "options_en": ["Chang", "Arak", "Lugdi", "All of these"],
-        "options_hi": ["चांग", "अरक", "लुगड़ी", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "What does 'std::process::exit' do?",
+        "question_hi": "'std::process::exit' क्या करता है?",
+        "options_en": ["Terminates process", "Stops thread", "Pauses execution", "Continues execution"],
+        "options_hi": ["प्रक्रिया समाप्त", "थ्रेड रोक", "निष्पादन रोक", "निष्पादन जारी"],
+        "answer_en": "Terminates process",
+        "answer_hi": "प्रक्रिया समाप्त",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 74,
-        "question_en": "The famous Stok Palace is located in which village?",
-        "question_hi": "प्रसिद्ध स्टोक पैलेस किस गांव में स्थित है?",
-        "options_en": ["Stok", "Shey", "Thiksey", "Hemis"],
-        "options_hi": ["स्टोक", "शे", "थिकसे", "हेमिस"],
-        "answer_en": "Stok",
-        "answer_hi": "स्टोक",
+        "question_en": "What is 'std::env::var' used for?",
+        "question_hi": "'std::env::var' किसके लिए उपयोग किया जाता है?",
+        "options_en": ["Get environment variable", "Set environment variable", "Check variable type", "Allocate variable"],
+        "options_hi": ["पर्यावरण चर प्राप्त", "पर्यावरण चर सेट", "वेरिएबल प्रकार जांच", "वेरिएबल आवंटित"],
+        "answer_en": "Get environment variable",
+        "answer_hi": "पर्यावरण चर प्राप्त",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 75,
-        "question_en": "Which famous lake is known for its changing colors?",
-        "question_hi": "कौन सी प्रसिद्ध झील अपने बदलते रंगों के लिए जानी जाती है?",
-        "options_en": ["Pangong Lake", "Tso Moriri", "Tso Kar", "All of these"],
-        "options_hi": ["पैंगोंग झील", "त्सो मोरिरी", "त्सो कर", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "What does 'std::fs::read_to_string' do?",
+        "question_hi": "'std::fs::read_to_string' क्या करता है?",
+        "options_en": ["Reads file to string", "Writes string to file", "Checks file existence", "Deletes file"],
+        "options_hi": ["फ़ाइल को स्ट्रिंग में पढ़ता है", "स्ट्रिंग को फ़ाइल में लिखता है", "फ़ाइल अस्तित्व जांच", "फ़ाइल हटाता है"],
+        "answer_en": "Reads file to string",
+        "answer_hi": "फ़ाइल को स्ट्रिंग में पढ़ता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 76,
-        "question_en": "The famous Magnetic Hill is located near which city?",
-        "question_hi": "प्रसिद्ध मैग्नेटिक हिल किस शहर के पास स्थित है?",
-        "options_en": ["Leh", "Srinagar", "Jammu", "Kargil"],
-        "options_hi": ["लेह", "श्रीनगर", "जम्मू", "कारगिल"],
-        "answer_en": "Leh",
-        "answer_hi": "लेह",
+        "question_en": "What is the purpose of 'std::io::stdin'?",
+        "question_hi": "'std::io::stdin' का उद्देश्य क्या है?",
+        "options_en": ["Standard input", "Standard output", "Standard error", "File stream"],
+        "options_hi": ["मानक इनपुट", "मानक आउटपुट", "मानक त्रुटि", "फ़ाइल स्ट्रीम"],
+        "answer_en": "Standard input",
+        "answer_hi": "मानक इनपुट",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 77,
-        "question_en": "What is the traditional name of Pahalgam?",
-        "question_hi": "पहलगाम का पारंपरिक नाम क्या है?",
-        "options_en": ["Valley of Shepherds", "Meadow of Flowers", "Gateway to Amarnath", "All of these"],
-        "options_hi": ["गड़रियों की घाटी", "फूलों का मैदान", "अमरनाथ का प्रवेश द्वार", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "What does 'std::io::stdout' provide?",
+        "question_hi": "'std::io::stdout' क्या प्रदान करता है?",
+        "options_en": ["Standard output", "Standard input", "Standard error", "File stream"],
+        "options_hi": ["मानक आउटपुट", "मानक इनपुट", "मानक त्रुटि", "फ़ाइल स्ट्रीम"],
+        "answer_en": "Standard output",
+        "answer_hi": "मानक आउटपुट",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 78,
-        "question_en": "Which famous river forms the world's highest river rafting point?",
-        "question_hi": "कौन सी प्रसिद्ध नदी दुनिया का सबसे ऊंचा रिवर राफ्टिंग पॉइंट बनाती है?",
-        "options_en": ["Indus", "Zanskar", "Jhelum", "Chenab"],
-        "options_hi": ["सिंधु", "जांस्कर", "झेलम", "चिनाब"],
-        "answer_en": "Zanskar",
-        "answer_hi": "जांस्कर",
+        "question_en": "What is 'std::io::stderr' used for?",
+        "question_hi": "'std::io::stderr' किसके लिए उपयोग किया जाता है?",
+        "options_en": ["Standard error output", "Standard input", "Standard output", "File output"],
+        "options_hi": ["मानक त्रुटि आउटपुट", "मानक इनपुट", "मानक आउटपुट", "फ़ाइल आउटपुट"],
+        "answer_en": "Standard error output",
+        "answer_hi": "मानक त्रुटि आउटपुट",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 79,
-        "question_en": "The famous Alchi Monastery is known for what?",
-        "question_hi": "प्रसिद्ध अलची मठ किस लिए जाना जाता है?",
-        "options_en": ["Ancient paintings", "Wood carvings", "Both", "None"],
-        "options_hi": ["प्राचीन चित्र", "लकड़ी की नक्काशी", "दोनों", "कोई नहीं"],
-        "answer_en": "Both",
-        "answer_hi": "दोनों",
+        "question_en": "What does 'std::io::Write' trait enable?",
+        "question_hi": "'std::io::Write' ट्रेट क्या सक्षम करता है?",
+        "options_en": ["Byte-oriented writing", "Byte-oriented reading", "Text parsing", "Error handling"],
+        "options_hi": ["बाइट-उन्मुख लेखन", "बाइट-उन्मुख पठन", "टेक्स्ट पार्सिंग", "त्रुटि हैंडलिंग"],
+        "answer_en": "Byte-oriented writing",
+        "answer_hi": "बाइट-उन्मुख लेखन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 80,
-        "question_en": "Which is the main pass on the Srinagar-Kargil highway?",
-        "question_hi": "श्रीनगर-कारगिल राजमार्ग पर मुख्य दर्रा कौन सा है?",
-        "options_en": ["Zojila", "Fotu La", "Namika La", "All of these"],
-        "options_hi": ["जोजिला", "फोटू ला", "नामिका ला", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "What is the purpose of 'std::io::Read' trait?",
+        "question_hi": "'std::io::Read' ट्रेट का उद्देश्य क्या है?",
+        "options_en": ["Byte-oriented reading", "Byte-oriented writing", "Text formatting", "Error propagation"],
+        "options_hi": ["बाइट-उन्मुख पठन", "बाइट-उन्मुख लेखन", "टेक्स्ट फॉर्मेटिंग", "त्रुटि प्रसार"],
+        "answer_en": "Byte-oriented reading",
+        "answer_hi": "बाइट-उन्मुख पठन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 81,
-        "question_en": "What is the traditional winter wear of Ladakhi women called?",
-        "question_hi": "लद्दाखी महिलाओं के पारंपरिक शीतकालीन पहनावे को क्या कहा जाता है?",
-        "options_en": ["Kuntop", "Bok", "Skerag", "All of these"],
-        "options_hi": ["कुंटोप", "बोक", "स्केराग", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "What does 'std::io::Seek' trait allow?",
+        "question_hi": "'std::io::Seek' ट्रेट क्या अनुमति देता है?",
+        "options_en": ["Random access in streams", "Sequential access", "Memory allocation", "Error handling"],
+        "options_hi": ["स्ट्रीम में यादृच्छिक पहुंच", "क्रमिक पहुंच", "मेमोरी आवंटन", "त्रुटि हैंडलिंग"],
+        "answer_en": "Random access in streams",
+        "answer_hi": "स्ट्रीम में यादृच्छिक पहुंच",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 82,
-        "question_en": "The famous Drang Drung Glacier is near which pass?",
-        "question_hi": "प्रसिद्ध ड्रांग ड्रुंग ग्लेशियर किस दर्रे के पास है?",
-        "options_en": ["Pensi La", "Zojila", "Khardung La", "Chang La"],
-        "options_hi": ["पेंसी ला", "जोजिला", "खारदुंग ला", "चांग ला"],
-        "answer_en": "Pensi La",
-        "answer_hi": "पेंसी ला",
+        "question_en": "What is 'std::io::BufWriter' used for?",
+        "question_hi": "'std::io::BufWriter' किसके लिए उपयोग किया जाता है?",
+        "options_en": ["Efficient buffered writing", "Binary writing", "Text parsing", "Error handling"],
+        "options_hi": ["कुशल बफर किया गया लेखन", "बाइनरी लेखन", "टेक्स्ट पार्सिंग", "त्रुटि हैंडलिंग"],
+        "answer_en": "Efficient buffered writing",
+        "answer_hi": "कुशल बफर किया गया लेखन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 83,
-        "question_en": "Which famous lake is known as 'Lake of Great Enchantment'?",
-        "question_hi": "कौन सी प्रसिद्ध झील 'ग्रेट एन्चेंटमेंट की झील' के नाम से जानी जाती है?",
-        "options_en": ["Tso Moriri", "Pangong Lake", "Tso Kar", "Wular Lake"],
-        "options_hi": ["त्सो मोरिरी", "पैंगोंग झील", "त्सो कर", "वुलर झील"],
-        "answer_en": "Tso Moriri",
-        "answer_hi": "त्सो मोरिरी",
+        "question_en": "What does 'std::io::ErrorKind' provide?",
+        "question_hi": "'std::io::ErrorKind' क्या प्रदान करता है?",
+        "options_en": ["I/O error classification", "Memory error types", "Thread error types", "Network error types"],
+        "options_hi": ["I/O त्रुटि वर्गीकरण", "मेमोरी त्रुटि प्रकार", "थ्रेड त्रुटि प्रकार", "नेटवर्क त्रुटि प्रकार"],
+        "answer_en": "I/O error classification",
+        "answer_hi": "I/O त्रुटि वर्गीकरण",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 84,
-        "question_en": "The famous Suru Valley is in which district?",
-        "question_hi": "प्रसिद्ध सुरु घाटी किस जिले में है?",
-        "options_en": ["Kargil", "Leh", "Jammu", "Srinagar"],
-        "options_hi": ["कारगिल", "लेह", "जम्मू", "श्रीनगर"],
-        "answer_en": "Kargil",
-        "answer_hi": "कारगिल",
+        "question_en": "What is the purpose of 'std::fs::OpenOptions'?",
+        "question_hi": "'std::fs::OpenOptions' का उद्देश्य क्या है?",
+        "options_en": ["Configurable file opening", "File deletion", "File copying", "File moving"],
+        "options_hi": ["कॉन्फ़िगरेबल फ़ाइल खोलना", "फ़ाइल हटाना", "फ़ाइल कॉपी", "फ़ाइल मूव"],
+        "answer_en": "Configurable file opening",
+        "answer_hi": "कॉन्फ़िगरेबल फ़ाइल खोलना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 85,
-        "question_en": "What is the traditional name of Sonamarg?",
-        "question_hi": "सोनमर्ग का पारंपरिक नाम क्या है?",
-        "options_en": ["Meadow of Gold", "Golden Valley", "Both", "None"],
-        "options_hi": ["सोने का मैदान", "सुनहरी घाटी", "दोनों", "कोई नहीं"],
-        "answer_en": "Both",
-        "answer_hi": "दोनों",
+        "question_en": "What does 'std::fs::metadata' provide?",
+        "question_hi": "'std::fs::metadata' क्या प्रदान करता है?",
+        "options_en": ["File system metadata", "File contents", "File permissions", "File owner"],
+        "options_hi": ["फ़ाइल सिस्टम मेटाडेटा", "फ़ाइल सामग्री", "फ़ाइल अनुमतियाँ", "फ़ाइल मालिक"],
+        "answer_en": "File system metadata",
+        "answer_hi": "फ़ाइल सिस्टम मेटाडेटा",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 86,
-        "question_en": "Which famous wildlife sanctuary is in Jammu region?",
-        "question_hi": "जम्मू क्षेत्र में कौन सा प्रसिद्ध वन्यजीव अभयारण्य है?",
-        "options_en": ["Surinsar-Mansar", "Ramnagar", "Both", "None"],
-        "options_hi": ["सुरिंसर-मानसर", "रामनगर", "दोनों", "कोई नहीं"],
-        "answer_en": "Both",
-        "answer_hi": "दोनों",
+        "question_en": "What is 'std::path::PathBuf' used for?",
+        "question_hi": "'std::path::PathBuf' किसके लिए उपयोग किया जाता है?",
+        "options_en": ["Mutable owned path", "Immutable path reference", "Network paths", "Memory paths"],
+        "options_hi": ["म्यूटेबल ओन्ड पथ", "इम्यूटेबल पथ संदर्भ", "नेटवर्क पथ", "मेमोरी पथ"],
+        "answer_en": "Mutable owned path",
+        "answer_hi": "म्यूटेबल ओन्ड पथ",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 87,
-        "question_en": "The famous Maharaja Hari Singh's rule ended in which year?",
-        "question_hi": "महाराजा हरी सिंह का शासन किस वर्ष समाप्त हुआ?",
-        "options_en": ["1947", "1948", "1949", "1950"],
-        "options_hi": ["1947", "1948", "1949", "1950"],
-        "answer_en": "1947",
-        "answer_hi": "1947",
+        "question_en": "What does 'std::env::current_dir' return?",
+        "question_hi": "'std::env::current_dir' क्या लौटाता है?",
+        "options_en": ["Current working directory", "Home directory", "Root directory", "Temporary directory"],
+        "options_hi": ["वर्तमान कार्यशील निर्देशिका", "होम निर्देशिका", "रूट निर्देशिका", "अस्थायी निर्देशिका"],
+        "answer_en": "Current working directory",
+        "answer_hi": "वर्तमान कार्यशील निर्देशिका",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 88,
-        "question_en": "What is the traditional name of Bhaderwah?",
-        "question_hi": "भदरवाह का पारंपरिक नाम क्या है?",
-        "options_en": ["Mini Kashmir", "Land of Gods", "Both", "None"],
-        "options_hi": ["मिनी कश्मीर", "देवताओं की भूमि", "दोनों", "कोई नहीं"],
-        "answer_en": "Both",
-        "answer_hi": "दोनों",
+        "question_en": "What is the purpose of 'std::process::Stdio'?",
+        "question_hi": "'std::process::Stdio' का उद्देश्य क्या है?",
+        "options_en": ["Configure child process I/O", "Parent process I/O", "Thread I/O", "File I/O"],
+        "options_hi": ["चाइल्ड प्रक्रिया I/O कॉन्फ़िगर", "पैरेंट प्रक्रिया I/O", "थ्रेड I/O", "फ़ाइल I/O"],
+        "answer_en": "Configure child process I/O",
+        "answer_hi": "चाइल्ड प्रक्रिया I/O कॉन्फ़िगर",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 89,
-        "question_en": "Which famous spring is known for its trout fish?",
-        "question_hi": "कौन सा प्रसिद्ध झरना अपनी ट्राउट मछली के लिए जाना जाता है?",
-        "options_en": ["Kokernag", "Verinag", "Achabal", "Daksum"],
-        "options_hi": ["कोकरनाग", "वेरीनाग", "अचबल", "दक्सुम"],
-        "answer_en": "Kokernag",
-        "answer_hi": "कोकरनाग",
+        "question_en": "What does 'std::process::Child' represent?",
+        "question_hi": "'std::process::Child' क्या दर्शाता है?",
+        "options_en": ["Running child process", "Terminated process", "Parent process", "Thread process"],
+        "options_hi": ["चल रही चाइल्ड प्रक्रिया", "समाप्त प्रक्रिया", "पैरेंट प्रक्रिया", "थ्रेड प्रक्रिया"],
+        "answer_en": "Running child process",
+        "answer_hi": "चल रही चाइल्ड प्रक्रिया",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 90,
-        "question_en": "The famous Jami Masjid in Srinagar was originally built as what?",
-        "question_hi": "श्रीनगर में प्रसिद्ध जामी मस्जिद मूल रूप से क्या बनाई गई थी?",
-        "options_en": ["Buddhist Monastery", "Hindu Temple", "Sikh Gurudwara", "Church"],
-        "options_hi": ["बौद्ध मठ", "हिंदू मंदिर", "सिख गुरुद्वारा", "चर्च"],
-        "answer_en": "Buddhist Monastery",
-        "answer_hi": "बौद्ध मठ",
+        "question_en": "What is 'std::sync::mpsc::SyncSender' used for?",
+        "question_hi": "'std::sync::mpsc::SyncSender' किसके लिए उपयोग किया जाता है?",
+        "options_en": ["Synchronous bounded sending", "Asynchronous sending", "File sending", "Network sending"],
+        "options_hi": ["सिंक्रोनस बाउंडेड भेजना", "एसिंक्रोनस भेजना", "फ़ाइल भेजना", "नेटवर्क भेजना"],
+        "answer_en": "Synchronous bounded sending",
+        "answer_hi": "सिंक्रोनस बाउंडेड भेजना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 91,
-        "question_en": "What is the traditional name of Kishtwar?",
-        "question_hi": "किश्तवाड़ का पारंपरिक नाम क्या है?",
-        "options_en": ["Land of Saffron", "Land of Sapphire", "Both", "None"],
-        "options_hi": ["केसर की भूमि", "नीलम की भूमि", "दोनों", "कोई नहीं"],
-        "answer_en": "Both",
-        "answer_hi": "दोनों",
+        "question_en": "What does 'std::sync::mpsc::Receiver::try_recv' do?",
+        "question_hi": "'std::sync::mpsc::Receiver::try_recv' क्या करता है?",
+        "options_en": ["Non-blocking receive", "Blocking receive", "Send message", "Check channel status"],
+        "options_hi": ["नॉन-ब्लॉकिंग रिसीव", "ब्लॉकिंग रिसीव", "संदेश भेजें", "चैनल स्थिति जांच"],
+        "answer_en": "Non-blocking receive",
+        "answer_hi": "नॉन-ब्लॉकिंग रिसीव",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 92,
-        "question_en": "Which famous mountain peak is visible from Gulmarg?",
-        "question_hi": "गुलमर्ग से कौन सी प्रसिद्ध पर्वत चोटी दिखाई देती है?",
-        "options_en": ["Nanga Parbat", "K2", "Mount Everest", "Nanda Devi"],
-        "options_hi": ["नंगा परबत", "K2", "माउंट एवरेस्ट", "नंदा देवी"],
-        "answer_en": "Nanga Parbat",
-        "answer_hi": "नंगा परबत",
+        "question_en": "What is the purpose of 'std::sync::mpsc::sync_channel'?",
+        "question_hi": "'std::sync::mpsc::sync_channel' का उद्देश्य क्या है?",
+        "options_en": ["Create bounded channel", "Create unbounded channel", "Create async channel", "Create file channel"],
+        "options_hi": ["बाउंडेड चैनल बनाएं", "अनबाउंडेड चैनल बनाएं", "एसिंक चैनल बनाएं", "फ़ाइल चैनल बनाएं"],
+        "answer_en": "Create bounded channel",
+        "answer_hi": "बाउंडेड चैनल बनाएं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 93,
-        "question_en": "The famous Baltal base camp is for which pilgrimage?",
-        "question_hi": "प्रसिद्ध बालटल बेस कैंप किस तीर्थयात्रा के लिए है?",
-        "options_en": ["Amarnath", "Vaishno Devi", "Kedarnath", "Badrinath"],
-        "options_hi": ["अमरनाथ", "वैष्णो देवी", "केदारनाथ", "बद्रीनाथ"],
-        "answer_en": "Amarnath",
-        "answer_hi": "अमरनाथ",
+        "question_en": "What does 'std::sync::Arc' stand for?",
+        "question_hi": "'std::sync::Arc' का क्या अर्थ है?",
+        "options_en": ["Atomically Reference Counted", "Automatic Reference Counter", "Atomic Resource Counter", "Automatic Resource Counted"],
+        "options_hi": ["परमाणु रूप से संदर्भ गिना", "स्वचालित संदर्भ काउंटर", "परमाणु संसाधन काउंटर", "स्वचालित संसाधन गिना"],
+        "answer_en": "Atomically Reference Counted",
+        "answer_hi": "परमाणु रूप से संदर्भ गिना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 94,
-        "question_en": "What is the traditional name of Ladakh's double-humped camel?",
-        "question_hi": "लद्दाख के दो कूबड़ वाले ऊंट का पारंपरिक नाम क्या है?",
-        "options_en": ["Bactrian Camel", "Ladakhi Camel", "Nubra Camel", "All of these"],
-        "options_hi": ["बैक्ट्रियन ऊंट", "लद्दाखी ऊंट", "नुब्रा ऊंट", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "What is 'std::sync::Weak' used for?",
+        "question_hi": "'std::sync::Weak' किसके लिए उपयोग किया जाता है?",
+        "options_en": ["Non-owning Arc reference", "Strong reference", "Owned reference", "Mutable reference"],
+        "options_hi": ["नॉन-ओनिंग Arc संदर्भ", "स्ट्रॉन्ग संदर्भ", "ओन्ड संदर्भ", "म्यूटेबल संदर्भ"],
+        "answer_en": "Non-owning Arc reference",
+        "answer_hi": "नॉन-ओनिंग Arc संदर्भ",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 95,
-        "question_en": "Which famous lake is known for its floating post office?",
-        "question_hi": "कौन सी प्रसिद्ध झील अपने फ्लोटिंग पोस्ट ऑफिस के लिए जानी जाती है?",
-        "options_en": ["Dal Lake", "Wular Lake", "Mansar Lake", "Pangong Lake"],
-        "options_hi": ["डल झील", "वुलर झील", "मानसर झील", "पैंगोंग झील"],
-        "answer_en": "Dal Lake",
-        "answer_hi": "डल झील",
+        "question_en": "What does 'std::cell::RefCell' provide?",
+        "question_hi": "'std::cell::RefCell' क्या प्रदान करता है?",
+        "options_en": ["Runtime borrowing checks", "Compile-time borrowing", "Thread-safe borrowing", "Atomic borrowing"],
+        "options_hi": ["रनटाइम उधार जांच", "कंपाइल-टाइम उधार", "थ्रेड-सुरक्षित उधार", "परमाणु उधार"],
+        "answer_en": "Runtime borrowing checks",
+        "answer_hi": "रनटाइम उधार जांच",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 96,
-        "question_en": "The famous Khardung La pass is at what altitude?",
-        "question_hi": "प्रसिद्ध खारदुंग ला दर्रा कितनी ऊंचाई पर है?",
-        "options_en": ["5359 m", "5602 m", "5829 m", "5987 m"],
-        "options_hi": ["5359 m", "5602 m", "5829 m", "5987 m"],
-        "answer_en": "5359 m",
-        "answer_hi": "5359 m",
+        "question_en": "What is the purpose of 'std::mem::replace'?",
+        "question_hi": "'std::mem::replace' का उद्देश्य क्या है?",
+        "options_en": ["Swap values return old", "Copy values", "Move values", "Delete values"],
+        "options_hi": ["मान स्वैप करो पुराना लौटाओ", "मान कॉपी", "मान मूव", "मान डिलीट"],
+        "answer_en": "Swap values return old",
+        "answer_hi": "मान स्वैप करो पुराना लौटाओ",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 97,
-        "question_en": "What is the traditional name of Kashmir's saffron?",
-        "question_hi": "कश्मीर के केसर का पारंपरिक नाम क्या है?",
-        "options_en": ["Kashmiri Kesar", "Mongra Saffron", "Both", "None"],
-        "options_hi": ["कश्मीरी केसर", "मोंगरा केसर", "दोनों", "कोई नहीं"],
-        "answer_en": "Both",
-        "answer_hi": "दोनों",
+        "question_en": "What does 'std::mem::take' do?",
+        "question_hi": "'std::mem::take' क्या करता है?",
+        "options_en": ["Take value replace default", "Copy value", "Move value", "Delete value"],
+        "options_hi": ["मान लो डिफ़ॉल्ट रिप्लेस", "मान कॉपी", "मान मूव", "मान डिलीट"],
+        "answer_en": "Take value replace default",
+        "answer_hi": "मान लो डिफ़ॉल्ट रिप्लेस",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 98,
-        "question_en": "Which famous garden has the largest tulip garden in Asia?",
-        "question_hi": "किस प्रसिद्ध उद्यान में एशिया का सबसे बड़ा ट्यूलिप गार्डन है?",
-        "options_en": ["Indira Gandhi Tulip Garden", "Shalimar Bagh", "Nishat Bagh", "Chashme Shahi"],
-        "options_hi": ["इंदिरा गांधी ट्यूलिप गार्डन", "शालीमार बाग", "निशात बाग", "चश्मा शाही"],
-        "answer_en": "Indira Gandhi Tulip Garden",
-        "answer_hi": "इंदिरा गांधी ट्यूलिप गार्डन",
+        "question_en": "What is 'std::mem::MaybeUninit' used for?",
+        "question_hi": "'std::mem::MaybeUninit' किसके लिए उपयोग किया जाता है?",
+        "options_en": ["Safe uninitialized memory", "Initialize memory", "Deallocate memory", "Check memory"],
+        "options_hi": ["सुरक्षित अप्रारंभिक मेमोरी", "मेमोरी आरंभ", "मेमोरी डीलोकेट", "मेमोरी जांच"],
+        "answer_en": "Safe uninitialized memory",
+        "answer_hi": "सुरक्षित अप्रारंभिक मेमोरी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 99,
-        "question_en": "The famous Shey Palace was the summer capital of which kingdom?",
-        "question_hi": "प्रसिद्ध शे पैलेस किस राज्य की ग्रीष्मकालीन राजधानी थी?",
-        "options_en": ["Ladakh", "Kashmir", "Jammu", "Kargil"],
-        "options_hi": ["लद्दाख", "कश्मीर", "जम्मू", "कारगिल"],
-        "answer_en": "Ladakh",
-        "answer_hi": "लद्दाख",
+        "question_en": "What does 'std::pin::Pin' guarantee?",
+        "question_hi": "'std::pin::Pin' क्या गारंटी देता है?",
+        "options_en": ["Prevent moving pinned data", "Allow moving data", "Copy data", "Delete data"],
+        "options_hi": ["पिन किए गए डेटा को स्थानांतरित होने से रोकें", "डेटा स्थानांतरित करने की अनुमति", "डेटा कॉपी", "डेटा डिलीट"],
+        "answer_en": "Prevent moving pinned data",
+        "answer_hi": "पिन किए गए डेटा को स्थानांतरित होने से रोकें",
         "attempted": false,
         "selected": ""
     },
-    {
+     {
         "num": 100,
-        "question_en": "What is the traditional name of Jammu's famous temple?",
-        "question_hi": "जम्मू के प्रसिद्ध मंदिर का पारंपरिक नाम क्या है?",
-        "options_en": ["Raghunath Temple", "Ranbireshwar Temple", "Both", "None"],
-        "options_hi": ["रघुनाथ मंदिर", "रनबीरेश्वर मंदिर", "दोनों", "कोई नहीं"],
-        "answer_en": "Both",
-        "answer_hi": "दोनों",
+        "question_en": "What is the primary purpose of Rust's ownership system?",
+        "question_hi": "Rust के स्वामित्व प्रणाली का प्राथमिक उद्देश्य क्या है?",
+        "options_en": ["Memory safety without garbage collection", "Faster execution", "Automatic memory allocation", "Simpler syntax"],
+        "options_hi": ["गार्बेज कलेक्शन के बिना मेमोरी सुरक्षा", "तेज निष्पादन", "स्वचालित मेमोरी आवंटन", "सरल सिंटैक्स"],
+        "answer_en": "Memory safety without garbage collection",
+        "answer_hi": "गार्बेज कलेक्शन के बिना मेमोरी सुरक्षा",
         "attempted": false,
         "selected": ""
     }
-        
-// Add more questions here...
 ];
-
-
-let currentQuestion = 0; 
+// --------------------------- GLOBAL VARS -----------------------------
+let currentQuestion = 0;
 let language = "en";
-// let timeLeft = 180 * 60; // 180 minutes
-let timeLeft = 60 * 60; // 60 minutes
+let timeLeft = 60 * 60;   // 60 minutes timer
 let timerInterval;
 
-// ----------------- Quiz Logic -----------------
+// --------------------------- LOAD QUESTION ----------------------------
 function loadQuestion(index) {
     const q = questions[index];
-    document.getElementById("question").textContent = `${q.num}. ${
-        language === "en" ? q.question_en : q.question_hi
-    }`;
-    document.getElementById("questionCounter").textContent = `Question ${index + 1} of ${questions.length}`;
+
+    document.getElementById("question").textContent =
+        `${q.num}. ${language === "en" ? q.question_en : q.question_hi}`;
+
+    document.getElementById("questionCounter").textContent =
+        `Question ${index + 1} of ${questions.length}`;
 
     const optionsElement = document.getElementById("options");
     optionsElement.innerHTML = "";
@@ -1126,6 +1124,7 @@ function loadQuestion(index) {
     options.forEach((option) => {
         const isSelected = q.selected === option;
         const optionDiv = document.createElement("div");
+
         optionDiv.className = "option-box";
         optionDiv.style = `
             border: 2px solid ${isSelected ? "#007bff" : "#ccc"};
@@ -1134,12 +1133,11 @@ function loadQuestion(index) {
             border-radius: 8px;
             margin: 6px 0;
             cursor: pointer;
-            transition: all 0.2s;
         `;
 
         optionDiv.innerHTML = `
-            <input type="radio" name="option" value="${option}" ${isSelected ? "checked" : ""} style="margin-right:8px;">
-            ${option}
+            <input type="radio" name="option"
+            value="${option}" ${isSelected ? "checked" : ""} /> ${option}
         `;
 
         optionDiv.addEventListener("click", () => {
@@ -1153,12 +1151,14 @@ function loadQuestion(index) {
     updateNavigation();
 }
 
+// --------------------------- MARK ATTEMPT ----------------------------
 function markAttempted(index, selectedAnswer) {
     questions[index].attempted = true;
     questions[index].selected = selectedAnswer;
     updateNavigation();
 }
 
+// --------------------------- NEXT / PREV -----------------------------
 function nextQuestion() {
     if (currentQuestion < questions.length - 1) {
         currentQuestion++;
@@ -1173,296 +1173,150 @@ function prevQuestion() {
     }
 }
 
+// --------------------------- LANGUAGE CHANGE -------------------------
 function changeLanguage() {
     language = document.getElementById("languageSelect").value;
     loadQuestion(currentQuestion);
 }
 
-function submitQuiz() {
-    clearInterval(timerInterval);
-    let attempted = 0,
-        notAttempted = 0,
-        score = 0;
-
-    questions.forEach((q) => {
-        if (q.attempted) {
-            attempted++;
-            if (q.selected === q.answer_en || q.selected === q.answer_hi) score++;
-        } else notAttempted++;
-    });
-
-    alert(
-        `Quiz submitted!\nAttempted: ${attempted}\nNot Attempted: ${notAttempted}\nScore: ${score}/${questions.length}`
-    );
-}
-
+// --------------------------- TIMER -------------------------------
 function startTimer() {
     const timerElement = document.getElementById("timer");
     clearInterval(timerInterval);
+
     timerInterval = setInterval(() => {
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
-            alert("Time's up!");
+            alert("⏳ Time Over!");
             submitQuiz();
-        } else {
-            const hours = Math.floor(timeLeft / 3600);
-            const minutes = Math.floor((timeLeft % 3600) / 60);
-            const seconds = timeLeft % 60;
-            timerElement.textContent = `Time Left: ${hours
-                .toString()
-                .padStart(2, "0")}:${minutes
-                .toString()
-                .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
-            timeLeft--;
+            return;
         }
+
+        const h = Math.floor(timeLeft / 3600);
+        const m = Math.floor((timeLeft % 3600) / 60);
+        const s = timeLeft % 60;
+
+        timerElement.textContent =
+            `Time Left: ${h.toString().padStart(2, "0")}:${m
+                .toString().padStart(2, "0")}:${s.toString().padStart(2, "0")}`;
+
+        timeLeft--;
     }, 1000);
 }
 
+// --------------------------- SUBMIT QUIZ ---------------------
+function submitQuiz() {
+    let confirmation = confirm("Are you sure you want to submit the test?");
+    if (!confirmation) return;
 
+    clearInterval(timerInterval);
 
+    // Calculate time spent
+    const totalTimeSpent = (60 * 60) - timeLeft;
+    const mins = Math.floor(totalTimeSpent / 60);
+    const secs = totalTimeSpent % 60;
 
+    // Save to localStorage
+    localStorage.setItem("timeTaken", `${mins} min ${secs} sec`);
 
+    let attempted = 0;
+    let notAttempted = 0;
+    let score = 0;
+    const results = [];
 
-
-
-
-
-
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////all file and folder me code add karna hai 
-
-
-// submit 
-function jumpToQuestion(index) {
-            currentQuestion = index;
-            loadQuestion(index);
+    questions.forEach(q => {
+        if (q.attempted) {
+            attempted++;
+            if (q.selected === q.answer_en || q.selected === q.answer_hi) {
+                score++;
+            }
+        } else {
+            notAttempted++;
         }
 
-        function submitQuiz() {
-            let confirmation = confirm("Are you sure you want to submit the test?");
-            
-            if (!confirmation) {
-                return; // अगर यूज़र 'Cancel' करता है तो आगे नहीं बढ़ेंगे
-            }
+        results.push({
+            question: language === "en" ? q.question_en : q.question_hi,
+            selected: q.selected || "Not Answered",
+            correct: language === "en" ? q.answer_en : q.answer_hi
+        });
+    });
 
-            let attempted = 0;
-            let notAttempted = 0;
-            let score = 0;
-            const results = [];
+    // Save result data
+    localStorage.setItem("attempted", attempted);
+    localStorage.setItem("notAttempted", notAttempted);
+    localStorage.setItem("score", score);
+    localStorage.setItem("results", JSON.stringify(results));
 
-            questions.forEach(q => {
-                if (q.attempted) {
-                    attempted++;
-                    if (q.selected === q.answer) {
-                        score++;
-                    }
-                } else {
-                    notAttempted++;
-                }
-                results.push({ question: q.question, selected: q.selected || "Not Answered", correct: q.answer });
-            });
+    // Stop camera stream if active
+    if (videoStream) {
+        videoStream.getTracks().forEach(track => track.stop());
+    }
 
-            localStorage.setItem("attempted", attempted);
-            localStorage.setItem("notAttempted", notAttempted);
-            localStorage.setItem("score", score);
-            localStorage.setItem("results", JSON.stringify(results));
+    // Redirect
+    window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
+}
 
-            // रिजल्ट देखने से पहले एक और कन्फर्मेशन ले सकते हैं
-            let viewResult = confirm("Test submitted successfully! Do you want to view your result?");
-            if (viewResult) {
-                window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
-            }
-        }
-        window.onload = () => {
-            loadQuestion(currentQuestion);
-        };
-
-
+// --------------------------- NAVIGATION ------------------------------
 function updateNavigation() {
     const nav = document.getElementById("circleContainer");
     nav.innerHTML = "";
+
     questions.forEach((q, i) => {
         let color = "gray";
         if (i === currentQuestion) color = "blue";
         else if (q.attempted) color = "green";
-        nav.innerHTML += `<div class='circle' style='background-color:${color}' onclick='loadQuestion(${i})'>${i + 1}</div>`;
+
+        const circle = document.createElement("div");
+        circle.className = "circle";
+        circle.style.background = color;
+        circle.textContent = i + 1;
+        circle.onclick = () => jumpToQuestion(i);
+        nav.appendChild(circle);
     });
 }
 
-// ----------------- Camera & Movement Logic -----------------
+function jumpToQuestion(i) {
+    currentQuestion = i;
+    loadQuestion(i);
+}
+
+// --------------------------- CAMERA ----------------------
 let videoStream;
-let movementCount = 0;
 
 function startCamera() {
     const container = document.createElement("div");
     container.id = "camera-container";
     container.style.position = "fixed";
     container.style.top = "10px";
-    container.style.left = "10px"; // ✅ Left side
+    container.style.left = "10px";
     container.style.width = "130px";
     container.style.height = "130px";
-    container.style.zIndex = "9999";
     container.style.borderRadius = "50%";
     container.style.overflow = "hidden";
-    container.style.border = "3px solid red";
-    container.style.boxShadow = "0 0 10px rgba(0,0,0,0.3)";
-    container.style.cursor = "grab";
-    container.style.minWidth = "80px";
-    container.style.minHeight = "80px";
-    container.style.maxWidth = "250px";
-    container.style.maxHeight = "250px";
     container.style.background = "#000";
+    container.style.border = "3px solid red";
+    container.style.zIndex = "9999";
     document.body.appendChild(container);
 
     const video = document.createElement("video");
-    video.setAttribute("autoplay", true);
-    video.setAttribute("playsinline", true);
+    video.autoplay = true;
+    video.playsInline = true;
     video.style.width = "100%";
     video.style.height = "100%";
     video.style.objectFit = "cover";
     container.appendChild(video);
 
-    // ✅ Resize handle
-    const resizeHandle = document.createElement("div");
-    resizeHandle.style.position = "absolute";
-    resizeHandle.style.bottom = "2px";
-    resizeHandle.style.right = "2px";
-    resizeHandle.style.width = "15px";
-    resizeHandle.style.height = "15px";
-    resizeHandle.style.background = "rgba(255,255,255,0.7)";
-    resizeHandle.style.borderRadius = "4px";
-    resizeHandle.style.cursor = "se-resize";
-    container.appendChild(resizeHandle);
-
-    // ✅ Drag logic
-    let isDragging = false;
-    let offsetX, offsetY;
-
-    container.addEventListener("mousedown", (e) => {
-        if (e.target === resizeHandle) return;
-        isDragging = true;
-        offsetX = e.clientX - container.offsetLeft;
-        offsetY = e.clientY - container.offsetTop;
-        container.style.cursor = "grabbing";
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isDragging) return;
-        let x = e.clientX - offsetX;
-        let y = e.clientY - offsetY;
-        x = Math.max(0, Math.min(window.innerWidth - container.offsetWidth, x));
-        y = Math.max(0, Math.min(window.innerHeight - container.offsetHeight, y));
-        container.style.left = `${x}px`;
-        container.style.top = `${y}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isDragging = false;
-        container.style.cursor = "grab";
-    });
-
-    // ✅ Resize logic
-    let isResizing = false;
-    let startWidth, startHeight, startX, startY;
-
-    resizeHandle.addEventListener("mousedown", (e) => {
-        e.stopPropagation();
-        isResizing = true;
-        startWidth = container.offsetWidth;
-        startHeight = container.offsetHeight;
-        startX = e.clientX;
-        startY = e.clientY;
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isResizing) return;
-        const dx = e.clientX - startX;
-        const dy = e.clientY - startY;
-        const newSize = Math.max(80, Math.min(250, Math.max(startWidth + dx, startHeight + dy)));
-        container.style.width = `${newSize}px`;
-        container.style.height = `${newSize}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isResizing = false;
-    });
-
-    // ✅ Camera stream
     navigator.mediaDevices.getUserMedia({ video: true })
         .then(stream => {
             video.srcObject = stream;
             videoStream = stream;
-            detectMovement(video);
         })
-        .catch(err => {
-            console.error("Camera error:", err);
-            alert("Camera not accessible!");
-        });
+        .catch(() => alert("Camera not accessible!"));
 }
 
-function detectMovement(video) {
-    const canvas = document.createElement("canvas");
-    const ctx = canvas.getContext("2d");
-    canvas.width = 160;
-    canvas.height = 160;
-    let lastImageData = null;
-
-    setInterval(() => {
-        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-
-        if (lastImageData) {
-            let diff = 0;
-            for (let i = 0; i < imageData.data.length; i += 4) {
-                diff += Math.abs(imageData.data[i] - lastImageData.data[i]);
-            }
-
-            if (diff > 1000000) {
-                movementCount++;
-                if (movementCount === 1) {
-                    alert("⚠️ Alert 1: Face is not move");
-                } else if (movementCount === 2) {
-                    alert("⚠️ Alert 2: Head is not move");
-                } else if (movementCount === 3) {
-                    alert("⚠️ Alert 3: Test series is restarting...");
-                    restartTest();
-                }
-            }
-        }
-        lastImageData = imageData;
-    }, 2000);
-}
-
-function restartTest() {
-    if (videoStream) {
-        videoStream.getTracks().forEach(track => track.stop());
-    }
-    const camContainer = document.getElementById("camera-container");
-    if (camContainer) camContainer.remove();
-
-    movementCount = 0;
-    currentQuestion = 0;
-    timeLeft = 180 * 60;
-
-    questions.forEach(q => {
-        q.attempted = false;
-        q.selected = null;
-    });
-
-    loadQuestion(currentQuestion);
-    startTimer();
-    startCamera();
-}
-
-// ----------------- Page Load -----------------
+// --------------------------- PAGE LOAD --------------------------
 window.onload = function () {
     loadQuestion(currentQuestion);
     startTimer();
-    startCamera(); // ✅ Camera starts with test
+    startCamera();
 };
-
-
-///////////////////////////////////////

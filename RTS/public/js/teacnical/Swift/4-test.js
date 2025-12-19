@@ -1,1120 +1,1120 @@
 const questions = [
     {
         "num": 1,
-        "question_en": "A ball is thrown vertically upward with velocity 20 m/s. The maximum height reached is:",
-        "question_hi": "एक गेंद को 20 m/s के वेग से ऊर्ध्वाधर ऊपर की ओर फेंका जाता है। अधिकतम ऊँचाई है:",
-        "options_en": ["10 m", "15 m", "20 m", "25 m"],
-        "options_hi": ["10 मी", "15 मी", "20 मी", "25 मी"],
-        "answer_en": "20 m",
-        "answer_hi": "20 मी",
+        "question_en": "What is the primary goal of Rust's borrow checker?",
+        "question_hi": "Rust के borrow checker का प्राथमिक लक्ष्य क्या है?",
+        "options_en": ["Prevent data races at compile time", "Optimize memory usage", "Speed up compilation", "Simplify syntax"],
+        "options_hi": ["कंपाइल टाइम पर डेटा रेस रोकना", "मेमोरी उपयोग ऑप्टिमाइज़ करना", "कंपाइलेशन गति बढ़ाना", "सिंटैक्स सरल बनाना"],
+        "answer_en": "Prevent data races at compile time",
+        "answer_hi": "कंपाइल टाइम पर डेटा रेस रोकना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 2,
-        "question_en": "The SI unit of pressure is:",
-        "question_hi": "दाब की SI इकाई है:",
-        "options_en": ["Pascal", "Newton", "Joule", "Watt"],
-        "options_hi": ["पास्कल", "न्यूटन", "जूल", "वाट"],
-        "answer_en": "Pascal",
-        "answer_hi": "पास्कल",
+        "question_en": "What does the '&' symbol represent in Rust?",
+        "question_hi": "Rust में '&' प्रतीक क्या दर्शाता है?",
+        "options_en": ["Reference", "Address of", "Bitwise AND", "All of the above"],
+        "options_hi": ["रिफरेन्स", "एड्रेस ऑफ", "बिटवाइज AND", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 3,
-        "question_en": "A convex lens forms a real image at 20 cm when object is at 30 cm. Focal length is:",
-        "question_hi": "एक उत्तल लेंस 30 cm पर वस्तु होने पर 20 cm पर वास्तविक प्रतिबिंब बनाता है। फोकस दूरी है:",
-        "options_en": ["8 cm", "10 cm", "12 cm", "15 cm"],
-        "options_hi": ["8 सेमी", "10 सेमी", "12 सेमी", "15 सेमी"],
-        "answer_en": "12 cm",
-        "answer_hi": "12 सेमी",
+        "question_en": "Which of these is NOT a Rust scalar data type?",
+        "question_hi": "इनमें से कौन सा Rust स्केलर डेटा टाइप नहीं है?",
+        "options_en": ["f32", "i64", "str", "bool"],
+        "options_hi": ["f32", "i64", "str", "bool"],
+        "answer_en": "str",
+        "answer_hi": "str",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 4,
-        "question_en": "The dimensional formula of force is:",
-        "question_hi": "बल का विमीय सूत्र है:",
-        "options_en": ["[MLT⁻²]", "[ML²T⁻²]", "[ML⁻¹T⁻²]", "[MLT⁻¹]"],
-        "options_hi": ["[MLT⁻²]", "[ML²T⁻²]", "[ML⁻¹T⁻²]", "[MLT⁻¹]"],
-        "answer_en": "[MLT⁻²]",
-        "answer_hi": "[MLT⁻²]",
+        "question_en": "What is the output type of the 'main' function in Rust?",
+        "question_hi": "Rust में 'main' फ़ंक्शन का आउटपुट टाइप क्या है?",
+        "options_en": ["()", "i32", "bool", "No return type"],
+        "options_hi": ["()", "i32", "bool", "कोई रिटर्न टाइप नहीं"],
+        "answer_en": "()",
+        "answer_hi": "()",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 5,
-        "question_en": "A body of mass 10 kg has momentum 50 kg m/s. Its velocity is:",
-        "question_hi": "10 kg द्रव्यमान के एक पिंड का संवेग 50 kg m/s है। इसका वेग है:",
-        "options_en": ["2 m/s", "3 m/s", "4 m/s", "5 m/s"],
-        "options_hi": ["2 m/s", "3 m/s", "4 m/s", "5 m/s"],
-        "answer_en": "5 m/s",
-        "answer_hi": "5 m/s",
+        "question_en": "Which macro is used for printing to standard output?",
+        "question_hi": "स्टैण्डर्ड आउटपुट पर प्रिंट करने के लिए किस मैक्रो का उपयोग किया जाता है?",
+        "options_en": ["println!", "print!", "echo!", "Both println! and print!"],
+        "options_hi": ["println!", "print!", "echo!", "दोनों println! और print!"],
+        "answer_en": "Both println! and print!",
+        "answer_hi": "दोनों println! और print!",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 6,
-        "question_en": "The SI unit of electric charge is:",
-        "question_hi": "विद्युत आवेश की SI इकाई है:",
-        "options_en": ["Ampere", "Volt", "Coulomb", "Ohm"],
-        "options_hi": ["एम्पियर", "वोल्ट", "कूलॉम", "ओम"],
-        "answer_en": "Coulomb",
-        "answer_hi": "कूलॉम",
+        "question_en": "What is the purpose of the 'match' keyword in Rust?",
+        "question_hi": "Rust में 'match' कीवर्ड का उद्देश्य क्या है?",
+        "options_en": ["Pattern matching", "String comparison", "Regular expression matching", "Thread synchronization"],
+        "options_hi": ["पैटर्न मिलान", "स्ट्रिंग तुलना", "रेगुलर एक्सप्रेशन मिलान", "थ्रेड सिंक्रोनाइज़ेशन"],
+        "answer_en": "Pattern matching",
+        "answer_hi": "पैटर्न मिलान",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 7,
-        "question_en": "A car moving with 20 m/s stops in 4 seconds. Its retardation is:",
-        "question_hi": "20 m/s से चलती हुई एक कार 4 सेकंड में रुक जाती है। इसका मंदन है:",
-        "options_en": ["3 m/s²", "4 m/s²", "5 m/s²", "6 m/s²"],
-        "options_hi": ["3 m/s²", "4 m/s²", "5 m/s²", "6 m/s²"],
-        "answer_en": "5 m/s²",
-        "answer_hi": "5 m/s²",
+        "question_en": "Which trait is used for string conversion using 'to_string()'?",
+        "question_hi": "'to_string()' का उपयोग करके स्ट्रिंग रूपांतरण के लिए किस ट्रेट का उपयोग किया जाता है?",
+        "options_en": ["ToString", "Display", "Stringify", "Convert"],
+        "options_hi": ["ToString", "Display", "Stringify", "Convert"],
+        "answer_en": "ToString",
+        "answer_hi": "ToString",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 8,
-        "question_en": "The refractive index of diamond is 2.42. Speed of light in diamond is:",
-        "question_hi": "हीरे का अपवर्तनांक 2.42 है। हीरे में प्रकाश की गति है:",
-        "options_en": ["1.24 × 10⁸ m/s", "1.42 × 10⁸ m/s", "1.56 × 10⁸ m/s", "1.68 × 10⁸ m/s"],
-        "options_hi": ["1.24 × 10⁸ m/s", "1.42 × 10⁸ m/s", "1.56 × 10⁸ m/s", "1.68 × 10⁸ m/s"],
-        "answer_en": "1.24 × 10⁸ m/s",
-        "answer_hi": "1.24 × 10⁸ m/s",
+        "question_en": "What does 'RAII' stand for in Rust?",
+        "question_hi": "Rust में 'RAII' का क्या अर्थ है?",
+        "options_en": ["Resource Acquisition Is Initialization", "Rust Automatic Initialization Interface", "Runtime Allocation and Initialization", "Resource Allocation and Initialization"],
+        "options_hi": ["Resource Acquisition Is Initialization", "Rust Automatic Initialization Interface", "Runtime Allocation and Initialization", "Resource Allocation and Initialization"],
+        "answer_en": "Resource Acquisition Is Initialization",
+        "answer_hi": "Resource Acquisition Is Initialization",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 9,
-        "question_en": "Energy stored in capacitor of 10 μF charged to 50 V is:",
-        "question_hi": "50 V पर आवेशित 10 μF संधारित्र में संचित ऊर्जा है:",
-        "options_en": ["0.0125 J", "0.025 J", "0.05 J", "0.1 J"],
-        "options_hi": ["0.0125 J", "0.025 J", "0.05 J", "0.1 J"],
-        "answer_en": "0.0125 J",
-        "answer_hi": "0.0125 J",
+        "question_en": "Which of these is a valid variable declaration in Rust?",
+        "question_hi": "इनमें से कौन सा Rust में वैध वेरिएबल डिक्लेरेशन है?",
+        "options_en": ["let x = 5;", "var x = 5;", "int x = 5;", "x := 5;"],
+        "options_hi": ["let x = 5;", "var x = 5;", "int x = 5;", "x := 5;"],
+        "answer_en": "let x = 5;",
+        "answer_hi": "let x = 5;",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 10,
-        "question_en": "Which law gives direction of induced current?",
-        "question_hi": "कौन सा नियम प्रेरित धारा की दिशा देता है?",
-        "options_en": ["Faraday's law", "Lenz's law", "Ohm's law", "Ampere's law"],
-        "options_hi": ["फैराडे का नियम", "लेंज का नियम", "ओम का नियम", "एम्पियर का नियम"],
-        "answer_en": "Lenz's law",
-        "answer_hi": "लेंज का नियम",
+        "question_en": "What is the default integer type in Rust?",
+        "question_hi": "Rust में डिफॉल्ट इंटीजर टाइप क्या है?",
+        "options_en": ["i32", "i64", "isize", "usize"],
+        "options_hi": ["i32", "i64", "isize", "usize"],
+        "answer_en": "i32",
+        "answer_hi": "i32",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 11,
-        "question_en": "Unit of magnetic field is:",
-        "question_hi": "चुंबकीय क्षेत्र की इकाई है:",
-        "options_en": ["Tesla", "Weber", "Henry", "Farad"],
-        "options_hi": ["टेस्ला", "वेबर", "हेनरी", "फैरड"],
-        "answer_en": "Tesla",
-        "answer_hi": "टेस्ला",
+        "question_en": "Which operator is used for the remainder operation?",
+        "question_hi": "शेष ऑपरेशन के लिए किस ऑपरेटर का उपयोग किया जाता है?",
+        "options_en": ["%", "mod", "rem", "/"],
+        "options_hi": ["%", "mod", "rem", "/"],
+        "answer_en": "%",
+        "answer_hi": "%",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 12,
-        "question_en": "A body of mass 2 kg has kinetic energy 16 J. Its velocity is:",
-        "question_hi": "2 kg द्रव्यमान के एक पिंड की गतिज ऊर्जा 16 J है। इसका वेग है:",
-        "options_en": ["2 m/s", "3 m/s", "4 m/s", "5 m/s"],
-        "options_hi": ["2 m/s", "3 m/s", "4 m/s", "5 m/s"],
-        "answer_en": "4 m/s",
-        "answer_hi": "4 m/s",
+        "question_en": "What is the purpose of the 'unwrap_or()' method?",
+        "question_hi": "'unwrap_or()' मेथड का उद्देश्य क्या है?",
+        "options_en": ["Provide default value for Option/Result", "Unwrap without panic", "Or operation on booleans", "Unwrap or return error"],
+        "options_hi": ["Option/Result के लिए डिफॉल्ट वैल्यू प्रदान करना", "पैनिक के बिना अनरैप करना", "बूलियन पर OR ऑपरेशन", "अनरैप या एरर रिटर्न करना"],
+        "answer_en": "Provide default value for Option/Result",
+        "answer_hi": "Option/Result के लिए डिफॉल्ट वैल्यू प्रदान करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 13,
-        "question_en": "Force between two charges is given by:",
-        "question_hi": "दो आवेशों के बीच बल दिया जाता है:",
-        "options_en": ["Ohm's law", "Coulomb's law", "Ampere's law", "Faraday's law"],
-        "options_hi": ["ओम का नियम", "कूलॉम का नियम", "एम्पियर का नियम", "फैराडे का नियम"],
-        "answer_en": "Coulomb's law",
-        "answer_hi": "कूलॉम का नियम",
+        "question_en": "Which collection type provides O(1) indexing?",
+        "question_hi": "कौन सा कलेक्शन टाइप O(1) इंडेक्सिंग प्रदान करता है?",
+        "options_en": ["Vec", "HashMap", "LinkedList", "BTreeMap"],
+        "options_hi": ["Vec", "HashMap", "LinkedList", "BTreeMap"],
+        "answer_en": "Vec",
+        "answer_hi": "Vec",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 14,
-        "question_en": "When light enters from water to air, it:",
-        "question_hi": "जब प्रकाश पानी से वायु में प्रवेश करता है, तो यह:",
-        "options_en": ["Bends towards normal", "Bends away from normal", "Does not bend", "Reflects back"],
-        "options_hi": ["अभिलंब की ओर मुड़ता है", "अभिलंब से दूर मुड़ता है", "नहीं मुड़ता", "वापस परावर्तित होता है"],
-        "answer_en": "Bends away from normal",
-        "answer_hi": "अभिलंब से दूर मुड़ता है",
+        "question_en": "What does 'DST' stand for in Rust?",
+        "question_hi": "Rust में 'DST' का क्या अर्थ है?",
+        "options_en": ["Dynamically Sized Type", "Data Structure Type", "Dynamic String Type", "Default Sized Type"],
+        "options_hi": ["Dynamically Sized Type", "Data Structure Type", "Dynamic String Type", "Default Sized Type"],
+        "answer_en": "Dynamically Sized Type",
+        "answer_hi": "Dynamically Sized Type",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 15,
-        "question_en": "Escape velocity from Earth's surface is about:",
-        "question_hi": "पृथ्वी की सतह से पलायन वेग लगभग है:",
-        "options_en": ["7.9 km/s", "11.2 km/s", "15.8 km/s", "22.4 km/s"],
-        "options_hi": ["7.9 km/s", "11.2 km/s", "15.8 km/s", "22.4 km/s"],
-        "answer_en": "11.2 km/s",
-        "answer_hi": "11.2 km/s",
+        "question_en": "Which keyword is used to define a constant?",
+        "question_hi": "कॉन्स्टेंट डिफाइन करने के लिए किस कीवर्ड का उपयोग किया जाता है?",
+        "options_en": ["const", "let", "static", "define"],
+        "options_hi": ["const", "let", "static", "define"],
+        "answer_en": "const",
+        "answer_hi": "const",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 16,
-        "question_en": "Three resistors 2Ω, 3Ω, 6Ω are connected in parallel. Equivalent resistance is:",
-        "question_hi": "तीन प्रतिरोध 2Ω, 3Ω, 6Ω समानांतर में जुड़े हैं। तुल्य प्रतिरोध है:",
-        "options_en": ["0.5 Ω", "1 Ω", "1.5 Ω", "2 Ω"],
-        "options_hi": ["0.5 Ω", "1 Ω", "1.5 Ω", "2 Ω"],
-        "answer_en": "1 Ω",
-        "answer_hi": "1 Ω",
+        "question_en": "What is the type of 'None' in Rust?",
+        "question_hi": "Rust में 'None' का टाइप क्या है?",
+        "options_en": ["Option<T>", "Result<T, E>", "bool", "()"],
+        "options_hi": ["Option<T>", "Result<T, E>", "bool", "()"],
+        "answer_en": "Option<T>",
+        "answer_hi": "Option<T>",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 17,
-        "question_en": "Which is ferromagnetic?",
-        "question_hi": "कौन फेरोमैग्नेटिक है?",
-        "options_en": ["Iron", "Aluminum", "Copper", "Silver"],
-        "options_hi": ["लोहा", "एल्युमिनियम", "तांबा", "चांदी"],
-        "answer_en": "Iron",
-        "answer_hi": "लोहा",
+        "question_en": "Which method is used to add an element to a Vec?",
+        "question_hi": "Vec में एलिमेंट जोड़ने के लिए किस मेथड का उपयोग किया जाता है?",
+        "options_en": ["push", "add", "append", "insert"],
+        "options_hi": ["push", "add", "append", "insert"],
+        "answer_en": "push",
+        "answer_hi": "push",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 18,
-        "question_en": "A capacitor of 2 μF charged to 100 V stores energy:",
-        "question_hi": "100 V पर आवेशित 2 μF संधारित्र में संचित ऊर्जा है:",
-        "options_en": ["0.005 J", "0.01 J", "0.02 J", "0.04 J"],
-        "options_hi": ["0.005 J", "0.01 J", "0.02 J", "0.04 J"],
-        "answer_en": "0.01 J",
-        "answer_hi": "0.01 J",
+        "question_en": "What is the purpose of the '?' operator in error handling?",
+        "question_hi": "एरर हैंडलिंग में '?' ऑपरेटर का उद्देश्य क्या है?",
+        "options_en": ["Early return on Err", "Optional chaining", "Question mark operator", "Error propagation"],
+        "options_hi": ["Err पर अर्ली रिटर्न", "ऑप्शनल चेनिंग", "प्रश्न चिन्ह ऑपरेटर", "एरर प्रोपगेशन"],
+        "answer_en": "Early return on Err",
+        "answer_hi": "Err पर अर्ली रिटर्न",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 19,
-        "question_en": "In Young's experiment, if slit separation is doubled, fringe width becomes:",
-        "question_hi": "यंग के प्रयोग में, यदि झिरी पृथक्करण दोगुना कर दिया जाए, तो फ्रिंज चौड़ाई हो जाती है:",
-        "options_en": ["Half", "Double", "Same", "Four times"],
-        "options_hi": ["आधी", "दोगुनी", "समान", "चार गुनी"],
-        "answer_en": "Half",
-        "answer_hi": "आधी",
+        "question_en": "Which trait is required for using the '==' operator?",
+        "question_hi": "'==' ऑपरेटर का उपयोग करने के लिए किस ट्रेट की आवश्यकता होती है?",
+        "options_en": ["PartialEq", "Eq", "Equal", "Compare"],
+        "options_hi": ["PartialEq", "Eq", "Equal", "Compare"],
+        "answer_en": "PartialEq",
+        "answer_hi": "PartialEq",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 20,
-        "question_en": "A projectile has maximum range when thrown at angle:",
-        "question_hi": "एक प्रक्षेप्य का अधिकतम परास होता है जब फेंका जाता है कोण पर:",
-        "options_en": ["30°", "45°", "60°", "75°"],
-        "options_hi": ["30°", "45°", "60°", "75°"],
-        "answer_en": "45°",
-        "answer_hi": "45°",
+        "question_en": "What is the default floating-point type in Rust?",
+        "question_hi": "Rust में डिफॉल्ट फ्लोटिंग-पॉइंट टाइप क्या है?",
+        "options_en": ["f64", "f32", "float", "double"],
+        "options_hi": ["f64", "f32", "float", "double"],
+        "answer_en": "f64",
+        "answer_hi": "f64",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 21,
-        "question_en": "Which quantum number determines shape of orbital?",
-        "question_hi": "कौन सा क्वांटम संख्या कक्षक के आकार को निर्धारित करता है?",
-        "options_en": ["Principal", "Azimuthal", "Magnetic", "Spin"],
-        "options_hi": ["मुख्य", "अज़ीमुथल", "चुंबकीय", "स्पिन"],
-        "answer_en": "Azimuthal",
-        "answer_hi": "अज़ीमुथल",
+        "question_en": "Which macro is used for string formatting?",
+        "question_hi": "स्ट्रिंग फॉर्मेटिंग के लिए किस मैक्रो का उपयोग किया जाता है?",
+        "options_en": ["format!", "println!", "write!", "All of the above"],
+        "options_hi": ["format!", "println!", "write!", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 22,
-        "question_en": "Magnetic field due to straight current carrying conductor is:",
-        "question_hi": "सीधे धारावाही चालक के कारण चुंबकीय क्षेत्र है:",
-        "options_en": ["Radial", "Circular", "Parallel", "Random"],
-        "options_hi": ["रेडियल", "वृत्ताकार", "समानांतर", "यादृच्छिक"],
-        "answer_en": "Circular",
-        "answer_hi": "वृत्ताकार",
+        "question_en": "What is the purpose of 'lifetime parameters'?",
+        "question_hi": "'लाइफटाइम पैरामीटर्स' का उद्देश्य क्या है?",
+        "options_en": ["Specify reference validity scope", "Control memory allocation time", "Manage thread lifetime", "Define variable scope"],
+        "options_hi": ["रिफरेन्स वैलिडिटी स्कोप निर्दिष्ट करना", "मेमोरी अलोकेशन टाइम कंट्रोल करना", "थ्रेड लाइफटाइम मैनेज करना", "वेरिएबल स्कोप डिफाइन करना"],
+        "answer_en": "Specify reference validity scope",
+        "answer_hi": "रिफरेन्स वैलिडिटी स्कोप निर्दिष्ट करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 23,
-        "question_en": "Which molecule has tetrahedral shape?",
-        "question_hi": "किस अणु की चतुष्फलकीय आकृति है?",
-        "options_en": ["H₂O", "NH₃", "CH₄", "CO₂"],
-        "options_hi": ["H₂O", "NH₃", "CH₄", "CO₂"],
-        "answer_en": "CH₄",
-        "answer_hi": "CH₄",
+        "question_en": "Which method is used to get the length of a Vec?",
+        "question_hi": "Vec की लंबाई प्राप्त करने के लिए किस मेथड का उपयोग किया जाता है?",
+        "options_en": ["len", "length", "size", "count"],
+        "options_hi": ["len", "length", "size", "count"],
+        "answer_en": "len",
+        "answer_hi": "len",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 24,
-        "question_en": "General solution of dy/dx = -y is:",
-        "question_hi": "dy/dx = -y का सामान्य हल है:",
-        "options_en": ["y = e⁻ˣ", "y = Ae⁻ˣ", "y = eˣ", "y = Aeˣ"],
-        "options_hi": ["y = e⁻ˣ", "y = Ae⁻ˣ", "y = eˣ", "y = Aeˣ"],
-        "answer_en": "y = Ae⁻ˣ",
-        "answer_hi": "y = Ae⁻ˣ",
+        "question_en": "What is the type of array [i32; 5]?",
+        "question_hi": "ऐरे [i32; 5] का टाइप क्या है?",
+        "options_en": ["Array of 5 i32 elements", "Slice of i32", "Vector of i32", "5 i32 values"],
+        "options_hi": ["5 i32 एलिमेंट्स का ऐरे", "i32 का स्लाइस", "i32 का वेक्टर", "5 i32 वैल्यूज"],
+        "answer_en": "Array of 5 i32 elements",
+        "answer_hi": "5 i32 एलिमेंट्स का ऐरे",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 25,
-        "question_en": "For concave mirror, focal length is:",
-        "question_hi": "अवतल दर्पण के लिए, फोकस दूरी है:",
-        "options_en": ["Positive", "Negative", "Zero", "Infinite"],
-        "options_hi": ["धनात्मक", "ऋणात्मक", "शून्य", "अनंत"],
-        "answer_en": "Negative",
-        "answer_hi": "ऋणात्मक",
+        "question_en": "Which trait is used for ordering comparisons?",
+        "question_hi": "ऑर्डरिंग कम्पेयरिजन के लिए किस ट्रेट का उपयोग किया जाता है?",
+        "options_en": ["PartialOrd", "Ord", "Compare", "Order"],
+        "options_hi": ["PartialOrd", "Ord", "Compare", "Order"],
+        "answer_en": "PartialOrd",
+        "answer_hi": "PartialOrd",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 26,
-        "question_en": "Oxidation state of oxygen in H₂O₂ is:",
-        "question_hi": "H₂O₂ में ऑक्सीजन की ऑक्सीकरण अवस्था है:",
-        "options_en": ["-2", "-1", "0", "+1"],
-        "options_hi": ["-2", "-1", "0", "+1"],
-        "answer_en": "-1",
-        "answer_hi": "-1",
+        "question_en": "What does 'MIR' stand for in Rust compilation?",
+        "question_hi": "Rust कंपाइलेशन में 'MIR' का क्या अर्थ है?",
+        "options_en": ["Mid-level Intermediate Representation", "Memory Intermediate Representation", "Mid Internal Representation", "Memory Internal Representation"],
+        "options_hi": ["Mid-level Intermediate Representation", "Memory Intermediate Representation", "Mid Internal Representation", "Memory Internal Representation"],
+        "answer_en": "Mid-level Intermediate Representation",
+        "answer_hi": "Mid-level Intermediate Representation",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 27,
-        "question_en": "Which is polar molecule?",
-        "question_hi": "कौन सा ध्रुवीय अणु है?",
-        "options_en": ["CO₂", "CCl₄", "BF₃", "H₂O"],
-        "options_hi": ["CO₂", "CCl₄", "BF₃", "H₂O"],
-        "answer_en": "H₂O",
-        "answer_hi": "H₂O",
+        "question_en": "Which method is used to remove an element from a Vec?",
+        "question_hi": "Vec से एलिमेंट हटाने के लिए किस मेथड का उपयोग किया जाता है?",
+        "options_en": ["remove", "pop", "delete", "Both remove and pop"],
+        "options_hi": ["remove", "pop", "delete", "दोनों remove और pop"],
+        "answer_en": "Both remove and pop",
+        "answer_hi": "दोनों remove और pop",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 28,
-        "question_en": "IUPAC name of HCOOH is:",
-        "question_hi": "HCOOH का IUPAC नाम है:",
-        "options_en": ["Methanoic acid", "Ethanoic acid", "Propanoic acid", "Butanoic acid"],
-        "options_hi": ["मेथेनोइक अम्ल", "एथेनोइक अम्ल", "प्रोपेनोइक अम्ल", "ब्यूटेनोइक अम्ल"],
-        "answer_en": "Methanoic acid",
-        "answer_hi": "मेथेनोइक अम्ल",
+        "question_en": "What is the purpose of 'std::mem::swap'?",
+        "question_hi": "'std::mem::swap' का उद्देश्य क्या है?",
+        "options_en": ["Exchange values between two variables", "Swap memory locations", "Exchange pointers", "All of the above"],
+        "options_hi": ["दो वेरिएबल्स के बीच वैल्यूज एक्सचेंज करना", "मेमोरी लोकेशन स्वैप करना", "पॉइंटर्स एक्सचेंज करना", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 29,
-        "question_en": "Number of π bonds in ethene is:",
-        "question_hi": "ईथीन में π बंधों की संख्या है:",
-        "options_en": ["1", "2", "3", "4"],
-        "options_hi": ["1", "2", "3", "4"],
-        "answer_en": "1",
-        "answer_hi": "1",
+        "question_en": "Which keyword is used to create a new scope?",
+        "question_hi": "नया स्कोप बनाने के लिए किस कीवर्ड का उपयोग किया जाता है?",
+        "options_en": ["{} braces", "scope", "block", "new"],
+        "options_hi": ["{} ब्रेसिज़", "scope", "block", "new"],
+        "answer_en": "{} braces",
+        "answer_hi": "{} ब्रेसिज़",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 30,
-        "question_en": "Which is not a noble gas?",
-        "question_hi": "कौन सी अक्रिय गैस नहीं है?",
-        "options_en": ["Helium", "Neon", "Argon", "Chlorine"],
-        "options_hi": ["हीलियम", "नियॉन", "ऑर्गन", "क्लोरीन"],
-        "answer_en": "Chlorine",
-        "answer_hi": "क्लोरीन",
+        "question_en": "What is the type of 'Some(5)'?",
+        "question_hi": "'Some(5)' का टाइप क्या है?",
+        "options_en": ["Option<i32>", "Result<i32, Error>", "i32", "bool"],
+        "options_hi": ["Option<i32>", "Result<i32, Error>", "i32", "bool"],
+        "answer_en": "Option<i32>",
+        "answer_hi": "Option<i32>",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 31,
-        "question_en": "pH of basic solution is:",
-        "question_hi": "क्षारीय विलयन का pH है:",
-        "options_en": ["5", "7", "9", "11"],
-        "options_hi": ["5", "7", "9", "11"],
-        "answer_en": "11",
-        "answer_hi": "11",
+        "question_en": "Which method converts a Result to an Option?",
+        "question_hi": "कौन सी मेथड Result को Option में कन्वर्ट करती है?",
+        "options_en": ["ok", "unwrap", "to_option", "convert"],
+        "options_hi": ["ok", "unwrap", "to_option", "convert"],
+        "answer_en": "ok",
+        "answer_hi": "ok",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 32,
-        "question_en": "Element with atomic number 11 is:",
-        "question_hi": "परमाणु क्रमांक 11 वाला तत्व है:",
-        "options_en": ["Sodium", "Magnesium", "Aluminum", "Silicon"],
-        "options_hi": ["सोडियम", "मैग्नीशियम", "एल्युमिनियम", "सिलिकॉन"],
-        "answer_en": "Sodium",
-        "answer_hi": "सोडियम",
+        "question_en": "What is the purpose of 'std::fs::read_to_string'?",
+        "question_hi": "'std::fs::read_to_string' का उद्देश्य क्या है?",
+        "options_en": ["Read file contents as string", "Convert file to string", "Read string from file", "All of the above"],
+        "options_hi": ["फाइल कंटेंट को स्ट्रिंग के रूप में पढ़ना", "फाइल को स्ट्रिंग में कन्वर्ट करना", "फाइल से स्ट्रिंग पढ़ना", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 33,
-        "question_en": "Hybridization in BF₃ is:",
-        "question_hi": "BF₃ में संकरण है:",
-        "options_en": ["sp", "sp²", "sp³", "sp³d"],
-        "options_hi": ["sp", "sp²", "sp³", "sp³d"],
-        "answer_en": "sp²",
-        "answer_hi": "sp²",
+        "question_en": "Which trait is used for iterator functionality?",
+        "question_hi": "इटरेटर फंक्शनैलिटी के लिए किस ट्रेट का उपयोग किया जाता है?",
+        "options_en": ["Iterator", "Iter", "Next", "Sequence"],
+        "options_hi": ["Iterator", "Iter", "Next", "Sequence"],
+        "answer_en": "Iterator",
+        "answer_hi": "Iterator",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 34,
-        "question_en": "Which is reducing agent?",
-        "question_hi": "कौन अपचायक है?",
-        "options_en": ["KMnO₄", "K₂Cr₂O₇", "H₂O₂", "SO₂"],
-        "options_hi": ["KMnO₄", "K₂Cr₂O₇", "H₂O₂", "SO₂"],
-        "answer_en": "SO₂",
-        "answer_hi": "SO₂",
+        "question_en": "What is the purpose of 'std::process::Command'?",
+        "question_hi": "'std::process::Command' का उद्देश्य क्या है?",
+        "options_en": ["Execute external commands", "Command pattern implementation", "Process management", "All of the above"],
+        "options_hi": ["एक्सटर्नल कमांड्स एक्जीक्यूट करना", "कमांड पैटर्न इम्प्लीमेंटेशन", "प्रोसेस मैनेजमेंट", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 35,
-        "question_en": "Molecular formula of glucose is:",
-        "question_hi": "ग्लूकोज का आणविक सूत्र है:",
-        "options_en": ["C₆H₁₂O₆", "C₁₂H₂₂O₁₁", "C₂H₅OH", "CH₃COOH"],
-        "options_hi": ["C₆H₁₂O₆", "C₁₂H₂₂O₁₁", "C₂H₅OH", "CH₃COOH"],
-        "answer_en": "C₆H₁₂O₆",
-        "answer_hi": "C₆H₁₂O₆",
+        "question_en": "Which method is used to check if an Option is Some?",
+        "question_hi": "Option के Some होने की जांच के लिए किस मेथड का उपयोग किया जाता है?",
+        "options_en": ["is_some", "is_none", "contains", "Both is_some and is_none"],
+        "options_hi": ["is_some", "is_none", "contains", "दोनों is_some और is_none"],
+        "answer_en": "Both is_some and is_none",
+        "answer_hi": "दोनों is_some और is_none",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 36,
-        "question_en": "Geometrical isomers differ in:",
-        "question_hi": "ज्यामितीय समावयवी भिन्न होते हैं:",
-        "options_en": ["Connectivity", "Spatial arrangement", "Functional group", "Molecular formula"],
-        "options_hi": ["संयोजकता", "स्थानिक व्यवस्था", "कार्यात्मक समूह", "आणविक सूत्र"],
-        "answer_en": "Spatial arrangement",
-        "answer_hi": "स्थानिक व्यवस्था",
+        "question_en": "What is the purpose of 'std::collections::HashMap'?",
+        "question_hi": "'std::collections::HashMap' का उद्देश्य क्या है?",
+        "options_en": ["Key-value storage", "Hash table implementation", "Map data structure", "All of the above"],
+        "options_hi": ["की-वैल्यू स्टोरेज", "हैश टेबल इम्प्लीमेंटेशन", "मैप डेटा स्ट्रक्चर", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 37,
-        "question_en": "Bond angle in water is approximately:",
-        "question_hi": "जल में बंध कोण लगभग है:",
-        "options_en": ["90°", "104.5°", "109.5°", "120°"],
-        "options_hi": ["90°", "104.5°", "109.5°", "120°"],
-        "answer_en": "104.5°",
-        "answer_hi": "104.5°",
+        "question_en": "Which macro is used for compile-time assertions?",
+        "question_hi": "कंपाइल-टाइम असेर्शन के लिए किस मैक्रो का उपयोग किया जाता है?",
+        "options_en": ["assert!", "debug_assert!", "static_assert!", "compile_assert!"],
+        "options_hi": ["assert!", "debug_assert!", "static_assert!", "compile_assert!"],
+        "answer_en": "assert!",
+        "answer_hi": "assert!",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 38,
-        "question_en": "Tollen's test is used for:",
-        "question_hi": "टॉलेन परीक्षण उपयोग किया जाता है:",
-        "options_en": ["Aldehydes", "Ketones", "Alcohols", "Carboxylic acids"],
-        "options_hi": ["एल्डिहाइड", "कीटोन", "अल्कोहल", "कार्बोक्सिलिक अम्ल"],
-        "answer_en": "Aldehydes",
-        "answer_hi": "एल्डिहाइड",
+        "question_en": "What is the purpose of 'std::sync::Arc'?",
+        "question_hi": "'std::sync::Arc' का उद्देश्य क्या है?",
+        "options_en": ["Atomic reference counting", "Thread-safe shared ownership", "Concurrent data sharing", "All of the above"],
+        "options_hi": ["एटॉमिक रिफरेन्स काउंटिंग", "थ्रेड-सेफ शेयर्ड ओनरशिप", "कंकरंट डेटा शेयरिंग", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 39,
-        "question_en": "Water of crystallization in gypsum is:",
-        "question_hi": "जिप्सम में जलयोजन जल है:",
-        "options_en": ["1", "2", "5", "7"],
-        "options_hi": ["1", "2", "5", "7"],
-        "answer_en": "2",
-        "answer_hi": "2",
+        "question_en": "Which method is used to convert a string to a number?",
+        "question_hi": "स्ट्रिंग को नंबर में कन्वर्ट करने के लिए किस मेथड का उपयोग किया जाता है?",
+        "options_en": ["parse", "to_i32", "convert", "as_number"],
+        "options_hi": ["parse", "to_i32", "convert", "as_number"],
+        "answer_en": "parse",
+        "answer_hi": "parse",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 40,
-        "question_en": "Most stable free radical is:",
-        "question_hi": "सबसे स्थिर मुक्त मूलक है:",
-        "options_en": ["Methyl", "Primary", "Secondary", "Tertiary"],
-        "options_hi": ["मेथिल", "प्राथमिक", "द्वितीयक", "तृतीयक"],
-        "answer_en": "Tertiary",
-        "answer_hi": "तृतीयक",
+        "question_en": "What is the purpose of 'std::option::Option'?",
+        "question_hi": "'std::option::Option' का उद्देश्य क्या है?",
+        "options_en": ["Represent optional values", "Handle null safety", "Optional type wrapper", "All of the above"],
+        "options_hi": ["ऑप्शनल वैल्यूज रिप्रेजेंट करना", "नल सेफ्टी हैंडल करना", "ऑप्शनल टाइप रैपर", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 41,
-        "question_en": "Frenkel defect is observed in:",
-        "question_hi": "फ्रेंकेल दोष देखा जाता है:",
-        "options_en": ["NaCl", "AgBr", "KCl", "CsCl"],
-        "options_hi": ["NaCl", "AgBr", "KCl", "CsCl"],
-        "answer_en": "AgBr",
-        "answer_hi": "AgBr",
+        "question_en": "Which trait is used for copying values?",
+        "question_hi": "वैल्यूज कॉपी करने के लिए किस ट्रेट का उपयोग किया जाता है?",
+        "options_en": ["Copy", "Clone", "Duplicate", "Both Copy and Clone"],
+        "options_hi": ["Copy", "Clone", "Duplicate", "दोनों Copy और Clone"],
+        "answer_en": "Both Copy and Clone",
+        "answer_hi": "दोनों Copy और Clone",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 42,
-        "question_en": "Number of structural isomers for C₄H₁₀ is:",
-        "question_hi": "C₄H₁₀ के लिए संरचनात्मक समावयवियों की संख्या है:",
-        "options_en": ["1", "2", "3", "4"],
-        "options_hi": ["1", "2", "3", "4"],
-        "answer_en": "2",
-        "answer_hi": "2",
+        "question_en": "What is the purpose of 'std::result::Result'?",
+        "question_hi": "'std::result::Result' का उद्देश्य क्या है?",
+        "options_en": ["Error handling", "Success/failure representation", "Monadic error handling", "All of the above"],
+        "options_hi": ["एरर हैंडलिंग", "सक्सेस/फेल्योर रिप्रेजेंटेशन", "मोनैडिक एरर हैंडलिंग", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 43,
-        "question_en": "Complex showing geometrical isomerism is:",
-        "question_hi": "ज्यामितीय समावयवता दर्शाने वाला संकुल है:",
-        "options_en": ["[Co(NH₃)₆]³⁺", "[Ni(CO)₄]", "[Pt(NH₃)₂Cl₂]", "[Fe(CN)₆]⁴⁻"],
-        "options_hi": ["[Co(NH₃)₆]³⁺", "[Ni(CO)₄]", "[Pt(NH₃)₂Cl₂]", "[Fe(CN)₆]⁴⁻"],
-        "answer_en": "[Pt(NH₃)₂Cl₂]",
-        "answer_hi": "[Pt(NH₃)₂Cl₂]",
+        "question_en": "Which method is used to iterate over a range?",
+        "question_hi": "रेंज पर इटरेट करने के लिए किस मेथड का उपयोग किया जाता है?",
+        "options_en": ["for loop with ..", "range", "iter", "All of the above"],
+        "options_hi": [".. के साथ for लूप", "range", "iter", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 44,
-        "question_en": "Strongest acid among HCl, HBr, HI is:",
-        "question_hi": "HCl, HBr, HI में सबसे प्रबल अम्ल है:",
-        "options_en": ["HCl", "HBr", "HI", "All equal"],
-        "options_hi": ["HCl", "HBr", "HI", "सभी समान"],
-        "answer_en": "HI",
-        "answer_hi": "HI",
+        "question_en": "What is the purpose of 'std::boxed::Box'?",
+        "question_hi": "'std::boxed::Box' का उद्देश्य क्या है?",
+        "options_en": ["Heap allocation", "Owned pointer", "Dynamic memory", "All of the above"],
+        "options_hi": ["हीप अलोकेशन", "ओन्ड पॉइंटर", "डायनामिक मेमोरी", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 45,
-        "question_en": "Number of σ bonds in acetylene is:",
-        "question_hi": "एसिटिलीन में σ बंधों की संख्या है:",
-        "options_en": ["2", "3", "4", "5"],
-        "options_hi": ["2", "3", "4", "5"],
-        "answer_en": "3",
-        "answer_hi": "3",
+        "question_en": "Which macro is used for vector creation?",
+        "question_hi": "वेक्टर क्रिएशन के लिए किस मैक्रो का उपयोग किया जाता है?",
+        "options_en": ["vec!", "vector!", "Vec::new", "Both vec! and Vec::new"],
+        "options_hi": ["vec!", "vector!", "Vec::new", "दोनों vec! और Vec::new"],
+        "answer_en": "Both vec! and Vec::new",
+        "answer_hi": "दोनों vec! और Vec::new",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 46,
-        "question_en": "IUPAC name of CH₃-CH(OH)-CH₃ is:",
-        "question_hi": "CH₃-CH(OH)-CH₃ का IUPAC नाम है:",
-        "options_en": ["Propan-1-ol", "Propan-2-ol", "Butan-2-ol", "Ethanol"],
-        "options_hi": ["प्रोपेन-1-ऑल", "प्रोपेन-2-ऑल", "ब्यूटेन-2-ऑल", "एथनॉल"],
-        "answer_en": "Propan-2-ol",
-        "answer_hi": "प्रोपेन-2-ऑल",
+        "question_en": "What is the purpose of 'std::cell::RefCell'?",
+        "question_hi": "'std::cell::RefCell' का उद्देश्य क्या है?",
+        "options_en": ["Interior mutability", "Runtime borrow checking", "Mutable shared data", "All of the above"],
+        "options_hi": ["इंटीरियर म्यूटेबिलिटी", "रनटाइम बोरो चेकिंग", "म्यूटेबल शेयर्ड डेटा", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 47,
-        "question_en": "Molarity of 0.1 mole of NaOH in 500 ml solution is:",
-        "question_hi": "500 ml विलयन में 0.1 मोल NaOH की मोलरता है:",
-        "options_en": ["0.1 M", "0.2 M", "0.5 M", "1 M"],
-        "options_hi": ["0.1 M", "0.2 M", "0.5 M", "1 M"],
-        "answer_en": "0.2 M",
-        "answer_hi": "0.2 M",
+        "question_en": "Which method is used for string concatenation?",
+        "question_hi": "स्ट्रिंग कॉन्कटीनेशन के लिए किस मेथड का उपयोग किया जाता है?",
+        "options_en": ["+ operator", "push_str", "format!", "All of the above"],
+        "options_hi": ["+ ऑपरेटर", "push_str", "format!", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 48,
-        "question_en": "Element with smallest atomic radius is:",
-        "question_hi": "सबसे छोटी परमाणु त्रिज्या वाला तत्व है:",
-        "options_en": ["Li", "Na", "K", "Rb"],
-        "options_hi": ["Li", "Na", "K", "Rb"],
-        "answer_en": "Li",
-        "answer_hi": "Li",
+        "question_en": "What is the purpose of 'std::sync::Mutex'?",
+        "question_hi": "'std::sync::Mutex' का उद्देश्य क्या है?",
+        "options_en": ["Mutual exclusion", "Thread synchronization", "Locking mechanism", "All of the above"],
+        "options_hi": ["म्यूचुअल एक्सक्लूजन", "थ्रेड सिंक्रोनाइज़ेशन", "लॉकिंग मैकेनिज्म", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 49,
-        "question_en": "Contact process is used for manufacture of:",
-        "question_hi": "संपर्क प्रक्रिया का उपयोग किया जाता है:",
-        "options_en": ["Ammonia", "Sulfuric acid", "Nitric acid", "Hydrochloric acid"],
-        "options_hi": ["अमोनिया", "सल्फ्यूरिक अम्ल", "नाइट्रिक अम्ल", "हाइड्रोक्लोरिक अम्ल"],
-        "answer_en": "Sulfuric acid",
-        "answer_hi": "सल्फ्यूरिक अम्ल",
+        "question_en": "Which trait is used for default values?",
+        "question_hi": "डिफॉल्ट वैल्यूज के लिए किस ट्रेट का उपयोग किया जाता है?",
+        "options_en": ["Default", "DefaultValue", "Init", "New"],
+        "options_hi": ["Default", "DefaultValue", "Init", "New"],
+        "answer_en": "Default",
+        "answer_hi": "Default",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 50,
-        "question_en": "Highest melting point among NaCl, MgCl₂, AlCl₃ is of:",
-        "question_hi": "NaCl, MgCl₂, AlCl₃ में सबसे अधिक गलनांक किसका है?",
-        "options_en": ["NaCl", "MgCl₂", "AlCl₃", "All equal"],
-        "options_hi": ["NaCl", "MgCl₂", "AlCl₃", "सभी समान"],
-        "answer_en": "NaCl",
-        "answer_hi": "NaCl",
+        "question_en": "What is the purpose of 'std::mem::size_of'?",
+        "question_hi": "'std::mem::size_of' का उद्देश्य क्या है?",
+        "options_en": ["Get type size in bytes", "Memory size calculation", "Compile-time size info", "All of the above"],
+        "options_hi": ["टाइप साइज बाइट्स में प्राप्त करना", "मेमोरी साइज कैलकुलेशन", "कंपाइल-टाइम साइज इन्फो", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 51,
-        "question_en": "Longest wavelength in Balmer series corresponds to:",
-        "question_hi": "बामर श्रृंखला में सबसे लंबी तरंगदैर्ध्य किसके लिए होती है?",
-        "options_en": ["n=3 to n=2", "n=4 to n=2", "n=5 to n=2", "n=6 to n=2"],
-        "options_hi": ["n=3 से n=2", "n=4 से n=2", "n=5 से n=2", "n=6 से n=2"],
-        "answer_en": "n=3 to n=2",
-        "answer_hi": "n=3 से n=2",
+        "question_en": "Which method is used to handle multiple error types?",
+        "question_hi": "मल्टीपल एरर टाइप्स हैंडल करने के लिए किस मेथड का उपयोग किया जाता है?",
+        "options_en": ["map_err", "and_then", "or_else", "All of the above"],
+        "options_hi": ["map_err", "and_then", "or_else", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 52,
-        "question_en": "Bond angle in ammonia is approximately:",
-        "question_hi": "अमोनिया में बंध कोण लगभग है:",
-        "options_en": ["90°", "107°", "109.5°", "120°"],
-        "options_hi": ["90°", "107°", "109.5°", "120°"],
-        "answer_en": "107°",
-        "answer_hi": "107°",
+        "question_en": "What is the purpose of 'std::convert::From'?",
+        "question_hi": "'std::convert::From' का उद्देश्य क्या है?",
+        "options_en": ["Type conversion", "Value transformation", "Trait implementation", "All of the above"],
+        "options_hi": ["टाइप कन्वर्जन", "वैल्यू ट्रांसफॉर्मेशन", "ट्रेट इम्प्लीमेंटेशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 53,
-        "question_en": "Optical isomers are also called:",
-        "question_hi": "प्रकाशिक समावयवी भी कहलाते हैं:",
-        "options_en": ["Geometrical isomers", "Enantiomers", "Diastereomers", "Conformers"],
-        "options_hi": ["ज्यामितीय समावयवी", "एनैन्शियोमर्स", "डायस्टीरियोमर्स", "कंफॉर्मर्स"],
-        "answer_en": "Enantiomers",
-        "answer_hi": "एनैन्शियोमर्स",
+        "question_en": "Which macro is used for panic with message?",
+        "question_hi": "मैसेज के साथ पैनिक के लिए किस मैक्रो का उपयोग किया जाता है?",
+        "options_en": ["panic!", "error!", "crash!", "fail!"],
+        "options_hi": ["panic!", "error!", "crash!", "fail!"],
+        "answer_en": "panic!",
+        "answer_hi": "panic!",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 54,
-        "question_en": "Number of isomers for C₃H₆ is:",
-        "question_hi": "C₃H₆ के लिए समावयवियों की संख्या है:",
-        "options_en": ["1", "2", "3", "4"],
-        "options_hi": ["1", "2", "3", "4"],
-        "answer_en": "2",
-        "answer_hi": "2",
+        "question_en": "What is the purpose of 'std::iter::Iterator'?",
+        "question_hi": "'std::iter::Iterator' का उद्देश्य क्या है?",
+        "options_en": ["Sequence traversal", "Lazy evaluation", "Collection processing", "All of the above"],
+        "options_hi": ["सीक्वेंस ट्रैवर्सल", "लेजी एवैल्यूएशन", "कलेक्शन प्रोसेसिंग", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 55,
-        "question_en": "Which is colligative property?",
-        "question_hi": "कौन सा अणुसंख्य गुणधर्म है?",
-        "options_en": ["Boiling point elevation", "Viscosity", "Surface tension", "Density"],
-        "options_hi": ["क्वथनांक उन्नयन", "श्यानता", "पृष्ठ तनाव", "घनत्व"],
-        "answer_en": "Boiling point elevation",
-        "answer_hi": "क्वथनांक उन्नयन",
+        "question_en": "Which method is used for case-insensitive string comparison?",
+        "question_hi": "केस-इनसेंसिटिव स्ट्रिंग कम्पेयरिजन के लिए किस मेथड का उपयोग किया जाता है?",
+        "options_en": ["eq_ignore_ascii_case", "case_insensitive_eq", "ignore_case", "to_lowercase then =="],
+        "options_hi": ["eq_ignore_ascii_case", "case_insensitive_eq", "ignore_case", "to_lowercase फिर =="],
+        "answer_en": "eq_ignore_ascii_case",
+        "answer_hi": "eq_ignore_ascii_case",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 56,
-        "question_en": "Number of unpaired electrons in O₂ is:",
-        "question_hi": "O₂ में अयुग्मित इलेक्ट्रॉनों की संख्या है:",
-        "options_en": ["0", "1", "2", "3"],
-        "options_hi": ["0", "1", "2", "3"],
-        "answer_en": "2",
-        "answer_hi": "2",
+        "question_en": "What is the purpose of 'std::default::Default'?",
+        "question_hi": "'std::default::Default' का उद्देश्य क्या है?",
+        "options_en": ["Default values", "Initialization", "Zero values", "All of the above"],
+        "options_hi": ["डिफॉल्ट वैल्यूज", "इनिशियलाइज़ेशन", "जीरो वैल्यूज", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 57,
-        "question_en": "Geometry of NH₃ is:",
-        "question_hi": "NH₃ की ज्यामिति है:",
-        "options_en": ["Linear", "Trigonal planar", "Tetrahedral", "Pyramidal"],
-        "options_hi": ["रैखिक", "त्रिकोणीय समतलीय", "चतुष्फलकीय", "पिरामिडी"],
-        "answer_en": "Pyramidal",
-        "answer_hi": "पिरामिडी",
+        "question_en": "Which trait is used for hashing?",
+        "question_hi": "हैशिंग के लिए किस ट्रेट का उपयोग किया जाता है?",
+        "options_en": ["Hash", "Hasher", "Hashable", "Both Hash and Hasher"],
+        "options_hi": ["Hash", "Hasher", "Hashable", "दोनों Hash और Hasher"],
+        "answer_en": "Both Hash and Hasher",
+        "answer_hi": "दोनों Hash और Hasher",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 58,
-        "question_en": "Example of addition polymer is:",
-        "question_hi": "योगज बहुलक का उदाहरण है:",
-        "options_en": ["Nylon", "Polyester", "Polythene", "Nylon-6,6"],
-        "options_hi": ["नायलॉन", "पॉलिएस्टर", "पॉलिथीन", "नायलॉन-6,6"],
-        "answer_en": "Polythene",
-        "answer_hi": "पॉलिथीन",
+        "question_en": "What is the purpose of 'std::ops::Drop'?",
+        "question_hi": "'std::ops::Drop' का उद्देश्य क्या है?",
+        "options_en": ["Custom cleanup", "Destructor implementation", "Resource release", "All of the above"],
+        "options_hi": ["कस्टम क्लीनअप", "डिस्ट्रक्टर इम्प्लीमेंटेशन", "रिसोर्स रिलीज", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 59,
-        "question_en": "Number of moles of K₂Cr₂O₇ required to oxidize one mole of Fe²⁺ is:",
-        "question_hi": "Fe²⁺ के एक मोल को ऑक्सीकृत करने के लिए आवश्यक K₂Cr₂O₇ के मोलों की संख्या है:",
-        "options_en": ["1/6", "1/3", "1/2", "1"],
-        "options_hi": ["1/6", "1/3", "1/2", "1"],
-        "answer_en": "1/6",
-        "answer_hi": "1/6",
+        "question_en": "Which method is used to convert between string types?",
+        "question_hi": "स्ट्रिंग टाइप्स के बीच कन्वर्ट करने के लिए किस मेथड का उपयोग किया जाता है?",
+        "options_en": ["to_string", "into", "as_str", "All of the above"],
+        "options_hi": ["to_string", "into", "as_str", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 60,
-        "question_en": "Aspirin is:",
-        "question_hi": "एस्पिरिन है:",
-        "options_en": ["Analgesic", "Antibiotic", "Antimalarial", "Antacid"],
-        "options_hi": ["पीड़ाहारी", "एंटीबायोटिक", "एंटीमलेरियल", "एंटासिड"],
-        "answer_en": "Analgesic",
-        "answer_hi": "पीड़ाहारी",
+        "question_en": "What is the purpose of 'std::cmp::PartialEq'?",
+        "question_hi": "'std::cmp::PartialEq' का उद्देश्य क्या है?",
+        "options_en": ["Equality comparison", "Partial equality", "== operator implementation", "All of the above"],
+        "options_hi": ["इक्वलिटी कम्पेयरिजन", "पार्शियल इक्वलिटी", "== ऑपरेटर इम्प्लीमेंटेशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 61,
-        "question_en": "Number of real roots of x² - 4x + 4 = 0 is:",
-        "question_hi": "x² - 4x + 4 = 0 के वास्तविक मूलों की संख्या है:",
-        "options_en": ["0", "1", "2", "3"],
-        "options_hi": ["0", "1", "2", "3"],
-        "answer_en": "1",
-        "answer_hi": "1",
+        "question_en": "Which macro is used for documentation comments?",
+        "question_hi": "डॉक्युमेंटेशन कमेंट्स के लिए किस मैक्रो का उपयोग किया जाता है?",
+        "options_en": ["///", "//!", "/** */", "All of the above"],
+        "options_hi": ["///", "//!", "/** */", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 62,
-        "question_en": "If sum of n terms of AP is n², then first term is:",
-        "question_hi": "यदि समांतर श्रेणी के n पदों का योग n² है, तो पहला पद है:",
-        "options_en": ["0", "1", "2", "3"],
-        "options_hi": ["0", "1", "2", "3"],
-        "answer_en": "1",
-        "answer_hi": "1",
+        "question_en": "What is the purpose of 'std::sync::RwLock'?",
+        "question_hi": "'std::sync::RwLock' का उद्देश्य क्या है?",
+        "options_en": ["Read-write lock", "Multiple readers", "Single writer", "All of the above"],
+        "options_hi": ["रीड-राइट लॉक", "मल्टीपल रीडर", "सिंगल राइटर", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 63,
-        "question_en": "Number of ways to arrange letters of 'BOOK' is:",
-        "question_hi": "'BOOK' के अक्षरों को व्यवस्थित करने के तरीकों की संख्या है:",
-        "options_en": ["6", "12", "24", "48"],
-        "options_hi": ["6", "12", "24", "48"],
-        "answer_en": "12",
-        "answer_hi": "12",
+        "question_en": "Which method is used for floating-point NaN check?",
+        "question_hi": "फ्लोटिंग-पॉइंट NaN चेक के लिए किस मेथड का उपयोग किया जाता है?",
+        "options_en": ["is_nan", "is_finite", "is_infinite", "All of the above"],
+        "options_hi": ["is_nan", "is_finite", "is_infinite", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 64,
-        "question_en": "Value of ∫(1/x) dx is:",
-        "question_hi": "∫(1/x) dx का मान है:",
-        "options_en": ["ln|x| + C", "x + C", "x²/2 + C", "1/x² + C"],
-        "options_hi": ["ln|x| + C", "x + C", "x²/2 + C", "1/x² + C"],
-        "answer_en": "ln|x| + C",
-        "answer_hi": "ln|x| + C",
+        "question_en": "What is the purpose of 'std::num::Wrapping'?",
+        "question_hi": "'std::num::Wrapping' का उद्देश्य क्या है?",
+        "options_en": ["Integer overflow handling", "Wrapping arithmetic", "Modular arithmetic", "All of the above"],
+        "options_hi": ["इंटीजर ओवरफ्लो हैंडलिंग", "रैपिंग अरिथमेटिक", "मॉड्यूलर अरिथमेटिक", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 65,
-        "question_en": "If P(A) = 0.6, P(B) = 0.4 and P(A∪B) = 0.8, then P(A∩B) is:",
-        "question_hi": "यदि P(A) = 0.6, P(B) = 0.4 और P(A∪B) = 0.8, तो P(A∩B) है:",
-        "options_en": ["0.1", "0.2", "0.3", "0.4"],
-        "options_hi": ["0.1", "0.2", "0.3", "0.4"],
-        "answer_en": "0.2",
-        "answer_hi": "0.2",
+        "question_en": "Which trait is used for function call syntax?",
+        "question_hi": "फंक्शन कॉल सिंटैक्स के लिए किस ट्रेट का उपयोग किया जाता है?",
+        "options_en": ["Fn", "Call", "Invoke", "Execute"],
+        "options_hi": ["Fn", "Call", "Invoke", "Execute"],
+        "answer_en": "Fn",
+        "answer_hi": "Fn",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 66,
-        "question_en": "Slope of tangent to y = x³ at (1,1) is:",
-        "question_hi": "y = x³ के (1,1) पर स्पर्श रेखा की प्रवणता है:",
-        "options_en": ["1", "2", "3", "4"],
-        "options_hi": ["1", "2", "3", "4"],
-        "answer_en": "3",
-        "answer_hi": "3",
+        "question_en": "What is the purpose of 'std::mem::transmute'?",
+        "question_hi": "'std::mem::transmute' का उद्देश्य क्या है?",
+        "options_en": ["Unsafe type conversion", "Memory reinterpretation", "Bitwise conversion", "All of the above"],
+        "options_hi": ["अनसेफ टाइप कन्वर्जन", "मेमोरी रिइंटरप्रिटेशन", "बिटवाइज कन्वर्जन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 67,
-        "question_en": "Number of common tangents to two concentric circles is:",
-        "question_hi": "दो संकेंद्रित वृत्तों की उभयनिष्ठ स्पर्श रेखाओं की संख्या है:",
-        "options_en": ["0", "1", "2", "Infinite"],
-        "options_hi": ["0", "1", "2", "अनंत"],
-        "answer_en": "0",
-        "answer_hi": "0",
+        "question_en": "Which method is used for string slicing?",
+        "question_hi": "स्ट्रिंग स्लाइसिंग के लिए किस मेथड का उपयोग किया जाता है?",
+        "options_en": ["get", "slice", "[] indexing", "All of the above"],
+        "options_hi": ["get", "slice", "[] इंडेक्सिंग", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 68,
-        "question_en": "Value of lim(x→∞) (1 + 1/x)ˣ is:",
-        "question_hi": "lim(x→∞) (1 + 1/x)ˣ का मान है:",
-        "options_en": ["0", "1", "e", "∞"],
-        "options_hi": ["0", "1", "e", "∞"],
-        "answer_en": "e",
-        "answer_hi": "e",
+        "question_en": "What is the purpose of 'std::thread::spawn'?",
+        "question_hi": "'std::thread::spawn' का उद्देश्य क्या है?",
+        "options_en": ["Create new thread", "Thread execution", "Concurrent programming", "All of the above"],
+        "options_hi": ["नया थ्रेड बनाना", "थ्रेड एक्जीक्यूशन", "कंकरंट प्रोग्रामिंग", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 69,
-        "question_en": "If a = 2i + 3j and b = i - j, then a.b is:",
-        "question_hi": "यदि a = 2i + 3j और b = i - j, तो a.b है:",
-        "options_en": ["-1", "0", "1", "2"],
-        "options_hi": ["-1", "0", "1", "2"],
-        "answer_en": "-1",
-        "answer_hi": "-1",
+        "question_en": "Which trait is used for ordering?",
+        "question_hi": "ऑर्डरिंग के लिए किस ट्रेट का उपयोग किया जाता है?",
+        "options_en": ["Ord", "Ordering", "Compare", "PartialOrd"],
+        "options_hi": ["Ord", "Ordering", "Compare", "PartialOrd"],
+        "answer_en": "Ord",
+        "answer_hi": "Ord",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 70,
-        "question_en": "Area of circle x² + y² = 16 is:",
-        "question_hi": "वृत्त x² + y² = 16 का क्षेत्रफल है:",
-        "options_en": ["4π", "8π", "16π", "32π"],
-        "options_hi": ["4π", "8π", "16π", "32π"],
-        "answer_en": "16π",
-        "answer_hi": "16π",
+        "question_en": "What is the purpose of 'std::path::Path'?",
+        "question_hi": "'std::path::Path' का उद्देश्य क्या है?",
+        "options_en": ["Path manipulation", "File system paths", "Cross-platform paths", "All of the above"],
+        "options_hi": ["पाथ मैनिपुलेशन", "फाइल सिस्टम पाथ", "क्रॉस-प्लेटफॉर्म पाथ", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 71,
-        "question_en": "Limit of sin(2x)/x as x→0 is:",
-        "question_hi": "जब x → 0 होता है, तब sin(2x)/x का मान है:",
-        "options_en": ["0", "1", "2", "∞"],
-        "options_hi": ["0", "1", "2", "∞"],
-        "answer_en": "2",
-        "answer_hi": "2",
+        "question_en": "Which method is used for error conversion?",
+        "question_hi": "एरर कन्वर्जन के लिए किस मेथड का उपयोग किया जाता है?",
+        "options_en": ["map_err", "into", "convert", "All of the above"],
+        "options_hi": ["map_err", "into", "convert", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 72,
-        "question_en": "If sum of n terms is 3n² + n, then common difference is:",
-        "question_hi": "यदि n पदों का योग 3n² + n है, तो सार्व अंतर है:",
-        "options_en": ["3", "4", "5", "6"],
-        "options_hi": ["3", "4", "5", "6"],
-        "answer_en": "6",
-        "answer_hi": "6",
+        "question_en": "What is the purpose of 'std::fs::File'?",
+        "question_hi": "'std::fs::File' का उद्देश्य क्या है?",
+        "options_en": ["File handling", "File I/O operations", "File system access", "All of the above"],
+        "options_hi": ["फाइल हैंडलिंग", "फाइल I/O ऑपरेशन", "फाइल सिस्टम एक्सेस", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 73,
-        "question_en": "Value of sin²θ + cos²θ is:",
-        "question_hi": "sin²θ + cos²θ का मान है:",
-        "options_en": ["0", "1", "2", "sin2θ"],
-        "options_hi": ["0", "1", "2", "sin2θ"],
-        "answer_en": "1",
-        "answer_hi": "1",
+        "question_en": "Which macro is used for conditional compilation?",
+        "question_hi": "कंडीशनल कंपाइलेशन के लिए किस मैक्रो का उपयोग किया जाता है?",
+        "options_en": ["cfg!", "#[cfg]", "conditional!", "All of the above"],
+        "options_hi": ["cfg!", "#[cfg]", "conditional!", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 74,
-        "question_en": "If A = [[1,0],[0,1]], then A is:",
-        "question_hi": "यदि A = [[1,0],[0,1]] है, तो A है:",
-        "options_en": ["Zero matrix", "Identity matrix", "Symmetric matrix", "Skew-symmetric matrix"],
-        "options_hi": ["शून्य आव्यूह", "तत्समक आव्यूह", "सममित आव्यूह", "विषम-सममित आव्यूह"],
-        "answer_en": "Identity matrix",
-        "answer_hi": "तत्समक आव्यूह",
+        "question_en": "What is the purpose of 'std::io::Read'?",
+        "question_hi": "'std::io::Read' का उद्देश्य क्या है?",
+        "options_en": ["Input operations", "Reading data", "Stream input", "All of the above"],
+        "options_hi": ["इनपुट ऑपरेशन", "डेटा रीडिंग", "स्ट्रीम इनपुट", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 75,
-        "question_en": "Integral ∫eˣ dx is:",
-        "question_hi": "∫eˣ dx का हल है:",
-        "options_en": ["eˣ + C", "xeˣ + C", "eˣ/x + C", "ln|x| + C"],
-        "options_hi": ["eˣ + C", "xeˣ + C", "eˣ/x + C", "ln|x| + C"],
-        "answer_en": "eˣ + C",
-        "answer_hi": "eˣ + C",
+        "question_en": "Which method is used for iterator transformation?",
+        "question_hi": "इटरेटर ट्रांसफॉर्मेशन के लिए किस मेथड का उपयोग किया जाता है?",
+        "options_en": ["map", "filter", "fold", "All of the above"],
+        "options_hi": ["map", "filter", "fold", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 76,
-        "question_en": "If log₁₀2 = 0.3010, then log₁₀8 is:",
-        "question_hi": "यदि log₁₀2 = 0.3010, तो log₁₀8 है:",
-        "options_en": ["0.3010", "0.6020", "0.9030", "1.2040"],
-        "options_hi": ["0.3010", "0.6020", "0.9030", "1.2040"],
-        "answer_en": "0.9030",
-        "answer_hi": "0.9030",
+        "question_en": "What is the purpose of 'std::io::Write'?",
+        "question_hi": "'std::io::Write' का उद्देश्य क्या है?",
+        "options_en": ["Output operations", "Writing data", "Stream output", "All of the above"],
+        "options_hi": ["आउटपुट ऑपरेशन", "डेटा राइटिंग", "स्ट्रीम आउटपुट", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 77,
-        "question_en": "Derivative of ln(x) is:",
-        "question_hi": "ln(x) का अवकलज है:",
-        "options_en": ["1/x", "x", "eˣ", "1"],
-        "options_hi": ["1/x", "x", "eˣ", "1"],
-        "answer_en": "1/x",
-        "answer_hi": "1/x",
+        "question_en": "Which trait is used for string representation?",
+        "question_hi": "स्ट्रिंग रिप्रेजेंटेशन के लिए किस ट्रेट का उपयोग किया जाता है?",
+        "options_en": ["Display", "ToString", "Stringify", "Both Display and ToString"],
+        "options_hi": ["Display", "ToString", "Stringify", "दोनों Display और ToString"],
+        "answer_en": "Both Display and ToString",
+        "answer_hi": "दोनों Display और ToString",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 78,
-        "question_en": "Function f(x) = x² is differentiable at:",
-        "question_hi": "फलन f(x) = x² अवकलनीय है:",
-        "options_en": ["x=0 only", "All points", "No point", "x=1 only"],
-        "options_hi": ["केवल x=0", "सभी बिंदुओं पर", "किसी बिंदु पर नहीं", "केवल x=1"],
-        "answer_en": "All points",
-        "answer_hi": "सभी बिंदुओं पर",
+        "question_en": "What is the purpose of 'std::sync::Once'?",
+        "question_hi": "'std::sync::Once' का उद्देश्य क्या है?",
+        "options_en": ["One-time initialization", "Thread-safe init", "Singleton pattern", "All of the above"],
+        "options_hi": ["वन-टाइम इनिशियलाइज़ेशन", "थ्रेड-सेफ इनिट", "सिंगलटन पैटर्न", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 79,
-        "question_en": "Number of terms in (a+b)⁵ is:",
-        "question_hi": "(a+b)⁵ के प्रसार में पदों की संख्या है:",
-        "options_en": ["4", "5", "6", "7"],
-        "options_hi": ["4", "5", "6", "7"],
-        "answer_en": "6",
-        "answer_hi": "6",
+        "question_en": "Which method is used for optional value extraction?",
+        "question_hi": "ऑप्शनल वैल्यू एक्सट्रैक्शन के लिए किस मेथड का उपयोग किया जाता है?",
+        "options_en": ["unwrap", "expect", "unwrap_or", "All of the above"],
+        "options_hi": ["unwrap", "expect", "unwrap_or", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 80,
-        "question_en": "Solution of dy/dx = cos x is:",
-        "question_hi": "dy/dx = cos x का हल है:",
-        "options_en": ["y = sin x + C", "y = cos x + C", "y = -sin x + C", "y = -cos x + C"],
-        "options_hi": ["y = sin x + C", "y = cos x + C", "y = -sin x + C", "y = -cos x + C"],
-        "answer_en": "y = sin x + C",
-        "answer_hi": "y = sin x + C",
+        "question_en": "What is the purpose of 'std::collections::BinaryHeap'?",
+        "question_hi": "'std::collections::BinaryHeap' का उद्देश्य क्या है?",
+        "options_en": ["Priority queue", "Heap data structure", "Max/min heap", "All of the above"],
+        "options_hi": ["प्रायोरिटी क्यू", "हीप डेटा स्ट्रक्चर", "मैक्स/मिन हीप", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 81,
-        "question_en": "Value of tan(45°) is:",
-        "question_hi": "tan(45°) का मान है:",
-        "options_en": ["0", "1", "√3", "∞"],
-        "options_hi": ["0", "1", "√3", "∞"],
-        "answer_en": "1",
-        "answer_hi": "1",
+        "question_en": "Which trait is used for borrowing?",
+        "question_hi": "बोरोइंग के लिए किस ट्रेट का उपयोग किया जाता है?",
+        "options_en": ["Borrow", "AsRef", "Deref", "All of the above"],
+        "options_hi": ["Borrow", "AsRef", "Deref", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 82,
-        "question_en": "Distance between points (1,2) and (4,6) is:",
-        "question_hi": "बिंदुओं (1,2) और (4,6) के बीच की दूरी है:",
-        "options_en": ["3", "4", "5", "6"],
-        "options_hi": ["3", "4", "5", "6"],
-        "answer_en": "5",
-        "answer_hi": "5",
+        "question_en": "What is the purpose of 'std::net::TcpListener'?",
+        "question_hi": "'std::net::TcpListener' का उद्देश्य क्या है?",
+        "options_en": ["TCP server", "Network listening", "Connection acceptance", "All of the above"],
+        "options_hi": ["TCP सर्वर", "नेटवर्क लिसनिंग", "कनेक्शन एक्सेप्टेंस", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 83,
-        "question_en": "Number of diagonals in pentagon is:",
-        "question_hi": "पंचभुज में विकर्णों की संख्या है:",
-        "options_en": ["3", "4", "5", "6"],
-        "options_hi": ["3", "4", "5", "6"],
-        "answer_en": "5",
-        "answer_hi": "5",
+        "question_en": "Which method is used for character iteration?",
+        "question_hi": "कैरेक्टर इटरेशन के लिए किस मेथड का उपयोग किया जाता है?",
+        "options_en": ["chars", "char_indices", "bytes", "All of the above"],
+        "options_hi": ["chars", "char_indices", "bytes", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 84,
-        "question_en": "Sum of first 10 natural numbers is:",
-        "question_hi": "पहली 10 प्राकृत संख्याओं का योग है:",
-        "options_en": ["45", "50", "55", "60"],
-        "options_hi": ["45", "50", "55", "60"],
-        "answer_en": "55",
-        "answer_hi": "55",
+        "question_en": "What is the purpose of 'std::time::Duration'?",
+        "question_hi": "'std::time::Duration' का उद्देश्य क्या है?",
+        "options_en": ["Time intervals", "Time measurement", "Time calculations", "All of the above"],
+        "options_hi": ["टाइम इंटरवल", "टाइम मेजरमेंट", "टाइम कैलकुलेशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 85,
-        "question_en": "Value of ∫(0 to 1) x dx is:",
-        "question_hi": "0 से 1 तक ∫x dx का मान है:",
-        "options_en": ["0", "0.5", "1", "2"],
-        "options_hi": ["0", "0.5", "1", "2"],
-        "answer_en": "0.5",
-        "answer_hi": "0.5",
+        "question_en": "Which trait is used for slicing?",
+        "question_hi": "स्लाइसिंग के लिए किस ट्रेट का उपयोग किया जाता है?",
+        "options_en": ["Slice", "Index", "AsRef", "All of the above"],
+        "options_hi": ["Slice", "Index", "AsRef", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 86,
-        "question_en": "Equation of line with slope 2 passing through (1,3) is:",
-        "question_hi": "ढाल 2 वाली और (1,3) से गुजरने वाली रेखा का समीकरण है:",
-        "options_en": ["y = 2x + 1", "y = 2x + 2", "y = 2x + 3", "y = 2x + 4"],
-        "options_hi": ["y = 2x + 1", "y = 2x + 2", "y = 2x + 3", "y = 2x + 4"],
-        "answer_en": "y = 2x + 1",
-        "answer_hi": "y = 2x + 1",
+        "question_en": "What is the purpose of 'std::env::vars'?",
+        "question_hi": "'std::env::vars' का उद्देश्य क्या है?",
+        "options_en": ["Environment variables", "System configuration", "Process environment", "All of the above"],
+        "options_hi": ["एनवायरनमेंट वेरिएबल्स", "सिस्टम कॉन्फिगरेशन", "प्रोसेस एनवायरनमेंट", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 87,
-        "question_en": "If cos θ = 0.6, then sin θ is:",
-        "question_hi": "यदि cos θ = 0.6, तो sin θ है:",
-        "options_en": ["0.4", "0.6", "0.8", "1.0"],
-        "options_hi": ["0.4", "0.6", "0.8", "1.0"],
-        "answer_en": "0.8",
-        "answer_hi": "0.8",
+        "question_en": "Which method is used for floating-point rounding?",
+        "question_hi": "फ्लोटिंग-पॉइंट राउंडिंग के लिए किस मेथड का उपयोग किया जाता है?",
+        "options_en": ["round", "ceil", "floor", "All of the above"],
+        "options_hi": ["round", "ceil", "floor", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 88,
-        "question_en": "Middle term in (a+b)⁴ is:",
-        "question_hi": "(a+b)⁴ में मध्य पद है:",
-        "options_en": ["a⁴", "b⁴", "4a³b", "6a²b²"],
-        "options_hi": ["a⁴", "b⁴", "4a³b", "6a²b²"],
-        "answer_en": "6a²b²",
-        "answer_hi": "6a²b²",
+        "question_en": "What is the purpose of 'std::cmp::Ordering'?",
+        "question_hi": "'std::cmp::Ordering' का उद्देश्य क्या है?",
+        "options_en": ["Comparison results", "Sorting order", "Three-way comparison", "All of the above"],
+        "options_hi": ["कम्पेयरिजन रिजल्ट", "सॉर्टिंग ऑर्डर", "थ्री-वे कम्पेयरिजन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 89,
-        "question_en": "Value of cot(90°) is:",
-        "question_hi": "cot(90°) का मान है:",
-        "options_en": ["0", "1", "√3", "∞"],
-        "options_hi": ["0", "1", "√3", "∞"],
-        "answer_en": "0",
-        "answer_hi": "0",
+        "question_en": "Which trait is used for type conversion?",
+        "question_hi": "टाइप कन्वर्जन के लिए किस ट्रेट का उपयोग किया जाता है?",
+        "options_en": ["From", "Into", "AsRef", "All of the above"],
+        "options_hi": ["From", "Into", "AsRef", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 90,
-        "question_en": "Solution of 2x - 3 = 7 is:",
-        "question_hi": "समीकरण 2x - 3 = 7 का हल है:",
-        "options_en": ["x = 2", "x = 3", "x = 4", "x = 5"],
-        "options_hi": ["x = 2", "x = 3", "x = 4", "x = 5"],
-        "answer_en": "x = 5",
-        "answer_hi": "x = 5",
+        "question_en": "What is the purpose of 'std::fs::metadata'?",
+        "question_hi": "'std::fs::metadata' का उद्देश्य क्या है?",
+        "options_en": ["File information", "File stats", "File metadata", "All of the above"],
+        "options_hi": ["फाइल इन्फॉर्मेशन", "फाइल स्टैट्स", "फाइल मेटाडेटा", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 91,
-        "question_en": "A body moving with constant speed has:",
-        "question_hi": "नियत चाल से गतिमान पिंड में होता है:",
-        "options_en": ["Zero acceleration", "Constant acceleration", "Variable acceleration", "Infinite acceleration"],
-        "options_hi": ["शून्य त्वरण", "नियत त्वरण", "परिवर्ती त्वरण", "अनंत त्वरण"],
-        "answer_en": "Zero acceleration",
-        "answer_hi": "शून्य त्वरण",
+        "question_en": "Which method is used for string searching?",
+        "question_hi": "स्ट्रिंग सर्चिंग के लिए किस मेथड का उपयोग किया जाता है?",
+        "options_en": ["find", "contains", "starts_with", "All of the above"],
+        "options_hi": ["find", "contains", "starts_with", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 92,
-        "question_en": "Power of lens is measured in:",
-        "question_hi": "लेंस की क्षमता मापी जाती है:",
-        "options_en": ["Meter", "Diopter", "Joule", "Watt"],
-        "options_hi": ["मीटर", "डायोप्टर", "जूल", "वाट"],
-        "answer_en": "Diopter",
-        "answer_hi": "डायोप्टर",
+        "question_en": "What is the purpose of 'std::io::BufReader'?",
+        "question_hi": "'std::io::BufReader' का उद्देश्य क्या है?",
+        "options_en": ["Buffered reading", "Performance optimization", "Efficient I/O", "All of the above"],
+        "options_hi": ["बफर्ड रीडिंग", "परफॉर्मेंस ऑप्टिमाइज़ेशन", "एफिशिएंट I/O", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 93,
-        "question_en": "Unit of frequency is:",
-        "question_hi": "आवृत्ति की इकाई है:",
-        "options_en": ["Hertz", "Newton", "Pascal", "Joule"],
-        "options_hi": ["हर्ट्ज", "न्यूटन", "पास्कल", "जूल"],
-        "answer_en": "Hertz",
-        "answer_hi": "हर्ट्ज",
+        "question_en": "Which trait is used for iterator creation?",
+        "question_hi": "इटरेटर क्रिएशन के लिए किस ट्रेट का उपयोग किया जाता है?",
+        "options_en": ["IntoIterator", "Iter", "Iterator", "All of the above"],
+        "options_hi": ["IntoIterator", "Iter", "Iterator", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 94,
-        "question_en": "Speed of light in vacuum is:",
-        "question_hi": "निर्वात में प्रकाश की गति है:",
-        "options_en": ["3 × 10⁶ m/s", "3 × 10⁸ m/s", "3 × 10¹⁰ m/s", "3 × 10¹² m/s"],
-        "options_hi": ["3 × 10⁶ m/s", "3 × 10⁸ m/s", "3 × 10¹⁰ m/s", "3 × 10¹² m/s"],
-        "answer_en": "3 × 10⁸ m/s",
-        "answer_hi": "3 × 10⁸ m/s",
+        "question_en": "What is the purpose of 'std::collections::LinkedList'?",
+        "question_hi": "'std::collections::LinkedList' का उद्देश्य क्या है?",
+        "options_en": ["Doubly-linked list", "O(1) insertion", "Sequential access", "All of the above"],
+        "options_hi": ["डबली-लिंक्ड लिस्ट", "O(1) इंसर्शन", "सीक्वेंशियल एक्सेस", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 95,
-        "question_en": "In nuclear fission, energy is released due to:",
-        "question_hi": "नाभिकीय विखंडन में, ऊर्जा मुक्त होती है:",
-        "options_en": ["Mass defect", "Charge conservation", "Spin conservation", "Momentum conservation"],
-        "options_hi": ["द्रव्यमान क्षति", "आवेश संरक्षण", "स्पिन संरक्षण", "संवेग संरक्षण"],
-        "answer_en": "Mass defect",
-        "answer_hi": "द्रव्यमान क्षति",
+        "question_en": "Which method is used for memory allocation?",
+        "question_hi": "मेमोरी अलोकेशन के लिए किस मेथड का उपयोग किया जाता है?",
+        "options_en": ["Box::new", "Vec::with_capacity", "String::with_capacity", "All of the above"],
+        "options_hi": ["Box::new", "Vec::with_capacity", "String::with_capacity", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 96,
-        "question_en": "A step-up transformer:",
-        "question_hi": "एक स्टेप-अप ट्रांसफॉर्मर:",
-        "options_en": ["Increases voltage", "Decreases voltage", "Increases current", "Decreases power"],
-        "options_hi": ["वोल्टेज बढ़ाता है", "वोल्टेज घटाता है", "धारा बढ़ाता है", "शक्ति घटाता है"],
-        "answer_en": "Increases voltage",
-        "answer_hi": "वोल्टेज बढ़ाता है",
+        "question_en": "What is the purpose of 'std::sync::Barrier'?",
+        "question_hi": "'std::sync::Barrier' का उद्देश्य क्या है?",
+        "options_en": ["Thread synchronization", "Wait for multiple threads", "Coordination point", "All of the above"],
+        "options_hi": ["थ्रेड सिंक्रोनाइज़ेशन", "मल्टीपल थ्रेड्स के लिए वेट", "कोऑर्डिनेशन पॉइंट", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 97,
-        "question_en": "Centripetal force required for circular motion is provided by:",
-        "question_hi": "वृत्तीय गति के लिए आवश्यक अभिकेंद्रीय बल प्रदान किया जाता है:",
-        "options_en": ["Gravity", "Friction", "Tension", "Any of these"],
-        "options_hi": ["गुरुत्व", "घर्षण", "तनाव", "इनमें से कोई भी"],
-        "answer_en": "Any of these",
-        "answer_hi": "इनमें से कोई भी",
+        "question_en": "Which trait is used for fallible conversions?",
+        "question_hi": "फेलिबल कन्वर्जन के लिए किस ट्रेट का उपयोग किया जाता है?",
+        "options_en": ["TryFrom", "TryInto", "FromStr", "All of the above"],
+        "options_hi": ["TryFrom", "TryInto", "FromStr", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 98,
-        "question_en": "In adiabatic process:",
-        "question_hi": "रुद्धोष्म प्रक्रम में:",
-        "options_en": ["Q = 0", "W = 0", "ΔU = 0", "ΔT = 0"],
-        "options_hi": ["Q = 0", "W = 0", "ΔU = 0", "ΔT = 0"],
-        "answer_en": "Q = 0",
-        "answer_hi": "Q = 0",
+        "question_en": "What is the purpose of 'std::io::Seek'?",
+        "question_hi": "'std::io::Seek' का उद्देश्य क्या है?",
+        "options_en": ["Stream positioning", "Random access", "File seeking", "All of the above"],
+        "options_hi": ["स्ट्रीम पोजिशनिंग", "रैंडम एक्सेस", "फाइल सीकिंग", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 99,
-        "question_en": "Critical angle is defined for:",
-        "question_hi": "क्रांतिक कोण परिभाषित किया जाता है:",
-        "options_en": ["Reflection", "Refraction", "Total internal reflection", "Dispersion"],
-        "options_hi": ["परावर्तन", "अपवर्तन", "पूर्ण आंतरिक परावर्तन", "विक्षेपण"],
-        "answer_en": "Total internal reflection",
-        "answer_hi": "पूर्ण आंतरिक परावर्तन",
+        "question_en": "Which method is used for string trimming?",
+        "question_hi": "स्ट्रिंग ट्रिमिंग के लिए किस मेथड का उपयोग किया जाता है?",
+        "options_en": ["trim", "trim_start", "trim_end", "All of the above"],
+        "options_hi": ["trim", "trim_start", "trim_end", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 100,
-        "question_en": "In photoelectric effect, photoelectric current depends on:",
-        "question_hi": "प्रकाश विद्युत प्रभाव में, प्रकाश विद्युत धारा निर्भर करती है:",
-        "options_en": ["Frequency of light", "Intensity of light", "Work function", "Stopping potential"],
-        "options_hi": ["प्रकाश की आवृत्ति", "प्रकाश की तीव्रता", "कार्य फलन", "निरोधी विभव"],
-        "answer_en": "Intensity of light",
-        "answer_hi": "प्रकाश की तीव्रता",
+        "question_en": "What is the purpose of 'std::future::Future'?",
+        "question_hi": "'std::future::Future' का उद्देश्य क्या है?",
+        "options_en": ["Asynchronous programming", "Promise pattern", "Async/await foundation", "All of the above"],
+        "options_hi": ["असिंक्रोनस प्रोग्रामिंग", "प्रॉमिस पैटर्न", "Async/await फाउंडेशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     }
 ];
-
-
-let currentQuestion = 0; 
+// --------------------------- GLOBAL VARS -----------------------------
+let currentQuestion = 0;
 let language = "en";
-// let timeLeft = 180 * 60; // 180 minutes
-let timeLeft = 60 * 60; // 60 minutes
+let timeLeft = 60 * 60;   // 60 minutes timer
 let timerInterval;
 
-// ----------------- Quiz Logic -----------------
+// --------------------------- LOAD QUESTION ----------------------------
 function loadQuestion(index) {
     const q = questions[index];
-    document.getElementById("question").textContent = `${q.num}. ${
-        language === "en" ? q.question_en : q.question_hi
-    }`;
-    document.getElementById("questionCounter").textContent = `Question ${index + 1} of ${questions.length}`;
+
+    document.getElementById("question").textContent =
+        `${q.num}. ${language === "en" ? q.question_en : q.question_hi}`;
+
+    document.getElementById("questionCounter").textContent =
+        `Question ${index + 1} of ${questions.length}`;
 
     const optionsElement = document.getElementById("options");
     optionsElement.innerHTML = "";
@@ -1124,6 +1124,7 @@ function loadQuestion(index) {
     options.forEach((option) => {
         const isSelected = q.selected === option;
         const optionDiv = document.createElement("div");
+
         optionDiv.className = "option-box";
         optionDiv.style = `
             border: 2px solid ${isSelected ? "#007bff" : "#ccc"};
@@ -1132,12 +1133,11 @@ function loadQuestion(index) {
             border-radius: 8px;
             margin: 6px 0;
             cursor: pointer;
-            transition: all 0.2s;
         `;
 
         optionDiv.innerHTML = `
-            <input type="radio" name="option" value="${option}" ${isSelected ? "checked" : ""} style="margin-right:8px;">
-            ${option}
+            <input type="radio" name="option"
+            value="${option}" ${isSelected ? "checked" : ""} /> ${option}
         `;
 
         optionDiv.addEventListener("click", () => {
@@ -1151,12 +1151,14 @@ function loadQuestion(index) {
     updateNavigation();
 }
 
+// --------------------------- MARK ATTEMPT ----------------------------
 function markAttempted(index, selectedAnswer) {
     questions[index].attempted = true;
     questions[index].selected = selectedAnswer;
     updateNavigation();
 }
 
+// --------------------------- NEXT / PREV -----------------------------
 function nextQuestion() {
     if (currentQuestion < questions.length - 1) {
         currentQuestion++;
@@ -1171,296 +1173,150 @@ function prevQuestion() {
     }
 }
 
+// --------------------------- LANGUAGE CHANGE -------------------------
 function changeLanguage() {
     language = document.getElementById("languageSelect").value;
     loadQuestion(currentQuestion);
 }
 
-function submitQuiz() {
-    clearInterval(timerInterval);
-    let attempted = 0,
-        notAttempted = 0,
-        score = 0;
-
-    questions.forEach((q) => {
-        if (q.attempted) {
-            attempted++;
-            if (q.selected === q.answer_en || q.selected === q.answer_hi) score++;
-        } else notAttempted++;
-    });
-
-    alert(
-        `Quiz submitted!\nAttempted: ${attempted}\nNot Attempted: ${notAttempted}\nScore: ${score}/${questions.length}`
-    );
-}
-
+// --------------------------- TIMER -------------------------------
 function startTimer() {
     const timerElement = document.getElementById("timer");
     clearInterval(timerInterval);
+
     timerInterval = setInterval(() => {
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
-            alert("Time's up!");
+            alert("⏳ Time Over!");
             submitQuiz();
-        } else {
-            const hours = Math.floor(timeLeft / 3600);
-            const minutes = Math.floor((timeLeft % 3600) / 60);
-            const seconds = timeLeft % 60;
-            timerElement.textContent = `Time Left: ${hours
-                .toString()
-                .padStart(2, "0")}:${minutes
-                .toString()
-                .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
-            timeLeft--;
+            return;
         }
+
+        const h = Math.floor(timeLeft / 3600);
+        const m = Math.floor((timeLeft % 3600) / 60);
+        const s = timeLeft % 60;
+
+        timerElement.textContent =
+            `Time Left: ${h.toString().padStart(2, "0")}:${m
+                .toString().padStart(2, "0")}:${s.toString().padStart(2, "0")}`;
+
+        timeLeft--;
     }, 1000);
 }
 
+// --------------------------- SUBMIT QUIZ ---------------------
+function submitQuiz() {
+    let confirmation = confirm("Are you sure you want to submit the test?");
+    if (!confirmation) return;
 
+    clearInterval(timerInterval);
 
+    // Calculate time spent
+    const totalTimeSpent = (60 * 60) - timeLeft;
+    const mins = Math.floor(totalTimeSpent / 60);
+    const secs = totalTimeSpent % 60;
 
+    // Save to localStorage
+    localStorage.setItem("timeTaken", `${mins} min ${secs} sec`);
 
+    let attempted = 0;
+    let notAttempted = 0;
+    let score = 0;
+    const results = [];
 
-
-
-
-
-
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////all file and folder me code add karna hai 
-
-
-// submit 
-function jumpToQuestion(index) {
-            currentQuestion = index;
-            loadQuestion(index);
+    questions.forEach(q => {
+        if (q.attempted) {
+            attempted++;
+            if (q.selected === q.answer_en || q.selected === q.answer_hi) {
+                score++;
+            }
+        } else {
+            notAttempted++;
         }
 
-        function submitQuiz() {
-            let confirmation = confirm("Are you sure you want to submit the test?");
-            
-            if (!confirmation) {
-                return; // अगर यूज़र 'Cancel' करता है तो आगे नहीं बढ़ेंगे
-            }
+        results.push({
+            question: language === "en" ? q.question_en : q.question_hi,
+            selected: q.selected || "Not Answered",
+            correct: language === "en" ? q.answer_en : q.answer_hi
+        });
+    });
 
-            let attempted = 0;
-            let notAttempted = 0;
-            let score = 0;
-            const results = [];
+    // Save result data
+    localStorage.setItem("attempted", attempted);
+    localStorage.setItem("notAttempted", notAttempted);
+    localStorage.setItem("score", score);
+    localStorage.setItem("results", JSON.stringify(results));
 
-            questions.forEach(q => {
-                if (q.attempted) {
-                    attempted++;
-                    if (q.selected === q.answer) {
-                        score++;
-                    }
-                } else {
-                    notAttempted++;
-                }
-                results.push({ question: q.question, selected: q.selected || "Not Answered", correct: q.answer });
-            });
+    // Stop camera stream if active
+    if (videoStream) {
+        videoStream.getTracks().forEach(track => track.stop());
+    }
 
-            localStorage.setItem("attempted", attempted);
-            localStorage.setItem("notAttempted", notAttempted);
-            localStorage.setItem("score", score);
-            localStorage.setItem("results", JSON.stringify(results));
+    // Redirect
+    window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
+}
 
-            // रिजल्ट देखने से पहले एक और कन्फर्मेशन ले सकते हैं
-            let viewResult = confirm("Test submitted successfully! Do you want to view your result?");
-            if (viewResult) {
-                window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
-            }
-        }
-        window.onload = () => {
-            loadQuestion(currentQuestion);
-        };
-
-
+// --------------------------- NAVIGATION ------------------------------
 function updateNavigation() {
     const nav = document.getElementById("circleContainer");
     nav.innerHTML = "";
+
     questions.forEach((q, i) => {
         let color = "gray";
         if (i === currentQuestion) color = "blue";
         else if (q.attempted) color = "green";
-        nav.innerHTML += `<div class='circle' style='background-color:${color}' onclick='loadQuestion(${i})'>${i + 1}</div>`;
+
+        const circle = document.createElement("div");
+        circle.className = "circle";
+        circle.style.background = color;
+        circle.textContent = i + 1;
+        circle.onclick = () => jumpToQuestion(i);
+        nav.appendChild(circle);
     });
 }
 
-// ----------------- Camera & Movement Logic -----------------
+function jumpToQuestion(i) {
+    currentQuestion = i;
+    loadQuestion(i);
+}
+
+// --------------------------- CAMERA ----------------------
 let videoStream;
-let movementCount = 0;
 
 function startCamera() {
     const container = document.createElement("div");
     container.id = "camera-container";
     container.style.position = "fixed";
     container.style.top = "10px";
-    container.style.left = "10px"; // ✅ Left side
+    container.style.left = "10px";
     container.style.width = "130px";
     container.style.height = "130px";
-    container.style.zIndex = "9999";
     container.style.borderRadius = "50%";
     container.style.overflow = "hidden";
-    container.style.border = "3px solid red";
-    container.style.boxShadow = "0 0 10px rgba(0,0,0,0.3)";
-    container.style.cursor = "grab";
-    container.style.minWidth = "80px";
-    container.style.minHeight = "80px";
-    container.style.maxWidth = "250px";
-    container.style.maxHeight = "250px";
     container.style.background = "#000";
+    container.style.border = "3px solid red";
+    container.style.zIndex = "9999";
     document.body.appendChild(container);
 
     const video = document.createElement("video");
-    video.setAttribute("autoplay", true);
-    video.setAttribute("playsinline", true);
+    video.autoplay = true;
+    video.playsInline = true;
     video.style.width = "100%";
     video.style.height = "100%";
     video.style.objectFit = "cover";
     container.appendChild(video);
 
-    // ✅ Resize handle
-    const resizeHandle = document.createElement("div");
-    resizeHandle.style.position = "absolute";
-    resizeHandle.style.bottom = "2px";
-    resizeHandle.style.right = "2px";
-    resizeHandle.style.width = "15px";
-    resizeHandle.style.height = "15px";
-    resizeHandle.style.background = "rgba(255,255,255,0.7)";
-    resizeHandle.style.borderRadius = "4px";
-    resizeHandle.style.cursor = "se-resize";
-    container.appendChild(resizeHandle);
-
-    // ✅ Drag logic
-    let isDragging = false;
-    let offsetX, offsetY;
-
-    container.addEventListener("mousedown", (e) => {
-        if (e.target === resizeHandle) return;
-        isDragging = true;
-        offsetX = e.clientX - container.offsetLeft;
-        offsetY = e.clientY - container.offsetTop;
-        container.style.cursor = "grabbing";
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isDragging) return;
-        let x = e.clientX - offsetX;
-        let y = e.clientY - offsetY;
-        x = Math.max(0, Math.min(window.innerWidth - container.offsetWidth, x));
-        y = Math.max(0, Math.min(window.innerHeight - container.offsetHeight, y));
-        container.style.left = `${x}px`;
-        container.style.top = `${y}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isDragging = false;
-        container.style.cursor = "grab";
-    });
-
-    // ✅ Resize logic
-    let isResizing = false;
-    let startWidth, startHeight, startX, startY;
-
-    resizeHandle.addEventListener("mousedown", (e) => {
-        e.stopPropagation();
-        isResizing = true;
-        startWidth = container.offsetWidth;
-        startHeight = container.offsetHeight;
-        startX = e.clientX;
-        startY = e.clientY;
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isResizing) return;
-        const dx = e.clientX - startX;
-        const dy = e.clientY - startY;
-        const newSize = Math.max(80, Math.min(250, Math.max(startWidth + dx, startHeight + dy)));
-        container.style.width = `${newSize}px`;
-        container.style.height = `${newSize}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isResizing = false;
-    });
-
-    // ✅ Camera stream
     navigator.mediaDevices.getUserMedia({ video: true })
         .then(stream => {
             video.srcObject = stream;
             videoStream = stream;
-            detectMovement(video);
         })
-        .catch(err => {
-            console.error("Camera error:", err);
-            alert("Camera not accessible!");
-        });
+        .catch(() => alert("Camera not accessible!"));
 }
 
-function detectMovement(video) {
-    const canvas = document.createElement("canvas");
-    const ctx = canvas.getContext("2d");
-    canvas.width = 160;
-    canvas.height = 160;
-    let lastImageData = null;
-
-    setInterval(() => {
-        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-
-        if (lastImageData) {
-            let diff = 0;
-            for (let i = 0; i < imageData.data.length; i += 4) {
-                diff += Math.abs(imageData.data[i] - lastImageData.data[i]);
-            }
-
-            if (diff > 1000000) {
-                movementCount++;
-                if (movementCount === 1) {
-                    alert("⚠️ Alert 1: Face is not move");
-                } else if (movementCount === 2) {
-                    alert("⚠️ Alert 2: Head is not move");
-                } else if (movementCount === 3) {
-                    alert("⚠️ Alert 3: Test series is restarting...");
-                    restartTest();
-                }
-            }
-        }
-        lastImageData = imageData;
-    }, 2000);
-}
-
-function restartTest() {
-    if (videoStream) {
-        videoStream.getTracks().forEach(track => track.stop());
-    }
-    const camContainer = document.getElementById("camera-container");
-    if (camContainer) camContainer.remove();
-
-    movementCount = 0;
-    currentQuestion = 0;
-    timeLeft = 180 * 60;
-
-    questions.forEach(q => {
-        q.attempted = false;
-        q.selected = null;
-    });
-
-    loadQuestion(currentQuestion);
-    startTimer();
-    startCamera();
-}
-
-// ----------------- Page Load -----------------
+// --------------------------- PAGE LOAD --------------------------
 window.onload = function () {
     loadQuestion(currentQuestion);
     startTimer();
-    startCamera(); // ✅ Camera starts with test
+    startCamera();
 };
-
-
-///////////////////////////////////////

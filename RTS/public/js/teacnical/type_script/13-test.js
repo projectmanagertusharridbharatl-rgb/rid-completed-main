@@ -1,1164 +1,1170 @@
 const questions = [
     {
         "num": 1,
-        "question_en": "Which is the summer capital of Jammu and Kashmir?",
-        "question_hi": "जम्मू और कश्मीर की ग्रीष्मकालीन राजधानी कौन सी है?",
-        "options_en": ["Jammu", "Srinagar", "Leh", "Anantnag"],
-        "options_hi": ["जम्मू", "श्रीनगर", "लेह", "अनंतनाग"],
-        "answer_en": "Srinagar",
-        "answer_hi": "श्रीनगर",
+        "question_en": "What is TypeScript primarily used for?",
+        "question_hi": "TypeScript मुख्य रूप से किसके लिए उपयोग किया जाता है?",
+        "options_en": ["Adding static types to JavaScript", "Creating HTML pages", "Styling web pages", "Database management"],
+        "options_hi": ["JavaScript में static types जोड़ना", "HTML पेज बनाना", "वेब पेज स्टाइल करना", "डेटाबेस प्रबंधन"],
+        "answer_en": "Adding static types to JavaScript",
+        "answer_hi": "JavaScript में static types जोड़ना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 2,
-        "question_en": "Dachigam National Park is famous for which animal?",
-        "question_hi": "दाचीगाम राष्ट्रीय उद्यान किस जानवर के लिए प्रसिद्ध है?",
-        "options_en": ["Snow Leopard", "Hangul", "Black Bear", "Musk Deer"],
-        "options_hi": ["हिम तेंदुआ", "हंगुल", "काला भालू", "कस्तूरी मृग"],
-        "answer_en": "Hangul",
-        "answer_hi": "हंगुल",
+        "question_en": "Which type is used in TypeScript when a variable can hold any value?",
+        "question_hi": "TypeScript में किस type का उपयोग उस variable के लिए होता है जो किसी भी value रख सकता है?",
+        "options_en": ["any", "string", "number", "boolean"],
+        "options_hi": ["any", "string", "number", "boolean"],
+        "answer_en": "any",
+        "answer_hi": "any",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 3,
-        "question_en": "Which lake is known as 'Jewel in the crown of Kashmir'?",
-        "question_hi": "किस झील को 'कश्मीर के मुकुट में रत्न' के रूप में जाना जाता है?",
-        "options_en": ["Wular Lake", "Dal Lake", "Mansar Lake", "Pangong Lake"],
-        "options_hi": ["वुलर झील", "डल झील", "मानसर झील", "पैंगोंग झील"],
-        "answer_en": "Dal Lake",
-        "answer_hi": "डल झील",
+        "question_en": "How do you declare a variable in TypeScript?",
+        "question_hi": "TypeScript में variable कैसे declare करते हैं?",
+        "options_en": ["let x: number;", "x = number;", "var number x;", "num x;"],
+        "options_hi": ["let x: number;", "x = number;", "var number x;", "num x;"],
+        "answer_en": "let x: number;",
+        "answer_hi": "let x: number;",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 4,
-        "question_en": "The famous Amarnath Cave is located in which district?",
-        "question_hi": "प्रसिद्ध अमरनाथ गुफा किस जिले में स्थित है?",
-        "options_en": ["Anantnag", "Ganderbal", "Pulwama", "Baramulla"],
-        "options_hi": ["अनंतनाग", "गांदरबल", "पुलवामा", "बारामुला"],
-        "answer_en": "Anantnag",
-        "answer_hi": "अनंतनाग",
+        "question_en": "Which TypeScript keyword defines a constant?",
+        "question_hi": "TypeScript में constant define करने के लिए कौन सा keyword है?",
+        "options_en": ["const", "let", "var", "static"],
+        "options_hi": ["const", "let", "var", "static"],
+        "answer_en": "const",
+        "answer_hi": "const",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 5,
-        "question_en": "Which pass connects Ladakh with Tibet?",
-        "question_hi": "कौन सा दर्रा लद्दाख को तिब्बत से जोड़ता है?",
-        "options_en": ["Zoji La", "Khardung La", "Chang La", "Umling La"],
-        "options_hi": ["जोजी ला", "खारदुंग ला", "चांग ला", "उमलिंग ला"],
-        "answer_en": "Khardung La",
-        "answer_hi": "खारदुंग ला",
+        "question_en": "Which type is used for true/false values in TypeScript?",
+        "question_hi": "TypeScript में true/false values के लिए कौन सा type उपयोग किया जाता है?",
+        "options_en": ["boolean", "string", "number", "any"],
+        "options_hi": ["boolean", "string", "number", "any"],
+        "answer_en": "boolean",
+        "answer_hi": "boolean",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 6,
-        "question_en": "What is the traditional boat of Kashmir called?",
-        "question_hi": "कश्मीर की पारंपरिक नाव को क्या कहा जाता है?",
-        "options_en": ["Shikara", "Donga", "Nauka", "Hij"],
-        "options_hi": ["शिकारा", "डोंगा", "नौका", "हिज"],
-        "answer_en": "Shikara",
-        "answer_hi": "शिकारा",
+        "question_en": "Which type is used for whole numbers in TypeScript?",
+        "question_hi": "TypeScript में whole numbers के लिए कौन सा type उपयोग किया जाता है?",
+        "options_en": ["number", "string", "boolean", "any"],
+        "options_hi": ["number", "string", "boolean", "any"],
+        "answer_en": "number",
+        "answer_hi": "number",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 7,
-        "question_en": "Which famous Mughal garden is in Srinagar?",
-        "question_hi": "श्रीनगर में कौन सा प्रसिद्ध मुगल बाग है?",
-        "options_en": ["Shalimar Bagh", "Humayun's Tomb", "Red Fort Garden", "Agra Garden"],
-        "options_hi": ["शालीमार बाग", "हुमायूं का मकबरा", "लाल किला उद्यान", "आगरा उद्यान"],
-        "answer_en": "Shalimar Bagh",
-        "answer_hi": "शालीमार बाग",
+        "question_en": "Which type is used for text values in TypeScript?",
+        "question_hi": "TypeScript में text values के लिए कौन सा type उपयोग किया जाता है?",
+        "options_en": ["string", "number", "boolean", "any"],
+        "options_hi": ["string", "number", "boolean", "any"],
+        "answer_en": "string",
+        "answer_hi": "string",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 8,
-        "question_en": "The famous Gulmarg is located in which district?",
-        "question_hi": "प्रसिद्ध गुलमर्ग किस जिले में स्थित है?",
-        "options_en": ["Baramulla", "Budgam", "Pulwama", "Kupwara"],
-        "options_hi": ["बारामुला", "बडगाम", "पुलवामा", "कुपवाड़ा"],
-        "answer_en": "Baramulla",
-        "answer_hi": "बारामुला",
+        "question_en": "Which TypeScript feature allows defining multiple types for a variable?",
+        "question_hi": "TypeScript में variable के लिए multiple types define करने की सुविधा कौन देती है?",
+        "options_en": ["union types", "tuple", "interface", "enum"],
+        "options_hi": ["union types", "tuple", "interface", "enum"],
+        "answer_en": "union types",
+        "answer_hi": "union types",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 9,
-        "question_en": "Which river flows through Srinagar?",
-        "question_hi": "कौन सी नदी श्रीनगर से होकर बहती है?",
-        "options_en": ["Jhelum", "Chenab", "Ravi", "Sutlej"],
-        "options_hi": ["झेलम", "चिनाब", "रावी", "सतलज"],
-        "answer_en": "Jhelum",
-        "answer_hi": "झेलम",
+        "question_en": "Which TypeScript type allows storing multiple values of different types in an array?",
+        "question_hi": "TypeScript में विभिन्न types की values को array में store करने के लिए कौन सा type उपयोग किया जाता है?",
+        "options_en": ["tuple", "array", "object", "any"],
+        "options_hi": ["tuple", "array", "object", "any"],
+        "answer_en": "tuple",
+        "answer_hi": "tuple",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 10,
-        "question_en": "What is the traditional Kashmiri embroidery called?",
-        "question_hi": "पारंपरिक कश्मीरी कढ़ाई को क्या कहा जाता है?",
-        "options_en": ["Phulkari", "Kashida", "Chikan", "Zardozi"],
-        "options_hi": ["फुलकारी", "कशीदा", "चिकन", "जरदोजी"],
-        "answer_en": "Kashida",
-        "answer_hi": "कशीदा",
+        "question_en": "Which keyword is used to define a TypeScript class?",
+        "question_hi": "TypeScript में class define करने के लिए कौन सा keyword है?",
+        "options_en": ["class", "function", "interface", "object"],
+        "options_hi": ["class", "function", "interface", "object"],
+        "answer_en": "class",
+        "answer_hi": "class",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 11,
-        "question_en": "Which is the largest freshwater lake in Jammu and Kashmir?",
-        "question_hi": "जम्मू और कश्मीर की सबसे बड़ी मीठे पानी की झील कौन सी है?",
-        "options_en": ["Dal Lake", "Wular Lake", "Mansar Lake", "Pangong Lake"],
-        "options_hi": ["डल झील", "वुलर झील", "मानसर झील", "पैंगोंग झील"],
-        "answer_en": "Wular Lake",
-        "answer_hi": "वुलर झील",
+        "question_en": "Which TypeScript keyword defines a function?",
+        "question_hi": "TypeScript में function define करने के लिए कौन सा keyword है?",
+        "options_en": ["function", "func", "method", "def"],
+        "options_hi": ["function", "func", "method", "def"],
+        "answer_en": "function",
+        "answer_hi": "function",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 12,
-        "question_en": "The famous Vaishno Devi Temple is located in which district?",
-        "question_hi": "प्रसिद्ध वैष्णो देवी मंदिर किस जिले में स्थित है?",
-        "options_en": ["Jammu", "Reasi", "Udhampur", "Kathua"],
-        "options_hi": ["जम्मू", "रेयासी", "उधमपुर", "कठुआ"],
-        "answer_en": "Reasi",
-        "answer_hi": "रेयासी",
+        "question_en": "Which keyword is used to extend a class in TypeScript?",
+        "question_hi": "TypeScript में class को extend करने के लिए कौन सा keyword उपयोग होता है?",
+        "options_en": ["extends", "implements", "super", "inherit"],
+        "options_hi": ["extends", "implements", "super", "inherit"],
+        "answer_en": "extends",
+        "answer_hi": "extends",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 13,
-        "question_en": "Which is the highest peak in Jammu and Kashmir?",
-        "question_hi": "जम्मू और कश्मीर में सबसे ऊंची चोटी कौन सी है?",
-        "options_en": ["Nun Kun", "K2", "Nanda Devi", "Mount Everest"],
-        "options_hi": ["नुन कुन", "K2", "नंदा देवी", "माउंट एवरेस्ट"],
-        "answer_en": "Nun Kun",
-        "answer_hi": "नुन कुन",
+        "question_en": "Which keyword is used to implement an interface in a class?",
+        "question_hi": "TypeScript में class में interface implement करने के लिए कौन सा keyword है?",
+        "options_en": ["implements", "extends", "super", "interface"],
+        "options_hi": ["implements", "extends", "super", "interface"],
+        "answer_en": "implements",
+        "answer_hi": "implements",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 14,
-        "question_en": "What is the traditional winter sport of Kashmir?",
-        "question_hi": "कश्मीर का पारंपरिक शीतकालीन खेल क्या है?",
-        "options_en": ["Skiing", "Ice Hockey", "Sledding", "Snowboarding"],
-        "options_hi": ["स्कीइंग", "आइस हॉकी", "स्लेडिंग", "स्नोबोर्डिंग"],
-        "answer_en": "Skiing",
-        "answer_hi": "स्कीइंग",
+        "question_en": "Which TypeScript type allows defining a variable that never occurs?",
+        "question_hi": "TypeScript में ऐसा variable declare करने के लिए कौन सा type उपयोग होता है जो कभी occur न करे?",
+        "options_en": ["never", "void", "any", "unknown"],
+        "options_hi": ["never", "void", "any", "unknown"],
+        "answer_en": "never",
+        "answer_hi": "never",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 15,
-        "question_en": "Which famous pass is on the Srinagar-Leh highway?",
-        "question_hi": "श्रीनगर-लेह राजमार्ग पर कौन सा प्रसिद्ध दर्रा है?",
-        "options_en": ["Zoji La", "Nathu La", "Rohtang Pass", "Bara-lacha La"],
-        "options_hi": ["जोजी ला", "नाथू ला", "रोहतांग दर्रा", "बारा-लाचा ला"],
-        "answer_en": "Zoji La",
-        "answer_hi": "जोजी ला",
+        "question_en": "Which TypeScript type allows safe assignment of unknown type?",
+        "question_hi": "TypeScript में unknown type को safe assign करने के लिए कौन सा type उपयोग होता है?",
+        "options_en": ["unknown", "any", "never", "void"],
+        "options_hi": ["unknown", "any", "never", "void"],
+        "answer_en": "unknown",
+        "answer_hi": "unknown",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 16,
-        "question_en": "The famous Pashmina wool comes from which animal?",
-        "question_hi": "प्रसिद्ध पश्मीना ऊन किस जानवर से आता है?",
-        "options_en": ["Sheep", "Yak", "Changthangi Goat", "Rabbit"],
-        "options_hi": ["भेड़", "याक", "चंगथांगी बकरी", "खरगोश"],
-        "answer_en": "Changthangi Goat",
-        "answer_hi": "चंगथांगी बकरी",
+        "question_en": "Which TypeScript keyword allows importing modules?",
+        "question_hi": "TypeScript में modules import करने के लिए कौन सा keyword है?",
+        "options_en": ["import", "export", "require", "module"],
+        "options_hi": ["import", "export", "require", "module"],
+        "answer_en": "import",
+        "answer_hi": "import",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 17,
-        "question_en": "Which is the winter capital of Jammu and Kashmir?",
-        "question_hi": "जम्मू और कश्मीर की शीतकालीन राजधानी कौन सी है?",
-        "options_en": ["Srinagar", "Jammu", "Leh", "Kargil"],
-        "options_hi": ["श्रीनगर", "जम्मू", "लेह", "कारगिल"],
-        "answer_en": "Jammu",
-        "answer_hi": "जम्मू",
+        "question_en": "Which TypeScript keyword allows exporting modules?",
+        "question_hi": "TypeScript में modules export करने के लिए कौन सा keyword है?",
+        "options_en": ["export", "import", "require", "module"],
+        "options_hi": ["export", "import", "require", "module"],
+        "answer_en": "export",
+        "answer_hi": "export",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 18,
-        "question_en": "The famous Thiksey Monastery is in which district?",
-        "question_hi": "प्रसिद्ध थिकसे मठ किस जिले में है?",
-        "options_en": ["Leh", "Kargil", "Jammu", "Srinagar"],
-        "options_hi": ["लेह", "कारगिल", "जम्मू", "श्रीनगर"],
-        "answer_en": "Leh",
-        "answer_hi": "लेह",
+        "question_en": "Which TypeScript keyword allows optional properties in an interface?",
+        "question_hi": "TypeScript में interface में optional properties define करने के लिए कौन सा keyword है?",
+        "options_en": ["?", "optional", "readonly", "*"],
+        "options_hi": ["?", "optional", "readonly", "*"],
+        "answer_en": "?",
+        "answer_hi": "?",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 19,
-        "question_en": "Which festival is famously celebrated in Jammu as 'Baisakhi'?",
-        "question_hi": "जम्मू में कौन सा त्योहार 'बैसाखी' के रूप में प्रसिद्ध है?",
-        "options_en": ["Holi", "Diwali", "Lohri", "Maha Shivratri"],
-        "options_hi": ["होली", "दिवाली", "लोहड़ी", "महा शिवरात्रि"],
-        "answer_en": "Lohri",
-        "answer_hi": "लोहड़ी",
+        "question_en": "Which TypeScript feature allows readonly properties?",
+        "question_hi": "TypeScript में readonly properties define करने की सुविधा कौन सी देती है?",
+        "options_en": ["readonly", "const", "final", "immutable"],
+        "options_hi": ["readonly", "const", "final", "immutable"],
+        "answer_en": "readonly",
+        "answer_hi": "readonly",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 20,
-        "question_en": "The famous Betaab Valley is located in which district?",
-        "question_hi": "प्रसिद्ध बेताब वैली किस जिले में स्थित है?",
-        "options_en": ["Anantnag", "Baramulla", "Pulwama", "Budgam"],
-        "options_hi": ["अनंतनाग", "बारामुला", "पुलवामा", "बडगाम"],
-        "answer_en": "Anantnag",
-        "answer_hi": "अनंतनाग",
+        "question_en": "Which TypeScript keyword allows creating type aliases?",
+        "question_hi": "TypeScript में type aliases बनाने के लिए कौन सा keyword है?",
+        "options_en": ["type", "interface", "class", "enum"],
+        "options_hi": ["type", "interface", "class", "enum"],
+        "answer_en": "type",
+        "answer_hi": "type",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 21,
-        "question_en": "What is the traditional Kashmiri cloak called?",
-        "question_hi": "पारंपरिक कश्मीरी चोगे को क्या कहा जाता है?",
-        "options_en": ["Pheran", "Shawl", "Choga", "Cape"],
-        "options_hi": ["फेरन", "शॉल", "चोगा", "केप"],
-        "answer_en": "Pheran",
-        "answer_hi": "फेरन",
+        "question_en": "Which TypeScript keyword allows defining a numeric enumeration?",
+        "question_hi": "TypeScript में numeric enumeration define करने के लिए कौन सा keyword है?",
+        "options_en": ["enum", "type", "interface", "class"],
+        "options_hi": ["enum", "type", "interface", "class"],
+        "answer_en": "enum",
+        "answer_hi": "enum",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 22,
-        "question_en": "Which is the largest district in Jammu and Kashmir by area?",
-        "question_hi": "क्षेत्रफल की दृष्टि से जम्मू और कश्मीर का सबसे बड़ा जिला कौन सा है?",
-        "options_en": ["Leh", "Kargil", "Jammu", "Srinagar"],
-        "options_hi": ["लेह", "कारगिल", "जम्मू", "श्रीनगर"],
-        "answer_en": "Leh",
-        "answer_hi": "लेह",
+        "question_en": "Which TypeScript feature allows optional function parameters?",
+        "question_hi": "TypeScript में optional function parameters define करने की सुविधा कौन सी देती है?",
+        "options_en": ["?", "optional", "readonly", "*"],
+        "options_hi": ["?", "optional", "readonly", "*"],
+        "answer_en": "?",
+        "answer_hi": "?",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 23,
-        "question_en": "The famous Mata Vaishno Devi shrine is dedicated to which goddess?",
-        "question_hi": "प्रसिद्ध माता वैष्णो देवी मंदिर किस देवी को समर्पित है?",
-        "options_en": ["Lakshmi", "Saraswati", "Durga", "Vaishno Devi"],
-        "options_hi": ["लक्ष्मी", "सरस्वती", "दुर्गा", "वैष्णो देवी"],
-        "answer_en": "Vaishno Devi",
-        "answer_hi": "वैष्णो देवी",
+        "question_en": "Which TypeScript feature allows default values for function parameters?",
+        "question_hi": "TypeScript में function parameters के लिए default values define करने की सुविधा कौन सी देती है?",
+        "options_en": ["default parameters", "optional parameters", "readonly", "const"],
+        "options_hi": ["default parameters", "optional parameters", "readonly", "const"],
+        "answer_en": "default parameters",
+        "answer_hi": "default parameters",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 24,
-        "question_en": "Which famous lake is partly in India and partly in China?",
-        "question_hi": "कौन सी प्रसिद्ध झील आंशिक रूप से भारत में और आंशिक रूप से चीन में है?",
-        "options_en": ["Dal Lake", "Wular Lake", "Pangong Lake", "Mansar Lake"],
-        "options_hi": ["डल झील", "वुलर झील", "पैंगोंग झील", "मानसर झील"],
-        "answer_en": "Pangong Lake",
-        "answer_hi": "पैंगोंग झील",
+        "question_en": "Which TypeScript feature allows accessing nested object properties safely?",
+        "question_hi": "TypeScript में nested object properties को safely access करने की सुविधा कौन सी देती है?",
+        "options_en": ["optional chaining", "nullish coalescing", "union types", "intersection types"],
+        "options_hi": ["optional chaining", "nullish coalescing", "union types", "intersection types"],
+        "answer_en": "optional chaining",
+        "answer_hi": "optional chaining",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 25,
-        "question_en": "What is the traditional Kashmiri tea called?",
-        "question_hi": "पारंपरिक कश्मीरी चाय को क्या कहा जाता है?",
-        "options_en": ["Kashmiri Kahwa", "Masala Chai", "Butter Tea", "Green Tea"],
-        "options_hi": ["कश्मीरी कहवा", "मसाला चाय", "मक्खन चाय", "हरी चाय"],
-        "answer_en": "Kashmiri Kahwa",
-        "answer_hi": "कश्मीरी कहवा",
+        "question_en": "Which TypeScript feature allows using ?? to provide a default value for null/undefined?",
+        "question_hi": "TypeScript में ?? का उपयोग करके null/undefined के लिए default value provide करने की सुविधा कौन सी देती है?",
+        "options_en": ["nullish coalescing", "optional chaining", "union types", "tuple"],
+        "options_hi": ["nullish coalescing", "optional chaining", "union types", "tuple"],
+        "answer_en": "nullish coalescing",
+        "answer_hi": "nullish coalescing",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 26,
-        "question_en": "Which famous Mughal emperor built Shalimar Bagh?",
-        "question_hi": "किस प्रसिद्ध मुगल सम्राट ने शालीमार बाग का निर्माण करवाया?",
-        "options_en": ["Akbar", "Jahangir", "Shah Jahan", "Aurangzeb"],
-        "options_hi": ["अकबर", "जहांगीर", "शाहजहां", "औरंगजेब"],
-        "answer_en": "Jahangir",
-        "answer_hi": "जहांगीर",
+        "question_en": "Which TypeScript feature allows defining arrays with multiple types?",
+        "question_hi": "TypeScript में multiple types वाले arrays define करने की सुविधा कौन देती है?",
+        "options_en": ["tuple", "array", "object", "any"],
+        "options_hi": ["tuple", "array", "object", "any"],
+        "answer_en": "tuple",
+        "answer_hi": "tuple",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 27,
-        "question_en": "The famous Hemis Monastery is associated with which religion?",
-        "question_hi": "प्रसिद्ध हेमिस मठ किस धर्म से संबंधित है?",
-        "options_en": ["Hinduism", "Buddhism", "Islam", "Sikhism"],
-        "options_hi": ["हिंदू धर्म", "बौद्ध धर्म", "इस्लाम", "सिख धर्म"],
-        "answer_en": "Buddhism",
-        "answer_hi": "बौद्ध धर्म",
+        "question_en": "Which TypeScript feature allows defining read-only arrays?",
+        "question_hi": "TypeScript में read-only arrays define करने की सुविधा कौन देती है?",
+        "options_en": ["readonly", "const", "immutable", "final"],
+        "options_hi": ["readonly", "const", "immutable", "final"],
+        "answer_en": "readonly",
+        "answer_hi": "readonly",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 28,
-        "question_en": "Which river is known as the 'Lifeline of Ladakh'?",
-        "question_hi": "किस नदी को 'लद्दाख की जीवन रेखा' के रूप में जाना जाता है?",
-        "options_en": ["Indus", "Jhelum", "Chenab", "Zanskar"],
-        "options_hi": ["सिंधु", "झेलम", "चिनाब", "जांस्कर"],
-        "answer_en": "Indus",
-        "answer_hi": "सिंधु",
+        "question_en": "Which keyword is used to define an interface in TypeScript?",
+        "question_hi": "TypeScript में interface define करने के लिए कौन सा keyword है?",
+        "options_en": ["interface", "type", "class", "enum"],
+        "options_hi": ["interface", "type", "class", "enum"],
+        "answer_en": "interface",
+        "answer_hi": "interface",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 29,
-        "question_en": "What is the traditional Kashmiri carpet called?",
-        "question_hi": "पारंपरिक कश्मीरी कालीन को क्या कहा जाता है?",
-        "options_en": ["Kashmiri Rug", "Namda", "Gabba", "Kalim"],
-        "options_hi": ["कश्मीरी रग", "नमदा", "गब्बा", "कलीम"],
-        "answer_en": "Kalim",
-        "answer_hi": "कलीम",
+        "question_en": "Which TypeScript feature allows defining function types?",
+        "question_hi": "TypeScript में function types define करने की सुविधा कौन देती है?",
+        "options_en": ["type aliases", "interface", "class", "enum"],
+        "options_hi": ["type aliases", "interface", "class", "enum"],
+        "answer_en": "type aliases",
+        "answer_hi": "type aliases",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 30,
-        "question_en": "Which famous mountain range separates Kashmir from Ladakh?",
-        "question_hi": "कौन सा प्रसिद्ध पर्वत श्रृंखला कश्मीर को लद्दाख से अलग करती है?",
-        "options_en": ["Pir Panjal", "Zanskar", "Great Himalayas", "Ladakh Range"],
-        "options_hi": ["पीर पंजाल", "जांस्कर", "ग्रेट हिमालय", "लद्दाख रेंज"],
-        "answer_en": "Zanskar",
-        "answer_hi": "जांस्कर",
+        "question_en": "Which TypeScript keyword allows defining optional generic types?",
+        "question_hi": "TypeScript में optional generic types define करने के लिए कौन सा keyword है?",
+        "options_en": ["extends", "implements", "super", "default"],
+        "options_hi": ["extends", "implements", "super", "default"],
+        "answer_en": "default",
+        "answer_hi": "default",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 31,
-        "question_en": "The famous Jama Masjid in Srinagar was built by which ruler?",
-        "question_hi": "श्रीनगर में प्रसिद्ध जामा मस्जिद किस शासक ने बनवाई थी?",
-        "options_en": ["Sultan Sikandar", "Akbar", "Shah Jahan", "Aurangzeb"],
-        "options_hi": ["सुल्तान सिकंदर", "अकबर", "शाहजहां", "औरंगजेब"],
-        "answer_en": "Sultan Sikandar",
-        "answer_hi": "सुल्तान सिकंदर",
+        "question_en": "Which TypeScript feature allows defining a variable whose type can vary?",
+        "question_hi": "TypeScript में ऐसा variable define करने की सुविधा जो type में बदल सकता है, कौन देती है?",
+        "options_en": ["union types", "tuple", "interface", "enum"],
+        "options_hi": ["union types", "tuple", "interface", "enum"],
+        "answer_en": "union types",
+        "answer_hi": "union types",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 32,
-        "question_en": "Which is the official language of Jammu and Kashmir?",
-        "question_hi": "जम्मू और कश्मीर की आधिकारिक भाषा कौन सी है?",
-        "options_en": ["Hindi", "Urdu", "Kashmiri", "Dogri"],
-        "options_hi": ["हिंदी", "उर्दू", "कश्मीरी", "डोगरी"],
-        "answer_en": "Urdu",
-        "answer_hi": "उर्दू",
+        "question_en": "Which TypeScript feature ensures a variable has only one type?",
+        "question_hi": "TypeScript में variable के लिए केवल एक type सुनिश्चित करने की सुविधा कौन देती है?",
+        "options_en": ["static typing", "dynamic typing", "any", "unknown"],
+        "options_hi": ["static typing", "dynamic typing", "any", "unknown"],
+        "answer_en": "static typing",
+        "answer_hi": "static typing",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 33,
-        "question_en": "The famous Patnitop hill station is in which district?",
-        "question_hi": "प्रसिद्ध पत्नीटॉप हिल स्टेशन किस जिले में है?",
-        "options_en": ["Udhampur", "Jammu", "Reasi", "Doda"],
-        "options_hi": ["उधमपुर", "जम्मू", "रेयासी", "डोडा"],
-        "answer_en": "Udhampur",
-        "answer_hi": "उधमपुर",
+        "question_en": "Which keyword is used to define a class property that cannot be changed?",
+        "question_hi": "TypeScript में class property को बदलने से रोकने के लिए कौन सा keyword है?",
+        "options_en": ["readonly", "const", "final", "immutable"],
+        "options_hi": ["readonly", "const", "final", "immutable"],
+        "answer_en": "readonly",
+        "answer_hi": "readonly",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 34,
-        "question_en": "Which famous festival is celebrated at Hemis Monastery?",
-        "question_hi": "हेमिस मठ में कौन सा प्रसिद्ध त्योहार मनाया जाता है?",
-        "options_en": ["Hemis Festival", "Losar", "Saka Dawa", "Buddha Purnima"],
-        "options_hi": ["हेमिस उत्सव", "लोसार", "साका दावा", "बुद्ध पूर्णिमा"],
-        "answer_en": "Hemis Festival",
-        "answer_hi": "हेमिस उत्सव",
+        "question_en": "Which TypeScript feature allows defining multiple types for function arguments?",
+        "question_hi": "TypeScript में function arguments के लिए multiple types define करने की सुविधा कौन देती है?",
+        "options_en": ["union types", "tuple", "interface", "enum"],
+        "options_hi": ["union types", "tuple", "interface", "enum"],
+        "answer_en": "union types",
+        "answer_hi": "union types",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 35,
-        "question_en": "What is the traditional name of Jammu city?",
-        "question_hi": "जम्मू शहर का पारंपरिक नाम क्या है?",
-        "options_en": ["City of Temples", "Winter Capital", "Duggar", "Jambu"],
-        "options_hi": ["मंदिरों का शहर", "शीतकालीन राजधानी", "डुग्गर", "जम्बू"],
-        "answer_en": "City of Temples",
-        "answer_hi": "मंदिरों का शहर",
+        "question_en": "Which TypeScript keyword is used to define a module?",
+        "question_hi": "TypeScript में module define करने के लिए कौन सा keyword है?",
+        "options_en": ["module", "export", "import", "namespace"],
+        "options_hi": ["module", "export", "import", "namespace"],
+        "answer_en": "module",
+        "answer_hi": "module",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 36,
-        "question_en": "Which famous pass is the highest motorable road in the world?",
-        "question_hi": "कौन सा प्रसिद्ध दर्रा दुनिया की सबसे ऊंची मोटर योग्य सड़क है?",
-        "options_en": ["Khardung La", "Umling La", "Chang La", "Tanglang La"],
-        "options_hi": ["खारदुंग ला", "उमलिंग ला", "चांग ला", "तांगलांग ला"],
-        "answer_en": "Umling La",
-        "answer_hi": "उमलिंग ला",
+        "question_en": "Which TypeScript feature allows splitting code into reusable files?",
+        "question_hi": "TypeScript में code को reusable files में split करने की सुविधा कौन देती है?",
+        "options_en": ["modules", "classes", "interfaces", "tuples"],
+        "options_hi": ["modules", "classes", "interfaces", "tuples"],
+        "answer_en": "modules",
+        "answer_hi": "modules",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 37,
-        "question_en": "The famous Raghunath Temple is dedicated to which deity?",
-        "question_hi": "प्रसिद्ध रघुनाथ मंदिर किस देवता को समर्पित है?",
-        "options_en": ["Lord Shiva", "Lord Vishnu", "Lord Rama", "Goddess Durga"],
-        "options_hi": ["भगवान शिव", "भगवान विष्णु", "भगवान राम", "देवी दुर्गा"],
-        "answer_en": "Lord Rama",
-        "answer_hi": "भगवान राम",
+        "question_en": "Which TypeScript feature ensures code will fail if types are mismatched?",
+        "question_hi": "TypeScript में code fail होने की सुविधा जो types mismatch होने पर type safety देती है?",
+        "options_en": ["type checking", "runtime checking", "any", "unknown"],
+        "options_hi": ["type checking", "runtime checking", "any", "unknown"],
+        "answer_en": "type checking",
+        "answer_hi": "type checking",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 38,
-        "question_en": "Which is the largest glacier in Jammu and Kashmir?",
-        "question_hi": "जम्मू और कश्मीर में सबसे बड़ा ग्लेशियर कौन सा है?",
-        "options_en": ["Siachen", "Biafo", "Hispar", "Nubra"],
-        "options_hi": ["सियाचिन", "बियाफो", "हिस्पर", "नुब्रा"],
-        "answer_en": "Siachen",
-        "answer_hi": "सियाचिन",
+        "question_en": "Which TypeScript type represents no value returned from a function?",
+        "question_hi": "TypeScript में function से कोई value return न होने पर कौन सा type उपयोग होता है?",
+        "options_en": ["void", "never", "any", "unknown"],
+        "options_hi": ["void", "never", "any", "unknown"],
+        "answer_en": "void",
+        "answer_hi": "void",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 39,
-        "question_en": "The famous Bahu Fort is located in which city?",
-        "question_hi": "प्रसिद्ध बाहू किला किस शहर में स्थित है?",
-        "options_en": ["Jammu", "Srinagar", "Leh", "Kargil"],
-        "options_hi": ["जम्मू", "श्रीनगर", "लेह", "कारगिल"],
-        "answer_en": "Jammu",
-        "answer_hi": "जम्मू",
+        "question_en": "Which TypeScript type represents a value that never occurs?",
+        "question_hi": "TypeScript में ऐसा value जो कभी occur न हो, उसे कौन सा type दर्शाता है?",
+        "options_en": ["never", "void", "any", "unknown"],
+        "options_hi": ["never", "void", "any", "unknown"],
+        "answer_en": "never",
+        "answer_hi": "never",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 40,
-        "question_en": "What is the traditional Kashmiri bread called?",
-        "question_hi": "पारंपरिक कश्मीरी रोटी को क्या कहा जाता है?",
-        "options_en": ["Naan", "Kulcha", "Sheermal", "Bakarkhani"],
-        "options_hi": ["नान", "कुल्चा", "शीरमल", "बकरखानी"],
-        "answer_en": "Sheermal",
-        "answer_hi": "शीरमल",
+        "question_en": "Which TypeScript keyword allows creating a class that cannot be instantiated?",
+        "question_hi": "TypeScript में ऐसी class create करने के लिए जो instantiate न हो, कौन सा keyword उपयोग होता है?",
+        "options_en": ["abstract", "readonly", "final", "const"],
+        "options_hi": ["abstract", "readonly", "final", "const"],
+        "answer_en": "abstract",
+        "answer_hi": "abstract",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 41,
-        "question_en": "Which famous cricket ground is in Jammu?",
-        "question_hi": "जम्मू में कौन सा प्रसिद्ध क्रिकेट मैदान है?",
-        "options_en": ["MA Stadium", "Sher-i-Kashmir", "Bahu Fort Ground", "Jammu Stadium"],
-        "options_hi": ["एमए स्टेडियम", "शेर-ए-कश्मीर", "बाहू किला ग्राउंड", "जम्मू स्टेडियम"],
-        "answer_en": "MA Stadium",
-        "answer_hi": "एमए स्टेडियम",
+        "question_en": "Which keyword allows a derived class to call its parent constructor?",
+        "question_hi": "TypeScript में derived class अपने parent constructor को call करने के लिए कौन सा keyword उपयोग करती है?",
+        "options_en": ["super", "this", "extends", "constructor"],
+        "options_hi": ["super", "this", "extends", "constructor"],
+        "answer_en": "super",
+        "answer_hi": "super",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 42,
-        "question_en": "The famous Nubra Valley is known for which animal?",
-        "question_hi": "प्रसिद्ध नुब्रा वैली किस जानवर के लिए जानी जाती है?",
-        "options_en": ["Yak", "Bactrian Camel", "Snow Leopard", "Tibetan Wolf"],
-        "options_hi": ["याक", "बैक्ट्रियन ऊंट", "हिम तेंदुआ", "तिब्बती भेड़िया"],
-        "answer_en": "Bactrian Camel",
-        "answer_hi": "बैक्ट्रियन ऊंट",
+        "question_en": "Which TypeScript feature ensures that a property is optional in an interface?",
+        "question_hi": "TypeScript में interface में property optional बनाने की सुविधा कौन देती है?",
+        "options_en": ["?", "readonly", "default", "any"],
+        "options_hi": ["?", "readonly", "default", "any"],
+        "answer_en": "?",
+        "answer_hi": "?",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 43,
-        "question_en": "Which is the main festival of Kashmiri Pandits?",
-        "question_hi": "कश्मीरी पंडितों का मुख्य त्योहार कौन सा है?",
-        "options_en": ["Diwali", "Holi", "Navreh", "Maha Shivratri"],
-        "options_hi": ["दिवाली", "होली", "नवरेह", "महा शिवरात्रि"],
-        "answer_en": "Navreh",
-        "answer_hi": "नवरेह",
+        "question_en": "Which TypeScript type allows grouping multiple types into one?",
+        "question_hi": "TypeScript में multiple types को एक group में combine करने के लिए कौन सा type उपयोग होता है?",
+        "options_en": ["union types", "tuple", "interface", "enum"],
+        "options_hi": ["union types", "tuple", "interface", "enum"],
+        "answer_en": "union types",
+        "answer_hi": "union types",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 44,
-        "question_en": "The famous Drass is known as what?",
-        "question_hi": "प्रसिद्ध द्रास को क्या कहा जाता है?",
-        "options_en": ["Gateway to Ladakh", "Second Coldest Place", "Mini Kashmir", "The Drass Valley"],
-        "options_hi": ["लद्दाख का प्रवेश द्वार", "दूसरा सबसे ठंडा स्थान", "मिनी कश्मीर", "द्रास घाटी"],
-        "answer_en": "Second Coldest Place",
-        "answer_hi": "दूसरा सबसे ठंडा स्थान",
+        "question_en": "Which TypeScript feature allows creating an immutable object?",
+        "question_hi": "TypeScript में immutable object create करने की सुविधा कौन देती है?",
+        "options_en": ["readonly", "const", "final", "immutable"],
+        "options_hi": ["readonly", "const", "final", "immutable"],
+        "answer_en": "readonly",
+        "answer_hi": "readonly",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 45,
-        "question_en": "Which famous Sufi shrine is in Srinagar?",
-        "question_hi": "श्रीनगर में कौन सा प्रसिद्ध सूफी दरगाह है?",
-        "options_en": ["Hazratbal", "Dastgir Sahib", "Makhdoom Sahib", "All of these"],
-        "options_hi": ["हजरतबल", "दस्तगीर साहिब", "मखदूम साहिब", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which TypeScript keyword allows defining default values for function parameters?",
+        "question_hi": "TypeScript में function parameters के लिए default values define करने के लिए कौन सा keyword है?",
+        "options_en": ["default", "optional", "readonly", "any"],
+        "options_hi": ["default", "optional", "readonly", "any"],
+        "answer_en": "default",
+        "answer_hi": "default",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 46,
-        "question_en": "What is the traditional dance of Kashmir called?",
-        "question_hi": "कश्मीर के पारंपरिक नृत्य को क्या कहा जाता है?",
-        "options_en": ["Rouf", "Bhangra", "Garba", "Lavani"],
-        "options_hi": ["रूफ", "भांगड़ा", "गरबा", "लावणी"],
-        "answer_en": "Rouf",
-        "answer_hi": "रूफ",
+        "question_en": "Which TypeScript feature ensures type safety at compile time?",
+        "question_hi": "TypeScript में compile time पर type safety सुनिश्चित करने वाली सुविधा कौन सी है?",
+        "options_en": ["static typing", "dynamic typing", "any", "unknown"],
+        "options_hi": ["static typing", "dynamic typing", "any", "unknown"],
+        "answer_en": "static typing",
+        "answer_hi": "static typing",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 47,
-        "question_en": "Which famous lake is known for its floating gardens?",
-        "question_hi": "कौन सी प्रसिद्ध झील अपने तैरते उद्यानों के लिए जानी जाती है?",
-        "options_en": ["Dal Lake", "Wular Lake", "Mansar Lake", "Pangong Lake"],
-        "options_hi": ["डल झील", "वुलर झील", "मानसर झील", "पैंगोंग झील"],
-        "answer_en": "Dal Lake",
-        "answer_hi": "डल झील",
+        "question_en": "Which TypeScript keyword allows defining a function type alias?",
+        "question_hi": "TypeScript में function type alias define करने के लिए कौन सा keyword है?",
+        "options_en": ["type", "interface", "class", "enum"],
+        "options_hi": ["type", "interface", "class", "enum"],
+        "answer_en": "type",
+        "answer_hi": "type",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 48,
-        "question_en": "The famous Kargil War was fought in which year?",
-        "question_hi": "प्रसिद्ध कारगिल युद्ध किस वर्ष लड़ा गया था?",
-        "options_en": ["1998", "1999", "2000", "2001"],
-        "options_hi": ["1998", "1999", "2000", "2001"],
-        "answer_en": "1999",
-        "answer_hi": "1999",
+        "question_en": "Which TypeScript type allows defining a fixed-length array with different types?",
+        "question_hi": "TypeScript में fixed-length array जिसमें different types हों, define करने के लिए कौन सा type है?",
+        "options_en": ["tuple", "array", "any", "union types"],
+        "options_hi": ["tuple", "array", "any", "union types"],
+        "answer_en": "tuple",
+        "answer_hi": "tuple",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 49,
-        "question_en": "Which is the main river of Ladakh region?",
-        "question_hi": "लद्दाख क्षेत्र की मुख्य नदी कौन सी है?",
-        "options_en": ["Indus", "Jhelum", "Chenab", "Ravi"],
-        "options_hi": ["सिंधु", "झेलम", "चिनाब", "रावी"],
-        "answer_en": "Indus",
-        "answer_hi": "सिंधु",
+        "question_en": "Which TypeScript keyword is used to declare ambient modules or variables?",
+        "question_hi": "TypeScript में ambient modules या variables declare करने के लिए कौन सा keyword है?",
+        "options_en": ["declare", "module", "import", "export"],
+        "options_hi": ["declare", "module", "import", "export"],
+        "answer_en": "declare",
+        "answer_hi": "declare",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 50,
-        "question_en": "What is the traditional name of Ladakh?",
-        "question_hi": "लद्दाख का पारंपरिक नाम क्या है?",
-        "options_en": ["Little Tibet", "Moonland", "Cold Desert", "All of these"],
-        "options_hi": ["लिटिल तिब्बत", "चंद्रभूमि", "ठंडा रेगिस्तान", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which TypeScript feature allows combining multiple interfaces into one?",
+        "question_hi": "TypeScript में multiple interfaces को एक में combine करने की सुविधा कौन देती है?",
+        "options_en": ["interface extends", "type alias", "tuple", "enum"],
+        "options_hi": ["interface extends", "type alias", "tuple", "enum"],
+        "answer_en": "interface extends",
+        "answer_hi": "interface extends",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 51,
-        "question_en": "Which famous mountain peak is called 'Killer Mountain'?",
-        "question_hi": "किस प्रसिद्ध पर्वत चोटी को 'किलर माउंटेन' कहा जाता है?",
-        "options_en": ["Nanga Parbat", "K2", "Mount Everest", "Nanda Devi"],
-        "options_hi": ["नंगा परबत", "K2", "माउंट एवरेस्ट", "नंदा देवी"],
-        "answer_en": "Nanga Parbat",
-        "answer_hi": "नंगा परबत",
+        "question_en": "Which TypeScript keyword is used to define a constant variable inside a class?",
+        "question_hi": "TypeScript में class के अंदर constant variable define करने के लिए कौन सा keyword है?",
+        "options_en": ["readonly", "const", "final", "static"],
+        "options_hi": ["readonly", "const", "final", "static"],
+        "answer_en": "readonly",
+        "answer_hi": "readonly",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 52,
-        "question_en": "The famous Chashme Shahi garden was built by whom?",
-        "question_hi": "प्रसिद्ध चश्मा शाही उद्यान किसने बनवाया था?",
-        "options_en": ["Shah Jahan", "Jahangir", "Akbar", "Aurangzeb"],
-        "options_hi": ["शाहजहां", "जहांगीर", "अकबर", "औरंगजेब"],
-        "answer_en": "Shah Jahan",
-        "answer_hi": "शाहजहां",
+        "question_en": "Which TypeScript keyword is used to make a class property static?",
+        "question_hi": "TypeScript में class property को static बनाने के लिए कौन सा keyword है?",
+        "options_en": ["static", "readonly", "const", "abstract"],
+        "options_hi": ["static", "readonly", "const", "abstract"],
+        "answer_en": "static",
+        "answer_hi": "static",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 53,
-        "question_en": "Which is the highest battlefield in the world?",
-        "question_hi": "दुनिया का सबसे ऊंचा युद्धक्षेत्र कौन सा है?",
-        "options_en": ["Kargil", "Siachen", "Leh", "Drass"],
-        "options_hi": ["कारगिल", "सियाचिन", "लेह", "द्रास"],
-        "answer_en": "Siachen",
-        "answer_hi": "सियाचिन",
+        "question_en": "Which TypeScript type represents a value that could be null or undefined?",
+        "question_hi": "TypeScript में ऐसा value जो null या undefined हो सकता है, किस type से दर्शाया जाता है?",
+        "options_en": ["null | undefined", "any", "unknown", "void"],
+        "options_hi": ["null | undefined", "any", "unknown", "void"],
+        "answer_en": "null | undefined",
+        "answer_hi": "null | undefined",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 54,
-        "question_en": "What is the traditional woolen fabric of Kashmir called?",
-        "question_hi": "कश्मीर के पारंपरिक ऊनी कपड़े को क्या कहा जाता है?",
-        "options_en": ["Pashmina", "Shahtoosh", "Raffal", "All of these"],
-        "options_hi": ["पश्मीना", "शाहतूश", "रफल", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which TypeScript feature allows defining indexable types?",
+        "question_hi": "TypeScript में indexable types define करने की सुविधा कौन देती है?",
+        "options_en": ["interface with index signature", "tuple", "enum", "union types"],
+        "options_hi": ["interface with index signature", "tuple", "enum", "union types"],
+        "answer_en": "interface with index signature",
+        "answer_hi": "interface with index signature",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 55,
-        "question_en": "Which famous lake is a Ramsar site?",
-        "question_hi": "कौन सी प्रसिद्ध झील एक रामसर स्थल है?",
-        "options_en": ["Wular Lake", "Dal Lake", "Mansar Lake", "All of these"],
-        "options_hi": ["वुलर झील", "डल झील", "मानसर झील", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which TypeScript type is used when the type is unknown at compile time?",
+        "question_hi": "TypeScript में compile time पर type unknown होने पर कौन सा type उपयोग होता है?",
+        "options_en": ["unknown", "any", "never", "void"],
+        "options_hi": ["unknown", "any", "never", "void"],
+        "answer_en": "unknown",
+        "answer_hi": "unknown",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 56,
-        "question_en": "The famous Shankaracharya Temple is dedicated to which deity?",
-        "question_hi": "प्रसिद्ध शंकराचार्य मंदिर किस देवता को समर्पित है?",
-        "options_en": ["Lord Shiva", "Lord Vishnu", "Lord Buddha", "Goddess Durga"],
-        "options_hi": ["भगवान शिव", "भगवान विष्णु", "भगवान बुद्ध", "देवी दुर्गा"],
-        "answer_en": "Lord Shiva",
-        "answer_hi": "भगवान शिव",
+        "question_en": "Which TypeScript keyword is used to indicate a function returns no value?",
+        "question_hi": "TypeScript में function कोई value return नहीं करता, इसे दर्शाने के लिए कौन सा keyword है?",
+        "options_en": ["void", "never", "any", "undefined"],
+        "options_hi": ["void", "never", "any", "undefined"],
+        "answer_en": "void",
+        "answer_hi": "void",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 57,
-        "question_en": "Which is the main language spoken in Ladakh?",
-        "question_hi": "लद्दाख में मुख्य रूप से कौन सी भाषा बोली जाती है?",
-        "options_en": ["Ladakhi", "Hindi", "Urdu", "English"],
-        "options_hi": ["लद्दाखी", "हिंदी", "उर्दू", "अंग्रेजी"],
-        "answer_en": "Ladakhi",
-        "answer_hi": "लद्दाखी",
+        "question_en": "Which TypeScript feature allows safe navigation through nested objects?",
+        "question_hi": "TypeScript में nested objects में safe navigation करने की सुविधा कौन देती है?",
+        "options_en": ["optional chaining", "nullish coalescing", "union types", "interfaces"],
+        "options_hi": ["optional chaining", "nullish coalescing", "union types", "interfaces"],
+        "answer_en": "optional chaining",
+        "answer_hi": "optional chaining",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 58,
-        "question_en": "The famous Jhelum River originates from which spring?",
-        "question_hi": "प्रसिद्ध झेलम नदी किस झरने से निकलती है?",
-        "options_en": ["Verinag", "Kokernag", "Achabal", "Daksum"],
-        "options_hi": ["वेरीनाग", "कोकरनाग", "अचबल", "दक्सुम"],
-        "answer_en": "Verinag",
-        "answer_hi": "वेरीनाग",
+        "question_en": "Which TypeScript feature allows combining multiple types into a single type?",
+        "question_hi": "TypeScript में multiple types को एक single type में combine करने की सुविधा कौन देती है?",
+        "options_en": ["union types", "tuple", "interface", "enum"],
+        "options_hi": ["union types", "tuple", "interface", "enum"],
+        "answer_en": "union types",
+        "answer_hi": "union types",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 59,
-        "question_en": "What is the traditional houseboat of Kashmir called?",
-        "question_hi": "कश्मीर की पारंपरिक हाउसबोट को क्या कहा जाता है?",
-        "options_en": ["Shikara", "Doonga", "Barge", "Ferry"],
-        "options_hi": ["शिकारा", "डूंगा", "बजरा", "फेरी"],
-        "answer_en": "Doonga",
-        "answer_hi": "डूंगा",
+        "question_en": "Which TypeScript feature ensures a variable can only hold one specific value from a set?",
+        "question_hi": "TypeScript में variable केवल एक specific value hold कर सकता है, यह सुविधा कौन देती है?",
+        "options_en": ["enum", "union types", "tuple", "interface"],
+        "options_hi": ["enum", "union types", "tuple", "interface"],
+        "answer_en": "enum",
+        "answer_hi": "enum",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 60,
-        "question_en": "Which famous festival marks the beginning of spring in Kashmir?",
-        "question_hi": "कश्मीर में वसंत की शुरुआत का प्रतीक कौन सा प्रसिद्ध त्योहार है?",
-        "options_en": ["Baisakhi", "Navroz", "Sont", "Shivratri"],
-        "options_hi": ["बैसाखी", "नवरोज", "सोंट", "शिवरात्रि"],
-        "answer_en": "Sont",
-        "answer_hi": "सोंट",
+        "question_en": "Which TypeScript type allows grouping multiple values of different types in an array?",
+        "question_hi": "TypeScript में विभिन्न types की values को array में group करने के लिए कौन सा type उपयोग होता है?",
+        "options_en": ["tuple", "array", "interface", "enum"],
+        "options_hi": ["tuple", "array", "interface", "enum"],
+        "answer_en": "tuple",
+        "answer_hi": "tuple",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 61,
-        "question_en": "The famous Hari Parbat fort is associated with which goddess?",
-        "question_hi": "प्रसिद्ध हरी परबत किला किस देवी से संबंधित है?",
-        "options_en": ["Durga", "Kali", "Sharika", "Lakshmi"],
-        "options_hi": ["दुर्गा", "काली", "शारिका", "लक्ष्मी"],
-        "answer_en": "Sharika",
-        "answer_hi": "शारिका",
+        "question_en": "Which TypeScript keyword allows extending multiple interfaces?",
+        "question_hi": "TypeScript में multiple interfaces extend करने के लिए कौन सा keyword है?",
+        "options_en": ["extends", "implements", "super", "interface"],
+        "options_hi": ["extends", "implements", "super", "interface"],
+        "answer_en": "extends",
+        "answer_hi": "extends",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 62,
-        "question_en": "Which is the main fruit grown in Kashmir?",
-        "question_hi": "कश्मीर में उगाया जाने वाला मुख्य फल कौन सा है?",
-        "options_en": ["Apple", "Cherry", "Apricot", "Walnut"],
-        "options_hi": ["सेब", "चेरी", "खुबानी", "अखरोट"],
-        "answer_en": "Apple",
-        "answer_hi": "सेब",
+        "question_en": "Which TypeScript feature allows defining a read-only property in an interface?",
+        "question_hi": "TypeScript में interface में read-only property define करने की सुविधा कौन देती है?",
+        "options_en": ["readonly", "const", "final", "immutable"],
+        "options_hi": ["readonly", "const", "final", "immutable"],
+        "answer_en": "readonly",
+        "answer_hi": "readonly",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 63,
-        "question_en": "The famous Kheer Bhawani temple is dedicated to which goddess?",
-        "question_hi": "प्रसिद्ध खीर भवानी मंदिर किस देवी को समर्पित है?",
-        "options_en": ["Durga", "Kali", "Lakshmi", "Ragnya"],
-        "options_hi": ["दुर्गा", "काली", "लक्ष्मी", "राग्न्या"],
-        "answer_en": "Ragnya",
-        "answer_hi": "राग्न्या",
+        "question_en": "Which TypeScript type is used when a variable can have any value and bypasses type checking?",
+        "question_hi": "TypeScript में ऐसा variable जो किसी भी value ले सकता है और type checking bypass करता है, किस type से दर्शाया जाता है?",
+        "options_en": ["any", "unknown", "never", "void"],
+        "options_hi": ["any", "unknown", "never", "void"],
+        "answer_en": "any",
+        "answer_hi": "any",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 64,
-        "question_en": "Which famous mountain pass is on the Leh-Manali highway?",
-        "question_hi": "लेह-मनाली राजमार्ग पर कौन सा प्रसिद्ध पर्वत दर्रा है?",
-        "options_en": ["Rohtang Pass", "Baralacha La", "Taglang La", "All of these"],
-        "options_hi": ["रोहतांग दर्रा", "बारालाचा ला", "तागलांग ला", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which TypeScript keyword allows declaring a variable with block scope?",
+        "question_hi": "TypeScript में block scope के साथ variable declare करने के लिए कौन सा keyword है?",
+        "options_en": ["let", "var", "const", "readonly"],
+        "options_hi": ["let", "var", "const", "readonly"],
+        "answer_en": "let",
+        "answer_hi": "let",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 65,
-        "question_en": "What is the traditional headgear of Kashmiri men called?",
-        "question_hi": "कश्मीरी पुरुषों के पारंपरिक सिर के आवरण को क्या कहा जाता है?",
-        "options_en": ["Turban", "Cap", "Taranga", "Pheta"],
-        "options_hi": ["पगड़ी", "टोपी", "तरंगा", "फेटा"],
-        "answer_en": "Taranga",
-        "answer_hi": "तरंगा",
+        "question_en": "Which TypeScript keyword allows defining an abstract class?",
+        "question_hi": "TypeScript में abstract class define करने के लिए कौन सा keyword है?",
+        "options_en": ["abstract", "class", "interface", "readonly"],
+        "options_hi": ["abstract", "class", "interface", "readonly"],
+        "answer_en": "abstract",
+        "answer_hi": "abstract",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 66,
-        "question_en": "The famous Martand Sun Temple was built by which king?",
-        "question_hi": "प्रसिद्ध मार्तंड सूर्य मंदिर किस राजा ने बनवाया था?",
-        "options_en": ["Lalitaditya", "Ashoka", "Kanishka", "Harsha"],
-        "options_hi": ["ललितादित्य", "अशोक", "कनिष्क", "हर्ष"],
-        "answer_en": "Lalitaditya",
-        "answer_hi": "ललितादित्य",
+        "question_en": "Which TypeScript feature ensures type safety for object properties?",
+        "question_hi": "TypeScript में object properties के लिए type safety सुनिश्चित करने की सुविधा कौन देती है?",
+        "options_en": ["interfaces", "tuples", "enums", "union types"],
+        "options_hi": ["interfaces", "tuples", "enums", "union types"],
+        "answer_en": "interfaces",
+        "answer_hi": "interfaces",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 67,
-        "question_en": "Which is the main dance form of Ladakh?",
-        "question_hi": "लद्दाख का मुख्य नृत्य रूप कौन सा है?",
-        "options_en": ["Jabro", "Rouf", "Bhangra", "Garba"],
-        "options_hi": ["जबरो", "रूफ", "भांगड़ा", "गरबा"],
-        "answer_en": "Jabro",
-        "answer_hi": "जबरो",
+        "question_en": "Which TypeScript keyword is used to implement an interface in a class?",
+        "question_hi": "TypeScript में class में interface implement करने के लिए कौन सा keyword है?",
+        "options_en": ["implements", "extends", "interface", "super"],
+        "options_hi": ["implements", "extends", "interface", "super"],
+        "answer_en": "implements",
+        "answer_hi": "implements",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 68,
-        "question_en": "The famous Zojila Pass connects which two places?",
-        "question_hi": "प्रसिद्ध जोजिला दर्रा किन दो स्थानों को जोड़ता है?",
-        "options_en": ["Srinagar and Leh", "Leh and Manali", "Jammu and Srinagar", "Srinagar and Kargil"],
-        "options_hi": ["श्रीनगर और लेह", "लेह और मनाली", "जम्मू और श्रीनगर", "श्रीनगर और कारगिल"],
-        "answer_en": "Srinagar and Leh",
-        "answer_hi": "श्रीनगर और लेह",
+        "question_en": "Which TypeScript type allows defining a function parameter with multiple possible types?",
+        "question_hi": "TypeScript में function parameter के लिए multiple possible types define करने के लिए कौन सा type उपयोग होता है?",
+        "options_en": ["union types", "tuple", "interface", "enum"],
+        "options_hi": ["union types", "tuple", "interface", "enum"],
+        "answer_en": "union types",
+        "answer_hi": "union types",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 69,
-        "question_en": "What is the traditional name of Srinagar?",
-        "question_hi": "श्रीनगर का पारंपरिक नाम क्या है?",
-        "options_en": ["City of Lakes", "Venice of East", "Paradise on Earth", "All of these"],
-        "options_hi": ["झीलों का शहर", "पूर्व का वेनिस", "पृथ्वी पर स्वर्ग", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which TypeScript feature allows providing a default value when a variable is null or undefined?",
+        "question_hi": "TypeScript में variable null या undefined होने पर default value देने की सुविधा कौन देती है?",
+        "options_en": ["nullish coalescing (??)", "optional chaining (?.)", "tuple", "union types"],
+        "options_hi": ["nullish coalescing (??)", "optional chaining (?.)", "tuple", "union types"],
+        "answer_en": "nullish coalescing (??)",
+        "answer_hi": "nullish coalescing (??)",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 70,
-        "question_en": "Which famous garden is known as 'Garden of Bliss'?",
-        "question_hi": "कौन सा प्रसिद्ध बाग 'आनंद का बाग' के नाम से जाना जाता है?",
-        "options_en": ["Shalimar Bagh", "Nishat Bagh", "Chashme Shahi", "Harwan Garden"],
-        "options_hi": ["शालीमार बाग", "निशात बाग", "चश्मा शाही", "हरवन गार्डन"],
-        "answer_en": "Nishat Bagh",
-        "answer_hi": "निशात बाग",
+        "question_en": "Which TypeScript type allows defining a fixed set of string values?",
+        "question_hi": "TypeScript में fixed set of string values define करने के लिए कौन सा type उपयोग होता है?",
+        "options_en": ["literal types", "string", "any", "union types"],
+        "options_hi": ["literal types", "string", "any", "union types"],
+        "answer_en": "literal types",
+        "answer_hi": "literal types",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 71,
-        "question_en": "The famous Leh Palace was built by which king?",
-        "question_hi": "प्रसिद्ध लेह पैलेस किस राजा ने बनवाया था?",
-        "options_en": ["Singge Namgyal", "Tsewang Namgyal", "Jamyang Namgyal", "Deldan Namgyal"],
-        "options_hi": ["सिंग्गे नामग्याल", "त्सेवांग नामग्याल", "जम्यांग नामग्याल", "देलदान नामग्याल"],
-        "answer_en": "Singge Namgyal",
-        "answer_hi": "सिंग्गे नामग्याल",
+        "question_en": "Which TypeScript feature allows grouping multiple related constants?",
+        "question_hi": "TypeScript में multiple related constants group करने की सुविधा कौन देती है?",
+        "options_en": ["enum", "tuple", "interface", "union types"],
+        "options_hi": ["enum", "tuple", "interface", "union types"],
+        "answer_en": "enum",
+        "answer_hi": "enum",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 72,
-        "question_en": "Which is the main festival of Ladakh?",
-        "question_hi": "लद्दाख का मुख्य त्योहार कौन सा है?",
-        "options_en": ["Losar", "Hemis", "Saka Dawa", "All of these"],
-        "options_hi": ["लोसार", "हेमिस", "साका दावा", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which TypeScript feature allows checking types at compile time instead of runtime?",
+        "question_hi": "TypeScript में runtime की बजाय compile time पर type check करने की सुविधा कौन देती है?",
+        "options_en": ["static typing", "dynamic typing", "any", "unknown"],
+        "options_hi": ["static typing", "dynamic typing", "any", "unknown"],
+        "answer_en": "static typing",
+        "answer_hi": "static typing",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 73,
-        "question_en": "What is the traditional alcoholic beverage of Ladakh?",
-        "question_hi": "लद्दाख का पारंपरिक मादक पेय क्या है?",
-        "options_en": ["Chang", "Arak", "Lugdi", "All of these"],
-        "options_hi": ["चांग", "अरक", "लुगड़ी", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which TypeScript keyword allows creating a module namespace?",
+        "question_hi": "TypeScript में module namespace create करने के लिए कौन सा keyword है?",
+        "options_en": ["namespace", "module", "export", "import"],
+        "options_hi": ["namespace", "module", "export", "import"],
+        "answer_en": "namespace",
+        "answer_hi": "namespace",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 74,
-        "question_en": "The famous Stok Palace is located in which village?",
-        "question_hi": "प्रसिद्ध स्टोक पैलेस किस गांव में स्थित है?",
-        "options_en": ["Stok", "Shey", "Thiksey", "Hemis"],
-        "options_hi": ["स्टोक", "शे", "थिकसे", "हेमिस"],
-        "answer_en": "Stok",
-        "answer_hi": "स्टोक",
+        "question_en": "Which TypeScript keyword allows importing all exports from a module?",
+        "question_hi": "TypeScript में module से सभी exports import करने के लिए कौन सा keyword है?",
+        "options_en": ["import * as", "export * from", "require", "module"],
+        "options_hi": ["import * as", "export * from", "require", "module"],
+        "answer_en": "import * as",
+        "answer_hi": "import * as",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 75,
-        "question_en": "Which famous lake is known for its changing colors?",
-        "question_hi": "कौन सी प्रसिद्ध झील अपने बदलते रंगों के लिए जानी जाती है?",
-        "options_en": ["Pangong Lake", "Tso Moriri", "Tso Kar", "All of these"],
-        "options_hi": ["पैंगोंग झील", "त्सो मोरिरी", "त्सो कर", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which TypeScript feature allows optional function parameters?",
+        "question_hi": "TypeScript में optional function parameters define करने की सुविधा कौन देती है?",
+        "options_en": ["?", "default", "readonly", "any"],
+        "options_hi": ["?", "default", "readonly", "any"],
+        "answer_en": "?",
+        "answer_hi": "?",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 76,
-        "question_en": "The famous Magnetic Hill is located near which city?",
-        "question_hi": "प्रसिद्ध मैग्नेटिक हिल किस शहर के पास स्थित है?",
-        "options_en": ["Leh", "Srinagar", "Jammu", "Kargil"],
-        "options_hi": ["लेह", "श्रीनगर", "जम्मू", "कारगिल"],
-        "answer_en": "Leh",
-        "answer_hi": "लेह",
+        "question_en": "Which TypeScript feature allows defining a variable with multiple possible types?",
+        "question_hi": "TypeScript में ऐसा variable define करने की सुविधा जो multiple possible types रख सके, कौन देती है?",
+        "options_en": ["union types", "tuple", "enum", "any"],
+        "options_hi": ["union types", "tuple", "enum", "any"],
+        "answer_en": "union types",
+        "answer_hi": "union types",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 77,
-        "question_en": "What is the traditional name of Pahalgam?",
-        "question_hi": "पहलगाम का पारंपरिक नाम क्या है?",
-        "options_en": ["Valley of Shepherds", "Meadow of Flowers", "Gateway to Amarnath", "All of these"],
-        "options_hi": ["गड़रियों की घाटी", "फूलों का मैदान", "अमरनाथ का प्रवेश द्वार", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which TypeScript type represents a function that never returns?",
+        "question_hi": "TypeScript में ऐसा function जो कभी return नहीं करता, किस type से दर्शाया जाता है?",
+        "options_en": ["never", "void", "any", "unknown"],
+        "options_hi": ["never", "void", "any", "unknown"],
+        "answer_en": "never",
+        "answer_hi": "never",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 78,
-        "question_en": "Which famous river forms the world's highest river rafting point?",
-        "question_hi": "कौन सी प्रसिद्ध नदी दुनिया का सबसे ऊंचा रिवर राफ्टिंग पॉइंट बनाती है?",
-        "options_en": ["Indus", "Zanskar", "Jhelum", "Chenab"],
-        "options_hi": ["सिंधु", "जांस्कर", "झेलम", "चिनाब"],
-        "answer_en": "Zanskar",
-        "answer_hi": "जांस्कर",
+        "question_en": "Which TypeScript feature allows specifying a generic type for a class or function?",
+        "question_hi": "TypeScript में class या function के लिए generic type specify करने की सुविधा कौन देती है?",
+        "options_en": ["generics", "interfaces", "tuples", "enums"],
+        "options_hi": ["generics", "interfaces", "tuples", "enums"],
+        "answer_en": "generics",
+        "answer_hi": "generics",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 79,
-        "question_en": "The famous Alchi Monastery is known for what?",
-        "question_hi": "प्रसिद्ध अलची मठ किस लिए जाना जाता है?",
-        "options_en": ["Ancient paintings", "Wood carvings", "Both", "None"],
-        "options_hi": ["प्राचीन चित्र", "लकड़ी की नक्काशी", "दोनों", "कोई नहीं"],
-        "answer_en": "Both",
-        "answer_hi": "दोनों",
+        "question_en": "Which TypeScript keyword is used to create a type alias?",
+        "question_hi": "TypeScript में type alias create करने के लिए कौन सा keyword है?",
+        "options_en": ["type", "interface", "class", "enum"],
+        "options_hi": ["type", "interface", "class", "enum"],
+        "answer_en": "type",
+        "answer_hi": "type",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 80,
-        "question_en": "Which is the main pass on the Srinagar-Kargil highway?",
-        "question_hi": "श्रीनगर-कारगिल राजमार्ग पर मुख्य दर्रा कौन सा है?",
-        "options_en": ["Zojila", "Fotu La", "Namika La", "All of these"],
-        "options_hi": ["जोजिला", "फोटू ला", "नामिका ला", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which TypeScript feature allows providing type information for external libraries?",
+        "question_hi": "TypeScript में external libraries के लिए type information प्रदान करने की सुविधा कौन देती है?",
+        "options_en": ["type declaration files (.d.ts)", "interface", "enum", "tuple"],
+        "options_hi": ["type declaration files (.d.ts)", "interface", "enum", "tuple"],
+        "answer_en": "type declaration files (.d.ts)",
+        "answer_hi": "type declaration files (.d.ts)",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 81,
-        "question_en": "What is the traditional winter wear of Ladakhi women called?",
-        "question_hi": "लद्दाखी महिलाओं के पारंपरिक शीतकालीन पहनावे को क्या कहा जाता है?",
-        "options_en": ["Kuntop", "Bok", "Skerag", "All of these"],
-        "options_hi": ["कुंटोप", "बोक", "स्केराग", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which TypeScript keyword is used to define a class that cannot be instantiated?",
+        "question_hi": "TypeScript में ऐसी class define करने के लिए जो instantiate न हो सके, कौन सा keyword है?",
+        "options_en": ["abstract", "readonly", "final", "const"],
+        "options_hi": ["abstract", "readonly", "final", "const"],
+        "answer_en": "abstract",
+        "answer_hi": "abstract",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 82,
-        "question_en": "The famous Drang Drung Glacier is near which pass?",
-        "question_hi": "प्रसिद्ध ड्रांग ड्रुंग ग्लेशियर किस दर्रे के पास है?",
-        "options_en": ["Pensi La", "Zojila", "Khardung La", "Chang La"],
-        "options_hi": ["पेंसी ला", "जोजिला", "खारदुंग ला", "चांग ला"],
-        "answer_en": "Pensi La",
-        "answer_hi": "पेंसी ला",
+        "question_en": "Which TypeScript feature allows providing optional chaining for nested object properties?",
+        "question_hi": "TypeScript में nested object properties के लिए optional chaining प्रदान करने की सुविधा कौन देती है?",
+        "options_en": ["optional chaining (?.)", "nullish coalescing (??)", "union types", "tuple"],
+        "options_hi": ["optional chaining (?.)", "nullish coalescing (??)", "union types", "tuple"],
+        "answer_en": "optional chaining (?.)",
+        "answer_hi": "optional chaining (?.)",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 83,
-        "question_en": "Which famous lake is known as 'Lake of Great Enchantment'?",
-        "question_hi": "कौन सी प्रसिद्ध झील 'ग्रेट एन्चेंटमेंट की झील' के नाम से जानी जाती है?",
-        "options_en": ["Tso Moriri", "Pangong Lake", "Tso Kar", "Wular Lake"],
-        "options_hi": ["त्सो मोरिरी", "पैंगोंग झील", "त्सो कर", "वुलर झील"],
-        "answer_en": "Tso Moriri",
-        "answer_hi": "त्सो मोरिरी",
+        "question_en": "Which TypeScript feature allows defining default values for function parameters?",
+        "question_hi": "TypeScript में function parameters के लिए default values define करने की सुविधा कौन देती है?",
+        "options_en": ["default parameters", "optional parameters", "readonly", "any"],
+        "options_hi": ["default parameters", "optional parameters", "readonly", "any"],
+        "answer_en": "default parameters",
+        "answer_hi": "default parameters",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 84,
-        "question_en": "The famous Suru Valley is in which district?",
-        "question_hi": "प्रसिद्ध सुरु घाटी किस जिले में है?",
-        "options_en": ["Kargil", "Leh", "Jammu", "Srinagar"],
-        "options_hi": ["कारगिल", "लेह", "जम्मू", "श्रीनगर"],
-        "answer_en": "Kargil",
-        "answer_hi": "कारगिल",
+        "question_en": "Which TypeScript keyword allows implementing multiple interfaces in a class?",
+        "question_hi": "TypeScript में class में multiple interfaces implement करने के लिए कौन सा keyword है?",
+        "options_en": ["implements", "extends", "interface", "super"],
+        "options_hi": ["implements", "extends", "interface", "super"],
+        "answer_en": "implements",
+        "answer_hi": "implements",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 85,
-        "question_en": "What is the traditional name of Sonamarg?",
-        "question_hi": "सोनमर्ग का पारंपरिक नाम क्या है?",
-        "options_en": ["Meadow of Gold", "Golden Valley", "Both", "None"],
-        "options_hi": ["सोने का मैदान", "सुनहरी घाटी", "दोनों", "कोई नहीं"],
-        "answer_en": "Both",
-        "answer_hi": "दोनों",
+        "question_en": "Which TypeScript feature allows a variable to accept either null or a defined type?",
+        "question_hi": "TypeScript में ऐसा variable जो null या किसी defined type accept कर सके, कौन सी सुविधा देती है?",
+        "options_en": ["union types", "tuple", "enum", "interface"],
+        "options_hi": ["union types", "tuple", "enum", "interface"],
+        "answer_en": "union types",
+        "answer_hi": "union types",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 86,
-        "question_en": "Which famous wildlife sanctuary is in Jammu region?",
-        "question_hi": "जम्मू क्षेत्र में कौन सा प्रसिद्ध वन्यजीव अभयारण्य है?",
-        "options_en": ["Surinsar-Mansar", "Ramnagar", "Both", "None"],
-        "options_hi": ["सुरिंसर-मानसर", "रामनगर", "दोनों", "कोई नहीं"],
-        "answer_en": "Both",
-        "answer_hi": "दोनों",
+        "question_en": "Which TypeScript feature allows combining multiple types into one with intersection?",
+        "question_hi": "TypeScript में multiple types को intersection के साथ combine करने की सुविधा कौन देती है?",
+        "options_en": ["intersection types (&)", "union types (|)", "tuple", "enum"],
+        "options_hi": ["intersection types (&)", "union types (|)", "tuple", "enum"],
+        "answer_en": "intersection types (&)",
+        "answer_hi": "intersection types (&)",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 87,
-        "question_en": "The famous Maharaja Hari Singh's rule ended in which year?",
-        "question_hi": "महाराजा हरी सिंह का शासन किस वर्ष समाप्त हुआ?",
-        "options_en": ["1947", "1948", "1949", "1950"],
-        "options_hi": ["1947", "1948", "1949", "1950"],
-        "answer_en": "1947",
-        "answer_hi": "1947",
+        "question_en": "Which TypeScript feature allows creating a type that represents one specific value?",
+        "question_hi": "TypeScript में ऐसा type create करने की सुविधा जो केवल एक specific value represent करे, कौन देती है?",
+        "options_en": ["literal types", "union types", "enum", "tuple"],
+        "options_hi": ["literal types", "union types", "enum", "tuple"],
+        "answer_en": "literal types",
+        "answer_hi": "literal types",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 88,
-        "question_en": "What is the traditional name of Bhaderwah?",
-        "question_hi": "भदरवाह का पारंपरिक नाम क्या है?",
-        "options_en": ["Mini Kashmir", "Land of Gods", "Both", "None"],
-        "options_hi": ["मिनी कश्मीर", "देवताओं की भूमि", "दोनों", "कोई नहीं"],
-        "answer_en": "Both",
-        "answer_hi": "दोनों",
+        "question_en": "Which TypeScript keyword allows defining a variable that cannot be reassigned?",
+        "question_hi": "TypeScript में ऐसा variable define करने के लिए जो reassigned न हो सके, कौन सा keyword है?",
+        "options_en": ["const", "let", "readonly", "final"],
+        "options_hi": ["const", "let", "readonly", "final"],
+        "answer_en": "const",
+        "answer_hi": "const",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 89,
-        "question_en": "Which famous spring is known for its trout fish?",
-        "question_hi": "कौन सा प्रसिद्ध झरना अपनी ट्राउट मछली के लिए जाना जाता है?",
-        "options_en": ["Kokernag", "Verinag", "Achabal", "Daksum"],
-        "options_hi": ["कोकरनाग", "वेरीनाग", "अचबल", "दक्सुम"],
-        "answer_en": "Kokernag",
-        "answer_hi": "कोकरनाग",
+        "question_en": "Which TypeScript type represents a collection of key-value pairs?",
+        "question_hi": "TypeScript में key-value pairs का collection किस type से दर्शाया जाता है?",
+        "options_en": ["object", "array", "tuple", "enum"],
+        "options_hi": ["object", "array", "tuple", "enum"],
+        "answer_en": "object",
+        "answer_hi": "object",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 90,
-        "question_en": "The famous Jami Masjid in Srinagar was originally built as what?",
-        "question_hi": "श्रीनगर में प्रसिद्ध जामी मस्जिद मूल रूप से क्या बनाई गई थी?",
-        "options_en": ["Buddhist Monastery", "Hindu Temple", "Sikh Gurudwara", "Church"],
-        "options_hi": ["बौद्ध मठ", "हिंदू मंदिर", "सिख गुरुद्वारा", "चर्च"],
-        "answer_en": "Buddhist Monastery",
-        "answer_hi": "बौद्ध मठ",
+        "question_en": "Which TypeScript feature allows defining optional properties in an interface?",
+        "question_hi": "TypeScript में interface में optional properties define करने की सुविधा कौन देती है?",
+        "options_en": ["?", "readonly", "default", "any"],
+        "options_hi": ["?", "readonly", "default", "any"],
+        "answer_en": "?",
+        "answer_hi": "?",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 91,
-        "question_en": "What is the traditional name of Kishtwar?",
-        "question_hi": "किश्तवाड़ का पारंपरिक नाम क्या है?",
-        "options_en": ["Land of Saffron", "Land of Sapphire", "Both", "None"],
-        "options_hi": ["केसर की भूमि", "नीलम की भूमि", "दोनों", "कोई नहीं"],
-        "answer_en": "Both",
-        "answer_hi": "दोनों",
+        "question_en": "Which TypeScript keyword is used to inherit from a base class?",
+        "question_hi": "TypeScript में base class से inherit करने के लिए कौन सा keyword है?",
+        "options_en": ["extends", "implements", "super", "interface"],
+        "options_hi": ["extends", "implements", "super", "interface"],
+        "answer_en": "extends",
+        "answer_hi": "extends",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 92,
-        "question_en": "Which famous mountain peak is visible from Gulmarg?",
-        "question_hi": "गुलमर्ग से कौन सी प्रसिद्ध पर्वत चोटी दिखाई देती है?",
-        "options_en": ["Nanga Parbat", "K2", "Mount Everest", "Nanda Devi"],
-        "options_hi": ["नंगा परबत", "K2", "माउंट एवरेस्ट", "नंदा देवी"],
-        "answer_en": "Nanga Parbat",
-        "answer_hi": "नंगा परबत",
+        "question_en": "Which TypeScript feature allows defining a variable without specifying its type explicitly?",
+        "question_hi": "TypeScript में बिना type specify किए variable define करने की सुविधा कौन देती है?",
+        "options_en": ["type inference", "any", "unknown", "tuple"],
+        "options_hi": ["type inference", "any", "unknown", "tuple"],
+        "answer_en": "type inference",
+        "answer_hi": "type inference",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 93,
-        "question_en": "The famous Baltal base camp is for which pilgrimage?",
-        "question_hi": "प्रसिद्ध बालटल बेस कैंप किस तीर्थयात्रा के लिए है?",
-        "options_en": ["Amarnath", "Vaishno Devi", "Kedarnath", "Badrinath"],
-        "options_hi": ["अमरनाथ", "वैष्णो देवी", "केदारनाथ", "बद्रीनाथ"],
-        "answer_en": "Amarnath",
-        "answer_hi": "अमरनाथ",
+        "question_en": "Which TypeScript feature allows defining a type that includes multiple other types?",
+        "question_hi": "TypeScript में ऐसा type define करने की सुविधा जो multiple other types include करे, कौन देती है?",
+        "options_en": ["union types", "tuple", "enum", "interface"],
+        "options_hi": ["union types", "tuple", "enum", "interface"],
+        "answer_en": "union types",
+        "answer_hi": "union types",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 94,
-        "question_en": "What is the traditional name of Ladakh's double-humped camel?",
-        "question_hi": "लद्दाख के दो कूबड़ वाले ऊंट का पारंपरिक नाम क्या है?",
-        "options_en": ["Bactrian Camel", "Ladakhi Camel", "Nubra Camel", "All of these"],
-        "options_hi": ["बैक्ट्रियन ऊंट", "लद्दाखी ऊंट", "नुब्रा ऊंट", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which TypeScript keyword allows accessing parent class methods in a subclass?",
+        "question_hi": "TypeScript में subclass में parent class के methods access करने के लिए कौन सा keyword है?",
+        "options_en": ["super", "this", "extends", "implements"],
+        "options_hi": ["super", "this", "extends", "implements"],
+        "answer_en": "super",
+        "answer_hi": "super",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 95,
-        "question_en": "Which famous lake is known for its floating post office?",
-        "question_hi": "कौन सी प्रसिद्ध झील अपने फ्लोटिंग पोस्ट ऑफिस के लिए जानी जाती है?",
-        "options_en": ["Dal Lake", "Wular Lake", "Mansar Lake", "Pangong Lake"],
-        "options_hi": ["डल झील", "वुलर झील", "मानसर झील", "पैंगोंग झील"],
-        "answer_en": "Dal Lake",
-        "answer_hi": "डल झील",
+        "question_en": "Which TypeScript type allows defining a variable that can never hold any value?",
+        "question_hi": "TypeScript में ऐसा variable define करने की सुविधा जो कभी कोई value hold न करे, कौन देता है?",
+        "options_en": ["never", "void", "any", "unknown"],
+        "options_hi": ["never", "void", "any", "unknown"],
+        "answer_en": "never",
+        "answer_hi": "never",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 96,
-        "question_en": "The famous Khardung La pass is at what altitude?",
-        "question_hi": "प्रसिद्ध खारदुंग ला दर्रा कितनी ऊंचाई पर है?",
-        "options_en": ["5359 m", "5602 m", "5829 m", "5987 m"],
-        "options_hi": ["5359 m", "5602 m", "5829 m", "5987 m"],
-        "answer_en": "5359 m",
-        "answer_hi": "5359 m",
+        "question_en": "Which TypeScript keyword allows exporting a module's content?",
+        "question_hi": "TypeScript में module के content को export करने के लिए कौन सा keyword है?",
+        "options_en": ["export", "import", "module", "namespace"],
+        "options_hi": ["export", "import", "module", "namespace"],
+        "answer_en": "export",
+        "answer_hi": "export",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 97,
-        "question_en": "What is the traditional name of Kashmir's saffron?",
-        "question_hi": "कश्मीर के केसर का पारंपरिक नाम क्या है?",
-        "options_en": ["Kashmiri Kesar", "Mongra Saffron", "Both", "None"],
-        "options_hi": ["कश्मीरी केसर", "मोंगरा केसर", "दोनों", "कोई नहीं"],
-        "answer_en": "Both",
-        "answer_hi": "दोनों",
+        "question_en": "Which TypeScript keyword allows importing specific members from a module?",
+        "question_hi": "TypeScript में module से specific members import करने के लिए कौन सा keyword है?",
+        "options_en": ["import { } from", "export", "require", "namespace"],
+        "options_hi": ["import { } from", "export", "require", "namespace"],
+        "answer_en": "import { } from",
+        "answer_hi": "import { } from",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 98,
-        "question_en": "Which famous garden has the largest tulip garden in Asia?",
-        "question_hi": "किस प्रसिद्ध उद्यान में एशिया का सबसे बड़ा ट्यूलिप गार्डन है?",
-        "options_en": ["Indira Gandhi Tulip Garden", "Shalimar Bagh", "Nishat Bagh", "Chashme Shahi"],
-        "options_hi": ["इंदिरा गांधी ट्यूलिप गार्डन", "शालीमार बाग", "निशात बाग", "चश्मा शाही"],
-        "answer_en": "Indira Gandhi Tulip Garden",
-        "answer_hi": "इंदिरा गांधी ट्यूलिप गार्डन",
+        "question_en": "Which TypeScript feature allows defining function overloads?",
+        "question_hi": "TypeScript में function overloads define करने की सुविधा कौन देती है?",
+        "options_en": ["function overload signatures", "interfaces", "tuples", "enums"],
+        "options_hi": ["function overload signatures", "interfaces", "tuples", "enums"],
+        "answer_en": "function overload signatures",
+        "answer_hi": "function overload signatures",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 99,
-        "question_en": "The famous Shey Palace was the summer capital of which kingdom?",
-        "question_hi": "प्रसिद्ध शे पैलेस किस राज्य की ग्रीष्मकालीन राजधानी थी?",
-        "options_en": ["Ladakh", "Kashmir", "Jammu", "Kargil"],
-        "options_hi": ["लद्दाख", "कश्मीर", "जम्मू", "कारगिल"],
-        "answer_en": "Ladakh",
-        "answer_hi": "लद्दाख",
+        "question_en": "Which TypeScript keyword allows providing type safety for third-party libraries?",
+        "question_hi": "TypeScript में third-party libraries के लिए type safety प्रदान करने के लिए कौन सा keyword है?",
+        "options_en": ["declare", "interface", "module", "namespace"],
+        "options_hi": ["declare", "interface", "module", "namespace"],
+        "answer_en": "declare",
+        "answer_hi": "declare",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 100,
-        "question_en": "What is the traditional name of Jammu's famous temple?",
-        "question_hi": "जम्मू के प्रसिद्ध मंदिर का पारंपरिक नाम क्या है?",
-        "options_en": ["Raghunath Temple", "Ranbireshwar Temple", "Both", "None"],
-        "options_hi": ["रघुनाथ मंदिर", "रनबीरेश्वर मंदिर", "दोनों", "कोई नहीं"],
-        "answer_en": "Both",
-        "answer_hi": "दोनों",
+        "question_en": "Which TypeScript feature allows automatically inferring types from assigned values?",
+        "question_hi": "TypeScript में assigned values से types automatically infer करने की सुविधा कौन देती है?",
+        "options_en": ["type inference", "any", "unknown", "tuple"],
+        "options_hi": ["type inference", "any", "unknown", "tuple"],
+        "answer_en": "type inference",
+        "answer_hi": "type inference",
         "attempted": false,
         "selected": ""
     }
-        
-// Add more questions here...
-];
+
+]
 
 
-let currentQuestion = 0; 
+
+let currentQuestion = 0;
 let language = "en";
-// let timeLeft = 180 * 60; // 180 minutes
-let timeLeft = 60 * 60; // 60 minutes
+let timeLeft = 60 * 60; 
 let timerInterval;
 
-// ----------------- Quiz Logic -----------------
+// ----------------- Load Question -----------------
 function loadQuestion(index) {
     const q = questions[index];
-    document.getElementById("question").textContent = `${q.num}. ${
-        language === "en" ? q.question_en : q.question_hi
-    }`;
-    document.getElementById("questionCounter").textContent = `Question ${index + 1} of ${questions.length}`;
+    if (!q) return; //  undefined error fix
+   questions[index].visited = true;
+    document.getElementById("question").textContent =
+       `${q.num}. ${language === "en" ? q.question_en : q.question_hi}`;
+
+    document.getElementById("questionCounter").textContent =
+       ` Question ${index + 1} of ${questions.length}`;
 
     const optionsElement = document.getElementById("options");
     optionsElement.innerHTML = "";
 
     const options = language === "en" ? q.options_en : q.options_hi;
 
-    options.forEach((option) => {
+    options.forEach(option => {
         const isSelected = q.selected === option;
-        const optionDiv = document.createElement("div");
-        optionDiv.className = "option-box";
-        optionDiv.style = `
+
+        const div = document.createElement("div");
+        div.className = "option-box";
+
+        div.style = `
             border: 2px solid ${isSelected ? "#007bff" : "#ccc"};
             background-color: ${isSelected ? "#e7f1ff" : "white"};
             padding: 10px;
             border-radius: 8px;
             margin: 6px 0;
             cursor: pointer;
-            transition: all 0.2s;
         `;
 
-        optionDiv.innerHTML = `
-            <input type="radio" name="option" value="${option}" ${isSelected ? "checked" : ""} style="margin-right:8px;">
+        div.innerHTML = `
+            <input type="radio" name="option" value="${option}" 
+            ${isSelected ? "checked" : ""} style="margin-right:8px;">
             ${option}
         `;
 
-        optionDiv.addEventListener("click", () => {
+        div.addEventListener("click", () => {
             markAttempted(index, option);
             loadQuestion(index);
         });
 
-        optionsElement.appendChild(optionDiv);
+        optionsElement.appendChild(div);
     });
 
     updateNavigation();
 }
 
+// ----------------- Attempt Mark -----------------
 function markAttempted(index, selectedAnswer) {
     questions[index].attempted = true;
     questions[index].selected = selectedAnswer;
     updateNavigation();
 }
 
+// ----------------- Next / Previous -----------------
 function nextQuestion() {
     if (currentQuestion < questions.length - 1) {
         currentQuestion++;
@@ -1178,229 +1184,122 @@ function changeLanguage() {
     loadQuestion(currentQuestion);
 }
 
+// ----------------- Final Submit -----------------
 function submitQuiz() {
-    clearInterval(timerInterval);
-    let attempted = 0,
-        notAttempted = 0,
-        score = 0;
+    let confirmation = confirm("Are you sure you want to submit the test?");
+    if (!confirmation) return;
 
-    questions.forEach((q) => {
+    let attempted = 0;
+    let notAttempted = 0;
+    let score = 0;
+    const results = [];
+
+    questions.forEach(q => {
         if (q.attempted) {
             attempted++;
-            if (q.selected === q.answer_en || q.selected === q.answer_hi) score++;
-        } else notAttempted++;
+
+            if (q.selected === q.answer_en || q.selected === q.answer_hi) {
+                score++;
+            }
+        } else {
+            notAttempted++;
+        }
+
+        results.push({
+            question: language === "en" ? q.question_en : q.question_hi,
+            selected: q.selected || "Not Answered",
+            correct: language === "en" ? q.answer_en : q.answer_hi
+        });
     });
 
-    alert(
-        `Quiz submitted!\nAttempted: ${attempted}\nNot Attempted: ${notAttempted}\nScore: ${score}/${questions.length}`
-    );
+    localStorage.setItem("attempted", attempted);
+    localStorage.setItem("notAttempted", notAttempted);
+    localStorage.setItem("score", score);
+    localStorage.setItem("results", JSON.stringify(results));
+
+    let viewResult = confirm("Test submitted! Do you want to view result?");
+    if (viewResult) {
+        window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
+    }
 }
 
+// ----------------- Navigation Circles -----------------
+function updateNavigation() {
+    const nav = document.getElementById("circleContainer");
+    nav.innerHTML = "";
+
+    questions.forEach((q, i) => {
+        let color = "gray"; // default: not visited
+
+        if (i === currentQuestion) {
+            color = "blue"; // current question
+        } 
+        else if (q.attempted) {
+            color = "green"; // answered
+        } 
+        else if (q.visited) {
+            color = "white"; // visited but not answered
+        }
+
+        nav.innerHTML += `
+            <div class="circle" style="background:${color}; border:1px solid black;"
+            onclick="jumpToQuestion(${i})">${i + 1}</div>
+        `;
+    });
+}
+
+function jumpToQuestion(index) {
+    currentQuestion = index;
+    loadQuestion(index);
+}
+
+// ----------------- Timer -----------------
 function startTimer() {
     const timerElement = document.getElementById("timer");
-    clearInterval(timerInterval);
+
     timerInterval = setInterval(() => {
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
             alert("Time's up!");
             submitQuiz();
         } else {
-            const hours = Math.floor(timeLeft / 3600);
-            const minutes = Math.floor((timeLeft % 3600) / 60);
-            const seconds = timeLeft % 60;
-            timerElement.textContent = `Time Left: ${hours
-                .toString()
-                .padStart(2, "0")}:${minutes
-                .toString()
-                .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+            const hours = String(Math.floor(timeLeft / 3600)).padStart(2, "0");
+            const minutes = String(Math.floor((timeLeft % 3600) / 60)).padStart(2, "0");
+            const seconds = String(timeLeft % 60).padStart(2, "0");
+
+            timerElement.textContent = `Time Left: ${hours}:${minutes}:${seconds}`;
             timeLeft--;
         }
     }, 1000);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////all file and folder me code add karna hai 
-
-
-// submit 
-function jumpToQuestion(index) {
-            currentQuestion = index;
-            loadQuestion(index);
-        }
-
-        function submitQuiz() {
-            let confirmation = confirm("Are you sure you want to submit the test?");
-            
-            if (!confirmation) {
-                return; // अगर यूज़र 'Cancel' करता है तो आगे नहीं बढ़ेंगे
-            }
-
-            let attempted = 0;
-            let notAttempted = 0;
-            let score = 0;
-            const results = [];
-
-            questions.forEach(q => {
-                if (q.attempted) {
-                    attempted++;
-                    if (q.selected === q.answer) {
-                        score++;
-                    }
-                } else {
-                    notAttempted++;
-                }
-                results.push({ question: q.question, selected: q.selected || "Not Answered", correct: q.answer });
-            });
-
-            localStorage.setItem("attempted", attempted);
-            localStorage.setItem("notAttempted", notAttempted);
-            localStorage.setItem("score", score);
-            localStorage.setItem("results", JSON.stringify(results));
-
-            // रिजल्ट देखने से पहले एक और कन्फर्मेशन ले सकते हैं
-            let viewResult = confirm("Test submitted successfully! Do you want to view your result?");
-            if (viewResult) {
-                window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
-            }
-        }
-        window.onload = () => {
-            loadQuestion(currentQuestion);
-        };
-
-
-function updateNavigation() {
-    const nav = document.getElementById("circleContainer");
-    nav.innerHTML = "";
-    questions.forEach((q, i) => {
-        let color = "gray";
-        if (i === currentQuestion) color = "blue";
-        else if (q.attempted) color = "green";
-        nav.innerHTML += `<div class='circle' style='background-color:${color}' onclick='loadQuestion(${i})'>${i + 1}</div>`;
-    });
-}
-
-// ----------------- Camera & Movement Logic -----------------
+// ----------------- Camera & Movement Detection -----------------
 let videoStream;
 let movementCount = 0;
 
 function startCamera() {
     const container = document.createElement("div");
     container.id = "camera-container";
-    container.style.position = "fixed";
-    container.style.top = "10px";
-    container.style.left = "10px"; // ✅ Left side
-    container.style.width = "130px";
-    container.style.height = "130px";
-    container.style.zIndex = "9999";
-    container.style.borderRadius = "50%";
-    container.style.overflow = "hidden";
-    container.style.border = "3px solid red";
-    container.style.boxShadow = "0 0 10px rgba(0,0,0,0.3)";
-    container.style.cursor = "grab";
-    container.style.minWidth = "80px";
-    container.style.minHeight = "80px";
-    container.style.maxWidth = "250px";
-    container.style.maxHeight = "250px";
-    container.style.background = "#000";
+    container.style = `
+        position:fixed; top:10px; left:10px; width:130px; height:130px;
+        border-radius:50%; overflow:hidden; border:3px solid red; z-index:9999;
+    `;
+
     document.body.appendChild(container);
 
     const video = document.createElement("video");
-    video.setAttribute("autoplay", true);
-    video.setAttribute("playsinline", true);
-    video.style.width = "100%";
-    video.style.height = "100%";
-    video.style.objectFit = "cover";
+    video.autoplay = true;
+    video.playsinline = true;
+    video.style = "width:100%; height:100%; object-fit:cover;";
     container.appendChild(video);
 
-    // ✅ Resize handle
-    const resizeHandle = document.createElement("div");
-    resizeHandle.style.position = "absolute";
-    resizeHandle.style.bottom = "2px";
-    resizeHandle.style.right = "2px";
-    resizeHandle.style.width = "15px";
-    resizeHandle.style.height = "15px";
-    resizeHandle.style.background = "rgba(255,255,255,0.7)";
-    resizeHandle.style.borderRadius = "4px";
-    resizeHandle.style.cursor = "se-resize";
-    container.appendChild(resizeHandle);
-
-    // ✅ Drag logic
-    let isDragging = false;
-    let offsetX, offsetY;
-
-    container.addEventListener("mousedown", (e) => {
-        if (e.target === resizeHandle) return;
-        isDragging = true;
-        offsetX = e.clientX - container.offsetLeft;
-        offsetY = e.clientY - container.offsetTop;
-        container.style.cursor = "grabbing";
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isDragging) return;
-        let x = e.clientX - offsetX;
-        let y = e.clientY - offsetY;
-        x = Math.max(0, Math.min(window.innerWidth - container.offsetWidth, x));
-        y = Math.max(0, Math.min(window.innerHeight - container.offsetHeight, y));
-        container.style.left = `${x}px`;
-        container.style.top = `${y}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isDragging = false;
-        container.style.cursor = "grab";
-    });
-
-    // ✅ Resize logic
-    let isResizing = false;
-    let startWidth, startHeight, startX, startY;
-
-    resizeHandle.addEventListener("mousedown", (e) => {
-        e.stopPropagation();
-        isResizing = true;
-        startWidth = container.offsetWidth;
-        startHeight = container.offsetHeight;
-        startX = e.clientX;
-        startY = e.clientY;
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isResizing) return;
-        const dx = e.clientX - startX;
-        const dy = e.clientY - startY;
-        const newSize = Math.max(80, Math.min(250, Math.max(startWidth + dx, startHeight + dy)));
-        container.style.width = `${newSize}px`;
-        container.style.height = `${newSize}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isResizing = false;
-    });
-
-    // ✅ Camera stream
     navigator.mediaDevices.getUserMedia({ video: true })
         .then(stream => {
             video.srcObject = stream;
             videoStream = stream;
             detectMovement(video);
         })
-        .catch(err => {
-            console.error("Camera error:", err);
-            alert("Camera not accessible!");
-        });
+        .catch(() => alert("Camera access denied!"));
 }
 
 function detectMovement(video) {
@@ -1408,51 +1307,51 @@ function detectMovement(video) {
     const ctx = canvas.getContext("2d");
     canvas.width = 160;
     canvas.height = 160;
-    let lastImageData = null;
+
+    let lastData = null;
 
     setInterval(() => {
-        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(video, 0, 0, 160, 160);
+        const data = ctx.getImageData(0, 0, 160, 160);
 
-        if (lastImageData) {
+        if (lastData) {
             let diff = 0;
-            for (let i = 0; i < imageData.data.length; i += 4) {
-                diff += Math.abs(imageData.data[i] - lastImageData.data[i]);
+            for (let i = 0; i < data.data.length; i += 4) {
+                diff += Math.abs(data.data[i] - lastData.data[i]);
             }
 
             if (diff > 1000000) {
                 movementCount++;
-                if (movementCount === 1) {
-                    alert("⚠️ Alert 1: Face is not move");
-                } else if (movementCount === 2) {
-                    alert("⚠️ Alert 2: Head is not move");
-                } else if (movementCount === 3) {
-                    alert("⚠️ Alert 3: Test series is restarting...");
+
+                if (movementCount === 1) alert("⚠ Alert 1: No movement detected!");
+                if (movementCount === 2) alert("⚠ Alert 2: Head not moving!");
+                if (movementCount === 3) {
+                    alert("⚠ Alert 3: Restarting test...");
                     restartTest();
                 }
             }
         }
-        lastImageData = imageData;
+        lastData = data;
+
     }, 2000);
 }
 
 function restartTest() {
-    if (videoStream) {
-        videoStream.getTracks().forEach(track => track.stop());
-    }
-    const camContainer = document.getElementById("camera-container");
-    if (camContainer) camContainer.remove();
+    if (videoStream) videoStream.getTracks().forEach(t => t.stop());
+
+    const cam = document.getElementById("camera-container");
+    if (cam) cam.remove();
 
     movementCount = 0;
     currentQuestion = 0;
-    timeLeft = 180 * 60;
+    timeLeft = 60 * 60;
 
     questions.forEach(q => {
         q.attempted = false;
         q.selected = null;
     });
 
-    loadQuestion(currentQuestion);
+    loadQuestion(0);
     startTimer();
     startCamera();
 }
@@ -1461,8 +1360,5 @@ function restartTest() {
 window.onload = function () {
     loadQuestion(currentQuestion);
     startTimer();
-    startCamera(); // ✅ Camera starts with test
+    startCamera();
 };
-
-
-///////////////////////////////////////

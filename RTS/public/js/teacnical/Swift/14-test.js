@@ -1,1122 +1,1120 @@
 const questions = [
     {
         "num": 1,
-        "question_en": "What is the value of π (pi) approximately?",
-        "question_hi": "π (पाई) का मान लगभग कितना होता है?",
-        "options_en": ["3.14", "3.41", "2.71", "1.61"],
-        "options_hi": ["3.14", "3.41", "2.71", "1.61"],
-        "answer_en": "3.14",
-        "answer_hi": "3.14",
+        "question_en": "What is the main advantage of Rust's zero-cost abstractions?",
+        "question_hi": "Rust के जीरो-कॉस्ट एब्स्ट्रक्शन का मुख्य लाभ क्या है?",
+        "options_en": ["No runtime overhead", "Faster compilation", "Simpler syntax", "Automatic memory management"],
+        "options_hi": ["कोई रनटाइम ओवरहेड नहीं", "तेज कंपाइलेशन", "सरल सिंटैक्स", "स्वचालित मेमोरी प्रबंधन"],
+        "answer_en": "No runtime overhead",
+        "answer_hi": "कोई रनटाइम ओवरहेड नहीं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 2,
-        "question_en": "Who wrote 'Romeo and Juliet'?",
-        "question_hi": "'रोमियो और जूलियट' किसने लिखा?",
-        "options_en": ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
-        "options_hi": ["चार्ल्स डिकेंस", "विलियम शेक्सपियर", "जेन ऑस्टेन", "मार्क ट्वेन"],
-        "answer_en": "William Shakespeare",
-        "answer_hi": "विलियम शेक्सपियर",
+        "question_en": "What does the 'static lifetime mean in Rust?",
+        "question_hi": "Rust में 'static लाइफटाइम का क्या अर्थ है?",
+        "options_en": ["Lasts for entire program duration", "Cannot be changed", "Thread-safe", "Compile-time constant"],
+        "options_hi": ["पूरे प्रोग्राम अवधि तक रहता है", "बदला नहीं जा सकता", "थ्रेड-सुरक्षित", "कंपाइल-टाइम कॉन्स्टेंट"],
+        "answer_en": "Lasts for entire program duration",
+        "answer_hi": "पूरे प्रोग्राम अवधि तक रहता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 3,
-        "question_en": "What is the capital of Australia?",
-        "question_hi": "ऑस्ट्रेलिया की राजधानी क्या है?",
-        "options_en": ["Sydney", "Melbourne", "Canberra", "Perth"],
-        "options_hi": ["सिडनी", "मेलबोर्न", "कैनबरा", "पर्थ"],
-        "answer_en": "Canberra",
-        "answer_hi": "कैनबरा",
+        "question_en": "What is the purpose of the 'as' keyword in Rust?",
+        "question_hi": "Rust में 'as' कीवर्ड का उद्देश्य क्या है?",
+        "options_en": ["Type casting between compatible types", "Variable declaration", "Trait implementation", "Module import"],
+        "options_hi": ["संगत प्रकारों के बीच टाइप कास्टिंग", "वेरिएबल घोषणा", "ट्रेट इम्प्लीमेंटेशन", "मॉड्यूल आयात"],
+        "answer_en": "Type casting between compatible types",
+        "answer_hi": "संगत प्रकारों के बीच टाइप कास्टिंग",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 4,
-        "question_en": "Solve: 2x + 5 = 15",
-        "question_hi": "हल करें: 2x + 5 = 15",
-        "options_en": ["x = 5", "x = 10", "x = 7.5", "x = 2.5"],
-        "options_hi": ["x = 5", "x = 10", "x = 7.5", "x = 2.5"],
-        "answer_en": "x = 5",
-        "answer_hi": "x = 5",
+        "question_en": "What does the 'where' clause provide in generic functions?",
+        "question_hi": "जेनेरिक फंक्शन में 'where' क्लॉज क्या प्रदान करता है?",
+        "options_en": ["More readable trait bounds", "Faster compilation", "Memory safety", "Automatic type inference"],
+        "options_hi": ["अधिक पठनीय ट्रेट बाउंड्स", "तेज कंपाइलेशन", "मेमोरी सुरक्षा", "स्वचालित प्रकार अनुमान"],
+        "answer_en": "More readable trait bounds",
+        "answer_hi": "अधिक पठनीय ट्रेट बाउंड्स",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 5,
-        "question_en": "Which gas is known as 'Marsh Gas'?",
-        "question_hi": "किस गैस को 'मार्श गैस' के नाम से जाना जाता है?",
-        "options_en": ["Methane", "Ethane", "Propane", "Butane"],
-        "options_hi": ["मीथेन", "ईथेन", "प्रोपेन", "ब्यूटेन"],
-        "answer_en": "Methane",
-        "answer_hi": "मीथेन",
+        "question_en": "What is the primary use of the 'loop' keyword in Rust?",
+        "question_hi": "Rust में 'loop' कीवर्ड का प्राथमिक उपयोग क्या है?",
+        "options_en": ["Infinite looping with manual break", "Definite iteration", "Error handling", "Pattern matching"],
+        "options_hi": ["मैनुअल ब्रेक के साथ अनंत लूपिंग", "निश्चित पुनरावृत्ति", "त्रुटि प्रबंधन", "पैटर्न मिलान"],
+        "answer_en": "Infinite looping with manual break",
+        "answer_hi": "मैनुअल ब्रेक के साथ अनंत लूपिंग",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 6,
-        "question_en": "What is the square root of 144?",
-        "question_hi": "144 का वर्गमूल क्या है?",
-        "options_en": ["12", "14", "16", "18"],
-        "options_hi": ["12", "14", "16", "18"],
-        "answer_en": "12",
-        "answer_hi": "12",
+        "question_en": "What does the 'ref' keyword do in pattern matching?",
+        "question_hi": "पैटर्न मिलान में 'ref' कीवर्ड क्या करता है?",
+        "options_en": ["Borrows the matched value", "Creates a reference", "Deallocates memory", "Changes mutability"],
+        "options_hi": ["मिलान किए गए मान को उधार लेता है", "संदर्भ बनाता है", "मेमोरी डीलोकेट करता है", "परिवर्तनशीलता बदलता है"],
+        "answer_en": "Borrows the matched value",
+        "answer_hi": "मिलान किए गए मान को उधार लेता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 7,
-        "question_en": "Who discovered penicillin?",
-        "question_hi": "पेनिसिलिन की खोज किसने की?",
-        "options_en": ["Alexander Fleming", "Louis Pasteur", "Marie Curie", "Robert Koch"],
-        "options_hi": ["अलेक्जेंडर फ्लेमिंग", "लुई पाश्चर", "मैरी क्यूरी", "रॉबर्ट कोच"],
-        "answer_en": "Alexander Fleming",
-        "answer_hi": "अलेक्जेंडर फ्लेमिंग",
+        "question_en": "What is the purpose of the 'cfg' attribute in Rust?",
+        "question_hi": "Rust में 'cfg' एट्रिब्यूट का उद्देश्य क्या है?",
+        "options_en": ["Conditional compilation", "Configuration management", "Code formatting", "Performance optimization"],
+        "options_hi": ["सशर्त कंपाइलेशन", "कॉन्फ़िगरेशन प्रबंधन", "कोड फॉर्मेटिंग", "प्रदर्शन अनुकूलन"],
+        "answer_en": "Conditional compilation",
+        "answer_hi": "सशर्त कंपाइलेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 8,
-        "question_en": "What is the chemical symbol for potassium?",
-        "question_hi": "पोटैशियम का रासायनिक प्रतीक क्या है?",
-        "options_en": ["P", "Pt", "K", "Po"],
-        "options_hi": ["P", "Pt", "K", "Po"],
-        "answer_en": "K",
-        "answer_hi": "K",
+        "question_en": "What does the 'unsafe' keyword allow in Rust?",
+        "question_hi": "Rust में 'unsafe' कीवर्ड क्या अनुमति देता है?",
+        "options_en": ["Bypass certain compiler checks", "Faster execution", "Automatic optimization", "Memory leaks"],
+        "options_hi": ["कुछ कंपाइलर जांचों को बायपास करना", "तेज निष्पादन", "स्वचालित अनुकूलन", "मेमोरी लीक"],
+        "answer_en": "Bypass certain compiler checks",
+        "answer_hi": "कुछ कंपाइलर जांचों को बायपास करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 9,
-        "question_en": "Which is the longest river in the world?",
-        "question_hi": "दुनिया की सबसे लंबी नदी कौन सी है?",
-        "options_en": ["Amazon", "Nile", "Yangtze", "Mississippi"],
-        "options_hi": ["अमेज़न", "नील", "यांग्त्ज़ी", "मिसिसिपी"],
-        "answer_en": "Nile",
-        "answer_hi": "नील",
+        "question_en": "What is the main purpose of the 'type' keyword in Rust?",
+        "question_hi": "Rust में 'type' कीवर्ड का मुख्य उद्देश्य क्या है?",
+        "options_en": ["Create type aliases", "Define new types", "Type checking", "Memory allocation"],
+        "options_hi": ["टाइप एलियास बनाना", "नए प्रकार परिभाषित करना", "टाइप चेकिंग", "मेमोरी आवंटन"],
+        "answer_en": "Create type aliases",
+        "answer_hi": "टाइप एलियास बनाना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 10,
-        "question_en": "What is the formula for area of a circle?",
-        "question_hi": "वृत्त के क्षेत्रफल का सूत्र क्या है?",
-        "options_en": ["πr²", "2πr", "πd", "2πr²"],
-        "options_hi": ["πr²", "2πr", "πd", "2πr²"],
-        "answer_en": "πr²",
-        "answer_hi": "πr²",
+        "question_en": "What does the 'pub' keyword control in Rust?",
+        "question_hi": "Rust में 'pub' कीवर्ड क्या नियंत्रित करता है?",
+        "options_en": ["Visibility and accessibility", "Memory safety", "Performance", "Compilation speed"],
+        "options_hi": ["दृश्यता और पहुंच", "मेमोरी सुरक्षा", "प्रदर्शन", "कंपाइलेशन गति"],
+        "answer_en": "Visibility and accessibility",
+        "answer_hi": "दृश्यता और पहुंच",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 11,
-        "question_en": "Which planet is known as the 'Giant Planet'?",
-        "question_hi": "किस ग्रह को 'विशाल ग्रह' के नाम से जाना जाता है?",
-        "options_en": ["Saturn", "Jupiter", "Uranus", "Neptune"],
-        "options_hi": ["शनि", "बृहस्पति", "अरुण", "वरुण"],
-        "answer_en": "Jupiter",
-        "answer_hi": "बृहस्पति",
+        "question_en": "What is the purpose of the 'mod' keyword?",
+        "question_hi": "'mod' कीवर्ड का उद्देश्य क्या है?",
+        "options_en": ["Define modules for code organization", "Modify variables", "Model data structures", "Monitor performance"],
+        "options_hi": ["कोड संगठन के लिए मॉड्यूल परिभाषित करना", "वेरिएबल्स संशोधित करना", "डेटा संरचनाएं मॉडल करना", "प्रदर्शन मॉनिटर करना"],
+        "answer_en": "Define modules for code organization",
+        "answer_hi": "कोड संगठन के लिए मॉड्यूल परिभाषित करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 12,
-        "question_en": "What is the past tense of 'go'?",
-        "question_hi": "'go' का past tense क्या है?",
-        "options_en": ["goed", "went", "gone", "going"],
-        "options_hi": ["goed", "went", "gone", "going"],
-        "answer_en": "went",
-        "answer_hi": "went",
+        "question_en": "What does the 'use' keyword do in Rust?",
+        "question_hi": "Rust में 'use' कीवर्ड क्या करता है?",
+        "options_en": ["Bring items into scope", "Utilize memory", "Use threads", "Apply traits"],
+        "options_hi": ["आइटम्स को स्कोप में लाना", "मेमोरी का उपयोग", "थ्रेड्स का उपयोग", "ट्रेट्स लागू करना"],
+        "answer_en": "Bring items into scope",
+        "answer_hi": "आइटम्स को स्कोप में लाना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 13,
-        "question_en": "Who was the first President of India?",
-        "question_hi": "भारत के प्रथम राष्ट्रपति कौन थे?",
-        "options_en": ["Dr. Rajendra Prasad", "Jawaharlal Nehru", "S. Radhakrishnan", "Zakir Hussain"],
-        "options_hi": ["डॉ. राजेंद्र प्रसाद", "जवाहरलाल नेहरू", "एस. राधाकृष्णन", "जाकिर हुसैन"],
-        "answer_en": "Dr. Rajendra Prasad",
-        "answer_hi": "डॉ. राजेंद्र प्रसाद",
+        "question_en": "What is the primary purpose of 'std::ops::Add' trait?",
+        "question_hi": "'std::ops::Add' ट्रेट का प्राथमिक उद्देश्य क्या है?",
+        "options_en": ["Overload the + operator", "Add memory", "Increment values", "Append strings"],
+        "options_hi": ["+ ऑपरेटर को ओवरलोड करना", "मेमोरी जोड़ना", "मान बढ़ाना", "स्ट्रिंग्स जोड़ना"],
+        "answer_en": "Overload the + operator",
+        "answer_hi": "+ ऑपरेटर को ओवरलोड करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 14,
-        "question_en": "What is the value of sin 90°?",
-        "question_hi": "sin 90° का मान क्या है?",
-        "options_en": ["0", "1", "0.5", "√2/2"],
-        "options_hi": ["0", "1", "0.5", "√2/2"],
-        "answer_en": "1",
-        "answer_hi": "1",
+        "question_en": "What does 'std::convert::Into' trait provide?",
+        "question_hi": "'std::convert::Into' ट्रेट क्या प्रदान करता है?",
+        "options_en": ["Generic conversion between types", "Type checking", "Memory conversion", "Value transformation"],
+        "options_hi": ["प्रकारों के बीच सामान्य रूपांतरण", "टाइप चेकिंग", "मेमोरी रूपांतरण", "मान परिवर्तन"],
+        "answer_en": "Generic conversion between types",
+        "answer_hi": "प्रकारों के बीच सामान्य रूपांतरण",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 15,
-        "question_en": "Which element has the highest electronegativity?",
-        "question_hi": "किस तत्व की विद्युत ऋणात्मकता सबसे अधिक है?",
-        "options_en": ["Fluorine", "Chlorine", "Oxygen", "Nitrogen"],
-        "options_hi": ["फ्लोरीन", "क्लोरीन", "ऑक्सीजन", "नाइट्रोजन"],
-        "answer_en": "Fluorine",
-        "answer_hi": "फ्लोरीन",
+        "question_en": "What is the main use of 'std::marker::PhantomData'?",
+        "question_hi": "'std::marker::PhantomData' का मुख्य उपयोग क्या है?",
+        "options_en": ["Mark unused type parameters", "Track memory usage", "Debug types", "Optimize performance"],
+        "options_hi": ["अनउपयोगी टाइप पैरामीटर्स को चिह्नित करना", "मेमोरी उपयोग ट्रैक करना", "डिबग प्रकार", "प्रदर्शन अनुकूलित करना"],
+        "answer_en": "Mark unused type parameters",
+        "answer_hi": "अनउपयोगी टाइप पैरामीटर्स को चिह्नित करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 16,
-        "question_en": "What is the SI unit of force?",
-        "question_hi": "बल की SI इकाई क्या है?",
-        "options_en": ["Joule", "Newton", "Watt", "Pascal"],
-        "options_hi": ["जूल", "न्यूटन", "वाट", "पास्कल"],
-        "answer_en": "Newton",
-        "answer_hi": "न्यूटन",
+        "question_en": "What does 'std::mem::needs_drop' check?",
+        "question_hi": "'std::mem::needs_drop' क्या जांचता है?",
+        "options_en": ["Whether a type needs drop glue", "If memory should be freed", "If value should be copied", "Whether type is thread-safe"],
+        "options_hi": ["क्या किसी प्रकार को ड्रॉप ग्लू की आवश्यकता है", "यदि मेमोरी मुक्त की जानी चाहिए", "यदि मान की प्रतिलिपि बनाई जानी चाहिए", "क्या प्रकार थ्रेड-सुरक्षित है"],
+        "answer_en": "Whether a type needs drop glue",
+        "answer_hi": "क्या किसी प्रकार को ड्रॉप ग्लू की आवश्यकता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 17,
-        "question_en": "Which is the national animal of India?",
-        "question_hi": "भारत का राष्ट्रीय पशु कौन सा है?",
-        "options_en": ["Lion", "Elephant", "Tiger", "Peacock"],
-        "options_hi": ["शेर", "हाथी", "बाघ", "मोर"],
-        "answer_en": "Tiger",
-        "answer_hi": "बाघ",
+        "question_en": "What is the purpose of 'std::iter::FromIterator'?",
+        "question_hi": "'std::iter::FromIterator' का उद्देश्य क्या है?",
+        "options_en": ["Create collections from iterators", "Convert iterators to strings", "Filter iterator elements", "Sort iterator values"],
+        "options_hi": ["इटरेटर्स से संग्रह बनाना", "इटरेटर्स को स्ट्रिंग्स में बदलना", "इटरेटर तत्वों को फिल्टर करना", "इटरेटर मानों को सॉर्ट करना"],
+        "answer_en": "Create collections from iterators",
+        "answer_hi": "इटरेटर्स से संग्रह बनाना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 18,
-        "question_en": "Solve: (a + b)² = ?",
-        "question_hi": "हल करें: (a + b)² = ?",
-        "options_en": ["a² + b²", "a² + 2ab + b²", "a² - 2ab + b²", "a² + b² + ab"],
-        "options_hi": ["a² + b²", "a² + 2ab + b²", "a² - 2ab + b²", "a² + b² + ab"],
-        "answer_en": "a² + 2ab + b²",
-        "answer_hi": "a² + 2ab + b²",
+        "question_en": "What does 'std::default::Default' trait provide?",
+        "question_hi": "'std::default::Default' ट्रेट क्या प्रदान करता है?",
+        "options_en": ["Default values for types", "Memory initialization", "Type conversion", "Error handling"],
+        "options_hi": ["प्रकारों के लिए डिफ़ॉल्ट मान", "मेमोरी आरंभीकरण", "प्रकार रूपांतरण", "त्रुटि प्रबंधन"],
+        "answer_en": "Default values for types",
+        "answer_hi": "प्रकारों के लिए डिफ़ॉल्ट मान",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 19,
-        "question_en": "What is the pH value of pure water?",
-        "question_hi": "शुद्ध जल का pH मान क्या होता है?",
-        "options_en": ["5", "6", "7", "8"],
-        "options_hi": ["5", "6", "7", "8"],
-        "answer_en": "7",
-        "answer_hi": "7",
+        "question_en": "What is the main use of 'std::num::Wrapping'?",
+        "question_hi": "'std::num::Wrapping' का मुख्य उपयोग क्या है?",
+        "options_en": ["Handle integer overflow with wrapping", "Wrap text output", "Memory wrapping", "Thread wrapping"],
+        "options_hi": ["रैपिंग के साथ इंटीजर ओवरफ्लो को संभालना", "टेक्स्ट आउटपुट रैप करना", "मेमोरी रैपिंग", "थ्रेड रैपिंग"],
+        "answer_en": "Handle integer overflow with wrapping",
+        "answer_hi": "रैपिंग के साथ इंटीजर ओवरफ्लो को संभालना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 20,
-        "question_en": "Who painted the Mona Lisa?",
-        "question_hi": "मोना लिसा की पेंटिंग किसने बनाई?",
-        "options_en": ["Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso", "Michelangelo"],
-        "options_hi": ["विंसेंट वैन गॉग", "लियोनार्डो दा विंची", "पाब्लो पिकासो", "माइकलएंजेलो"],
-        "answer_en": "Leonardo da Vinci",
-        "answer_hi": "लियोनार्डो दा विंची",
+        "question_en": "What does 'std::cmp::Ord' trait require?",
+        "question_hi": "'std::cmp::Ord' ट्रेट की क्या आवश्यकता है?",
+        "options_en": ["Total ordering implementation", "Partial ordering", "Memory ordering", "Thread ordering"],
+        "options_hi": ["कुल ऑर्डरिंग कार्यान्वयन", "आंशिक ऑर्डरिंग", "मेमोरी ऑर्डरिंग", "थ्रेड ऑर्डरिंग"],
+        "answer_en": "Total ordering implementation",
+        "answer_hi": "कुल ऑर्डरिंग कार्यान्वयन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 21,
-        "question_en": "What is the chemical formula of ozone?",
-        "question_hi": "ओजोन का रासायनिक सूत्र क्या है?",
-        "options_en": ["O₂", "O₃", "O₄", "HO₃"],
-        "options_hi": ["O₂", "O₃", "O₄", "HO₃"],
-        "answer_en": "O₃",
-        "answer_hi": "O₃",
+        "question_en": "What is the purpose of 'std::fmt::Formatter'?",
+        "question_hi": "'std::fmt::Formatter' का उद्देश्य क्या है?",
+        "options_en": ["Control output formatting", "Format memory", "Format files", "Format threads"],
+        "options_hi": ["आउटपुट फॉर्मेटिंग नियंत्रित करना", "मेमोरी फॉर्मेट", "फ़ाइलें फॉर्मेट", "थ्रेड्स फॉर्मेट"],
+        "answer_en": "Control output formatting",
+        "answer_hi": "आउटपुट फॉर्मेटिंग नियंत्रित करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 22,
-        "question_en": "Which is the smallest continent?",
-        "question_hi": "सबसे छोटा महाद्वीप कौन सा है?",
-        "options_en": ["Australia", "Europe", "Antarctica", "South America"],
-        "options_hi": ["ऑस्ट्रेलिया", "यूरोप", "अंटार्कटिका", "दक्षिण अमेरिका"],
-        "answer_en": "Australia",
-        "answer_hi": "ऑस्ट्रेलिया",
+        "question_en": "What does 'std::str::from_utf8' do?",
+        "question_hi": "'std::str::from_utf8' क्या करता है?",
+        "options_en": ["Convert bytes to UTF-8 string", "Convert string to bytes", "Check UTF-8 validity", "Encode UTF-8"],
+        "options_hi": ["बाइट्स को UTF-8 स्ट्रिंग में बदलना", "स्ट्रिंग को बाइट्स में बदलना", "UTF-8 वैधता जांच", "UTF-8 एनकोड"],
+        "answer_en": "Convert bytes to UTF-8 string",
+        "answer_hi": "बाइट्स को UTF-8 स्ट्रिंग में बदलना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 23,
-        "question_en": "What is the value of 5! (5 factorial)?",
-        "question_hi": "5! (5 फैक्टोरियल) का मान क्या है?",
-        "options_en": ["60", "120", "24", "720"],
-        "options_hi": ["60", "120", "24", "720"],
-        "answer_en": "120",
-        "answer_hi": "120",
+        "question_en": "What is the main use of 'std::ascii::escape_default'?",
+        "question_hi": "'std::ascii::escape_default' का मुख्य उपयोग क्या है?",
+        "options_en": ["Escape non-printable ASCII characters", "Escape memory", "Escape threads", "Escape files"],
+        "options_hi": ["गैर-प्रिंटेबल ASCII वर्णों को एस्केप करना", "मेमोरी एस्केप", "थ्रेड्स एस्केप", "फ़ाइलें एस्केप"],
+        "answer_en": "Escape non-printable ASCII characters",
+        "answer_hi": "गैर-प्रिंटेबल ASCII वर्णों को एस्केप करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 24,
-        "question_en": "Which gas is produced during respiration?",
-        "question_hi": "श्वसन के दौरान कौन सी गैस उत्पन्न होती है?",
-        "options_en": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
-        "options_hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "नाइट्रोजन", "हाइड्रोजन"],
-        "answer_en": "Carbon dioxide",
-        "answer_hi": "कार्बन डाइऑक्साइड",
+        "question_en": "What does 'std::ffi::CString' provide?",
+        "question_hi": "'std::ffi::CString' क्या प्रदान करता है?",
+        "options_en": ["Rust-compatible C strings", "C-compatible Rust strings", "File strings", "Network strings"],
+        "options_hi": ["Rust-संगत C स्ट्रिंग्स", "C-संगत Rust स्ट्रिंग्स", "फ़ाइल स्ट्रिंग्स", "नेटवर्क स्ट्रिंग्स"],
+        "answer_en": "Rust-compatible C strings",
+        "answer_hi": "Rust-संगत C स्ट्रिंग्स",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 25,
-        "question_en": "What is the capital of Japan?",
-        "question_hi": "जापान की राजधानी क्या है?",
-        "options_en": ["Seoul", "Beijing", "Tokyo", "Osaka"],
-        "options_hi": ["सियोल", "बीजिंग", "टोक्यो", "ओसाका"],
-        "answer_en": "Tokyo",
-        "answer_hi": "टोक्यो",
+        "question_en": "What is the purpose of 'std::sync::atomic::AtomicBool'?",
+        "question_hi": "'std::sync::atomic::AtomicBool' का उद्देश्य क्या है?",
+        "options_en": ["Thread-safe boolean operations", "Atomic memory allocation", "Boolean conversion", "Thread creation"],
+        "options_hi": ["थ्रेड-सुरक्षित बूलियन ऑपरेशन", "परमाणु मेमोरी आवंटन", "बूलियन रूपांतरण", "थ्रेड निर्माण"],
+        "answer_en": "Thread-safe boolean operations",
+        "answer_hi": "थ्रेड-सुरक्षित बूलियन ऑपरेशन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 26,
-        "question_en": "Who developed the theory of relativity?",
-        "question_hi": "सापेक्षता का सिद्धांत किसने विकसित किया?",
-        "options_en": ["Isaac Newton", "Albert Einstein", "Stephen Hawking", "Galileo Galilei"],
-        "options_hi": ["आइजैक न्यूटन", "अल्बर्ट आइंस्टीन", "स्टीफन हॉकिंग", "गैलीलियो गैलीली"],
-        "answer_en": "Albert Einstein",
-        "answer_hi": "अल्बर्ट आइंस्टीन",
+        "question_en": "What does 'std::collections::LinkedList' provide?",
+        "question_hi": "'std::collections::LinkedList' क्या प्रदान करता है?",
+        "options_en": ["Doubly-linked list implementation", "Single-linked list", "Array list", "Hash list"],
+        "options_hi": ["डबली-लिंक्ड लिस्ट कार्यान्वयन", "सिंगल-लिंक्ड लिस्ट", "ऐरे लिस्ट", "हैश लिस्ट"],
+        "answer_en": "Doubly-linked list implementation",
+        "answer_hi": "डबली-लिंक्ड लिस्ट कार्यान्वयन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 27,
-        "question_en": "What is the chemical symbol for silver?",
-        "question_hi": "चांदी का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Si", "Ag", "Au", "Sv"],
-        "options_hi": ["Si", "Ag", "Au", "Sv"],
-        "answer_en": "Ag",
-        "answer_hi": "Ag",
+        "question_en": "What is the main use of 'std::collections::BTreeSet'?",
+        "question_hi": "'std::collections::BTreeSet' का मुख्य उपयोग क्या है?",
+        "options_en": ["Sorted unique element collection", "Hash-based set", "Unsorted set", "Thread-safe set"],
+        "options_hi": ["क्रमबद्ध अद्वितीय तत्व संग्रह", "हैश-आधारित सेट", "अक्रमबद्ध सेट", "थ्रेड-सुरक्षित सेट"],
+        "answer_en": "Sorted unique element collection",
+        "answer_hi": "क्रमबद्ध अद्वितीय तत्व संग्रह",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 28,
-        "question_en": "Which is the longest bone in human body?",
-        "question_hi": "मानव शरीर की सबसे लंबी हड्डी कौन सी है?",
-        "options_en": ["Femur", "Tibia", "Fibula", "Humerus"],
-        "options_hi": ["फीमर", "टिबिया", "फिबुला", "ह्यूमरस"],
-        "answer_en": "Femur",
-        "answer_hi": "फीमर",
+        "question_en": "What does 'std::collections::VecDeque' provide?",
+        "question_hi": "'std::collections::VecDeque' क्या प्रदान करता है?",
+        "options_en": ["Double-ended queue implementation", "Single-ended queue", "Stack implementation", "Heap implementation"],
+        "options_hi": ["डबल-एंडेड कतार कार्यान्वयन", "सिंगल-एंडेड कतार", "स्टैक कार्यान्वयन", "हीप कार्यान्वयन"],
+        "answer_en": "Double-ended queue implementation",
+        "answer_hi": "डबल-एंडेड कतार कार्यान्वयन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 29,
-        "question_en": "What is the value of log₁₀100?",
-        "question_hi": "log₁₀100 का मान क्या है?",
-        "options_en": ["1", "2", "10", "100"],
-        "options_hi": ["1", "2", "10", "100"],
-        "answer_en": "2",
-        "answer_hi": "2",
+        "question_en": "What is the purpose of 'std::collections::BinaryHeap'?",
+        "question_hi": "'std::collections::BinaryHeap' का उद्देश्य क्या है?",
+        "options_en": ["Priority queue implementation", "Binary tree storage", "Heap allocation", "Memory management"],
+        "options_hi": ["प्राथमिकता कतार कार्यान्वयन", "बाइनरी ट्री संग्रहण", "हीप आवंटन", "मेमोरी प्रबंधन"],
+        "answer_en": "Priority queue implementation",
+        "answer_hi": "प्राथमिकता कतार कार्यान्वयन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 30,
-        "question_en": "Which is the national flower of India?",
-        "question_hi": "भारत का राष्ट्रीय फूल कौन सा है?",
-        "options_en": ["Rose", "Lotus", "Sunflower", "Marigold"],
-        "options_hi": ["गुलाब", "कमल", "सूरजमुखी", "गेंदा"],
-        "answer_en": "Lotus",
-        "answer_hi": "कमल",
+        "question_en": "What does 'std::collections::BTreeMap' provide?",
+        "question_hi": "'std::collections::BTreeMap' क्या प्रदान करता है?",
+        "options_en": ["Sorted key-value mapping", "Hash-based mapping", "Unsorted mapping", "Thread-safe mapping"],
+        "options_hi": ["क्रमबद्ध कुंजी-मान मैपिंग", "हैश-आधारित मैपिंग", "अक्रमबद्ध मैपिंग", "थ्रेड-सुरक्षित मैपिंग"],
+        "answer_en": "Sorted key-value mapping",
+        "answer_hi": "क्रमबद्ध कुंजी-मान मैपिंग",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 31,
-        "question_en": "What is the formula for Newton's second law of motion?",
-        "question_hi": "न्यूटन के गति के दूसरे नियम का सूत्र क्या है?",
-        "options_en": ["F = ma", "F = mv", "F = m/a", "F = m + a"],
-        "options_hi": ["F = ma", "F = mv", "F = m/a", "F = m + a"],
-        "answer_en": "F = ma",
-        "answer_hi": "F = ma",
+        "question_en": "What is the main use of 'std::rc::Weak'?",
+        "question_hi": "'std::rc::Weak' का मुख्य उपयोग क्या है?",
+        "options_en": ["Break reference cycles", "Strong referencing", "Memory allocation", "Thread safety"],
+        "options_hi": ["संदर्भ चक्रों को तोड़ना", "मजबूत संदर्भ", "मेमोरी आवंटन", "थ्रेड सुरक्षा"],
+        "answer_en": "Break reference cycles",
+        "answer_hi": "संदर्भ चक्रों को तोड़ना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 32,
-        "question_en": "Who wrote the Indian National Anthem?",
-        "question_hi": "भारत का राष्ट्रगान किसने लिखा?",
-        "options_en": ["Rabindranath Tagore", "Bankim Chandra Chatterjee", "Sarojini Naidu", "Mahatma Gandhi"],
-        "options_hi": ["रबींद्रनाथ टैगोर", "बंकिम चंद्र चटर्जी", "सरोजिनी नायडू", "महात्मा गांधी"],
-        "answer_en": "Rabindranath Tagore",
-        "answer_hi": "रबींद्रनाथ टैगोर",
+        "question_en": "What does 'std::sync::mpsc::sync_channel' create?",
+        "question_hi": "'std::sync::mpsc::sync_channel' क्या बनाता है?",
+        "options_en": ["Bounded synchronous channel", "Unbounded channel", "Asynchronous channel", "File channel"],
+        "options_hi": ["बाउंडेड सिंक्रोनस चैनल", "अनबाउंडेड चैनल", "एसिंक्रोनस चैनल", "फ़ाइल चैनल"],
+        "answer_en": "Bounded synchronous channel",
+        "answer_hi": "बाउंडेड सिंक्रोनस चैनल",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 33,
-        "question_en": "What is the chemical formula of glucose?",
-        "question_hi": "ग्लूकोज का रासायनिक सूत्र क्या है?",
-        "options_en": ["C₆H₁₂O₆", "C₁₂H₂₂O₁₁", "C₂H₅OH", "CH₃COOH"],
-        "options_hi": ["C₆H₁₂O₆", "C₁₂H₂₂O₁₁", "C₂H₅OH", "CH₃COOH"],
-        "answer_en": "C₆H₁₂O₆",
-        "answer_hi": "C₆H₁₂O₆",
+        "question_en": "What is the purpose of 'std::thread::yield_now'?",
+        "question_hi": "'std::thread::yield_now' का उद्देश्य क्या है?",
+        "options_en": ["Hint to scheduler to yield", "Terminate thread", "Start thread", "Pause thread indefinitely"],
+        "options_hi": ["शेड्यूलर को यील्ड करने का संकेत", "थ्रेड समाप्त", "थ्रेड शुरू", "थ्रेड को अनिश्चित काल के लिए रोकें"],
+        "answer_en": "Hint to scheduler to yield",
+        "answer_hi": "शेड्यूलर को यील्ड करने का संकेत",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 34,
-        "question_en": "Which is the largest ocean?",
-        "question_hi": "सबसे बड़ा महासागर कौन सा है?",
-        "options_en": ["Atlantic", "Indian", "Pacific", "Arctic"],
-        "options_hi": ["अटलांटिक", "हिंद", "प्रशांत", "आर्कटिक"],
-        "answer_en": "Pacific",
-        "answer_hi": "प्रशांत",
+        "question_en": "What does 'std::thread::park' do?",
+        "question_hi": "'std::thread::park' क्या करता है?",
+        "options_en": ["Blocks current thread until unparked", "Parks memory", "Stops thread permanently", "Creates parking space"],
+        "options_hi": ["वर्तमान थ्रेड को अनपार्क होने तक ब्लॉक करता है", "मेमोरी पार्क", "थ्रेड को स्थायी रूप से रोकता है", "पार्किंग स्पेस बनाता है"],
+        "answer_en": "Blocks current thread until unparked",
+        "answer_hi": "वर्तमान थ्रेड को अनपार्क होने तक ब्लॉक करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 35,
-        "question_en": "What is the value of cos 60°?",
-        "question_hi": "cos 60° का मान क्या है?",
-        "options_en": ["1", "0.5", "√3/2", "0"],
-        "options_hi": ["1", "0.5", "√3/2", "0"],
-        "answer_en": "0.5",
-        "answer_hi": "0.5",
+        "question_en": "What is the main use of 'std::time::Instant'?",
+        "question_hi": "'std::time::Instant' का मुख्य उपयोग क्या है?",
+        "options_en": ["Measure elapsed time", "Get current date", "Format time strings", "Parse time values"],
+        "options_hi": ["बीता हुआ समय मापें", "वर्तमान तिथि प्राप्त", "समय स्ट्रिंग्स फॉर्मेट", "समय मान पार्स"],
+        "answer_en": "Measure elapsed time",
+        "answer_hi": "बीता हुआ समय मापें",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 36,
-        "question_en": "Which gas is used in photosynthesis?",
-        "question_hi": "प्रकाश संश्लेषण में किस गैस का उपयोग होता है?",
-        "options_en": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
-        "options_hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "नाइट्रोजन", "हाइड्रोजन"],
-        "answer_en": "Carbon dioxide",
-        "answer_hi": "कार्बन डाइऑक्साइड",
+        "question_en": "What does 'std::time::SystemTime' represent?",
+        "question_hi": "'std::time::SystemTime' क्या दर्शाता है?",
+        "options_en": ["System clock time", "CPU time", "Thread time", "Memory time"],
+        "options_hi": ["सिस्टम क्लॉक समय", "CPU समय", "थ्रेड समय", "मेमोरी समय"],
+        "answer_en": "System clock time",
+        "answer_hi": "सिस्टम क्लॉक समय",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 37,
-        "question_en": "What is the capital of Brazil?",
-        "question_hi": "ब्राजील की राजधानी क्या है?",
-        "options_en": ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"],
-        "options_hi": ["रियो डी जनेरियो", "साओ पाउलो", "ब्रासीलिया", "साल्वाडोर"],
-        "answer_en": "Brasília",
-        "answer_hi": "ब्रासीलिया",
+        "question_en": "What is the purpose of 'std::fs::create_dir_all'?",
+        "question_hi": "'std::fs::create_dir_all' का उद्देश्य क्या है?",
+        "options_en": ["Create directory and all parents", "Create single directory", "Delete directories", "List directories"],
+        "options_hi": ["डायरेक्टरी और सभी पैरेंट बनाएं", "सिंगल डायरेक्टरी बनाएं", "डायरेक्टरीज़ डिलीट", "डायरेक्टरीज़ लिस्ट"],
+        "answer_en": "Create directory and all parents",
+        "answer_hi": "डायरेक्टरी और सभी पैरेंट बनाएं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 38,
-        "question_en": "Who discovered gravity?",
-        "question_hi": "गुरुत्वाकर्षण की खोज किसने की?",
-        "options_en": ["Albert Einstein", "Isaac Newton", "Galileo Galilei", "Stephen Hawking"],
-        "options_hi": ["अल्बर्ट आइंस्टीन", "आइजैक न्यूटन", "गैलीलियो गैलीली", "स्टीफन हॉकिंग"],
-        "answer_en": "Isaac Newton",
-        "answer_hi": "आइजैक न्यूटन",
+        "question_en": "What does 'std::fs::read_dir' return?",
+        "question_hi": "'std::fs::read_dir' क्या लौटाता है?",
+        "options_en": ["Iterator over directory entries", "Directory contents as string", "File list as vector", "Directory metadata"],
+        "options_hi": ["डायरेक्टरी एंट्रीज़ पर इटरेटर", "स्ट्रिंग के रूप में डायरेक्टरी सामग्री", "वेक्टर के रूप में फ़ाइल सूची", "डायरेक्टरी मेटाडेटा"],
+        "answer_en": "Iterator over directory entries",
+        "answer_hi": "डायरेक्टरी एंट्रीज़ पर इटरेटर",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 39,
-        "question_en": "What is the chemical formula of water?",
-        "question_hi": "पानी का रासायनिक सूत्र क्या है?",
-        "options_en": ["H₂O", "HO₂", "H₂O₂", "HO"],
-        "options_hi": ["H₂O", "HO₂", "H₂O₂", "HO"],
-        "answer_en": "H₂O",
-        "answer_hi": "H₂O",
+        "question_en": "What is the main use of 'std::io::Cursor'?",
+        "question_hi": "'std::io::Cursor' का मुख्य उपयोग क्या है?",
+        "options_en": ["In-memory buffer with seeking", "File cursor", "Network cursor", "Thread cursor"],
+        "options_hi": ["सीकिंग के साथ इन-मेमोरी बफर", "फ़ाइल कर्सर", "नेटवर्क कर्सर", "थ्रेड कर्सर"],
+        "answer_en": "In-memory buffer with seeking",
+        "answer_hi": "सीकिंग के साथ इन-मेमोरी बफर",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 40,
-        "question_en": "Which is the fastest land animal?",
-        "question_hi": "सबसे तेज भूमि जानवर कौन सा है?",
-        "options_en": ["Cheetah", "Lion", "Tiger", "Horse"],
-        "options_hi": ["चीता", "शेर", "बाघ", "घोड़ा"],
-        "answer_en": "Cheetah",
-        "answer_hi": "चीता",
+        "question_en": "What does 'std::io::Error::last_os_error' provide?",
+        "question_hi": "'std::io::Error::last_os_error' क्या प्रदान करता है?",
+        "options_en": ["Last OS-level error", "Current IO error", "Memory error", "Thread error"],
+        "options_hi": ["अंतिम OS-स्तरीय त्रुटि", "वर्तमान IO त्रुटि", "मेमोरी त्रुटि", "थ्रेड त्रुटि"],
+        "answer_en": "Last OS-level error",
+        "answer_hi": "अंतिम OS-स्तरीय त्रुटि",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 41,
-        "question_en": "What is the value of 2³ × 3²?",
-        "question_hi": "2³ × 3² का मान क्या है?",
-        "options_en": ["36", "72", "54", "48"],
-        "options_hi": ["36", "72", "54", "48"],
-        "answer_en": "72",
-        "answer_hi": "72",
+        "question_en": "What is the purpose of 'std::net::UdpSocket'?",
+        "question_hi": "'std::net::UdpSocket' का उद्देश्य क्या है?",
+        "options_en": ["UDP network communication", "TCP communication", "File communication", "Thread communication"],
+        "options_hi": ["UDP नेटवर्क संचार", "TCP संचार", "फ़ाइल संचार", "थ्रेड संचार"],
+        "answer_en": "UDP network communication",
+        "answer_hi": "UDP नेटवर्क संचार",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 42,
-        "question_en": "Who was the first woman Prime Minister of India?",
-        "question_hi": "भारत की पहली महिला प्रधानमंत्री कौन थीं?",
-        "options_en": ["Sarojini Naidu", "Indira Gandhi", "Pratibha Patil", "Sonia Gandhi"],
-        "options_hi": ["सरोजिनी नायडू", "इंदिरा गांधी", "प्रतिभा पाटिल", "सोनिया गांधी"],
-        "answer_en": "Indira Gandhi",
-        "answer_hi": "इंदिरा गांधी",
+        "question_en": "What does 'std::net::TcpStream' represent?",
+        "question_hi": "'std::net::TcpStream' क्या दर्शाता है?",
+        "options_en": ["TCP connection between client and server", "UDP connection", "File stream", "Memory stream"],
+        "options_hi": ["क्लाइंट और सर्वर के बीच TCP कनेक्शन", "UDP कनेक्शन", "फ़ाइल स्ट्रीम", "मेमोरी स्ट्रीम"],
+        "answer_en": "TCP connection between client and server",
+        "answer_hi": "क्लाइंट और सर्वर के बीच TCP कनेक्शन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 43,
-        "question_en": "What is the SI unit of electric current?",
-        "question_hi": "विद्युत धारा की SI इकाई क्या है?",
-        "options_en": ["Volt", "Ampere", "Ohm", "Watt"],
-        "options_hi": ["वोल्ट", "एम्पियर", "ओम", "वाट"],
-        "answer_en": "Ampere",
-        "answer_hi": "एम्पियर",
+        "question_en": "What is the main use of 'std::process::Output'?",
+        "question_hi": "'std::process::Output' का मुख्य उपयोग क्या है?",
+        "options_en": ["Capture child process output", "Parent process output", "Thread output", "Memory output"],
+        "options_hi": ["चाइल्ड प्रक्रिया आउटपुट कैप्चर", "पैरेंट प्रक्रिया आउटपुट", "थ्रेड आउटपुट", "मेमोरी आउटपुट"],
+        "answer_en": "Capture child process output",
+        "answer_hi": "चाइल्ड प्रक्रिया आउटपुट कैप्चर",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 44,
-        "question_en": "Which planet is known as the 'Red Planet'?",
-        "question_hi": "किस ग्रह को 'लाल ग्रह' के नाम से जाना जाता है?",
-        "options_en": ["Venus", "Mars", "Jupiter", "Saturn"],
-        "options_hi": ["शुक्र", "मंगल", "बृहस्पति", "शनि"],
-        "answer_en": "Mars",
-        "answer_hi": "मंगल",
+        "question_en": "What does 'std::env::current_exe' return?",
+        "question_hi": "'std::env::current_exe' क्या लौटाता है?",
+        "options_en": ["Path to current executable", "Current directory", "Executable arguments", "Environment variables"],
+        "options_hi": ["वर्तमान एक्जीक्यूटेबल का पथ", "वर्तमान निर्देशिका", "एक्जीक्यूटेबल तर्क", "पर्यावरण चर"],
+        "answer_en": "Path to current executable",
+        "answer_hi": "वर्तमान एक्जीक्यूटेबल का पथ",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 45,
-        "question_en": "What is the formula for volume of a sphere?",
-        "question_hi": "गोले के आयतन का सूत्र क्या है?",
-        "options_en": ["4/3πr³", "πr²h", "2πr", "4πr²"],
-        "options_hi": ["4/3πr³", "πr²h", "2πr", "4πr²"],
-        "answer_en": "4/3πr³",
-        "answer_hi": "4/3πr³",
+        "question_en": "What is the purpose of 'std::panic::set_hook'?",
+        "question_hi": "'std::panic::set_hook' का उद्देश्य क्या है?",
+        "options_en": ["Customize panic behavior", "Cause panics", "Ignore panics", "Handle memory panics"],
+        "options_hi": ["पैनिक व्यवहार कस्टमाइज़", "पैनिक का कारण", "पैनिक्स को अनदेखा", "मेमोरी पैनिक्स संभाल"],
+        "answer_en": "Customize panic behavior",
+        "answer_hi": "पैनिक व्यवहार कस्टमाइज़",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 46,
-        "question_en": "Which gas is most abundant in Earth's atmosphere?",
-        "question_hi": "पृथ्वी के वायुमंडल में कौन सी गैस सबसे अधिक मात्रा में है?",
-        "options_en": ["Oxygen", "Nitrogen", "Carbon dioxide", "Argon"],
-        "options_hi": ["ऑक्सीजन", "नाइट्रोजन", "कार्बन डाइऑक्साइड", "आर्गन"],
-        "answer_en": "Nitrogen",
-        "answer_hi": "नाइट्रोजन",
+        "question_en": "What does 'std::any::TypeId' provide?",
+        "question_hi": "'std::any::TypeId' क्या प्रदान करता है?",
+        "options_en": ["Unique identifier for types", "Type name as string", "Type size", "Type alignment"],
+        "options_hi": ["प्रकारों के लिए अद्वितीय पहचानकर्ता", "स्ट्रिंग के रूप में प्रकार नाम", "प्रकार आकार", "प्रकार अलाइनमेंट"],
+        "answer_en": "Unique identifier for types",
+        "answer_hi": "प्रकारों के लिए अद्वितीय पहचानकर्ता",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 47,
-        "question_en": "What is the value of tan 45°?",
-        "question_hi": "tan 45° का मान क्या है?",
-        "options_en": ["0", "1", "√3", "1/√3"],
-        "options_hi": ["0", "1", "√3", "1/√3"],
-        "answer_en": "1",
-        "answer_hi": "1",
+        "question_en": "What is the main use of 'std::any::Any' trait?",
+        "question_hi": "'std::any::Any' ट्रेट का मुख्य उपयोग क्या है?",
+        "options_en": ["Runtime type reflection", "Compile-time type checking", "Memory reflection", "Thread reflection"],
+        "options_hi": ["रनटाइम टाइप रिफ्लेक्शन", "कंपाइल-टाइम टाइप चेकिंग", "मेमोरी रिफ्लेक्शन", "थ्रेड रिफ्लेक्शन"],
+        "answer_en": "Runtime type reflection",
+        "answer_hi": "रनटाइम टाइप रिफ्लेक्शन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 48,
-        "question_en": "Who wrote 'Geetanjali'?",
-        "question_hi": "'गीतांजलि' किसने लिखी?",
-        "options_en": ["Mahadevi Verma", "Rabindranath Tagore", "Premchand", "Harivansh Rai Bachchan"],
-        "options_hi": ["महादेवी वर्मा", "रबींद्रनाथ टैगोर", "प्रेमचंद", "हरिवंश राय बच्चन"],
-        "answer_en": "Rabindranath Tagore",
-        "answer_hi": "रबींद्रनाथ टैगोर",
+        "question_en": "What does 'std::sync::Once::call_once' guarantee?",
+        "question_hi": "'std::sync::Once::call_once' क्या गारंटी देता है?",
+        "options_en": ["One-time initialization across threads", "Thread creation", "Memory initialization", "File initialization"],
+        "options_hi": ["थ्रेड्स के बीच एक-बार आरंभीकरण", "थ्रेड निर्माण", "मेमोरी आरंभीकरण", "फ़ाइल आरंभीकरण"],
+        "answer_en": "One-time initialization across threads",
+        "answer_hi": "थ्रेड्स के बीच एक-बार आरंभीकरण",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 49,
-        "question_en": "What is the chemical symbol for gold?",
-        "question_hi": "सोने का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Go", "Gd", "Au", "Ag"],
-        "options_hi": ["Go", "Gd", "Au", "Ag"],
-        "answer_en": "Au",
-        "answer_hi": "Au",
+        "question_en": "What is the purpose of 'std::cell::Cell'?",
+        "question_hi": "'std::cell::Cell' का उद्देश्य क्या है?",
+        "options_en": ["Interior mutability for Copy types", "Thread-safe mutability", "Memory cells", "File cells"],
+        "options_hi": ["Copy प्रकारों के लिए आंतरिक परिवर्तनशीलता", "थ्रेड-सुरक्षित परिवर्तनशीलता", "मेमोरी सेल", "फ़ाइल सेल"],
+        "answer_en": "Interior mutability for Copy types",
+        "answer_hi": "Copy प्रकारों के लिए आंतरिक परिवर्तनशीलता",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 50,
-        "question_en": "Which is the national bird of India?",
-        "question_hi": "भारत का राष्ट्रीय पक्षी कौन सा है?",
-        "options_en": ["Peacock", "Parrot", "Sparrow", "Eagle"],
-        "options_hi": ["मोर", "तोता", "गौरैया", "गरुड़"],
-        "answer_en": "Peacock",
-        "answer_hi": "मोर",
+        "question_en": "What does 'std::mem::align_of' return?",
+        "question_hi": "'std::mem::align_of' क्या लौटाता है?",
+        "options_en": ["Alignment requirement of a type", "Size of type", "Memory address", "Type identifier"],
+        "options_hi": ["प्रकार की अलाइनमेंट आवश्यकता", "प्रकार का आकार", "मेमोरी एड्रेस", "प्रकार पहचानकर्ता"],
+        "answer_en": "Alignment requirement of a type",
+        "answer_hi": "प्रकार की अलाइनमेंट आवश्यकता",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 51,
-        "question_en": "What is the formula for acceleration?",
-        "question_hi": "त्वरण का सूत्र क्या है?",
-        "options_en": ["v/t", "d/t", "m×a", "F/m"],
-        "options_hi": ["v/t", "d/t", "m×a", "F/m"],
-        "answer_en": "v/t",
-        "answer_hi": "v/t",
+        "question_en": "What is the main use of 'std::num::NonZeroU32'?",
+        "question_hi": "'std::num::NonZeroU32' का मुख्य उपयोग क्या है?",
+        "options_en": ["Memory optimization for non-zero values", "Zero value handling", "Negative number storage", "Floating point numbers"],
+        "options_hi": ["गैर-शून्य मानों के लिए मेमोरी अनुकूलन", "शून्य मान प्रबंधन", "नकारात्मक संख्या संग्रहण", "फ्लोटिंग पॉइंट नंबर"],
+        "answer_en": "Memory optimization for non-zero values",
+        "answer_hi": "गैर-शून्य मानों के लिए मेमोरी अनुकूलन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 52,
-        "question_en": "Who invented the telephone?",
-        "question_hi": "टेलीफोन का आविष्कार किसने किया?",
-        "options_en": ["Thomas Edison", "Alexander Graham Bell", "Nikola Tesla", "Guglielmo Marconi"],
-        "options_hi": ["थॉमस एडिसन", "अलेक्जेंडर ग्राहम बेल", "निकोला टेस्ला", "गुग्लिल्मो मार्कोनी"],
-        "answer_en": "Alexander Graham Bell",
-        "answer_hi": "अलेक्जेंडर ग्राहम बेल",
+        "question_en": "What does 'std::convert::identity' function do?",
+        "question_hi": "'std::convert::identity' फंक्शन क्या करता है?",
+        "options_en": ["Returns the value unchanged", "Converts types", "Checks identity", "Allocates memory"],
+        "options_hi": ["मान को अपरिवर्तित लौटाता है", "प्रकारों को परिवर्तित", "पहचान जांच", "मेमोरी आवंटित"],
+        "answer_en": "Returns the value unchanged",
+        "answer_hi": "मान को अपरिवर्तित लौटाता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 53,
-        "question_en": "What is the chemical formula of common salt?",
-        "question_hi": "साधारण नमक का रासायनिक सूत्र क्या है?",
-        "options_en": ["NaCl", "KCl", "CaCl₂", "MgCl₂"],
-        "options_hi": ["NaCl", "KCl", "CaCl₂", "MgCl₂"],
-        "answer_en": "NaCl",
-        "answer_hi": "NaCl",
+        "question_en": "What is the purpose of 'std::iter::empty'?",
+        "question_hi": "'std::iter::empty' का उद्देश्य क्या है?",
+        "options_en": ["Create empty iterator", "Clear iterator", "Delete iterator", "Check if iterator is empty"],
+        "options_hi": ["खाली इटरेटर बनाएं", "इटरेटर साफ़", "इटरेटर डिलीट", "जांचें कि इटरेटर खाली है"],
+        "answer_en": "Create empty iterator",
+        "answer_hi": "खाली इटरेटर बनाएं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 54,
-        "question_en": "Which is the largest desert in the world?",
-        "question_hi": "दुनिया का सबसे बड़ा रेगिस्तान कौन सा है?",
-        "options_en": ["Sahara", "Arabian", "Gobi", "Kalahari"],
-        "options_hi": ["सहारा", "अरब", "गोबी", "कालाहारी"],
-        "answer_en": "Sahara",
-        "answer_hi": "सहारा",
+        "question_en": "What does 'std::iter::once' create?",
+        "question_hi": "'std::iter::once' क्या बनाता है?",
+        "options_en": ["Iterator with single element", "Infinite iterator", "Empty iterator", "Random iterator"],
+        "options_hi": ["एकल तत्व के साथ इटरेटर", "अनंत इटरेटर", "खाली इटरेटर", "यादृच्छिक इटरेटर"],
+        "answer_en": "Iterator with single element",
+        "answer_hi": "एकल तत्व के साथ इटरेटर",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 55,
-        "question_en": "What is the value of 7 × 8 + 4 ÷ 2?",
-        "question_hi": "7 × 8 + 4 ÷ 2 का मान क्या है?",
-        "options_en": ["58", "60", "56", "54"],
-        "options_hi": ["58", "60", "56", "54"],
-        "answer_en": "58",
-        "answer_hi": "58",
+        "question_en": "What is the main use of 'std::iter::repeat'?",
+        "question_hi": "'std::iter::repeat' का मुख्य उपयोग क्या है?",
+        "options_en": ["Create infinite repeating iterator", "Repeat finite times", "Repeat until condition", "Repeat with modification"],
+        "options_hi": ["अनंत दोहराव इटरेटर बनाएं", "सीमित बार दोहराएं", "शर्त तक दोहराएं", "संशोधन के साथ दोहराएं"],
+        "answer_en": "Create infinite repeating iterator",
+        "answer_hi": "अनंत दोहराव इटरेटर बनाएं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 56,
-        "question_en": "Which gas is used in photosynthesis?",
-        "question_hi": "प्रकाश संश्लेषण में किस गैस का उपयोग होता है?",
-        "options_en": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
-        "options_hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "नाइट्रोजन", "हाइड्रोजन"],
-        "answer_en": "Carbon dioxide",
-        "answer_hi": "कार्बन डाइऑक्साइड",
+        "question_en": "What does 'std::iter::successors' generate?",
+        "question_hi": "'std::iter::successors' क्या उत्पन्न करता है?",
+        "options_en": ["Iterator from successive function applications", "Random values", "Constant values", "Decreasing values"],
+        "options_hi": ["क्रमिक फ़ंक्शन एप्लिकेशन से इटरेटर", "यादृच्छिक मान", "स्थिर मान", "घटते मान"],
+        "answer_en": "Iterator from successive function applications",
+        "answer_hi": "क्रमिक फ़ंक्शन एप्लिकेशन से इटरेटर",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 57,
-        "question_en": "What is the capital of France?",
-        "question_hi": "फ्रांस की राजधानी क्या है?",
-        "options_en": ["London", "Berlin", "Paris", "Rome"],
-        "options_hi": ["लंदन", "बर्लिन", "पेरिस", "रोम"],
-        "answer_en": "Paris",
-        "answer_hi": "पेरिस",
+        "question_en": "What is the purpose of 'std::iter::FromIterator' trait?",
+        "question_hi": "'std::iter::FromIterator' ट्रेट का उद्देश्य क्या है?",
+        "options_en": ["Convert iterators to collections", "Create iterators", "Filter iterators", "Sort iterators"],
+        "options_hi": ["इटरेटर्स को संग्रह में बदलें", "इटरेटर्स बनाएं", "इटरेटर्स फिल्टर", "इटरेटर्स सॉर्ट"],
+        "answer_en": "Convert iterators to collections",
+        "answer_hi": "इटरेटर्स को संग्रह में बदलें",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 58,
-        "question_en": "Who discovered X-rays?",
-        "question_hi": "एक्स-रे की खोज किसने की?",
-        "options_en": ["Marie Curie", "Wilhelm Roentgen", "Thomas Edison", "Alexander Fleming"],
-        "options_hi": ["मैरी क्यूरी", "विल्हेम रोएंटजेन", "थॉमस एडिसन", "अलेक्जेंडर फ्लेमिंग"],
-        "answer_en": "Wilhelm Roentgen",
-        "answer_hi": "विल्हेम रोएंटजेन",
+        "question_en": "What does 'std::iter::Iterator::chain' do?",
+        "question_hi": "'std::iter::Iterator::chain' क्या करता है?",
+        "options_en": ["Concatenate two iterators", "Create chain reaction", "Lock iterator", "Unlock iterator"],
+        "options_hi": ["दो इटरेटर्स को संयोजित करें", "चेन रिएक्शन बनाएं", "इटरेटर लॉक", "इटरेटर अनलॉक"],
+        "answer_en": "Concatenate two iterators",
+        "answer_hi": "दो इटरेटर्स को संयोजित करें",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 59,
-        "question_en": "What is the chemical formula of carbon dioxide?",
-        "question_hi": "कार्बन डाइऑक्साइड का रासायनिक सूत्र क्या है?",
-        "options_en": ["CO", "CO₂", "C₂O", "CO₃"],
-        "options_hi": ["CO", "CO₂", "C₂O", "CO₃"],
-        "answer_en": "CO₂",
-        "answer_hi": "CO₂",
+        "question_en": "What is the main use of 'std::iter::Iterator::zip'?",
+        "question_hi": "'std::iter::Iterator::zip' का मुख्य उपयोग क्या है?",
+        "options_en": ["Combine two iterators into pairs", "Compress data", "Extract values", "Sort values"],
+        "options_hi": ["दो इटरेटर्स को जोड़े में संयोजित करें", "डेटा संपीड़ित", "मान निकालें", "मान सॉर्ट"],
+        "answer_en": "Combine two iterators into pairs",
+        "answer_hi": "दो इटरेटर्स को जोड़े में संयोजित करें",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 60,
-        "question_en": "Which is the tallest mountain in the world?",
-        "question_hi": "दुनिया की सबसे ऊंची पर्वत चोटी कौन सी है?",
-        "options_en": ["K2", "Mount Everest", "Kangchenjunga", "Makalu"],
-        "options_hi": ["K2", "माउंट एवरेस्ट", "कंचनजंगा", "मकालू"],
-        "answer_en": "Mount Everest",
-        "answer_hi": "माउंट एवरेस्ट",
+        "question_en": "What does 'std::iter::Iterator::enumerate' provide?",
+        "question_hi": "'std::iter::Iterator::enumerate' क्या प्रदान करता है?",
+        "options_en": ["Index-value pairs from iterator", "Only indices", "Only values", "Sorted values"],
+        "options_hi": ["इटरेटर से इंडेक्स-वैल्यू जोड़े", "केवल इंडेक्स", "केवल मान", "क्रमबद्ध मान"],
+        "answer_en": "Index-value pairs from iterator",
+        "answer_hi": "इटरेटर से इंडेक्स-वैल्यू जोड़े",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 61,
-        "question_en": "What is the value of 15% of 200?",
-        "question_hi": "200 का 15% कितना होता है?",
-        "options_en": ["15", "30", "45", "60"],
-        "options_hi": ["15", "30", "45", "60"],
-        "answer_en": "30",
-        "answer_hi": "30",
+        "question_en": "What is the purpose of 'std::iter::Iterator::filter'?",
+        "question_hi": "'std::iter::Iterator::filter' का उद्देश्य क्या है?",
+        "options_en": ["Select elements based on predicate", "Remove all elements", "Sort elements", "Transform elements"],
+        "options_hi": ["प्रिडिकेट के आधार पर तत्वों का चयन", "सभी तत्व हटाएं", "तत्वों को सॉर्ट", "तत्वों को रूपांतरित"],
+        "answer_en": "Select elements based on predicate",
+        "answer_hi": "प्रिडिकेट के आधार पर तत्वों का चयन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 62,
-        "question_en": "Who was the first Prime Minister of India?",
-        "question_hi": "भारत के प्रथम प्रधानमंत्री कौन थे?",
-        "options_en": ["Mahatma Gandhi", "Jawaharlal Nehru", "Sardar Patel", "Dr. Rajendra Prasad"],
-        "options_hi": ["महात्मा गांधी", "जवाहरलाल नेहरू", "सरदार पटेल", "डॉ. राजेंद्र प्रसाद"],
-        "answer_en": "Jawaharlal Nehru",
-        "answer_hi": "जवाहरलाल नेहरू",
+        "question_en": "What does 'std::iter::Iterator::map' do?",
+        "question_hi": "'std::iter::Iterator::map' क्या करता है?",
+        "options_en": ["Transform each element", "Create map data structure", "Filter elements", "Sort elements"],
+        "options_hi": ["प्रत्येक तत्व को रूपांतरित", "मैप डेटा संरचना बनाएं", "तत्वों को फिल्टर", "तत्वों को सॉर्ट"],
+        "answer_en": "Transform each element",
+        "answer_hi": "प्रत्येक तत्व को रूपांतरित",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 63,
-        "question_en": "What is the SI unit of power?",
-        "question_hi": "शक्ति की SI इकाई क्या है?",
-        "options_en": ["Joule", "Newton", "Watt", "Pascal"],
-        "options_hi": ["जूल", "न्यूटन", "वाट", "पास्कल"],
-        "answer_en": "Watt",
-        "answer_hi": "वाट",
+        "question_en": "What is the main use of 'std::iter::Iterator::fold'?",
+        "question_hi": "'std::iter::Iterator::fold' का मुख्य उपयोग क्या है?",
+        "options_en": ["Accumulate values with function", "Fold paper", "Reduce memory", "Increase performance"],
+        "options_hi": ["फ़ंक्शन के साथ मानों को संचित", "पेपर फोल्ड", "मेमोरी कम", "प्रदर्शन बढ़ाएं"],
+        "answer_en": "Accumulate values with function",
+        "answer_hi": "फ़ंक्शन के साथ मानों को संचित",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 64,
-        "question_en": "Which planet is known as the 'Blue Planet'?",
-        "question_hi": "किस ग्रह को 'नीला ग्रह' कहा जाता है?",
-        "options_en": ["Earth", "Neptune", "Uranus", "Mars"],
-        "options_hi": ["पृथ्वी", "वरुण", "अरुण", "मंगल"],
-        "answer_en": "Earth",
-        "answer_hi": "पृथ्वी",
+        "question_en": "What does 'std::iter::Iterator::reduce' do?",
+        "question_hi": "'std::iter::Iterator::reduce' क्या करता है?",
+        "options_en": ["Combine elements to single value", "Reduce memory usage", "Decrease iterator size", "Simplify elements"],
+        "options_hi": ["तत्वों को एकल मान में संयोजित", "मेमोरी उपयोग कम", "इटरेटर आकार घटाएं", "तत्वों को सरल बनाएं"],
+        "answer_en": "Combine elements to single value",
+        "answer_hi": "तत्वों को एकल मान में संयोजित",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 65,
-        "question_en": "What is the formula for area of a triangle?",
-        "question_hi": "त्रिभुज के क्षेत्रफल का सूत्र क्या है?",
-        "options_en": ["½ × base × height", "base × height", "½ × base + height", "base + height"],
-        "options_hi": ["½ × आधार × ऊंचाई", "आधार × ऊंचाई", "½ × आधार + ऊंचाई", "आधार + ऊंचाई"],
-        "answer_en": "½ × base × height",
-        "answer_hi": "½ × आधार × ऊंचाई",
+        "question_en": "What is the purpose of 'std::iter::Iterator::take'?",
+        "question_hi": "'std::iter::Iterator::take' का उद्देश्य क्या है?",
+        "options_en": ["Take first n elements", "Take all elements", "Take last elements", "Take random elements"],
+        "options_hi": ["पहले n तत्व लें", "सभी तत्व लें", "अंतिम तत्व लें", "यादृच्छिक तत्व लें"],
+        "answer_en": "Take first n elements",
+        "answer_hi": "पहले n तत्व लें",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 66,
-        "question_en": "Which gas is used in balloons to make them float?",
-        "question_hi": "गुब्बारों को उड़ाने के लिए किस गैस का उपयोग किया जाता है?",
-        "options_en": ["Oxygen", "Hydrogen", "Helium", "Nitrogen"],
-        "options_hi": ["ऑक्सीजन", "हाइड्रोजन", "हीलियम", "नाइट्रोजन"],
-        "answer_en": "Helium",
-        "answer_hi": "हीलियम",
+        "question_en": "What does 'std::iter::Iterator::skip' do?",
+        "question_hi": "'std::iter::Iterator::skip' क्या करता है?",
+        "options_en": ["Skip first n elements", "Skip all elements", "Skip last elements", "Skip random elements"],
+        "options_hi": ["पहले n तत्व छोड़ें", "सभी तत्व छोड़ें", "अंतिम तत्व छोड़ें", "यादृच्छिक तत्व छोड़ें"],
+        "answer_en": "Skip first n elements",
+        "answer_hi": "पहले n तत्व छोड़ें",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 67,
-        "question_en": "What is the value of sin 30°?",
-        "question_hi": "sin 30° का मान क्या है?",
-        "options_en": ["0", "0.5", "1", "√3/2"],
-        "options_hi": ["0", "0.5", "1", "√3/2"],
-        "answer_en": "0.5",
-        "answer_hi": "0.5",
+        "question_en": "What is the main use of 'std::iter::Iterator::peekable'?",
+        "question_hi": "'std::iter::Iterator::peekable' का मुख्य उपयोग क्या है?",
+        "options_en": ["Look at next element without consuming", "Peek at memory", "Check performance", "Inspect values"],
+        "options_hi": ["उपभोग किए बिना अगले तत्व को देखें", "मेमोरी पर झांकें", "प्रदर्शन जांच", "मानों का निरीक्षण"],
+        "answer_en": "Look at next element without consuming",
+        "answer_hi": "उपभोग किए बिना अगले तत्व को देखें",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 68,
-        "question_en": "Who wrote 'Mahabharata'?",
-        "question_hi": "'महाभारत' किसने लिखी?",
-        "options_en": ["Valmiki", "Ved Vyas", "Tulsidas", "Kalidas"],
-        "options_hi": ["वाल्मीकि", "वेद व्यास", "तुलसीदास", "कालिदास"],
-        "answer_en": "Ved Vyas",
-        "answer_hi": "वेद व्यास",
+        "question_en": "What does 'std::iter::Iterator::fuse' do?",
+        "question_hi": "'std::iter::Iterator::fuse' क्या करता है?",
+        "options_en": ["Make iterator continue returning None after first None", "Fuse elements together", "Melt iterator", "Combine iterators"],
+        "options_hi": ["पहले None के बाद iterator को None लौटाते रहने दें", "तत्वों को एक साथ फ्यूज", "इटरेटर पिघलाएं", "इटरेटर्स संयोजित"],
+        "answer_en": "Make iterator continue returning None after first None",
+        "answer_hi": "पहले None के बाद iterator को None लौटाते रहने दें",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 69,
-        "question_en": "What is the chemical symbol for iron?",
-        "question_hi": "लोहे का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Ir", "Fe", "In", "Io"],
-        "options_hi": ["Ir", "Fe", "In", "Io"],
-        "answer_en": "Fe",
-        "answer_hi": "Fe",
+        "question_en": "What is the purpose of 'std::iter::Iterator::inspect'?",
+        "question_hi": "'std::iter::Iterator::inspect' का उद्देश्य क्या है?",
+        "options_en": ["Debug elements without modifying", "Inspect memory", "Check types", "Validate values"],
+        "options_hi": ["संशोधित किए बिना तत्वों को डिबग", "मेमोरी निरीक्षण", "प्रकार जांच", "मानों को मान्य"],
+        "answer_en": "Debug elements without modifying",
+        "answer_hi": "संशोधित किए बिना तत्वों को डिबग",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 70,
-        "question_en": "Which is the national tree of India?",
-        "question_hi": "भारत का राष्ट्रीय वृक्ष कौन सा है?",
-        "options_en": ["Banyan", "Neem", "Peepal", "Mango"],
-        "options_hi": ["बरगद", "नीम", "पीपल", "आम"],
-        "answer_en": "Banyan",
-        "answer_hi": "बरगद",
+        "question_en": "What does 'std::iter::Iterator::partition' do?",
+        "question_hi": "'std::iter::Iterator::partition' क्या करता है?",
+        "options_en": ["Split iterator into two collections based on predicate", "Divide memory", "Split files", "Separate threads"],
+        "options_hi": ["प्रिडिकेट के आधार पर iterator को दो संग्रहों में विभाजित", "मेमोरी विभाजित", "फ़ाइलें विभाजित", "थ्रेड्स अलग"],
+        "answer_en": "Split iterator into two collections based on predicate",
+        "answer_hi": "प्रिडिकेट के आधार पर iterator को दो संग्रहों में विभाजित",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 71,
-        "question_en": "What is the formula for density?",
-        "question_hi": "घनत्व का सूत्र क्या है?",
-        "options_en": ["mass/volume", "volume/mass", "mass × volume", "mass + volume"],
-        "options_hi": ["द्रव्यमान/आयतन", "आयतन/द्रव्यमान", "द्रव्यमान × आयतन", "द्रव्यमान + आयतन"],
-        "answer_en": "mass/volume",
-        "answer_hi": "द्रव्यमान/आयतन",
+        "question_en": "What is the main use of 'std::iter::Iterator::unzip'?",
+        "question_hi": "'std::iter::Iterator::unzip' का मुख्य उपयोग क्या है?",
+        "options_en": ["Convert pairs into two separate collections", "Extract compressed data", "Decompress files", "Separate values"],
+        "options_hi": ["जोड़ों को दो अलग-अलग संग्रहों में बदलें", "संपीड़ित डेटा निकालें", "फ़ाइलें डीकंप्रेस", "मान अलग"],
+        "answer_en": "Convert pairs into two separate collections",
+        "answer_hi": "जोड़ों को दो अलग-अलग संग्रहों में बदलें",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 72,
-        "question_en": "Who invented the computer?",
-        "question_hi": "कंप्यूटर का आविष्कार किसने किया?",
-        "options_en": ["Charles Babbage", "Alan Turing", "Bill Gates", "Steve Jobs"],
-        "options_hi": ["चार्ल्स बैबेज", "एलन ट्यूरिंग", "बिल गेट्स", "स्टीव जॉब्स"],
-        "answer_en": "Charles Babbage",
-        "answer_hi": "चार्ल्स बैबेज",
+        "question_en": "What does 'std::iter::Iterator::copied' do?",
+        "question_hi": "'std::iter::Iterator::copied' क्या करता है?",
+        "options_en": ["Copy each element (must be Copy type)", "Create copies in memory", "Duplicate iterator", "Clone elements"],
+        "options_hi": ["प्रत्येक तत्व की प्रतिलिपि बनाएं (Copy प्रकार होना चाहिए)", "मेमोरी में प्रतिलिपि बनाएं", "इटरेटर डुप्लिकेट", "तत्वों को क्लोन"],
+        "answer_en": "Copy each element (must be Copy type)",
+        "answer_hi": "प्रत्येक तत्व की प्रतिलिपि बनाएं (Copy प्रकार होना चाहिए)",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 73,
-        "question_en": "What is the chemical formula of sulfuric acid?",
-        "question_hi": "सल्फ्यूरिक अम्ल का रासायनिक सूत्र क्या है?",
-        "options_en": ["H₂SO₄", "HCl", "HNO₃", "H₃PO₄"],
-        "options_hi": ["H₂SO₄", "HCl", "HNO₃", "H₃PO₄"],
-        "answer_en": "H₂SO₄",
-        "answer_hi": "H₂SO₄",
+        "question_en": "What is the purpose of 'std::iter::Iterator::cloned'?",
+        "question_hi": "'std::iter::Iterator::cloned' का उद्देश्य क्या है?",
+        "options_en": ["Clone each element (must be Clone type)", "Create clones in memory", "Duplicate iterator", "Copy elements"],
+        "options_hi": ["प्रत्येक तत्व को क्लोन करें (Clone प्रकार होना चाहिए)", "मेमोरी में क्लोन बनाएं", "इटरेटर डुप्लिकेट", "तत्वों की प्रतिलिपि"],
+        "answer_en": "Clone each element (must be Clone type)",
+        "answer_hi": "प्रत्येक तत्व को क्लोन करें (Clone प्रकार होना चाहिए)",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 74,
-        "question_en": "Which is the smallest country in the world?",
-        "question_hi": "दुनिया का सबसे छोटा देश कौन सा है?",
-        "options_en": ["Monaco", "Vatican City", "San Marino", "Liechtenstein"],
-        "options_hi": ["मोनाको", "वेटिकन सिटी", "सैन मैरिनो", "लिकटेंस्टीन"],
-        "answer_en": "Vatican City",
-        "answer_hi": "वेटिकन सिटी",
+        "question_en": "What does 'std::iter::Iterator::cycle' create?",
+        "question_hi": "'std::iter::Iterator::cycle' क्या बनाता है?",
+        "options_en": ["Infinite iterator repeating sequence", "Circular buffer", "Looping mechanism", "Cyclic pattern"],
+        "options_hi": ["अनंत इटरेटर दोहराता अनुक्रम", "सर्कुलर बफर", "लूपिंग तंत्र", "चक्रीय पैटर्न"],
+        "answer_en": "Infinite iterator repeating sequence",
+        "answer_hi": "अनंत इटरेटर दोहराता अनुक्रम",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 75,
-        "question_en": "What is the value of 3² + 4²?",
-        "question_hi": "3² + 4² का मान क्या है?",
-        "options_en": ["7", "12", "25", "49"],
-        "options_hi": ["7", "12", "25", "49"],
-        "answer_en": "25",
-        "answer_hi": "25",
+        "question_en": "What is the main use of 'std::iter::Iterator::min'?",
+        "question_hi": "'std::iter::Iterator::min' का मुख्य उपयोग क्या है?",
+        "options_en": ["Find minimum element", "Reduce memory", "Minimize values", "Find smallest type"],
+        "options_hi": ["न्यूनतम तत्व खोजें", "मेमोरी कम", "मानों को छोटा", "सबसे छोटा प्रकार खोजें"],
+        "answer_en": "Find minimum element",
+        "answer_hi": "न्यूनतम तत्व खोजें",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 76,
-        "question_en": "Which gas is known as 'Laughing Gas'?",
-        "question_hi": "किस गैस को 'हंसाने वाली गैस' कहा जाता है?",
-        "options_en": ["Oxygen", "Nitrous oxide", "Carbon dioxide", "Helium"],
-        "options_hi": ["ऑक्सीजन", "नाइट्रस ऑक्साइड", "कार्बन डाइऑक्साइड", "हीलियम"],
-        "answer_en": "Nitrous oxide",
-        "answer_hi": "नाइट्रस ऑक्साइड",
+        "question_en": "What does 'std::iter::Iterator::max' return?",
+        "question_hi": "'std::iter::Iterator::max' क्या लौटाता है?",
+        "options_en": ["Maximum element", "Largest memory", "Maximum performance", "Biggest type"],
+        "options_hi": ["अधिकतम तत्व", "सबसे बड़ी मेमोरी", "अधिकतम प्रदर्शन", "सबसे बड़ा प्रकार"],
+        "answer_en": "Maximum element",
+        "answer_hi": "अधिकतम तत्व",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 77,
-        "question_en": "What is the capital of China?",
-        "question_hi": "चीन की राजधानी क्या है?",
-        "options_en": ["Shanghai", "Beijing", "Hong Kong", "Guangzhou"],
-        "options_hi": ["शंघाई", "बीजिंग", "हांगकांग", "ग्वांगझोउ"],
-        "answer_en": "Beijing",
-        "answer_hi": "बीजिंग",
+        "question_en": "What is the purpose of 'std::iter::Iterator::sum'?",
+        "question_hi": "'std::iter::Iterator::sum' का उद्देश्य क्या है?",
+        "options_en": ["Compute sum of all elements", "Summarize data", "Reduce memory", "Add numbers"],
+        "options_hi": ["सभी तत्वों का योग गणना", "डेटा सारांश", "मेमोरी कम", "नंबर जोड़ें"],
+        "answer_en": "Compute sum of all elements",
+        "answer_hi": "सभी तत्वों का योग गणना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 78,
-        "question_en": "Who discovered America?",
-        "question_hi": "अमेरिका की खोज किसने की?",
-        "options_en": ["Christopher Columbus", "Vasco da Gama", "Marco Polo", "Ferdinand Magellan"],
-        "options_hi": ["क्रिस्टोफर कोलंबस", "वास्को डी गामा", "मार्को पोलो", "फर्डिनेंड मैगलन"],
-        "answer_en": "Christopher Columbus",
-        "answer_hi": "क्रिस्टोफर कोलंबस",
+        "question_en": "What does 'std::iter::Iterator::product' compute?",
+        "question_hi": "'std::iter::Iterator::product' क्या गणना करता है?",
+        "options_en": ["Product of all elements", "Production rate", "Memory product", "Performance product"],
+        "options_hi": ["सभी तत्वों का गुणनफल", "उत्पादन दर", "मेमोरी उत्पाद", "प्रदर्शन उत्पाद"],
+        "answer_en": "Product of all elements",
+        "answer_hi": "सभी तत्वों का गुणनफल",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 79,
-        "question_en": "What is the chemical formula of ammonia?",
-        "question_hi": "अमोनिया का रासायनिक सूत्र क्या है?",
-        "options_en": ["NH₃", "NH₄", "N₂H₄", "HNO₃"],
-        "options_hi": ["NH₃", "NH₄", "N₂H₄", "HNO₃"],
-        "answer_en": "NH₃",
-        "answer_hi": "NH₃",
+        "question_en": "What is the main use of 'std::iter::Iterator::count'?",
+        "question_hi": "'std::iter::Iterator::count' का मुख्य उपयोग क्या है?",
+        "options_en": ["Count number of elements", "Count memory usage", "Count threads", "Count files"],
+        "options_hi": ["तत्वों की संख्या गिनें", "मेमोरी उपयोग गिनें", "थ्रेड्स गिनें", "फ़ाइलें गिनें"],
+        "answer_en": "Count number of elements",
+        "answer_hi": "तत्वों की संख्या गिनें",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 80,
-        "question_en": "Which is the largest mammal?",
-        "question_hi": "सबसे बड़ा स्तनपायी कौन सा है?",
-        "options_en": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
-        "options_hi": ["हाथी", "ब्लू व्हेल", "जिराफ", "दरियाई घोड़ा"],
-        "answer_en": "Blue Whale",
-        "answer_hi": "ब्लू व्हेल",
+        "question_en": "What does 'std::iter::Iterator::last' return?",
+        "question_hi": "'std::iter::Iterator::last' क्या लौटाता है?",
+        "options_en": ["Last element of iterator", "First element", "Random element", "Middle element"],
+        "options_hi": ["इटरेटर का अंतिम तत्व", "पहला तत्व", "यादृच्छिक तत्व", "मध्य तत्व"],
+        "answer_en": "Last element of iterator",
+        "answer_hi": "इटरेटर का अंतिम तत्व",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 81,
-        "question_en": "What is the value of √144?",
-        "question_hi": "√144 का मान क्या है?",
-        "options_en": ["12", "14", "16", "18"],
-        "options_hi": ["12", "14", "16", "18"],
-        "answer_en": "12",
-        "answer_hi": "12",
+        "question_en": "What is the purpose of 'std::iter::Iterator::nth'?",
+        "question_hi": "'std::iter::Iterator::nth' का उद्देश्य क्या है?",
+        "options_en": ["Get element at specific index", "Find nth occurrence", "Count to n", "Skip n elements"],
+        "options_hi": ["विशिष्ट इंडेक्स पर तत्व प्राप्त", "nवीं घटना खोजें", "n तक गिनें", "n तत्व छोड़ें"],
+        "answer_en": "Get element at specific index",
+        "answer_hi": "विशिष्ट इंडेक्स पर तत्व प्राप्त",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 82,
-        "question_en": "Who was the first woman to win Nobel Prize?",
-        "question_hi": "नोबेल पुरस्कार जीतने वाली पहली महिला कौन थीं?",
-        "options_en": ["Marie Curie", "Mother Teresa", "Rosalind Franklin", "Dorothy Hodgkin"],
-        "options_hi": ["मैरी क्यूरी", "मदर टेरेसा", "रोजालिंड फ्रैंकलिन", "डोरोथी हॉजकिन"],
-        "answer_en": "Marie Curie",
-        "answer_hi": "मैरी क्यूरी",
+        "question_en": "What does 'std::iter::Iterator::step_by' create?",
+        "question_hi": "'std::iter::Iterator::step_by' क्या बनाता है?",
+        "options_en": ["Iterator stepping by given amount", "Stepping stone", "Incremental iterator", "Decremental iterator"],
+        "options_hi": ["दी गई मात्रा से स्टेपिंग इटरेटर", "स्टेपिंग स्टोन", "वृद्धिशील इटरेटर", "घटता इटरेटर"],
+        "answer_en": "Iterator stepping by given amount",
+        "answer_hi": "दी गई मात्रा से स्टेपिंग इटरेटर",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 83,
-        "question_en": "What is the SI unit of temperature?",
-        "question_hi": "तापमान की SI इकाई क्या है?",
-        "options_en": ["Celsius", "Fahrenheit", "Kelvin", "Rankine"],
-        "options_hi": ["सेल्सियस", "फारेनहाइट", "केल्विन", "रैंकिन"],
-        "answer_en": "Kelvin",
-        "answer_hi": "केल्विन",
+        "question_en": "What is the main use of 'std::iter::Iterator::chain'?",
+        "question_hi": "'std::iter::Iterator::chain' का मुख्य उपयोग क्या है?",
+        "options_en": ["Concatenate multiple iterators", "Create chain reaction", "Link elements", "Connect values"],
+        "options_hi": ["एकाधिक इटरेटर्स को संयोजित", "चेन रिएक्शन बनाएं", "तत्वों को लिंक", "मानों को कनेक्ट"],
+        "answer_en": "Concatenate multiple iterators",
+        "answer_hi": "एकाधिक इटरेटर्स को संयोजित",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 84,
-        "question_en": "Which planet has the most moons?",
-        "question_hi": "किस ग्रह के सबसे अधिक चंद्रमा हैं?",
-        "options_en": ["Jupiter", "Saturn", "Uranus", "Neptune"],
-        "options_hi": ["बृहस्पति", "शनि", "अरुण", "वरुण"],
-        "answer_en": "Saturn",
-        "answer_hi": "शनि",
+        "question_en": "What does 'std::iter::Iterator::zip' combine?",
+        "question_hi": "'std::iter::Iterator::zip' क्या संयोजित करता है?",
+        "options_en": ["Two iterators into pairs", "Multiple iterators", "Memory locations", "Thread operations"],
+        "options_hi": ["दो इटरेटर्स को जोड़े में", "एकाधिक इटरेटर्स", "मेमोरी लोकेशन", "थ्रेड ऑपरेशन"],
+        "answer_en": "Two iterators into pairs",
+        "answer_hi": "दो इटरेटर्स को जोड़े में",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 85,
-        "question_en": "What is the formula for perimeter of a rectangle?",
-        "question_hi": "आयत के परिमाप का सूत्र क्या है?",
-        "options_en": ["2(l + b)", "l × b", "l + b", "4 × side"],
-        "options_hi": ["2(l + b)", "l × b", "l + b", "4 × भुजा"],
-        "answer_en": "2(l + b)",
-        "answer_hi": "2(l + b)",
+        "question_en": "What is the purpose of 'std::iter::Iterator::map_while'?",
+        "question_hi": "'std::iter::Iterator::map_while' का उद्देश्य क्या है?",
+        "options_en": ["Map elements until None is returned", "Map while condition true", "Map with while loop", "Map without condition"],
+        "options_hi": ["तत्वों को मैप करें जब तक None न लौटे", "मैप जब शर्त सत्य", "व्हाइल लूप के साथ मैप", "बिना शर्त के मैप"],
+        "answer_en": "Map elements until None is returned",
+        "answer_hi": "तत्वों को मैप करें जब तक None न लौटे",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 86,
-        "question_en": "Which gas is used in refrigerators?",
-        "question_hi": "रेफ्रिजरेटर में किस गैस का उपयोग किया जाता है?",
-        "options_en": ["Ammonia", "Freon", "Both A and B", "Carbon dioxide"],
-        "options_hi": ["अमोनिया", "फ्रेऑन", "A और B दोनों", "कार्बन डाइऑक्साइड"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "What does 'std::iter::Iterator::scan' provide?",
+        "question_hi": "'std::iter::Iterator::scan' क्या प्रदान करता है?",
+        "options_en": ["Stateful mapping with early termination", "Scan memory", "Check elements", "Inspect values"],
+        "options_hi": ["प्रारंभिक समाप्ति के साथ स्टेटफुल मैपिंग", "मेमोरी स्कैन", "तत्वों की जांच", "मानों का निरीक्षण"],
+        "answer_en": "Stateful mapping with early termination",
+        "answer_hi": "प्रारंभिक समाप्ति के साथ स्टेटफुल मैपिंग",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 87,
-        "question_en": "What is the value of cos 90°?",
-        "question_hi": "cos 90° का मान क्या है?",
-        "options_en": ["0", "1", "0.5", "√3/2"],
-        "options_hi": ["0", "1", "0.5", "√3/2"],
-        "answer_en": "0",
-        "answer_hi": "0",
+        "question_en": "What is the main use of 'std::iter::Iterator::flat_map'?",
+        "question_hi": "'std::iter::Iterator::flat_map' का मुख्य उपयोग क्या है?",
+        "options_en": ["Map and flatten nested iterators", "Flatten memory", "Map flat structures", "Create flat arrays"],
+        "options_hi": ["मैप और नेस्टेड इटरेटर्स को फ्लैटन", "मेमोरी फ्लैटन", "फ्लैट संरचनाओं को मैप", "फ्लैट ऐरे बनाएं"],
+        "answer_en": "Map and flatten nested iterators",
+        "answer_hi": "मैप और नेस्टेड इटरेटर्स को फ्लैटन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 88,
-        "question_en": "Who wrote 'Ramcharitmanas'?",
-        "question_hi": "'रामचरितमानस' किसने लिखी?",
-        "options_en": ["Tulsidas", "Surdas", "Kabir", "Mirabai"],
-        "options_hi": ["तुलसीदास", "सूरदास", "कबीर", "मीराबाई"],
-        "answer_en": "Tulsidas",
-        "answer_hi": "तुलसीदास",
+        "question_en": "What does 'std::iter::Iterator::flatten' do?",
+        "question_hi": "'std::iter::Iterator::flatten' क्या करता है?",
+        "options_en": ["Flatten nested iterators", "Flatten memory", "Make values flat", "Create flat structures"],
+        "options_hi": ["नेस्टेड इटरेटर्स को फ्लैटन", "मेमोरी फ्लैटन", "मानों को फ्लैट बनाएं", "फ्लैट संरचनाएं बनाएं"],
+        "answer_en": "Flatten nested iterators",
+        "answer_hi": "नेस्टेड इटरेटर्स को फ्लैटन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 89,
-        "question_en": "What is the chemical symbol for sodium?",
-        "question_hi": "सोडियम का रासायनिक प्रतीक क्या है?",
-        "options_en": ["So", "Sd", "Na", "Nm"],
-        "options_hi": ["So", "Sd", "Na", "Nm"],
-        "answer_en": "Na",
-        "answer_hi": "Na",
+        "question_en": "What is the purpose of 'std::iter::Iterator::try_fold'?",
+        "question_hi": "'std::iter::Iterator::try_fold' का उद्देश्य क्या है?",
+        "options_en": ["Fold that can fail with Result", "Try to fold paper", "Attempt memory fold", "Experimental fold"],
+        "options_hi": ["फोल्ड जो Result के साथ विफल हो सकता है", "पेपर फोल्ड करने का प्रयास", "मेमोरी फोल्ड का प्रयास", "प्रायोगिक फोल्ड"],
+        "answer_en": "Fold that can fail with Result",
+        "answer_hi": "फोल्ड जो Result के साथ विफल हो सकता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 90,
-        "question_en": "Which is the national aquatic animal of India?",
-        "question_hi": "भारत का राष्ट्रीय जलीय जानवर कौन सा है?",
-        "options_en": ["Dolphin", "River Dolphin", "Whale", "Shark"],
-        "options_hi": ["डॉल्फिन", "रिवर डॉल्फिन", "व्हेल", "शार्क"],
-        "answer_en": "River Dolphin",
-        "answer_hi": "रिवर डॉल्फिन",
+        "question_en": "What does 'std::iter::Iterator::try_for_each' do?",
+        "question_hi": "'std::iter::Iterator::try_for_each' क्या करता है?",
+        "options_en": ["Apply function that can fail to each element", "Try to process elements", "Attempt iteration", "Experimental for_each"],
+        "options_hi": ["प्रत्येक तत्व पर फ़ंक्शन लागू करें जो विफल हो सकता है", "तत्वों को संसाधित करने का प्रयास", "पुनरावृत्ति का प्रयास", "प्रायोगिक for_each"],
+        "answer_en": "Apply function that can fail to each element",
+        "answer_hi": "प्रत्येक तत्व पर फ़ंक्शन लागू करें जो विफल हो सकता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 91,
-        "question_en": "What is the formula for speed?",
-        "question_hi": "गति का सूत्र क्या है?",
-        "options_en": ["distance/time", "time/distance", "distance × time", "distance + time"],
-        "options_hi": ["दूरी/समय", "समय/दूरी", "दूरी × समय", "दूरी + समय"],
-        "answer_en": "distance/time",
-        "answer_hi": "दूरी/समय",
+        "question_en": "What is the main use of 'std::iter::Iterator::position'?",
+        "question_hi": "'std::iter::Iterator::position' का मुख्य उपयोग क्या है?",
+        "options_en": ["Find position of element matching predicate", "Position memory", "Locate elements", "Find coordinates"],
+        "options_hi": ["प्रिडिकेट से मेल खाने वाले तत्व की स्थिति खोजें", "मेमोरी स्थिति", "तत्वों का पता लगाएं", "निर्देशांक खोजें"],
+        "answer_en": "Find position of element matching predicate",
+        "answer_hi": "प्रिडिकेट से मेल खाने वाले तत्व की स्थिति खोजें",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 92,
-        "question_en": "Who invented the light bulb?",
-        "question_hi": "बल्ब का आविष्कार किसने किया?",
-        "options_en": ["Thomas Edison", "Nikola Tesla", "Alexander Graham Bell", "Benjamin Franklin"],
-        "options_hi": ["थॉमस एडिसन", "निकोला टेस्ला", "अलेक्जेंडर ग्राहम बेल", "बेंजामिन फ्रैंकलिन"],
-        "answer_en": "Thomas Edison",
-        "answer_hi": "थॉमस एडिसन",
+        "question_en": "What does 'std::iter::Iterator::rposition' find?",
+        "question_hi": "'std::iter::Iterator::rposition' क्या ढूंढता है?",
+        "options_en": ["Position from the end matching predicate", "Reverse position", "Random position", "Relative position"],
+        "options_hi": ["अंत से प्रिडिकेट से मेल खाने वाली स्थिति", "रिवर्स स्थिति", "यादृच्छिक स्थिति", "सापेक्ष स्थिति"],
+        "answer_en": "Position from the end matching predicate",
+        "answer_hi": "अंत से प्रिडिकेट से मेल खाने वाली स्थिति",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 93,
-        "question_en": "What is the chemical formula of baking soda?",
-        "question_hi": "बेकिंग सोडा का रासायनिक सूत्र क्या है?",
-        "options_en": ["Na₂CO₃", "NaHCO₃", "NaOH", "NaCl"],
-        "options_hi": ["Na₂CO₃", "NaHCO₃", "NaOH", "NaCl"],
-        "answer_en": "NaHCO₃",
-        "answer_hi": "NaHCO₃",
+        "question_en": "What is the purpose of 'std::iter::Iterator::max_by'?",
+        "question_hi": "'std::iter::Iterator::max_by' का उद्देश्य क्या है?",
+        "options_en": ["Find maximum using comparison function", "Maximize by criteria", "Find largest with function", "Get max with custom logic"],
+        "options_hi": ["तुलना फ़ंक्शन का उपयोग करके अधिकतम खोजें", "मानदंडों द्वारा अधिकतम", "फ़ंक्शन के साथ सबसे बड़ा खोजें", "कस्टम लॉजिक के साथ अधिकतम प्राप्त"],
+        "answer_en": "Find maximum using comparison function",
+        "answer_hi": "तुलना फ़ंक्शन का उपयोग करके अधिकतम खोजें",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 94,
-        "question_en": "Which is the largest island in the world?",
-        "question_hi": "दुनिया का सबसे बड़ा द्वीप कौन सा है?",
-        "options_en": ["Greenland", "Australia", "Borneo", "Madagascar"],
-        "options_hi": ["ग्रीनलैंड", "ऑस्ट्रेलिया", "बोर्नियो", "मेडागास्कर"],
-        "answer_en": "Greenland",
-        "answer_hi": "ग्रीनलैंड",
+        "question_en": "What does 'std::iter::Iterator::min_by' return?",
+        "question_hi": "'std::iter::Iterator::min_by' क्या लौटाता है?",
+        "options_en": ["Minimum element using comparison function", "Smallest with custom logic", "Minimal value by criteria", "Least element with function"],
+        "options_hi": ["तुलना फ़ंक्शन का उपयोग करके न्यूनतम तत्व", "कस्टम लॉजिक के साथ सबसे छोटा", "मानदंडों द्वारा न्यूनतम मान", "फ़ंक्शन के साथ कम से कम तत्व"],
+        "answer_en": "Minimum element using comparison function",
+        "answer_hi": "तुलना फ़ंक्शन का उपयोग करके न्यूनतम तत्व",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 95,
-        "question_en": "What is the value of 8² - 6²?",
-        "question_hi": "8² - 6² का मान क्या है?",
-        "options_en": ["4", "14", "28", "100"],
-        "options_hi": ["4", "14", "28", "100"],
-        "answer_en": "28",
-        "answer_hi": "28",
+        "question_en": "What is the main use of 'std::iter::Iterator::unstable'?",
+        "question_hi": "'std::iter::Iterator::unstable' का मुख्य उपयोग क्या है?",
+        "options_en": ["This method doesn't exist in std", "Create unstable iterator", "Make iterator unstable", "Generate random order"],
+        "options_hi": ["यह विधि std में मौजूद नहीं है", "अस्थिर इटरेटर बनाएं", "इटरेटर को अस्थिर बनाएं", "यादृच्छिक क्रम उत्पन्न"],
+        "answer_en": "This method doesn't exist in std",
+        "answer_hi": "यह विधि std में मौजूद नहीं है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 96,
-        "question_en": "Which gas is used in welding?",
-        "question_hi": "वेल्डिंग में किस गैस का उपयोग किया जाता है?",
-        "options_en": ["Oxygen", "Acetylene", "Both A and B", "Hydrogen"],
-        "options_hi": ["ऑक्सीजन", "एसिटिलीन", "A और B दोनों", "हाइड्रोजन"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "What does 'std::iter::Iterator::cmp' do?",
+        "question_hi": "'std::iter::Iterator::cmp' क्या करता है?",
+        "options_en": ["Lexicographically compare two iterators", "Compare memory", "Check equality", "Validate order"],
+        "options_hi": ["लेक्सिकोग्राफिकली दो इटरेटर्स की तुलना", "मेमोरी तुलना", "समानता जांच", "क्रम मान्य"],
+        "answer_en": "Lexicographically compare two iterators",
+        "answer_hi": "लेक्सिकोग्राफिकली दो इटरेटर्स की तुलना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 97,
-        "question_en": "What is the capital of Russia?",
-        "question_hi": "रूस की राजधानी क्या है?",
-        "options_en": ["St. Petersburg", "Moscow", "Kiev", "Warsaw"],
-        "options_hi": ["सेंट पीटर्सबर्ग", "मॉस्को", "कीव", "वारसॉ"],
-        "answer_en": "Moscow",
-        "answer_hi": "मॉस्को",
+        "question_en": "What is the purpose of 'std::iter::Iterator::partial_cmp'?",
+        "question_hi": "'std::iter::Iterator::partial_cmp' का उद्देश्य क्या है?",
+        "options_en": ["Partial comparison of two iterators", "Compare parts", "Check partial equality", "Validate partial order"],
+        "options_hi": ["दो इटरेटर्स की आंशिक तुलना", "भागों की तुलना", "आंशिक समानता जांच", "आंशिक क्रम मान्य"],
+        "answer_en": "Partial comparison of two iterators",
+        "answer_hi": "दो इटरेटर्स की आंशिक तुलना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 98,
-        "question_en": "Who discovered the circulation of blood?",
-        "question_hi": "रक्त संचार की खोज किसने की?",
-        "options_en": ["William Harvey", "Louis Pasteur", "Robert Koch", "Alexander Fleming"],
-        "options_hi": ["विलियम हार्वे", "लुई पाश्चर", "रॉबर्ट कोच", "अलेक्जेंडर फ्लेमिंग"],
-        "answer_en": "William Harvey",
-        "answer_hi": "विलियम हार्वे",
+        "question_en": "What does 'std::iter::Iterator::eq' check?",
+        "question_hi": "'std::iter::Iterator::eq' क्या जांचता है?",
+        "options_en": ["If two iterators are equal", "If elements are equal", "If memory equal", "If types equal"],
+        "options_hi": ["यदि दो इटरेटर्स बराबर हैं", "यदि तत्व बराबर हैं", "यदि मेमोरी बराबर", "यदि प्रकार बराबर"],
+        "answer_en": "If two iterators are equal",
+        "answer_hi": "यदि दो इटरेटर्स बराबर हैं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 99,
-        "question_en": "What is the chemical formula of vinegar?",
-        "question_hi": "सिरका का रासायनिक सूत्र क्या है?",
-        "options_en": ["CH₃COOH", "H₂SO₄", "HCl", "HNO₃"],
-        "options_hi": ["CH₃COOH", "H₂SO₄", "HCl", "HNO₃"],
-        "answer_en": "CH₃COOH",
-        "answer_hi": "CH₃COOH",
+        "question_en": "What is the main use of 'std::iter::Iterator::ne'?",
+        "question_hi": "'std::iter::Iterator::ne' का मुख्य उपयोग क्या है?",
+        "options_en": ["Check if two iterators are not equal", "Check inequality", "Verify difference", "Confirm non-equality"],
+        "options_hi": ["जांचें कि क्या दो इटरेटर्स बराबर नहीं हैं", "असमानता जांच", "अंतर सत्यापित", "गैर-समानता की पुष्टि"],
+        "answer_en": "Check if two iterators are not equal",
+        "answer_hi": "जांचें कि क्या दो इटरेटर्स बराबर नहीं हैं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 100,
-        "question_en": "Which is the fastest bird?",
-        "question_hi": "सबसे तेज उड़ने वाला पक्षी कौन सा है?",
-        "options_en": ["Eagle", "Peregrine Falcon", "Ostrich", "Hummingbird"],
-        "options_hi": ["गरुड़", "पेरेग्रिन फाल्कन", "शुतुरमुर्ग", "हमिंगबर्ड"],
-        "answer_en": "Peregrine Falcon",
-        "answer_hi": "पेरेग्रिन फाल्कन",
+        "question_en": "What does 'std::iter::Iterator::lt' determine?",
+        "question_hi": "'std::iter::Iterator::lt' क्या निर्धारित करता है?",
+        "options_en": ["If first iterator is lexicographically less than second", "If less than memory", "If smaller size", "If lower performance"],
+        "options_hi": ["यदि पहला इटरेटर लेक्सिकोग्राफिकली दूसरे से कम है", "यदि मेमोरी से कम", "यदि छोटा आकार", "यदि कम प्रदर्शन"],
+        "answer_en": "If first iterator is lexicographically less than second",
+        "answer_hi": "यदि पहला इटरेटर लेक्सिकोग्राफिकली दूसरे से कम है",
         "attempted": false,
         "selected": ""
     }
-        
-// Add more questions here...
 ];
-
-
-let currentQuestion = 0; 
+// --------------------------- GLOBAL VARS -----------------------------
+let currentQuestion = 0;
 let language = "en";
-// let timeLeft = 180 * 60; // 180 minutes
-let timeLeft = 60 * 60; // 60 minutes
+let timeLeft = 60 * 60;   // 60 minutes timer
 let timerInterval;
 
-// ----------------- Quiz Logic -----------------
+// --------------------------- LOAD QUESTION ----------------------------
 function loadQuestion(index) {
     const q = questions[index];
-    document.getElementById("question").textContent = `${q.num}. ${
-        language === "en" ? q.question_en : q.question_hi
-    }`;
-    document.getElementById("questionCounter").textContent = `Question ${index + 1} of ${questions.length}`;
+
+    document.getElementById("question").textContent =
+        `${q.num}. ${language === "en" ? q.question_en : q.question_hi}`;
+
+    document.getElementById("questionCounter").textContent =
+        `Question ${index + 1} of ${questions.length}`;
 
     const optionsElement = document.getElementById("options");
     optionsElement.innerHTML = "";
@@ -1126,6 +1124,7 @@ function loadQuestion(index) {
     options.forEach((option) => {
         const isSelected = q.selected === option;
         const optionDiv = document.createElement("div");
+
         optionDiv.className = "option-box";
         optionDiv.style = `
             border: 2px solid ${isSelected ? "#007bff" : "#ccc"};
@@ -1134,12 +1133,11 @@ function loadQuestion(index) {
             border-radius: 8px;
             margin: 6px 0;
             cursor: pointer;
-            transition: all 0.2s;
         `;
 
         optionDiv.innerHTML = `
-            <input type="radio" name="option" value="${option}" ${isSelected ? "checked" : ""} style="margin-right:8px;">
-            ${option}
+            <input type="radio" name="option"
+            value="${option}" ${isSelected ? "checked" : ""} /> ${option}
         `;
 
         optionDiv.addEventListener("click", () => {
@@ -1153,12 +1151,14 @@ function loadQuestion(index) {
     updateNavigation();
 }
 
+// --------------------------- MARK ATTEMPT ----------------------------
 function markAttempted(index, selectedAnswer) {
     questions[index].attempted = true;
     questions[index].selected = selectedAnswer;
     updateNavigation();
 }
 
+// --------------------------- NEXT / PREV -----------------------------
 function nextQuestion() {
     if (currentQuestion < questions.length - 1) {
         currentQuestion++;
@@ -1173,296 +1173,150 @@ function prevQuestion() {
     }
 }
 
+// --------------------------- LANGUAGE CHANGE -------------------------
 function changeLanguage() {
     language = document.getElementById("languageSelect").value;
     loadQuestion(currentQuestion);
 }
 
-function submitQuiz() {
-    clearInterval(timerInterval);
-    let attempted = 0,
-        notAttempted = 0,
-        score = 0;
-
-    questions.forEach((q) => {
-        if (q.attempted) {
-            attempted++;
-            if (q.selected === q.answer_en || q.selected === q.answer_hi) score++;
-        } else notAttempted++;
-    });
-
-    alert(
-        `Quiz submitted!\nAttempted: ${attempted}\nNot Attempted: ${notAttempted}\nScore: ${score}/${questions.length}`
-    );
-}
-
+// --------------------------- TIMER -------------------------------
 function startTimer() {
     const timerElement = document.getElementById("timer");
     clearInterval(timerInterval);
+
     timerInterval = setInterval(() => {
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
-            alert("Time's up!");
+            alert("⏳ Time Over!");
             submitQuiz();
-        } else {
-            const hours = Math.floor(timeLeft / 3600);
-            const minutes = Math.floor((timeLeft % 3600) / 60);
-            const seconds = timeLeft % 60;
-            timerElement.textContent = `Time Left: ${hours
-                .toString()
-                .padStart(2, "0")}:${minutes
-                .toString()
-                .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
-            timeLeft--;
+            return;
         }
+
+        const h = Math.floor(timeLeft / 3600);
+        const m = Math.floor((timeLeft % 3600) / 60);
+        const s = timeLeft % 60;
+
+        timerElement.textContent =
+            `Time Left: ${h.toString().padStart(2, "0")}:${m
+                .toString().padStart(2, "0")}:${s.toString().padStart(2, "0")}`;
+
+        timeLeft--;
     }, 1000);
 }
 
+// --------------------------- SUBMIT QUIZ ---------------------
+function submitQuiz() {
+    let confirmation = confirm("Are you sure you want to submit the test?");
+    if (!confirmation) return;
 
+    clearInterval(timerInterval);
 
+    // Calculate time spent
+    const totalTimeSpent = (60 * 60) - timeLeft;
+    const mins = Math.floor(totalTimeSpent / 60);
+    const secs = totalTimeSpent % 60;
 
+    // Save to localStorage
+    localStorage.setItem("timeTaken", `${mins} min ${secs} sec`);
 
+    let attempted = 0;
+    let notAttempted = 0;
+    let score = 0;
+    const results = [];
 
-
-
-
-
-
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////all file and folder me code add karna hai 
-
-
-// submit 
-function jumpToQuestion(index) {
-            currentQuestion = index;
-            loadQuestion(index);
+    questions.forEach(q => {
+        if (q.attempted) {
+            attempted++;
+            if (q.selected === q.answer_en || q.selected === q.answer_hi) {
+                score++;
+            }
+        } else {
+            notAttempted++;
         }
 
-        function submitQuiz() {
-            let confirmation = confirm("Are you sure you want to submit the test?");
-            
-            if (!confirmation) {
-                return; // अगर यूज़र 'Cancel' करता है तो आगे नहीं बढ़ेंगे
-            }
+        results.push({
+            question: language === "en" ? q.question_en : q.question_hi,
+            selected: q.selected || "Not Answered",
+            correct: language === "en" ? q.answer_en : q.answer_hi
+        });
+    });
 
-            let attempted = 0;
-            let notAttempted = 0;
-            let score = 0;
-            const results = [];
+    // Save result data
+    localStorage.setItem("attempted", attempted);
+    localStorage.setItem("notAttempted", notAttempted);
+    localStorage.setItem("score", score);
+    localStorage.setItem("results", JSON.stringify(results));
 
-            questions.forEach(q => {
-                if (q.attempted) {
-                    attempted++;
-                    if (q.selected === q.answer) {
-                        score++;
-                    }
-                } else {
-                    notAttempted++;
-                }
-                results.push({ question: q.question, selected: q.selected || "Not Answered", correct: q.answer });
-            });
+    // Stop camera stream if active
+    if (videoStream) {
+        videoStream.getTracks().forEach(track => track.stop());
+    }
 
-            localStorage.setItem("attempted", attempted);
-            localStorage.setItem("notAttempted", notAttempted);
-            localStorage.setItem("score", score);
-            localStorage.setItem("results", JSON.stringify(results));
+    // Redirect
+    window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
+}
 
-            // रिजल्ट देखने से पहले एक और कन्फर्मेशन ले सकते हैं
-            let viewResult = confirm("Test submitted successfully! Do you want to view your result?");
-            if (viewResult) {
-                window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
-            }
-        }
-        window.onload = () => {
-            loadQuestion(currentQuestion);
-        };
-
-
+// --------------------------- NAVIGATION ------------------------------
 function updateNavigation() {
     const nav = document.getElementById("circleContainer");
     nav.innerHTML = "";
+
     questions.forEach((q, i) => {
         let color = "gray";
         if (i === currentQuestion) color = "blue";
         else if (q.attempted) color = "green";
-        nav.innerHTML += `<div class='circle' style='background-color:${color}' onclick='loadQuestion(${i})'>${i + 1}</div>`;
+
+        const circle = document.createElement("div");
+        circle.className = "circle";
+        circle.style.background = color;
+        circle.textContent = i + 1;
+        circle.onclick = () => jumpToQuestion(i);
+        nav.appendChild(circle);
     });
 }
 
-// ----------------- Camera & Movement Logic -----------------
+function jumpToQuestion(i) {
+    currentQuestion = i;
+    loadQuestion(i);
+}
+
+// --------------------------- CAMERA ----------------------
 let videoStream;
-let movementCount = 0;
 
 function startCamera() {
     const container = document.createElement("div");
     container.id = "camera-container";
     container.style.position = "fixed";
     container.style.top = "10px";
-    container.style.left = "10px"; // ✅ Left side
+    container.style.left = "10px";
     container.style.width = "130px";
     container.style.height = "130px";
-    container.style.zIndex = "9999";
     container.style.borderRadius = "50%";
     container.style.overflow = "hidden";
-    container.style.border = "3px solid red";
-    container.style.boxShadow = "0 0 10px rgba(0,0,0,0.3)";
-    container.style.cursor = "grab";
-    container.style.minWidth = "80px";
-    container.style.minHeight = "80px";
-    container.style.maxWidth = "250px";
-    container.style.maxHeight = "250px";
     container.style.background = "#000";
+    container.style.border = "3px solid red";
+    container.style.zIndex = "9999";
     document.body.appendChild(container);
 
     const video = document.createElement("video");
-    video.setAttribute("autoplay", true);
-    video.setAttribute("playsinline", true);
+    video.autoplay = true;
+    video.playsInline = true;
     video.style.width = "100%";
     video.style.height = "100%";
     video.style.objectFit = "cover";
     container.appendChild(video);
 
-    // ✅ Resize handle
-    const resizeHandle = document.createElement("div");
-    resizeHandle.style.position = "absolute";
-    resizeHandle.style.bottom = "2px";
-    resizeHandle.style.right = "2px";
-    resizeHandle.style.width = "15px";
-    resizeHandle.style.height = "15px";
-    resizeHandle.style.background = "rgba(255,255,255,0.7)";
-    resizeHandle.style.borderRadius = "4px";
-    resizeHandle.style.cursor = "se-resize";
-    container.appendChild(resizeHandle);
-
-    // ✅ Drag logic
-    let isDragging = false;
-    let offsetX, offsetY;
-
-    container.addEventListener("mousedown", (e) => {
-        if (e.target === resizeHandle) return;
-        isDragging = true;
-        offsetX = e.clientX - container.offsetLeft;
-        offsetY = e.clientY - container.offsetTop;
-        container.style.cursor = "grabbing";
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isDragging) return;
-        let x = e.clientX - offsetX;
-        let y = e.clientY - offsetY;
-        x = Math.max(0, Math.min(window.innerWidth - container.offsetWidth, x));
-        y = Math.max(0, Math.min(window.innerHeight - container.offsetHeight, y));
-        container.style.left = `${x}px`;
-        container.style.top = `${y}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isDragging = false;
-        container.style.cursor = "grab";
-    });
-
-    // ✅ Resize logic
-    let isResizing = false;
-    let startWidth, startHeight, startX, startY;
-
-    resizeHandle.addEventListener("mousedown", (e) => {
-        e.stopPropagation();
-        isResizing = true;
-        startWidth = container.offsetWidth;
-        startHeight = container.offsetHeight;
-        startX = e.clientX;
-        startY = e.clientY;
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isResizing) return;
-        const dx = e.clientX - startX;
-        const dy = e.clientY - startY;
-        const newSize = Math.max(80, Math.min(250, Math.max(startWidth + dx, startHeight + dy)));
-        container.style.width = `${newSize}px`;
-        container.style.height = `${newSize}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isResizing = false;
-    });
-
-    // ✅ Camera stream
     navigator.mediaDevices.getUserMedia({ video: true })
         .then(stream => {
             video.srcObject = stream;
             videoStream = stream;
-            detectMovement(video);
         })
-        .catch(err => {
-            console.error("Camera error:", err);
-            alert("Camera not accessible!");
-        });
+        .catch(() => alert("Camera not accessible!"));
 }
 
-function detectMovement(video) {
-    const canvas = document.createElement("canvas");
-    const ctx = canvas.getContext("2d");
-    canvas.width = 160;
-    canvas.height = 160;
-    let lastImageData = null;
-
-    setInterval(() => {
-        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-
-        if (lastImageData) {
-            let diff = 0;
-            for (let i = 0; i < imageData.data.length; i += 4) {
-                diff += Math.abs(imageData.data[i] - lastImageData.data[i]);
-            }
-
-            if (diff > 1000000) {
-                movementCount++;
-                if (movementCount === 1) {
-                    alert("⚠️ Alert 1: Face is not move");
-                } else if (movementCount === 2) {
-                    alert("⚠️ Alert 2: Head is not move");
-                } else if (movementCount === 3) {
-                    alert("⚠️ Alert 3: Test series is restarting...");
-                    restartTest();
-                }
-            }
-        }
-        lastImageData = imageData;
-    }, 2000);
-}
-
-function restartTest() {
-    if (videoStream) {
-        videoStream.getTracks().forEach(track => track.stop());
-    }
-    const camContainer = document.getElementById("camera-container");
-    if (camContainer) camContainer.remove();
-
-    movementCount = 0;
-    currentQuestion = 0;
-    timeLeft = 180 * 60;
-
-    questions.forEach(q => {
-        q.attempted = false;
-        q.selected = null;
-    });
-
-    loadQuestion(currentQuestion);
-    startTimer();
-    startCamera();
-}
-
-// ----------------- Page Load -----------------
+// --------------------------- PAGE LOAD --------------------------
 window.onload = function () {
     loadQuestion(currentQuestion);
     startTimer();
-    startCamera(); // ✅ Camera starts with test
+    startCamera();
 };
-
-
-///////////////////////////////////////

@@ -1,1135 +1,1120 @@
-const questions = [
-    // Biology (1-15)
+const questions=[
     {
         "num": 1,
-        "question_en": "Which part of the human brain is responsible for regulating body temperature?",
-        "question_hi": "मानव मस्तिष्क का कौन सा भाग शरीर के तापमान को नियंत्रित करने के लिए जिम्मेदार है?",
-        "options_en": ["Cerebrum", "Cerebellum", "Hypothalamus", "Medulla"],
-        "options_hi": ["सेरेब्रम", "सेरेबेलम", "हाइपोथैलेमस", "मेडुला"],
-        "answer_en": "Hypothalamus",
-        "answer_hi": "हाइपोथैलेमस",
+        "question_en": "What is Rust's primary design goal?",
+        "question_hi": "Rust का प्राथमिक डिज़ाइन लक्ष्य क्या है?",
+        "options_en": ["Memory safety without garbage collection", "Maximum performance", "Easiest syntax", "Web development focus"],
+        "options_hi": ["गार्बेज कलेक्शन के बिना मेमोरी सुरक्षा", "अधिकतम प्रदर्शन", "सबसे आसान सिंटैक्स", "वेब डेवलपमेंट फोकस"],
+        "answer_en": "Memory safety without garbage collection",
+        "answer_hi": "गार्बेज कलेक्शन के बिना मेमोरी सुरक्षा",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 2,
-        "question_en": "What is the process of conversion of light energy to chemical energy in plants called?",
-        "question_hi": "पौधों में प्रकाश ऊर्जा के रासायनिक ऊर्जा में परिवर्तन की प्रक्रिया को क्या कहा जाता है?",
-        "options_en": ["Respiration", "Transpiration", "Photosynthesis", "Fermentation"],
-        "options_hi": ["श्वसन", "वाष्पोत्सर्जन", "प्रकाश संश्लेषण", "किण्वन"],
-        "answer_en": "Photosynthesis",
-        "answer_hi": "प्रकाश संश्लेषण",
+        "question_en": "Which organization currently maintains Rust?",
+        "question_hi": "कौन सा संगठन वर्तमान में Rust को बनाए रखता है?",
+        "options_en": ["Rust Foundation", "Mozilla Foundation", "Google", "Microsoft"],
+        "options_hi": ["Rust Foundation", "Mozilla Foundation", "Google", "Microsoft"],
+        "answer_en": "Rust Foundation",
+        "answer_hi": "Rust Foundation",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 3,
-        "question_en": "Which blood cells are responsible for carrying oxygen in humans?",
-        "question_hi": "मनुष्यों में ऑक्सीजन ले जाने के लिए कौन सी रक्त कोशिकाएं जिम्मेदार हैं?",
-        "options_en": ["White Blood Cells", "Red Blood Cells", "Platelets", "Plasma"],
-        "options_hi": ["श्वेत रक्त कोशिकाएं", "लाल रक्त कोशिकाएं", "प्लेटलेट्स", "प्लाज्मा"],
-        "answer_en": "Red Blood Cells",
-        "answer_hi": "लाल रक्त कोशिकाएं",
+        "question_en": "What is the current stable Rust edition?",
+        "question_hi": "वर्तमान स्थिर Rust edition कौन सी है?",
+        "options_en": ["2021", "2018", "2015", "2024"],
+        "options_hi": ["2021", "2018", "2015", "2024"],
+        "answer_en": "2021",
+        "answer_hi": "2021",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 4,
-        "question_en": "What is the basic structural and functional unit of the nervous system?",
-        "question_hi": "तंत्रिका तंत्र की मूल संरचनात्मक और कार्यात्मक इकाई क्या है?",
-        "options_en": ["Nephron", "Neuron", "Alveoli", "Cell"],
-        "options_hi": ["नेफ्रॉन", "न्यूरॉन", "एल्वियोली", "कोशिका"],
-        "answer_en": "Neuron",
-        "answer_hi": "न्यूरॉन",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 5,
-        "question_en": "Which plant hormone promotes cell division?",
-        "question_hi": "कौन सा पादप हार्मोन कोशिका विभाजन को बढ़ावा देता है?",
-        "options_en": ["Auxin", "Gibberellin", "Cytokinin", "Abscisic Acid"],
-        "options_hi": ["ऑक्सिन", "जिबरेलिन", "साइटोकाइनिन", "एब्सिसिक अम्ल"],
-        "answer_en": "Cytokinin",
-        "answer_hi": "साइटोकाइनिन",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 6,
-        "question_en": "What is the process of fusion of male and female gametes called?",
-        "question_hi": "नर और मादा युग्मकों के संलयन की प्रक्रिया को क्या कहा जाता है?",
-        "options_en": ["Fertilization", "Pollination", "Germination", "Reproduction"],
-        "options_hi": ["निषेचन", "परागण", "अंकुरण", "प्रजनन"],
-        "answer_en": "Fertilization",
-        "answer_hi": "निषेचन",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 7,
-        "question_en": "Which organ in humans produces insulin?",
-        "question_hi": "मनुष्यों में कौन सा अंग इंसुलिन उत्पन्न करता है?",
-        "options_en": ["Liver", "Pancreas", "Kidney", "Stomach"],
-        "options_hi": ["यकृत", "अग्न्याशय", "गुर्दा", "पेट"],
-        "answer_en": "Pancreas",
-        "answer_hi": "अग्न्याशय",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 8,
-        "question_en": "What is the study of fossils called?",
-        "question_hi": "जीवाश्मों के अध्ययन को क्या कहा जाता है?",
-        "options_en": ["Archaeology", "Paleontology", "Geology", "Ecology"],
-        "options_hi": ["पुरातत्व", "जीवाश्म विज्ञान", "भूविज्ञान", "पारिस्थितिकी"],
-        "answer_en": "Paleontology",
-        "answer_hi": "जीवाश्म विज्ञान",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 9,
-        "question_en": "Which part of the flower develops into a fruit?",
-        "question_hi": "फूल का कौन सा भाग फल में विकसित होता है?",
-        "options_en": ["Petal", "Sepal", "Ovary", "Stamen"],
-        "options_hi": ["पंखुड़ी", "बाह्यदल", "अंडाशय", "पुंकेसर"],
-        "answer_en": "Ovary",
-        "answer_hi": "अंडाशय",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 10,
-        "question_en": "What is the process of water movement through a plant called?",
-        "question_hi": "एक पौधे के माध्यम से जल की गति की प्रक्रिया को क्या कहा जाता है?",
-        "options_en": ["Transpiration", "Photosynthesis", "Respiration", "Osmosis"],
-        "options_hi": ["वाष्पोत्सर्जन", "प्रकाश संश्लेषण", "श्वसन", "परासरण"],
-        "answer_en": "Transpiration",
-        "answer_hi": "वाष्पोत्सर्जन",
-        "attempted": false,
-        "selected": ""
-    },
-
-    // Mathematics (11-25)
-    {
-        "num": 11,
-        "question_en": "What is the value of sin²θ + cos²θ?",
-        "question_hi": "sin²θ + cos²θ का मान क्या है?",
-        "options_en": ["0", "1", "2", "θ"],
-        "options_hi": ["0", "1", "2", "θ"],
-        "answer_en": "1",
-        "answer_hi": "1",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 12,
-        "question_en": "What is the formula for the area of a triangle?",
-        "question_hi": "त्रिभुज के क्षेत्रफल का सूत्र क्या है?",
-        "options_en": ["½ × base × height", "base × height", "½ × side²", "π × radius²"],
-        "options_hi": ["½ × आधार × ऊंचाई", "आधार × ऊंचाई", "½ × भुजा²", "π × त्रिज्या²"],
-        "answer_en": "½ × base × height",
-        "answer_hi": "½ × आधार × ऊंचाई",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 13,
-        "question_en": "What is the value of (a + b)²?",
-        "question_hi": "(a + b)² का मान क्या है?",
-        "options_en": ["a² + b²", "a² + 2ab + b²", "a² - 2ab + b²", "a² + b² + ab"],
-        "options_hi": ["a² + b²", "a² + 2ab + b²", "a² - 2ab + b²", "a² + b² + ab"],
-        "answer_en": "a² + 2ab + b²",
-        "answer_hi": "a² + 2ab + b²",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 14,
-        "question_en": "What is the probability of getting an even number when a die is thrown?",
-        "question_hi": "पासा फेंकने पर एक सम संख्या आने की प्रायिकता क्या है?",
-        "options_en": ["1/2", "1/3", "1/4", "1/6"],
-        "options_hi": ["1/2", "1/3", "1/4", "1/6"],
-        "answer_en": "1/2",
-        "answer_hi": "1/2",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 15,
-        "question_en": "What is the value of √144?",
-        "question_hi": "√144 का मान क्या है?",
-        "options_en": ["12", "14", "16", "18"],
-        "options_hi": ["12", "14", "16", "18"],
-        "answer_en": "12",
-        "answer_hi": "12",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 16,
-        "question_en": "What is the formula for the circumference of a circle?",
-        "question_hi": "वृत्त की परिधि का सूत्र क्या है?",
-        "options_en": ["2πr", "πr²", "πd", "Both A and C"],
-        "options_hi": ["2πr", "πr²", "πd", "A और C दोनों"],
+        "question_en": "How do you check Rust version?",
+        "question_hi": "Rust version कैसे चेक करते हैं?",
+        "options_en": ["rustc --version", "rust --version", "cargo --version", "Both A and C"],
+        "options_hi": ["rustc --version", "rust --version", "cargo --version", "A और C दोनों"],
         "answer_en": "Both A and C",
         "answer_hi": "A और C दोनों",
         "attempted": false,
         "selected": ""
     },
     {
+        "num": 5,
+        "question_en": "What is the Rust formatter tool?",
+        "question_hi": "Rust फॉर्मेटर टूल क्या है?",
+        "options_en": ["rustfmt", "cargo fmt", "rust-format", "Both A and B"],
+        "options_hi": ["rustfmt", "cargo fmt", "rust-format", "A और B दोनों"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 6,
+        "question_en": "How do you format Rust code?",
+        "question_hi": "Rust कोड को कैसे फॉर्मेट करते हैं?",
+        "options_en": ["cargo fmt", "rustfmt main.rs", "cargo format", "Both A and B"],
+        "options_hi": ["cargo fmt", "rustfmt main.rs", "cargo format", "A और B दोनों"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 7,
+        "question_en": "What is the Rust linter called?",
+        "question_hi": "Rust लिंटर को क्या कहते हैं?",
+        "options_en": ["clippy", "rust-lint", "cargo lint", "rust-check"],
+        "options_hi": ["clippy", "rust-lint", "cargo lint", "rust-check"],
+        "answer_en": "clippy",
+        "answer_hi": "clippy",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 8,
+        "question_en": "How do you run Clippy?",
+        "question_hi": "Clippy को कैसे चलाते हैं?",
+        "options_en": ["cargo clippy", "rust-clippy", "cargo check --clippy", "clippy check"],
+        "options_hi": ["cargo clippy", "rust-clippy", "cargo check --clippy", "clippy check"],
+        "answer_en": "cargo clippy",
+        "answer_hi": "cargo clippy",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 9,
+        "question_en": "What is the Rust documentation generator?",
+        "question_hi": "Rust डॉक्युमेंटेशन जेनरेटर क्या है?",
+        "options_en": ["rustdoc", "cargo doc", "rust-docs", "Both A and B"],
+        "options_hi": ["rustdoc", "cargo doc", "rust-docs", "A और B दोनों"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 10,
+        "question_en": "How do you generate documentation?",
+        "question_hi": "डॉक्युमेंटेशन कैसे जेनरेट करते हैं?",
+        "options_en": ["cargo doc", "rustdoc src/lib.rs", "cargo docs", "Both A and B"],
+        "options_hi": ["cargo doc", "rustdoc src/lib.rs", "cargo docs", "A और B दोनों"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 11,
+        "question_en": "What is the Rust playground?",
+        "question_hi": "Rust प्लेग्राउंड क्या है?",
+        "options_en": ["Online Rust code editor", "Rust game engine", "Rust testing framework", "Rust IDE"],
+        "options_hi": ["ऑनलाइन Rust कोड एडिटर", "Rust गेम इंजन", "Rust टेस्टिंग फ्रेमवर्क", "Rust IDE"],
+        "answer_en": "Online Rust code editor",
+        "answer_hi": "ऑनलाइन Rust कोड एडिटर",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 12,
+        "question_en": "Where is the official Rust playground hosted?",
+        "question_hi": "ऑफिशियल Rust प्लेग्राउंड कहाँ होस्टेड है?",
+        "options_en": ["play.rust-lang.org", "rust-playground.com", "play.rust.org", "rust-lang.org/play"],
+        "options_hi": ["play.rust-lang.org", "rust-playground.com", "play.rust.org", "rust-lang.org/play"],
+        "answer_en": "play.rust-lang.org",
+        "answer_hi": "play.rust-lang.org",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 13,
+        "question_en": "What is Cargo.toml used for?",
+        "question_hi": "Cargo.toml का उपयोग किस लिए किया जाता है?",
+        "options_en": ["Project configuration and dependencies", "Source code", "Build scripts", "Test files"],
+        "options_hi": ["प्रोजेक्ट कॉन्फिगरेशन और डिपेंडेंसीज", "सोर्स कोड", "बिल्ड स्क्रिप्ट्स", "टेस्ट फाइल्स"],
+        "answer_en": "Project configuration and dependencies",
+        "answer_hi": "प्रोजेक्ट कॉन्फिगरेशन और डिपेंडेंसीज",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 14,
+        "question_en": "What is the main source file for binary crates?",
+        "question_hi": "बाइनरी क्रेट्स के लिए मुख्य सोर्स फाइल क्या है?",
+        "options_en": ["src/main.rs", "src/lib.rs", "main.rs", "lib.rs"],
+        "options_hi": ["src/main.rs", "src/lib.rs", "main.rs", "lib.rs"],
+        "answer_en": "src/main.rs",
+        "answer_hi": "src/main.rs",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 15,
+        "question_en": "What is the main source file for library crates?",
+        "question_hi": "लाइब्रेरी क्रेट्स के लिए मुख्य सोर्स फाइल क्या है?",
+        "options_en": ["src/lib.rs", "src/main.rs", "lib.rs", "main.rs"],
+        "options_hi": ["src/lib.rs", "src/main.rs", "lib.rs", "main.rs"],
+        "answer_en": "src/lib.rs",
+        "answer_hi": "src/lib.rs",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 16,
+        "question_en": "How do you add a dependency in Cargo.toml?",
+        "question_hi": "Cargo.toml में डिपेंडेंसी कैसे ऐड करते हैं?",
+        "options_en": ["Add to [dependencies] section", "Use cargo add command", "Both A and B", "Add to [package] section"],
+        "options_hi": ["[dependencies] सेक्शन में ऐड करें", "cargo add कमांड यूज करें", "A और B दोनों", "[package] सेक्शन में ऐड करें"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
         "num": 17,
-        "question_en": "What is the value of 5! (factorial)?",
-        "question_hi": "5! (फैक्टोरियल) का मान क्या है?",
-        "options_en": ["120", "60", "24", "720"],
-        "options_hi": ["120", "60", "24", "720"],
-        "answer_en": "120",
-        "answer_hi": "120",
+        "question_en": "What command adds a dependency?",
+        "question_hi": "कौन सा कमांड डिपेंडेंसी ऐड करता है?",
+        "options_en": ["cargo add", "cargo install", "cargo get", "cargo dependency"],
+        "options_hi": ["cargo add", "cargo install", "cargo get", "cargo dependency"],
+        "answer_en": "cargo add",
+        "answer_hi": "cargo add",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 18,
-        "question_en": "What is the sum of the angles in a quadrilateral?",
-        "question_hi": "चतुर्भुज में कोणों का योग क्या होता है?",
-        "options_en": ["180°", "270°", "360°", "90°"],
-        "options_hi": ["180°", "270°", "360°", "90°"],
-        "answer_en": "360°",
-        "answer_hi": "360°",
+        "question_en": "How do you build in release mode?",
+        "question_hi": "रिलीज़ मोड में कैसे बिल्ड करते हैं?",
+        "options_en": ["cargo build --release", "cargo release", "cargo build -r", "Both A and C"],
+        "options_hi": ["cargo build --release", "cargo release", "cargo build -r", "A और C दोनों"],
+        "answer_en": "Both A and C",
+        "answer_hi": "A और C दोनों",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 19,
-        "question_en": "What is the formula for simple interest?",
-        "question_hi": "साधारण ब्याज का सूत्र क्या है?",
-        "options_en": ["PRT/100", "P(1+R/100)^T", "P + I", "P - I"],
-        "options_hi": ["PRT/100", "P(1+R/100)^T", "P + I", "P - I"],
-        "answer_en": "PRT/100",
-        "answer_hi": "PRT/100",
+        "question_en": "Where are release builds stored?",
+        "question_hi": "रिलीज़ बिल्ड्स कहाँ स्टोर होते हैं?",
+        "options_en": ["target/release/", "target/debug/", "build/release/", "release/"],
+        "options_hi": ["target/release/", "target/debug/", "build/release/", "release/"],
+        "answer_en": "target/release/",
+        "answer_hi": "target/release/",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 20,
-        "question_en": "What is the value of log₁₀1000?",
-        "question_hi": "log₁₀1000 का मान क्या है?",
-        "options_en": ["1", "2", "3", "4"],
-        "options_hi": ["1", "2", "3", "4"],
-        "answer_en": "3",
-        "answer_hi": "3",
+        "question_en": "How do you clean build artifacts?",
+        "question_hi": "बिल्ड आर्टिफैक्ट्स को कैसे क्लीन करते हैं?",
+        "options_en": ["cargo clean", "cargo clear", "cargo remove", "cargo purge"],
+        "options_hi": ["cargo clean", "cargo clear", "cargo remove", "cargo purge"],
+        "answer_en": "cargo clean",
+        "answer_hi": "cargo clean",
         "attempted": false,
         "selected": ""
     },
-
-    // Physics (26-40)
     {
         "num": 21,
-        "question_en": "What is the SI unit of power?",
-        "question_hi": "शक्ति की SI इकाई क्या है?",
-        "options_en": ["Joule", "Watt", "Newton", "Pascal"],
-        "options_hi": ["जूल", "वाट", "न्यूटन", "पास्कल"],
-        "answer_en": "Watt",
-        "answer_hi": "वाट",
+        "question_en": "What is the Rust standard library called?",
+        "question_hi": "Rust स्टैंडर्ड लाइब्रेरी को क्या कहते हैं?",
+        "options_en": ["std", "core", "alloc", "rustlib"],
+        "options_hi": ["std", "core", "alloc", "rustlib"],
+        "answer_en": "std",
+        "answer_hi": "std",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 22,
-        "question_en": "Which law states that pressure is inversely proportional to volume at constant temperature?",
-        "question_hi": "कौन सा नियम कहता है कि नियत तापमान पर दबाव आयतन के व्युत्क्रमानुपाती होता है?",
-        "options_en": ["Charles' Law", "Boyle's Law", "Gay-Lussac's Law", "Avogadro's Law"],
-        "options_hi": ["चार्ल्स का नियम", "बॉयल का नियम", "गे-लुसाक का नियम", "अवोगाद्रो का नियम"],
-        "answer_en": "Boyle's Law",
-        "answer_hi": "बॉयल का नियम",
+        "question_en": "How do you import the standard library?",
+        "question_hi": "स्टैंडर्ड लाइब्रेरी को कैसे इम्पोर्ट करते हैं?",
+        "options_en": ["use std::...", "import std::...", "include std::...", "require std::..."],
+        "options_hi": ["use std::...", "import std::...", "include std::...", "require std::..."],
+        "answer_en": "use std::...",
+        "answer_hi": "use std::...",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 23,
-        "question_en": "What is the unit of electric charge?",
-        "question_hi": "विद्युत आवेश की इकाई क्या है?",
-        "options_en": ["Volt", "Ampere", "Coulomb", "Ohm"],
-        "options_hi": ["वोल्ट", "एम्पियर", "कूलम्ब", "ओम"],
-        "answer_en": "Coulomb",
-        "answer_hi": "कूलम्ब",
+        "question_en": "What is the prelude?",
+        "question_hi": "प्रील्यूड क्या है?",
+        "options_en": ["Automatically imported items", "A type of function", "Build script", "Test module"],
+        "options_hi": ["ऑटोमैटिकली इम्पोर्टेड आइटम्स", "एक प्रकार का फ़ंक्शन", "बिल्ड स्क्रिप्ट", "टेस्ट मॉड्यूल"],
+        "answer_en": "Automatically imported items",
+        "answer_hi": "ऑटोमैटिकली इम्पोर्टेड आइटम्स",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 24,
-        "question_en": "What type of mirror is used in vehicles as rear view mirror?",
-        "question_hi": "वाहनों में रियर व्यू मिरर के रूप में किस प्रकार के दर्पण का उपयोग किया जाता है?",
-        "options_en": ["Plane Mirror", "Concave Mirror", "Convex Mirror", "Spherical Mirror"],
-        "options_hi": ["समतल दर्पण", "अवतल दर्पण", "उत्तल दर्पण", "गोलीय दर्पण"],
-        "answer_en": "Convex Mirror",
-        "answer_hi": "उत्तल दर्पण",
+        "question_en": "Which items are in the prelude?",
+        "question_hi": "प्रील्यूड में कौन से आइटम होते हैं?",
+        "options_en": ["Common traits and types", "All standard library", "Only macros", "Only functions"],
+        "options_hi": ["कॉमन ट्रेट्स और टाइप्स", "सारी स्टैंडर्ड लाइब्रेरी", "केवल मैक्रोज़", "केवल फ़ंक्शन्स"],
+        "answer_en": "Common traits and types",
+        "answer_hi": "कॉमन ट्रेट्स और टाइप्स",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 25,
-        "question_en": "What is the speed of light in vacuum?",
-        "question_hi": "निर्वात में प्रकाश की गति क्या है?",
-        "options_en": ["3 × 10⁸ m/s", "3 × 10⁶ m/s", "3 × 10⁵ m/s", "3 × 10¹⁰ m/s"],
-        "options_hi": ["3 × 10⁸ मी/से", "3 × 10⁶ मी/से", "3 × 10⁵ मी/से", "3 × 10¹⁰ मी/से"],
-        "answer_en": "3 × 10⁸ m/s",
-        "answer_hi": "3 × 10⁸ मी/से",
+        "question_en": "What is the Rust community forum?",
+        "question_hi": "Rust कम्युनिटी फोरम क्या है?",
+        "options_en": ["users.rust-lang.org", "forum.rust-lang.org", "discuss.rust-lang.org", "community.rust-lang.org"],
+        "options_hi": ["users.rust-lang.org", "forum.rust-lang.org", "discuss.rust-lang.org", "community.rust-lang.org"],
+        "answer_en": "users.rust-lang.org",
+        "answer_hi": "users.rust-lang.org",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 26,
-        "question_en": "What is the principle behind working of a hydrometer?",
-        "question_hi": "हाइड्रोमीटर के काम करने का सिद्धांत क्या है?",
-        "options_en": ["Archimedes' Principle", "Pascal's Law", "Bernoulli's Principle", "Newton's Law"],
-        "options_hi": ["आर्किमिडीज का सिद्धांत", "पास्कल का नियम", "बर्नौली का सिद्धांत", "न्यूटन का नियम"],
-        "answer_en": "Archimedes' Principle",
-        "answer_hi": "आर्किमिडीज का सिद्धांत",
+        "question_en": "Where is Rust documentation hosted?",
+        "question_hi": "Rust डॉक्युमेंटेशन कहाँ होस्टेड है?",
+        "options_en": ["doc.rust-lang.org", "docs.rust-lang.org", "rust-docs.org", "documentation.rust-lang.org"],
+        "options_hi": ["doc.rust-lang.org", "docs.rust-lang.org", "rust-docs.org", "documentation.rust-lang.org"],
+        "answer_en": "doc.rust-lang.org",
+        "answer_hi": "doc.rust-lang.org",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 27,
-        "question_en": "What is the SI unit of frequency?",
-        "question_hi": "आवृत्ति की SI इकाई क्या है?",
-        "options_en": ["Hertz", "Decibel", "Watt", "Joule"],
-        "options_hi": ["हर्ट्ज", "डेसिबल", "वाट", "जूल"],
-        "answer_en": "Hertz",
-        "answer_hi": "हर्ट्ज",
+        "question_en": "What is crates.io?",
+        "question_hi": "crates.io क्या है?",
+        "options_en": ["Rust package registry", "Rust code editor", "Rust testing service", "Rust documentation"],
+        "options_hi": ["Rust पैकेज रजिस्ट्री", "Rust कोड एडिटर", "Rust टेस्टिंग सर्विस", "Rust डॉक्युमेंटेशन"],
+        "answer_en": "Rust package registry",
+        "answer_hi": "Rust पैकेज रजिस्ट्री",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 28,
-        "question_en": "Which color of light has the maximum wavelength?",
-        "question_hi": "किस रंग के प्रकाश की तरंगदैर्ध्य अधिकतम होती है?",
-        "options_en": ["Violet", "Blue", "Green", "Red"],
-        "options_hi": ["बैंगनी", "नीला", "हरा", "लाल"],
-        "answer_en": "Red",
-        "answer_hi": "लाल",
+        "question_en": "How do you search for crates?",
+        "question_hi": "क्रेट्स को कैसे सर्च करते हैं?",
+        "options_en": ["cargo search", "cargo find", "cargo lookup", "cargo discover"],
+        "options_hi": ["cargo search", "cargo find", "cargo lookup", "cargo discover"],
+        "answer_en": "cargo search",
+        "answer_hi": "cargo search",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 29,
-        "question_en": "What is the formula for force according to Newton's second law?",
-        "question_hi": "न्यूटन के दूसरे नियम के अनुसार बल का सूत्र क्या है?",
-        "options_en": ["F = ma", "F = mv", "F = mgh", "F = pA"],
-        "options_hi": ["F = ma", "F = mv", "F = mgh", "F = pA"],
-        "answer_en": "F = ma",
-        "answer_hi": "F = ma",
+        "question_en": "What is the Rust error index?",
+        "question_hi": "Rust एरर इंडेक्स क्या है?",
+        "options_en": ["Collection of compiler error explanations", "List of all errors", "Error tracking tool", "Debugging guide"],
+        "options_hi": ["कम्पाइलर एरर एक्सप्लेनेशन का कलेक्शन", "सभी एरर की लिस्ट", "एरर ट्रैकिंग टूल", "डीबगिंग गाइड"],
+        "answer_en": "Collection of compiler error explanations",
+        "answer_hi": "कम्पाइलर एरर एक्सप्लेनेशन का कलेक्शन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 30,
-        "question_en": "What is the unit of resistance?",
-        "question_hi": "प्रतिरोध की इकाई क्या है?",
-        "options_en": ["Volt", "Ampere", "Ohm", "Watt"],
-        "options_hi": ["वोल्ट", "एम्पियर", "ओम", "वाट"],
-        "answer_en": "Ohm",
-        "answer_hi": "ओम",
+        "question_en": "Where is the error index located?",
+        "question_hi": "एरर इंडेक्स कहाँ स्थित है?",
+        "options_en": ["doc.rust-lang.org/error-index", "errors.rust-lang.org", "rust-errors.org", "index.rust-errors.org"],
+        "options_hi": ["doc.rust-lang.org/error-index", "errors.rust-lang.org", "rust-errors.org", "index.rust-errors.org"],
+        "answer_en": "doc.rust-lang.org/error-index",
+        "answer_hi": "doc.rust-lang.org/error-index",
         "attempted": false,
         "selected": ""
     },
-
-    // Chemistry (41-55)
     {
         "num": 31,
-        "question_en": "What is the pH value of neutral solution?",
-        "question_hi": "उदासीन विलयन का pH मान क्या है?",
-        "options_en": ["0", "7", "14", "1"],
-        "options_hi": ["0", "7", "14", "1"],
-        "answer_en": "7",
-        "answer_hi": "7",
+        "question_en": "What is the Rust book?",
+        "question_hi": "Rust बुक क्या है?",
+        "options_en": ["Official Rust tutorial", "Rust reference", "Rust cookbook", "Rust examples"],
+        "options_hi": ["ऑफिशियल Rust ट्यूटोरियल", "Rust रेफरेन्स", "Rust कुकबुक", "Rust उदाहरण"],
+        "answer_en": "Official Rust tutorial",
+        "answer_hi": "ऑफिशियल Rust ट्यूटोरियल",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 32,
-        "question_en": "Which gas is produced when metal reacts with acid?",
-        "question_hi": "जब धातु अम्ल के साथ अभिक्रिया करती है तो कौन सी गैस उत्पन्न होती है?",
-        "options_en": ["Oxygen", "Hydrogen", "Nitrogen", "Carbon dioxide"],
-        "options_hi": ["ऑक्सीजन", "हाइड्रोजन", "नाइट्रोजन", "कार्बन डाइऑक्साइड"],
-        "answer_en": "Hydrogen",
-        "answer_hi": "हाइड्रोजन",
+        "question_en": "Where is the Rust book located?",
+        "question_hi": "Rust बुक कहाँ स्थित है?",
+        "options_en": ["doc.rust-lang.org/book", "book.rust-lang.org", "rust-book.org", "learn.rust-lang.org"],
+        "options_hi": ["doc.rust-lang.org/book", "book.rust-lang.org", "rust-book.org", "learn.rust-lang.org"],
+        "answer_en": "doc.rust-lang.org/book",
+        "answer_hi": "doc.rust-lang.org/book",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 33,
-        "question_en": "What is the chemical formula of water?",
-        "question_hi": "पानी का रासायनिक सूत्र क्या है?",
-        "options_en": ["H₂O", "HO₂", "H₂O₂", "OH"],
-        "options_hi": ["H₂O", "HO₂", "H₂O₂", "OH"],
-        "answer_en": "H₂O",
-        "answer_hi": "H₂O",
+        "question_en": "What is the Rust by Example book?",
+        "question_hi": "Rust by Example बुक क्या है?",
+        "options_en": ["Collection of Rust examples", "Advanced Rust guide", "Rust reference", "Rust cookbook"],
+        "options_hi": ["Rust उदाहरणों का संग्रह", "एडवांस्ड Rust गाइड", "Rust रेफरेन्स", "Rust कुकबुक"],
+        "answer_en": "Collection of Rust examples",
+        "answer_hi": "Rust उदाहरणों का संग्रह",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 34,
-        "question_en": "Which element has the atomic number 1?",
-        "question_hi": "किस तत्व की परमाणु संख्या 1 है?",
-        "options_en": ["Helium", "Hydrogen", "Oxygen", "Carbon"],
-        "options_hi": ["हीलियम", "हाइड्रोजन", "ऑक्सीजन", "कार्बन"],
-        "answer_en": "Hydrogen",
-        "answer_hi": "हाइड्रोजन",
+        "question_en": "Where is Rust by Example located?",
+        "question_hi": "Rust by Example कहाँ स्थित है?",
+        "options_en": ["doc.rust-lang.org/rust-by-example", "examples.rust-lang.org", "rust-by-example.org", "learn.rust-by-example.org"],
+        "options_hi": ["doc.rust-lang.org/rust-by-example", "examples.rust-lang.org", "rust-by-example.org", "learn.rust-by-example.org"],
+        "answer_en": "doc.rust-lang.org/rust-by-example",
+        "answer_hi": "doc.rust-lang.org/rust-by-example",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 35,
-        "question_en": "What is the common name of sodium bicarbonate?",
-        "question_hi": "सोडियम बाइकार्बोनेट का सामान्य नाम क्या है?",
-        "options_en": ["Baking Soda", "Washing Soda", "Baking Powder", "Caustic Soda"],
-        "options_hi": ["बेकिंग सोडा", "धोने का सोडा", "बेकिंग पाउडर", "कास्टिक सोडा"],
-        "answer_en": "Baking Soda",
-        "answer_hi": "बेकिंग सोडा",
+        "question_en": "What is the Rust reference?",
+        "question_hi": "Rust रेफरेन्स क्या है?",
+        "options_en": ["Detailed language specification", "Quick start guide", "API documentation", "Tutorial"],
+        "options_hi": ["विस्तृत भाषा विशिष्टता", "क्विक स्टार्ट गाइड", "API डॉक्युमेंटेशन", "ट्यूटोरियल"],
+        "answer_en": "Detailed language specification",
+        "answer_hi": "विस्तृत भाषा विशिष्टता",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 36,
-        "question_en": "Which metal is liquid at room temperature?",
-        "question_hi": "कौन सी धातु कमरे के तापमान पर तरल होती है?",
-        "options_en": ["Iron", "Mercury", "Copper", "Aluminum"],
-        "options_hi": ["लोहा", "पारा", "तांबा", "एल्युमिनियम"],
-        "answer_en": "Mercury",
-        "answer_hi": "पारा",
+        "question_en": "Where is the Rust reference located?",
+        "question_hi": "Rust रेफरेन्स कहाँ स्थित है?",
+        "options_en": ["doc.rust-lang.org/reference", "reference.rust-lang.org", "rust-reference.org", "spec.rust-lang.org"],
+        "options_hi": ["doc.rust-lang.org/reference", "reference.rust-lang.org", "rust-reference.org", "spec.rust-lang.org"],
+        "answer_en": "doc.rust-lang.org/reference",
+        "answer_hi": "doc.rust-lang.org/reference",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 37,
-        "question_en": "What is the valency of oxygen?",
-        "question_hi": "ऑक्सीजन की संयोजकता क्या है?",
-        "options_en": ["1", "2", "3", "4"],
-        "options_hi": ["1", "2", "3", "4"],
-        "answer_en": "2",
-        "answer_hi": "2",
+        "question_en": "What is the Rustonomicon?",
+        "question_hi": "Rustonomicon क्या है?",
+        "options_en": ["Guide to unsafe Rust", "Rust style guide", "Rust history", "Rust patterns"],
+        "options_hi": ["अनसेफ Rust गाइड", "Rust स्टाइल गाइड", "Rust इतिहास", "Rust पैटर्न"],
+        "answer_en": "Guide to unsafe Rust",
+        "answer_hi": "अनसेफ Rust गाइड",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 38,
-        "question_en": "Which acid is present in vinegar?",
-        "question_hi": "सिरका में कौन सा अम्ल होता है?",
-        "options_en": ["Hydrochloric Acid", "Sulfuric Acid", "Acetic Acid", "Citric Acid"],
-        "options_hi": ["हाइड्रोक्लोरिक एसिड", "सल्फ्यूरिक एसिड", "एसिटिक एसिड", "सिट्रिक एसिड"],
-        "answer_en": "Acetic Acid",
-        "answer_hi": "एसिटिक एसिड",
+        "question_en": "Where is the Rustonomicon located?",
+        "question_hi": "Rustonomicon कहाँ स्थित है?",
+        "options_en": ["doc.rust-lang.org/nomicon", "nomicon.rust-lang.org", "rust-nomicon.org", "unsafe.rust-lang.org"],
+        "options_hi": ["doc.rust-lang.org/nomicon", "nomicon.rust-lang.org", "rust-nomicon.org", "unsafe.rust-lang.org"],
+        "answer_en": "doc.rust-lang.org/nomicon",
+        "answer_hi": "doc.rust-lang.org/nomicon",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 39,
-        "question_en": "What is the atomic mass of carbon?",
-        "question_hi": "कार्बन का परमाणु द्रव्यमान क्या है?",
-        "options_en": ["10", "12", "14", "16"],
-        "options_hi": ["10", "12", "14", "16"],
-        "answer_en": "12",
-        "answer_hi": "12",
+        "question_en": "What is the Rust Cookbook?",
+        "question_hi": "Rust कुकबुक क्या है?",
+        "options_en": ["Collection of common tasks", "Recipe book", "Rust tutorials", "Rust examples"],
+        "options_hi": ["सामान्य कार्यों का संग्रह", "रेसिपी बुक", "Rust ट्यूटोरियल", "Rust उदाहरण"],
+        "answer_en": "Collection of common tasks",
+        "answer_hi": "सामान्य कार्यों का संग्रह",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 40,
-        "question_en": "Which gas is used in the Haber process?",
-        "question_hi": "हैबर प्रक्रिया में किस गैस का उपयोग किया जाता है?",
-        "options_en": ["Oxygen", "Hydrogen", "Nitrogen", "Carbon dioxide"],
-        "options_hi": ["ऑक्सीजन", "हाइड्रोजन", "नाइट्रोजन", "कार्बन डाइऑक्साइड"],
-        "answer_en": "Nitrogen",
-        "answer_hi": "नाइट्रोजन",
+        "question_en": "Where is the Rust Cookbook located?",
+        "question_hi": "Rust कुकबुक कहाँ स्थित है?",
+        "options_en": ["rust-lang-nursery.github.io/rust-cookbook", "cookbook.rust-lang.org", "rust-cookbook.org", "recipes.rust-lang.org"],
+        "options_hi": ["rust-lang-nursery.github.io/rust-cookbook", "cookbook.rust-lang.org", "rust-cookbook.org", "recipes.rust-lang.org"],
+        "answer_en": "rust-lang-nursery.github.io/rust-cookbook",
+        "answer_hi": "rust-lang-nursery.github.io/rust-cookbook",
         "attempted": false,
         "selected": ""
     },
-
-    // English Language (56-65)
     {
         "num": 41,
-        "question_en": "What is the synonym of 'Benevolent'?",
-        "question_hi": "'Benevolent' का समानार्थी शब्द क्या है?",
-        "options_en": ["Cruel", "Kind", "Selfish", "Greedy"],
-        "options_hi": ["क्रूर", "दयालु", "स्वार्थी", "लालची"],
-        "answer_en": "Kind",
-        "answer_hi": "दयालु",
+        "question_en": "What is the Rust performance book?",
+        "question_hi": "Rust परफॉर्मेंस बुक क्या है?",
+        "options_en": ["Guide to writing fast Rust code", "Benchmarking tools", "Performance tests", "Optimization guide"],
+        "options_hi": ["फास्ट Rust कोड लिखने की गाइड", "बेंचमार्किंग टूल्स", "परफॉर्मेंस टेस्ट", "ऑप्टिमाइज़ेशन गाइड"],
+        "answer_en": "Guide to writing fast Rust code",
+        "answer_hi": "फास्ट Rust कोड लिखने की गाइड",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 42,
-        "question_en": "Which of these is a preposition?",
-        "question_hi": "इनमें से कौन सा पूर्वसर्ग है?",
-        "options_en": ["Run", "Beautiful", "Under", "Quickly"],
-        "options_hi": ["दौड़ना", "सुंदर", "नीचे", "तेजी से"],
-        "answer_en": "Under",
-        "answer_hi": "नीचे",
+        "question_en": "Where is the performance book located?",
+        "question_hi": "परफॉर्मेंस बुक कहाँ स्थित है?",
+        "options_en": ["nnethercote.github.io/perf-book", "perf.rust-lang.org", "performance.rust-lang.org", "fast.rust-lang.org"],
+        "options_hi": ["nnethercote.github.io/perf-book", "perf.rust-lang.org", "performance.rust-lang.org", "fast.rust-lang.org"],
+        "answer_en": "nnethercote.github.io/perf-book",
+        "answer_hi": "nnethercote.github.io/perf-book",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 43,
-        "question_en": "What is the past tense of 'Go'?",
-        "question_hi": "'Go' का भूतकाल क्या है?",
-        "options_en": ["Goed", "Went", "Gone", "Going"],
-        "options_hi": ["गोएड", "वेंट", "गॉन", "गोइंग"],
-        "answer_en": "Went",
-        "answer_hi": "वेंट",
+        "question_en": "What is the Rust async book?",
+        "question_hi": "Rust async बुक क्या है?",
+        "options_en": ["Guide to asynchronous Rust", "Threading guide", "Concurrency patterns", "Parallel computing"],
+        "options_hi": ["असिंक्रोनस Rust गाइड", "थ्रेडिंग गाइड", "कनकरेंसी पैटर्न", "पैरेलल कंप्यूटिंग"],
+        "answer_en": "Guide to asynchronous Rust",
+        "answer_hi": "असिंक्रोनस Rust गाइड",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 44,
-        "question_en": "Which word is an adjective?",
-        "question_hi": "कौन सा शब्द विशेषण है?",
-        "options_en": ["Happiness", "Beautiful", "Run", "Quickly"],
-        "options_hi": ["खुशी", "सुंदर", "दौड़ना", "तेजी से"],
-        "answer_en": "Beautiful",
-        "answer_hi": "सुंदर",
+        "question_en": "Where is the async book located?",
+        "question_hi": "async बुक कहाँ स्थित है?",
+        "options_en": ["rust-lang.github.io/async-book", "async.rust-lang.org", "rust-async.org", "book.async-rust.org"],
+        "options_hi": ["rust-lang.github.io/async-book", "async.rust-lang.org", "rust-async.org", "book.async-rust.org"],
+        "answer_en": "rust-lang.github.io/async-book",
+        "answer_hi": "rust-lang.github.io/async-book",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 45,
-        "question_en": "What is the plural of 'Child'?",
-        "question_hi": "'Child' का बहुवचन क्या है?",
-        "options_en": ["Childs", "Children", "Childes", "Childern"],
-        "options_hi": ["चाइल्ड्स", "चिल्ड्रेन", "चाइल्डेस", "चाइल्डर्न"],
-        "answer_en": "Children",
-        "answer_hi": "चिल्ड्रेन",
+        "question_en": "What is the Rust embedded book?",
+        "question_hi": "Rust एम्बेडेड बुक क्या है?",
+        "options_en": ["Guide to embedded Rust development", "Hardware programming", "Device drivers", "Microcontroller guide"],
+        "options_hi": ["एम्बेडेड Rust डेवलपमेंट गाइड", "हार्डवेयर प्रोग्रामिंग", "डिवाइस ड्राइवर", "माइक्रोकंट्रोलर गाइड"],
+        "answer_en": "Guide to embedded Rust development",
+        "answer_hi": "एम्बेडेड Rust डेवलपमेंट गाइड",
         "attempted": false,
         "selected": ""
     },
-
-    // Hindi Language (66-75)
     {
         "num": 46,
-        "question_en": "What is the meaning of 'Vidyalaya' in English?",
-        "question_hi": "'विद्यालय' का अंग्रेजी में क्या अर्थ है?",
-        "options_en": ["Teacher", "Student", "School", "Book"],
-        "options_hi": ["शिक्षक", "छात्र", "स्कूल", "किताब"],
-        "answer_en": "School",
-        "answer_hi": "स्कूल",
+        "question_en": "Where is the embedded book located?",
+        "question_hi": "एम्बेडेड बुक कहाँ स्थित है?",
+        "options_en": ["docs.rust-embedded.org/book", "embedded.rust-lang.org", "rust-embedded.org/book", "book.rust-embedded.org"],
+        "options_hi": ["docs.rust-embedded.org/book", "embedded.rust-lang.org", "rust-embedded.org/book", "book.rust-embedded.org"],
+        "answer_en": "docs.rust-embedded.org/book",
+        "answer_hi": "docs.rust-embedded.org/book",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 47,
-        "question_en": "Which of these is a 'Sarvanaam' (Pronoun) in Hindi?",
-        "question_hi": "इनमें से कौन सा हिंदी में 'सर्वनाम' है?",
-        "options_en": ["Khelna", "Sundar", "Yah", "Jaldi"],
-        "options_hi": ["खेलना", "सुंदर", "यह", "जल्दी"],
-        "answer_en": "Yah",
-        "answer_hi": "यह",
+        "question_en": "What is the Rust wasm book?",
+        "question_hi": "Rust wasm बुक क्या है?",
+        "options_en": ["Guide to WebAssembly with Rust", "Web development", "Browser programming", "JavaScript integration"],
+        "options_hi": ["WebAssembly के साथ Rust गाइड", "वेब डेवलपमेंट", "ब्राउज़र प्रोग्रामिंग", "JavaScript इंटीग्रेशन"],
+        "answer_en": "Guide to WebAssembly with Rust",
+        "answer_hi": "WebAssembly के साथ Rust गाइड",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 48,
-        "question_en": "What is the feminine gender of 'Bakra' in Hindi?",
-        "question_hi": "हिंदी में 'बकरा' का स्त्रीलिंग क्या है?",
-        "options_en": ["Bakri", "Bakra", "Bakre", "Bakryan"],
-        "options_hi": ["बकरी", "बकरा", "बकरे", "बकरियां"],
-        "answer_en": "Bakri",
-        "answer_hi": "बकरी",
+        "question_en": "Where is the wasm book located?",
+        "question_hi": "wasm बुक कहाँ स्थित है?",
+        "options_en": ["rustwasm.github.io/docs/book", "wasm.rust-lang.org", "rust-wasm.org/book", "book.rust-wasm.org"],
+        "options_hi": ["rustwasm.github.io/docs/book", "wasm.rust-lang.org", "rust-wasm.org/book", "book.rust-wasm.org"],
+        "answer_en": "rustwasm.github.io/docs/book",
+        "answer_hi": "rustwasm.github.io/docs/book",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 49,
-        "question_en": "Which of these is a 'Kriya' (Verb) in Hindi?",
-        "question_hi": "इनमें से कौन सा हिंदी में 'क्रिया' है?",
-        "options_en": ["Kitab", "Lamba", "Padhna", "Sundar"],
-        "options_hi": ["किताब", "लंबा", "पढ़ना", "सुंदर"],
-        "answer_en": "Padhna",
-        "answer_hi": "पढ़ना",
+        "question_en": "What is the Rust Cargo book?",
+        "question_hi": "Rust Cargo बुक क्या है?",
+        "options_en": ["Guide to Cargo package manager", "Build system reference", "Dependency management", "All of the above"],
+        "options_hi": ["Cargo पैकेज मैनेजर गाइड", "बिल्ड सिस्टम रेफरेन्स", "डिपेंडेंसी मैनेजमेंट", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 50,
-        "question_en": "What is the plural of 'Ladka' in Hindi?",
-        "question_hi": "हिंदी में 'लड़का' का बहुवचन क्या है?",
-        "options_en": ["Ladki", "Ladke", "Ladka", "Ladkian"],
-        "options_hi": ["लड़की", "लड़के", "लड़का", "लड़कियां"],
-        "answer_en": "Ladke",
-        "answer_hi": "लड़के",
+        "question_en": "Where is the Cargo book located?",
+        "question_hi": "Cargo बुक कहाँ स्थित है?",
+        "options_en": ["doc.rust-lang.org/cargo", "cargo.rust-lang.org", "book.cargo-rs.org", "docs.cargo.rs"],
+        "options_hi": ["doc.rust-lang.org/cargo", "cargo.rust-lang.org", "book.cargo-rs.org", "docs.cargo.rs"],
+        "answer_en": "doc.rust-lang.org/cargo",
+        "answer_hi": "doc.rust-lang.org/cargo",
         "attempted": false,
         "selected": ""
     },
-
-    // General Knowledge (76-100)
     {
         "num": 51,
-        "question_en": "Which country is known as the Land of Rising Sun?",
-        "question_hi": "किस देश को उगते सूरज की भूमि के रूप में जाना जाता है?",
-        "options_en": ["China", "Japan", "India", "Thailand"],
-        "options_hi": ["चीन", "जापान", "भारत", "थाईलैंड"],
-        "answer_en": "Japan",
-        "answer_hi": "जापान",
+        "question_en": "What is the Rust compiler book?",
+        "question_hi": "Rust कम्पाइलर बुक क्या है?",
+        "options_en": ["Guide to Rust compiler development", "Compiler options", "Build process", "Optimization flags"],
+        "options_hi": ["Rust कम्पाइलर डेवलपमेंट गाइड", "कम्पाइलर ऑप्शन्स", "बिल्ड प्रोसेस", "ऑप्टिमाइज़ेशन फ्लैग्स"],
+        "answer_en": "Guide to Rust compiler development",
+        "answer_hi": "Rust कम्पाइलर डेवलपमेंट गाइड",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 52,
-        "question_en": "Who is the author of 'Harry Potter' series?",
-        "question_hi": "'हैरी पॉटर' श्रृंखला के लेखक कौन हैं?",
-        "options_en": ["J.R.R. Tolkien", "J.K. Rowling", "George R.R. Martin", "Stephen King"],
-        "options_hi": ["जे.आर.आर. टॉल्किन", "जे.के. रोलिंग", "जॉर्ज आर.आर. मार्टिन", "स्टीफन किंग"],
-        "answer_en": "J.K. Rowling",
-        "answer_hi": "जे.के. रोलिंग",
+        "question_en": "Where is the compiler book located?",
+        "question_hi": "कम्पाइलर बुक कहाँ स्थित है?",
+        "options_en": ["rustc-dev-guide.rust-lang.org", "compiler.rust-lang.org", "rust-compiler.org", "guide.rustc.org"],
+        "options_hi": ["rustc-dev-guide.rust-lang.org", "compiler.rust-lang.org", "rust-compiler.org", "guide.rustc.org"],
+        "answer_en": "rustc-dev-guide.rust-lang.org",
+        "answer_hi": "rustc-dev-guide.rust-lang.org",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 53,
-        "question_en": "Which is the largest ocean in the world?",
-        "question_hi": "दुनिया का सबसे बड़ा महासागर कौन सा है?",
-        "options_en": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
-        "options_hi": ["अटलांटिक महासागर", "हिंद महासागर", "आर्कटिक महासागर", "प्रशांत महासागर"],
-        "answer_en": "Pacific Ocean",
-        "answer_hi": "प्रशांत महासागर",
+        "question_en": "What is the Rust forge?",
+        "question_hi": "Rust फोर्ज क्या है?",
+        "options_en": ["Collection of Rust community resources", "Code repository", "Build server", "Testing platform"],
+        "options_hi": ["Rust कम्युनिटी रिसोर्सेज का संग्रह", "कोड रिपॉजिटरी", "बिल्ड सर्वर", "टेस्टिंग प्लेटफॉर्म"],
+        "answer_en": "Collection of Rust community resources",
+        "answer_hi": "Rust कम्युनिटी रिसोर्सेज का संग्रह",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 54,
-        "question_en": "Who painted the Mona Lisa?",
-        "question_hi": "मोना लिसा की पेंटिंग किसने बनाई?",
-        "options_en": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
-        "options_hi": ["विंसेंट वैन गॉग", "पाब्लो पिकासो", "लियोनार्डो दा विंची", "माइकलएंजेलो"],
-        "answer_en": "Leonardo da Vinci",
-        "answer_hi": "लियोनार्डो दा विंची",
+        "question_en": "Where is the Rust forge located?",
+        "question_hi": "Rust फोर्ज कहाँ स्थित है?",
+        "options_en": ["forge.rust-lang.org", "rust-forge.org", "community.rust-lang.org", "resources.rust-lang.org"],
+        "options_hi": ["forge.rust-lang.org", "rust-forge.org", "community.rust-lang.org", "resources.rust-lang.org"],
+        "answer_en": "forge.rust-lang.org",
+        "answer_hi": "forge.rust-lang.org",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 55,
-        "question_en": "Which is the longest river in the world?",
-        "question_hi": "दुनिया की सबसे लंबी नदी कौन सी है?",
-        "options_en": ["Amazon", "Nile", "Yangtze", "Mississippi"],
-        "options_hi": ["अमेज़न", "नील", "यांग्त्ज़ी", "मिसिसिपी"],
-        "answer_en": "Nile",
-        "answer_hi": "नील",
+        "question_en": "What is the Rust survey?",
+        "question_hi": "Rust सर्वे क्या है?",
+        "options_en": ["Annual community feedback collection", "User statistics", "Usage patterns", "All of the above"],
+        "options_hi": ["वार्षिक कम्युनिटी फीडबैक संग्रह", "यूज़र स्टैटिस्टिक्स", "यूसेज पैटर्न", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 56,
-        "question_en": "What is the currency of Japan?",
-        "question_hi": "जापान की मुद्रा क्या है?",
-        "options_en": ["Yuan", "Won", "Yen", "Ringgit"],
-        "options_hi": ["युआन", "वॉन", "येन", "रिंगित"],
-        "answer_en": "Yen",
-        "answer_hi": "येन",
+        "question_en": "Where are Rust survey results published?",
+        "question_hi": "Rust सर्वे रिजल्ट्स कहाँ पब्लिश होते हैं?",
+        "options_en": ["blog.rust-lang.org", "survey.rust-lang.org", "results.rust-lang.org", "stats.rust-lang.org"],
+        "options_hi": ["blog.rust-lang.org", "survey.rust-lang.org", "results.rust-lang.org", "stats.rust-lang.org"],
+        "answer_en": "blog.rust-lang.org",
+        "answer_hi": "blog.rust-lang.org",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 57,
-        "question_en": "Which planet is known as the Red Planet?",
-        "question_hi": "किस ग्रह को लाल ग्रह के रूप में जाना जाता है?",
-        "options_en": ["Venus", "Mars", "Jupiter", "Saturn"],
-        "options_hi": ["शुक्र", "मंगल", "बृहस्पति", "शनि"],
-        "answer_en": "Mars",
-        "answer_hi": "मंगल",
+        "question_en": "What is the Rust blog?",
+        "question_hi": "Rust ब्लॉग क्या है?",
+        "options_en": ["Official Rust announcements and news", "Community posts", "Technical articles", "Tutorials"],
+        "options_hi": ["ऑफिशियल Rust एनाउंसमेंट्स और न्यूज़", "कम्युनिटी पोस्ट्स", "टेक्निकल आर्टिकल्स", "ट्यूटोरियल"],
+        "answer_en": "Official Rust announcements and news",
+        "answer_hi": "ऑफिशियल Rust एनाउंसमेंट्स और न्यूज़",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 58,
-        "question_en": "Who invented the Telephone?",
-        "question_hi": "टेलीफोन का आविष्कार किसने किया?",
-        "options_en": ["Thomas Edison", "Alexander Graham Bell", "Nikola Tesla", "Guglielmo Marconi"],
-        "options_hi": ["थॉमस एडिसन", "अलेक्जेंडर ग्राहम बेल", "निकोला टेस्ला", "गुग्लिल्मो मार्कोनी"],
-        "answer_en": "Alexander Graham Bell",
-        "answer_hi": "अलेक्जेंडर ग्राहम बेल",
+        "question_en": "Where is the Rust blog located?",
+        "question_hi": "Rust ब्लॉग कहाँ स्थित है?",
+        "options_en": ["blog.rust-lang.org", "news.rust-lang.org", "rust-blog.org", "announce.rust-lang.org"],
+        "options_hi": ["blog.rust-lang.org", "news.rust-lang.org", "rust-blog.org", "announce.rust-lang.org"],
+        "answer_en": "blog.rust-lang.org",
+        "answer_hi": "blog.rust-lang.org",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 59,
-        "question_en": "Which is the smallest country in the world?",
-        "question_hi": "दुनिया का सबसे छोटा देश कौन सा है?",
-        "options_en": ["Monaco", "Vatican City", "San Marino", "Liechtenstein"],
-        "options_hi": ["मोनाको", "वेटिकन सिटी", "सैन मैरिनो", "लिकटेंस्टीन"],
-        "answer_en": "Vatican City",
-        "answer_hi": "वेटिकन सिटी",
+        "question_en": "What is Inside Rust?",
+        "question_hi": "Inside Rust क्या है?",
+        "options_en": ["Blog about Rust internals", "Compiler details", "Language design", "All of the above"],
+        "options_hi": ["Rust इंटर्नल्स के बारे में ब्लॉग", "कम्पाइलर डिटेल्स", "लैंग्वेज डिज़ाइन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 60,
-        "question_en": "Who wrote the Indian National Anthem?",
-        "question_hi": "भारत के राष्ट्रगान के लेखक कौन हैं?",
-        "options_en": ["Rabindranath Tagore", "Bankim Chandra Chatterjee", "Sarojini Naidu", "Mahatma Gandhi"],
-        "options_hi": ["रबींद्रनाथ टैगोर", "बंकिम चंद्र चटर्जी", "सरोजिनी नायडू", "महात्मा गांधी"],
-        "answer_en": "Rabindranath Tagore",
-        "answer_hi": "रबींद्रनाथ टैगोर",
+        "question_en": "Where is Inside Rust located?",
+        "question_hi": "Inside Rust कहाँ स्थित है?",
+        "options_en": ["blog.rust-lang.org/inside-rust", "inside.rust-lang.org", "internals.rust-lang.org", "dev.rust-lang.org"],
+        "options_hi": ["blog.rust-lang.org/inside-rust", "inside.rust-lang.org", "internals.rust-lang.org", "dev.rust-lang.org"],
+        "answer_en": "blog.rust-lang.org/inside-rust",
+        "answer_hi": "blog.rust-lang.org/inside-rust",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 61,
-        "question_en": "What is the chemical symbol for Gold?",
-        "question_hi": "सोने का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Go", "Gd", "Au", "Ag"],
-        "options_hi": ["Go", "Gd", "Au", "Ag"],
-        "answer_en": "Au",
-        "answer_hi": "Au",
+        "question_en": "What is the Rust roadmap?",
+        "question_hi": "Rust रोडमैप क्या है?",
+        "options_en": ["Future development plans", "Release schedule", "Feature timeline", "All of the above"],
+        "options_hi": ["भविष्य के डेवलपमेंट प्लान", "रिलीज़ शेड्यूल", "फीचर टाइमलाइन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 62,
-        "question_en": "Which is the longest bone in human body?",
-        "question_hi": "मानव शरीर की सबसे लंबी हड्डी कौन सी है?",
-        "options_en": ["Humerus", "Femur", "Tibia", "Radius"],
-        "options_hi": ["ह्यूमरस", "फीमर", "टिबिया", "रेडियस"],
-        "answer_en": "Femur",
-        "answer_hi": "फीमर",
+        "question_en": "Where is the Rust roadmap published?",
+        "question_hi": "Rust रोडमैप कहाँ पब्लिश होता है?",
+        "options_en": ["blog.rust-lang.org", "roadmap.rust-lang.org", "plan.rust-lang.org", "future.rust-lang.org"],
+        "options_hi": ["blog.rust-lang.org", "roadmap.rust-lang.org", "plan.rust-lang.org", "future.rust-lang.org"],
+        "answer_en": "blog.rust-lang.org",
+        "answer_hi": "blog.rust-lang.org",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 63,
-        "question_en": "What is the value of 7 × 8 + 4?",
-        "question_hi": "7 × 8 + 4 का मान क्या है?",
-        "options_en": ["60", "84", "56", "52"],
-        "options_hi": ["60", "84", "56", "52"],
-        "answer_en": "60",
-        "answer_hi": "60",
+        "question_en": "What are Rust working groups?",
+        "question_hi": "Rust वर्किंग ग्रुप्स क्या हैं?",
+        "options_en": ["Teams focused on specific areas", "Community organizations", "Development teams", "All of the above"],
+        "options_hi": ["विशिष्ट क्षेत्रों पर केंद्रित टीमें", "कम्युनिटी ऑर्गनाइज़ेशन", "डेवलपमेंट टीम्स", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 64,
-        "question_en": "Which gas do plants release during photosynthesis?",
-        "question_hi": "पौधे प्रकाश संश्लेषण के दौरान कौन सी गैस छोड़ते हैं?",
-        "options_en": ["Carbon Dioxide", "Oxygen", "Nitrogen", "Hydrogen"],
-        "options_hi": ["कार्बन डाइऑक्साइड", "ऑक्सीजन", "नाइट्रोजन", "हाइड्रोजन"],
-        "answer_en": "Oxygen",
-        "answer_hi": "ऑक्सीजन",
+        "question_en": "Where are working groups listed?",
+        "question_hi": "वर्किंग ग्रुप्स कहाँ लिस्टेड हैं?",
+        "options_en": ["www.rust-lang.org/governance", "teams.rust-lang.org", "wg.rust-lang.org", "groups.rust-lang.org"],
+        "options_hi": ["www.rust-lang.org/governance", "teams.rust-lang.org", "wg.rust-lang.org", "groups.rust-lang.org"],
+        "answer_en": "www.rust-lang.org/governance",
+        "answer_hi": "www.rust-lang.org/governance",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 65,
-        "question_en": "What is the capital of Australia?",
-        "question_hi": "ऑस्ट्रेलिया की राजधानी क्या है?",
-        "options_en": ["Sydney", "Melbourne", "Canberra", "Perth"],
-        "options_hi": ["सिडनी", "मेलबोर्न", "कैनबरा", "पर्थ"],
-        "answer_en": "Canberra",
-        "answer_hi": "कैनबरा",
+        "question_en": "What is the Rust code of conduct?",
+        "question_hi": "Rust कोड ऑफ कंडक्ट क्या है?",
+        "options_en": ["Community behavior guidelines", "Coding standards", "Development rules", "All of the above"],
+        "options_hi": ["कम्युनिटी बिहेवियर गाइडलाइन्स", "कोडिंग स्टैंडर्ड्स", "डेवलपमेंट रूल्स", "उपरोक्त सभी"],
+        "answer_en": "Community behavior guidelines",
+        "answer_hi": "कम्युनिटी बिहेवियर गाइडलाइन्स",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 66,
-        "question_en": "Which element is essential for thyroid function?",
-        "question_hi": "थायरॉयड कार्य के लिए कौन सा तत्व आवश्यक है?",
-        "options_en": ["Iron", "Iodine", "Calcium", "Potassium"],
-        "options_hi": ["आयरन", "आयोडीन", "कैल्शियम", "पोटैशियम"],
-        "answer_en": "Iodine",
-        "answer_hi": "आयोडीन",
+        "question_en": "Where is the code of conduct located?",
+        "question_hi": "कोड ऑफ कंडक्ट कहाँ स्थित है?",
+        "options_en": ["www.rust-lang.org/conduct", "conduct.rust-lang.org", "coc.rust-lang.org", "rules.rust-lang.org"],
+        "options_hi": ["www.rust-lang.org/conduct", "conduct.rust-lang.org", "coc.rust-lang.org", "rules.rust-lang.org"],
+        "answer_en": "www.rust-lang.org/conduct",
+        "answer_hi": "www.rust-lang.org/conduct",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 67,
-        "question_en": "What is the formula for density?",
-        "question_hi": "घनत्व का सूत्र क्या है?",
-        "options_en": ["Mass/Volume", "Volume/Mass", "Mass × Volume", "Weight/Volume"],
-        "options_hi": ["द्रव्यमान/आयतन", "आयतन/द्रव्यमान", "द्रव्यमान × आयतन", "वजन/आयतन"],
-        "answer_en": "Mass/Volume",
-        "answer_hi": "द्रव्यमान/आयतन",
+        "question_en": "What is the Rust security policy?",
+        "question_hi": "Rust सिक्योरिटी पॉलिसी क्या है?",
+        "options_en": ["Security vulnerability reporting process", "Secure coding guidelines", "Security best practices", "All of the above"],
+        "options_hi": ["सिक्योरिटी वल्नरेबिलिटी रिपोर्टिंग प्रोसेस", "सिक्योर कोडिंग गाइडलाइन्स", "सिक्योरिटी बेस्ट प्रैक्टिसेज", "उपरोक्त सभी"],
+        "answer_en": "Security vulnerability reporting process",
+        "answer_hi": "सिक्योरिटी वल्नरेबिलिटी रिपोर्टिंग प्रोसेस",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 68,
-        "question_en": "Who discovered Penicillin?",
-        "question_hi": "पेनिसिलिन की खोज किसने की?",
-        "options_en": ["Alexander Fleming", "Louis Pasteur", "Robert Koch", "Marie Curie"],
-        "options_hi": ["अलेक्जेंडर फ्लेमिंग", "लुई पाश्चर", "रॉबर्ट कोच", "मैरी क्यूरी"],
-        "answer_en": "Alexander Fleming",
-        "answer_hi": "अलेक्जेंडर फ्लेमिंग",
+        "question_en": "Where is the security policy located?",
+        "question_hi": "सिक्योरिटी पॉलिसी कहाँ स्थित है?",
+        "options_en": ["www.rust-lang.org/security", "security.rust-lang.org", "vulnerabilities.rust-lang.org", "sec.rust-lang.org"],
+        "options_hi": ["www.rust-lang.org/security", "security.rust-lang.org", "vulnerabilities.rust-lang.org", "sec.rust-lang.org"],
+        "answer_en": "www.rust-lang.org/security",
+        "answer_hi": "www.rust-lang.org/security",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 69,
-        "question_en": "What is the square of 25?",
-        "question_hi": "25 का वर्ग क्या है?",
-        "options_en": ["525", "625", "725", "825"],
-        "options_hi": ["525", "625", "725", "825"],
-        "answer_en": "625",
-        "answer_hi": "625",
+        "question_en": "What is the Rust trademark policy?",
+        "question_hi": "Rust ट्रेडमार्क पॉलिसी क्या है?",
+        "options_en": ["Rules for using Rust trademarks", "Logo usage guidelines", "Brand protection", "All of the above"],
+        "options_hi": ["Rust ट्रेडमार्क यूज करने के नियम", "लोगो यूसेज गाइडलाइन्स", "ब्रांड प्रोटेक्शन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 70,
-        "question_en": "Which instrument is used to measure electric current?",
-        "question_hi": "विद्युत धारा मापने के लिए किस उपकरण का उपयोग किया जाता है?",
-        "options_en": ["Voltmeter", "Ammeter", "Ohmmeter", "Galvanometer"],
-        "options_hi": ["वोल्टमीटर", "एमीटर", "ओममीटर", "गैल्वेनोमीटर"],
-        "answer_en": "Ammeter",
-        "answer_hi": "एमीटर",
+        "question_en": "Where is the trademark policy located?",
+        "question_hi": "ट्रेडमार्क पॉलिसी कहाँ स्थित है?",
+        "options_en": ["www.rust-lang.org/policies", "trademark.rust-lang.org", "brand.rust-lang.org", "logos.rust-lang.org"],
+        "options_hi": ["www.rust-lang.org/policies", "trademark.rust-lang.org", "brand.rust-lang.org", "logos.rust-lang.org"],
+        "answer_en": "www.rust-lang.org/policies",
+        "answer_hi": "www.rust-lang.org/policies",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 71,
-        "question_en": "What is the chemical formula of Water?",
-        "question_hi": "पानी का रासायनिक सूत्र क्या है?",
-        "options_en": ["H₂O", "HO₂", "H₂O₂", "OH"],
-        "options_hi": ["H₂O", "HO₂", "H₂O₂", "OH"],
-        "answer_en": "H₂O",
-        "answer_hi": "H₂O",
+        "question_en": "What is the Rust media guide?",
+        "question_hi": "Rust मीडिया गाइड क्या है?",
+        "options_en": ["Brand assets and usage guidelines", "Press releases", "Media contacts", "All of the above"],
+        "options_hi": ["ब्रांड एसेट्स और यूसेज गाइडलाइन्स", "प्रेस रिलीज़", "मीडिया कॉन्टैक्ट्स", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 72,
-        "question_en": "Which planet is closest to the Sun?",
-        "question_hi": "सूर्य के सबसे निकट कौन सा ग्रह है?",
-        "options_en": ["Venus", "Mercury", "Earth", "Mars"],
-        "options_hi": ["शुक्र", "बुध", "पृथ्वी", "मंगल"],
-        "answer_en": "Mercury",
-        "answer_hi": "बुध",
+        "question_en": "Where is the media guide located?",
+        "question_hi": "मीडिया गाइड कहाँ स्थित है?",
+        "options_en": ["www.rust-lang.org/policies/media-guide", "media.rust-lang.org", "press.rust-lang.org", "brand.rust-lang.org"],
+        "options_hi": ["www.rust-lang.org/policies/media-guide", "media.rust-lang.org", "press.rust-lang.org", "brand.rust-lang.org"],
+        "answer_en": "www.rust-lang.org/policies/media-guide",
+        "answer_hi": "www.rust-lang.org/policies/media-guide",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 73,
-        "question_en": "What is the value of 15% of 200?",
-        "question_hi": "200 का 15% क्या है?",
-        "options_en": ["15", "30", "45", "60"],
-        "options_hi": ["15", "30", "45", "60"],
-        "answer_en": "30",
-        "answer_hi": "30",
+        "question_en": "What is the Rust style guide?",
+        "question_hi": "Rust स्टाइल गाइड क्या है?",
+        "options_en": ["Code formatting standards", "Naming conventions", "Documentation guidelines", "All of the above"],
+        "options_hi": ["कोड फॉर्मेटिंग स्टैंडर्ड्स", "नेमिंग कन्वेंशन", "डॉक्युमेंटेशन गाइडलाइन्स", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 74,
-        "question_en": "Which blood cells help in fighting infections?",
-        "question_hi": "कौन सी रक्त कोशिकाएं संक्रमण से लड़ने में मदद करती हैं?",
-        "options_en": ["Red Blood Cells", "White Blood Cells", "Platelets", "Plasma"],
-        "options_hi": ["लाल रक्त कोशिकाएं", "श्वेत रक्त कोशिकाएं", "प्लेटलेट्स", "प्लाज्मा"],
-        "answer_en": "White Blood Cells",
-        "answer_hi": "श्वेत रक्त कोशिकाएं",
+        "question_en": "Where is the style guide located?",
+        "question_hi": "स्टाइल गाइड कहाँ स्थित है?",
+        "options_en": ["github.com/rust-lang/rfcs/blob/master/style-guide/README.md", "style.rust-lang.org", "guide.rust-lang.org", "format.rust-lang.org"],
+        "options_hi": ["github.com/rust-lang/rfcs/blob/master/style-guide/README.md", "style.rust-lang.org", "guide.rust-lang.org", "format.rust-lang.org"],
+        "answer_en": "github.com/rust-lang/rfcs/blob/master/style-guide/README.md",
+        "answer_hi": "github.com/rust-lang/rfcs/blob/master/style-guide/README.md",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 75,
-        "question_en": "What is the SI unit of temperature?",
-        "question_hi": "तापमान की SI इकाई क्या है?",
-        "options_en": ["Fahrenheit", "Celsius", "Kelvin", "Rankine"],
-        "options_hi": ["फारेनहाइट", "सेल्सियस", "केल्विन", "रैंकिन"],
-        "answer_en": "Kelvin",
-        "answer_hi": "केल्विन",
+        "question_en": "What are Rust RFCs?",
+        "question_hi": "Rust RFCs क्या हैं?",
+        "options_en": ["Requests for Comments - language change proposals", "Bug reports", "Feature requests", "Documentation"],
+        "options_hi": ["कमेंट के लिए रिक्वेस्ट्स - लैंग्वेज चेंज प्रपोजल", "बग रिपोर्ट्स", "फीचर रिक्वेस्ट्स", "डॉक्युमेंटेशन"],
+        "answer_en": "Requests for Comments - language change proposals",
+        "answer_hi": "कमेंट के लिए रिक्वेस्ट्स - लैंग्वेज चेंज प्रपोजल",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 76,
-        "question_en": "Which gas is most abundant in Earth's atmosphere?",
-        "question_hi": "पृथ्वी के वायुमंडल में कौन सी गैस सबसे अधिक मात्रा में है?",
-        "options_en": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Argon"],
-        "options_hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "नाइट्रोजन", "आर्गन"],
-        "answer_en": "Nitrogen",
-        "answer_hi": "नाइट्रोजन",
+        "question_en": "Where are RFCs located?",
+        "question_hi": "RFCs कहाँ स्थित हैं?",
+        "options_en": ["github.com/rust-lang/rfcs", "rfcs.rust-lang.org", "proposals.rust-lang.org", "changes.rust-lang.org"],
+        "options_hi": ["github.com/rust-lang/rfcs", "rfcs.rust-lang.org", "proposals.rust-lang.org", "changes.rust-lang.org"],
+        "answer_en": "github.com/rust-lang/rfcs",
+        "answer_hi": "github.com/rust-lang/rfcs",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 77,
-        "question_en": "What is the chemical symbol for Iron?",
-        "question_hi": "लोहे का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Ir", "Fe", "In", "Io"],
-        "options_hi": ["Ir", "Fe", "In", "Io"],
-        "answer_en": "Fe",
-        "answer_hi": "Fe",
+        "question_en": "What is the Rust issue tracker?",
+        "question_hi": "Rust इश्यू ट्रैकर क्या है?",
+        "options_en": ["Bug and feature request tracking", "Code repository", "Documentation system", "Build system"],
+        "options_hi": ["बग और फीचर रिक्वेस्ट ट्रैकिंग", "कोड रिपॉजिटरी", "डॉक्युमेंटेशन सिस्टम", "बिल्ड सिस्टम"],
+        "answer_en": "Bug and feature request tracking",
+        "answer_hi": "बग और फीचर रिक्वेस्ट ट्रैकिंग",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 78,
-        "question_en": "Which is the largest planet in our solar system?",
-        "question_hi": "हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?",
-        "options_en": ["Earth", "Saturn", "Jupiter", "Neptune"],
-        "options_hi": ["पृथ्वी", "शनि", "बृहस्पति", "वरुण"],
-        "answer_en": "Jupiter",
-        "answer_hi": "बृहस्पति",
+        "question_en": "Where is the issue tracker located?",
+        "question_hi": "इश्यू ट्रैकर कहाँ स्थित है?",
+        "options_en": ["github.com/rust-lang/rust/issues", "issues.rust-lang.org", "bugs.rust-lang.org", "tracker.rust-lang.org"],
+        "options_hi": ["github.com/rust-lang/rust/issues", "issues.rust-lang.org", "bugs.rust-lang.org", "tracker.rust-lang.org"],
+        "answer_en": "github.com/rust-lang/rust/issues",
+        "answer_hi": "github.com/rust-lang/rust/issues",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 79,
-        "question_en": "What is the value of 3³?",
-        "question_hi": "3³ का मान क्या है?",
-        "options_en": ["9", "27", "81", "6"],
-        "options_hi": ["9", "27", "81", "6"],
-        "answer_en": "27",
-        "answer_hi": "27",
+        "question_en": "What is the Rust release process?",
+        "question_hi": "Rust रिलीज़ प्रोसेस क्या है?",
+        "options_en": ["6-week release cycle", "Monthly releases", "Quarterly releases", "Annual releases"],
+        "options_hi": ["6-सप्ताह रिलीज़ साइकिल", "मासिक रिलीज़", "त्रैमासिक रिलीज़", "वार्षिक रिलीज़"],
+        "answer_en": "6-week release cycle",
+        "answer_hi": "6-सप्ताह रिलीज़ साइकिल",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 80,
-        "question_en": "Which part of the eye controls the amount of light entering?",
-        "question_hi": "आंख का कौन सा भाग प्रवेश करने वाले प्रकाश की मात्रा को नियंत्रित करता है?",
-        "options_en": ["Cornea", "Retina", "Iris", "Lens"],
-        "options_hi": ["कॉर्निया", "रेटिना", "आइरिस", "लेंस"],
-        "answer_en": "Iris",
-        "answer_hi": "आइरिस",
+        "question_en": "What are Rust release channels?",
+        "question_hi": "Rust रिलीज़ चैनल्स क्या हैं?",
+        "options_en": ["Stable, beta, nightly", "Production, testing, development", "Main, feature, experimental", "Release, debug, test"],
+        "options_hi": ["स्टेबल, बीटा, नाइटली", "प्रोडक्शन, टेस्टिंग, डेवलपमेंट", "मेन, फीचर, एक्सपेरिमेंटल", "रिलीज़, डीबग, टेस्ट"],
+        "answer_en": "Stable, beta, nightly",
+        "answer_hi": "स्टेबल, बीटा, नाइटली",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 81,
-        "question_en": "What is the chemical formula of Carbon Dioxide?",
-        "question_hi": "कार्बन डाइऑक्साइड का रासायनिक सूत्र क्या है?",
-        "options_en": ["CO", "CO₂", "C₂O", "C₂O₂"],
-        "options_hi": ["CO", "CO₂", "C₂O", "C₂O₂"],
-        "answer_en": "CO₂",
-        "answer_hi": "CO₂",
+        "question_en": "How do you install nightly Rust?",
+        "question_hi": "नाइटली Rust कैसे इंस्टॉल करते हैं?",
+        "options_en": ["rustup toolchain install nightly", "cargo install nightly", "rust install --nightly", "rustup install nightly"],
+        "options_hi": ["rustup toolchain install nightly", "cargo install nightly", "rust install --nightly", "rustup install nightly"],
+        "answer_en": "rustup toolchain install nightly",
+        "answer_hi": "rustup toolchain install nightly",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 82,
-        "question_en": "Which mountain is the highest in the world?",
-        "question_hi": "दुनिया की सबसे ऊंची पर्वत चोटी कौन सी है?",
-        "options_en": ["K2", "Mount Everest", "Kangchenjunga", "Makalu"],
-        "options_hi": ["K2", "माउंट एवरेस्ट", "कंचनजंगा", "मकालु"],
-        "answer_en": "Mount Everest",
-        "answer_hi": "माउंट एवरेस्ट",
+        "question_en": "How do you use nightly Rust?",
+        "question_hi": "नाइटली Rust कैसे यूज करते हैं?",
+        "options_en": ["rustup override set nightly", "cargo +nightly", "rustc --nightly", "Both A and B"],
+        "options_hi": ["rustup override set nightly", "cargo +nightly", "rustc --nightly", "A और B दोनों"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 83,
-        "question_en": "What is the value of 100 ÷ 4 × 2?",
-        "question_hi": "100 ÷ 4 × 2 का मान क्या है?",
-        "options_en": ["25", "50", "100", "200"],
-        "options_hi": ["25", "50", "100", "200"],
-        "answer_en": "50",
-        "answer_hi": "50",
+        "question_en": "What is Rustup?",
+        "question_hi": "Rustup क्या है?",
+        "options_en": ["Rust toolchain installer", "Package manager", "Build tool", "Code formatter"],
+        "options_hi": ["Rust टूलचेन इंस्टॉलर", "पैकेज मैनेजर", "बिल्ड टूल", "कोड फॉर्मेटर"],
+        "answer_en": "Rust toolchain installer",
+        "answer_hi": "Rust टूलचेन इंस्टॉलर",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 84,
-        "question_en": "Which vitamin deficiency causes Rickets?",
-        "question_hi": "किस विटामिन की कमी से रिकेट्स होता है?",
-        "options_en": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
-        "options_hi": ["विटामिन A", "विटामिन B", "विटामिन C", "विटामिन D"],
-        "answer_en": "Vitamin D",
-        "answer_hi": "विटामिन D",
+        "question_en": "How do you update Rust?",
+        "question_hi": "Rust को कैसे अपडेट करते हैं?",
+        "options_en": ["rustup update", "cargo update", "rust update", "rustup upgrade"],
+        "options_hi": ["rustup update", "cargo update", "rust update", "rustup upgrade"],
+        "answer_en": "rustup update",
+        "answer_hi": "rustup update",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 85,
-        "question_en": "What is the chemical symbol for Silver?",
-        "question_hi": "चांदी का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Si", "Sv", "Ag", "Au"],
-        "options_hi": ["Si", "Sv", "Ag", "Au"],
-        "answer_en": "Ag",
-        "answer_hi": "Ag",
+        "question_en": "What is the default Rust toolchain?",
+        "question_hi": "डिफ़ॉल्ट Rust टूलचेन क्या है?",
+        "options_en": ["Stable", "Beta", "Nightly", "Development"],
+        "options_hi": ["स्टेबल", "बीटा", "नाइटली", "डेवलपमेंट"],
+        "answer_en": "Stable",
+        "answer_hi": "स्टेबल",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 86,
-        "question_en": "Which is the national bird of India?",
-        "question_hi": "भारत का राष्ट्रीय पक्षी कौन सा है?",
-        "options_en": ["Sparrow", "Peacock", "Parrot", "Crow"],
-        "options_hi": ["गौरैया", "मोर", "तोता", "कौआ"],
-        "answer_en": "Peacock",
-        "answer_hi": "मोर",
+        "question_en": "How do you check default toolchain?",
+        "question_hi": "डिफ़ॉल्ट टूलचेन कैसे चेक करते हैं?",
+        "options_en": ["rustup show", "rustup default", "rustup current", "rustup status"],
+        "options_hi": ["rustup show", "rustup default", "rustup current", "rustup status"],
+        "answer_en": "rustup show",
+        "answer_hi": "rustup show",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 87,
-        "question_en": "What is the value of 12 × 11?",
-        "question_hi": "12 × 11 का मान क्या है?",
-        "options_en": ["121", "132", "144", "156"],
-        "options_hi": ["121", "132", "144", "156"],
-        "answer_en": "132",
-        "answer_hi": "132",
+        "question_en": "What are Rust components?",
+        "question_hi": "Rust कंपोनेंट्स क्या हैं?",
+        "options_en": ["Additional tools and targets", "Library packages", "Compiler parts", "Build artifacts"],
+        "options_hi": ["अतिरिक्त टूल्स और टार्गेट्स", "लाइब्रेरी पैकेजेस", "कम्पाइलर पार्ट्स", "बिल्ड आर्टिफैक्ट्स"],
+        "answer_en": "Additional tools and targets",
+        "answer_hi": "अतिरिक्त टूल्स और टार्गेट्स",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 88,
-        "question_en": "Which gas is used by plants during respiration?",
-        "question_hi": "पौधे श्वसन के दौरान किस गैस का उपयोग करते हैं?",
-        "options_en": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
-        "options_hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "नाइट्रोजन", "हाइड्रोजन"],
-        "answer_en": "Oxygen",
-        "answer_hi": "ऑक्सीजन",
+        "question_en": "How do you list available components?",
+        "question_hi": "उपलब्ध कंपोनेंट्स कैसे लिस्ट करते हैं?",
+        "options_en": ["rustup component list", "rustup list components", "rustup --components", "rustup show components"],
+        "options_hi": ["rustup component list", "rustup list components", "rustup --components", "rustup show components"],
+        "answer_en": "rustup component list",
+        "answer_hi": "rustup component list",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 89,
-        "question_en": "What is the chemical formula of Glucose?",
-        "question_hi": "ग्लूकोज का रासायनिक सूत्र क्या है?",
-        "options_en": ["C₆H₁₂O₆", "C₁₂H₂₂O₁₁", "C₂H₅OH", "CH₃COOH"],
-        "options_hi": ["C₆H₁₂O₆", "C₁₂H₂₂O₁₁", "C₂H₅OH", "CH₃COOH"],
-        "answer_en": "C₆H₁₂O₆",
-        "answer_hi": "C₆H₁₂O₆",
+        "question_en": "What is the Rust documentation component?",
+        "question_hi": "Rust डॉक्युमेंटेशन कंपोनेंट क्या है?",
+        "options_en": ["rust-docs", "docs", "rust-doc", "documentation"],
+        "options_hi": ["rust-docs", "docs", "rust-doc", "documentation"],
+        "answer_en": "rust-docs",
+        "answer_hi": "rust-docs",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 90,
-        "question_en": "Which instrument is used to see distant objects?",
-        "question_hi": "दूर की वस्तुओं को देखने के लिए किस उपकरण का उपयोग किया जाता है?",
-        "options_en": ["Microscope", "Telescope", "Periscope", "Kaleidoscope"],
-        "options_hi": ["माइक्रोस्कोप", "टेलीस्कोप", "पेरिस्कोप", "कैलाइडोस्कोप"],
-        "answer_en": "Telescope",
-        "answer_hi": "टेलीस्कोप",
+        "question_en": "How do you install rust-docs?",
+        "question_hi": "rust-docs कैसे इंस्टॉल करते हैं?",
+        "options_en": ["rustup component add rust-docs", "cargo install rust-docs", "rustup docs install", "rust install-docs"],
+        "options_hi": ["rustup component add rust-docs", "cargo install rust-docs", "rustup docs install", "rust install-docs"],
+        "answer_en": "rustup component add rust-docs",
+        "answer_hi": "rustup component add rust-docs",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 91,
-        "question_en": "What is the value of 8² - 6²?",
-        "question_hi": "8² - 6² का मान क्या है?",
-        "options_en": ["4", "14", "28", "100"],
-        "options_hi": ["4", "14", "28", "100"],
-        "answer_en": "28",
-        "answer_hi": "28",
+        "question_en": "What are Rust targets?",
+        "question_hi": "Rust टार्गेट्स क्या हैं?",
+        "options_en": ["Platforms to compile for", "Build goals", "Test targets", "Performance targets"],
+        "options_hi": ["कम्पाइल करने के लिए प्लेटफॉर्म", "बिल्ड गोल्स", "टेस्ट टार्गेट्स", "परफॉर्मेंस टार्गेट्स"],
+        "answer_en": "Platforms to compile for",
+        "answer_hi": "कम्पाइल करने के लिए प्लेटफॉर्म",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 92,
-        "question_en": "Which part of the plant conducts photosynthesis?",
-        "question_hi": "पौधे का कौन सा भाग प्रकाश संश्लेषण करता है?",
-        "options_en": ["Roots", "Stem", "Leaves", "Flowers"],
-        "options_hi": ["जड़ें", "तना", "पत्तियां", "फूल"],
-        "answer_en": "Leaves",
-        "answer_hi": "पत्तियां",
+        "question_en": "How do you list available targets?",
+        "question_hi": "उपलब्ध टार्गेट्स कैसे लिस्ट करते हैं?",
+        "options_en": ["rustup target list", "rustup list targets", "rustup --targets", "rustup show targets"],
+        "options_hi": ["rustup target list", "rustup list targets", "rustup --targets", "rustup show targets"],
+        "answer_en": "rustup target list",
+        "answer_hi": "rustup target list",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 93,
-        "question_en": "What is the chemical symbol for Potassium?",
-        "question_hi": "पोटैशियम का रासायनिक प्रतीक क्या है?",
-        "options_en": ["P", "Po", "Pt", "K"],
-        "options_hi": ["P", "Po", "Pt", "K"],
-        "answer_en": "K",
-        "answer_hi": "K",
+        "question_en": "What is the wasm32 target?",
+        "question_hi": "wasm32 टार्गेट क्या है?",
+        "options_en": ["WebAssembly target", "32-bit Windows", "Web target", "Browser target"],
+        "options_hi": ["WebAssembly टार्गेट", "32-बिट विंडोज़", "वेब टार्गेट", "ब्राउज़र टार्गेट"],
+        "answer_en": "WebAssembly target",
+        "answer_hi": "WebAssembly टार्गेट",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 94,
-        "question_en": "Which is the largest mammal in the world?",
-        "question_hi": "दुनिया का सबसे बड़ा स्तनपायी कौन सा है?",
-        "options_en": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
-        "options_hi": ["हाथी", "ब्लू व्हेल", "जिराफ", "दरियाई घोड़ा"],
-        "answer_en": "Blue Whale",
-        "answer_hi": "ब्लू व्हेल",
+        "question_en": "How do you add wasm32 target?",
+        "question_hi": "wasm32 टार्गेट कैसे ऐड करते हैं?",
+        "options_en": ["rustup target add wasm32-unknown-unknown", "cargo add wasm32", "rustup add wasm", "rust target wasm32"],
+        "options_hi": ["rustup target add wasm32-unknown-unknown", "cargo add wasm32", "rustup add wasm", "rust target wasm32"],
+        "answer_en": "rustup target add wasm32-unknown-unknown",
+        "answer_hi": "rustup target add wasm32-unknown-unknown",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 95,
-        "question_en": "What is the value of ¾ of 100?",
-        "question_hi": "100 का ¾ क्या है?",
-        "options_en": ["25", "50", "75", "100"],
-        "options_hi": ["25", "50", "75", "100"],
-        "answer_en": "75",
-        "answer_hi": "75",
+        "question_en": "What is cross-compilation?",
+        "question_hi": "क्रॉस-कम्पाइलेशन क्या है?",
+        "options_en": ["Compiling for different platform", "Multiple architectures", "Different OS compilation", "All of the above"],
+        "options_hi": ["अलग प्लेटफॉर्म के लिए कम्पाइल करना", "मल्टीपल आर्किटेक्चर", "अलग OS कम्पाइलेशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 96,
-        "question_en": "Which gas is produced during fermentation?",
-        "question_hi": "किण्वन के दौरान कौन सी गैस उत्पन्न होती है?",
-        "options_en": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
-        "options_hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "नाइट्रोजन", "हाइड्रोजन"],
-        "answer_en": "Carbon Dioxide",
-        "answer_hi": "कार्बन डाइऑक्साइड",
+        "question_en": "How do you cross-compile?",
+        "question_hi": "क्रॉस-कम्पाइल कैसे करते हैं?",
+        "options_en": ["cargo build --target=...", "rustc --target ...", "rustup target add ... then build", "All of the above"],
+        "options_hi": ["cargo build --target=...", "rustc --target ...", "rustup target add ... फिर build", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 97,
-        "question_en": "What is the chemical formula of Ammonia?",
-        "question_hi": "अमोनिया का रासायनिक सूत्र क्या है?",
-        "options_en": ["NH₃", "NH₄", "N₂H", "HNO₃"],
-        "options_hi": ["NH₃", "NH₄", "N₂H", "HNO₃"],
-        "answer_en": "NH₃",
-        "answer_hi": "NH₃",
+        "question_en": "What is the Rust toolchain file?",
+        "question_hi": "Rust टूलचेन फाइल क्या है?",
+        "options_en": ["rust-toolchain.toml", "toolchain.toml", "rust-toolchain", "Both A and C"],
+        "options_hi": ["rust-toolchain.toml", "toolchain.toml", "rust-toolchain", "A और C दोनों"],
+        "answer_en": "Both A and C",
+        "answer_hi": "A और C दोनों",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 98,
-        "question_en": "Which is the hardest natural substance on Earth?",
-        "question_hi": "पृथ्वी पर सबसे कठोर प्राकृतिक पदार्थ कौन सा है?",
-        "options_en": ["Gold", "Iron", "Diamond", "Platinum"],
-        "options_hi": ["सोना", "लोहा", "हीरा", "प्लैटिनम"],
-        "answer_en": "Diamond",
-        "answer_hi": "हीरा",
+        "question_en": "What does rust-toolchain.toml contain?",
+        "question_hi": "rust-toolchain.toml में क्या होता है?",
+        "options_en": ["Toolchain version and components", "Project dependencies", "Build configuration", "Test settings"],
+        "options_hi": ["टूलचेन वर्जन और कंपोनेंट्स", "प्रोजेक्ट डिपेंडेंसीज", "बिल्ड कॉन्फिगरेशन", "टेस्ट सेटिंग्स"],
+        "answer_en": "Toolchain version and components",
+        "answer_hi": "टूलचेन वर्जन और कंपोनेंट्स",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 99,
-        "question_en": "What is the value of 5³?",
-        "question_hi": "5³ का मान क्या है?",
-        "options_en": ["15", "25", "125", "625"],
-        "options_hi": ["15", "25", "125", "625"],
-        "answer_en": "125",
-        "answer_hi": "125",
+        "question_en": "How do you set toolchain per project?",
+        "question_hi": "प्रोजेक्ट के अनुसार टूलचेन कैसे सेट करते हैं?",
+        "options_en": ["Create rust-toolchain.toml", "rustup override set", "cargo toolchain set", "Both A and B"],
+        "options_hi": ["rust-toolchain.toml बनाएँ", "rustup override set", "cargo toolchain set", "A और B दोनों"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 100,
-        "question_en": "Which instrument is used to measure blood pressure?",
-        "question_hi": "रक्तचाप मापने के लिए किस उपकरण का उपयोग किया जाता है?",
-        "options_en": ["Thermometer", "Stethoscope", "Sphygmomanometer", "Hygrometer"],
-        "options_hi": ["थर्मामीटर", "स्टेथोस्कोप", "स्फिग्मोमैनोमीटर", "हाइग्रोमीटर"],
-        "answer_en": "Sphygmomanometer",
-        "answer_hi": "स्फिग्मोमैनोमीटर",
+        "question_en": "What is the Rust installation directory?",
+        "question_hi": "Rust इंस्टालेशन डायरेक्टरी क्या है?",
+        "options_en": ["~/.rustup/", "/usr/local/rust/", "~/.cargo/", "Both A and C"],
+        "options_hi": ["~/.rustup/", "/usr/local/rust/", "~/.cargo/", "A और C दोनों"],
+        "answer_en": "Both A and C",
+        "answer_hi": "A और C दोनों",
         "attempted": false,
         "selected": ""
     }
-        
-// Add more questions here...
 ];
-
-
-let currentQuestion = 0; 
+// --------------------------- GLOBAL VARS -----------------------------
+let currentQuestion = 0;
 let language = "en";
-// let timeLeft = 180 * 60; // 180 minutes
-let timeLeft = 60 * 60; // 60 minutes
+let timeLeft = 60 * 60;   // 60 minutes timer
 let timerInterval;
 
-// ----------------- Quiz Logic -----------------
+// --------------------------- LOAD QUESTION ----------------------------
 function loadQuestion(index) {
     const q = questions[index];
-    document.getElementById("question").textContent = `${q.num}. ${
-        language === "en" ? q.question_en : q.question_hi
-    }`;
-    document.getElementById("questionCounter").textContent = `Question ${index + 1} of ${questions.length}`;
+
+    document.getElementById("question").textContent =
+        `${q.num}. ${language === "en" ? q.question_en : q.question_hi}`;
+
+    document.getElementById("questionCounter").textContent =
+        `Question ${index + 1} of ${questions.length}`;
 
     const optionsElement = document.getElementById("options");
     optionsElement.innerHTML = "";
@@ -1139,6 +1124,7 @@ function loadQuestion(index) {
     options.forEach((option) => {
         const isSelected = q.selected === option;
         const optionDiv = document.createElement("div");
+
         optionDiv.className = "option-box";
         optionDiv.style = `
             border: 2px solid ${isSelected ? "#007bff" : "#ccc"};
@@ -1147,12 +1133,11 @@ function loadQuestion(index) {
             border-radius: 8px;
             margin: 6px 0;
             cursor: pointer;
-            transition: all 0.2s;
         `;
 
         optionDiv.innerHTML = `
-            <input type="radio" name="option" value="${option}" ${isSelected ? "checked" : ""} style="margin-right:8px;">
-            ${option}
+            <input type="radio" name="option"
+            value="${option}" ${isSelected ? "checked" : ""} /> ${option}
         `;
 
         optionDiv.addEventListener("click", () => {
@@ -1166,12 +1151,14 @@ function loadQuestion(index) {
     updateNavigation();
 }
 
+// --------------------------- MARK ATTEMPT ----------------------------
 function markAttempted(index, selectedAnswer) {
     questions[index].attempted = true;
     questions[index].selected = selectedAnswer;
     updateNavigation();
 }
 
+// --------------------------- NEXT / PREV -----------------------------
 function nextQuestion() {
     if (currentQuestion < questions.length - 1) {
         currentQuestion++;
@@ -1186,296 +1173,150 @@ function prevQuestion() {
     }
 }
 
+// --------------------------- LANGUAGE CHANGE -------------------------
 function changeLanguage() {
     language = document.getElementById("languageSelect").value;
     loadQuestion(currentQuestion);
 }
 
-function submitQuiz() {
-    clearInterval(timerInterval);
-    let attempted = 0,
-        notAttempted = 0,
-        score = 0;
-
-    questions.forEach((q) => {
-        if (q.attempted) {
-            attempted++;
-            if (q.selected === q.answer_en || q.selected === q.answer_hi) score++;
-        } else notAttempted++;
-    });
-
-    alert(
-        `Quiz submitted!\nAttempted: ${attempted}\nNot Attempted: ${notAttempted}\nScore: ${score}/${questions.length}`
-    );
-}
-
+// --------------------------- TIMER -------------------------------
 function startTimer() {
     const timerElement = document.getElementById("timer");
     clearInterval(timerInterval);
+
     timerInterval = setInterval(() => {
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
-            alert("Time's up!");
+            alert("⏳ Time Over!");
             submitQuiz();
-        } else {
-            const hours = Math.floor(timeLeft / 3600);
-            const minutes = Math.floor((timeLeft % 3600) / 60);
-            const seconds = timeLeft % 60;
-            timerElement.textContent = `Time Left: ${hours
-                .toString()
-                .padStart(2, "0")}:${minutes
-                .toString()
-                .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
-            timeLeft--;
+            return;
         }
+
+        const h = Math.floor(timeLeft / 3600);
+        const m = Math.floor((timeLeft % 3600) / 60);
+        const s = timeLeft % 60;
+
+        timerElement.textContent =
+            `Time Left: ${h.toString().padStart(2, "0")}:${m
+                .toString().padStart(2, "0")}:${s.toString().padStart(2, "0")}`;
+
+        timeLeft--;
     }, 1000);
 }
 
+// --------------------------- SUBMIT QUIZ ---------------------
+function submitQuiz() {
+    let confirmation = confirm("Are you sure you want to submit the test?");
+    if (!confirmation) return;
 
+    clearInterval(timerInterval);
 
+    // Calculate time spent
+    const totalTimeSpent = (60 * 60) - timeLeft;
+    const mins = Math.floor(totalTimeSpent / 60);
+    const secs = totalTimeSpent % 60;
 
+    // Save to localStorage
+    localStorage.setItem("timeTaken", `${mins} min ${secs} sec`);
 
+    let attempted = 0;
+    let notAttempted = 0;
+    let score = 0;
+    const results = [];
 
-
-
-
-
-
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////all file and folder me code add karna hai 
-
-
-// submit 
-function jumpToQuestion(index) {
-            currentQuestion = index;
-            loadQuestion(index);
+    questions.forEach(q => {
+        if (q.attempted) {
+            attempted++;
+            if (q.selected === q.answer_en || q.selected === q.answer_hi) {
+                score++;
+            }
+        } else {
+            notAttempted++;
         }
 
-        function submitQuiz() {
-            let confirmation = confirm("Are you sure you want to submit the test?");
-            
-            if (!confirmation) {
-                return; // अगर यूज़र 'Cancel' करता है तो आगे नहीं बढ़ेंगे
-            }
+        results.push({
+            question: language === "en" ? q.question_en : q.question_hi,
+            selected: q.selected || "Not Answered",
+            correct: language === "en" ? q.answer_en : q.answer_hi
+        });
+    });
 
-            let attempted = 0;
-            let notAttempted = 0;
-            let score = 0;
-            const results = [];
+    // Save result data
+    localStorage.setItem("attempted", attempted);
+    localStorage.setItem("notAttempted", notAttempted);
+    localStorage.setItem("score", score);
+    localStorage.setItem("results", JSON.stringify(results));
 
-            questions.forEach(q => {
-                if (q.attempted) {
-                    attempted++;
-                    if (q.selected === q.answer) {
-                        score++;
-                    }
-                } else {
-                    notAttempted++;
-                }
-                results.push({ question: q.question, selected: q.selected || "Not Answered", correct: q.answer });
-            });
+    // Stop camera stream if active
+    if (videoStream) {
+        videoStream.getTracks().forEach(track => track.stop());
+    }
 
-            localStorage.setItem("attempted", attempted);
-            localStorage.setItem("notAttempted", notAttempted);
-            localStorage.setItem("score", score);
-            localStorage.setItem("results", JSON.stringify(results));
+    // Redirect
+    window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
+}
 
-            // रिजल्ट देखने से पहले एक और कन्फर्मेशन ले सकते हैं
-            let viewResult = confirm("Test submitted successfully! Do you want to view your result?");
-            if (viewResult) {
-                window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
-            }
-        }
-        window.onload = () => {
-            loadQuestion(currentQuestion);
-        };
-
-
+// --------------------------- NAVIGATION ------------------------------
 function updateNavigation() {
     const nav = document.getElementById("circleContainer");
     nav.innerHTML = "";
+
     questions.forEach((q, i) => {
         let color = "gray";
         if (i === currentQuestion) color = "blue";
         else if (q.attempted) color = "green";
-        nav.innerHTML += `<div class='circle' style='background-color:${color}' onclick='loadQuestion(${i})'>${i + 1}</div>`;
+
+        const circle = document.createElement("div");
+        circle.className = "circle";
+        circle.style.background = color;
+        circle.textContent = i + 1;
+        circle.onclick = () => jumpToQuestion(i);
+        nav.appendChild(circle);
     });
 }
 
-// ----------------- Camera & Movement Logic -----------------
+function jumpToQuestion(i) {
+    currentQuestion = i;
+    loadQuestion(i);
+}
+
+// --------------------------- CAMERA ----------------------
 let videoStream;
-let movementCount = 0;
 
 function startCamera() {
     const container = document.createElement("div");
     container.id = "camera-container";
     container.style.position = "fixed";
     container.style.top = "10px";
-    container.style.left = "10px"; // ✅ Left side
+    container.style.left = "10px";
     container.style.width = "130px";
     container.style.height = "130px";
-    container.style.zIndex = "9999";
     container.style.borderRadius = "50%";
     container.style.overflow = "hidden";
-    container.style.border = "3px solid red";
-    container.style.boxShadow = "0 0 10px rgba(0,0,0,0.3)";
-    container.style.cursor = "grab";
-    container.style.minWidth = "80px";
-    container.style.minHeight = "80px";
-    container.style.maxWidth = "250px";
-    container.style.maxHeight = "250px";
     container.style.background = "#000";
+    container.style.border = "3px solid red";
+    container.style.zIndex = "9999";
     document.body.appendChild(container);
 
     const video = document.createElement("video");
-    video.setAttribute("autoplay", true);
-    video.setAttribute("playsinline", true);
+    video.autoplay = true;
+    video.playsInline = true;
     video.style.width = "100%";
     video.style.height = "100%";
     video.style.objectFit = "cover";
     container.appendChild(video);
 
-    // ✅ Resize handle
-    const resizeHandle = document.createElement("div");
-    resizeHandle.style.position = "absolute";
-    resizeHandle.style.bottom = "2px";
-    resizeHandle.style.right = "2px";
-    resizeHandle.style.width = "15px";
-    resizeHandle.style.height = "15px";
-    resizeHandle.style.background = "rgba(255,255,255,0.7)";
-    resizeHandle.style.borderRadius = "4px";
-    resizeHandle.style.cursor = "se-resize";
-    container.appendChild(resizeHandle);
-
-    // ✅ Drag logic
-    let isDragging = false;
-    let offsetX, offsetY;
-
-    container.addEventListener("mousedown", (e) => {
-        if (e.target === resizeHandle) return;
-        isDragging = true;
-        offsetX = e.clientX - container.offsetLeft;
-        offsetY = e.clientY - container.offsetTop;
-        container.style.cursor = "grabbing";
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isDragging) return;
-        let x = e.clientX - offsetX;
-        let y = e.clientY - offsetY;
-        x = Math.max(0, Math.min(window.innerWidth - container.offsetWidth, x));
-        y = Math.max(0, Math.min(window.innerHeight - container.offsetHeight, y));
-        container.style.left = `${x}px`;
-        container.style.top = `${y}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isDragging = false;
-        container.style.cursor = "grab";
-    });
-
-    // ✅ Resize logic
-    let isResizing = false;
-    let startWidth, startHeight, startX, startY;
-
-    resizeHandle.addEventListener("mousedown", (e) => {
-        e.stopPropagation();
-        isResizing = true;
-        startWidth = container.offsetWidth;
-        startHeight = container.offsetHeight;
-        startX = e.clientX;
-        startY = e.clientY;
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isResizing) return;
-        const dx = e.clientX - startX;
-        const dy = e.clientY - startY;
-        const newSize = Math.max(80, Math.min(250, Math.max(startWidth + dx, startHeight + dy)));
-        container.style.width = `${newSize}px`;
-        container.style.height = `${newSize}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isResizing = false;
-    });
-
-    // ✅ Camera stream
     navigator.mediaDevices.getUserMedia({ video: true })
         .then(stream => {
             video.srcObject = stream;
             videoStream = stream;
-            detectMovement(video);
         })
-        .catch(err => {
-            console.error("Camera error:", err);
-            alert("Camera not accessible!");
-        });
+        .catch(() => alert("Camera not accessible!"));
 }
 
-function detectMovement(video) {
-    const canvas = document.createElement("canvas");
-    const ctx = canvas.getContext("2d");
-    canvas.width = 160;
-    canvas.height = 160;
-    let lastImageData = null;
-
-    setInterval(() => {
-        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-
-        if (lastImageData) {
-            let diff = 0;
-            for (let i = 0; i < imageData.data.length; i += 4) {
-                diff += Math.abs(imageData.data[i] - lastImageData.data[i]);
-            }
-
-            if (diff > 1000000) {
-                movementCount++;
-                if (movementCount === 1) {
-                    alert("⚠️ Alert 1: Face is not move");
-                } else if (movementCount === 2) {
-                    alert("⚠️ Alert 2: Head is not move");
-                } else if (movementCount === 3) {
-                    alert("⚠️ Alert 3: Test series is restarting...");
-                    restartTest();
-                }
-            }
-        }
-        lastImageData = imageData;
-    }, 2000);
-}
-
-function restartTest() {
-    if (videoStream) {
-        videoStream.getTracks().forEach(track => track.stop());
-    }
-    const camContainer = document.getElementById("camera-container");
-    if (camContainer) camContainer.remove();
-
-    movementCount = 0;
-    currentQuestion = 0;
-    timeLeft = 180 * 60;
-
-    questions.forEach(q => {
-        q.attempted = false;
-        q.selected = null;
-    });
-
-    loadQuestion(currentQuestion);
-    startTimer();
-    startCamera();
-}
-
-// ----------------- Page Load -----------------
+// --------------------------- PAGE LOAD --------------------------
 window.onload = function () {
     loadQuestion(currentQuestion);
     startTimer();
-    startCamera(); // ✅ Camera starts with test
+    startCamera();
 };
-
-
-///////////////////////////////////////

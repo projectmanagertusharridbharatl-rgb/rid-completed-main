@@ -14,7 +14,7 @@
     <div class="main-container">
         <div class="quiz-container">
             <div class="question-header">
-                <h2>JEE Test 8</h2>
+                <h2>Rust Test 8</h2>
                 <div class="timer"> <span id="timer"></span> </div>
             </div>
 
@@ -27,10 +27,11 @@
             <div id="question"></div>
             <ul class="options" id="options"></ul>
 
-            <div class="buttons">
+              <div class="buttons">
                 <button class="btn" onclick="prevQuestion()">Previous</button>
                 <button class="btn btn-next" onclick="nextQuestion()">Next</button>
             </div>
+            <button class="btn btn-service" onclick="backToTestService()">Back to Test Service</button>
         </div>
 
         <div class="sidebar">
@@ -46,8 +47,16 @@
             </div>
         </div>
     </div>
-
-    <script src="/RTS/public/js/jee/Advanced/8-test.js"></script>
+ <script>
+      
+        function backToTestService() {
+            alert('Redirecting to Test Service...');
+            // In a real implementation, this would redirect to the test service page
+            window.location.href = '/RTS/public/Deshbord/category/test/technical&coding/type_script/purchase-test.html';
+        }
+      
+    </script>
+    <script src="/RTS/public/js/teacnical/type_script/8-test.js"></script>
 </body>
 
 </html>

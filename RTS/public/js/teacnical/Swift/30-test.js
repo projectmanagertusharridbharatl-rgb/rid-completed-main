@@ -1,312 +1,307 @@
-const questions = [
-    // Class 12 Biology (1-20)
-    {
+const questions =[
+     {
         "num": 1,
-        "question_en": "Which process is responsible for the formation of gametes in sexually reproducing organisms?",
-        "question_hi": "यौन प्रजनन करने वाले जीवों में युग्मकों के निर्माण के लिए कौन सी प्रक्रिया जिम्मेदार है?",
-        "options_en": ["Mitosis", "Meiosis", "Binary Fission", "Budding"],
-        "options_hi": ["समसूत्री विभाजन", "अर्धसूत्री विभाजन", "द्विखंडन", "मुकुलन"],
-        "answer_en": "Meiosis",
-        "answer_hi": "अर्धसूत्री विभाजन",
+        "question_en": "How do you handle errors with the '?' operator?",
+        "question_hi": "'?' ऑपरेटर के साथ एरर कैसे हैंडल करते हैं?",
+        "options_en": ["Propagate errors automatically", "Ignore errors", "Panic on errors", "Log errors"],
+        "options_hi": ["एरर ऑटोमैटिकली प्रोपेगेट करना", "एरर इग्नोर करना", "एरर पर पैनिक करना", "एरर लॉग करना"],
+        "answer_en": "Propagate errors automatically",
+        "answer_hi": "एरर ऑटोमैटिकली प्रोपेगेट करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 2,
-        "question_en": "What is the function of DNA polymerase in DNA replication?",
-        "question_hi": "DNA प्रतिकृति में DNA पोलीमरेज़ का क्या कार्य है?",
-        "options_en": ["Unwinds DNA", "Adds nucleotides", "Proofreads", "Joins Okazaki fragments"],
-        "options_hi": ["DNA को खोलना", "न्यूक्लियोटाइड जोड़ना", "प्रूफरीडिंग", "ओकाजाकी खंडों को जोड़ना"],
-        "answer_en": "Adds nucleotides",
-        "answer_hi": "न्यूक्लियोटाइड जोड़ना",
+        "question_en": "What is the purpose of the 'Cow' (Clone on Write) type?",
+        "question_hi": "'Cow' (Clone on Write) टाइप का उद्देश्य क्या है?",
+        "options_en": ["Efficient borrowing with optional cloning", "Automatic copying", "Memory allocation", "Thread synchronization"],
+        "options_hi": ["ऑप्शनल क्लोनिंग के साथ एफिशिएंट बोरोइंग", "ऑटोमैटिक कॉपीिंग", "मेमोरी अलोकेशन", "थ्रेड सिंक्रोनाइज़ेशन"],
+        "answer_en": "Efficient borrowing with optional cloning",
+        "answer_hi": "ऑप्शनल क्लोनिंग के साथ एफिशिएंट बोरोइंग",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 3,
-        "question_en": "Which hormone regulates the sleep-wake cycle in humans?",
-        "question_hi": "मनुष्यों में नींद-जागने के चक्र को कौन सा हार्मोन नियंत्रित करता है?",
-        "options_en": ["Melatonin", "Insulin", "Thyroxine", "Adrenaline"],
-        "options_hi": ["मेलाटोनिन", "इंसुलिन", "थायरॉक्सिन", "एड्रेनालाईन"],
-        "answer_en": "Melatonin",
-        "answer_hi": "मेलाटोनिन",
+        "question_en": "How do you define a generic function in Rust?",
+        "question_hi": "Rust में जेनरिक फंक्शन कैसे डिफाइन करते हैं?",
+        "options_en": ["fn func<T>(param: T) -> T {}", "generic fn func<T>(param: T) {}", "fn func generic<T>(param: T) {}", "function<T> func(param: T) {}"],
+        "options_hi": ["fn func<T>(param: T) -> T {}", "generic fn func<T>(param: T) {}", "fn func generic<T>(param: T) {}", "function<T> func(param: T) {}"],
+        "answer_en": "fn func<T>(param: T) -> T {}",
+        "answer_hi": "fn func<T>(param: T) -> T {}",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 4,
-        "question_en": "What is the site of protein synthesis in a cell?",
-        "question_hi": "कोशिका में प्रोटीन संश्लेषण का स्थान क्या है?",
-        "options_en": ["Nucleus", "Mitochondria", "Ribosome", "Golgi apparatus"],
-        "options_hi": ["केंद्रक", "माइटोकॉन्ड्रिया", "राइबोसोम", "गॉल्जी उपकरण"],
-        "answer_en": "Ribosome",
-        "answer_hi": "राइबोसोम",
+        "question_en": "What is the purpose of the 'Mutex' type?",
+        "question_hi": "'Mutex' टाइप का उद्देश्य क्या है?",
+        "options_en": ["Thread-safe interior mutability", "Memory allocation", "Automatic locking", "Reference counting"],
+        "options_hi": ["थ्रेड-सेफ इंटीरियर म्यूटेबिलिटी", "मेमोरी अलोकेशन", "ऑटोमैटिक लॉकिंग", "रिफरेन्स काउंटिंग"],
+        "answer_en": "Thread-safe interior mutability",
+        "answer_hi": "थ्रेड-सेफ इंटीरियर म्यूटेबिलिटी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 5,
-        "question_en": "Which of the following is a greenhouse gas produced by cattle?",
-        "question_hi": "निम्नलिखित में से कौन सी ग्रीनहाउस गैस मवेशियों द्वारा उत्पन्न होती है?",
-        "options_en": ["Carbon dioxide", "Methane", "Nitrous oxide", "Chlorofluorocarbon"],
-        "options_hi": ["कार्बन डाइऑक्साइड", "मीथेन", "नाइट्रस ऑक्साइड", "क्लोरोफ्लोरोकार्बन"],
-        "answer_en": "Methane",
-        "answer_hi": "मीथेन",
+        "question_en": "How do you create a vector in Rust?",
+        "question_hi": "Rust में वेक्टर कैसे बनाते हैं?",
+        "options_en": ["let vec = vec![1, 2, 3];", "let vec = Vector::new();", "let vec = [1, 2, 3].to_vec();", "let vec = new_vec![1, 2, 3];"],
+        "options_hi": ["let vec = vec![1, 2, 3];", "let vec = Vector::new();", "let vec = [1, 2, 3].to_vec();", "let vec = new_vec![1, 2, 3];"],
+        "answer_en": "let vec = vec![1, 2, 3];",
+        "answer_hi": "let vec = vec![1, 2, 3];",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 6,
-        "question_en": "What is the genetic disorder caused by the presence of an extra chromosome 21?",
-        "question_hi": "एक अतिरिक्त क्रोमोसोम 21 की उपस्थिति के कारण होने वाला आनुवंशिक विकार क्या है?",
-        "options_en": ["Turner syndrome", "Down syndrome", "Klinefelter syndrome", "Hemophilia"],
-        "options_hi": ["टर्नर सिंड्रोम", "डाउन सिंड्रोम", "क्लाइनफेल्टर सिंड्रोम", "हीमोफिलिया"],
-        "answer_en": "Down syndrome",
-        "answer_hi": "डाउन सिंड्रोम",
+        "question_en": "What is the purpose of the 'Option' type?",
+        "question_hi": "'Option' टाइप का उद्देश्य क्या है?",
+        "options_en": ["Represent optional values safely", "Error handling", "Boolean operations", "Pattern matching"],
+        "options_hi": ["ऑप्शनल वैल्यू को सेफली रिप्रेजेंट करना", "एरर हैंडलिंग", "बूलियन ऑपरेशन", "पैटर्न मैचिंग"],
+        "answer_en": "Represent optional values safely",
+        "answer_hi": "ऑप्शनल वैल्यू को सेफली रिप्रेजेंट करना",
         "attempted": false,
         "selected": ""
     },
     {
-        "num": 7,
-        "question_en": "Which plant hormone promotes cell elongation?",
-        "question_hi": "कौन सा पादप हार्मोन कोशिका दीर्घीकरण को बढ़ावा देता है?",
-        "options_en": ["Abscisic acid", "Auxin", "Cytokinin", "Ethylene"],
-        "options_hi": ["एब्सिसिक अम्ल", "ऑक्सिन", "साइटोकाइनिन", "एथिलीन"],
-        "answer_en": "Auxin",
-        "answer_hi": "ऑक्सिन",
+        "num":7,
+        "question_en": "How do you implement a trait for a type?",
+        "question_hi": "टाइप के लिए trait कैसे इम्प्लीमेंट करते हैं?",
+        "options_en": ["impl Trait for Type {}", "trait impl for Type {}", "Type implements Trait {}", "implement Trait for Type {}"],
+        "options_hi": ["impl Trait for Type {}", "trait impl for Type {}", "Type implements Trait {}", "implement Trait for Type {}"],
+        "answer_en": "impl Trait for Type {}",
+        "answer_hi": "impl Trait for Type {}",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 8,
-        "question_en": "What is the process by which water moves from an area of high concentration to low concentration through a semi-permeable membrane?",
-        "question_hi": "वह प्रक्रिया क्या है जिसके द्वारा पानी एक अर्ध-पारगम्य झिल्ली के माध्यम से उच्च सांद्रता वाले क्षेत्र से निम्न सांद्रता वाले क्षेत्र में जाता है?",
-        "options_en": ["Diffusion", "Osmosis", "Active transport", "Facilitated diffusion"],
-        "options_hi": ["प्रसार", "परासरण", "सक्रिय परिवहन", "सुगम्य प्रसार"],
-        "answer_en": "Osmosis",
-        "answer_hi": "परासरण",
+        "question_en": "What is the purpose of the 'async/await' syntax?",
+        "question_hi": "'async/await' सिंटैक्स का उद्देश्य क्या है?",
+        "options_en": ["Asynchronous programming with futures", "Synchronous operations", "Error handling", "Memory management"],
+        "options_hi": ["फ्यूचर के साथ एसिंक्रोनस प्रोग्रामिंग", "सिंक्रोनस ऑपरेशन", "एरर हैंडलिंग", "मेमोरी मैनेजमेंट"],
+        "answer_en": "Asynchronous programming with futures",
+        "answer_hi": "फ्यूचर के साथ एसिंक्रोनस प्रोग्रामिंग",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 9,
-        "question_en": "Which part of the human brain is responsible for maintaining balance and posture?",
-        "question_hi": "मानव मस्तिष्क का कौन सा भाग संतुलन और मुद्रा बनाए रखने के लिए जिम्मेदार है?",
-        "options_en": ["Cerebrum", "Cerebellum", "Medulla oblongata", "Hypothalamus"],
-        "options_hi": ["सेरेब्रम", "सेरेबेलम", "मेडुला ओब्लोंगाटा", "हाइपोथैलेमस"],
-        "answer_en": "Cerebellum",
-        "answer_hi": "सेरेबेलम",
+        "question_en": "How do you create a HashMap in Rust?",
+        "question_hi": "Rust में HashMap कैसे बनाते हैं?",
+        "options_en": ["use std::collections::HashMap; let map = HashMap::new();", "let map = new HashMap();", "let map = HashMap::create();", "use HashMap; let map = HashMap()"],
+        "options_hi": ["use std::collections::HashMap; let map = HashMap::new();", "let map = new HashMap();", "let map = HashMap::create();", "use HashMap; let map = HashMap()"],
+        "answer_en": "use std::collections::HashMap; let map = HashMap::new();",
+        "answer_hi": "use std::collections::HashMap; let map = HashMap::new();",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 10,
-        "question_en": "What is the name of the process by which plants lose water vapor through their leaves?",
-        "question_hi": "उस प्रक्रिया का क्या नाम है जिसके द्वारा पौधे अपनी पत्तियों के माध्यम से जल वाष्प खो देते हैं?",
-        "options_en": ["Transpiration", "Evaporation", "Condensation", "Precipitation"],
-        "options_hi": ["वाष्पोत्सर्जन", "वाष्पीकरण", "संघनन", "वर्षा"],
-        "answer_en": "Transpiration",
-        "answer_hi": "वाष्पोत्सर्जन",
+        "question_en": "What is the purpose of the 'Drop' trait?",
+        "question_hi": "'Drop' trait का उद्देश्य क्या है?",
+        "options_en": ["Custom cleanup when value goes out of scope", "Automatic memory allocation", "Error handling", "Pattern matching"],
+        "options_hi": ["वैल्यू के स्कोप से बाहर जाने पर कस्टम क्लीनअप", "ऑटोमैटिक मेमोरी अलोकेशन", "एरर हैंडलिंग", "पैटर्न मैचिंग"],
+        "answer_en": "Custom cleanup when value goes out of scope",
+        "answer_hi": "वैल्यू के स्कोप से बाहर जाने पर कस्टम क्लीनअप",
         "attempted": false,
         "selected": ""
     },
-
-    // Class 12 Mathematics (11-30)
     {
         "num": 11,
-        "question_en": "What is the derivative of sin(x) with respect to x?",
-        "question_hi": "x के सापेक्ष sin(x) का अवकलज क्या है?",
-        "options_en": ["cos(x)", "-cos(x)", "sin(x)", "-sin(x)"],
-        "options_hi": ["cos(x)", "-cos(x)", "sin(x)", "-sin(x)"],
-        "answer_en": "cos(x)",
-        "answer_hi": "cos(x)",
+        "question_en": "What is the purpose of the 'Rc' smart pointer?",
+        "question_hi": "'Rc' स्मार्ट पॉइंटर का उद्देश्य क्या है?",
+        "options_en": ["Reference counting for single-threaded scenarios", "Thread-safe reference counting", "Automatic memory management", "Heap allocation"],
+        "options_hi": ["सिंगल-थ्रेडेड सीनारियो के लिए रिफरेन्स काउंटिंग", "थ्रेड-सेफ रिफरेन्स काउंटिंग", "ऑटोमैटिक मेमोरी मैनेजमेंट", "हीप अलोकेशन"],
+        "answer_en": "Reference counting for single-threaded scenarios",
+        "answer_hi": "सिंगल-थ्रेडेड सीनारियो के लिए रिफरेन्स काउंटिंग",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 12,
-        "question_en": "What is the value of ∫(2x dx) from 0 to 3?",
-        "question_hi": "0 से 3 तक ∫(2x dx) का मान क्या है?",
-        "options_en": ["6", "9", "12", "18"],
-        "options_hi": ["6", "9", "12", "18"],
-        "answer_en": "9",
-        "answer_hi": "9",
+        "question_en": "How do you define a lifetime parameter?",
+        "question_hi": "लाइफटाइम पैरामीटर कैसे डिफाइन करते हैं?",
+        "options_en": ["fn func<'a>(param: &'a str) -> &'a str {}", "fn func<lifetime a>(param: &a str) {}", "fn func(param: &'a str) -> &'a str {}", "lifetime fn func<'a>(param: &str) {}"],
+        "options_hi": ["fn func<'a>(param: &'a str) -> &'a str {}", "fn func<lifetime a>(param: &a str) {}", "fn func(param: &'a str) -> &'a str {}", "lifetime fn func<'a>(param: &str) {}"],
+        "answer_en": "fn func<'a>(param: &'a str) -> &'a str {}",
+        "answer_hi": "fn func<'a>(param: &'a str) -> &'a str {}",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 13,
-        "question_en": "What is the probability of getting a prime number when a fair die is rolled?",
-        "question_hi": "एक निष्पक्ष पासा फेंकने पर एक अभाज्य संख्या आने की प्रायिकता क्या है?",
-        "options_en": ["1/2", "1/3", "1/4", "2/3"],
-        "options_hi": ["1/2", "1/3", "1/4", "2/3"],
-        "answer_en": "1/2",
-        "answer_hi": "1/2",
+        "question_en": "What is the purpose of the 'Cell' type?",
+        "question_hi": "'Cell' टाइप का उद्देश्य क्या है?",
+        "options_en": ["Interior mutability for Copy types", "Thread safety", "Automatic memory management", "Reference counting"],
+        "options_hi": ["Copy टाइप के लिए इंटीरियर म्यूटेबिलिटी", "थ्रेड सेफ्टी", "ऑटोमैटिक मेमोरी मैनेजमेंट", "रिफरेन्स काउंटिंग"],
+        "answer_en": "Interior mutability for Copy types",
+        "answer_hi": "Copy टाइप के लिए इंटीरियर म्यूटेबिलिटी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 14,
-        "question_en": "What is the value of lim(x→0) (sin x)/x?",
-        "question_hi": "lim(x→0) (sin x)/x का मान क्या है?",
-        "options_en": ["0", "1", "∞", "Undefined"],
-        "options_hi": ["0", "1", "∞", "अपरिभाषित"],
-        "answer_en": "1",
-        "answer_hi": "1",
+        "question_en": "How do you create a string slice in Rust?",
+        "question_hi": "Rust में स्ट्रिंग स्लाइस कैसे बनाते हैं?",
+        "options_en": ["let s: &str = \"hello\";", "let s: str = \"hello\";", "let s = String::slice(\"hello\");", "let s = \"hello\".as_str();"],
+        "options_hi": ["let s: &str = \"hello\";", "let s: str = \"hello\";", "let s = String::slice(\"hello\");", "let s = \"hello\".as_str();"],
+        "answer_en": "let s: &str = \"hello\";",
+        "answer_hi": "let s: &str = \"hello\";",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 15,
-        "question_en": "What is the general solution of the differential equation dy/dx = y?",
-        "question_hi": "अवकल समीकरण dy/dx = y का व्यापक हल क्या है?",
-        "options_en": ["y = e^x + C", "y = Ce^x", "y = ln|x| + C", "y = x + C"],
-        "options_hi": ["y = e^x + C", "y = Ce^x", "y = ln|x| + C", "y = x + C"],
-        "answer_en": "y = Ce^x",
-        "answer_hi": "y = Ce^x",
+        "question_en": "What is the purpose of the 'RefCell' type?",
+        "question_hi": "'RefCell' टाइप का उद्देश्य क्या है?",
+        "options_en": ["Interior mutability with runtime borrowing checks", "Compile-time borrowing checks", "Thread safety", "Automatic memory management"],
+        "options_hi": ["रनटाइम बोरोइंग चेक के साथ इंटीरियर म्यूटेबिलिटी", "कम्पाइल-टाइम बोरोइंग चेक", "थ्रेड सेफ्टी", "ऑटोमैटिक मेमोरी मैनेजमेंट"],
+        "answer_en": "Interior mutability with runtime borrowing checks",
+        "answer_hi": "रनटाइम बोरोइंग चेक के साथ इंटीरियर म्यूटेबिलिटी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 16,
-        "question_en": "What is the value of i², where i is the imaginary unit?",
-        "question_hi": "i² का मान क्या है, जहाँ i काल्पनिक इकाई है?",
-        "options_en": ["1", "-1", "i", "-i"],
-        "options_hi": ["1", "-1", "i", "-i"],
-        "answer_en": "-1",
-        "answer_hi": "-1",
+        "question_en": "How do you define a closure in Rust?",
+        "question_hi": "Rust में क्लोजर कैसे डिफाइन करते हैं?",
+        "options_en": ["let closure = |x| x + 1;", "closure |x| x + 1;", "let closure = function(x) { x + 1 };", "fn closure(x) { x + 1 }"],
+        "options_hi": ["let closure = |x| x + 1;", "closure |x| x + 1;", "let closure = function(x) { x + 1 };", "fn closure(x) { x + 1 }"],
+        "answer_en": "let closure = |x| x + 1;",
+        "answer_hi": "let closure = |x| x + 1;",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 17,
-        "question_en": "What is the equation of a circle with center at (0,0) and radius 5?",
-        "question_hi": "केंद्र (0,0) और त्रिज्या 5 वाले वृत्त का समीकरण क्या है?",
-        "options_en": ["x² + y² = 5", "x² + y² = 25", "x² + y² = 10", "x² + y² = 50"],
-        "options_hi": ["x² + y² = 5", "x² + y² = 25", "x² + y² = 10", "x² + y² = 50"],
-        "answer_en": "x² + y² = 25",
-        "answer_hi": "x² + y² = 25",
+        "question_en": "What is the purpose of the 'Send' trait?",
+        "question_hi": "'Send' trait का उद्देश्य क्या है?",
+        "options_en": ["Mark types that can be transferred across threads", "Automatic serialization", "Memory safety", "Error handling"],
+        "options_hi": ["उन टाइप को मार्क करना जो थ्रेड के आर-पार ट्रांसफर हो सकते हैं", "ऑटोमैटिक सीरियलाइज़ेशन", "मेमोरी सेफ्टी", "एरर हैंडलिंग"],
+        "answer_en": "Mark types that can be transferred across threads",
+        "answer_hi": "उन टाइप को मार्क करना जो थ्रेड के आर-पार ट्रांसफर हो सकते हैं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 18,
-        "question_en": "What is the value of tan(π/4)?",
-        "question_hi": "tan(π/4) का मान क्या है?",
-        "options_en": ["0", "1", "√3", "1/√3"],
-        "options_hi": ["0", "1", "√3", "1/√3"],
-        "answer_en": "1",
-        "answer_hi": "1",
+        "question_en": "How do you create a new String in Rust?",
+        "question_hi": "Rust में नई String कैसे बनाते हैं?",
+        "options_en": ["let s = String::from(\"hello\");", "let s = new String(\"hello\");", "let s = \"hello\".to_string();", "Both A and C"],
+        "options_hi": ["let s = String::from(\"hello\");", "let s = new String(\"hello\");", "let s = \"hello\".to_string();", "A और C दोनों"],
+        "answer_en": "Both A and C",
+        "answer_hi": "A और C दोनों",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 19,
-        "question_en": "What is the determinant of a 2x2 matrix [[a,b],[c,d]]?",
-        "question_hi": "2x2 मैट्रिक्स [[a,b],[c,d]] का सारणिक क्या है?",
-        "options_en": ["ab - cd", "ad - bc", "ac - bd", "a² - d²"],
-        "options_hi": ["ab - cd", "ad - bc", "ac - bd", "a² - d²"],
-        "answer_en": "ad - bc",
-        "answer_hi": "ad - bc",
+        "question_en": "What is the purpose of the 'Sync' trait?",
+        "question_hi": "'Sync' trait का उद्देश्य क्या है?",
+        "options_en": ["Mark types safe to share references between threads", "Thread creation", "Memory allocation", "Error handling"],
+        "options_hi": ["उन टाइप को मार्क करना जो थ्रेड के बीच रिफरेन्स शेयर करने के लिए सेफ हैं", "थ्रेड क्रिएशन", "मेमोरी अलोकेशन", "एरर हैंडलिंग"],
+        "answer_en": "Mark types safe to share references between threads",
+        "answer_hi": "उन टाइप को मार्क करना जो थ्रेड के बीच रिफरेन्स शेयर करने के लिए सेफ हैं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 20,
-        "question_en": "What is the formula for the volume of a sphere with radius r?",
-        "question_hi": "त्रिज्या r वाले गोले के आयतन का सूत्र क्या है?",
-        "options_en": ["(4/3)πr²", "(4/3)πr³", "4πr²", "4πr³"],
-        "options_hi": ["(4/3)πr²", "(4/3)πr³", "4πr²", "4πr³"],
-        "answer_en": "(4/3)πr³",
-        "answer_hi": "(4/3)πr³",
+        "question_en": "How do you iterate over a vector?",
+        "question_hi": "वेक्टर पर कैसे इटरेट करते हैं?",
+        "options_en": ["for item in &vec {}", "for item in vec.iter() {}", "for item in vec {}", "All of the above"],
+        "options_hi": ["for item in &vec {}", "for item in vec.iter() {}", "for item in vec {}", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
-
-    // Class 12 Physics (21-40)
     {
         "num": 21,
-        "question_en": "What is the SI unit of electric flux?",
-        "question_hi": "विद्युत फ्लक्स की SI इकाई क्या है?",
-        "options_en": ["Weber", "Tesla", "Volt", "Coulomb"],
-        "options_hi": ["वेबर", "टेस्ला", "वोल्ट", "कूलम्ब"],
-        "answer_en": "Weber",
-        "answer_hi": "वेबर",
+        "question_en": "What is the purpose of Rust's turbofish syntax?",
+        "question_hi": "Rust के टर्बोफिश सिंटैक्स का उद्देश्य क्या है?",
+        "options_en": ["Explicit type annotation", "Generic parameter specification", "Method disambiguation", "All of the above"],
+        "options_hi": ["एक्सप्लिसिट टाइप एनोटेशन", "जेनेरिक पैरामीटर स्पेसिफिकेशन", "मेथड डिसएम्बिगुएशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 22,
-        "question_en": "According to Bohr's model, what is the radius of the first orbit of hydrogen atom?",
-        "question_hi": "बोहर के मॉडल के अनुसार, हाइड्रोजन परमाणु की पहली कक्षा की त्रिज्या क्या है?",
-        "options_en": ["0.529 Å", "1.058 Å", "2.116 Å", "4.232 Å"],
-        "options_hi": ["0.529 Å", "1.058 Å", "2.116 Å", "4.232 Å"],
-        "answer_en": "0.529 Å",
-        "answer_hi": "0.529 Å",
+        "question_en": "How does Rust handle string types?",
+        "question_hi": "Rust स्ट्रिंग टाइप कैसे हैंडल करता है?",
+        "options_en": ["String for owned", "&str for borrowed", "OS string variants", "All of the above"],
+        "options_hi": ["ओन्ड के लिए String", "बोरोड के लिए &str", "OS स्ट्रिंग वेरिएंट", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 23,
-        "question_en": "What is the principle behind the working of a transformer?",
-        "question_hi": "ट्रांसफार्मर के कार्य करने का सिद्धांत क्या है?",
-        "options_en": ["Ohm's law", "Faraday's law of electromagnetic induction", "Ampere's law", "Coulomb's law"],
-        "options_hi": ["ओम का नियम", "फैराडे का विद्युत चुम्बकीय प्रेरण का नियम", "एम्पियर का नियम", "कूलम्ब का नियम"],
-        "answer_en": "Faraday's law of electromagnetic induction",
-        "answer_hi": "फैराडे का विद्युत चुम्बकीय प्रेरण का नियम",
+        "question_en": "What is the role of Rust's from/into traits?",
+        "question_hi": "Rust के from/into ट्रेट की क्या भूमिका है?",
+        "options_en": ["Type conversion", "Trait coherence", "API ergonomics", "All of the above"],
+        "options_hi": ["टाइप कन्वर्जन", "ट्रेट कोहरेन्स", "API एर्गोनॉमिक्स", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 24,
-        "question_en": "What is the de Broglie wavelength associated with an electron accelerated through a potential difference V?",
-        "question_hi": "विभवान्तर V से त्वरित इलेक्ट्रॉन से जुड़ी डी ब्रोगली तरंगदैर्ध्य क्या है?",
-        "options_en": ["λ = h/√(2meV)", "λ = h/(2meV)", "λ = √(h/2meV)", "λ = h²/(2meV)"],
-        "options_hi": ["λ = h/√(2meV)", "λ = h/(2meV)", "λ = √(h/2meV)", "λ = h²/(2meV)"],
-        "answer_en": "λ = h/√(2meV)",
-        "answer_hi": "λ = h/√(2meV)",
+        "question_en": "How does Rust implement iterator adapters?",
+        "question_hi": "Rust इटरेटर एडाप्टर कैसे इम्प्लीमेंट करता है?",
+        "options_en": ["Lazy evaluation", "Method chaining", "Zero-cost abstraction", "All of the above"],
+        "options_hi": ["लेजी एवैल्यूएशन", "मेथड चेनिंग", "जीरो-कॉस्ट एब्स्ट्रैक्शन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 25,
-        "question_en": "What is the critical angle for total internal reflection when light travels from glass to air?",
-        "question_hi": "जब प्रकाश कांच से हवा में जाता है तो पूर्ण आंतरिक परावर्तन के लिए क्रांतिक कोण क्या है?",
-        "options_en": ["sin⁻¹(1/μ)", "sin⁻¹(μ)", "cos⁻¹(1/μ)", "tan⁻¹(μ)"],
-        "options_hi": ["sin⁻¹(1/μ)", "sin⁻¹(μ)", "cos⁻¹(1/μ)", "tan⁻¹(μ)"],
-        "answer_en": "sin⁻¹(1/μ)",
-        "answer_hi": "sin⁻¹(1/μ)",
+        "question_en": "What is the purpose of Rust's cfg attribute?",
+        "question_hi": "Rust के cfg एट्रिब्यूट का उद्देश्य क्या है?",
+        "options_en": ["Conditional compilation", "Platform-specific code", "Feature gating", "All of the above"],
+        "options_hi": ["कंडीशनल कंपाइलेशन", "प्लेटफॉर्म-स्पेसिफिक कोड", "फीचर गेटिंग", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 26,
-        "question_en": "What is the force between two parallel current-carrying conductors?",
-        "question_hi": "दो समानांतर धारावाही चालकों के बीच बल क्या है?",
-        "options_en": ["Inversely proportional to distance", "Directly proportional to distance", "Inversely proportional to square of distance", "Directly proportional to product of currents"],
-        "options_hi": ["दूरी के व्युत्क्रमानुपाती", "दूरी के समानुपाती", "दूरी के वर्ग के व्युत्क्रमानुपाती", "धाराओं के गुणनफल के समानुपाती"],
-        "answer_en": "Directly proportional to product of currents",
-        "answer_hi": "धाराओं के गुणनफल के समानुपाती",
+        "question_en": "How does Rust handle FFI with C?",
+        "question_hi": "Rust C के साथ FFI कैसे हैंडल करता है?",
+        "options_en": ["Extern blocks", "C-compatible types", "Binding generation", "All of the above"],
+        "options_hi": ["एक्सटर्न ब्लॉक", "C-कंपेटिबल टाइप", "बाइंडिंग जनरेशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 27,
-        "question_en": "What is the unit of magnetic field strength in SI system?",
-        "question_hi": "SI प्रणाली में चुंबकीय क्षेत्र शक्ति की इकाई क्या है?",
-        "options_en": ["Weber", "Tesla", "Gauss", "Ampere/meter"],
-        "options_hi": ["वेबर", "टेस्ला", "गॉस", "एम्पियर/मीटर"],
-        "answer_en": "Tesla",
-        "answer_hi": "टेस्ला",
+        "question_en": "What is the role of Rust's never type?",
+        "question_hi": "Rust के never टाइप की क्या भूमिका है?",
+        "options_en": ["Represent divergence", "Match exhaustiveness", "Type system completeness", "All of the above"],
+        "options_hi": ["डाइवर्जेंस रिप्रेजेंट", "मैच एक्जॉस्टिवनेस", "टाइप सिस्टम कम्प्लीटनेस", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 28,
-        "question_en": "What is the principle of conservation in nuclear reactions?",
-        "question_hi": "नाभिकीय अभिक्रियाओं में संरक्षण का सिद्धांत क्या है?",
-        "options_en": ["Mass number and atomic number", "Mass and energy", "Charge and momentum", "All of the above"],
-        "options_hi": ["द्रव्यमान संख्या और परमाणु संख्या", "द्रव्यमान और ऊर्जा", "आवेश और संवेग", "उपरोक्त सभी"],
+        "question_en": "How does Rust implement const generics?",
+        "question_hi": "Rust कॉन्स्ट जेनेरिक्स कैसे इम्प्लीमेंट करता है?",
+        "options_en": ["Compile-time values", "Array length parameterization", "Type-level integers", "All of the above"],
+        "options_hi": ["कंपाइल-टाइम वैल्यू", "ऐरे लेंथ पैरामीटराइजेशन", "टाइप-लेवल इंटीजर", "उपरोक्त सभी"],
         "answer_en": "All of the above",
         "answer_hi": "उपरोक्त सभी",
         "attempted": false,
@@ -314,460 +309,450 @@ const questions = [
     },
     {
         "num": 29,
-        "question_en": "What is the formula for the energy stored in a capacitor?",
-        "question_hi": "संधारित्र में संचित ऊर्जा का सूत्र क्या है?",
-        "options_en": ["½CV²", "CV²", "½QV", "Q²/2C"],
-        "options_hi": ["½CV²", "CV²", "½QV", "Q²/2C"],
-        "answer_en": "½CV²",
-        "answer_hi": "½CV²",
+        "question_en": "What is the purpose of Rust's dyn keyword?",
+        "question_hi": "Rust के dyn कीवर्ड का उद्देश्य क्या है?",
+        "options_en": ["Trait object indication", "Dynamic dispatch", "Type erasure", "All of the above"],
+        "options_hi": ["ट्रेट ऑब्जेक्ट इंडिकेशन", "डायनामिक डिस्पैच", "टाइप इरेज़र", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 30,
-        "question_en": "What is the phenomenon of splitting of white light into its constituent colors?",
-        "question_hi": "सफेद प्रकाश का उसके घटक रंगों में विभाजन होने की घटना क्या है?",
-        "options_en": ["Dispersion", "Diffraction", "Interference", "Polarization"],
-        "options_hi": ["विक्षेपण", "विवर्तन", "व्यतिकरण", "ध्रुवण"],
-        "answer_en": "Dispersion",
-        "answer_hi": "विक्षेपण",
+        "question_en": "How does Rust handle SIMD operations?",
+        "question_hi": "Rust SIMD ऑपरेशन कैसे हैंडल करता है?",
+        "options_en": ["Architecture-specific intrinsics", "Portable simd", "Compiler optimizations", "All of the above"],
+        "options_hi": ["आर्किटेक्चर-स्पेसिफिक इंट्रिंसिक", "पोर्टेबल simd", "कंपाइलर ऑप्टिमाइज़ेशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
-
-    // Class 12 Chemistry (31-50)
     {
         "num": 31,
-        "question_en": "What is the IUPAC name of CH₃-CH₂-CH₂-OH?",
-        "question_hi": "CH₃-CH₂-CH₂-OH का IUPAC नाम क्या है?",
-        "options_en": ["Methanol", "Ethanol", "Propanol", "Butanol"],
-        "options_hi": ["मेथनॉल", "एथनॉल", "प्रोपेनॉल", "ब्यूटनॉल"],
-        "answer_en": "Propanol",
-        "answer_hi": "प्रोपेनॉल",
+        "question_en": "What is the role of Rust's associated types?",
+        "question_hi": "Rust के एसोसिएटेड टाइप की क्या भूमिका है?",
+        "options_en": ["Type family definition", "Trait output types", "Generic abstraction", "All of the above"],
+        "options_hi": ["टाइप फैमिली डेफिनिशन", "ट्रेट आउटपुट टाइप", "जेनेरिक एब्स्ट्रैक्शन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 32,
-        "question_en": "Which law states that the rate of a chemical reaction is proportional to the product of the concentrations of the reactants?",
-        "question_hi": "कौन सा नियम कहता है कि एक रासायनिक अभिक्रिया की दर अभिकारकों की सांद्रता के गुणनफल के समानुपाती होती है?",
-        "options_en": ["Henry's law", "Raoult's law", "Law of mass action", "Hess's law"],
-        "options_hi": ["हेनरी का नियम", "राउल्ट का नियम", "द्रव्यमान क्रिया का नियम", "हेस का नियम"],
-        "answer_en": "Law of mass action",
-        "answer_hi": "द्रव्यमान क्रिया का नियम",
+        "question_en": "How does Rust implement memory layout control?",
+        "question_hi": "Rust मेमोरी लेआउट कंट्रोल कैसे इम्प्लीमेंट करता है?",
+        "options_en": ["Repr attributes", "Field ordering", "Padding control", "All of the above"],
+        "options_hi": ["Repr एट्रिब्यूट", "फील्ड ऑर्डरिंग", "पैडिंग कंट्रोल", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 33,
-        "question_en": "What is the coordination number in a face-centered cubic structure?",
-        "question_hi": "फलक-केंद्रित घनीय संरचना में उपसहसंयोजन संख्या क्या है?",
-        "options_en": ["6", "8", "12", "4"],
-        "options_hi": ["6", "8", "12", "4"],
-        "answer_en": "12",
-        "answer_hi": "12",
+        "question_en": "What is the purpose of Rust's unsafe traits?",
+        "question_hi": "Rust के unsafe ट्रेट का उद्देश्य क्या है?",
+        "options_en": ["Invariant requirements", "Safety contracts", "Manual implementation", "All of the above"],
+        "options_hi": ["इनवेरिएंट रिक्वायरमेंट", "सेफ्टी कॉन्ट्रैक्ट", "मैन्युअल इम्प्लीमेंटेशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 34,
-        "question_en": "Which of the following is a strong electrolyte?",
-        "question_hi": "निम्नलिखित में से कौन सा एक प्रबल विद्युत-अपघट्य है?",
-        "options_en": ["Acetic acid", "Ammonia", "Sodium chloride", "Water"],
-        "options_hi": ["एसिटिक अम्ल", "अमोनिया", "सोडियम क्लोराइड", "पानी"],
-        "answer_en": "Sodium chloride",
-        "answer_hi": "सोडियम क्लोराइड",
+        "question_en": "How does Rust handle stack unwinding?",
+        "question_hi": "Rust स्टैक अनवाइंडिंग कैसे हैंडल करता है?",
+        "options_en": ["Panic mechanism", "Drop guarantees", "Unwind safety", "All of the above"],
+        "options_hi": ["पैनिक मैकेनिज्म", "ड्रॉप गारंटी", "अनवाइंड सेफ्टी", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 35,
-        "question_en": "What is the order of reaction if the rate is independent of the concentration of reactants?",
-        "question_hi": "अभिक्रिया का क्रम क्या है यदि दर अभिकारकों की सांद्रता से स्वतंत्र है?",
-        "options_en": ["Zero order", "First order", "Second order", "Third order"],
-        "options_hi": ["शून्य कोटि", "प्रथम कोटि", "द्वितीय कोटि", "तृतीय कोटि"],
-        "answer_en": "Zero order",
-        "answer_hi": "शून्य कोटि",
+        "question_en": "What is the role of Rust's coherence rules?",
+        "question_hi": "Rust के कोहरेन्स रूल की क्या भूमिका है?",
+        "options_en": ["Prevent orphan rules", "Trait implementation", "Crate boundaries", "All of the above"],
+        "options_hi": ["ऑर्फन रूल रोकना", "ट्रेट इम्प्लीमेंटेशन", "क्रेट बाउंड्री", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 36,
-        "question_en": "Which process is used for the purification of copper?",
-        "question_hi": "तांबे के शुद्धिकरण के लिए किस प्रक्रिया का उपयोग किया जाता है?",
-        "options_en": ["Mond's process", "Electrolytic refining", "Zone refining", "Van Arkel method"],
-        "options_hi": ["मोंड प्रक्रिया", "विद्युत्-अपघटनी परिष्करण", "क्षेत्र परिष्करण", "वैन आर्केल विधि"],
-        "answer_en": "Electrolytic refining",
-        "answer_hi": "विद्युत्-अपघटनी परिष्करण",
+        "question_en": "How does Rust implement custom allocators?",
+        "question_hi": "Rust कस्टम अलोकेटर कैसे इम्प्लीमेंट करता है?",
+        "options_en": ["Global allocator trait", "Box with allocator", "No_std support", "All of the above"],
+        "options_hi": ["ग्लोबल अलोकेटर ट्रेट", "अलोकेटर के साथ Box", "No_std सपोर्ट", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 37,
-        "question_en": "What is the hybridization of carbon in methane (CH₄)?",
-        "question_hi": "मीथेन (CH₄) में कार्बन का संकरण क्या है?",
-        "options_en": ["sp", "sp²", "sp³", "sp³d"],
-        "options_hi": ["sp", "sp²", "sp³", "sp³d"],
-        "answer_en": "sp³",
-        "answer_hi": "sp³",
+        "question_en": "What is the purpose of Rust's must_use attribute?",
+        "question_hi": "Rust के must_use एट्रिब्यूट का उद्देश्य क्या है?",
+        "options_en": ["Prevent ignored results", "API design", "Error handling", "All of the above"],
+        "options_hi": ["इग्नोर रिजल्ट रोकना", "API डिजाइन", "एरर हैंडलिंग", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 38,
-        "question_en": "Which reagent is used to distinguish between aldehyde and ketone?",
-        "question_hi": "एल्डिहाइड और कीटोन के बीच अंतर करने के लिए किस अभिकर्मक का उपयोग किया जाता है?",
-        "options_en": ["Tollen's reagent", "Fehling's solution", "Both A and B", "Benedict's solution"],
-        "options_hi": ["टोलेन अभिकर्मक", "फेहलिंग विलयन", "A और B दोनों", "बेनेडिक्ट विलयन"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "How does Rust handle integer overflow?",
+        "question_hi": "Rust इंटीजर ओवरफ्लो कैसे हैंडल करता है?",
+        "options_en": ["Debug panic", "Release wrap", "Checked operations", "All of the above"],
+        "options_hi": ["डिबग पैनिक", "रिलीज रैप", "चेक्ड ऑपरेशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 39,
-        "question_en": "What is the pH of a solution with [H⁺] = 10⁻⁵ M?",
-        "question_hi": "[H⁺] = 10⁻⁵ M वाले विलयन का pH क्या है?",
-        "options_en": ["3", "5", "7", "9"],
-        "options_hi": ["3", "5", "7", "9"],
-        "answer_en": "5",
-        "answer_hi": "5",
+        "question_en": "What is the role of Rust's auto traits?",
+        "question_hi": "Rust के ऑटो ट्रेट की क्या भूमिका है?",
+        "options_en": ["Automatic implementation", "Marker traits", "Send/Sync derivation", "All of the above"],
+        "options_hi": ["ऑटोमैटिक इम्प्लीमेंटेशन", "मार्कर ट्रेट", "Send/Sync डेरिवेशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 40,
-        "question_en": "Which type of isomerism is shown by [Co(NH₃)₅Br]SO₄ and [Co(NH₃)₅SO₄]Br?",
-        "question_hi": "[Co(NH₃)₅Br]SO₄ और [Co(NH₃)₅SO₄]Br द्वारा किस प्रकार की समावयवता दिखाई जाती है?",
-        "options_en": ["Ionization isomerism", "Linkage isomerism", "Coordination isomerism", "Geometrical isomerism"],
-        "options_hi": ["आयनन समावयवता", "संयोजकता समावयवता", "उपसहसंयोजन समावयवता", "ज्यामितीय समावयवता"],
-        "answer_en": "Ionization isomerism",
-        "answer_hi": "आयनन समावयवता",
+        "question_en": "How does Rust implement procedural macros?",
+        "question_hi": "Rust प्रोसीजरल मैक्रो कैसे इम्प्लीमेंट करता है?",
+        "options_en": ["Token stream manipulation", "Compile-time execution", "AST transformation", "All of the above"],
+        "options_hi": ["टोकन स्ट्रीम मैनिपुलेशन", "कंपाइल-टाइम एक्सीक्यूशन", "AST ट्रांसफॉर्मेशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
-
-    // Class 12 English (51-60)
     {
         "num": 41,
-        "question_en": "Who is the author of 'The Last Lesson'?",
-        "question_hi": "'द लास्ट लेसन' के लेखक कौन हैं?",
-        "options_en": ["Alphonse Daudet", "William Shakespeare", "Charles Dickens", "Jane Austen"],
-        "options_hi": ["अल्फोंस डौडेट", "विलियम शेक्सपियर", "चार्ल्स डिकेंस", "जेन ऑस्टेन"],
-        "answer_en": "Alphonse Daudet",
-        "answer_hi": "अल्फोंस डौडेट",
+        "question_en": "What is the purpose of Rust's box syntax?",
+        "question_hi": "Rust के बॉक्स सिंटैक्स का उद्देश्य क्या है?",
+        "options_en": ["Heap allocation", "Move semantics", "Placement new", "All of the above"],
+        "options_hi": ["हीप अलोकेशन", "मूव सेमेंटिक्स", "प्लेसमेंट new", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 42,
-        "question_en": "What literary device is used in 'The fog comes on little cat feet'?",
-        "question_hi": "'द फॉग कम्स ऑन लिटिल कैट फीट' में किस साहित्यिक उपकरण का उपयोग किया गया है?",
-        "options_en": ["Simile", "Metaphor", "Personification", "Alliteration"],
-        "options_hi": ["उपमा", "रूपक", "मानवीकरण", "अनुप्रास"],
-        "answer_en": "Metaphor",
-        "answer_hi": "रूपक",
+        "question_en": "How does Rust handle variance?",
+        "question_hi": "Rust वेरिएंस कैसे हैंडल करता है?",
+        "options_en": ["Type parameter relationships", "Lifetime subtyping", "Reference safety", "All of the above"],
+        "options_hi": ["टाइप पैरामीटर रिलेशनशिप", "लाइफटाइम सबटाइपिंग", "रिफरेन्स सेफ्टी", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 43,
-        "question_en": "Which character in 'The Rattrap' is known for his philosophical views?",
-        "question_hi": "'द रैटट्रैप' में कौन सा पात्र अपने दार्शनिक विचारों के लिए जाना जाता है?",
-        "options_en": ["The peddler", "The ironmaster", "Edla Willmansson", "The crofter"],
-        "options_hi": ["फेरीवाला", "आयरनमास्टर", "एडला विलमैनसन", "क्रॉफ्टर"],
-        "answer_en": "The peddler",
-        "answer_hi": "फेरीवाला",
+        "question_en": "What is the role of Rust's no_std attribute?",
+        "question_hi": "Rust के no_std एट्रिब्यूट की क्या भूमिका है?",
+        "options_en": ["Standard library exclusion", "Embedded systems", "Kernel development", "All of the above"],
+        "options_hi": ["स्टैंडर्ड लाइब्रेरी एक्सक्लूजन", "एम्बेडेड सिस्टम", "कर्नल डेवलपमेंट", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 44,
-        "question_en": "What is the central theme of 'Deep Water' by William Douglas?",
-        "question_hi": "विलियम डगलस द्वारा 'डीप वाटर' का केंद्रीय विषय क्या है?",
-        "options_en": ["Love for swimming", "Conquest of fear", "Importance of education", "Childhood memories"],
-        "options_hi": ["तैराकी का प्यार", "डर पर विजय", "शिक्षा का महत्व", "बचपन की यादें"],
-        "answer_en": "Conquest of fear",
-        "answer_hi": "डर पर विजय",
+        "question_en": "How does Rust implement specialization?",
+        "question_hi": "Rust स्पेशलाइजेशन कैसे इम्प्लीमेंट करता है?",
+        "options_en": ["Overlapping implementations", "Performance optimization", "Backward compatibility", "All of the above"],
+        "options_hi": ["ओवरलैपिंग इम्प्लीमेंटेशन", "परफॉर्मेंस ऑप्टिमाइज़ेशन", "बैकवर्ड कंपेटिबिलिटी", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 45,
-        "question_en": "Which poetic device is used in 'My Mother at Sixty-six'?",
-        "question_hi": "'माई मदर एट सिक्स्टी-सिक्स' में किस काव्यात्मक उपकरण का उपयोग किया गया है?",
-        "options_en": ["Irony", "Imagery", "Hyperbole", "Onomatopoeia"],
-        "options_hi": ["विडंबना", "चित्रात्मकता", "अतिशयोक्ति", "ध्वन्यात्मकता"],
-        "answer_en": "Imagery",
-        "answer_hi": "चित्रात्मकता",
+        "question_en": "What is the purpose of Rust's union types?",
+        "question_hi": "Rust के यूनियन टाइप का उद्देश्य क्या है?",
+        "options_en": ["FFI compatibility", "Memory overlay", "Unsafe access", "All of the above"],
+        "options_hi": ["FFI कंपेटिबिलिटी", "मेमोरी ओवरले", "अनसेफ एक्सेस", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
-
-    // Class 12 Hindi (61-70)
     {
         "num": 46,
-        "question_en": "Who is the author of 'Silas Marner' in Hindi syllabus?",
-        "question_hi": "हिंदी पाठ्यक्रम में 'साइलस मार्नर' के लेखक कौन हैं?",
-        "options_en": ["George Eliot", "Premchand", "Mahadevi Verma", "Harivansh Rai Bachchan"],
-        "options_hi": ["जॉर्ज एलियट", "प्रेमचंद", "महादेवी वर्मा", "हरिवंश राय बच्चन"],
-        "answer_en": "George Eliot",
-        "answer_hi": "जॉर्ज एलियट",
+        "question_en": "How does Rust handle dead code detection?",
+        "question_hi": "Rust डेड कोड डिटेक्शन कैसे हैंडल करता है?",
+        "options_en": ["Compiler warnings", "Unused attributes", "Dead code elimination", "All of the above"],
+        "options_hi": ["कंपाइलर वार्निंग", "अनयूज्ड एट्रिब्यूट", "डेड कोड एलिमिनेशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 47,
-        "question_en": "Which chapter is written by Hazari Prasad Dwivedi?",
-        "question_hi": "हजारी प्रसाद द्विवेदी द्वारा कौन सा अध्याय लिखा गया है?",
-        "options_en": ["Bharat Mata", "Joojh", "Aatma ka Taap", "Shram Vibhajan"],
-        "options_hi": ["भारत माता", "जूझ", "आत्मा का ताप", "श्रम विभाजन"],
-        "answer_en": "Bharat Mata",
-        "answer_hi": "भारत माता",
+        "question_en": "What is the role of Rust's asm macro?",
+        "question_hi": "Rust के asm मैक्रो की क्या भूमिका है?",
+        "options_en": ["Inline assembly", "Low-level control", "Platform-specific code", "All of the above"],
+        "options_hi": ["इनलाइन असेंबली", "लो-लेवल कंट्रोल", "प्लेटफॉर्म-स्पेसिफिक कोड", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 48,
-        "question_en": "What is the main theme of 'Joojh' by Anamika?",
-        "question_hi": "अनामिका द्वारा 'जूझ' का मुख्य विषय क्या है?",
-        "options_en": ["Struggle of women", "Childhood memories", "Nature's beauty", "Social inequality"],
-        "options_hi": ["महिलाओं का संघर्ष", "बचपन की यादें", "प्रकृति की सुंदरता", "सामाजिक असमानता"],
-        "answer_en": "Struggle of women",
-        "answer_hi": "महिलाओं का संघर्ष",
+        "question_en": "How does Rust implement move semantics?",
+        "question_hi": "Rust मूव सेमेंटिक्स कैसे इम्प्लीमेंट करता है?",
+        "options_en": ["Ownership transfer", "Bitwise copy", "Invalidation", "All of the above"],
+        "options_hi": ["ओनरशिप ट्रांसफर", "बिटवाइज कॉपी", "इनवैलिडेशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 49,
-        "question_en": "Which literary work is written by Jainendra Kumar?",
-        "question_hi": "जैनेन्द्र कुमार द्वारा कौन सी साहित्यिक रचना लिखी गई है?",
-        "options_en": ["Tyagpatra", "Godan", "Gaban", "Nirmala"],
-        "options_hi": ["त्यागपत्र", "गोदान", "गबन", "निर्मला"],
-        "answer_en": "Tyagpatra",
-        "answer_hi": "त्यागपत्र",
+        "question_en": "What is the purpose of Rust's exhaustive patterns?",
+        "question_hi": "Rust के एक्जॉस्टिव पैटर्न का उद्देश्य क्या है?",
+        "options_en": ["Compile-time safety", "Case coverage", "Error prevention", "All of the above"],
+        "options_hi": ["कंपाइल-टाइम सेफ्टी", "केस कवरेज", "एरर प्रिवेंशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 50,
-        "question_en": "What is the pen name of Siyaramsharan Gupt?",
-        "question_hi": "सियारामशरण गुप्त का उपनाम क्या है?",
-        "options_en": ["Rasa Kavi", "Yug Charan", "Dinkar", "Maithilisharan"],
-        "options_hi": ["रस कवि", "युग चारण", "दिनकर", "मैथिलीशरण"],
-        "answer_en": "Rasa Kavi",
-        "answer_hi": "रस कवि",
+        "question_en": "How does Rust handle trait objects?",
+        "question_hi": "Rust ट्रेट ऑब्जेक्ट कैसे हैंडल करता है?",
+        "options_en": ["Vtable dispatch", "Fat pointers", "Dynamic typing", "All of the above"],
+        "options_hi": ["Vtable डिस्पैच", "फैट पॉइंटर", "डायनामिक टाइपिंग", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
-
-    // General Knowledge (71-90)
     {
         "num": 51,
-        "question_en": "Who is known as the Father of the Indian Constitution?",
-        "question_hi": "भारतीय संविधान के जनक के रूप में किसे जाना जाता है?",
-        "options_en": ["Mahatma Gandhi", "Jawaharlal Nehru", "B.R. Ambedkar", "Sardar Patel"],
-        "options_hi": ["महात्मा गांधी", "जवाहरलाल नेहरू", "बी.आर. अंबेडकर", "सरदार पटेल"],
-        "answer_en": "B.R. Ambedkar",
-        "answer_hi": "बी.आर. अंबेडकर",
+        "question_en": "What is the purpose of Rust's 'Pin' type?",
+        "question_hi": "Rust के 'Pin' टाइप का उद्देश्य क्या है?",
+        "options_en": ["Prevent moving of values", "Support self-referential structs", "Enable safe async/await", "All of the above"],
+        "options_hi": ["वैल्यू की मूविंग रोकना", "सेल्फ-रेफरेंशियल स्ट्रक्चर सपोर्ट", "सेफ async/await एनेबल करना", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 52,
-        "question_en": "Which is the highest civilian award in India?",
-        "question_hi": "भारत में सर्वोच्च नागरिक पुरस्कार कौन सा है?",
-        "options_en": ["Padma Shri", "Padma Bhushan", "Bharat Ratna", "Padma Vibhushan"],
-        "options_hi": ["पद्म श्री", "पद्म भूषण", "भारत रत्न", "पद्म विभूषण"],
-        "answer_en": "Bharat Ratna",
-        "answer_hi": "भारत रत्न",
+        "question_en": "How does Rust's 'Box::leak' method work?",
+        "question_hi": "Rust का 'Box::leak' मेथड कैसे काम करता है?",
+        "options_en": ["Convert to 'static lifetime", "Prevent deallocation", "Create global variables", "All of the above"],
+        "options_hi": ["'static लाइफटाइम में कन्वर्ट करना", "डीलोकेशन रोकना", "ग्लोबल वेरिएबल बनाना", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 53,
-        "question_en": "Who was the first woman Prime Minister of India?",
-        "question_hi": "भारत की पहली महिला प्रधानमंत्री कौन थीं?",
-        "options_en": ["Indira Gandhi", "Sarojini Naidu", "Pratibha Patil", "Sonia Gandhi"],
-        "options_hi": ["इंदिरा गांधी", "सरोजिनी नायडू", "प्रतिभा पाटिल", "सोनिया गांधी"],
-        "answer_en": "Indira Gandhi",
-        "answer_hi": "इंदिरा गांधी",
+        "question_en": "What is the role of Rust's 'ManuallyDrop' type?",
+        "question_hi": "Rust के 'ManuallyDrop' टाइप की क्या भूमिका है?",
+        "options_en": ["Prevent automatic drop", "Manual memory management", "FFI integration", "All of the above"],
+        "options_hi": ["ऑटोमैटिक ड्रॉप रोकना", "मैन्युअल मेमोरी मैनेजमेंट", "FFI इंटीग्रेशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 54,
-        "question_en": "Which river is known as the 'Sorrow of Bengal'?",
-        "question_hi": "किस नदी को 'बंगाल का शोक' कहा जाता है?",
-        "options_en": ["Ganga", "Brahmaputra", "Damodar", "Hooghly"],
-        "options_hi": ["गंगा", "ब्रह्मपुत्र", "दामोदर", "हुगली"],
-        "answer_en": "Damodar",
-        "answer_hi": "दामोदर",
+        "question_en": "How does Rust implement 'async' generators?",
+        "question_hi": "Rust 'async' जेनरेटर कैसे इम्प्लीमेंट करता है?",
+        "options_en": ["Async streams", "State machine transformation", "Poll-based execution", "All of the above"],
+        "options_hi": ["Async स्ट्रीम", "स्टेट मशीन ट्रांसफॉर्मेशन", "पोल-बेस्ड एक्सीक्यूशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 55,
-        "question_en": "What is the currency of Switzerland?",
-        "question_hi": "स्विट्जरलैंड की मुद्रा क्या है?",
-        "options_en": ["Euro", "Swiss Franc", "Pound", "Dollar"],
-        "options_hi": ["यूरो", "स्विस फ्रैंक", "पाउंड", "डॉलर"],
-        "answer_en": "Swiss Franc",
-        "answer_hi": "स्विस फ्रैंक",
+        "question_en": "What is the purpose of Rust's 'MaybeUninit' type?",
+        "question_question_hi": "Rust के 'MaybeUninit' टाइप का उद्देश्य क्या है?",
+        "options_en": ["Handle uninitialized memory", "FFI buffer management", "Performance optimization", "All of the above"],
+        "options_hi": ["अनइनिशियलाइज्ड मेमोरी हैंडल करना", "FFI बफर मैनेजमेंट", "परफॉर्मेंस ऑप्टिमाइज़ेशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 56,
-        "question_en": "Which country hosted the 2020 Summer Olympics?",
-        "question_hi": "2020 ग्रीष्मकालीन ओलंपिक की मेजबानी किस देश ने की?",
-        "options_en": ["China", "Japan", "Brazil", "United Kingdom"],
-        "options_hi": ["चीन", "जापान", "ब्राजील", "यूनाइटेड किंगडम"],
-        "answer_en": "Japan",
-        "answer_hi": "जापान",
+        "question_en": "How does Rust's 'std::mem::transmute' work?",
+        "question_hi": "Rust का 'std::mem::transmute' कैसे काम करता है?",
+        "options_en": ["Type reinterpretation", "Memory bit pattern preservation", "Unsafe type conversion", "All of the above"],
+        "options_hi": ["टाइप रिइंटरप्रिटेशन", "मेमोरी बिट पैटर्न प्रिजर्वेशन", "अनसेफ टाइप कन्वर्जन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 57,
-        "question_en": "Who invented the World Wide Web?",
-        "question_hi": "वर्ल्ड वाइड वेब का आविष्कार किसने किया?",
-        "options_en": ["Bill Gates", "Tim Berners-Lee", "Steve Jobs", "Mark Zuckerberg"],
-        "options_hi": ["बिल गेट्स", "टिम बर्नर्स-ली", "स्टीव जॉब्स", "मार्क जकरबर्ग"],
-        "answer_en": "Tim Berners-Lee",
-        "answer_hi": "टिम बर्नर्स-ली",
+        "question_en": "What is the role of Rust's 'UnsafeCell' type?",
+        "question_hi": "Rust के 'UnsafeCell' टाइप की क्या भूमिका है?",
+        "options_en": ["Interior mutability foundation", "Bypass borrowing rules", "Cell type implementation", "All of the above"],
+        "options_hi": ["इंटीरियर म्यूटेबिलिटी फाउंडेशन", "बोरोइंग रूल बायपास", "सेल टाइप इम्प्लीमेंटेशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 58,
-        "question_en": "Which is the largest desert in Asia?",
-        "question_hi": "एशिया का सबसे बड़ा रेगिस्तान कौन सा है?",
-        "options_en": ["Thar Desert", "Gobi Desert", "Karakum Desert", "Kyzylkum Desert"],
-        "options_hi": ["थार रेगिस्तान", "गोबी रेगिस्तान", "कराकुम रेगिस्तान", "किज़िलकुम रेगिस्तान"],
-        "answer_en": "Gobi Desert",
-        "answer_hi": "गोबी रेगिस्तान",
+        "question_en": "How does Rust implement 'no_std' async execution?",
+        "question_hi": "Rust 'no_std' async एक्सीक्यूशन कैसे इम्प्लीमेंट करता है?",
+        "options_en": ["Custom executors", "Waker implementation", "Heap-less futures", "All of the above"],
+        "options_hi": ["कस्टम एग्जीक्यूटर", "वेकर इम्प्लीमेंटेशन", "हीप-लेस फ्यूचर", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 59,
-        "question_en": "Who wrote 'The Discovery of India'?",
-        "question_hi": "'द डिस्कवरी ऑफ इंडिया' किसने लिखी?",
-        "options_en": ["Mahatma Gandhi", "Jawaharlal Nehru", "Rabindranath Tagore", "Subhash Chandra Bose"],
-        "options_hi": ["महात्मा गांधी", "जवाहरलाल नेहरू", "रबींद्रनाथ टैगोर", "सुभाष चंद्र बोस"],
-        "answer_en": "Jawaharlal Nehru",
-        "answer_hi": "जवाहरलाल नेहरू",
+        "question_en": "What is the purpose of Rust's 'std::sync::mpsc'?",
+        "question_hi": "Rust के 'std::sync::mpsc' का उद्देश्य क्या है?",
+        "options_en": ["Multi-producer single-consumer channels", "Thread communication", "Message passing", "All of the above"],
+        "options_hi": ["मल्टी-प्रोड्यूसर सिंगल-कंज्यूमर चैनल", "थ्रेड कम्युनिकेशन", "मैसेज पासिंग", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 60,
-        "question_en": "Which Indian state has the longest coastline?",
-        "question_hi": "किस भारतीय राज्य में सबसे लंबी तटरेखा है?",
-        "options_en": ["Tamil Nadu", "Gujarat", "Andhra Pradesh", "Maharashtra"],
-        "options_hi": ["तमिलनाडु", "गुजरात", "आंध्र प्रदेश", "महाराष्ट्र"],
-        "answer_en": "Gujarat",
-        "answer_hi": "गुजरात",
+        "question_en": "How does Rust's 'Arc' handle thread safety?",
+        "question_hi": "Rust का 'Arc' थ्रेड सेफ्टी कैसे हैंडल करता है?",
+        "options_en": ["Atomic reference counting", "Clone sharing", "Send + Sync traits", "All of the above"],
+        "options_hi": ["एटॉमिक रिफरेन्स काउंटिंग", "क्लोन शेयरिंग", "Send + Sync ट्रेट", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
-
-    // Mixed Advanced Questions (91-100)
     {
         "num": 61,
-        "question_en": "What is the principle behind MRI (Magnetic Resonance Imaging)?",
-        "question_hi": "एमआरआई (मैग्नेटिक रेजोनेंस इमेजिंग) का सिद्धांत क्या है?",
-        "options_en": ["X-ray diffraction", "Nuclear magnetic resonance", "Ultrasound waves", "Radioactive decay"],
-        "options_hi": ["एक्स-रे विवर्तन", "नाभिकीय चुंबकीय अनुनाद", "अल्ट्रासाउंड तरंगें", "रेडियोधर्मी क्षय"],
-        "answer_en": "Nuclear magnetic resonance",
-        "answer_hi": "नाभिकीय चुंबकीय अनुनाद",
+        "question_en": "What is the role of Rust's 'std::mem::forget'?",
+        "question_hi": "Rust के 'std::mem::forget' की क्या भूमिका है?",
+        "options_en": ["Prevent destructor runs", "Memory leak intentionally", "FFI resource management", "All of the above"],
+        "options_hi": ["डिस्ट्रक्टर रन रोकना", "इंटेंशनली मेमोरी लीक", "FFI रिसोर्स मैनेजमेंट", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 62,
-        "question_en": "Which theorem states that every composite number can be expressed as a product of primes?",
-        "question_hi": "कौन सा प्रमेय कहता है कि प्रत्येक भाज्य संख्या को अभाज्य संख्याओं के गुणनफल के रूप में व्यक्त किया जा सकता है?",
-        "options_en": ["Fundamental Theorem of Arithmetic", "Pythagorean Theorem", "Binomial Theorem", "Fermat's Last Theorem"],
-        "options_hi": ["अंकगणित का मौलिक प्रमेय", "पाइथागोरस प्रमेय", "द्विपद प्रमेय", "फर्मेट का अंतिम प्रमेय"],
-        "answer_en": "Fundamental Theorem of Arithmetic",
-        "answer_hi": "अंकगणित का मौलिक प्रमेय",
+        "question_en": "How does Rust implement 'const fn' evaluation?",
+        "question_hi": "Rust 'const fn' एवैल्यूएशन कैसे इम्प्लीमेंट करता है?",
+        "options_en": ["Compile-time execution", "Constant propagation", "Limited operations", "All of the above"],
+        "options_hi": ["कंपाइल-टाइम एक्सीक्यूशन", "कॉन्स्टेंट प्रोपेगेशन", "लिमिटेड ऑपरेशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 63,
-        "question_en": "What is the chemical basis of the polymerase chain reaction (PCR)?",
-        "question_hi": "पोलीमरेज़ चेन रिएक्शन (पीसीआर) का रासायनिक आधार क्या है?",
-        "options_en": ["DNA replication", "Protein synthesis", "RNA transcription", "Enzyme catalysis"],
-        "options_hi": ["DNA प्रतिकृति", "प्रोटीन संश्लेषण", "RNA प्रतिलेखन", "एंजाइम उत्प्रेरण"],
-        "answer_en": "DNA replication",
-        "answer_hi": "DNA प्रतिकृति",
+        "question_en": "What is the purpose of Rust's 'std::panic::catch_unwind'?",
+        "question_hi": "Rust के 'std::panic::catch_unwind' का उद्देश्य क्या है?",
+        "options_en": ["Recover from panics", "FFI boundary safety", "Error containment", "All of the above"],
+        "options_hi": ["पैनिक से रिकवर करना", "FFI बाउंड्री सेफ्टी", "एरर कंटेनमेंट", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 64,
-        "question_en": "Which law in economics states that 'supply creates its own demand'?",
-        "question_hi": "अर्थशास्त्र में कौन सा नियम कहता है कि 'आपूर्ति अपनी मांग स्वयं पैदा करती है'?",
-        "options_en": ["Say's Law", "Keynes' Law", "Gresham's Law", "Law of Diminishing Returns"],
-        "options_hi": ["से का नियम", "कीन्स का नियम", "ग्रेशम का नियम", "ह्रासमान प्रतिफल का नियम"],
-        "answer_en": "Say's Law",
-        "answer_hi": "से का नियम",
+        "question_en": "How does Rust's 'Mutex' prevent deadlocks?",
+        "question_hi": "Rust का 'Mutex' डेडलॉक कैसे रोकता है?",
+        "options_en": ["RAII locking", "Poisoning detection", "No automatic prevention", "All of the above"],
+        "options_hi": ["RAII लॉकिंग", "पॉइजनिंग डिटेक्शन", "कोई ऑटोमैटिक प्रिवेंशन नहीं", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 65,
-        "question_en": "What is the Heisenberg Uncertainty Principle?",
-        "question_hi": "हाइजेनबर्ग अनिश्चितता सिद्धांत क्या है?",
-        "options_en": ["Position and momentum cannot be simultaneously measured", "Energy and time are complementary", "Both A and B", "Wave-particle duality"],
-        "options_hi": ["स्थिति और संवेग को एक साथ नहीं मापा जा सकता", "ऊर्जा और समय पूरक हैं", "A और B दोनों", "तरंग-कण द्वैत"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "What is the role of Rust's 'std::sync::Barrier'?",
+        "question_hi": "Rust के 'std::sync::Barrier' की क्या भूमिका है?",
+        "options_en": ["Thread synchronization", "Wait for multiple threads", "Phase coordination", "All of the above"],
+        "options_hi": ["थ्रेड सिंक्रोनाइज़ेशन", "मल्टीपल थ्रेड का इंतज़ार", "फेज कोऑर्डिनेशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 66,
-        "question_en": "Which programming paradigm is based on the concept of 'objects'?",
-        "question_hi": "कौन सा प्रोग्रामिंग प्रतिमान 'ऑब्जेक्ट्स' की अवधारणा पर आधारित है?",
-        "options_en": ["Procedural programming", "Object-oriented programming", "Functional programming", "Logical programming"],
-        "options_hi": ["प्रक्रियात्मक प्रोग्रामिंग", "ऑब्जेक्ट-ओरिएंटेड प्रोग्रामिंग", "फंक्शनल प्रोग्रामिंग", "लॉजिकल प्रोग्रामिंग"],
-        "answer_en": "Object-oriented programming",
-        "answer_hi": "ऑब्जेक्ट-ओरिएंटेड प्रोग्रामिंग",
+        "question_en": "How does Rust implement 'std::future::Future'?",
+        "question_hi": "Rust 'std::future::Future' कैसे इम्प्लीमेंट करता है?",
+        "options_en": ["Poll-based interface", "State machine", "Async readiness", "All of the above"],
+        "options_hi": ["पोल-बेस्ड इंटरफेस", "स्टेट मशीन", "Async रेडीनेस", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 67,
-        "question_en": "What is the significance of the Higgs boson particle?",
-        "question_hi": "हिग्स बोसॉन कण का क्या महत्व है?",
-        "options_en": ["Gives mass to other particles", "Carries electromagnetic force", "Mediates strong nuclear force", "Causes radioactive decay"],
-        "options_hi": ["अन्य कणों को द्रव्यमान देता है", "विद्युत चुम्बकीय बल ले जाता है", "प्रबल नाभिकीय बल का मध्यस्थ है", "रेडियोधर्मी क्षय का कारण बनता है"],
-        "answer_en": "Gives mass to other particles",
-        "answer_hi": "अन्य कणों को द्रव्यमान देता है",
+        "question_en": "What is the purpose of Rust's 'std::task::Waker'?",
+        "question_hi": "Rust के 'std::task::Waker' का उद्देश्य क्या है?",
+        "options_en": ["Wake async tasks", "Executor notification", "Poll scheduling", "All of the above"],
+        "options_hi": ["Async टास्क वेक करना", "एग्जीक्यूटर नोटिफिकेशन", "पोल शेड्यूलिंग", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 68,
-        "question_en": "Which algorithm is used for page ranking in search engines?",
-        "question_hi": "सर्च इंजन में पेज रैंकिंग के लिए किस एल्गोरिदम का उपयोग किया जाता है?",
-        "options_en": ["PageRank", "Bubble Sort", "Quick Sort", "Dijkstra's Algorithm"],
-        "options_hi": ["पेजरैंक", "बबल सॉर्ट", "क्विक सॉर्ट", "डिज्क्स्ट्रा एल्गोरिदम"],
-        "answer_en": "PageRank",
-        "answer_hi": "पेजरैंक",
+        "question_en": "How does Rust's 'RwLock' optimize read access?",
+        "question_hi": "Rust का 'RwLock' रीड एक्सेस कैसे ऑप्टिमाइज़ करता है?",
+        "options_en": ["Multiple concurrent readers", "Writer preference control", "Lock state tracking", "All of the above"],
+        "options_hi": ["मल्टीपल कंकरंट रीडर", "राइटर प्रेफरेंस कंट्रोल", "लॉक स्टेट ट्रैकिंग", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 69,
-        "question_en": "What is the concept of 'Black Hole' in astrophysics?",
-        "question_hi": "खगोल भौतिकी में 'ब्लैक होल' की अवधारणा क्या है?",
-        "options_en": ["Region with intense gravity", "Collapsed star", "Nothing can escape", "All of the above"],
-        "options_hi": ["तीव्र गुरुत्वाकर्षण वाला क्षेत्र", "संपीड़ित तारा", "कुछ भी बच नहीं सकता", "उपरोक्त सभी"],
+        "question_en": "What is the role of Rust's 'std::sync::Once'?",
+        "question_hi": "Rust के 'std::sync::Once' की क्या भूमिका है?",
+        "options_en": ["One-time initialization", "Thread-safe setup", "Global state creation", "All of the above"],
+        "options_hi": ["वन-टाइम इनिशियलाइज़ेशन", "थ्रेड-सेफ सेटअप", "ग्लोबल स्टेट क्रिएशन", "उपरोक्त सभी"],
         "answer_en": "All of the above",
         "answer_hi": "उपरोक्त सभी",
         "attempted": false,
@@ -775,363 +760,361 @@ const questions = [
     },
     {
         "num": 70,
-        "question_en": "Which theory explains the origin of the universe?",
-        "question_hi": "कौन सा सिद्धांत ब्रह्मांड की उत्पत्ति की व्याख्या करता है?",
-        "options_en": ["Big Bang Theory", "String Theory", "Theory of Relativity", "Quantum Theory"],
-        "options_hi": ["बिग बैंग सिद्धांत", "स्ट्रिंग सिद्धांत", "सापेक्षता का सिद्धांत", "क्वांटम सिद्धांत"],
-        "answer_en": "Big Bang Theory",
-        "answer_hi": "बिग बैंग सिद्धांत",
+        "question_en": "How does Rust implement 'std::collections::HashMap'?",
+        "question_hi": "Rust 'std::collections::HashMap' कैसे इम्प्लीमेंट करता है?",
+        "options_en": ["HashDoS protection", "SwissTable algorithm", "Load factor management", "All of the above"],
+        "options_hi": ["HashDoS प्रोटेक्शन", "SwissTable अल्गोरिदम", "लोड फैक्टर मैनेजमेंट", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 71,
-        "question_en": "What is CRISPR-Cas9 technology used for?",
-        "question_hi": "CRISPR-Cas9 तकनीक का उपयोग किस लिए किया जाता है?",
-        "options_en": ["Gene editing", "DNA sequencing", "Protein synthesis", "Cell division"],
-        "options_hi": ["जीन संपादन", "DNA अनुक्रमण", "प्रोटीन संश्लेषण", "कोशिका विभाजन"],
-        "answer_en": "Gene editing",
-        "answer_hi": "जीन संपादन",
+        "question_en": "What is the purpose of Rust's 'std::mem::replace'?",
+        "question_hi": "Rust के 'std::mem::replace' का उद्देश्य क्या है?",
+        "options_en": ["Swap values", "Take ownership", "Avoid temporary moves", "All of the above"],
+        "options_hi": ["वैल्यू स्वैप करना", "ओनरशिप लेना", "टेम्पररी मूव से बचना", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 72,
-        "question_en": "Which mathematical concept is fundamental to cryptography?",
-        "question_hi": "क्रिप्टोग्राफी के लिए कौन सी गणितीय अवधारणा मौलिक है?",
-        "options_en": ["Prime numbers", "Complex numbers", "Matrices", "Calculus"],
-        "options_hi": ["अभाज्य संख्याएं", "सम्मिश्र संख्याएं", "मैट्रिक्स", "कैलकुलस"],
-        "answer_en": "Prime numbers",
-        "answer_hi": "अभाज्य संख्याएं",
+        "question_en": "How does Rust's 'std::sync::Condvar' work?",
+        "question_hi": "Rust का 'std::sync::Condvar' कैसे काम करता है?",
+        "options_en": ["Thread waiting/signaling", "Mutex coordination", "Condition-based synchronization", "All of the above"],
+        "options_hi": ["थ्रेड वेटिंग/सिग्नलिंग", "Mutex कोऑर्डिनेशन", "कंडीशन-बेस्ड सिंक्रोनाइज़ेशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 73,
-        "question_en": "What is the principle behind blockchain technology?",
-        "question_hi": "ब्लॉकचेन तकनीक का सिद्धांत क्या है?",
-        "options_en": ["Distributed ledger", "Centralized database", "Peer-to-peer network", "Both A and C"],
-        "options_hi": ["वितरित लेजर", "केंद्रीकृत डेटाबेस", "पीयर-टू-पीयर नेटवर्क", "A और C दोनों"],
-        "answer_en": "Both A and C",
-        "answer_hi": "A और C दोनों",
+        "question_en": "What is the role of Rust's 'std::ptr::NonNull'?",
+        "question_hi": "Rust के 'std::ptr::NonNull' की क्या भूमिका है?",
+        "options_en": ["Non-null pointer wrapper", "FFI safety", "Variance control", "All of the above"],
+        "options_hi": ["नॉन-नल पॉइंटर रैपर", "FFI सेफ्टी", "वेरिएंस कंट्रोल", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 74,
-        "question_en": "Which phenomenon is responsible for the blue color of the sky?",
-        "question_hi": "आकाश के नीले रंग के लिए कौन सी घटना जिम्मेदार है?",
-        "options_en": ["Reflection", "Refraction", "Rayleigh scattering", "Tyndall effect"],
-        "options_hi": ["परावर्तन", "अपवर्तन", "रेले प्रकीर्णन", "टिंडल प्रभाव"],
-        "answer_en": "Rayleigh scattering",
-        "answer_hi": "रेले प्रकीर्णन",
+        "question_en": "How does Rust implement 'std::io::Error'?",
+        "question_hi": "Rust 'std::io::Error' कैसे इम्प्लीमेंट करता है?",
+        "options_en": ["Error kind categorization", "OS error code wrapping", "Custom error support", "All of the above"],
+        "options_hi": ["एरर काइंड कैटेगराइजेशन", "OS एरर कोड रैपिंग", "कस्टम एरर सपोर्ट", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 75,
-        "question_en": "What is the Anthropocene epoch?",
-        "question_hi": "एंथ्रोपोसीन युग क्या है?",
-        "options_en": ["Age of humans", "Age of dinosaurs", "Ice age", "Stone age"],
-        "options_hi": ["मनुष्यों का युग", "डायनासोर का युग", "हिमयुग", "पाषाण युग"],
-        "answer_en": "Age of humans",
-        "answer_hi": "मनुष्यों का युग",
+        "question_en": "What is the purpose of Rust's 'std::sync::atomic' types?",
+        "question_hi": "Rust के 'std::sync::atomic' टाइप का उद्देश्य क्या है?",
+        "options_en": ["Lock-free operations", "Memory ordering control", "Thread-safe primitives", "All of the above"],
+        "options_hi": ["लॉक-फ्री ऑपरेशन", "मेमोरी ऑर्डरिंग कंट्रोल", "थ्रेड-सेफ प्रिमिटिव", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 76,
-        "question_en": "Which algorithm is used for recommendation systems?",
-        "question_hi": "सिफारिश प्रणालियों के लिए किस एल्गोरिदम का उपयोग किया जाता है?",
-        "options_en": ["Collaborative filtering", "Linear regression", "K-means clustering", "Decision trees"],
-        "options_hi": ["सहयोगी फ़िल्टरिंग", "रैखिक प्रतिगमन", "K-मीन्स क्लस्टरिंग", "निर्णय वृक्ष"],
-        "answer_en": "Collaborative filtering",
-        "answer_hi": "सहयोगी फ़िल्टरिंग",
+        "question_en": "How does Rust's 'std::process::Command' work?",
+        "question_hi": "Rust का 'std::process::Command' कैसे काम करता है?",
+        "options_en": ["Process spawning", "IO redirection", "Environment configuration", "All of the above"],
+        "options_hi": ["प्रोसेस स्पॉनिंग", "IO रीडायरेक्शन", "एनवायरनमेंट कॉन्फिगरेशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 77,
-        "question_en": "What is the significance of the Turing Test?",
-        "question_hi": "ट्यूरिंग टेस्ट का क्या महत्व है?",
-        "options_en": ["Test for artificial intelligence", "Computer security test", "Programming efficiency test", "Hardware performance test"],
-        "options_hi": ["कृत्रिम बुद्धिमत्ता के लिए परीक्षण", "कंप्यूटर सुरक्षा परीक्षण", "प्रोग्रामिंग दक्षता परीक्षण", "हार्डवेयर प्रदर्शन परीक्षण"],
-        "answer_en": "Test for artificial intelligence",
-        "answer_hi": "कृत्रिम बुद्धिमत्ता के लिए परीक्षण",
+        "question_en": "What is the role of Rust's 'std::ffi::CStr'?",
+        "question_hi": "Rust के 'std::ffi::CStr' की क्या भूमिका है?",
+        "options_en": ["Null-terminated string handling", "FFI string safety", "C string conversion", "All of the above"],
+        "options_hi": ["नल-टर्मिनेटेड स्ट्रिंग हैंडलिंग", "FFI स्ट्रिंग सेफ्टी", "C स्ट्रिंग कन्वर्जन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 78,
-        "question_en": "Which theory explains the behavior of matter at atomic and subatomic levels?",
-        "question_hi": "कौन सा सिद्धांत परमाणु और उपपरमाण्विक स्तर पर पदार्थ के व्यवहार की व्याख्या करता है?",
-        "options_en": ["Quantum mechanics", "Classical mechanics", "Thermodynamics", "Electromagnetism"],
-        "options_hi": ["क्वांटम यांत्रिकी", "शास्त्रीय यांत्रिकी", "ऊष्मागतिकी", "विद्युत चुम्बकत्व"],
-        "answer_en": "Quantum mechanics",
-        "answer_hi": "क्वांटम यांत्रिकी",
+        "question_en": "How does Rust implement 'std::path::Path'?",
+        "question_hi": "Rust 'std::path::Path' कैसे इम्प्लीमेंट करता है?",
+        "options_en": ["Platform-specific path handling", "Path manipulation", "Encoding safety", "All of the above"],
+        "options_hi": ["प्लेटफॉर्म-स्पेसिफिक पाथ हैंडलिंग", "पाथ मैनिपुलेशन", "एनकोडिंग सेफ्टी", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 79,
-        "question_en": "What is the concept of 'Dark Matter' in cosmology?",
-        "question_hi": "ब्रह्माण्ड विज्ञान में 'डार्क मैटर' की अवधारणा क्या है?",
-        "options_en": ["Invisible matter", "Gravitational effects", "Both A and B", "Anti-matter"],
-        "options_hi": ["अदृश्य पदार्थ", "गुरुत्वाकर्षण प्रभाव", "A और B दोनों", "प्रतिपदार्थ"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "What is the purpose of Rust's 'std::net::TcpStream'?",
+        "question_hi": "Rust के 'std::net::TcpStream' का उद्देश्य क्या है?",
+        "options_en": ["TCP network communication", "Async and sync IO", "Connection management", "All of the above"],
+        "options_hi": ["TCP नेटवर्क कम्युनिकेशन", "Async और sync IO", "कनेक्शन मैनेजमेंट", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 80,
-        "question_en": "Which programming language is primarily used for data science?",
-        "question_hi": "डेटा साइंस के लिए मुख्य रूप से किस प्रोग्रामिंग भाषा का उपयोग किया जाता है?",
-        "options_en": ["Python", "Java", "C++", "HTML"],
-        "options_hi": ["पायथन", "जावा", "C++", "HTML"],
-        "answer_en": "Python",
-        "answer_hi": "पायथन",
+        "question_en": "How does Rust's 'std::fs::File' handle file operations?",
+        "question_hi": "Rust का 'std::fs::File' फाइल ऑपरेशन कैसे हैंडल करता है?",
+        "options_en": ["File descriptor management", "Read/write operations", "Seeking and metadata", "All of the above"],
+        "options_hi": ["फाइल डिस्क्रिप्टर मैनेजमेंट", "रीड/राइट ऑपरेशन", "सीकिंग और मेटाडेटा", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 81,
-        "question_en": "What is the principle of superposition in quantum mechanics?",
-        "question_hi": "क्वांटम यांत्रिकी में सुपरपोजिशन का सिद्धांत क्या है?",
-        "options_en": ["Particles can be in multiple states", "Waves can interfere", "Both A and B", "Energy is quantized"],
-        "options_hi": ["कण कई अवस्थाओं में हो सकते हैं", "तरंगें व्यतिकरण कर सकती हैं", "A और B दोनों", "ऊर्जा क्वांटित है"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "What is the role of Rust's 'std::env' module?",
+        "question_hi": "Rust के 'std::env' मॉड्यूल की क्या भूमिका है?",
+        "options_en": ["Environment variable access", "Command line arguments", "Current directory", "All of the above"],
+        "options_hi": ["एनवायरनमेंट वेरिएबल एक्सेस", "कमांड लाइन आर्गुमेंट", "करंट डायरेक्टरी", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 82,
-        "question_en": "Which algorithm is used for shortest path finding in graphs?",
-        "question_hi": "ग्राफ़ में सबसे छोटा रास्ता खोजने के लिए किस एल्गोरिदम का उपयोग किया जाता है?",
-        "options_en": ["Dijkstra's algorithm", "Bubble sort", "Quick sort", "Binary search"],
-        "options_hi": ["डिज्क्स्ट्रा एल्गोरिदम", "बबल सॉर्ट", "क्विक सॉर्ट", "बाइनरी सर्च"],
-        "answer_en": "Dijkstra's algorithm",
-        "answer_hi": "डिज्क्स्ट्रा एल्गोरिदम",
+        "question_en": "How does Rust implement 'std::time' types?",
+        "question_hi": "Rust 'std::time' टाइप कैसे इम्प्लीमेंट करता है?",
+        "options_en": ["Duration measurement", "System time access", "Instant comparison", "All of the above"],
+        "options_hi": ["ड्यूरेशन मेजरमेंट", "सिस्टम टाइम एक्सेस", "इंस्टेंट कम्पेयरिजन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 83,
-        "question_en": "What is the significance of the Human Genome Project?",
-        "question_hi": "ह्यूमन जीनोम प्रोजेक्ट का क्या महत्व है?",
-        "options_en": ["Mapped human DNA", "Medical advancements", "Both A and B", "Space exploration"],
-        "options_hi": ["मानव DNA का मानचित्रण", "चिकित्सा प्रगति", "A और B दोनों", "अंतरिक्ष अन्वेषण"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "What is the purpose of Rust's 'std::cell::RefCell'?",
+        "question_hi": "Rust के 'std::cell::RefCell' का उद्देश्य क्या है?",
+        "options_en": ["Runtime borrow checking", "Interior mutability", "Single-threaded scenarios", "All of the above"],
+        "options_hi": ["रनटाइम बोरो चेकिंग", "इंटीरियर म्यूटेबिलिटी", "सिंगल-थ्रेडेड सीनारियो", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 84,
-        "question_en": "Which theory explains the formation of the solar system?",
-        "question_hi": "कौन सा सिद्धांत सौर मंडल के निर्माण की व्याख्या करता है?",
-        "options_en": ["Nebular hypothesis", "Big Bang theory", "String theory", "Plate tectonics"],
-        "options_hi": ["निहारिका परिकल्पना", "बिग बैंग सिद्धांत", "स्ट्रिंग सिद्धांत", "प्लेट टेक्टोनिक्स"],
-        "answer_en": "Nebular hypothesis",
-        "answer_hi": "निहारिका परिकल्पना",
+        "question_en": "How does Rust's 'std::collections::VecDeque' work?",
+        "question_hi": "Rust का 'std::collections::VecDeque' कैसे काम करता है?",
+        "options_en": ["Double-ended queue", "Ring buffer implementation", "Efficient push/pop both ends", "All of the above"],
+        "options_hi": ["डबल-एंडेड क्यू", "रिंग बफर इम्प्लीमेंटेशन", "दोनों एंड पर एफिशिएंट पुश/पॉप", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 85,
-        "question_en": "What is machine learning?",
-        "question_hi": "मशीन लर्निंग क्या है?",
-        "options_en": ["AI that learns from data", "Computer programming", "Data storage", "Hardware design"],
-        "options_hi": ["डेटा से सीखने वाली AI", "कंप्यूटर प्रोग्रामिंग", "डेटा संग्रहण", "हार्डवेयर डिजाइन"],
-        "answer_en": "AI that learns from data",
-        "answer_hi": "डेटा से सीखने वाली AI",
+        "question_en": "What is the role of Rust's 'std::sync::mpsc::sync_channel'?",
+        "question_hi": "Rust के 'std::sync::mpsc::sync_channel' की क्या भूमिका है?",
+        "options_en": ["Bounded channel", "Backpressure handling", "Synchronous communication", "All of the above"],
+        "options_hi": ["बाउंडेड चैनल", "बैकप्रेशर हैंडलिंग", "सिंक्रोनस कम्युनिकेशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 86,
-        "question_en": "Which law describes the relationship between voltage, current and resistance?",
-        "question_hi": "कौन सा नियम वोल्टेज, करंट और प्रतिरोध के बीच संबंध बताता है?",
-        "options_en": ["Ohm's law", "Faraday's law", "Newton's law", "Boyle's law"],
-        "options_hi": ["ओम का नियम", "फैराडे का नियम", "न्यूटन का नियम", "बॉयल का नियम"],
-        "answer_en": "Ohm's law",
-        "answer_hi": "ओम का नियम",
+        "question_en": "How does Rust implement 'std::collections::BTreeMap'?",
+        "question_hi": "Rust 'std::collections::BTreeMap' कैसे इम्प्लीमेंट करता है?",
+        "options_en": ["Balanced tree structure", "Sorted key storage", "Range query support", "All of the above"],
+        "options_hi": ["बैलेंस्ड ट्री स्ट्रक्चर", "सॉर्टेड की स्टोरेज", "रेंज क्वेरी सपोर्ट", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 87,
-        "question_en": "What is photosynthesis?",
-        "question_hi": "प्रकाश संश्लेषण क्या है?",
-        "options_en": ["Process of making food in plants", "Breathing process", "Cell division", "Water absorption"],
-        "options_hi": ["पौधों में भोजन बनाने की प्रक्रिया", "श्वसन प्रक्रिया", "कोशिका विभाजन", "जल अवशोषण"],
-        "answer_en": "Process of making food in plants",
-        "answer_hi": "पौधों में भोजन बनाने की प्रक्रिया",
+        "question_en": "What is the purpose of Rust's 'std::mem::size_of'?",
+        "question_hi": "Rust के 'std::mem::size_of' का उद्देश्य क्या है?",
+        "options_en": ["Type size query", "Memory layout analysis", "FFI compatibility", "All of the above"],
+        "options_hi": ["टाइप साइज क्वेरी", "मेमोरी लेआउट एनालिसिस", "FFI कंपेटिबिलिटी", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 88,
-        "question_en": "Which gas is essential for photosynthesis?",
-        "question_hi": "प्रकाश संश्लेषण के लिए कौन सी गैस आवश्यक है?",
-        "options_en": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
-        "options_hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "नाइट्रोजन", "हाइड्रोजन"],
-        "answer_en": "Carbon dioxide",
-        "answer_hi": "कार्बन डाइऑक्साइड",
+        "question_en": "How does Rust's 'std::thread::spawn' work?",
+        "question_hi": "Rust का 'std::thread::spawn' कैसे काम करता है?",
+        "options_en": ["Thread creation", "Closure execution", "Join handle return", "All of the above"],
+        "options_hi": ["थ्रेड क्रिएशन", "क्लोजर एक्सीक्यूशन", "जॉइन हैंडल रिटर्न", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 89,
-        "question_en": "What is the chemical formula of water?",
-        "question_hi": "पानी का रासायनिक सूत्र क्या है?",
-        "options_en": ["H₂O", "HO₂", "H₂O₂", "OH"],
-        "options_hi": ["H₂O", "HO₂", "H₂O₂", "OH"],
-        "answer_en": "H₂O",
-        "answer_hi": "H₂O",
+        "question_en": "What is the role of Rust's 'std::io::BufReader'?",
+        "question_hi": "Rust के 'std::io::BufReader' की क्या भूमिका है?",
+        "options_en": ["Buffered input", "Read performance optimization", "Reduced system calls", "All of the above"],
+        "options_hi": ["बफर्ड इनपुट", "रीड परफॉर्मेंस ऑप्टिमाइज़ेशन", "कम सिस्टम कॉल", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 90,
-        "question_en": "Which planet is known as the Red Planet?",
-        "question_hi": "किस ग्रह को लाल ग्रह के रूप में जाना जाता है?",
-        "options_en": ["Venus", "Mars", "Jupiter", "Saturn"],
-        "options_hi": ["शुक्र", "मंगल", "बृहस्पति", "शनि"],
-        "answer_en": "Mars",
-        "answer_hi": "मंगल",
+        "question_en": "How does Rust implement 'std::collections::HashSet'?",
+        "question_hi": "Rust 'std::collections::HashSet' कैसे इम्प्लीमेंट करता है?",
+        "options_en": ["HashMap wrapper", "Unique element storage", "Set operations", "All of the above"],
+        "options_hi": ["HashMap रैपर", "यूनिक एलिमेंट स्टोरेज", "सेट ऑपरेशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 91,
-        "question_en": "What is the capital of France?",
-        "question_hi": "फ्रांस की राजधानी क्या है?",
-        "options_en": ["London", "Berlin", "Paris", "Rome"],
-        "options_hi": ["लंदन", "बर्लिन", "पेरिस", "रोम"],
-        "answer_en": "Paris",
-        "answer_hi": "पेरिस",
+        "question_en": "What is the purpose of Rust's 'std::sync::mpsc::Receiver'?",
+        "question_hi": "Rust के 'std::sync::mpsc::Receiver' का उद्देश्य क्या है?",
+        "options_en": ["Message consumption", "Channel endpoint", "Blocking and non-blocking receive", "All of the above"],
+        "options_hi": ["मैसेज कंजम्पशन", "चैनल एंडपॉइंट", "ब्लॉकिंग और नॉन-ब्लॉकिंग रिसीव", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 92,
-        "question_en": "Who wrote 'Romeo and Juliet'?",
-        "question_hi": "'रोमियो और जूलियट' किसने लिखा?",
-        "options_en": ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
-        "options_hi": ["चार्ल्स डिकेंस", "विलियम शेक्सपियर", "जेन ऑस्टेन", "मार्क ट्वेन"],
-        "answer_en": "William Shakespeare",
-        "answer_hi": "विलियम शेक्सपियर",
+        "question_en": "How does Rust's 'std::mem::align_of' work?",
+        "question_hi": "Rust का 'std::mem::align_of' कैसे काम करता है?",
+        "options_en": ["Memory alignment query", "FFI structure compatibility", "Performance optimization", "All of the above"],
+        "options_hi": ["मेमोरी अलाइनमेंट क्वेरी", "FFI स्ट्रक्चर कंपेटिबिलिटी", "परफॉर्मेंस ऑप्टिमाइज़ेशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 93,
-        "question_en": "What is the largest ocean on Earth?",
-        "question_hi": "पृथ्वी पर सबसे बड़ा महासागर कौन सा है?",
-        "options_en": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
-        "options_hi": ["अटलांटिक महासागर", "हिंद महासागर", "आर्कटिक महासागर", "प्रशांत महासागर"],
-        "answer_en": "Pacific Ocean",
-        "answer_hi": "प्रशांत महासागर",
+        "question_en": "What is the role of Rust's 'std::io::Seek' trait?",
+        "question_hi": "Rust के 'std::io::Seek' ट्रेट की क्या भूमिका है?",
+        "options_en": ["Stream position control", "Random access support", "File and memory seeking", "All of the above"],
+        "options_hi": ["स्ट्रीम पोजीशन कंट्रोल", "रैंडम एक्सेस सपोर्ट", "फाइल और मेमोरी सीकिंग", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 94,
-        "question_en": "Which element has the chemical symbol 'Au'?",
-        "question_hi": "किस तत्व का रासायनिक प्रतीक 'Au' है?",
-        "options_en": ["Silver", "Gold", "Aluminum", "Iron"],
-        "options_hi": ["चांदी", "सोना", "एल्युमिनियम", "लोहा"],
-        "answer_en": "Gold",
-        "answer_hi": "सोना",
+        "question_en": "How does Rust implement 'std::collections::BinaryHeap'?",
+        "question_hi": "Rust 'std::collections::BinaryHeap' कैसे इम्प्लीमेंट करता है?",
+        "options_en": ["Priority queue", "Max-heap structure", "Efficient push/pop", "All of the above"],
+        "options_hi": ["प्रायोरिटी क्यू", "मैक्स-हीप स्ट्रक्चर", "एफिशिएंट पुश/पॉप", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 95,
-        "question_en": "What is the square root of 144?",
-        "question_hi": "144 का वर्गमूल क्या है?",
-        "options_en": ["12", "14", "16", "18"],
-        "options_hi": ["12", "14", "16", "18"],
-        "answer_en": "12",
-        "answer_hi": "12",
+        "question_en": "What is the purpose of Rust's 'std::sync::mpsc::Sender'?",
+        "question_hi": "Rust के 'std::sync::mpsc::Sender' का उद्देश्य क्या है?",
+        "options_en": ["Message production", "Channel endpoint", "Clone for multiple producers", "All of the above"],
+        "options_hi": ["मैसेज प्रोडक्शन", "चैनल एंडपॉइंट", "मल्टीपल प्रोड्यूसर के लिए क्लोन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 96,
-        "question_en": "Which country has the largest population in the world?",
-        "question_hi": "दुनिया में सबसे अधिक आबादी वाला देश कौन सा है?",
-        "options_en": ["India", "United States", "China", "Russia"],
-        "options_hi": ["भारत", "संयुक्त राज्य अमेरिका", "चीन", "रूस"],
-        "answer_en": "China",
-        "answer_hi": "चीन",
+        "question_en": "How does Rust's 'std::mem::drop' function work?",
+        "question_hi": "Rust का 'std::mem::drop' फंक्शन कैसे काम करता है?",
+        "options_en": ["Explicit destructor call", "Ownership transfer", "Memory deallocation", "All of the above"],
+        "options_hi": ["एक्सप्लिसिट डिस्ट्रक्टर कॉल", "ओनरशिप ट्रांसफर", "मेमोरी डीलोकेशन", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 97,
-        "question_en": "What is the main component of the Sun?",
-        "question_hi": "सूर्य का मुख्य घटक क्या है?",
-        "options_en": ["Helium", "Hydrogen", "Oxygen", "Carbon"],
-        "options_hi": ["हीलियम", "हाइड्रोजन", "ऑक्सीजन", "कार्बन"],
-        "answer_en": "Hydrogen",
-        "answer_hi": "हाइड्रोजन",
+        "question_en": "What is the role of Rust's 'std::io::Write' trait?",
+        "question_hi": "Rust के 'std::io::Write' ट्रेट की क्या भूमिका है?",
+        "options_en": ["Byte output abstraction", "File and network writing", "Buffered writing support", "All of the above"],
+        "options_hi": ["बाइट आउटपुट एब्स्ट्रैक्शन", "फाइल और नेटवर्क राइटिंग", "बफर्ड राइटिंग सपोर्ट", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 98,
-        "question_en": "Who discovered gravity?",
-        "question_hi": "गुरुत्वाकर्षण की खोज किसने की?",
-        "options_en": ["Albert Einstein", "Isaac Newton", "Galileo Galilei", "Nikola Tesla"],
-        "options_hi": ["अल्बर्ट आइंस्टीन", "आइजैक न्यूटन", "गैलीलियो गैलीली", "निकोला टेस्ला"],
-        "answer_en": "Isaac Newton",
-        "answer_hi": "आइजैक न्यूटन",
+        "question_en": "How does Rust implement 'std::collections::LinkedList'?",
+        "question_hi": "Rust 'std::collections::LinkedList' कैसे इम्प्लीमेंट करता है?",
+        "options_en": ["Doubly-linked list", "O(1) insert/remove", "Cache-unfriendly structure", "All of the above"],
+        "options_hi": ["डबली-लिंक्ड लिस्ट", "O(1) इंसर्ट/रिमूव", "कैश-अनफ्रेंडली स्ट्रक्चर", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 99,
-        "question_en": "What is the hardest natural substance on Earth?",
-        "question_hi": "पृथ्वी पर सबसे कठोर प्राकृतिक पदार्थ क्या है?",
-        "options_en": ["Gold", "Iron", "Diamond", "Platinum"],
-        "options_hi": ["सोना", "लोहा", "हीरा", "प्लैटिनम"],
-        "answer_en": "Diamond",
-        "answer_hi": "हीरा",
+        "question_en": "What is the purpose of Rust's 'std::sync::mpsc::channel'?",
+        "question_hi": "Rust के 'std::sync::mpsc::channel' का उद्देश्य क्या है?",
+        "options_en": ["Unbounded channel creation", "Asynchronous communication", "Multiple producer support", "All of the above"],
+        "options_hi": ["अनबाउंडेड चैनल क्रिएशन", "एसिंक्रोनस कम्युनिकेशन", "मल्टीपल प्रोड्यूसर सपोर्ट", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 100,
-        "question_en": "Which organ pumps blood in the human body?",
-        "question_hi": "मानव शरीर में कौन सा अंग रक्त पंप करता है?",
-        "options_en": ["Lungs", "Heart", "Liver", "Kidneys"],
-        "options_hi": ["फेफड़े", "हृदय", "यकृत", "गुर्दे"],
-        "answer_en": "Heart",
-        "answer_hi": "हृदय",
+        "question_en": "How does Rust's 'std::mem::needs_drop' function work?",
+        "question_hi": "Rust का 'std::mem::needs_drop' फंक्शन कैसे काम करता है?",
+        "options_en": ["Drop requirement detection", "Compile-time optimization", "Memory management", "All of the above"],
+        "options_hi": ["ड्रॉप रिक्वायरमेंट डिटेक्शन", "कंपाइल-टाइम ऑप्टिमाइज़ेशन", "मेमोरी मैनेजमेंट", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
         "attempted": false,
         "selected": ""
     }
-        
-// Add more questions here...
 ];
-
-
-let currentQuestion = 0; 
+// --------------------------- GLOBAL VARS -----------------------------
+let currentQuestion = 0;
 let language = "en";
-// let timeLeft = 180 * 60; // 180 minutes
-let timeLeft = 60 * 60; // 60 minutes
+let timeLeft = 60 * 60;   // 60 minutes timer
 let timerInterval;
 
-// ----------------- Quiz Logic -----------------
+// --------------------------- LOAD QUESTION ----------------------------
 function loadQuestion(index) {
     const q = questions[index];
-    document.getElementById("question").textContent = `${q.num}. ${
-        language === "en" ? q.question_en : q.question_hi
-    }`;
-    document.getElementById("questionCounter").textContent = `Question ${index + 1} of ${questions.length}`;
+
+    document.getElementById("question").textContent =
+        `${q.num}. ${language === "en" ? q.question_en : q.question_hi}`;
+
+    document.getElementById("questionCounter").textContent =
+        `Question ${index + 1} of ${questions.length}`;
 
     const optionsElement = document.getElementById("options");
     optionsElement.innerHTML = "";
@@ -1141,6 +1124,7 @@ function loadQuestion(index) {
     options.forEach((option) => {
         const isSelected = q.selected === option;
         const optionDiv = document.createElement("div");
+
         optionDiv.className = "option-box";
         optionDiv.style = `
             border: 2px solid ${isSelected ? "#007bff" : "#ccc"};
@@ -1149,12 +1133,11 @@ function loadQuestion(index) {
             border-radius: 8px;
             margin: 6px 0;
             cursor: pointer;
-            transition: all 0.2s;
         `;
 
         optionDiv.innerHTML = `
-            <input type="radio" name="option" value="${option}" ${isSelected ? "checked" : ""} style="margin-right:8px;">
-            ${option}
+            <input type="radio" name="option"
+            value="${option}" ${isSelected ? "checked" : ""} /> ${option}
         `;
 
         optionDiv.addEventListener("click", () => {
@@ -1168,12 +1151,14 @@ function loadQuestion(index) {
     updateNavigation();
 }
 
+// --------------------------- MARK ATTEMPT ----------------------------
 function markAttempted(index, selectedAnswer) {
     questions[index].attempted = true;
     questions[index].selected = selectedAnswer;
     updateNavigation();
 }
 
+// --------------------------- NEXT / PREV -----------------------------
 function nextQuestion() {
     if (currentQuestion < questions.length - 1) {
         currentQuestion++;
@@ -1188,296 +1173,150 @@ function prevQuestion() {
     }
 }
 
+// --------------------------- LANGUAGE CHANGE -------------------------
 function changeLanguage() {
     language = document.getElementById("languageSelect").value;
     loadQuestion(currentQuestion);
 }
 
-function submitQuiz() {
-    clearInterval(timerInterval);
-    let attempted = 0,
-        notAttempted = 0,
-        score = 0;
-
-    questions.forEach((q) => {
-        if (q.attempted) {
-            attempted++;
-            if (q.selected === q.answer_en || q.selected === q.answer_hi) score++;
-        } else notAttempted++;
-    });
-
-    alert(
-        `Quiz submitted!\nAttempted: ${attempted}\nNot Attempted: ${notAttempted}\nScore: ${score}/${questions.length}`
-    );
-}
-
+// --------------------------- TIMER -------------------------------
 function startTimer() {
     const timerElement = document.getElementById("timer");
     clearInterval(timerInterval);
+
     timerInterval = setInterval(() => {
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
-            alert("Time's up!");
+            alert("⏳ Time Over!");
             submitQuiz();
-        } else {
-            const hours = Math.floor(timeLeft / 3600);
-            const minutes = Math.floor((timeLeft % 3600) / 60);
-            const seconds = timeLeft % 60;
-            timerElement.textContent = `Time Left: ${hours
-                .toString()
-                .padStart(2, "0")}:${minutes
-                .toString()
-                .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
-            timeLeft--;
+            return;
         }
+
+        const h = Math.floor(timeLeft / 3600);
+        const m = Math.floor((timeLeft % 3600) / 60);
+        const s = timeLeft % 60;
+
+        timerElement.textContent =
+            `Time Left: ${h.toString().padStart(2, "0")}:${m
+                .toString().padStart(2, "0")}:${s.toString().padStart(2, "0")}`;
+
+        timeLeft--;
     }, 1000);
 }
 
+// --------------------------- SUBMIT QUIZ ---------------------
+function submitQuiz() {
+    let confirmation = confirm("Are you sure you want to submit the test?");
+    if (!confirmation) return;
 
+    clearInterval(timerInterval);
 
+    // Calculate time spent
+    const totalTimeSpent = (60 * 60) - timeLeft;
+    const mins = Math.floor(totalTimeSpent / 60);
+    const secs = totalTimeSpent % 60;
 
+    // Save to localStorage
+    localStorage.setItem("timeTaken", `${mins} min ${secs} sec`);
 
+    let attempted = 0;
+    let notAttempted = 0;
+    let score = 0;
+    const results = [];
 
-
-
-
-
-
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////all file and folder me code add karna hai 
-
-
-// submit 
-function jumpToQuestion(index) {
-            currentQuestion = index;
-            loadQuestion(index);
+    questions.forEach(q => {
+        if (q.attempted) {
+            attempted++;
+            if (q.selected === q.answer_en || q.selected === q.answer_hi) {
+                score++;
+            }
+        } else {
+            notAttempted++;
         }
 
-        function submitQuiz() {
-            let confirmation = confirm("Are you sure you want to submit the test?");
-            
-            if (!confirmation) {
-                return; // अगर यूज़र 'Cancel' करता है तो आगे नहीं बढ़ेंगे
-            }
+        results.push({
+            question: language === "en" ? q.question_en : q.question_hi,
+            selected: q.selected || "Not Answered",
+            correct: language === "en" ? q.answer_en : q.answer_hi
+        });
+    });
 
-            let attempted = 0;
-            let notAttempted = 0;
-            let score = 0;
-            const results = [];
+    // Save result data
+    localStorage.setItem("attempted", attempted);
+    localStorage.setItem("notAttempted", notAttempted);
+    localStorage.setItem("score", score);
+    localStorage.setItem("results", JSON.stringify(results));
 
-            questions.forEach(q => {
-                if (q.attempted) {
-                    attempted++;
-                    if (q.selected === q.answer) {
-                        score++;
-                    }
-                } else {
-                    notAttempted++;
-                }
-                results.push({ question: q.question, selected: q.selected || "Not Answered", correct: q.answer });
-            });
+    // Stop camera stream if active
+    if (videoStream) {
+        videoStream.getTracks().forEach(track => track.stop());
+    }
 
-            localStorage.setItem("attempted", attempted);
-            localStorage.setItem("notAttempted", notAttempted);
-            localStorage.setItem("score", score);
-            localStorage.setItem("results", JSON.stringify(results));
+    // Redirect
+    window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
+}
 
-            // रिजल्ट देखने से पहले एक और कन्फर्मेशन ले सकते हैं
-            let viewResult = confirm("Test submitted successfully! Do you want to view your result?");
-            if (viewResult) {
-                window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
-            }
-        }
-        window.onload = () => {
-            loadQuestion(currentQuestion);
-        };
-
-
+// --------------------------- NAVIGATION ------------------------------
 function updateNavigation() {
     const nav = document.getElementById("circleContainer");
     nav.innerHTML = "";
+
     questions.forEach((q, i) => {
         let color = "gray";
         if (i === currentQuestion) color = "blue";
         else if (q.attempted) color = "green";
-        nav.innerHTML += `<div class='circle' style='background-color:${color}' onclick='loadQuestion(${i})'>${i + 1}</div>`;
+
+        const circle = document.createElement("div");
+        circle.className = "circle";
+        circle.style.background = color;
+        circle.textContent = i + 1;
+        circle.onclick = () => jumpToQuestion(i);
+        nav.appendChild(circle);
     });
 }
 
-// ----------------- Camera & Movement Logic -----------------
+function jumpToQuestion(i) {
+    currentQuestion = i;
+    loadQuestion(i);
+}
+
+// --------------------------- CAMERA ----------------------
 let videoStream;
-let movementCount = 0;
 
 function startCamera() {
     const container = document.createElement("div");
     container.id = "camera-container";
     container.style.position = "fixed";
     container.style.top = "10px";
-    container.style.left = "10px"; // ✅ Left side
+    container.style.left = "10px";
     container.style.width = "130px";
     container.style.height = "130px";
-    container.style.zIndex = "9999";
     container.style.borderRadius = "50%";
     container.style.overflow = "hidden";
-    container.style.border = "3px solid red";
-    container.style.boxShadow = "0 0 10px rgba(0,0,0,0.3)";
-    container.style.cursor = "grab";
-    container.style.minWidth = "80px";
-    container.style.minHeight = "80px";
-    container.style.maxWidth = "250px";
-    container.style.maxHeight = "250px";
     container.style.background = "#000";
+    container.style.border = "3px solid red";
+    container.style.zIndex = "9999";
     document.body.appendChild(container);
 
     const video = document.createElement("video");
-    video.setAttribute("autoplay", true);
-    video.setAttribute("playsinline", true);
+    video.autoplay = true;
+    video.playsInline = true;
     video.style.width = "100%";
     video.style.height = "100%";
     video.style.objectFit = "cover";
     container.appendChild(video);
 
-    // ✅ Resize handle
-    const resizeHandle = document.createElement("div");
-    resizeHandle.style.position = "absolute";
-    resizeHandle.style.bottom = "2px";
-    resizeHandle.style.right = "2px";
-    resizeHandle.style.width = "15px";
-    resizeHandle.style.height = "15px";
-    resizeHandle.style.background = "rgba(255,255,255,0.7)";
-    resizeHandle.style.borderRadius = "4px";
-    resizeHandle.style.cursor = "se-resize";
-    container.appendChild(resizeHandle);
-
-    // ✅ Drag logic
-    let isDragging = false;
-    let offsetX, offsetY;
-
-    container.addEventListener("mousedown", (e) => {
-        if (e.target === resizeHandle) return;
-        isDragging = true;
-        offsetX = e.clientX - container.offsetLeft;
-        offsetY = e.clientY - container.offsetTop;
-        container.style.cursor = "grabbing";
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isDragging) return;
-        let x = e.clientX - offsetX;
-        let y = e.clientY - offsetY;
-        x = Math.max(0, Math.min(window.innerWidth - container.offsetWidth, x));
-        y = Math.max(0, Math.min(window.innerHeight - container.offsetHeight, y));
-        container.style.left = `${x}px`;
-        container.style.top = `${y}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isDragging = false;
-        container.style.cursor = "grab";
-    });
-
-    // ✅ Resize logic
-    let isResizing = false;
-    let startWidth, startHeight, startX, startY;
-
-    resizeHandle.addEventListener("mousedown", (e) => {
-        e.stopPropagation();
-        isResizing = true;
-        startWidth = container.offsetWidth;
-        startHeight = container.offsetHeight;
-        startX = e.clientX;
-        startY = e.clientY;
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isResizing) return;
-        const dx = e.clientX - startX;
-        const dy = e.clientY - startY;
-        const newSize = Math.max(80, Math.min(250, Math.max(startWidth + dx, startHeight + dy)));
-        container.style.width = `${newSize}px`;
-        container.style.height = `${newSize}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isResizing = false;
-    });
-
-    // ✅ Camera stream
     navigator.mediaDevices.getUserMedia({ video: true })
         .then(stream => {
             video.srcObject = stream;
             videoStream = stream;
-            detectMovement(video);
         })
-        .catch(err => {
-            console.error("Camera error:", err);
-            alert("Camera not accessible!");
-        });
+        .catch(() => alert("Camera not accessible!"));
 }
 
-function detectMovement(video) {
-    const canvas = document.createElement("canvas");
-    const ctx = canvas.getContext("2d");
-    canvas.width = 160;
-    canvas.height = 160;
-    let lastImageData = null;
-
-    setInterval(() => {
-        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-
-        if (lastImageData) {
-            let diff = 0;
-            for (let i = 0; i < imageData.data.length; i += 4) {
-                diff += Math.abs(imageData.data[i] - lastImageData.data[i]);
-            }
-
-            if (diff > 1000000) {
-                movementCount++;
-                if (movementCount === 1) {
-                    alert("⚠️ Alert 1: Face is not move");
-                } else if (movementCount === 2) {
-                    alert("⚠️ Alert 2: Head is not move");
-                } else if (movementCount === 3) {
-                    alert("⚠️ Alert 3: Test series is restarting...");
-                    restartTest();
-                }
-            }
-        }
-        lastImageData = imageData;
-    }, 2000);
-}
-
-function restartTest() {
-    if (videoStream) {
-        videoStream.getTracks().forEach(track => track.stop());
-    }
-    const camContainer = document.getElementById("camera-container");
-    if (camContainer) camContainer.remove();
-
-    movementCount = 0;
-    currentQuestion = 0;
-    timeLeft = 180 * 60;
-
-    questions.forEach(q => {
-        q.attempted = false;
-        q.selected = null;
-    });
-
-    loadQuestion(currentQuestion);
-    startTimer();
-    startCamera();
-}
-
-// ----------------- Page Load -----------------
+// --------------------------- PAGE LOAD --------------------------
 window.onload = function () {
     loadQuestion(currentQuestion);
     startTimer();
-    startCamera(); // ✅ Camera starts with test
+    startCamera();
 };
-
-
-///////////////////////////////////////

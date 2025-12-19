@@ -1,1163 +1,1169 @@
 const questions = [
     {
         "num": 1,
-        "question_en": "The process of conversion of sound energy to electrical energy is called:",
-        "question_hi": "ध्वनि ऊर्जा का विद्युत ऊर्जा में परिवर्तन की प्रक्रिया कहलाती है:",
-        "options_en": ["Amplification", "Transduction", "Modulation", "Oscillation"],
-        "options_hi": ["प्रवर्धन", "ट्रांसडक्शन", "मॉडुलन", "दोलन"],
-        "answer_en": "Transduction",
-        "answer_hi": "ट्रांसडक्शन",
+        "question_en": "What is TypeScript primarily used for?",
+        "question_hi": "TypeScript मुख्य रूप से किसके लिए उपयोग किया जाता है?",
+        "options_en": ["Adding styles to web pages", "Static type checking", "Database management", "Server configuration"],
+        "options_hi": ["वेब पेज पर स्टाइल जोड़ना", "स्टैटिक टाइप चेकिंग", "डेटाबेस प्रबंधन", "सर्वर कॉन्फ़िगरेशन"],
+        "answer_en": "Static type checking",
+        "answer_hi": "स्टैटिक टाइप चेकिंग",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 2,
-        "question_en": "The metal used in making nuclear reactors is:",
-        "question_hi": "नाभिकीय रिएक्टर बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Zirconium", "Uranium", "Plutonium", "All of these"],
-        "options_hi": ["जिरकोनियम", "यूरेनियम", "प्लूटोनियम", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which of these is a valid TypeScript data type?",
+        "question_hi": "इनमें से कौन सा TypeScript डेटा टाइप मान्य है?",
+        "options_en": ["number", "decimal", "char", "float32"],
+        "options_hi": ["number", "decimal", "char", "float32"],
+        "answer_en": "number",
+        "answer_hi": "number",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 3,
-        "question_en": "The study of the immune system is called:",
-        "question_hi": "प्रतिरक्षा प्रणाली का अध्ययन कहलाता है:",
-        "options_en": ["Immunology", "Hematology", "Endocrinology", "Neurology"],
-        "options_hi": ["प्रतिरक्षा विज्ञान", "रक्त विज्ञान", "अंतःस्राव विज्ञान", "स्नायु विज्ञान"],
-        "answer_en": "Immunology",
-        "answer_hi": "प्रतिरक्षा विज्ञान",
+        "question_en": "Which keyword is used to define a variable in TypeScript?",
+        "question_hi": "TypeScript में वेरिएबल को परिभाषित करने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["var", "let", "const", "All of the above"],
+        "options_hi": ["var", "let", "const", "सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "सभी",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 4,
-        "question_en": "The chemical formula of calcium hydroxide is:",
-        "question_hi": "कैल्शियम हाइड्रॉक्साइड का रासायनिक सूत्र है:",
-        "options_en": ["Ca(OH)₂", "CaO", "CaCO₃", "CaSO₄"],
-        "options_hi": ["Ca(OH)₂", "CaO", "CaCO₃", "CaSO₄"],
-        "answer_en": "Ca(OH)₂",
-        "answer_hi": "Ca(OH)₂",
+        "question_en": "Which TypeScript type is used to represent true/false values?",
+        "question_hi": "TypeScript में true/false मानों को प्रदर्शित करने के लिए कौन सा टाइप उपयोग किया जाता है?",
+        "options_en": ["boolean", "string", "number", "any"],
+        "options_hi": ["boolean", "string", "number", "any"],
+        "answer_en": "boolean",
+        "answer_hi": "boolean",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 5,
-        "question_en": "The SI unit of magnetic field strength is:",
-        "question_hi": "चुंबकीय क्षेत्र शक्ति की SI इकाई है:",
-        "options_en": ["Tesla", "Weber", "Henry", "Gauss"],
-        "options_hi": ["टेस्ला", "वेबर", "हेनरी", "गॉस"],
-        "answer_en": "Tesla",
-        "answer_hi": "टेस्ला",
+        "question_en": "Which of the following is a TypeScript feature not present in JavaScript?",
+        "question_hi": "निम्न में से कौन सा TypeScript की विशेषता है जो JavaScript में नहीं है?",
+        "options_en": ["Static typing", "Loops", "Functions", "Variables"],
+        "options_hi": ["स्टैटिक टाइपिंग", "लूप", "फंक्शन", "वेरिएबल"],
+        "answer_en": "Static typing",
+        "answer_hi": "स्टैटिक टाइपिंग",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 6,
-        "question_en": "The process of conversion of chemical energy to heat energy is:",
-        "question_hi": "रासायनिक ऊर्जा का ऊष्मा ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["Combustion", "Respiration", "Both A and B", "Photosynthesis"],
-        "options_hi": ["दहन", "श्वसन", "A और B दोनों", "प्रकाश संश्लेषण"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "How do you declare a function in TypeScript?",
+        "question_hi": "TypeScript में फंक्शन कैसे घोषित किया जाता है?",
+        "options_en": ["function myFunc() {}", "func myFunc() {}", "def myFunc() {}", "function: myFunc() {}"],
+        "options_hi": ["function myFunc() {}", "func myFunc() {}", "def myFunc() {}", "function: myFunc() {}"],
+        "answer_en": "function myFunc() {}",
+        "answer_hi": "function myFunc() {}",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 7,
-        "question_en": "The metal used in making computer chips is:",
-        "question_hi": "कंप्यूटर चिप्स बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Silicon", "Germanium", "Both A and B", "Copper"],
-        "options_hi": ["सिलिकॉन", "जर्मेनियम", "A और B दोनों", "तांबा"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which of the following is a TypeScript primitive type?",
+        "question_hi": "निम्न में से कौन सा TypeScript प्रिमिटिव टाइप है?",
+        "options_en": ["string", "array", "object", "class"],
+        "options_hi": ["string", "array", "object", "class"],
+        "answer_en": "string",
+        "answer_hi": "string",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 8,
-        "question_en": "The study of the heart is called:",
-        "question_hi": "हृदय का अध्ययन कहलाता है:",
-        "options_en": ["Cardiology", "Neurology", "Hematology", "Endocrinology"],
-        "options_hi": ["हृदय विज्ञान", "स्नायु विज्ञान", "रक्त विज्ञान", "अंतःस्राव विज्ञान"],
-        "answer_en": "Cardiology",
-        "answer_hi": "हृदय विज्ञान",
+        "question_en": "Which keyword is used for constants in TypeScript?",
+        "question_hi": "TypeScript में कॉन्स्टेंट्स के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["var", "let", "const", "final"],
+        "options_hi": ["var", "let", "const", "final"],
+        "answer_en": "const",
+        "answer_hi": "const",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 9,
-        "question_en": "The chemical formula of magnesium hydroxide is:",
-        "question_hi": "मैग्नीशियम हाइड्रॉक्साइड का रासायनिक सूत्र है:",
-        "options_en": ["Mg(OH)₂", "MgO", "MgCO₃", "MgSO₄"],
-        "options_hi": ["Mg(OH)₂", "MgO", "MgCO₃", "MgSO₄"],
-        "answer_en": "Mg(OH)₂",
-        "answer_hi": "Mg(OH)₂",
+        "question_en": "What does the 'any' type signify in TypeScript?",
+        "question_hi": "TypeScript में 'any' टाइप का क्या मतलब है?",
+        "options_en": ["Can be any type", "Only numbers", "Only strings", "Only objects"],
+        "options_hi": ["किसी भी टाइप हो सकता है", "केवल नंबर", "केवल स्ट्रिंग", "केवल ऑब्जेक्ट"],
+        "answer_en": "Can be any type",
+        "answer_hi": "किसी भी टाइप हो सकता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 10,
-        "question_en": "The SI unit of inductance is:",
-        "question_hi": "प्रेरकत्व की SI इकाई है:",
-        "options_en": ["Henry", "Farad", "Weber", "Tesla"],
-        "options_hi": ["हेनरी", "फैरड", "वेबर", "टेस्ला"],
-        "answer_en": "Henry",
-        "answer_hi": "हेनरी",
+        "question_en": "Which operator is used for optional chaining in TypeScript?",
+        "question_hi": "TypeScript में ऑप्शनल चेनिंग के लिए कौन सा ऑपरेटर उपयोग किया जाता है?",
+        "options_en": ["?.", "??", "||", "&&"],
+        "options_hi": ["?.", "??", "||", "&&"],
+        "answer_en": "?.",
+        "answer_hi": "?.",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 11,
-        "question_en": "The process of conversion of heat energy to mechanical energy is:",
-        "question_hi": "ऊष्मा ऊर्जा का यांत्रिक ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["In heat engine", "In generator", "In motor", "In battery"],
-        "options_hi": ["ऊष्मा इंजन में", "जनरेटर में", "मोटर में", "बैटरी में"],
-        "answer_en": "In heat engine",
-        "answer_hi": "ऊष्मा इंजन में",
+        "question_en": "Which TypeScript type represents textual data?",
+        "question_hi": "कौन सा TypeScript टाइप टेक्स्ट डेटा का प्रतिनिधित्व करता है?",
+        "options_en": ["string", "boolean", "number", "any"],
+        "options_hi": ["string", "boolean", "number", "any"],
+        "answer_en": "string",
+        "answer_hi": "string",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 12,
-        "question_en": "The metal used in making photographic films is:",
-        "question_hi": "फोटोग्राफिक फिल्में बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Silver", "Aluminum", "Copper", "Iron"],
-        "options_hi": ["चांदी", "एल्युमिनियम", "तांबा", "लोहा"],
-        "answer_en": "Silver",
-        "answer_hi": "चांदी",
+        "question_en": "Which of the following is used to declare an array in TypeScript?",
+        "question_hi": "TypeScript में array घोषित करने के लिए निम्न में से कौन सा उपयोग किया जाता है?",
+        "options_en": ["let arr: number[];", "let arr: number;", "let arr: array;", "let arr: object;"],
+        "options_hi": ["let arr: number[];", "let arr: number;", "let arr: array;", "let arr: object;"],
+        "answer_en": "let arr: number[];",
+        "answer_hi": "let arr: number[];",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 13,
-        "question_en": "The study of the kidney is called:",
-        "question_hi": "वृक्क का अध्ययन कहलाता है:",
-        "options_en": ["Nephrology", "Urology", "Cardiology", "Neurology"],
-        "options_hi": ["वृक्क विज्ञान", "मूत्र विज्ञान", "हृदय विज्ञान", "स्नायु विज्ञान"],
-        "answer_en": "Nephrology",
-        "answer_hi": "वृक्क विज्ञान",
+        "question_en": "Which of the following is used to define a class in TypeScript?",
+        "question_hi": "TypeScript में class को परिभाषित करने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["class", "object", "interface", "struct"],
+        "options_hi": ["class", "object", "interface", "struct"],
+        "answer_en": "class",
+        "answer_hi": "class",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 14,
-        "question_en": "The chemical formula of aluminum oxide is:",
-        "question_hi": "एल्युमिनियम ऑक्साइड का रासायनिक सूत्र है:",
-        "options_en": ["Al₂O₃", "AlO", "Al(OH)₃", "AlCl₃"],
-        "options_hi": ["Al₂O₃", "AlO", "Al(OH)₃", "AlCl₃"],
-        "answer_en": "Al₂O₃",
-        "answer_hi": "Al₂O₃",
+        "question_en": "How do you define a TypeScript interface?",
+        "question_hi": "TypeScript में interface कैसे परिभाषित किया जाता है?",
+        "options_en": ["interface Person { name: string; }", "class Person { name: string; }", "type Person = {}", "object Person {}"],
+        "options_hi": ["interface Person { name: string; }", "class Person { name: string; }", "type Person = {}", "object Person {}"],
+        "answer_en": "interface Person { name: string; }",
+        "answer_hi": "interface Person { name: string; }",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 15,
-        "question_en": "The SI unit of electric conductance is:",
-        "question_hi": "विद्युत चालकत्व की SI इकाई है:",
-        "options_en": ["Siemens", "Mho", "Both A and B", "Ohm"],
-        "options_hi": ["सीमेंस", "म्हो", "A और B दोनों", "ओम"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which keyword is used to inherit a class in TypeScript?",
+        "question_hi": "TypeScript में class को इनहेरिट करने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["extends", "implements", "inherits", "super"],
+        "options_hi": ["extends", "implements", "inherits", "super"],
+        "answer_en": "extends",
+        "answer_hi": "extends",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 16,
-        "question_en": "The process of conversion of mechanical energy to sound energy is:",
-        "question_hi": "यांत्रिक ऊर्जा का ध्वनि ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["In speaker", "In microphone", "In generator", "In motor"],
-        "options_hi": ["स्पीकर में", "माइक्रोफोन में", "जनरेटर में", "मोटर में"],
-        "answer_en": "In speaker",
-        "answer_hi": "स्पीकर में",
+        "question_en": "Which keyword is used to implement an interface in TypeScript?",
+        "question_hi": "TypeScript में interface को लागू करने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["implements", "extends", "inherits", "interface"],
+        "options_hi": ["implements", "extends", "inherits", "interface"],
+        "answer_en": "implements",
+        "answer_hi": "implements",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 17,
-        "question_en": "The metal used in making fireworks for red color is:",
-        "question_hi": "आतिशबाजी में लाल रंग के लिए प्रयुक्त धातु है:",
-        "options_en": ["Strontium", "Lithium", "Calcium", "Sodium"],
-        "options_hi": ["स्ट्रोंशियम", "लिथियम", "कैल्शियम", "सोडियम"],
-        "answer_en": "Strontium",
-        "answer_hi": "स्ट्रोंशियम",
+        "question_en": "Which TypeScript type represents numeric values?",
+        "question_hi": "TypeScript में कौन सा टाइप संख्यात्मक मानों का प्रतिनिधित्व करता है?",
+        "options_en": ["number", "string", "boolean", "any"],
+        "options_hi": ["number", "string", "boolean", "any"],
+        "answer_en": "number",
+        "answer_hi": "number",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 18,
-        "question_en": "The study of the liver is called:",
-        "question_hi": "यकृत का अध्ययन कहलाता है:",
-        "options_en": ["Hepatology", "Gastroenterology", "Nephrology", "Cardiology"],
-        "options_hi": ["यकृत विज्ञान", "गैस्ट्रोएंटरोलॉजी", "वृक्क विज्ञान", "हृदय विज्ञान"],
-        "answer_en": "Hepatology",
-        "answer_hi": "यकृत विज्ञान",
+        "question_en": "Which symbol is used for type assertion in TypeScript?",
+        "question_hi": "TypeScript में type assertion के लिए कौन सा प्रतीक उपयोग किया जाता है?",
+        "options_en": ["as", "<Type>", "#", "$"],
+        "options_hi": ["as", "<Type>", "#", "$"],
+        "answer_en": "as",
+        "answer_hi": "as",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 19,
-        "question_en": "The chemical formula of iron oxide (rust) is:",
-        "question_hi": "आयरन ऑक्साइड (जंग) का रासायनिक सूत्र है:",
-        "options_en": ["Fe₂O₃", "FeO", "Fe₃O₄", "Fe(OH)₃"],
-        "options_hi": ["Fe₂O₃", "FeO", "Fe₃O₄", "Fe(OH)₃"],
-        "answer_en": "Fe₂O₃",
-        "answer_hi": "Fe₂O₃",
+        "question_en": "Which of the following is a valid TypeScript boolean value?",
+        "question_hi": "TypeScript में निम्न में से कौन सा boolean मान मान्य है?",
+        "options_en": ["true", "yes", "1", "0"],
+        "options_hi": ["true", "yes", "1", "0"],
+        "answer_en": "true",
+        "answer_hi": "true",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 20,
-        "question_en": "The SI unit of radioactive activity is:",
-        "question_hi": "रेडियोधर्मी सक्रियता की SI इकाई है:",
-        "options_en": ["Becquerel", "Curie", "Roentgen", "Gray"],
-        "options_hi": ["बेकरेल", "क्यूरी", "रेंटजन", "ग्रे"],
-        "answer_en": "Becquerel",
-        "answer_hi": "बेकरेल",
+        "question_en": "Which of these is used to declare an enum in TypeScript?",
+        "question_hi": "TypeScript में enum घोषित करने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["enum", "object", "class", "type"],
+        "options_hi": ["enum", "object", "class", "type"],
+        "answer_en": "enum",
+        "answer_hi": "enum",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 21,
-        "question_en": "The process of conversion of electrical energy to light energy is:",
-        "question_hi": "विद्युत ऊर्जा का प्रकाश ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["In LED", "In solar cell", "In battery", "In generator"],
-        "options_hi": ["LED में", "सौर सेल में", "बैटरी में", "जनरेटर में"],
-        "answer_en": "In LED",
-        "answer_hi": "LED में",
+        "question_en": "Which of the following types allows any value in TypeScript?",
+        "question_hi": "TypeScript में कौन सा टाइप किसी भी मान की अनुमति देता है?",
+        "options_en": ["any", "string", "number", "boolean"],
+        "options_hi": ["any", "string", "number", "boolean"],
+        "answer_en": "any",
+        "answer_hi": "any",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 22,
-        "question_en": "The metal used in making batteries for electric vehicles is:",
-        "question_hi": "इलेक्ट्रिक वाहनों की बैटरियाँ बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Lithium", "Nickel", "Cobalt", "All of these"],
-        "options_hi": ["लिथियम", "निकल", "कोबाल्ट", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which of the following is used to define a tuple in TypeScript?",
+        "question_hi": "TypeScript में tuple को परिभाषित करने के लिए कौन सा उपयोग किया जाता है?",
+        "options_en": ["let x: [string, number];", "let x: string[];", "let x: number[];", "let x: any[];"],
+        "options_hi": ["let x: [string, number];", "let x: string[];", "let x: number[];", "let x: any[];"],
+        "answer_en": "let x: [string, number];",
+        "answer_hi": "let x: [string, number];",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 23,
-        "question_en": "The study of the skin is called:",
-        "question_hi": "त्वचा का अध्ययन कहलाता है:",
-        "options_en": ["Dermatology", "Cosmetology", "Trichology", "Onychology"],
-        "options_hi": ["त्वचा विज्ञान", "सौंदर्य विज्ञान", "बाल विज्ञान", "नख विज्ञान"],
-        "answer_en": "Dermatology",
-        "answer_hi": "त्वचा विज्ञान",
+        "question_en": "What is the default type of a variable if no type is specified in TypeScript?",
+        "question_hi": "TypeScript में यदि कोई टाइप निर्दिष्ट नहीं है तो वेरिएबल का डिफ़ॉल्ट टाइप क्या होता है?",
+        "options_en": ["any", "number", "string", "undefined"],
+        "options_hi": ["any", "number", "string", "undefined"],
+        "answer_en": "any",
+        "answer_hi": "any",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 24,
-        "question_en": "The chemical formula of copper sulfate is:",
-        "question_hi": "कॉपर सल्फेट का रासायनिक सूत्र है:",
-        "options_en": ["CuSO₄", "CuO", "Cu₂O", "CuCl₂"],
-        "options_hi": ["CuSO₄", "CuO", "Cu₂O", "CuCl₂"],
-        "answer_en": "CuSO₄",
-        "answer_hi": "CuSO₄",
+        "question_en": "Which of the following is used for optional parameters in TypeScript?",
+        "question_hi": "TypeScript में वैकल्पिक पैरामीटर के लिए कौन सा प्रतीक उपयोग किया जाता है?",
+        "options_en": ["?", "*", "!", "$"],
+        "options_hi": ["?", "*", "!", "$"],
+        "answer_en": "?",
+        "answer_hi": "?",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 25,
-        "question_en": "The SI unit of absorbed radiation dose is:",
-        "question_hi": "अवशोषित विकिरण खुराक की SI इकाई है:",
-        "options_en": ["Gray", "Sievert", "Becquerel", "Curie"],
-        "options_hi": ["ग्रे", "सीवर्ट", "बेकरेल", "क्यूरी"],
-        "answer_en": "Gray",
-        "answer_hi": "ग्रे",
+        "question_en": "Which of the following is used to define a type alias in TypeScript?",
+        "question_hi": "TypeScript में type alias को परिभाषित करने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["type", "interface", "class", "enum"],
+        "options_hi": ["type", "interface", "class", "enum"],
+        "answer_en": "type",
+        "answer_hi": "type",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 26,
-        "question_en": "The process of conversion of light energy to electrical energy in solar cells is:",
-        "question_hi": "सौर सेल में प्रकाश ऊर्जा का विद्युत ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["Photovoltaic effect", "Photoelectric effect", "Both A and B", "Thermoelectric effect"],
-        "options_hi": ["फोटोवोल्टाइक प्रभाव", "प्रकाश विद्युत प्रभाव", "A और B दोनों", "थर्मोइलेक्ट्रिक प्रभाव"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which keyword is used to declare a constant array in TypeScript?",
+        "question_hi": "TypeScript में स्थिर array घोषित करने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["const", "let", "var", "final"],
+        "options_hi": ["const", "let", "var", "final"],
+        "answer_en": "const",
+        "answer_hi": "const",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 27,
-        "question_en": "The metal used in making superconducting magnets is:",
-        "question_hi": "अतिचालक चुंबक बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Niobium", "Titanium", "Vanadium", "All of these"],
-        "options_hi": ["नायोबियम", "टाइटेनियम", "वेनेडियम", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which of the following is used to create a module in TypeScript?",
+        "question_hi": "TypeScript में module बनाने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["export", "import", "module", "namespace"],
+        "options_hi": ["export", "import", "module", "namespace"],
+        "answer_en": "export",
+        "answer_hi": "export",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 28,
-        "question_en": "The study of the eye is called:",
-        "question_hi": "नेत्र का अध्ययन कहलाता है:",
-        "options_en": ["Ophthalmology", "Optometry", "Otology", "Rhinology"],
-        "options_hi": ["नेत्र विज्ञान", "ऑप्टोमेट्री", "कर्ण विज्ञान", "नासिका विज्ञान"],
-        "answer_en": "Ophthalmology",
-        "answer_hi": "नेत्र विज्ञान",
+        "question_en": "Which of the following is used to import a module in TypeScript?",
+        "question_hi": "TypeScript में module को import करने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["import", "export", "require", "module"],
+        "options_hi": ["import", "export", "require", "module"],
+        "answer_en": "import",
+        "answer_hi": "import",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 29,
-        "question_en": "The chemical formula of zinc oxide is:",
-        "question_hi": "जिंक ऑक्साइड का रासायनिक सूत्र है:",
-        "options_en": ["ZnO", "Zn(OH)₂", "ZnCO₃", "ZnSO₄"],
-        "options_hi": ["ZnO", "Zn(OH)₂", "ZnCO₃", "ZnSO₄"],
-        "answer_en": "ZnO",
-        "answer_hi": "ZnO",
+        "question_en": "Which keyword is used to define a private property in TypeScript?",
+        "question_hi": "TypeScript में private property परिभाषित करने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["private", "public", "protected", "hidden"],
+        "options_hi": ["private", "public", "protected", "hidden"],
+        "answer_en": "private",
+        "answer_hi": "private",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 30,
-        "question_en": "The SI unit of equivalent radiation dose is:",
-        "question_hi": "समतुल्य विकिरण खुराक की SI इकाई है:",
-        "options_en": ["Sievert", "Gray", "Becquerel", "Curie"],
-        "options_hi": ["सीवर्ट", "ग्रे", "बेकरेल", "क्यूरी"],
-        "answer_en": "Sievert",
-        "answer_hi": "सीवर्ट",
+        "question_en": "Which TypeScript feature allows checking types at compile time?",
+        "question_hi": "कौन सी TypeScript सुविधा compile time पर types की जाँच करने की अनुमति देती है?",
+        "options_en": ["Static typing", "Dynamic typing", "Runtime typing", "Any typing"],
+        "options_hi": ["Static typing", "Dynamic typing", "Runtime typing", "Any typing"],
+        "answer_en": "Static typing",
+        "answer_hi": "Static typing",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 31,
-        "question_en": "The process of conversion of chemical energy to light energy is:",
-        "question_hi": "रासायनिक ऊर्जा का प्रकाश ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["In glow sticks", "In LEDs", "In bulbs", "In lasers"],
-        "options_hi": ["ग्लो स्टिक्स में", "LED में", "बल्ब में", "लेजर में"],
-        "answer_en": "In glow sticks",
-        "answer_hi": "ग्लो स्टिक्स में",
+        "question_en": "Which of the following is used to define a read-only property in TypeScript?",
+        "question_hi": "TypeScript में read-only property को परिभाषित करने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["readonly", "const", "final", "immutable"],
+        "options_hi": ["readonly", "const", "final", "immutable"],
+        "answer_en": "readonly",
+        "answer_hi": "readonly",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 32,
-        "question_en": "The metal used in making catalytic converters is:",
-        "question_hi": "उत्प्रेरक कन्वर्टर बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Platinum", "Palladium", "Rhodium", "All of these"],
-        "options_hi": ["प्लैटिनम", "पैलेडियम", "रोडियम", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which of the following is used to specify union types in TypeScript?",
+        "question_hi": "TypeScript में union types को निर्दिष्ट करने के लिए कौन सा प्रतीक उपयोग किया जाता है?",
+        "options_en": ["|", "&", "+", ","],
+        "options_hi": ["|", "&", "+", ","],
+        "answer_en": "|",
+        "answer_hi": "|",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 33,
-        "question_en": "The study of the ear is called:",
-        "question_hi": "कान का अध्ययन कहलाता है:",
-        "options_en": ["Otology", "Audiology", "Ophthalmology", "Rhinology"],
-        "options_hi": ["कर्ण विज्ञान", "श्रवण विज्ञान", "नेत्र विज्ञान", "नासिका विज्ञान"],
-        "answer_en": "Otology",
-        "answer_hi": "कर्ण विज्ञान",
+        "question_en": "Which of the following is used for intersection types in TypeScript?",
+        "question_hi": "TypeScript में intersection types के लिए कौन सा प्रतीक उपयोग किया जाता है?",
+        "options_en": ["&", "|", "+", ","],
+        "options_hi": ["&", "|", "+", ","],
+        "answer_en": "&",
+        "answer_hi": "&",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 34,
-        "question_en": "The chemical formula of lead oxide is:",
-        "question_hi": "लेड ऑक्साइड का रासायनिक सूत्र है:",
-        "options_en": ["PbO", "PbO₂", "Pb₃O₄", "All of these"],
-        "options_hi": ["PbO", "PbO₂", "Pb₃O₄", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which of the following is the correct way to declare a generic in TypeScript?",
+        "question_hi": "TypeScript में generic घोषित करने का सही तरीका कौन सा है?",
+        "options_en": ["function identity<T>(arg: T): T { return arg; }", "function identity(arg) { return arg; }", "function identity(arg: any) { return arg; }", "function identity<T> { return T; }"],
+        "options_hi": ["function identity<T>(arg: T): T { return arg; }", "function identity(arg) { return arg; }", "function identity(arg: any) { return arg; }", "function identity<T> { return T; }"],
+        "answer_en": "function identity<T>(arg: T): T { return arg; }",
+        "answer_hi": "function identity<T>(arg: T): T { return arg; }",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 35,
-        "question_en": "The SI unit of catalytic activity is:",
-        "question_hi": "उत्प्रेरक सक्रियता की SI इकाई है:",
-        "options_en": ["Katal", "Mole/second", "Both A and B", "Pascal"],
-        "options_hi": ["काटल", "मोल/सेकंड", "A और B दोनों", "पास्कल"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which TypeScript feature helps avoid null or undefined errors?",
+        "question_hi": "कौन सी TypeScript सुविधा null या undefined errors से बचने में मदद करती है?",
+        "options_en": ["Strict null checks", "Any type", "Union type", "Readonly type"],
+        "options_hi": ["Strict null checks", "Any type", "Union type", "Readonly type"],
+        "answer_en": "Strict null checks",
+        "answer_hi": "Strict null checks",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 36,
-        "question_en": "The process of conversion of nuclear energy to heat energy is:",
-        "question_hi": "नाभिकीय ऊर्जा का ऊष्मा ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["Nuclear fission", "Nuclear fusion", "Both A and B", "Radioactive decay"],
-        "options_hi": ["नाभिकीय विखंडन", "नाभिकीय संलयन", "A और B दोनों", "रेडियोधर्मी क्षय"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which of the following is used for default parameters in TypeScript?",
+        "question_hi": "TypeScript में default parameters के लिए कौन सा सिंटैक्स उपयोग किया जाता है?",
+        "options_en": ["function greet(name: string = 'Guest') {}", "function greet(name?: string) {}", "function greet(name: string) {}", "function greet(?name) {}"],
+        "options_hi": ["function greet(name: string = 'Guest') {}", "function greet(name?: string) {}", "function greet(name: string) {}", "function greet(?name) {}"],
+        "answer_en": "function greet(name: string = 'Guest') {}",
+        "answer_hi": "function greet(name: string = 'Guest') {}",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 37,
-        "question_en": "The metal used in making radiation shielding is:",
-        "question_hi": "विकिरण सुरक्षा बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Lead", "Uranium", "Plutonium", "All of these"],
-        "options_hi": ["सीसा", "यूरेनियम", "प्लूटोनियम", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which of the following is used for rest parameters in TypeScript?",
+        "question_hi": "TypeScript में rest parameters के लिए कौन सा सिंटैक्स उपयोग किया जाता है?",
+        "options_en": ["function sum(...numbers: number[]) {}", "function sum(numbers: number[]) {}", "function sum(*numbers) {}", "function sum(numbers) {}"],
+        "options_hi": ["function sum(...numbers: number[]) {}", "function sum(numbers: number[]) {}", "function sum(*numbers) {}", "function sum(numbers) {}"],
+        "answer_en": "function sum(...numbers: number[]) {}",
+        "answer_hi": "function sum(...numbers: number[]) {}",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 38,
-        "question_en": "The study of the nose is called:",
-        "question_hi": "नाक का अध्ययन कहलाता है:",
-        "options_en": ["Rhinology", "Otology", "Ophthalmology", "Laryngology"],
-        "options_hi": ["नासिका विज्ञान", "कर्ण विज्ञान", "नेत्र विज्ञान", "कंठ विज्ञान"],
-        "answer_en": "Rhinology",
-        "answer_hi": "नासिका विज्ञान",
+        "question_en": "Which of the following is used to define a namespace in TypeScript?",
+        "question_hi": "TypeScript में namespace को परिभाषित करने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["namespace", "module", "package", "export"],
+        "options_hi": ["namespace", "module", "package", "export"],
+        "answer_en": "namespace",
+        "answer_hi": "namespace",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 39,
-        "question_en": "The chemical formula of mercury oxide is:",
-        "question_hi": "मर्क्युरी ऑक्साइड का रासायनिक सूत्र है:",
-        "options_en": ["HgO", "Hg₂O", "Hg(OH)₂", "HgCl₂"],
-        "options_hi": ["HgO", "Hg₂O", "Hg(OH)₂", "HgCl₂"],
-        "answer_en": "HgO",
-        "answer_hi": "HgO",
+        "question_en": "Which TypeScript type represents an object with unknown properties?",
+        "question_hi": "TypeScript में कौन सा टाइप अज्ञात properties वाले object का प्रतिनिधित्व करता है?",
+        "options_en": ["object", "any", "unknown", "Record<string, any>"],
+        "options_hi": ["object", "any", "unknown", "Record<string, any>"],
+        "answer_en": "unknown",
+        "answer_hi": "unknown",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 40,
-        "question_en": "The SI unit of plane angle is:",
-        "question_hi": "समतल कोण की SI इकाई है:",
-        "options_en": ["Radian", "Degree", "Steradian", "Gradian"],
-        "options_hi": ["रेडियन", "डिग्री", "स्टेरेडियन", "ग्रेडियन"],
-        "answer_en": "Radian",
-        "answer_hi": "रेडियन",
+        "question_en": "Which of the following is used to assert a type in TypeScript using angle brackets?",
+        "question_hi": "TypeScript में angle brackets का उपयोग करके type assertion के लिए कौन सा सिंटैक्स है?",
+        "options_en": ["<string>value", "value as string", "(string)value", "#string value"],
+        "options_hi": ["<string>value", "value as string", "(string)value", "#string value"],
+        "answer_en": "<string>value",
+        "answer_hi": "<string>value",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 41,
-        "question_en": "The process of conversion of heat energy to electrical energy is:",
-        "question_hi": "ऊष्मा ऊर्जा का विद्युत ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["Thermoelectric effect", "Seebeck effect", "Both A and B", "Peltier effect"],
-        "options_hi": ["थर्मोइलेक्ट्रिक प्रभाव", "सीबेक प्रभाव", "A और B दोनों", "पेल्टियर प्रभाव"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which of the following types can hold multiple types of values in TypeScript?",
+        "question_hi": "TypeScript में कौन सा टाइप कई प्रकार के मान रख सकता है?",
+        "options_en": ["Union type", "String type", "Number type", "Boolean type"],
+        "options_hi": ["Union type", "String type", "Number type", "Boolean type"],
+        "answer_en": "Union type",
+        "answer_hi": "Union type",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 42,
-        "question_en": "The metal used in making dental implants is:",
-        "question_hi": "दंत प्रत्यारोपण बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Titanium", "Stainless steel", "Gold", "All of these"],
-        "options_hi": ["टाइटेनियम", "स्टेनलेस स्टील", "सोना", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which of the following is used to prevent modification of an array in TypeScript?",
+        "question_hi": "TypeScript में array को संशोधित होने से रोकने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["readonly", "const", "immutable", "private"],
+        "options_hi": ["readonly", "const", "immutable", "private"],
+        "answer_en": "readonly",
+        "answer_hi": "readonly",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 43,
-        "question_en": "The study of the throat is called:",
-        "question_hi": "गले का अध्ययन कहलाता है:",
-        "options_en": ["Laryngology", "Pharyngology", "Both A and B", "Otology"],
-        "options_hi": ["कंठ विज्ञान", "ग्रसनी विज्ञान", "A और B दोनों", "कर्ण विज्ञान"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which TypeScript type allows a variable to be null or undefined?",
+        "question_hi": "TypeScript में कौन सा टाइप वेरिएबल को null या undefined होने की अनुमति देता है?",
+        "options_en": ["null | undefined", "string", "number", "boolean"],
+        "options_hi": ["null | undefined", "string", "number", "boolean"],
+        "answer_en": "null | undefined",
+        "answer_hi": "null | undefined",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 44,
-        "question_en": "The chemical formula of chromium oxide is:",
-        "question_hi": "क्रोमियम ऑक्साइड का रासायनिक सूत्र है:",
-        "options_en": ["Cr₂O₃", "CrO₃", "CrO", "All of these"],
-        "options_hi": ["Cr₂O₃", "CrO₃", "CrO", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which of the following is used to define a literal type in TypeScript?",
+        "question_hi": "TypeScript में literal type परिभाषित करने के लिए कौन सा सिंटैक्स उपयोग किया जाता है?",
+        "options_en": ["let x: 'yes' | 'no';", "let x: string;", "let x: number;", "let x: boolean;"],
+        "options_hi": ["let x: 'yes' | 'no';", "let x: string;", "let x: number;", "let x: boolean;"],
+        "answer_en": "let x: 'yes' | 'no';",
+        "answer_hi": "let x: 'yes' | 'no';",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 45,
-        "question_en": "The SI unit of solid angle is:",
-        "question_hi": "ठोस कोण की SI इकाई है:",
-        "options_en": ["Steradian", "Radian", "Degree", "Gradian"],
-        "options_hi": ["स्टेरेडियन", "रेडियन", "डिग्री", "ग्रेडियन"],
-        "answer_en": "Steradian",
-        "answer_hi": "स्टेरेडियन",
+        "question_en": "Which of the following is used to define a function type in TypeScript?",
+        "question_hi": "TypeScript में function type परिभाषित करने के लिए कौन सा सिंटैक्स उपयोग किया जाता है?",
+        "options_en": ["let myFunc: (x: number) => number;", "let myFunc: number;", "let myFunc: string;", "let myFunc: object;"],
+        "options_hi": ["let myFunc: (x: number) => number;", "let myFunc: number;", "let myFunc: string;", "let myFunc: object;"],
+        "answer_en": "let myFunc: (x: number) => number;",
+        "answer_hi": "let myFunc: (x: number) => number;",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 46,
-        "question_en": "The process of conversion of electrical energy to chemical energy is:",
-        "question_hi": "विद्युत ऊर्जा का रासायनिक ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["Electrolysis", "Charging battery", "Both A and B", "Galvanization"],
-        "options_hi": ["विद्युत अपघटन", "बैटरी चार्जिंग", "A और B दोनों", "गैल्वनीकरण"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which of the following is used to create a type that combines multiple types in TypeScript?",
+        "question_hi": "TypeScript में कई टाइप्स को जोड़ने वाला टाइप बनाने के लिए कौन सा उपयोग किया जाता है?",
+        "options_en": ["Intersection type", "Union type", "Literal type", "Any type"],
+        "options_hi": ["Intersection type", "Union type", "Literal type", "Any type"],
+        "answer_en": "Intersection type",
+        "answer_hi": "Intersection type",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 47,
-        "question_en": "The metal used in making spacecraft heat shields is:",
-        "question_hi": "अंतरिक्ष यान के हीट शील्ड बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Titanium", "Carbon composite", "Both A and B", "Aluminum"],
-        "options_hi": ["टाइटेनियम", "कार्बन कम्पोजिट", "A और B दोनों", "एल्युमिनियम"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which of the following is used to specify an optional property in an interface?",
+        "question_hi": "Interface में optional property निर्दिष्ट करने के लिए कौन सा सिंटैक्स उपयोग किया जाता है?",
+        "options_en": ["propertyName?", "propertyName!", "propertyName:", "propertyName*"],
+        "options_hi": ["propertyName?", "propertyName!", "propertyName:", "propertyName*"],
+        "answer_en": "propertyName?",
+        "answer_hi": "propertyName?",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 48,
-        "question_en": "The study of bones is called:",
-        "question_hi": "हड्डियों का अध्ययन कहलाता है:",
-        "options_en": ["Osteology", "Arthrology", "Myology", "Neurology"],
-        "options_hi": ["अस्थि विज्ञान", "संधि विज्ञान", "पेशी विज्ञान", "स्नायु विज्ञान"],
-        "answer_en": "Osteology",
-        "answer_hi": "अस्थि विज्ञान",
+        "question_en": "Which of the following is a valid tuple declaration in TypeScript?",
+        "question_hi": "TypeScript में कौन सा tuple घोषणा मान्य है?",
+        "options_en": ["let t: [string, number] = ['hello', 10];", "let t: [string, number] = [10, 'hello'];", "let t: string[] = ['hello', 10];", "let t: any = ['hello', 10];"],
+        "options_hi": ["let t: [string, number] = ['hello', 10];", "let t: [string, number] = [10, 'hello'];", "let t: string[] = ['hello', 10];", "let t: any = ['hello', 10];"],
+        "answer_en": "let t: [string, number] = ['hello', 10];",
+        "answer_hi": "let t: [string, number] = ['hello', 10];",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 49,
-        "question_en": "The chemical formula of manganese dioxide is:",
-        "question_hi": "मैंगनीज डाइऑक्साइड का रासायनिक सूत्र है:",
-        "options_en": ["MnO₂", "MnO", "Mn₂O₃", "Mn₃O₄"],
-        "options_hi": ["MnO₂", "MnO", "Mn₂O₃", "Mn₃O₄"],
-        "answer_en": "MnO₂",
-        "answer_hi": "MnO₂",
+        "question_en": "Which of the following is used for type narrowing in TypeScript?",
+        "question_hi": "TypeScript में type narrowing के लिए कौन सा उपयोग किया जाता है?",
+        "options_en": ["typeof", "instanceof", "both", "none"],
+        "options_hi": ["typeof", "instanceof", "दोनों", "कोई नहीं"],
+        "answer_en": "both",
+        "answer_hi": "दोनों",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 50,
-        "question_en": "The SI unit of thermodynamic temperature is:",
-        "question_hi": "ऊष्मागतिकी तापमान की SI इकाई है:",
-        "options_en": ["Kelvin", "Celsius", "Fahrenheit", "Rankine"],
-        "options_hi": ["केल्विन", "सेल्सियस", "फारेनहाइट", "रैंकिन"],
-        "answer_en": "Kelvin",
-        "answer_hi": "केल्विन",
+        "question_en": "Which of the following is used to define a readonly array in TypeScript?",
+        "question_hi": "TypeScript में readonly array को परिभाषित करने के लिए कौन सा सिंटैक्स उपयोग किया जाता है?",
+        "options_en": ["let arr: readonly number[] = [1,2,3];", "let arr: number[] = [1,2,3];", "const arr: number[] = [1,2,3];", "readonly arr: number[] = [1,2,3];"],
+        "options_hi": ["let arr: readonly number[] = [1,2,3];", "let arr: number[] = [1,2,3];", "const arr: number[] = [1,2,3];", "readonly arr: number[] = [1,2,3];"],
+        "answer_en": "let arr: readonly number[] = [1,2,3];",
+        "answer_hi": "let arr: readonly number[] = [1,2,3];",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 51,
-        "question_en": "The process of conversion of sound energy to mechanical energy is:",
-        "question_hi": "ध्वनि ऊर्जा का यांत्रिक ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["In microphone", "In speaker", "In generator", "In motor"],
-        "options_hi": ["माइक्रोफोन में", "स्पीकर में", "जनरेटर में", "मोटर में"],
-        "answer_en": "In microphone",
-        "answer_hi": "माइक्रोफोन में",
+        "question_en": "Which TypeScript type represents any object that is not known?",
+        "question_hi": "TypeScript में कौन सा टाइप किसी भी अज्ञात object का प्रतिनिधित्व करता है?",
+        "options_en": ["unknown", "any", "object", "never"],
+        "options_hi": ["unknown", "any", "object", "never"],
+        "answer_en": "unknown",
+        "answer_hi": "unknown",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 52,
-        "question_en": "The metal used in making artificial joints is:",
-        "question_hi": "कृत्रिम जोड़ बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Titanium", "Cobalt-chromium", "Stainless steel", "All of these"],
-        "options_hi": ["टाइटेनियम", "कोबाल्ट-क्रोमियम", "स्टेनलेस स्टील", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which of the following types represents no value in TypeScript?",
+        "question_hi": "TypeScript में कौन सा टाइप कोई मान नहीं दर्शाता?",
+        "options_en": ["void", "any", "null", "undefined"],
+        "options_hi": ["void", "any", "null", "undefined"],
+        "answer_en": "void",
+        "answer_hi": "void",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 53,
-        "question_en": "The study of joints is called:",
-        "question_hi": "जोड़ों का अध्ययन कहलाता है:",
-        "options_en": ["Arthrology", "Osteology", "Myology", "Neurology"],
-        "options_hi": ["संधि विज्ञान", "अस्थि विज्ञान", "पेशी विज्ञान", "स्नायु विज्ञान"],
-        "answer_en": "Arthrology",
-        "answer_hi": "संधि विज्ञान",
+        "question_en": "Which TypeScript type represents a value that never occurs?",
+        "question_hi": "TypeScript में कौन सा टाइप ऐसा मान दर्शाता है जो कभी नहीं होता?",
+        "options_en": ["never", "void", "any", "unknown"],
+        "options_hi": ["never", "void", "any", "unknown"],
+        "answer_en": "never",
+        "answer_hi": "never",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 54,
-        "question_en": "The chemical formula of nickel oxide is:",
-        "question_hi": "निकल ऑक्साइड का रासायनिक सूत्र है:",
-        "options_en": ["NiO", "Ni₂O₃", "NiO₂", "All of these"],
-        "options_hi": ["NiO", "Ni₂O₃", "NiO₂", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which keyword is used to declare a static property in TypeScript?",
+        "question_hi": "TypeScript में static property घोषित करने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["static", "const", "readonly", "public"],
+        "options_hi": ["static", "const", "readonly", "public"],
+        "answer_en": "static",
+        "answer_hi": "static",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 55,
-        "question_en": "The SI unit of electric field strength is:",
-        "question_hi": "विद्युत क्षेत्र शक्ति की SI इकाई है:",
-        "options_en": ["Volt per meter", "Newton per coulomb", "Both A and B", "Tesla"],
-        "options_hi": ["वोल्ट प्रति मीटर", "न्यूटन प्रति कूलॉम", "A और B दोनों", "टेस्ला"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which of the following is the correct way to write a type assertion?",
+        "question_hi": "TypeScript में type assertion लिखने का सही तरीका कौन सा है?",
+        "options_en": ["value as string", "<string>value", "both", "none"],
+        "options_hi": ["value as string", "<string>value", "दोनों", "कोई नहीं"],
+        "answer_en": "both",
+        "answer_hi": "दोनों",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 56,
-        "question_en": "The process of conversion of mechanical energy to heat energy is:",
-        "question_hi": "यांत्रिक ऊर्जा का ऊष्मा ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["Friction", "Compression", "Both A and B", "Expansion"],
-        "options_hi": ["घर्षण", "संपीड़न", "A और B दोनों", "विस्तार"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which of the following is a valid way to declare a tuple in TypeScript?",
+        "question_hi": "TypeScript में tuple घोषित करने का मान्य तरीका कौन सा है?",
+        "options_en": ["let t: [string, number];", "let t: [number, string];", "let t: string[];", "let t: any[];"],
+        "options_hi": ["let t: [string, number];", "let t: [number, string];", "let t: string[];", "let t: any[];"],
+        "answer_en": "let t: [string, number];",
+        "answer_hi": "let t: [string, number];",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 57,
-        "question_en": "The metal used in making pacemakers is:",
-        "question_hi": "पेसमेकर बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Titanium", "Stainless steel", "Platinum", "All of these"],
-        "options_hi": ["टाइटेनियम", "स्टेनलेस स्टील", "प्लैटिनम", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which operator is used for nullish coalescing in TypeScript?",
+        "question_hi": "TypeScript में nullish coalescing के लिए कौन सा ऑपरेटर उपयोग किया जाता है?",
+        "options_en": ["??", "||", "&&", "?."],
+        "options_hi": ["??", "||", "&&", "?."],
+        "answer_en": "??",
+        "answer_hi": "??",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 58,
-        "question_en": "The study of muscles is called:",
-        "question_hi": "मांसपेशियों का अध्ययन कहलाता है:",
-        "options_en": ["Myology", "Osteology", "Arthrology", "Neurology"],
-        "options_hi": ["पेशी विज्ञान", "अस्थि विज्ञान", "संधि विज्ञान", "स्नायु विज्ञान"],
-        "answer_en": "Myology",
-        "answer_hi": "पेशी विज्ञान",
+        "question_en": "Which of the following is used to combine multiple interfaces in TypeScript?",
+        "question_hi": "TypeScript में कई interfaces को जोड़ने के लिए कौन सा उपयोग किया जाता है?",
+        "options_en": ["extends", "implements", "interface", "class"],
+        "options_hi": ["extends", "implements", "interface", "class"],
+        "answer_en": "extends",
+        "answer_hi": "extends",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 59,
-        "question_en": "The chemical formula of cobalt oxide is:",
-        "question_hi": "कोबाल्ट ऑक्साइड का रासायनिक सूत्र है:",
-        "options_en": ["CoO", "Co₂O₃", "Co₃O₄", "All of these"],
-        "options_hi": ["CoO", "Co₂O₃", "Co₃O₄", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which of the following allows defining optional parameters in a function?",
+        "question_hi": "कौन सा सिंटैक्स function में optional parameters को परिभाषित करने की अनुमति देता है?",
+        "options_en": ["param?: type", "param!: type", "param: type", "param* : type"],
+        "options_hi": ["param?: type", "param!: type", "param: type", "param* : type"],
+        "answer_en": "param?: type",
+        "answer_hi": "param?: type",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 60,
-        "question_en": "The SI unit of magnetic flux density is:",
-        "question_hi": "चुंबकीय फ्लक्स घनत्व की SI इकाई है:",
-        "options_en": ["Tesla", "Weber", "Henry", "Gauss"],
-        "options_hi": ["टेस्ला", "वेबर", "हेनरी", "गॉस"],
-        "answer_en": "Tesla",
-        "answer_hi": "टेस्ला",
+        "question_en": "Which of the following keywords is used to create a readonly property in a class?",
+        "question_hi": "क्लास में readonly property बनाने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["readonly", "const", "static", "private"],
+        "options_hi": ["readonly", "const", "static", "private"],
+        "answer_en": "readonly",
+        "answer_hi": "readonly",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 61,
-        "question_en": "The process of conversion of heat energy to chemical energy is:",
-        "question_hi": "ऊष्मा ऊर्जा का रासायनिक ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["Endothermic reactions", "Thermal decomposition", "Both A and B", "Exothermic reactions"],
-        "options_hi": ["ऊष्माशोषी अभिक्रियाएं", "तापीय अपघटन", "A और B दोनों", "ऊष्माक्षेपी अभिक्रियाएं"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which TypeScript type represents a set of specific string values?",
+        "question_hi": "TypeScript में कौन सा टाइप विशेष string मानों के सेट का प्रतिनिधित्व करता है?",
+        "options_en": ["Literal type", "Union type", "Enum", "Any type"],
+        "options_hi": ["Literal type", "Union type", "Enum", "Any type"],
+        "answer_en": "Literal type",
+        "answer_hi": "Literal type",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 62,
-        "question_en": "The metal used in making MRI machines is:",
-        "question_hi": "MRI मशीनें बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Niobium-titanium", "Copper", "Aluminum", "All of these"],
-        "options_hi": ["नायोबियम-टाइटेनियम", "तांबा", "एल्युमिनियम", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which of the following is used to create a type alias in TypeScript?",
+        "question_hi": "TypeScript में type alias बनाने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["type", "interface", "class", "enum"],
+        "options_hi": ["type", "interface", "class", "enum"],
+        "answer_en": "type",
+        "answer_hi": "type",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 63,
-        "question_en": "The study of blood vessels is called:",
-        "question_hi": "रक्त वाहिकाओं का अध्ययन कहलाता है:",
-        "options_en": ["Angiology", "Cardiology", "Hematology", "Neurology"],
-        "options_hi": ["रक्त वाहिका विज्ञान", "हृदय विज्ञान", "रक्त विज्ञान", "स्नायु विज्ञान"],
-        "answer_en": "Angiology",
-        "answer_hi": "रक्त वाहिका विज्ञान",
+        "question_en": "Which TypeScript feature ensures variables are not null unless specified?",
+        "question_hi": "TypeScript में कौन सी सुविधा सुनिश्चित करती है कि variables तब तक null नहीं होंगे जब तक निर्दिष्ट न हो?",
+        "options_en": ["strictNullChecks", "any", "unknown", "void"],
+        "options_hi": ["strictNullChecks", "any", "unknown", "void"],
+        "answer_en": "strictNullChecks",
+        "answer_hi": "strictNullChecks",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 64,
-        "question_en": "The chemical formula of tin oxide is:",
-        "question_hi": "टिन ऑक्साइड का रासायनिक सूत्र है:",
-        "options_en": ["SnO", "SnO₂", "Both A and B", "Sn₂O₃"],
-        "options_hi": ["SnO", "SnO₂", "A और B दोनों", "Sn₂O₃"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which keyword is used to inherit a class in TypeScript?",
+        "question_hi": "TypeScript में class को inherit करने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["extends", "implements", "inherits", "super"],
+        "options_hi": ["extends", "implements", "inherits", "super"],
+        "answer_en": "extends",
+        "answer_hi": "extends",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 65,
-        "question_en": "The SI unit of electrical conductivity is:",
-        "question_hi": "विद्युत चालकता की SI इकाई है:",
-        "options_en": ["Siemens per meter", "Mho per meter", "Both A and B", "Ohm meter"],
-        "options_hi": ["सीमेंस प्रति मीटर", "म्हो प्रति मीटर", "A और B दोनों", "ओम मीटर"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which TypeScript type is used for arrays that can contain multiple types?",
+        "question_hi": "TypeScript में कौन सा टाइप ऐसे arrays के लिए उपयोग किया जाता है जो कई प्रकार के मान रख सकते हैं?",
+        "options_en": ["any[]", "number[]", "string[]", "boolean[]"],
+        "options_hi": ["any[]", "number[]", "string[]", "boolean[]"],
+        "answer_en": "any[]",
+        "answer_hi": "any[]",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 66,
-        "question_en": "The process of conversion of chemical energy to nuclear energy is:",
-        "question_hi": "रासायनिक ऊर्जा का नाभिकीय ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["Not possible", "Nuclear fusion", "Nuclear fission", "Radioactive decay"],
-        "options_hi": ["संभव नहीं", "नाभिकीय संलयन", "नाभिकीय विखंडन", "रेडियोधर्मी क्षय"],
-        "answer_en": "Not possible",
-        "answer_hi": "संभव नहीं",
+        "question_en": "Which of the following is used to define a readonly array?",
+        "question_hi": "TypeScript में readonly array परिभाषित करने के लिए कौन सा उपयोग किया जाता है?",
+        "options_en": ["readonly number[]", "const number[]", "let readonly[]", "number[] readonly"],
+        "options_hi": ["readonly number[]", "const number[]", "let readonly[]", "number[] readonly"],
+        "answer_en": "readonly number[]",
+        "answer_hi": "readonly number[]",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 67,
-        "question_en": "The metal used in making telescope mirrors is:",
-        "question_hi": "दूरबीन दर्पण बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Aluminum", "Silver", "Both A and B", "Gold"],
-        "options_hi": ["एल्युमिनियम", "चांदी", "A और B दोनों", "सोना"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which of the following is used for intersection types in TypeScript?",
+        "question_hi": "TypeScript में intersection types के लिए कौन सा प्रतीक उपयोग किया जाता है?",
+        "options_en": ["&", "|", "+", ","],
+        "options_hi": ["&", "|", "+", ","],
+        "answer_en": "&",
+        "answer_hi": "&",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 68,
-        "question_en": "The study of glands is called:",
-        "question_hi": "ग्रंथियों का अध्ययन कहलाता है:",
-        "options_en": ["Adenology", "Endocrinology", "Both A and B", "Histology"],
-        "options_hi": ["ग्रंथि विज्ञान", "अंतःस्राव विज्ञान", "A और B दोनों", "ऊतक विज्ञान"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which keyword is used to implement an interface in TypeScript?",
+        "question_hi": "TypeScript में interface को लागू करने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["implements", "extends", "inherits", "interface"],
+        "options_hi": ["implements", "extends", "inherits", "interface"],
+        "answer_en": "implements",
+        "answer_hi": "implements",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 69,
-        "question_en": "The chemical formula of barium oxide is:",
-        "question_hi": "बेरियम ऑक्साइड का रासायनिक सूत्र है:",
-        "options_en": ["BaO", "BaO₂", "Both A and B", "Ba(OH)₂"],
-        "options_hi": ["BaO", "BaO₂", "A और B दोनों", "Ba(OH)₂"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which TypeScript type is used for textual data?",
+        "question_hi": "TypeScript में कौन सा टाइप textual data के लिए उपयोग किया जाता है?",
+        "options_en": ["string", "number", "boolean", "any"],
+        "options_hi": ["string", "number", "boolean", "any"],
+        "answer_en": "string",
+        "answer_hi": "string",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 70,
-        "question_en": "The SI unit of electrical resistivity is:",
-        "question_hi": "विद्युत प्रतिरोधकता की SI इकाई है:",
-        "options_en": ["Ohm meter", "Siemens per meter", "Mho meter", "Volt meter"],
-        "options_hi": ["ओम मीटर", "सीमेंस प्रति मीटर", "म्हो मीटर", "वोल्ट मीटर"],
-        "answer_en": "Ohm meter",
-        "answer_hi": "ओम मीटर",
+        "question_en": "Which TypeScript type represents true/false values?",
+        "question_hi": "TypeScript में true/false मानों को कौन सा टाइप दर्शाता है?",
+        "options_en": ["boolean", "number", "string", "any"],
+        "options_hi": ["boolean", "number", "string", "any"],
+        "answer_en": "boolean",
+        "answer_hi": "boolean",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 71,
-        "question_en": "The process of conversion of nuclear energy to light energy is:",
-        "question_hi": "नाभिकीय ऊर्जा का प्रकाश ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["In nuclear reactions", "In stars", "Both A and B", "In LEDs"],
-        "options_hi": ["नाभिकीय अभिक्रियाओं में", "तारों में", "A और B दोनों", "LED में"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which keyword is used to define a class in TypeScript?",
+        "question_hi": "TypeScript में class को परिभाषित करने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["class", "interface", "type", "enum"],
+        "options_hi": ["class", "interface", "type", "enum"],
+        "answer_en": "class",
+        "answer_hi": "class",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 72,
-        "question_en": "The metal used in making jet engine turbines is:",
-        "question_hi": "जेट इंजन टरबाइन बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Nickel alloys", "Titanium alloys", "Both A and B", "Steel"],
-        "options_hi": ["निकल मिश्र धातु", "टाइटेनियम मिश्र धातु", "A और B दोनों", "इस्पात"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which keyword is used to define an interface in TypeScript?",
+        "question_hi": "TypeScript में interface को परिभाषित करने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["interface", "class", "type", "enum"],
+        "options_hi": ["interface", "class", "type", "enum"],
+        "answer_en": "interface",
+        "answer_hi": "interface",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 73,
-        "question_en": "The study of the stomach is called:",
-        "question_hi": "आमाशय का अध्ययन कहलाता है:",
-        "options_en": ["Gastrology", "Gastroenterology", "Both A and B", "Hepatology"],
-        "options_hi": ["आमाशय विज्ञान", "गैस्ट्रोएंटरोलॉजी", "A और B दोनों", "यकृत विज्ञान"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which of the following is used to create an enum in TypeScript?",
+        "question_hi": "TypeScript में enum बनाने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["enum", "type", "interface", "class"],
+        "options_hi": ["enum", "type", "interface", "class"],
+        "answer_en": "enum",
+        "answer_hi": "enum",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 74,
-        "question_en": "The chemical formula of silver oxide is:",
-        "question_hi": "सिल्वर ऑक्साइड का रासायनिक सूत्र है:",
-        "options_en": ["Ag₂O", "AgO", "Ag₂O₂", "Ag₂O₃"],
-        "options_hi": ["Ag₂O", "AgO", "Ag₂O₂", "Ag₂O₃"],
-        "answer_en": "Ag₂O",
-        "answer_hi": "Ag₂O",
+        "question_en": "Which of the following types represents a function that does not return a value?",
+        "question_hi": "कौन सा टाइप ऐसा function दर्शाता है जो कोई मान return नहीं करता?",
+        "options_en": ["void", "any", "number", "boolean"],
+        "options_hi": ["void", "any", "number", "boolean"],
+        "answer_en": "void",
+        "answer_hi": "void",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 75,
-        "question_en": "The SI unit of electrical reactance is:",
-        "question_hi": "विद्युत प्रतिघात की SI इकाई है:",
-        "options_en": ["Ohm", "Henry", "Farad", "Siemens"],
-        "options_hi": ["ओम", "हेनरी", "फैरड", "सीमेंस"],
-        "answer_en": "Ohm",
-        "answer_hi": "ओम",
+        "question_en": "Which TypeScript keyword is used to declare a variable that cannot be reassigned?",
+        "question_hi": "TypeScript में ऐसा variable घोषित करने के लिए कौन सा कीवर्ड उपयोग किया जाता है जिसे दोबारा assign नहीं किया जा सकता?",
+        "options_en": ["const", "let", "var", "readonly"],
+        "options_hi": ["const", "let", "var", "readonly"],
+        "answer_en": "const",
+        "answer_hi": "const",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 76,
-        "question_en": "The process of conversion of light energy to heat energy is:",
-        "question_hi": "प्रकाश ऊर्जा का ऊष्मा ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["Absorption", "Black body radiation", "Both A and B", "Reflection"],
-        "options_hi": ["अवशोषण", "कृष्णिका विकिरण", "A और B दोनों", "परावर्तन"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which TypeScript feature allows for type checking during compilation?",
+        "question_hi": "TypeScript में कौन सी सुविधा compile समय पर type checking की अनुमति देती है?",
+        "options_en": ["Static typing", "Dynamic typing", "Weak typing", "Any typing"],
+        "options_hi": ["Static typing", "Dynamic typing", "Weak typing", "Any typing"],
+        "answer_en": "Static typing",
+        "answer_hi": "Static typing",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 77,
-        "question_en": "The metal used in making bullet casings is:",
-        "question_hi": "बुलेट कैसिंग बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Copper", "Brass", "Both A and B", "Steel"],
-        "options_hi": ["तांबा", "पीतल", "A और B दोनों", "इस्पात"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which keyword is used to declare a variable with block scope in TypeScript?",
+        "question_hi": "TypeScript में block scope वाले variable को घोषित करने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["let", "var", "const", "readonly"],
+        "options_hi": ["let", "var", "const", "readonly"],
+        "answer_en": "let",
+        "answer_hi": "let",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 78,
-        "question_en": "The study of the intestines is called:",
-        "question_hi": "आंतों का अध्ययन कहलाता है:",
-        "options_en": ["Enterology", "Gastroenterology", "Both A and B", "Hepatology"],
-        "options_hi": ["आंत्र विज्ञान", "गैस्ट्रोएंटरोलॉजी", "A और B दोनों", "यकृत विज्ञान"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which TypeScript type is used to represent a union of multiple types?",
+        "question_hi": "TypeScript में कई प्रकारों के union का प्रतिनिधित्व करने के लिए कौन सा टाइप उपयोग किया जाता है?",
+        "options_en": ["Union type", "Intersection type", "Literal type", "Any type"],
+        "options_hi": ["Union type", "Intersection type", "Literal type", "Any type"],
+        "answer_en": "Union type",
+        "answer_hi": "Union type",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 79,
-        "question_en": "The chemical formula of gold oxide is:",
-        "question_hi": "गोल्ड ऑक्साइड का रासायनिक सूत्र है:",
-        "options_en": ["Au₂O₃", "AuO", "Au₂O", "Au(OH)₃"],
-        "options_hi": ["Au₂O₃", "AuO", "Au₂O", "Au(OH)₃"],
-        "answer_en": "Au₂O₃",
-        "answer_hi": "Au₂O₃",
+        "question_en": "Which TypeScript keyword allows a subclass to call a parent class method?",
+        "question_hi": "TypeScript में कौन सा कीवर्ड subclass को parent class के method को call करने की अनुमति देता है?",
+        "options_en": ["super", "this", "extends", "implements"],
+        "options_hi": ["super", "this", "extends", "implements"],
+        "answer_en": "super",
+        "answer_hi": "super",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 80,
-        "question_en": "The SI unit of electrical impedance is:",
-        "question_hi": "विद्युत प्रतिबाधा की SI इकाई है:",
-        "options_en": ["Ohm", "Henry", "Farad", "Siemens"],
-        "options_hi": ["ओम", "हेनरी", "फैरड", "सीमेंस"],
-        "answer_en": "Ohm",
-        "answer_hi": "ओम",
+        "question_en": "Which of the following is used for dynamic type casting in TypeScript?",
+        "question_hi": "TypeScript में dynamic type casting के लिए कौन सा उपयोग किया जाता है?",
+        "options_en": ["as", "<Type>", "both", "none"],
+        "options_hi": ["as", "<Type>", "दोनों", "कोई नहीं"],
+        "answer_en": "both",
+        "answer_hi": "दोनों",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 81,
-        "question_en": "The process of conversion of heat energy to sound energy is:",
-        "question_hi": "ऊष्मा ऊर्जा का ध्वनि ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["In thermoacoustic engines", "In speakers", "In microphones", "Not possible"],
-        "options_hi": ["थर्मोएकॉस्टिक इंजन में", "स्पीकर में", "माइक्रोफोन में", "संभव नहीं"],
-        "answer_en": "In thermoacoustic engines",
-        "answer_hi": "थर्मोएकॉस्टिक इंजन में",
+        "question_en": "Which keyword is used to prevent inheritance of a class in TypeScript?",
+        "question_hi": "TypeScript में class को inherit होने से रोकने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["final", "private", "sealed", "none"],
+        "options_hi": ["final", "private", "sealed", "कोई नहीं"],
+        "answer_en": "none",
+        "answer_hi": "कोई नहीं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 82,
-        "question_en": "The metal used in making musical instrument strings is:",
-        "question_hi": "संगीत वाद्ययंत्र की तारें बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Steel", "Brass", "Bronze", "All of these"],
-        "options_hi": ["इस्पात", "पीतल", "कांस्य", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which of the following types is used for objects with known properties?",
+        "question_hi": "TypeScript में किस टाइप का उपयोग ज्ञात properties वाले objects के लिए किया जाता है?",
+        "options_en": ["object", "any", "unknown", "never"],
+        "options_hi": ["object", "any", "unknown", "never"],
+        "answer_en": "object",
+        "answer_hi": "object",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 83,
-        "question_en": "The study of the brain is called:",
-        "question_hi": "मस्तिष्क का अध्ययन कहलाता है:",
-        "options_en": ["Neurology", "Psychiatry", "Both A and B", "Psychology"],
-        "options_hi": ["स्नायु विज्ञान", "मनोचिकित्सा", "A और B दोनों", "मनोविज्ञान"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which TypeScript type represents a function signature?",
+        "question_hi": "TypeScript में function signature का प्रतिनिधित्व कौन सा टाइप करता है?",
+        "options_en": ["function type", "any", "object", "tuple"],
+        "options_hi": ["function type", "any", "object", "tuple"],
+        "answer_en": "function type",
+        "answer_hi": "function type",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 84,
-        "question_en": "The chemical formula of platinum oxide is:",
-        "question_hi": "प्लैटिनम ऑक्साइड का रासायनिक सूत्र है:",
-        "options_en": ["PtO", "PtO₂", "Pt₂O₃", "Pt₃O₄"],
-        "options_hi": ["PtO", "PtO₂", "Pt₂O₃", "Pt₃O₄"],
-        "answer_en": "PtO₂",
-        "answer_hi": "PtO₂",
+        "question_en": "Which of the following is used to import a module in TypeScript?",
+        "question_hi": "TypeScript में module import करने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["import", "export", "require", "module"],
+        "options_hi": ["import", "export", "require", "module"],
+        "answer_en": "import",
+        "answer_hi": "import",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 85,
-        "question_en": "The SI unit of electrical admittance is:",
-        "question_hi": "विद्युत अभिग्राहिता की SI इकाई है:",
-        "options_en": ["Siemens", "Mho", "Both A and B", "Ohm"],
-        "options_hi": ["सीमेंस", "म्हो", "A और B दोनों", "ओम"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which of the following is used to export a module in TypeScript?",
+        "question_hi": "TypeScript में module export करने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["export", "import", "require", "module"],
+        "options_hi": ["export", "import", "require", "module"],
+        "answer_en": "export",
+        "answer_hi": "export",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 86,
-        "question_en": "The process of conversion of sound energy to heat energy is:",
-        "question_hi": "ध्वनि ऊर्जा का ऊष्मा ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["Acoustic absorption", "In speakers", "In microphones", "Not significant"],
-        "options_hi": ["ध्वनिक अवशोषण", "स्पीकर में", "माइक्रोफोन में", "महत्वपूर्ण नहीं"],
-        "answer_en": "Acoustic absorption",
-        "answer_hi": "ध्वनिक अवशोषण",
+        "question_en": "Which TypeScript feature helps avoid runtime errors for null and undefined values?",
+        "question_hi": "TypeScript में कौन सी सुविधा null और undefined मानों के लिए runtime errors से बचने में मदद करती है?",
+        "options_en": ["strictNullChecks", "any", "unknown", "void"],
+        "options_hi": ["strictNullChecks", "any", "unknown", "void"],
+        "answer_en": "strictNullChecks",
+        "answer_hi": "strictNullChecks",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 87,
-        "question_en": "The metal used in making dental braces is:",
-        "question_hi": "दंत ब्रेसिज़ बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Stainless steel", "Titanium", "Nickel-titanium", "All of these"],
-        "options_hi": ["स्टेनलेस स्टील", "टाइटेनियम", "निकल-टाइटेनियम", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which keyword is used to declare a variable that can be reassigned?",
+        "question_hi": "TypeScript में ऐसा variable घोषित करने के लिए कौन सा कीवर्ड उपयोग किया जाता है जिसे दोबारा assign किया जा सकता है?",
+        "options_en": ["let", "const", "readonly", "var"],
+        "options_hi": ["let", "const", "readonly", "var"],
+        "answer_en": "let",
+        "answer_hi": "let",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 88,
-        "question_en": "The study of the spinal cord is called:",
-        "question_hi": "मेरुरज्जु का अध्ययन कहलाता है:",
-        "options_en": ["Myelology", "Neurology", "Both A and B", "Osteology"],
-        "options_hi": ["मेरुरज्जु विज्ञान", "स्नायु विज्ञान", "A और B दोनों", "अस्थि विज्ञान"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which TypeScript feature allows you to define optional object properties?",
+        "question_hi": "TypeScript में optional object properties परिभाषित करने की अनुमति कौन सी सुविधा देती है?",
+        "options_en": ["?", "!", "*", "$"],
+        "options_hi": ["?", "!", "*", "$"],
+        "answer_en": "?",
+        "answer_hi": "?",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 89,
-        "question_en": "The chemical formula of tungsten oxide is:",
-        "question_hi": "टंगस्टन ऑक्साइड का रासायनिक सूत्र है:",
-        "options_en": ["WO₃", "WO₂", "W₂O₅", "All of these"],
-        "options_hi": ["WO₃", "WO₂", "W₂O₅", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which keyword is used to define a generic type in TypeScript?",
+        "question_hi": "TypeScript में generic type परिभाषित करने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["<T>", "type", "interface", "enum"],
+        "options_hi": ["<T>", "type", "interface", "enum"],
+        "answer_en": "<T>",
+        "answer_hi": "<T>",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 90,
-        "question_en": "The SI unit of electrical susceptance is:",
-        "question_hi": "विद्युत संवेदनशीलता की SI इकाई है:",
-        "options_en": ["Siemens", "Mho", "Both A and B", "Ohm"],
-        "options_hi": ["सीमेंस", "म्हो", "A और B दोनों", "ओम"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which TypeScript type represents an array of values of the same type?",
+        "question_hi": "TypeScript में किस टाइप का उपयोग समान प्रकार के मानों वाली array के लिए किया जाता है?",
+        "options_en": ["number[]", "any[]", "object", "tuple"],
+        "options_hi": ["number[]", "any[]", "object", "tuple"],
+        "answer_en": "number[]",
+        "answer_hi": "number[]",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 91,
-        "question_en": "The process of conversion of nuclear energy to sound energy is:",
-        "question_hi": "नाभिकीय ऊर्जा का ध्वनि ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["In nuclear explosions", "Not significant", "In speakers", "In microphones"],
-        "options_hi": ["नाभिकीय विस्फोटों में", "महत्वपूर्ण नहीं", "स्पीकर में", "माइक्रोफोन में"],
-        "answer_en": "In nuclear explosions",
-        "answer_hi": "नाभिकीय विस्फोटों में",
+        "question_en": "Which of the following allows defining a tuple with different types in TypeScript?",
+        "question_hi": "TypeScript में विभिन्न प्रकार के मानों के साथ tuple परिभाषित करने के लिए कौन सा सिंटैक्स उपयोग किया जाता है?",
+        "options_en": ["[string, number]", "[number, number]", "[string]", "[any[]]"],
+        "options_hi": ["[string, number]", "[number, number]", "[string]", "[any[]]"],
+        "answer_en": "[string, number]",
+        "answer_hi": "[string, number]",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 92,
-        "question_en": "The metal used in making surgical staples is:",
-        "question_hi": "शल्य चिकित्सा स्टेपल बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Titanium", "Stainless steel", "Both A and B", "Copper"],
-        "options_hi": ["टाइटेनियम", "स्टेनलेस स्टील", "A और B दोनों", "तांबा"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which keyword is used to declare a type for function parameters in TypeScript?",
+        "question_hi": "TypeScript में function parameters के लिए type घोषित करने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": [":", "as", "=", "->"],
+        "options_hi": [":", "as", "=", "->"],
+        "answer_en": ":",
+        "answer_hi": ":",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 93,
-        "question_en": "The study of the lungs is called:",
-        "question_hi": "फेफड़ों का अध्ययन कहलाता है:",
-        "options_en": ["Pulmonology", "Respiratory medicine", "Both A and B", "Cardiology"],
-        "options_hi": ["फुफ्फुस विज्ञान", "श्वसन चिकित्सा", "A और B दोनों", "हृदय विज्ञान"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which TypeScript type represents a value that can be one of several literal values?",
+        "question_hi": "TypeScript में कौन सा टाइप एक मान का प्रतिनिधित्व करता है जो कई literal मानों में से एक हो सकता है?",
+        "options_en": ["Union type", "Intersection type", "Literal type", "Any type"],
+        "options_hi": ["Union type", "Intersection type", "Literal type", "Any type"],
+        "answer_en": "Union type",
+        "answer_hi": "Union type",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 94,
-        "question_en": "The chemical formula of molybdenum oxide is:",
-        "question_hi": "मोलिब्डेनम ऑक्साइड का रासायनिक सूत्र है:",
-        "options_en": ["MoO₃", "MoO₂", "Mo₂O₅", "All of these"],
-        "options_hi": ["MoO₃", "MoO₂", "Mo₂O₅", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which keyword is used to prevent modifying an object property in TypeScript?",
+        "question_hi": "TypeScript में object property को modify होने से रोकने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["readonly", "const", "final", "immutable"],
+        "options_hi": ["readonly", "const", "final", "immutable"],
+        "answer_en": "readonly",
+        "answer_hi": "readonly",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 95,
-        "question_en": "The SI unit of electrical permittivity is:",
-        "question_hi": "विद्युत परावैद्युतांक की SI इकाई है:",
-        "options_en": ["Farad per meter", "Coulomb² per Newton meter²", "Both A and B", "Siemens per meter"],
-        "options_hi": ["फैरड प्रति मीटर", "कूलॉम² प्रति न्यूटन मीटर²", "A और B दोनों", "सीमेंस प्रति मीटर"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which TypeScript feature allows for specifying multiple types for a variable?",
+        "question_hi": "TypeScript में variable के लिए कई प्रकार निर्दिष्ट करने की अनुमति कौन सी सुविधा देती है?",
+        "options_en": ["Union types", "Intersection types", "Literal types", "Any type"],
+        "options_hi": ["Union types", "Intersection types", "Literal types", "Any type"],
+        "answer_en": "Union types",
+        "answer_hi": "Union types",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 96,
-        "question_en": "The process of conversion of chemical energy to sound energy is:",
-        "question_hi": "रासायनिक ऊर्जा का ध्वनि ऊर्जा में परिवर्तन की प्रक्रिया है:",
-        "options_en": ["In explosives", "In speakers", "In microphones", "Not significant"],
-        "options_hi": ["विस्फोटकों में", "स्पीकर में", "माइक्रोफोन में", "महत्वपूर्ण नहीं"],
-        "answer_en": "In explosives",
-        "answer_hi": "विस्फोटकों में",
+        "question_en": "Which keyword is used to define a property accessible only within a class?",
+        "question_hi": "TypeScript में केवल class के भीतर पहुंच योग्य property को परिभाषित करने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["private", "protected", "public", "readonly"],
+        "options_hi": ["private", "protected", "public", "readonly"],
+        "answer_en": "private",
+        "answer_hi": "private",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 97,
-        "question_en": "The metal used in making artificial heart valves is:",
-        "question_hi": "कृत्रिम हृदय वाल्व बनाने में प्रयुक्त धातु है:",
-        "options_en": ["Titanium", "Pyrolytic carbon", "Both A and B", "Stainless steel"],
-        "options_hi": ["टाइटेनियम", "पाइरोलाइटिक कार्बन", "A और B दोनों", "स्टेनलेस स्टील"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which keyword allows a subclass to access properties and methods of a parent class?",
+        "question_hi": "कौन सा कीवर्ड subclass को parent class की properties और methods तक पहुंचने की अनुमति देता है?",
+        "options_en": ["super", "this", "extends", "implements"],
+        "options_hi": ["super", "this", "extends", "implements"],
+        "answer_en": "super",
+        "answer_hi": "super",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 98,
-        "question_en": "The study of cancer is called:",
-        "question_hi": "कैंसर का अध्ययन कहलाता है:",
-        "options_en": ["Oncology", "Pathology", "Both A and B", "Hematology"],
-        "options_hi": ["ऑन्कोलॉजी", "रोग विज्ञान", "A और B दोनों", "रक्त विज्ञान"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which TypeScript feature allows a function to accept a variable number of arguments?",
+        "question_hi": "TypeScript में कौन सी सुविधा function को variable number of arguments स्वीकार करने की अनुमति देती है?",
+        "options_en": ["Rest parameters", "Optional parameters", "Default parameters", "Tuple parameters"],
+        "options_hi": ["Rest parameters", "Optional parameters", "Default parameters", "Tuple parameters"],
+        "answer_en": "Rest parameters",
+        "answer_hi": "Rest parameters",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 99,
-        "question_en": "The chemical formula of vanadium oxide is:",
-        "question_hi": "वेनेडियम ऑक्साइड का रासायनिक सूत्र है:",
-        "options_en": ["V₂O₅", "VO₂", "V₂O₃", "All of these"],
-        "options_hi": ["V₂O₅", "VO₂", "V₂O₃", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "Which of the following is used to define a module namespace in TypeScript?",
+        "question_hi": "TypeScript में module namespace परिभाषित करने के लिए कौन सा कीवर्ड उपयोग किया जाता है?",
+        "options_en": ["namespace", "module", "package", "export"],
+        "options_hi": ["namespace", "module", "package", "export"],
+        "answer_en": "namespace",
+        "answer_hi": "namespace",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 100,
-        "question_en": "The SI unit of electrical permeability is:",
-        "question_hi": "विद्युत पारगम्यता की SI इकाई है:",
-        "options_en": ["Henry per meter", "Newton per ampere²", "Both A and B", "Tesla meter per ampere"],
-        "options_hi": ["हेनरी प्रति मीटर", "न्यूटन प्रति एम्पियर²", "A और B दोनों", "टेस्ला मीटर प्रति एम्पियर"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which of the following is used for type inference in TypeScript?",
+        "question_hi": "TypeScript में type inference के लिए कौन सा उपयोग किया जाता है?",
+        "options_en": ["Compiler infers type automatically", "Explicit type declaration", "Interface", "Enum"],
+        "options_hi": ["Compiler अपने आप type का अनुमान लगाता है", "Explicit type declaration", "Interface", "Enum"],
+        "answer_en": "Compiler infers type automatically",
+        "answer_hi": "Compiler अपने आप type का अनुमान लगाता है",
         "attempted": false,
         "selected": ""
-    }   
-// Add more questions here...
-];
+    }
+]
 
 
-let currentQuestion = 0; 
+
+let currentQuestion = 0;
 let language = "en";
-// let timeLeft = 180 * 60; // 180 minutes
-let timeLeft = 60 * 60; // 60 minutes
+let timeLeft = 60 * 60; 
 let timerInterval;
 
-// ----------------- Quiz Logic -----------------
+// ----------------- Load Question -----------------
 function loadQuestion(index) {
     const q = questions[index];
-    document.getElementById("question").textContent = `${q.num}. ${
-        language === "en" ? q.question_en : q.question_hi
-    }`;
-    document.getElementById("questionCounter").textContent = `Question ${index + 1} of ${questions.length}`;
+    if (!q) return; //  undefined error fix
+   questions[index].visited = true;
+    document.getElementById("question").textContent =
+       `${q.num}. ${language === "en" ? q.question_en : q.question_hi}`;
+
+    document.getElementById("questionCounter").textContent =
+       ` Question ${index + 1} of ${questions.length}`;
 
     const optionsElement = document.getElementById("options");
     optionsElement.innerHTML = "";
 
     const options = language === "en" ? q.options_en : q.options_hi;
 
-    options.forEach((option) => {
+    options.forEach(option => {
         const isSelected = q.selected === option;
-        const optionDiv = document.createElement("div");
-        optionDiv.className = "option-box";
-        optionDiv.style = `
+
+        const div = document.createElement("div");
+        div.className = "option-box";
+
+        div.style = `
             border: 2px solid ${isSelected ? "#007bff" : "#ccc"};
             background-color: ${isSelected ? "#e7f1ff" : "white"};
             padding: 10px;
             border-radius: 8px;
             margin: 6px 0;
             cursor: pointer;
-            transition: all 0.2s;
         `;
 
-        optionDiv.innerHTML = `
-            <input type="radio" name="option" value="${option}" ${isSelected ? "checked" : ""} style="margin-right:8px;">
+        div.innerHTML = `
+            <input type="radio" name="option" value="${option}" 
+            ${isSelected ? "checked" : ""} style="margin-right:8px;">
             ${option}
         `;
 
-        optionDiv.addEventListener("click", () => {
+        div.addEventListener("click", () => {
             markAttempted(index, option);
             loadQuestion(index);
         });
 
-        optionsElement.appendChild(optionDiv);
+        optionsElement.appendChild(div);
     });
 
     updateNavigation();
 }
 
+// ----------------- Attempt Mark -----------------
 function markAttempted(index, selectedAnswer) {
     questions[index].attempted = true;
     questions[index].selected = selectedAnswer;
     updateNavigation();
 }
 
+// ----------------- Next / Previous -----------------
 function nextQuestion() {
     if (currentQuestion < questions.length - 1) {
         currentQuestion++;
@@ -1177,212 +1183,122 @@ function changeLanguage() {
     loadQuestion(currentQuestion);
 }
 
+// ----------------- Final Submit -----------------
 function submitQuiz() {
-    clearInterval(timerInterval);
-    let attempted = 0,
-        notAttempted = 0,
-        score = 0;
+    let confirmation = confirm("Are you sure you want to submit the test?");
+    if (!confirmation) return;
 
-    questions.forEach((q) => {
+    let attempted = 0;
+    let notAttempted = 0;
+    let score = 0;
+    const results = [];
+
+    questions.forEach(q => {
         if (q.attempted) {
             attempted++;
-            if (q.selected === q.answer_en || q.selected === q.answer_hi) score++;
-        } else notAttempted++;
+
+            if (q.selected === q.answer_en || q.selected === q.answer_hi) {
+                score++;
+            }
+        } else {
+            notAttempted++;
+        }
+
+        results.push({
+            question: language === "en" ? q.question_en : q.question_hi,
+            selected: q.selected || "Not Answered",
+            correct: language === "en" ? q.answer_en : q.answer_hi
+        });
     });
 
-    alert(
-        `Quiz submitted!\nAttempted: ${attempted}\nNot Attempted: ${notAttempted}\nScore: ${score}/${questions.length}`
-    );
+    localStorage.setItem("attempted", attempted);
+    localStorage.setItem("notAttempted", notAttempted);
+    localStorage.setItem("score", score);
+    localStorage.setItem("results", JSON.stringify(results));
+
+    let viewResult = confirm("Test submitted! Do you want to view result?");
+    if (viewResult) {
+        window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
+    }
 }
 
+// ----------------- Navigation Circles -----------------
+function updateNavigation() {
+    const nav = document.getElementById("circleContainer");
+    nav.innerHTML = "";
+
+    questions.forEach((q, i) => {
+        let color = "gray"; // default: not visited
+
+        if (i === currentQuestion) {
+            color = "blue"; // current question
+        } 
+        else if (q.attempted) {
+            color = "green"; // answered
+        } 
+        else if (q.visited) {
+            color = "white"; // visited but not answered
+        }
+
+        nav.innerHTML += `
+            <div class="circle" style="background:${color}; border:1px solid black;"
+            onclick="jumpToQuestion(${i})">${i + 1}</div>
+        `;
+    });
+}
+
+function jumpToQuestion(index) {
+    currentQuestion = index;
+    loadQuestion(index);
+}
+
+// ----------------- Timer -----------------
 function startTimer() {
     const timerElement = document.getElementById("timer");
-    clearInterval(timerInterval);
+
     timerInterval = setInterval(() => {
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
             alert("Time's up!");
             submitQuiz();
         } else {
-            const hours = Math.floor(timeLeft / 3600);
-            const minutes = Math.floor((timeLeft % 3600) / 60);
-            const seconds = timeLeft % 60;
-            timerElement.textContent = `Time Left: ${hours
-                .toString()
-                .padStart(2, "0")}:${minutes
-                .toString()
-                .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+            const hours = String(Math.floor(timeLeft / 3600)).padStart(2, "0");
+            const minutes = String(Math.floor((timeLeft % 3600) / 60)).padStart(2, "0");
+            const seconds = String(timeLeft % 60).padStart(2, "0");
+
+            timerElement.textContent = `Time Left: ${hours}:${minutes}:${seconds}`;
             timeLeft--;
         }
     }, 1000);
 }
 
-// submit 
-function jumpToQuestion(index) {
-            currentQuestion = index;
-            loadQuestion(index);
-        }
-
-        function submitQuiz() {
-            let confirmation = confirm("Are you sure you want to submit the test?");
-            
-            if (!confirmation) {
-                return; // अगर यूज़र 'Cancel' करता है तो आगे नहीं बढ़ेंगे
-            }
-
-            let attempted = 0;
-            let notAttempted = 0;
-            let score = 0;
-            const results = [];
-
-            questions.forEach(q => {
-                if (q.attempted) {
-                    attempted++;
-                    if (q.selected === q.answer) {
-                        score++;
-                    }
-                } else {
-                    notAttempted++;
-                }
-                results.push({ question: q.question, selected: q.selected || "Not Answered", correct: q.answer });
-            });
-
-            localStorage.setItem("attempted", attempted);
-            localStorage.setItem("notAttempted", notAttempted);
-            localStorage.setItem("score", score);
-            localStorage.setItem("results", JSON.stringify(results));
-
-            // रिजल्ट देखने से पहले एक और कन्फर्मेशन ले सकते हैं
-            let viewResult = confirm("Test submitted successfully! Do you want to view your result?");
-            if (viewResult) {
-                window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
-            }
-        }
-        window.onload = () => {
-            loadQuestion(currentQuestion);
-        };
-
-
-function updateNavigation() {
-    const nav = document.getElementById("circleContainer");
-    nav.innerHTML = "";
-    questions.forEach((q, i) => {
-        let color = "gray";
-        if (i === currentQuestion) color = "blue";
-        else if (q.attempted) color = "green";
-        nav.innerHTML += `<div class='circle' style='background-color:${color}' onclick='loadQuestion(${i})'>${i + 1}</div>`;
-    });
-}
-
-// ----------------- Camera & Movement Logic -----------------
+// ----------------- Camera & Movement Detection -----------------
 let videoStream;
 let movementCount = 0;
 
 function startCamera() {
     const container = document.createElement("div");
     container.id = "camera-container";
-    container.style.position = "fixed";
-    container.style.top = "10px";
-    container.style.left = "10px"; // ✅ Left side
-    container.style.width = "130px";
-    container.style.height = "130px";
-    container.style.zIndex = "9999";
-    container.style.borderRadius = "50%";
-    container.style.overflow = "hidden";
-    container.style.border = "3px solid red";
-    container.style.boxShadow = "0 0 10px rgba(0,0,0,0.3)";
-    container.style.cursor = "grab";
-    container.style.minWidth = "80px";
-    container.style.minHeight = "80px";
-    container.style.maxWidth = "250px";
-    container.style.maxHeight = "250px";
-    container.style.background = "#000";
+    container.style = `
+        position:fixed; top:10px; left:10px; width:130px; height:130px;
+        border-radius:50%; overflow:hidden; border:3px solid red; z-index:9999;
+    `;
+
     document.body.appendChild(container);
 
     const video = document.createElement("video");
-    video.setAttribute("autoplay", true);
-    video.setAttribute("playsinline", true);
-    video.style.width = "100%";
-    video.style.height = "100%";
-    video.style.objectFit = "cover";
+    video.autoplay = true;
+    video.playsinline = true;
+    video.style = "width:100%; height:100%; object-fit:cover;";
     container.appendChild(video);
 
-    // ✅ Resize handle
-    const resizeHandle = document.createElement("div");
-    resizeHandle.style.position = "absolute";
-    resizeHandle.style.bottom = "2px";
-    resizeHandle.style.right = "2px";
-    resizeHandle.style.width = "15px";
-    resizeHandle.style.height = "15px";
-    resizeHandle.style.background = "rgba(255,255,255,0.7)";
-    resizeHandle.style.borderRadius = "4px";
-    resizeHandle.style.cursor = "se-resize";
-    container.appendChild(resizeHandle);
-
-    // ✅ Drag logic
-    let isDragging = false;
-    let offsetX, offsetY;
-
-    container.addEventListener("mousedown", (e) => {
-        if (e.target === resizeHandle) return;
-        isDragging = true;
-        offsetX = e.clientX - container.offsetLeft;
-        offsetY = e.clientY - container.offsetTop;
-        container.style.cursor = "grabbing";
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isDragging) return;
-        let x = e.clientX - offsetX;
-        let y = e.clientY - offsetY;
-        x = Math.max(0, Math.min(window.innerWidth - container.offsetWidth, x));
-        y = Math.max(0, Math.min(window.innerHeight - container.offsetHeight, y));
-        container.style.left = `${x}px`;
-        container.style.top = `${y}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isDragging = false;
-        container.style.cursor = "grab";
-    });
-
-    // ✅ Resize logic
-    let isResizing = false;
-    let startWidth, startHeight, startX, startY;
-
-    resizeHandle.addEventListener("mousedown", (e) => {
-        e.stopPropagation();
-        isResizing = true;
-        startWidth = container.offsetWidth;
-        startHeight = container.offsetHeight;
-        startX = e.clientX;
-        startY = e.clientY;
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isResizing) return;
-        const dx = e.clientX - startX;
-        const dy = e.clientY - startY;
-        const newSize = Math.max(80, Math.min(250, Math.max(startWidth + dx, startHeight + dy)));
-        container.style.width = `${newSize}px`;
-        container.style.height = `${newSize}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isResizing = false;
-    });
-
-    // ✅ Camera stream
     navigator.mediaDevices.getUserMedia({ video: true })
         .then(stream => {
             video.srcObject = stream;
             videoStream = stream;
             detectMovement(video);
         })
-        .catch(err => {
-            console.error("Camera error:", err);
-            alert("Camera not accessible!");
-        });
+        .catch(() => alert("Camera access denied!"));
 }
 
 function detectMovement(video) {
@@ -1390,51 +1306,51 @@ function detectMovement(video) {
     const ctx = canvas.getContext("2d");
     canvas.width = 160;
     canvas.height = 160;
-    let lastImageData = null;
+
+    let lastData = null;
 
     setInterval(() => {
-        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(video, 0, 0, 160, 160);
+        const data = ctx.getImageData(0, 0, 160, 160);
 
-        if (lastImageData) {
+        if (lastData) {
             let diff = 0;
-            for (let i = 0; i < imageData.data.length; i += 4) {
-                diff += Math.abs(imageData.data[i] - lastImageData.data[i]);
+            for (let i = 0; i < data.data.length; i += 4) {
+                diff += Math.abs(data.data[i] - lastData.data[i]);
             }
 
             if (diff > 1000000) {
                 movementCount++;
-                if (movementCount === 1) {
-                    alert("⚠️ Alert 1: Face is not move");
-                } else if (movementCount === 2) {
-                    alert("⚠️ Alert 2: Head is not move");
-                } else if (movementCount === 3) {
-                    alert("⚠️ Alert 3: Test series is restarting...");
+
+                if (movementCount === 1) alert("⚠ Alert 1: No movement detected!");
+                if (movementCount === 2) alert("⚠ Alert 2: Head not moving!");
+                if (movementCount === 3) {
+                    alert("⚠ Alert 3: Restarting test...");
                     restartTest();
                 }
             }
         }
-        lastImageData = imageData;
+        lastData = data;
+
     }, 2000);
 }
 
 function restartTest() {
-    if (videoStream) {
-        videoStream.getTracks().forEach(track => track.stop());
-    }
-    const camContainer = document.getElementById("camera-container");
-    if (camContainer) camContainer.remove();
+    if (videoStream) videoStream.getTracks().forEach(t => t.stop());
+
+    const cam = document.getElementById("camera-container");
+    if (cam) cam.remove();
 
     movementCount = 0;
     currentQuestion = 0;
-    timeLeft = 180 * 60;
+    timeLeft = 60 * 60;
 
     questions.forEach(q => {
         q.attempted = false;
         q.selected = null;
     });
 
-    loadQuestion(currentQuestion);
+    loadQuestion(0);
     startTimer();
     startCamera();
 }
@@ -1443,8 +1359,5 @@ function restartTest() {
 window.onload = function () {
     loadQuestion(currentQuestion);
     startTimer();
-    startCamera(); // ✅ Camera starts with test
+    startCamera();
 };
-
-
-///////////////////////////////////////

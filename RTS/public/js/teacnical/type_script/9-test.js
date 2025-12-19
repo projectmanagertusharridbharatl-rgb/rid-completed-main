@@ -1,1163 +1,1178 @@
-const questions = [
+const typescriptQuestionsBatch3 = [
     {
         "num": 1,
-        "question_en": "What is the chemical symbol for Gold?",
-        "question_hi": "सोने का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Go", "Gd", "Au", "Ag"],
-        "options_hi": ["Go", "Gd", "Au", "Ag"],
-        "answer_en": "Au",
-        "answer_hi": "Au",
+        "question_en": "What is the purpose of TypeScript's strict mode?",
+        "question_hi": "TypeScript के strict mode का purpose क्या है?",
+        "options_en": ["Enables all strict type checking options", "Disables type checking", "Makes code run faster", "Reduces file size"],
+        "options_hi": ["सभी strict type checking options enable करता है", "Type checking disable करता है", "Code को faster run करता है", "File size reduce करता है"],
+        "answer_en": "Enables all strict type checking options",
+        "answer_hi": "सभी strict type checking options enable करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 2,
-        "question_en": "Which planet is known as the Red Planet?",
-        "question_hi": "कौन सा ग्रह लाल ग्रह के नाम से जाना जाता है?",
-        "options_en": ["Venus", "Mars", "Jupiter", "Saturn"],
-        "options_hi": ["शुक्र", "मंगल", "बृहस्पति", "शनि"],
-        "answer_en": "Mars",
-        "answer_hi": "मंगल",
+        "question_en": "Which compiler option enables strict mode?",
+        "question_hi": "कौन सा compiler option strict mode enable करता है?",
+        "options_en": ["strict: true", "strictMode: true", "useStrict: true", "strictChecking: true"],
+        "options_hi": ["strict: true", "strictMode: true", "useStrict: true", "strictChecking: true"],
+        "answer_en": "strict: true",
+        "answer_hi": "strict: true",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 3,
-        "question_en": "What is the SI unit of force?",
-        "question_hi": "बल की SI इकाई क्या है?",
-        "options_en": ["Joule", "Watt", "Newton", "Pascal"],
-        "options_hi": ["जूल", "वाट", "न्यूटन", "पास्कल"],
-        "answer_en": "Newton",
-        "answer_hi": "न्यूटन",
+        "question_en": "What does 'noImplicitAny' do?",
+        "question_hi": "'noImplicitAny' क्या करता है?",
+        "options_en": ["Raises error on implicit 'any' type", "Allows implicit 'any' type", "Disables 'any' type", "Enables 'any' type"],
+        "options_hi": ["Implicit 'any' type पर error raise करता है", "Implicit 'any' type allow करता है", "'any' type disable करता है", "'any' type enable करता है"],
+        "answer_en": "Raises error on implicit 'any' type",
+        "answer_hi": "Implicit 'any' type पर error raise करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 4,
-        "question_en": "Which gas is most abundant in Earth's atmosphere?",
-        "question_hi": "पृथ्वी के वायुमंडल में कौन सी गैस सबसे अधिक मात्रा में है?",
-        "options_en": ["Oxygen", "Carbon dioxide", "Nitrogen", "Argon"],
-        "options_hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "नाइट्रोजन", "आर्गन"],
-        "answer_en": "Nitrogen",
-        "answer_hi": "नाइट्रोजन",
+        "question_en": "What does 'strictNullChecks' do?",
+        "question_hi": "'strictNullChecks' क्या करता है?",
+        "options_en": ["Enables strict null and undefined checking", "Disables null checking", "Allows null everywhere", "Ignores null errors"],
+        "options_hi": ["Strict null और undefined checking enable करता है", "Null checking disable करता है", "Null को everywhere allow करता है", "Null errors ignore करता है"],
+        "answer_en": "Enables strict null and undefined checking",
+        "answer_hi": "Strict null और undefined checking enable करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 5,
-        "question_en": "What is the pH value of pure water?",
-        "question_hi": "शुद्ध जल का pH मान क्या है?",
-        "options_en": ["5", "7", "8", "10"],
-        "options_hi": ["5", "7", "8", "10"],
-        "answer_en": "7",
-        "answer_hi": "7",
+        "question_en": "What does 'noImplicitReturns' do?",
+        "question_hi": "'noImplicitReturns' क्या करता है?",
+        "options_en": ["Checks all code paths return values", "Allows implicit returns", "Disables return checking", "Ignores return types"],
+        "options_hi": ["Check करता है कि सभी code paths values return करें", "Implicit returns allow करता है", "Return checking disable करता है", "Return types ignore करता है"],
+        "answer_en": "Checks all code paths return values",
+        "answer_hi": "Check करता है कि सभी code paths values return करें",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 6,
-        "question_en": "Which organ pumps blood throughout the body?",
-        "question_hi": "कौन सा अंग पूरे शरीर में रक्त पंप करता है?",
-        "options_en": ["Liver", "Lungs", "Heart", "Kidney"],
-        "options_hi": ["यकृत", "फेफड़े", "हृदय", "गुर्दा"],
-        "answer_en": "Heart",
-        "answer_hi": "हृदय",
+        "question_en": "What does 'noUnusedParameters' do?",
+        "question_hi": "'noUnusedParameters' क्या करता है?",
+        "options_en": ["Flags unused function parameters", "Allows unused parameters", "Ignores parameter usage", "Deletes unused parameters"],
+        "options_hi": ["Unused function parameters flag करता है", "Unused parameters allow करता है", "Parameter usage ignore करता है", "Unused parameters delete करता है"],
+        "answer_en": "Flags unused function parameters",
+        "answer_hi": "Unused function parameters flag करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 7,
-        "question_en": "What is the speed of light in vacuum?",
-        "question_hi": "निर्वात में प्रकाश की गति क्या है?",
-        "options_en": ["3×10⁶ m/s", "3×10⁸ m/s", "3×10¹⁰ m/s", "3×10¹² m/s"],
-        "options_hi": ["3×10⁶ m/s", "3×10⁸ m/s", "3×10¹⁰ m/s", "3×10¹² m/s"],
-        "answer_en": "3×10⁸ m/s",
-        "answer_hi": "3×10⁸ m/s",
+        "question_en": "What does 'noUnusedLocals' do?",
+        "question_hi": "'noUnusedLocals' क्या करता है?",
+        "options_en": ["Flags unused local variables", "Allows unused locals", "Ignores local variables", "Deletes unused locals"],
+        "options_hi": ["Unused local variables flag करता है", "Unused locals allow करता है", "Local variables ignore करता है", "Unused locals delete करता है"],
+        "answer_en": "Flags unused local variables",
+        "answer_hi": "Unused local variables flag करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 8,
-        "question_en": "Which element has the atomic number 1?",
-        "question_hi": "किस तत्व की परमाणु संख्या 1 है?",
-        "options_en": ["Helium", "Hydrogen", "Oxygen", "Carbon"],
-        "options_hi": ["हीलियम", "हाइड्रोजन", "ऑक्सीजन", "कार्बन"],
-        "answer_en": "Hydrogen",
-        "answer_hi": "हाइड्रोजन",
+        "question_en": "What does 'exactOptionalPropertyTypes' do?",
+        "question_hi": "'exactOptionalPropertyTypes' क्या करता है?",
+        "options_en": ["Strict checking of optional properties", "Loose checking of optional properties", "No checking of optional properties", "Random checking of optional properties"],
+        "options_hi": ["Optional properties की strict checking", "Optional properties की loose checking", "Optional properties की कोई checking नहीं", "Optional properties की random checking"],
+        "answer_en": "Strict checking of optional properties",
+        "answer_hi": "Optional properties की strict checking",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 9,
-        "question_en": "What is the main component of the Sun?",
-        "question_hi": "सूर्य का मुख्य घटक क्या है?",
-        "options_en": ["Helium", "Hydrogen", "Oxygen", "Carbon"],
-        "options_hi": ["हीलियम", "हाइड्रोजन", "ऑक्सीजन", "कार्बन"],
-        "answer_en": "Hydrogen",
-        "answer_hi": "हाइड्रोजन",
+        "question_en": "What does 'noImplicitOverride' do?",
+        "question_hi": "'noImplicitOverride' क्या करता है?",
+        "options_en": ["Requires explicit override keyword", "Allows implicit override", "Disables override", "Ignores override"],
+        "options_hi": ["Explicit override keyword require करता है", "Implicit override allow करता है", "Override disable करता है", "Override ignore करता है"],
+        "answer_en": "Requires explicit override keyword",
+        "answer_hi": "Explicit override keyword require करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 10,
-        "question_en": "Which scientist proposed the theory of relativity?",
-        "question_hi": "किस वैज्ञानिक ने सापेक्षता का सिद्धांत प्रस्तावित किया?",
-        "options_en": ["Newton", "Einstein", "Galileo", "Tesla"],
-        "options_hi": ["न्यूटन", "आइंस्टीन", "गैलीलियो", "टेस्ला"],
-        "answer_en": "Einstein",
-        "answer_hi": "आइंस्टीन",
+        "question_en": "What is the 'target' compiler option?",
+        "question_hi": "'target' compiler option क्या है?",
+        "options_en": ["Specifies ECMAScript target version", "Specifies output directory", "Specifies input files", "Specifies module system"],
+        "options_hi": ["ECMAScript target version specify करता है", "Output directory specify करता है", "Input files specify करता है", "Module system specify करता है"],
+        "answer_en": "Specifies ECMAScript target version",
+        "answer_hi": "ECMAScript target version specify करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 11,
-        "question_en": "What is the chemical formula of water?",
-        "question_hi": "पानी का रासायनिक सूत्र क्या है?",
-        "options_en": ["H₂O", "CO₂", "NaCl", "O₂"],
-        "options_hi": ["H₂O", "CO₂", "NaCl", "O₂"],
-        "answer_en": "H₂O",
-        "answer_hi": "H₂O",
+        "question_en": "What is the 'module' compiler option?",
+        "question_hi": "'module' compiler option क्या है?",
+        "options_en": ["Specifies module code generation", "Specifies target version", "Specifies output directory", "Specifies input files"],
+        "options_hi": ["Module code generation specify करता है", "Target version specify करता है", "Output directory specify करता है", "Input files specify करता है"],
+        "answer_en": "Specifies module code generation",
+        "answer_hi": "Module code generation specify करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 12,
-        "question_en": "Which part of the plant conducts photosynthesis?",
-        "question_hi": "पौधे का कौन सा भाग प्रकाश संश्लेषण करता है?",
-        "options_en": ["Root", "Stem", "Leaf", "Flower"],
-        "options_hi": ["जड़", "तना", "पत्ती", "फूल"],
-        "answer_en": "Leaf",
-        "answer_hi": "पत्ती",
+        "question_en": "What does 'outDir' specify?",
+        "question_hi": "'outDir' क्या specify करता है?",
+        "options_en": ["Output directory for compiled files", "Input directory for source files", "Root directory", "Module directory"],
+        "options_hi": ["Compiled files के लिए output directory", "Source files के लिए input directory", "Root directory", "Module directory"],
+        "answer_en": "Output directory for compiled files",
+        "answer_hi": "Compiled files के लिए output directory",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 13,
-        "question_en": "What is the unit of electric resistance?",
-        "question_hi": "विद्युत प्रतिरोध की इकाई क्या है?",
-        "options_en": ["Volt", "Ampere", "Ohm", "Watt"],
-        "options_hi": ["वोल्ट", "एम्पियर", "ओम", "वाट"],
-        "answer_en": "Ohm",
-        "answer_hi": "ओम",
+        "question_en": "What does 'rootDir' specify?",
+        "question_hi": "'rootDir' क्या specify करता है?",
+        "options_en": ["Root directory of input files", "Output directory", "Module directory", "Source directory"],
+        "options_hi": ["Input files की root directory", "Output directory", "Module directory", "Source directory"],
+        "answer_en": "Root directory of input files",
+        "answer_hi": "Input files की root directory",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 14,
-        "question_en": "Which gas do plants absorb during photosynthesis?",
-        "question_hi": "प्रकाश संश्लेषण के दौरान पौधे कौन सी गैस अवशोषित करते हैं?",
-        "options_en": ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"],
-        "options_hi": ["ऑक्सीजन", "नाइट्रोजन", "कार्बन डाइऑक्साइड", "हाइड्रोजन"],
-        "answer_en": "Carbon dioxide",
-        "answer_hi": "कार्बन डाइऑक्साइड",
+        "question_en": "What is the purpose of 'include' in tsconfig.json?",
+        "question_hi": "tsconfig.json में 'include' का purpose क्या है?",
+        "options_en": ["Specifies files to include in compilation", "Specifies files to exclude", "Specifies output files", "Specifies module files"],
+        "options_hi": ["Compilation में include करने के लिए files specify करता है", "Exclude करने के लिए files specify करता है", "Output files specify करता है", "Module files specify करता है"],
+        "answer_en": "Specifies files to include in compilation",
+        "answer_hi": "Compilation में include करने के लिए files specify करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 15,
-        "question_en": "What is the hardest natural substance on Earth?",
-        "question_hi": "पृथ्वी पर सबसे कठोर प्राकृतिक पदार्थ क्या है?",
-        "options_en": ["Gold", "Iron", "Diamond", "Platinum"],
-        "options_hi": ["सोना", "लोहा", "हीरा", "प्लैटिनम"],
-        "answer_en": "Diamond",
-        "answer_hi": "हीरा",
+        "question_en": "What is the purpose of 'exclude' in tsconfig.json?",
+        "question_hi": "tsconfig.json में 'exclude' का purpose क्या है?",
+        "options_en": ["Specifies files to exclude from compilation", "Specifies files to include", "Specifies output files", "Specifies module files"],
+        "options_hi": ["Compilation से exclude करने के लिए files specify करता है", "Include करने के लिए files specify करता है", "Output files specify करता है", "Module files specify करता है"],
+        "answer_en": "Specifies files to exclude from compilation",
+        "answer_hi": "Compilation से exclude करने के लिए files specify करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 16,
-        "question_en": "Which blood group is known as universal donor?",
-        "question_hi": "कौन सा रक्त समूह सार्वत्रिक दाता के रूप में जाना जाता है?",
-        "options_en": ["A", "B", "AB", "O"],
-        "options_hi": ["A", "B", "AB", "O"],
-        "answer_en": "O",
-        "answer_hi": "O",
+        "question_en": "What does 'declaration' compiler option do?",
+        "question_hi": "'declaration' compiler option क्या करता है?",
+        "options_en": ["Generates .d.ts declaration files", "Generates .js files", "Generates .map files", "Generates .json files"],
+        "options_hi": [".d.ts declaration files generate करता है", ".js files generate करता है", ".map files generate करता है", ".json files generate करता है"],
+        "answer_en": "Generates .d.ts declaration files",
+        "answer_hi": ".d.ts declaration files generate करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 17,
-        "question_en": "What is the chemical name of baking soda?",
-        "question_hi": "बेकिंग सोडा का रासायनिक नाम क्या है?",
-        "options_en": ["Sodium carbonate", "Sodium bicarbonate", "Sodium hydroxide", "Sodium chloride"],
-        "options_hi": ["सोडियम कार्बोनेट", "सोडियम बाइकार्बोनेट", "सोडियम हाइड्रॉक्साइड", "सोडियम क्लोराइड"],
-        "answer_en": "Sodium bicarbonate",
-        "answer_hi": "सोडियम बाइकार्बोनेट",
+        "question_en": "What does 'declarationMap' do?",
+        "question_hi": "'declarationMap' क्या करता है?",
+        "options_en": ["Generates sourcemaps for declaration files", "Generates declaration files", "Generates JavaScript files", "Generates sourcemaps for JavaScript"],
+        "options_hi": ["Declaration files के लिए sourcemaps generate करता है", "Declaration files generate करता है", "JavaScript files generate करता है", "JavaScript के लिए sourcemaps generate करता है"],
+        "answer_en": "Generates sourcemaps for declaration files",
+        "answer_hi": "Declaration files के लिए sourcemaps generate करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 18,
-        "question_en": "Which planet has the most moons?",
-        "question_hi": "किस ग्रह के सबसे अधिक चंद्रमा हैं?",
-        "options_en": ["Jupiter", "Saturn", "Uranus", "Neptune"],
-        "options_hi": ["बृहस्पति", "शनि", "अरुण", "वरुण"],
-        "answer_en": "Saturn",
-        "answer_hi": "शनि",
+        "question_en": "What does 'sourceMap' do?",
+        "question_hi": "'sourceMap' क्या करता है?",
+        "options_en": ["Generates sourcemaps for JavaScript files", "Generates declaration files", "Generates JavaScript files", "Generates sourcemaps for declaration files"],
+        "options_hi": ["JavaScript files के लिए sourcemaps generate करता है", "Declaration files generate करता है", "JavaScript files generate करता है", "Declaration files के लिए sourcemaps generate करता है"],
+        "answer_en": "Generates sourcemaps for JavaScript files",
+        "answer_hi": "JavaScript files के लिए sourcemaps generate करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 19,
-        "question_en": "What is the study of fossils called?",
-        "question_hi": "जीवाश्मों के अध्ययन को क्या कहते हैं?",
-        "options_en": ["Geology", "Paleontology", "Archaeology", "Anthropology"],
-        "options_hi": ["भूविज्ञान", "पुराजीवविज्ञान", "पुरातत्व", "मानवविज्ञान"],
-        "answer_en": "Paleontology",
-        "answer_hi": "पुराजीवविज्ञान",
+        "question_en": "What is the purpose of 'lib' compiler option?",
+        "question_hi": "'lib' compiler option का purpose क्या है?",
+        "options_en": ["Specifies library files to include", "Specifies output library", "Specifies input library", "Specifies module library"],
+        "options_hi": ["Include करने के लिए library files specify करता है", "Output library specify करता है", "Input library specify करता है", "Module library specify करता है"],
+        "answer_en": "Specifies library files to include",
+        "answer_hi": "Include करने के लिए library files specify करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 20,
-        "question_en": "Which metal is liquid at room temperature?",
-        "question_hi": "कौन सी धातु कमरे के तापमान पर तरल होती है?",
-        "options_en": ["Iron", "Copper", "Mercury", "Silver"],
-        "options_hi": ["लोहा", "तांबा", "पारा", "चांदी"],
-        "answer_en": "Mercury",
-        "answer_hi": "पारा",
+        "question_en": "What does 'noEmit' do?",
+        "question_hi": "'noEmit' क्या करता है?",
+        "options_en": ["Prevents emitting output files", "Generates output files", "Emits only declarations", "Emits only sourcemaps"],
+        "options_hi": ["Output files emit करने से prevent करता है", "Output files generate करता है", "केवल declarations emit करता है", "केवल sourcemaps emit करता है"],
+        "answer_en": "Prevents emitting output files",
+        "answer_hi": "Output files emit करने से prevent करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 21,
-        "question_en": "What is the largest organ in human body?",
-        "question_hi": "मानव शरीर का सबसे बड़ा अंग कौन सा है?",
-        "options_en": ["Liver", "Skin", "Heart", "Lungs"],
-        "options_hi": ["यकृत", "त्वचा", "हृदय", "फेफड़े"],
-        "answer_en": "Skin",
-        "answer_hi": "त्वचा",
+        "question_en": "What is the purpose of 'esModuleInterop'?",
+        "question_hi": "'esModuleInterop' का purpose क्या है?",
+        "options_en": ["Enables better interoperability with CommonJS", "Disables module interoperability", "Enables AMD modules", "Disables ES modules"],
+        "options_hi": ["CommonJS के साथ better interoperability enable करता है", "Module interoperability disable करता है", "AMD modules enable करता है", "ES modules disable करता है"],
+        "answer_en": "Enables better interoperability with CommonJS",
+        "answer_hi": "CommonJS के साथ better interoperability enable करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 22,
-        "question_en": "Which gas is responsible for ozone layer depletion?",
-        "question_hi": "कौन सी गैस ओजोन परत के क्षय के लिए जिम्मेदार है?",
-        "options_en": ["Oxygen", "Carbon dioxide", "CFCs", "Nitrogen"],
-        "options_hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "CFC", "नाइट्रोजन"],
-        "answer_en": "CFCs",
-        "answer_hi": "CFC",
+        "question_en": "What does 'allowSyntheticDefaultImports' do?",
+        "question_hi": "'allowSyntheticDefaultImports' क्या करता है?",
+        "options_en": ["Allows default imports from modules with no default export", "Disables default imports", "Requires default exports", "Ignores default imports"],
+        "options_hi": ["No default export वाले modules से default imports allow करता है", "Default imports disable करता है", "Default exports require करता है", "Default imports ignore करता है"],
+        "answer_en": "Allows default imports from modules with no default export",
+        "answer_hi": "No default export वाले modules से default imports allow करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 23,
-        "question_en": "What is the SI unit of temperature?",
-        "question_hi": "तापमान की SI इकाई क्या है?",
-        "options_en": ["Fahrenheit", "Celsius", "Kelvin", "Rankine"],
-        "options_hi": ["फारेनहाइट", "सेल्सियस", "केल्विन", "रैंकिन"],
-        "answer_en": "Kelvin",
-        "answer_hi": "केल्विन",
+        "question_en": "What is the 'baseUrl' compiler option?",
+        "question_hi": "'baseUrl' compiler option क्या है?",
+        "options_en": ["Base directory for non-relative module names", "Output directory", "Source directory", "Module directory"],
+        "options_hi": ["Non-relative module names के लिए base directory", "Output directory", "Source directory", "Module directory"],
+        "answer_en": "Base directory for non-relative module names",
+        "answer_hi": "Non-relative module names के लिए base directory",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 24,
-        "question_en": "Which vitamin is produced by human skin in sunlight?",
-        "question_hi": "सूर्य के प्रकाश में मानव त्वचा द्वारा कौन सा विटामिन उत्पन्न होता है?",
-        "options_en": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
-        "options_hi": ["विटामिन A", "विटामिन B", "विटामिन C", "विटामिन D"],
-        "answer_en": "Vitamin D",
-        "answer_hi": "विटामिन D",
+        "question_en": "What are 'paths' used for in tsconfig.json?",
+        "question_hi": "tsconfig.json में 'paths' किसके लिए use होते हैं?",
+        "options_en": ["Module resolution path mapping", "Output path mapping", "Source path mapping", "Import path mapping"],
+        "options_hi": ["Module resolution path mapping", "Output path mapping", "Source path mapping", "Import path mapping"],
+        "answer_en": "Module resolution path mapping",
+        "answer_hi": "Module resolution path mapping",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 25,
-        "question_en": "What is the chemical symbol for Silver?",
-        "question_hi": "चांदी का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Si", "Sv", "Ag", "Au"],
-        "options_hi": ["Si", "Sv", "Ag", "Au"],
-        "answer_en": "Ag",
-        "answer_hi": "Ag",
+        "question_en": "What does 'typeRoots' specify?",
+        "question_hi": "'typeRoots' क्या specify करता है?",
+        "options_en": ["Locations for type definitions", "Locations for source files", "Locations for output files", "Locations for module files"],
+        "options_hi": ["Type definitions के locations", "Source files के locations", "Output files के locations", "Module files के locations"],
+        "answer_en": "Locations for type definitions",
+        "answer_hi": "Type definitions के locations",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 26,
-        "question_en": "Which instrument is used to measure atmospheric pressure?",
-        "question_hi": "वायुमंडलीय दबाव मापने के लिए किस उपकरण का उपयोग किया जाता है?",
-        "options_en": ["Thermometer", "Barometer", "Hygrometer", "Anemometer"],
-        "options_hi": ["थर्मामीटर", "बैरोमीटर", "हाइग्रोमीटर", "एनीमोमीटर"],
-        "answer_en": "Barometer",
-        "answer_hi": "बैरोमीटर",
+        "question_en": "What are 'types' in tsconfig.json?",
+        "question_hi": "tsconfig.json में 'types' क्या हैं?",
+        "options_en": ["Type packages to include", "Type packages to exclude", "Source types", "Output types"],
+        "options_hi": ["Include करने के लिए type packages", "Exclude करने के लिए type packages", "Source types", "Output types"],
+        "answer_en": "Type packages to include",
+        "answer_hi": "Include करने के लिए type packages",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 27,
-        "question_en": "What is the main component of natural gas?",
-        "question_hi": "प्राकृतिक गैस का मुख्य घटक क्या है?",
-        "options_en": ["Propane", "Butane", "Methane", "Ethane"],
-        "options_hi": ["प्रोपेन", "ब्यूटेन", "मीथेन", "ईथेन"],
-        "answer_en": "Methane",
-        "answer_hi": "मीथेन",
+        "question_en": "What does 'skipLibCheck' do?",
+        "question_hi": "'skipLibCheck' क्या करता है?",
+        "options_en": ["Skips type checking of declaration files", "Enables lib checking", "Disables all checking", "Skips source checking"],
+        "options_hi": ["Declaration files की type checking skip करता है", "Lib checking enable करता है", "सभी checking disable करता है", "Source checking skip करता है"],
+        "answer_en": "Skips type checking of declaration files",
+        "answer_hi": "Declaration files की type checking skip करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 28,
-        "question_en": "Which cell organelle is called powerhouse of the cell?",
-        "question_hi": "किस कोशिका अंग को कोशिका का पावरहाउस कहा जाता है?",
-        "options_en": ["Nucleus", "Mitochondria", "Ribosome", "Golgi apparatus"],
-        "options_hi": ["केंद्रक", "माइटोकॉन्ड्रिया", "राइबोसोम", "गॉल्जी उपकरण"],
-        "answer_en": "Mitochondria",
-        "answer_hi": "माइटोकॉन्ड्रिया",
+        "question_en": "What is the 'moduleResolution' option?",
+        "question_hi": "'moduleResolution' option क्या है?",
+        "options_en": ["Specifies module resolution strategy", "Specifies module format", "Specifies module target", "Specifies module output"],
+        "options_hi": ["Module resolution strategy specify करता है", "Module format specify करता है", "Module target specify करता है", "Module output specify करता है"],
+        "answer_en": "Specifies module resolution strategy",
+        "answer_hi": "Module resolution strategy specify करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 29,
-        "question_en": "What is the unit of frequency?",
-        "question_hi": "आवृत्ति की इकाई क्या है?",
-        "options_en": ["Hertz", "Decibel", "Newton", "Joule"],
-        "options_hi": ["हर्ट्ज", "डेसिबल", "न्यूटन", "जूल"],
-        "answer_en": "Hertz",
-        "answer_hi": "हर्ट्ज",
+        "question_en": "What are the main module resolution strategies?",
+        "question_hi": "Main module resolution strategies कौन सी हैं?",
+        "options_en": ["node and classic", "commonjs and amd", "es6 and umd", "system and none"],
+        "options_hi": ["node और classic", "commonjs और amd", "es6 और umd", "system और none"],
+        "answer_en": "node and classic",
+        "answer_hi": "node और classic",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 30,
-        "question_en": "Which acid is present in vinegar?",
-        "question_hi": "सिरका में कौन सा अम्ल होता है?",
-        "options_en": ["Citric acid", "Acetic acid", "Lactic acid", "Formic acid"],
-        "options_hi": ["सिट्रिक अम्ल", "एसिटिक अम्ल", "लैक्टिक अम्ल", "फॉर्मिक अम्ल"],
-        "answer_en": "Acetic acid",
-        "answer_hi": "एसिटिक अम्ल",
+        "question_en": "What does 'forceConsistentCasingInFileNames' do?",
+        "question_hi": "'forceConsistentCasingInFileNames' क्या करता है?",
+        "options_en": ["Ensures consistent file name casing in imports", "Allows inconsistent casing", "Ignores file casing", "Changes file casing"],
+        "options_hi": ["Imports में consistent file name casing ensure करता है", "Inconsistent casing allow करता है", "File casing ignore करता है", "File casing change करता है"],
+        "answer_en": "Ensures consistent file name casing in imports",
+        "answer_hi": "Imports में consistent file name casing ensure करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 31,
-        "question_en": "What is the study of earthquakes called?",
-        "question_hi": "भूकंपों के अध्ययन को क्या कहते हैं?",
-        "options_en": ["Volcanology", "Seismology", "Meteorology", "Geology"],
-        "options_hi": ["ज्वालामुखी विज्ञान", "भूकंप विज्ञान", "मौसम विज्ञान", "भूविज्ञान"],
-        "answer_en": "Seismology",
-        "answer_hi": "भूकंप विज्ञान",
+        "question_en": "What is the 'noErrorTruncation' option?",
+        "question_hi": "'noErrorTruncation' option क्या है?",
+        "options_en": ["Prevents truncation of error messages", "Enables error truncation", "Disables error messages", "Ignores errors"],
+        "options_hi": ["Error messages की truncation prevent करता है", "Error truncation enable करता है", "Error messages disable करता है", "Errors ignore करता है"],
+        "answer_en": "Prevents truncation of error messages",
+        "answer_hi": "Error messages की truncation prevent करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 32,
-        "question_en": "Which gas is filled in electric bulbs?",
-        "question_hi": "विद्युत बल्बों में कौन सी गैस भरी जाती है?",
-        "options_en": ["Oxygen", "Hydrogen", "Nitrogen", "Argon"],
-        "options_hi": ["ऑक्सीजन", "हाइड्रोजन", "नाइट्रोजन", "आर्गन"],
-        "answer_en": "Argon",
-        "answer_hi": "आर्गन",
+        "question_en": "What does 'preserveConstEnums' do?",
+        "question_hi": "'preserveConstEnums' क्या करता है?",
+        "options_en": ["Preserves const enum declarations", "Removes const enums", "Ignores const enums", "Converts const enums to regular enums"],
+        "options_hi": ["Const enum declarations preserve करता है", "Const enums remove करता है", "Const enums ignore करता है", "Const enums को regular enums में convert करता है"],
+        "answer_en": "Preserves const enum declarations",
+        "answer_hi": "Const enum declarations preserve करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 33,
-        "question_en": "What is the chemical formula of table salt?",
-        "question_hi": "टेबल साल्ट का रासायनिक सूत्र क्या है?",
-        "options_en": ["NaCl", "KCl", "CaCl₂", "MgCl₂"],
-        "options_hi": ["NaCl", "KCl", "CaCl₂", "MgCl₂"],
-        "answer_en": "NaCl",
-        "answer_hi": "NaCl",
+        "question_en": "What is the 'incremental' option?",
+        "question_hi": "'incremental' option क्या है?",
+        "options_en": ["Enables incremental compilation", "Disables compilation", "Enables full compilation", "Disables incremental compilation"],
+        "options_hi": ["Incremental compilation enable करता है", "Compilation disable करता है", "Full compilation enable करता है", "Incremental compilation disable करता है"],
+        "answer_en": "Enables incremental compilation",
+        "answer_hi": "Incremental compilation enable करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 34,
-        "question_en": "Which planet is closest to the Sun?",
-        "question_hi": "सूर्य के सबसे निकट कौन सा ग्रह है?",
-        "options_en": ["Venus", "Mercury", "Earth", "Mars"],
-        "options_hi": ["शुक्र", "बुध", "पृथ्वी", "मंगल"],
-        "answer_en": "Mercury",
-        "answer_hi": "बुध",
+        "question_en": "What does 'tsBuildInfoFile' specify?",
+        "question_hi": "'tsBuildInfoFile' क्या specify करता है?",
+        "options_en": ["File to store incremental compilation information", "File to store source maps", "File to store declarations", "File to store outputs"],
+        "options_hi": ["Incremental compilation information store करने के लिए file", "Source maps store करने के लिए file", "Declarations store करने के लिए file", "Outputs store करने के लिए file"],
+        "answer_en": "File to store incremental compilation information",
+        "answer_hi": "Incremental compilation information store करने के लिए file",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 35,
-        "question_en": "What is the SI unit of electric current?",
-        "question_hi": "विद्युत धारा की SI इकाई क्या है?",
-        "options_en": ["Volt", "Ampere", "Ohm", "Watt"],
-        "options_hi": ["वोल्ट", "एम्पियर", "ओम", "वाट"],
-        "answer_en": "Ampere",
-        "answer_hi": "एम्पियर",
+        "question_en": "What is the 'removeComments' option?",
+        "question_hi": "'removeComments' option क्या है?",
+        "options_en": ["Removes comments from output", "Preserves comments in output", "Adds comments to output", "Ignores comments"],
+        "options_hi": ["Output से comments remove करता है", "Output में comments preserve करता है", "Output में comments add करता है", "Comments ignore करता है"],
+        "answer_en": "Removes comments from output",
+        "answer_hi": "Output से comments remove करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 36,
-        "question_en": "Which vitamin is essential for blood clotting?",
-        "question_hi": "रक्त के थक्के जमने के लिए कौन सा विटामिन आवश्यक है?",
-        "options_en": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin K"],
-        "options_hi": ["विटामिन A", "विटामिन B", "विटामिन C", "विटामिन K"],
-        "answer_en": "Vitamin K",
-        "answer_hi": "विटामिन K",
+        "question_en": "What does 'noEmitOnError' do?",
+        "question_hi": "'noEmitOnError' क्या करता है?",
+        "options_en": ["Prevents emitting files if there are errors", "Emits files even with errors", "Ignores errors", "Reports errors but still emits"],
+        "options_hi": ["Errors होने पर files emit करने से prevent करता है", "Errors के साथ भी files emit करता है", "Errors ignore करता है", "Errors report करता है लेकिन फिर भी emit करता है"],
+        "answer_en": "Prevents emitting files if there are errors",
+        "answer_hi": "Errors होने पर files emit करने से prevent करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 37,
-        "question_en": "What is the chemical symbol for Iron?",
-        "question_hi": "लोहे का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Ir", "Fe", "In", "Io"],
-        "options_hi": ["Ir", "Fe", "In", "Io"],
-        "answer_en": "Fe",
-        "answer_hi": "Fe",
+        "question_en": "What is the 'experimentalDecorators' option?",
+        "question_hi": "'experimentalDecorators' option क्या है?",
+        "options_en": ["Enables experimental decorator support", "Disables decorators", "Enables stable decorators", "Ignores decorators"],
+        "options_hi": ["Experimental decorator support enable करता है", "Decorators disable करता है", "Stable decorators enable करता है", "Decorators ignore करता है"],
+        "answer_en": "Enables experimental decorator support",
+        "answer_hi": "Experimental decorator support enable करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 38,
-        "question_en": "Which gas is known as laughing gas?",
-        "question_hi": "कौन सी गैस हंसाने वाली गैस के नाम से जानी जाती है?",
-        "options_en": ["Nitrous oxide", "Carbon dioxide", "Oxygen", "Hydrogen"],
-        "options_hi": ["नाइट्रस ऑक्साइड", "कार्बन डाइऑक्साइड", "ऑक्सीजन", "हाइड्रोजन"],
-        "answer_en": "Nitrous oxide",
-        "answer_hi": "नाइट्रस ऑक्साइड",
+        "question_en": "What does 'emitDecoratorMetadata' do?",
+        "question_hi": "'emitDecoratorMetadata' क्या करता है?",
+        "options_en": ["Emits decorator metadata", "Removes decorator metadata", "Ignores decorator metadata", "Validates decorator metadata"],
+        "options_hi": ["Decorator metadata emit करता है", "Decorator metadata remove करता है", "Decorator metadata ignore करता है", "Decorator metadata validate करता है"],
+        "answer_en": "Emits decorator metadata",
+        "answer_hi": "Decorator metadata emit करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 39,
-        "question_en": "What is the largest planet in our solar system?",
-        "question_hi": "हमारे सौर मंडल का सबसे बड़ा ग्रह कौन सा है?",
-        "options_en": ["Earth", "Jupiter", "Saturn", "Neptune"],
-        "options_hi": ["पृथ्वी", "बृहस्पति", "शनि", "वरुण"],
-        "answer_en": "Jupiter",
-        "answer_hi": "बृहस्पति",
+        "question_en": "What is the 'jsx' option used for?",
+        "question_hi": "'jsx' option किसके लिए use होती है?",
+        "options_en": ["Specifies JSX code generation", "Specifies JavaScript output", "Specifies TypeScript input", "Specifies module output"],
+        "options_hi": ["JSX code generation specify करती है", "JavaScript output specify करती है", "TypeScript input specify करती है", "Module output specify करती है"],
+        "answer_en": "Specifies JSX code generation",
+        "answer_hi": "JSX code generation specify करती है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 40,
-        "question_en": "Which part of human brain controls balance?",
-        "question_hi": "मानव मस्तिष्क का कौन सा भाग संतुलन नियंत्रित करता है?",
-        "options_en": ["Cerebrum", "Cerebellum", "Medulla", "Hypothalamus"],
-        "options_hi": ["सेरेब्रम", "सेरेबेलम", "मेडुला", "हाइपोथैलेमस"],
-        "answer_en": "Cerebellum",
-        "answer_hi": "सेरेबेलम",
+        "question_en": "What are the possible values for 'jsx'?",
+        "question_hi": "'jsx' के possible values क्या हैं?",
+        "options_en": ["preserve, react, react-native", "jsx, tsx, react", "preserve, compile, transform", "none, all, some"],
+        "options_hi": ["preserve, react, react-native", "jsx, tsx, react", "preserve, compile, transform", "none, all, some"],
+        "answer_en": "preserve, react, react-native",
+        "answer_hi": "preserve, react, react-native",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 41,
-        "question_en": "What is the chemical formula of methane?",
-        "question_hi": "मीथेन का रासायनिक सूत्र क्या है?",
-        "options_en": ["CH₄", "C₂H₆", "C₃H₈", "C₄H₁₀"],
-        "options_hi": ["CH₄", "C₂H₆", "C₃H₈", "C₄H₁₀"],
-        "answer_en": "CH₄",
-        "answer_hi": "CH₄",
+        "question_en": "What does 'jsxFactory' specify?",
+        "question_hi": "'jsxFactory' क्या specify करता है?",
+        "options_en": ["JSX factory function to use", "JSX output directory", "JSX input files", "JSX module system"],
+        "options_hi": ["Use करने के लिए JSX factory function", "JSX output directory", "JSX input files", "JSX module system"],
+        "answer_en": "JSX factory function to use",
+        "answer_hi": "Use करने के लिए JSX factory function",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 41,
+        "question_en": "What does 'jsxFragmentFactory' specify?",
+        "question_hi": "'jsxFragmentFactory' क्या specify करता है?",
+        "options_en": ["JSX fragment factory function", "JSX factory function", "JSX output function", "JSX input function"],
+        "options_hi": ["JSX fragment factory function", "JSX factory function", "JSX output function", "JSX input function"],
+        "answer_en": "JSX fragment factory function",
+        "answer_hi": "JSX fragment factory function",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 42,
-        "question_en": "Which instrument is used to measure electric current?",
-        "question_hi": "विद्युत धारा मापने के लिए किस उपकरण का उपयोग किया जाता है?",
-        "options_en": ["Voltmeter", "Ammeter", "Ohmmeter", "Galvanometer"],
-        "options_hi": ["वोल्टमीटर", "एमीटर", "ओममीटर", "गैल्वेनोमीटर"],
-        "answer_en": "Ammeter",
-        "answer_hi": "एमीटर",
+        "question_en": "What is the 'reactNamespace' option?",
+        "question_hi": "'reactNamespace' option क्या है?",
+        "options_en": ["Specifies React namespace for JSX", "Specifies React version", "Specifies React components", "Specifies React imports"],
+        "options_hi": ["JSX के लिए React namespace specify करता है", "React version specify करता है", "React components specify करता है", "React imports specify करता है"],
+        "answer_en": "Specifies React namespace for JSX",
+        "answer_hi": "JSX के लिए React namespace specify करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 43,
-        "question_en": "What is the main component of biogas?",
-        "question_hi": "बायोगैस का मुख्य घटक क्या है?",
-        "options_en": ["Propane", "Butane", "Methane", "Ethane"],
-        "options_hi": ["प्रोपेन", "ब्यूटेन", "मीथेन", "ईथेन"],
-        "answer_en": "Methane",
-        "answer_hi": "मीथेन",
+        "question_en": "What does 'keyofStringsOnly' do?",
+        "question_hi": "'keyofStringsOnly' क्या करता है?",
+        "options_en": ["Treats keyof as keyof string", "Treats keyof as any", "Treats keyof as never", "Treats keyof as unknown"],
+        "options_hi": ["keyof को keyof string के रूप में treat करता है", "keyof को any के रूप में treat करता है", "keyof को never के रूप में treat करता है", "keyof को unknown के रूप में treat करता है"],
+        "answer_en": "Treats keyof as keyof string",
+        "answer_hi": "keyof को keyof string के रूप में treat करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 44,
-        "question_en": "Which vitamin deficiency causes scurvy?",
-        "question_hi": "किस विटामिन की कमी से स्कर्वी होता है?",
-        "options_en": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
-        "options_hi": ["विटामिन A", "विटामिन B", "विटामिन C", "विटामिन D"],
-        "answer_en": "Vitamin C",
-        "answer_hi": "विटामिन C",
+        "question_en": "What is the 'useDefineForClassFields' option?",
+        "question_hi": "'useDefineForClassFields' option क्या है?",
+        "options_en": ["Uses ECMAScript standard class fields", "Uses legacy class fields", "Disables class fields", "Ignores class fields"],
+        "options_hi": ["ECMAScript standard class fields use करता है", "Legacy class fields use करता है", "Class fields disable करता है", "Class fields ignore करता है"],
+        "answer_en": "Uses ECMAScript standard class fields",
+        "answer_hi": "ECMAScript standard class fields use करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 45,
-        "question_en": "What is the chemical symbol for Potassium?",
-        "question_hi": "पोटेशियम का रासायनिक प्रतीक क्या है?",
-        "options_en": ["P", "Pt", "K", "Ka"],
-        "options_hi": ["P", "Pt", "K", "Ka"],
-        "answer_en": "K",
-        "answer_hi": "K",
+        "question_en": "What does 'useUnknownInCatchVariables' do?",
+        "question_hi": "'useUnknownInCatchVariables' क्या करता है?",
+        "options_en": ["Uses unknown type for catch variables", "Uses any type for catch variables", "Uses string type for catch variables", "Uses number type for catch variables"],
+        "options_hi": ["Catch variables के लिए unknown type use करता है", "Catch variables के लिए any type use करता है", "Catch variables के लिए string type use करता है", "Catch variables के लिए number type use करता है"],
+        "answer_en": "Uses unknown type for catch variables",
+        "answer_hi": "Catch variables के लिए unknown type use करता है",
         "attempted": false,
         "selected": ""
     },
-        {
+    {
         "num": 46,
-        "question_en": "Which gas is produced during photosynthesis?",
-        "question_hi": "प्रकाश संश्लेषण के दौरान कौन सी गैस उत्पन्न होती है?",
-        "options_en": ["Carbon dioxide", "Oxygen", "Nitrogen", "Hydrogen"],
-        "options_hi": ["कार्बन डाइऑक्साइड", "ऑक्सीजन", "नाइट्रोजन", "हाइड्रोजन"],
-        "answer_en": "Oxygen",
-        "answer_hi": "ऑक्सीजन",
+        "question_en": "What is the 'noFallthroughCasesInSwitch' option?",
+        "question_hi": "'noFallthroughCasesInSwitch' option क्या है?",
+        "options_en": ["Reports fallthrough cases in switch statements", "Allows fallthrough cases", "Ignores switch statements", "Disables switch statements"],
+        "options_hi": ["Switch statements में fallthrough cases report करता है", "Fallthrough cases allow करता है", "Switch statements ignore करता है", "Switch statements disable करता है"],
+        "answer_en": "Reports fallthrough cases in switch statements",
+        "answer_hi": "Switch statements में fallthrough cases report करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 47,
-        "question_en": "What is the unit of power?",
-        "question_hi": "शक्ति की इकाई क्या है?",
-        "options_en": ["Joule", "Watt", "Newton", "Pascal"],
-        "options_hi": ["जूल", "वाट", "न्यूटन", "पास्कल"],
-        "answer_en": "Watt",
-        "answer_hi": "वाट",
+        "question_en": "What does 'noImplicitAny' help prevent?",
+        "question_hi": "'noImplicitAny' क्या prevent करने में help करता है?",
+        "options_en": ["Accidental use of any type", "Intentional use of any type", "Use of unknown type", "Use of never type"],
+        "options_hi": ["Any type के accidental use को prevent करता है", "Any type के intentional use को prevent करता है", "Unknown type के use को prevent करता है", "Never type के use को prevent करता है"],
+        "answer_en": "Accidental use of any type",
+        "answer_hi": "Any type के accidental use को prevent करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 48,
-        "question_en": "Which metal is the best conductor of electricity?",
-        "question_hi": "कौन सी धातु विद्युत की सबसे अच्छी सुचालक है?",
-        "options_en": ["Copper", "Silver", "Gold", "Aluminum"],
-        "options_hi": ["तांबा", "चांदी", "सोना", "एल्युमिनियम"],
-        "answer_en": "Silver",
-        "answer_hi": "चांदी",
+        "question_en": "What is the benefit of 'strictNullChecks'?",
+        "question_hi": "'strictNullChecks' का benefit क्या है?",
+        "options_en": ["Catches null and undefined errors at compile time", "Makes code run faster", "Reduces file size", "Improves performance"],
+        "options_hi": ["Compile time पर null और undefined errors catch करता है", "Code को faster run करता है", "File size reduce करता है", "Performance improve करता है"],
+        "answer_en": "Catches null and undefined errors at compile time",
+        "answer_hi": "Compile time पर null और undefined errors catch करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 49,
-        "question_en": "What is the chemical name of plaster of Paris?",
-        "question_hi": "प्लास्टर ऑफ पेरिस का रासायनिक नाम क्या है?",
-        "options_en": ["Calcium sulfate", "Calcium carbonate", "Calcium hydroxide", "Calcium oxide"],
-        "options_hi": ["कैल्शियम सल्फेट", "कैल्शियम कार्बोनेट", "कैल्शियम हाइड्रॉक्साइड", "कैल्शियम ऑक्साइड"],
-        "answer_en": "Calcium sulfate",
-        "answer_hi": "कैल्शियम सल्फेट",
+        "question_en": "What does 'noUncheckedIndexedAccess' do?",
+        "question_hi": "'noUncheckedIndexedAccess' क्या करता है?",
+        "options_en": ["Adds undefined to indexed access types", "Removes undefined from indexed access", "Ignores indexed access", "Disables indexed access"],
+        "options_hi": ["Indexed access types में undefined add करता है", "Indexed access से undefined remove करता है", "Indexed access ignore करता है", "Indexed access disable करता है"],
+        "answer_en": "Adds undefined to indexed access types",
+        "answer_hi": "Indexed access types में undefined add करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 50,
-        "question_en": "Which planet has rings around it?",
-        "question_hi": "किस ग्रह के चारों ओर वलय हैं?",
-        "options_en": ["Jupiter", "Saturn", "Uranus", "All of these"],
-        "options_hi": ["बृहस्पति", "शनि", "अरुण", "ये सभी"],
-        "answer_en": "All of these",
-        "answer_hi": "ये सभी",
+        "question_en": "What is the purpose of 'exactOptionalPropertyTypes'?",
+        "question_hi": "'exactOptionalPropertyTypes' का purpose क्या है?",
+        "options_en": ["Prevents assigning undefined to optional properties", "Allows undefined for optional properties", "Requires undefined for optional properties", "Ignores optional properties"],
+        "options_hi": ["Optional properties को undefined assign करने से prevent करता है", "Optional properties के लिए undefined allow करता है", "Optional properties के लिए undefined require करता है", "Optional properties ignore करता है"],
+        "answer_en": "Prevents assigning undefined to optional properties",
+        "answer_hi": "Optional properties को undefined assign करने से prevent करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 51,
-        "question_en": "What is the SI unit of pressure?",
-        "question_hi": "दाब की SI इकाई क्या है?",
-        "options_en": ["Newton", "Pascal", "Joule", "Watt"],
-        "options_hi": ["न्यूटन", "पास्कल", "जूल", "वाट"],
-        "answer_en": "Pascal",
-        "answer_hi": "पास्कल",
+        "question_en": "What does 'noPropertyAccessFromIndexSignature' do?",
+        "question_hi": "'noPropertyAccessFromIndexSignature' क्या करता है?",
+        "options_en": ["Requires index access for index signature properties", "Allows property access for index signatures", "Disables index signatures", "Ignores index signatures"],
+        "options_hi": ["Index signature properties के लिए index access require करता है", "Index signatures के लिए property access allow करता है", "Index signatures disable करता है", "Index signatures ignore करता है"],
+        "answer_en": "Requires index access for index signature properties",
+        "answer_hi": "Index signature properties के लिए index access require करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 52,
-        "question_en": "Which vitamin is also known as ascorbic acid?",
-        "question_hi": "किस विटामिन को एस्कॉर्बिक अम्ल के नाम से भी जाना जाता है?",
-        "options_en": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
-        "options_hi": ["विटामिन A", "विटामिन B", "विटामिन C", "विटामिन D"],
-        "answer_en": "Vitamin C",
-        "answer_hi": "विटामिन C",
+        "question_en": "What is the 'noUncheckedIndexedAccess' option?",
+        "question_hi": "'noUncheckedIndexedAccess' option क्या है?",
+        "options_en": ["Includes undefined in index access results", "Excludes undefined from index access", "Ignores index access", "Disables index access"],
+        "options_hi": ["Index access results में undefined include करता है", "Index access से undefined exclude करता है", "Index access ignore करता है", "Index access disable करता है"],
+        "answer_en": "Includes undefined in index access results",
+        "answer_hi": "Index access results में undefined include करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 53,
-        "question_en": "What is the chemical symbol for Sodium?",
-        "question_hi": "सोडियम का रासायनिक प्रतीक क्या है?",
-        "options_en": ["So", "Sd", "Na", "Nm"],
-        "options_hi": ["So", "Sd", "Na", "Nm"],
-        "answer_en": "Na",
-        "answer_hi": "Na",
+        "question_en": "What does 'allowUnreachableCode' do?",
+        "question_hi": "'allowUnreachableCode' क्या करता है?",
+        "options_en": ["Allows unreachable code", "Disables unreachable code", "Removes unreachable code", "Ignores unreachable code"],
+        "options_hi": ["Unreachable code allow करता है", "Unreachable code disable करता है", "Unreachable code remove करता है", "Unreachable code ignore करता है"],
+        "answer_en": "Allows unreachable code",
+        "answer_hi": "Unreachable code allow करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 54,
-        "question_en": "Which instrument is used to measure humidity?",
-        "question_hi": "आर्द्रता मापने के लिए किस उपकरण का उपयोग किया जाता है?",
-        "options_en": ["Barometer", "Hygrometer", "Thermometer", "Anemometer"],
-        "options_hi": ["बैरोमीटर", "हाइग्रोमीटर", "थर्मामीटर", "एनीमोमीटर"],
-        "answer_en": "Hygrometer",
-        "answer_hi": "हाइग्रोमीटर",
+        "question_en": "What does 'allowUnusedLabels' do?",
+        "question_hi": "'allowUnusedLabels' क्या करता है?",
+        "options_en": ["Allows unused labels", "Disables unused labels", "Removes unused labels", "Ignores unused labels"],
+        "options_hi": ["Unused labels allow करता है", "Unused labels disable करता है", "Unused labels remove करता है", "Unused labels ignore करता है"],
+        "answer_en": "Allows unused labels",
+        "answer_hi": "Unused labels allow करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 55,
-        "question_en": "What is the main component of LPG?",
-        "question_hi": "एलपीजी का मुख्य घटक क्या है?",
-        "options_en": ["Methane", "Propane", "Butane", "Ethane"],
-        "options_hi": ["मीथेन", "प्रोपेन", "ब्यूटेन", "ईथेन"],
-        "answer_en": "Butane",
-        "answer_hi": "ब्यूटेन",
+        "question_en": "What is the 'assumeChangesOnlyAffectDirectDependencies' option?",
+        "question_hi": "'assumeChangesOnlyAffectDirectDependencies' option क्या है?",
+        "options_en": ["Optimizes rebuilds by assuming limited dependency effects", "Forces full rebuilds", "Disables rebuilds", "Ignores dependencies"],
+        "options_hi": ["Limited dependency effects assume करके rebuilds optimize करता है", "Full rebuilds force करता है", "Rebuilds disable करता है", "Dependencies ignore करता है"],
+        "answer_en": "Optimizes rebuilds by assuming limited dependency effects",
+        "answer_hi": "Limited dependency effects assume करके rebuilds optimize करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 56,
-        "question_en": "Which planet is known as the Morning Star?",
-        "question_hi": "कौन सा ग्रह मॉर्निंग स्टार के नाम से जाना जाता है?",
-        "options_en": ["Mars", "Venus", "Mercury", "Jupiter"],
-        "options_hi": ["मंगल", "शुक्र", "बुध", "बृहस्पति"],
-        "answer_en": "Venus",
-        "answer_hi": "शुक्र",
+        "question_en": "What does 'charset' specify?",
+        "question_hi": "'charset' क्या specify करता है?",
+        "options_en": ["Character set for input files", "Character set for output files", "Character set for source maps", "Character set for declarations"],
+        "options_hi": ["Input files के लिए character set", "Output files के लिए character set", "Source maps के लिए character set", "Declarations के लिए character set"],
+        "answer_en": "Character set for input files",
+        "answer_hi": "Input files के लिए character set",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 57,
-        "question_en": "What is the chemical formula of glucose?",
-        "question_hi": "ग्लूकोज का रासायनिक सूत्र क्या है?",
-        "options_en": ["C₆H₁₂O₆", "C₁₂H₂₂O₁₁", "C₂H₅OH", "CH₃COOH"],
-        "options_hi": ["C₆H₁₂O₆", "C₁₂H₂₂O₁₁", "C₂H₅OH", "CH₃COOH"],
-        "answer_en": "C₆H₁₂O₆",
-        "answer_hi": "C₆H₁₂O₆",
+        "question_en": "What is the 'diagnostics' option?",
+        "question_hi": "'diagnostics' option क्या है?",
+        "options_en": ["Shows diagnostic information", "Hides diagnostic information", "Ignores diagnostics", "Disables diagnostics"],
+        "options_hi": ["Diagnostic information show करता है", "Diagnostic information hide करता है", "Diagnostics ignore करता है", "Diagnostics disable करता है"],
+        "answer_en": "Shows diagnostic information",
+        "answer_hi": "Diagnostic information show करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 58,
-        "question_en": "Which blood cells fight infection?",
-        "question_hi": "कौन सी रक्त कोशिकाएं संक्रमण से लड़ती हैं?",
-        "options_en": ["Red blood cells", "White blood cells", "Platelets", "Plasma"],
-        "options_hi": ["लाल रक्त कोशिकाएं", "श्वेत रक्त कोशिकाएं", "प्लेटलेट्स", "प्लाज्मा"],
-        "answer_en": "White blood cells",
-        "answer_hi": "श्वेत रक्त कोशिकाएं",
+        "question_en": "What does 'explainFiles' do?",
+        "question_hi": "'explainFiles' क्या करता है?",
+        "options_en": ["Explains why files were included in compilation", "Explains why files were excluded", "Lists all files", "Shows file dependencies"],
+        "options_hi": ["Explain करता है कि files compilation में क्यों include हुईं", "Explain करता है कि files क्यों exclude हुईं", "सभी files list करता है", "File dependencies show करता है"],
+        "answer_en": "Explains why files were included in compilation",
+        "answer_hi": "Explain करता है कि files compilation में क्यों include हुईं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 59,
-        "question_en": "What is the unit of energy?",
-        "question_hi": "ऊर्जा की इकाई क्या है?",
-        "options_en": ["Watt", "Joule", "Newton", "Pascal"],
-        "options_hi": ["वाट", "जूल", "न्यूटन", "पास्कल"],
-        "answer_en": "Joule",
-        "answer_hi": "जूल",
+        "question_en": "What is the 'extendedDiagnostics' option?",
+        "question_hi": "'extendedDiagnostics' option क्या है?",
+        "options_en": ["Shows extended diagnostic information", "Shows basic diagnostics", "Hides diagnostics", "Disables diagnostics"],
+        "options_hi": ["Extended diagnostic information show करता है", "Basic diagnostics show करता है", "Diagnostics hide करता है", "Diagnostics disable करता है"],
+        "answer_en": "Shows extended diagnostic information",
+        "answer_hi": "Extended diagnostic information show करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 60,
-        "question_en": "Which acid is present in our stomach?",
-        "question_hi": "हमारे पेट में कौन सा अम्ल होता है?",
-        "options_en": ["Acetic acid", "Hydrochloric acid", "Sulfuric acid", "Nitric acid"],
-        "options_hi": ["एसिटिक अम्ल", "हाइड्रोक्लोरिक अम्ल", "सल्फ्यूरिक अम्ल", "नाइट्रिक अम्ल"],
-        "answer_en": "Hydrochloric acid",
-        "answer_hi": "हाइड्रोक्लोरिक अम्ल",
+        "question_en": "What does 'generateCpuProfile' do?",
+        "question_hi": "'generateCpuProfile' क्या करता है?",
+        "options_en": ["Generates CPU profile for performance analysis", "Generates memory profile", "Generates coverage report", "Generates type report"],
+        "options_hi": ["Performance analysis के लिए CPU profile generate करता है", "Memory profile generate करता है", "Coverage report generate करता है", "Type report generate करता है"],
+        "answer_en": "Generates CPU profile for performance analysis",
+        "answer_hi": "Performance analysis के लिए CPU profile generate करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 61,
-        "question_en": "What is the chemical symbol for Copper?",
-        "question_hi": "तांबे का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Co", "Cp", "Cu", "Cr"],
-        "options_hi": ["Co", "Cp", "Cu", "Cr"],
-        "answer_en": "Cu",
-        "answer_hi": "Cu",
+        "question_en": "What is the 'listEmittedFiles' option?",
+        "question_hi": "'listEmittedFiles' option क्या है?",
+        "options_en": ["Lists all emitted files", "Lists source files", "Lists declaration files", "Lists all files"],
+        "options_hi": ["सभी emitted files list करता है", "Source files list करता है", "Declaration files list करता है", "सभी files list करता है"],
+        "answer_en": "Lists all emitted files",
+        "answer_hi": "सभी emitted files list करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 62,
-        "question_en": "Which instrument is used to measure wind speed?",
-        "question_hi": "हवा की गति मापने के लिए किस उपकरण का उपयोग किया जाता है?",
-        "options_en": ["Barometer", "Hygrometer", "Anemometer", "Thermometer"],
-        "options_hi": ["बैरोमीटर", "हाइग्रोमीटर", "एनीमोमीटर", "थर्मामीटर"],
-        "answer_en": "Anemometer",
-        "answer_hi": "एनीमोमीटर",
+        "question_en": "What does 'listFiles' do?",
+        "question_hi": "'listFiles' क्या करता है?",
+        "options_en": ["Lists all files parsed by TypeScript", "Lists emitted files", "Lists declaration files", "Lists source files"],
+        "options_hi": ["TypeScript द्वारा parsed सभी files list करता है", "Emitted files list करता है", "Declaration files list करता है", "Source files list करता है"],
+        "answer_en": "Lists all files parsed by TypeScript",
+        "answer_hi": "TypeScript द्वारा parsed सभी files list करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 63,
-        "question_en": "What is the main component of coal?",
-        "question_hi": "कोयले का मुख्य घटक क्या है?",
-        "options_en": ["Carbon", "Oxygen", "Hydrogen", "Nitrogen"],
-        "options_hi": ["कार्बन", "ऑक्सीजन", "हाइड्रोजन", "नाइट्रोजन"],
-        "answer_en": "Carbon",
-        "answer_hi": "कार्बन",
+        "question_en": "What is the 'traceResolution' option?",
+        "question_hi": "'traceResolution' option क्या है?",
+        "options_en": ["Traces module resolution process", "Traces compilation process", "Traces type checking", "Traces emission process"],
+        "options_hi": ["Module resolution process trace करता है", "Compilation process trace करता है", "Type checking trace करता है", "Emission process trace करता है"],
+        "answer_en": "Traces module resolution process",
+        "answer_hi": "Module resolution process trace करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 64,
-        "question_en": "Which vitamin deficiency causes night blindness?",
-        "question_hi": "किस विटामिन की कमी से रतौंधी होती है?",
-        "options_en": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
-        "options_hi": ["विटामिन A", "विटामिन B", "विटामिन C", "विटामिन D"],
-        "answer_en": "Vitamin A",
-        "answer_hi": "विटामिन A",
+        "question_en": "What does 'disableReferencedProjectLoad' do?",
+        "question_hi": "'disableReferencedProjectLoad' क्या करता है?",
+        "options_en": ["Disables loading referenced projects", "Enables referenced project loading", "Ignores referenced projects", "Deletes referenced projects"],
+        "options_hi": ["Referenced projects loading disable करता है", "Referenced project loading enable करता है", "Referenced projects ignore करता है", "Referenced projects delete करता है"],
+        "answer_en": "Disables loading referenced projects",
+        "answer_hi": "Referenced projects loading disable करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 65,
-        "question_en": "What is the chemical symbol for Calcium?",
-        "question_hi": "कैल्शियम का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Cl", "Cm", "Ca", "C"],
-        "options_hi": ["Cl", "Cm", "Ca", "C"],
-        "answer_en": "Ca",
-        "answer_hi": "Ca",
+        "question_en": "What does 'disableSolutionSearching' do?",
+        "question_hi": "'disableSolutionSearching' क्या करता है?",
+        "options_en": ["Disables solution style TSConfig search", "Enables solution searching", "Ignores solution files", "Deletes solution files"],
+        "options_hi": ["Solution style TSConfig search disable करता है", "Solution searching enable करता है", "Solution files ignore करता है", "Solution files delete करता है"],
+        "answer_en": "Disables solution style TSConfig search",
+        "answer_hi": "Solution style TSConfig search disable करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 66,
-        "question_en": "Which gas is used in refrigerator?",
-        "question_hi": "रेफ्रिजरेटर में कौन सी गैस प्रयोग की जाती है?",
-        "options_en": ["Ammonia", "Oxygen", "Nitrogen", "Hydrogen"],
-        "options_hi": ["अमोनिया", "ऑक्सीजन", "नाइट्रोजन", "हाइड्रोजन"],
-        "answer_en": "Ammonia",
-        "answer_hi": "अमोनिया",
+        "question_en": "What does 'disableSourceOfProjectReferenceRedirect' do?",
+        "question_hi": "'disableSourceOfProjectReferenceRedirect' क्या करता है?",
+        "options_en": ["Disables source file redirection for project references", "Enables redirection", "Ignores project references", "Deletes project references"],
+        "options_hi": ["Project references के लिए source file redirection disable करता है", "Redirection enable करता है", "Project references ignore करता है", "Project references delete करता है"],
+        "answer_en": "Disables source file redirection for project references",
+        "answer_hi": "Project references के लिए source file redirection disable करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 67,
-        "question_en": "What is the largest moon in our solar system?",
-        "question_hi": "हमारे सौर मंडल का सबसे बड़ा चंद्रमा कौन सा है?",
-        "options_en": ["Moon", "Titan", "Ganymede", "Europa"],
-        "options_hi": ["चंद्रमा", "टाइटन", "गेनीमेड", "यूरोपा"],
-        "answer_en": "Ganymede",
-        "answer_hi": "गेनीमेड",
+        "question_en": "What is the 'pretty' option?",
+        "question_hi": "'pretty' option क्या है?",
+        "options_en": ["Enables colorful and formatted output", "Disables formatted output", "Enables minimal output", "Disables all output"],
+        "options_hi": ["Colorful और formatted output enable करता है", "Formatted output disable करता है", "Minimal output enable करता है", "सभी output disable करता है"],
+        "answer_en": "Enables colorful and formatted output",
+        "answer_hi": "Colorful और formatted output enable करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 68,
-        "question_en": "Which part of the cell contains genetic material?",
-        "question_hi": "कोशिका का कौन सा भाग आनुवंशिक सामग्री रखता है?",
-        "options_en": ["Cytoplasm", "Nucleus", "Mitochondria", "Ribosome"],
-        "options_hi": ["कोशिका द्रव्य", "केंद्रक", "माइटोकॉन्ड्रिया", "राइबोसोम"],
-        "answer_en": "Nucleus",
-        "answer_hi": "केंद्रक",
+        "question_en": "What does 'stripInternal' do?",
+        "question_hi": "'stripInternal' क्या करता है?",
+        "options_en": ["Removes members marked with @internal", "Adds internal members", "Ignores internal members", "Validates internal members"],
+        "options_hi": ["@internal से marked members remove करता है", "Internal members add करता है", "Internal members ignore करता है", "Internal members validate करता है"],
+        "answer_en": "Removes members marked with @internal",
+        "answer_hi": "@internal से marked members remove करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 69,
-        "question_en": "What is the chemical formula of ammonia?",
-        "question_hi": "अमोनिया का रासायनिक सूत्र क्या है?",
-        "options_en": ["NH₃", "NH₄", "NO₂", "NO₃"],
-        "options_hi": ["NH₃", "NH₄", "NO₂", "NO₃"],
-        "answer_en": "NH₃",
-        "answer_hi": "NH₃",
+        "question_en": "What is the 'suppressExcessPropertyErrors' option?",
+        "question_hi": "'suppressExcessPropertyErrors' option क्या है?",
+        "options_en": ["Suppresses excess property checking errors", "Enables excess property checking", "Ignores property errors", "Disables property checking"],
+        "options_hi": ["Excess property checking errors suppress करता है", "Excess property checking enable करता है", "Property errors ignore करता है", "Property checking disable करता है"],
+        "answer_en": "Suppresses excess property checking errors",
+        "answer_hi": "Excess property checking errors suppress करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 70,
-        "question_en": "Which instrument is used to see distant objects?",
-        "question_hi": "दूर की वस्तुओं को देखने के लिए किस उपकरण का उपयोग किया जाता है?",
-        "options_en": ["Microscope", "Telescope", "Periscope", "Kaleidoscope"],
-        "options_hi": ["माइक्रोस्कोप", "टेलीस्कोप", "पेरिस्कोप", "कैलाइडोस्कोप"],
-        "answer_en": "Telescope",
-        "answer_hi": "टेलीस्कोप",
+        "question_en": "What does 'suppressImplicitAnyIndexErrors' do?",
+        "question_hi": "'suppressImplicitAnyIndexErrors' क्या करता है?",
+        "options_en": ["Suppresses implicit any index errors", "Enables implicit any errors", "Ignores index errors", "Disables index checking"],
+        "options_hi": ["Implicit any index errors suppress करता है", "Implicit any errors enable करता है", "Index errors ignore करता है", "Index checking disable करता है"],
+        "answer_en": "Suppresses implicit any index errors",
+        "answer_hi": "Implicit any index errors suppress करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 71,
-        "question_en": "What is the chemical symbol for Lead?",
-        "question_hi": "सीसे का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Ld", "Pb", "Le", "Pl"],
-        "options_hi": ["Ld", "Pb", "Le", "Pl"],
-        "answer_en": "Pb",
-        "answer_hi": "Pb",
+        "question_en": "What is the 'noStrictGenericChecks' option?",
+        "question_hi": "'noStrictGenericChecks' option क्या है?",
+        "options_en": ["Disables strict generic checks", "Enables strict generic checks", "Ignores generic checks", "Disables all generic checks"],
+        "options_hi": ["Strict generic checks disable करता है", "Strict generic checks enable करता है", "Generic checks ignore करता है", "सभी generic checks disable करता है"],
+        "answer_en": "Disables strict generic checks",
+        "answer_hi": "Strict generic checks disable करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 72,
-        "question_en": "Which gas is used in fire extinguishers?",
-        "question_hi": "आग बुझाने वाले उपकरणों में कौन सी गैस प्रयोग की जाती है?",
-        "options_en": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
-        "options_hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "नाइट्रोजन", "हाइड्रोजन"],
-        "answer_en": "Carbon dioxide",
-        "answer_hi": "कार्बन डाइऑक्साइड",
+        "question_en": "What does 'useDefineForClassFields' affect?",
+        "question_hi": "'useDefineForClassFields' किसे affect करता है?",
+        "options_en": ["Class field initialization behavior", "Class method behavior", "Class constructor behavior", "Class inheritance behavior"],
+        "options_hi": ["Class field initialization behavior", "Class method behavior", "Class constructor behavior", "Class inheritance behavior"],
+        "answer_en": "Class field initialization behavior",
+        "answer_hi": "Class field initialization behavior",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 73,
-        "question_en": "What is the study of birds called?",
-        "question_hi": "पक्षियों के अध्ययन को क्या कहते हैं?",
-        "options_en": ["Ornithology", "Entomology", "Herpetology", "Ichthyology"],
-        "options_hi": ["पक्षीविज्ञान", "कीटविज्ञान", "सरीसृपविज्ञान", "मत्स्यविज्ञान"],
-        "answer_en": "Ornithology",
-        "answer_hi": "पक्षीविज्ञान",
+        "question_en": "What is the 'declarationDir' option?",
+        "question_hi": "'declarationDir' option क्या है?",
+        "options_en": ["Output directory for declaration files", "Output directory for JavaScript files", "Input directory for source files", "Root directory for project"],
+        "options_hi": ["Declaration files के लिए output directory", "JavaScript files के लिए output directory", "Source files के लिए input directory", "Project के लिए root directory"],
+        "answer_en": "Output directory for declaration files",
+        "answer_hi": "Declaration files के लिए output directory",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 74,
-        "question_en": "Which planet has the Great Red Spot?",
-        "question_hi": "किस ग्रह पर ग्रेट रेड स्पॉट है?",
-        "options_en": ["Mars", "Jupiter", "Saturn", "Venus"],
-        "options_hi": ["मंगल", "बृहस्पति", "शनि", "शुक्र"],
-        "answer_en": "Jupiter",
-        "answer_hi": "बृहस्पति",
+        "question_en": "What does 'emitDeclarationOnly' do?",
+        "question_hi": "'emitDeclarationOnly' क्या करता है?",
+        "options_en": ["Emits only declaration files", "Emits only JavaScript files", "Emits both declarations and JavaScript", "Emits nothing"],
+        "options_hi": ["केवल declaration files emit करता है", "केवल JavaScript files emit करता है", "Declarations और JavaScript दोनों emit करता है", "कुछ नहीं emit करता"],
+        "answer_en": "Emits only declaration files",
+        "answer_hi": "केवल declaration files emit करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 75,
-        "question_en": "What is the chemical formula of sulfuric acid?",
-        "question_hi": "सल्फ्यूरिक अम्ल का रासायनिक सूत्र क्या है?",
-        "options_en": ["H₂SO₄", "HCl", "HNO₃", "H₃PO₄"],
-        "options_hi": ["H₂SO₄", "HCl", "HNO₃", "H₃PO₄"],
-        "answer_en": "H₂SO₄",
-        "answer_hi": "H₂SO₄",
+        "question_en": "What is the 'importsNotUsedAsValues' option?",
+        "question_hi": "'importsNotUsedAsValues' option क्या है?",
+        "options_en": ["Controls how imports are handled when only used for types", "Controls all imports", "Controls exports", "Controls modules"],
+        "options_hi": ["Control करता है कि imports कैसे handle होते हैं जब केवल types के लिए use होते हैं", "सभी imports control करता है", "Exports control करता है", "Modules control करता है"],
+        "answer_en": "Controls how imports are handled when only used for types",
+        "answer_hi": "Control करता है कि imports कैसे handle होते हैं जब केवल types के लिए use होते हैं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 76,
-        "question_en": "Which vitamin is essential for healthy bones?",
-        "question_hi": "स्वस्थ हड्डियों के लिए कौन सा विटामिन आवश्यक है?",
-        "options_en": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
-        "options_hi": ["विटामिन A", "विटामिन B", "विटामिन C", "विटामिन D"],
-        "answer_en": "Vitamin D",
-        "answer_hi": "विटामिन D",
+        "question_en": "What are the possible values for 'importsNotUsedAsValues'?",
+        "question_hi": "'importsNotUsedAsValues' के possible values क्या हैं?",
+        "options_en": ["remove, preserve, error", "keep, delete, ignore", "all, some, none", "true, false, auto"],
+        "options_hi": ["remove, preserve, error", "keep, delete, ignore", "all, some, none", "true, false, auto"],
+        "answer_en": "remove, preserve, error",
+        "answer_hi": "remove, preserve, error",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 77,
-        "question_en": "What is the chemical symbol for Mercury?",
-        "question_hi": "पारे का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Me", "Mr", "Hg", "My"],
-        "options_hi": ["Me", "Mr", "Hg", "My"],
-        "answer_en": "Hg",
-        "answer_hi": "Hg",
+        "question_en": "What does 'preserveValueImports' do?",
+        "question_hi": "'preserveValueImports' क्या करता है?",
+        "options_en": ["Preserves value imports that are only used for types", "Removes value imports", "Ignores value imports", "Validates value imports"],
+        "options_hi": ["Value imports preserve करता है जो केवल types के लिए use होते हैं", "Value imports remove करता है", "Value imports ignore करता है", "Value imports validate करता है"],
+        "answer_en": "Preserves value imports that are only used for types",
+        "answer_hi": "Value imports preserve करता है जो केवल types के लिए use होते हैं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 78,
-        "question_en": "Which gas is used for artificial ripening of fruits?",
-        "question_hi": "फलों के कृत्रिम पकाने के लिए कौन सी गैस प्रयोग की जाती है?",
-        "options_en": ["Oxygen", "Carbon dioxide", "Ethylene", "Nitrogen"],
-        "options_hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "ईथिलीन", "नाइट्रोजन"],
-        "answer_en": "Ethylene",
-        "answer_hi": "ईथिलीन",
+        "question_en": "What is the 'allowUmdGlobalAccess' option?",
+        "question_hi": "'allowUmdGlobalAccess' option क्या है?",
+        "options_en": ["Allows accessing UMD globals from modules", "Disables UMD global access", "Ignores UMD modules", "Deletes UMD globals"],
+        "options_hi": ["Modules से UMD globals access allow करता है", "UMD global access disable करता है", "UMD modules ignore करता है", "UMD globals delete करता है"],
+        "answer_en": "Allows accessing UMD globals from modules",
+        "answer_hi": "Modules से UMD globals access allow करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 79,
-        "question_en": "What is the study of insects called?",
-        "question_hi": "कीटों के अध्ययन को क्या कहते हैं?",
-        "options_en": ["Ornithology", "Entomology", "Herpetology", "Ichthyology"],
-        "options_hi": ["पक्षीविज्ञान", "कीटविज्ञान", "सरीसृपविज्ञान", "मत्स्यविज्ञान"],
-        "answer_en": "Entomology",
-        "answer_hi": "कीटविज्ञान",
+        "question_en": "What does 'resolveJsonModule' do?",
+        "question_hi": "'resolveJsonModule' क्या करता है?",
+        "options_en": ["Allows importing JSON modules", "Disables JSON imports", "Ignores JSON files", "Validates JSON files"],
+        "options_hi": ["JSON modules import allow करता है", "JSON imports disable करता है", "JSON files ignore करता है", "JSON files validate करता है"],
+        "answer_en": "Allows importing JSON modules",
+        "answer_hi": "JSON modules import allow करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 80,
-        "question_en": "Which planet is known as the Evening Star?",
-        "question_hi": "कौन सा ग्रह इवनिंग स्टार के नाम से जाना जाता है?",
-        "options_en": ["Mars", "Venus", "Mercury", "Jupiter"],
-        "options_hi": ["मंगल", "शुक्र", "बुध", "बृहस्पति"],
-        "answer_en": "Venus",
-        "answer_hi": "शुक्र",
+        "question_en": "What is the 'maxNodeModuleJsDepth' option?",
+        "question_hi": "'maxNodeModuleJsDepth' option क्या है?",
+        "options_en": ["Maximum depth for checking node_modules", "Minimum depth for checking", "Depth for source files", "Depth for output files"],
+        "options_hi": ["node_modules checking के लिए maximum depth", "Checking के लिए minimum depth", "Source files के लिए depth", "Output files के लिए depth"],
+        "answer_en": "Maximum depth for checking node_modules",
+        "answer_hi": "node_modules checking के लिए maximum depth",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 81,
-        "question_en": "What is the chemical formula of carbon dioxide?",
-        "question_hi": "कार्बन डाइऑक्साइड का रासायनिक सूत्र क्या है?",
-        "options_en": ["CO", "CO₂", "C₂O", "C₂O₂"],
-        "options_hi": ["CO", "CO₂", "C₂O", "C₂O₂"],
-        "answer_en": "CO₂",
-        "answer_hi": "CO₂",
+        "question_en": "What does 'allowArbitraryExtensions' do?",
+        "question_hi": "'allowArbitraryExtensions' क्या करता है?",
+        "options_en": ["Allows imports with arbitrary extensions", "Disables arbitrary extensions", "Ignores extensions", "Validates extensions"],
+        "options_hi": ["Arbitrary extensions वाले imports allow करता है", "Arbitrary extensions disable करता है", "Extensions ignore करता है", "Extensions validate करता है"],
+        "answer_en": "Allows imports with arbitrary extensions",
+        "answer_hi": "Arbitrary extensions वाले imports allow करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 82,
-        "question_en": "Which vitamin is essential for vision?",
-        "question_hi": "दृष्टि के लिए कौन सा विटामिन आवश्यक है?",
-        "options_en": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
-        "options_hi": ["विटामिन A", "विटामिन B", "विटामिन C", "विटामिन D"],
-        "answer_en": "Vitamin A",
-        "answer_hi": "विटामिन A",
+        "question_en": "What is the 'allowImportingTsExtensions' option?",
+        "question_hi": "'allowImportingTsExtensions' option क्या है?",
+        "options_en": ["Allows importing TypeScript files with extensions", "Disables TypeScript imports", "Ignores TypeScript files", "Validates TypeScript imports"],
+        "options_hi": ["Extensions वाले TypeScript files import allow करता है", "TypeScript imports disable करता है", "TypeScript files ignore करता है", "TypeScript imports validate करता है"],
+        "answer_en": "Allows importing TypeScript files with extensions",
+        "answer_hi": "Extensions वाले TypeScript files import allow करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 83,
-        "question_en": "What is the chemical symbol for Tin?",
-        "question_hi": "टिन का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Ti", "Tn", "Sn", "Si"],
-        "options_hi": ["Ti", "Tn", "Sn", "Si"],
-        "answer_en": "Sn",
-        "answer_hi": "Sn",
+        "question_en": "What does 'rewriteRelativeImportExtensions' do?",
+        "question_hi": "'rewriteRelativeImportExtensions' क्या करता है?",
+        "options_en": ["Rewrites relative import extensions", "Preserves import extensions", "Removes import extensions", "Ignores import extensions"],
+        "options_hi": ["Relative import extensions rewrite करता है", "Import extensions preserve करता है", "Import extensions remove करता है", "Import extensions ignore करता है"],
+        "answer_en": "Rewrites relative import extensions",
+        "answer_hi": "Relative import extensions rewrite करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 84,
-        "question_en": "Which gas is known as marsh gas?",
-        "question_hi": "कौन सी गैस मार्श गैस के नाम से जानी जाती है?",
-        "options_en": ["Methane", "Ethane", "Propane", "Butane"],
-        "options_hi": ["मीथेन", "ईथेन", "प्रोपेन", "ब्यूटेन"],
-        "answer_en": "Methane",
-        "answer_hi": "मीथेन",
+        "question_en": "What is the 'useDefineForClassFields' compatibility issue?",
+        "question_hi": "'useDefineForClassFields' compatibility issue क्या है?",
+        "options_en": ["Breaks legacy class field behavior", "Breaks modern class fields", "Breaks inheritance", "Breaks methods"],
+        "options_hi": ["Legacy class field behavior break करता है", "Modern class fields break करता है", "Inheritance break करता है", "Methods break करता है"],
+        "answer_en": "Breaks legacy class field behavior",
+        "answer_hi": "Legacy class field behavior break करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 85,
-        "question_en": "What is the study of fungi called?",
-        "question_hi": "कवक के अध्ययन को क्या कहते हैं?",
-        "options_en": ["Mycology", "Bacteriology", "Virology", "Phycology"],
-        "options_hi": ["कवक विज्ञान", "जीवाणु विज्ञान", "वायरोलॉजी", "शैवाल विज्ञान"],
-        "answer_en": "Mycology",
-        "answer_hi": "कवक विज्ञान",
+        "question_en": "What does 'exactOptionalPropertyTypes' prevent?",
+        "question_hi": "'exactOptionalPropertyTypes' क्या prevent करता है?",
+        "options_en": ["Assigning undefined to optional properties", "Assigning null to optional properties", "Assigning values to optional properties", "Reading optional properties"],
+        "options_hi": ["Optional properties को undefined assign करने से prevent करता है", "Optional properties को null assign करने से prevent करता है", "Optional properties को values assign करने से prevent करता है", "Optional properties read करने से prevent करता है"],
+        "answer_en": "Assigning undefined to optional properties",
+        "answer_hi": "Optional properties को undefined assign करने से prevent करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 86,
-        "question_en": "Which planet has the most circular orbit?",
-        "question_hi": "किस ग्रह की कक्षा सबसे गोलाकार है?",
-        "options_en": ["Earth", "Venus", "Mars", "Neptune"],
-        "options_hi": ["पृथ्वी", "शुक्र", "मंगल", "वरुण"],
-        "answer_en": "Venus",
-        "answer_hi": "शुक्र",
+        "question_en": "What is the benefit of 'noUncheckedIndexedAccess'?",
+        "question_hi": "'noUncheckedIndexedAccess' का benefit क्या है?",
+        "options_en": ["Makes indexed access safer by including undefined", "Makes indexed access faster", "Makes indexed access simpler", "Makes indexed access more flexible"],
+        "options_hi": ["Undefined include करके indexed access safer बनाता है", "Indexed access faster बनाता है", "Indexed access simpler बनाता है", "Indexed access more flexible बनाता है"],
+        "answer_en": "Makes indexed access safer by including undefined",
+        "answer_hi": "Undefined include करके indexed access safer बनाता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 87,
-        "question_en": "What is the chemical formula of common salt?",
-        "question_hi": "साधारण नमक का रासायनिक सूत्र क्या है?",
-        "options_en": ["NaCl", "KCl", "CaCl₂", "MgCl₂"],
-        "options_hi": ["NaCl", "KCl", "CaCl₂", "MgCl₂"],
-        "answer_en": "NaCl",
-        "answer_hi": "NaCl",
+        "question_en": "What does 'noPropertyAccessFromIndexSignature' enforce?",
+        "question_hi": "'noPropertyAccessFromIndexSignature' क्या enforce करता है?",
+        "options_en": ["Using bracket notation for index signature properties", "Using dot notation for all properties", "Using no notation", "Using mixed notation"],
+        "options_hi": ["Index signature properties के लिए bracket notation use करना", "सभी properties के लिए dot notation use करना", "कोई notation use नहीं करना", "Mixed notation use करना"],
+        "answer_en": "Using bracket notation for index signature properties",
+        "answer_hi": "Index signature properties के लिए bracket notation use करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 88,
-        "question_en": "Which vitamin deficiency causes beriberi?",
-        "question_hi": "किस विटामिन की कमी से बेरीबेरी होता है?",
-        "options_en": ["Vitamin A", "Vitamin B1", "Vitamin C", "Vitamin D"],
-        "options_hi": ["विटामिन A", "विटामिन B1", "विटामिन C", "विटामिन D"],
-        "answer_en": "Vitamin B1",
-        "answer_hi": "विटामिन B1",
+        "question_en": "What is the purpose of 'strict' flag?",
+        "question_hi": "'strict' flag का purpose क्या है?",
+        "options_en": ["Enable all strict type checking options", "Disable all strict options", "Enable some strict options", "Disable type checking"],
+        "options_hi": ["सभी strict type checking options enable करना", "सभी strict options disable करना", "कुछ strict options enable करना", "Type checking disable करना"],
+        "answer_en": "Enable all strict type checking options",
+        "answer_hi": "सभी strict type checking options enable करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 89,
-        "question_en": "What is the chemical symbol for Zinc?",
-        "question_hi": "जस्ते का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Zi", "Zn", "Zc", "Z"],
-        "options_hi": ["Zi", "Zn", "Zc", "Z"],
-        "answer_en": "Zn",
-        "answer_hi": "Zn",
+        "question_en": "Which strict option helps prevent runtime null errors?",
+        "question_hi": "कौन सा strict option runtime null errors prevent करने में help करता है?",
+        "options_en": ["strictNullChecks", "noImplicitAny", "noImplicitReturns", "noUnusedLocals"],
+        "options_hi": ["strictNullChecks", "noImplicitAny", "noImplicitReturns", "noUnusedLocals"],
+        "answer_en": "strictNullChecks",
+        "answer_hi": "strictNullChecks",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 90,
-        "question_en": "Which gas is used in balloons for flying?",
-        "question_hi": "उड़ने वाले गुब्बारों में कौन सी गैस प्रयोग की जाती है?",
-        "options_en": ["Oxygen", "Hydrogen", "Helium", "Nitrogen"],
-        "options_hi": ["ऑक्सीजन", "हाइड्रोजन", "हीलियम", "नाइट्रोजन"],
-        "answer_en": "Helium",
-        "answer_hi": "हीलियम",
+        "question_en": "What does 'noImplicitOverride' help with?",
+        "question_hi": "'noImplicitOverride' किसमें help करता है?",
+        "options_en": ["Making method overriding explicit", "Making inheritance explicit", "Making properties explicit", "Making methods private"],
+        "options_hi": ["Method overriding explicit बनाने में", "Inheritance explicit बनाने में", "Properties explicit बनाने में", "Methods private बनाने में"],
+        "answer_en": "Making method overriding explicit",
+        "answer_hi": "Method overriding explicit बनाने में",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 91,
-        "question_en": "What is the study of algae called?",
-        "question_hi": "शैवाल के अध्ययन को क्या कहते हैं?",
-        "options_en": ["Mycology", "Bacteriology", "Phycology", "Virology"],
-        "options_hi": ["कवक विज्ञान", "जीवाणु विज्ञान", "शैवाल विज्ञान", "वायरोलॉजी"],
-        "answer_en": "Phycology",
-        "answer_hi": "शैवाल विज्ञान",
+        "question_en": "What is the default value for 'target' option?",
+        "question_hi": "'target' option की default value क्या है?",
+        "options_en": ["ES3", "ES5", "ES6", "ES2020"],
+        "options_hi": ["ES3", "ES5", "ES6", "ES2020"],
+        "answer_en": "ES3",
+        "answer_hi": "ES3",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 92,
-        "question_en": "Which planet has the shortest day?",
-        "question_hi": "किस ग्रह का दिन सबसे छोटा है?",
-        "options_en": ["Jupiter", "Saturn", "Venus", "Mercury"],
-        "options_hi": ["बृहस्पति", "शनि", "शुक्र", "बुध"],
-        "answer_en": "Jupiter",
-        "answer_hi": "बृहस्पति",
+        "question_en": "What is the default value for 'module' option?",
+        "question_hi": "'module' option की default value क्या है?",
+        "options_en": ["CommonJS", "ES6", "AMD", "UMD"],
+        "options_hi": ["CommonJS", "ES6", "AMD", "UMD"],
+        "answer_en": "CommonJS",
+        "answer_hi": "CommonJS",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 93,
-        "question_en": "What is the chemical formula of washing soda?",
-        "question_hi": "धोने का सोडा का रासायनिक सूत्र क्या है?",
-        "options_en": ["NaHCO₃", "Na₂CO₃", "NaOH", "NaCl"],
-        "options_hi": ["NaHCO₃", "Na₂CO₃", "NaOH", "NaCl"],
-        "answer_en": "Na₂CO₃",
-        "answer_hi": "Na₂CO₃",
+        "question_en": "What does 'moduleResolution: node' do?",
+        "question_hi": "'moduleResolution: node' क्या करता है?",
+        "options_en": ["Uses Node.js module resolution algorithm", "Uses classic resolution", "Uses browser resolution", "Uses custom resolution"],
+        "options_hi": ["Node.js module resolution algorithm use करता है", "Classic resolution use करता है", "Browser resolution use करता है", "Custom resolution use करता है"],
+        "answer_en": "Uses Node.js module resolution algorithm",
+        "answer_hi": "Node.js module resolution algorithm use करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 94,
-        "question_en": "Which vitamin deficiency causes rickets?",
-        "question_hi": "किस विटामिन की कमी से रिकेट्स होता है?",
-        "options_en": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
-        "options_hi": ["विटामिन A", "विटामिन B", "विटामिन C", "विटामिन D"],
-        "answer_en": "Vitamin D",
-        "answer_hi": "विटामिन D",
+        "question_en": "What is the purpose of 'baseUrl'?",
+        "question_hi": "'baseUrl' का purpose क्या है?",
+        "options_en": ["Base directory for non-relative module resolution", "Base directory for relative imports", "Base directory for output files", "Base directory for source files"],
+        "options_hi": ["Non-relative module resolution के लिए base directory", "Relative imports के लिए base directory", "Output files के लिए base directory", "Source files के लिए base directory"],
+        "answer_en": "Base directory for non-relative module resolution",
+        "answer_hi": "Non-relative module resolution के लिए base directory",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 95,
-        "question_en": "What is the chemical symbol for Nickel?",
-        "question_hi": "निकेल का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Ni", "Nk", "Nl", "Ne"],
-        "options_hi": ["Ni", "Nk", "Nl", "Ne"],
-        "answer_en": "Ni",
-        "answer_hi": "Ni",
+        "question_en": "What do 'paths' allow you to do?",
+        "question_hi": "'paths' आपको क्या करने allow करते हैं?",
+        "options_en": ["Map import paths to actual locations", "Map output paths", "Map source paths", "Map module paths"],
+        "options_hi": ["Import paths को actual locations में map करना", "Output paths map करना", "Source paths map करना", "Module paths map करना"],
+        "answer_en": "Map import paths to actual locations",
+        "answer_hi": "Import paths को actual locations में map करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 96,
-        "question_en": "Which gas is used in welding?",
-        "question_hi": "वेल्डिंग में कौन सी गैस प्रयोग की जाती है?",
-        "options_en": ["Oxygen", "Acetylene", "Nitrogen", "Hydrogen"],
-        "options_hi": ["ऑक्सीजन", "एसिटिलीन", "नाइट्रोजन", "हाइड्रोजन"],
-        "answer_en": "Acetylene",
-        "answer_hi": "एसिटिलीन",
+        "question_en": "What is the purpose of 'typeRoots'?",
+        "question_hi": "'typeRoots' का purpose क्या है?",
+        "options_en": ["Specify locations for global type definitions", "Specify locations for local types", "Specify locations for source files", "Specify locations for output files"],
+        "options_hi": ["Global type definitions के locations specify करना", "Local types के locations specify करना", "Source files के locations specify करना", "Output files के locations specify करना"],
+        "answer_en": "Specify locations for global type definitions",
+        "answer_hi": "Global type definitions के locations specify करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 97,
-        "question_en": "What is the study of viruses called?",
-        "question_hi": "वायरस के अध्ययन को क्या कहते हैं?",
-        "options_en": ["Bacteriology", "Virology", "Mycology", "Phycology"],
-        "options_hi": ["जीवाणु विज्ञान", "वायरोलॉजी", "कवक विज्ञान", "शैवाल विज्ञान"],
-        "answer_en": "Virology",
-        "answer_hi": "वायरोलॉजी",
+        "question_en": "What does 'types' restrict?",
+        "question_hi": "'types' क्या restrict करता है?",
+        "options_en": ["Which type packages are included", "Which source files are included", "Which output files are generated", "Which modules are resolved"],
+        "options_hi": ["कौन से type packages include होते हैं", "कौन से source files include होते हैं", "कौन से output files generate होते हैं", "कौन से modules resolve होते हैं"],
+        "answer_en": "Which type packages are included",
+        "answer_hi": "कौन से type packages include होते हैं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 98,
-        "question_en": "Which planet has the longest day?",
-        "question_hi": "किस ग्रह का दिन सबसे लंबा है?",
-        "options_en": ["Venus", "Mercury", "Earth", "Mars"],
-        "options_hi": ["शुक्र", "बुध", "पृथ्वी", "मंगल"],
-        "answer_en": "Venus",
-        "answer_hi": "शुक्र",
+        "question_en": "What is the benefit of 'skipLibCheck'?",
+        "question_hi": "'skipLibCheck' का benefit क्या है?",
+        "options_en": ["Faster compilation by skipping lib type checks", "More thorough type checking", "Better error messages", "More accurate types"],
+        "options_hi": ["Lib type checks skip करके faster compilation", "More thorough type checking", "Better error messages", "More accurate types"],
+        "answer_en": "Faster compilation by skipping lib type checks",
+        "answer_hi": "Lib type checks skip करके faster compilation",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 99,
-        "question_en": "What is the chemical formula of quicklime?",
-        "question_hi": "बिना बुझा चूना का रासायनिक सूत्र क्या है?",
-        "options_en": ["CaO", "Ca(OH)₂", "CaCO₃", "CaSO₄"],
-        "options_hi": ["CaO", "Ca(OH)₂", "CaCO₃", "CaSO₄"],
-        "answer_en": "CaO",
-        "answer_hi": "CaO",
+        "question_en": "What does 'forceConsistentCasingInFileNames' prevent?",
+        "question_hi": "'forceConsistentCasingInFileNames' क्या prevent करता है?",
+        "options_en": ["Case-related import errors on case-sensitive file systems", "All import errors", "Export errors", "Type errors"],
+        "options_hi": ["Case-sensitive file systems पर case-related import errors", "सभी import errors", "Export errors", "Type errors"],
+        "answer_en": "Case-related import errors on case-sensitive file systems",
+        "answer_hi": "Case-sensitive file systems पर case-related import errors",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 100,
-        "question_en": "Which vitamin is also known as tocopherol?",
-        "question_hi": "किस विटामिन को टोकोफेरोल के नाम से भी जाना जाता है?",
-        "options_en": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin E"],
-        "options_hi": ["विटामिन A", "विटामिन B", "विटामिन C", "विटामिन E"],
-        "answer_en": "Vitamin E",
-        "answer_hi": "विटामिन E",
+        "question_en": "What is the most important compiler option for TypeScript beginners?",
+        "question_hi": "TypeScript beginners के लिए सबसे important compiler option कौन सी है?",
+        "options_en": ["strict: true", "target: ES6", "module: CommonJS", "outDir: dist"],
+        "options_hi": ["strict: true", "target: ES6", "module: CommonJS", "outDir: dist"],
+        "answer_en": "strict: true",
+        "answer_hi": "strict: true",
         "attempted": false,
         "selected": ""
-    }    
-// Add more questions here...
+    }
 ];
 
-
-let currentQuestion = 0; 
+let currentQuestion = 0;
 let language = "en";
-// let timeLeft = 180 * 60; // 180 minutes
-let timeLeft = 60 * 60; // 60 minutes
+let timeLeft = 60 * 60; 
 let timerInterval;
 
-// ----------------- Quiz Logic -----------------
+// ----------------- Load Question -----------------
 function loadQuestion(index) {
     const q = questions[index];
-    document.getElementById("question").textContent = `${q.num}. ${
-        language === "en" ? q.question_en : q.question_hi
-    }`;
-    document.getElementById("questionCounter").textContent = `Question ${index + 1} of ${questions.length}`;
+    if (!q) return; //  undefined error fix
+   questions[index].visited = true;
+    document.getElementById("question").textContent =
+       `${q.num}. ${language === "en" ? q.question_en : q.question_hi}`;
+
+    document.getElementById("questionCounter").textContent =
+       ` Question ${index + 1} of ${questions.length}`;
 
     const optionsElement = document.getElementById("options");
     optionsElement.innerHTML = "";
 
     const options = language === "en" ? q.options_en : q.options_hi;
 
-    options.forEach((option) => {
+    options.forEach(option => {
         const isSelected = q.selected === option;
-        const optionDiv = document.createElement("div");
-        optionDiv.className = "option-box";
-        optionDiv.style = `
+
+        const div = document.createElement("div");
+        div.className = "option-box";
+
+        div.style = `
             border: 2px solid ${isSelected ? "#007bff" : "#ccc"};
             background-color: ${isSelected ? "#e7f1ff" : "white"};
             padding: 10px;
             border-radius: 8px;
             margin: 6px 0;
             cursor: pointer;
-            transition: all 0.2s;
         `;
 
-        optionDiv.innerHTML = `
-            <input type="radio" name="option" value="${option}" ${isSelected ? "checked" : ""} style="margin-right:8px;">
+        div.innerHTML = `
+            <input type="radio" name="option" value="${option}" 
+            ${isSelected ? "checked" : ""} style="margin-right:8px;">
             ${option}
         `;
 
-        optionDiv.addEventListener("click", () => {
+        div.addEventListener("click", () => {
             markAttempted(index, option);
             loadQuestion(index);
         });
 
-        optionsElement.appendChild(optionDiv);
+        optionsElement.appendChild(div);
     });
 
     updateNavigation();
 }
 
+// ----------------- Attempt Mark -----------------
 function markAttempted(index, selectedAnswer) {
     questions[index].attempted = true;
     questions[index].selected = selectedAnswer;
     updateNavigation();
 }
 
+// ----------------- Next / Previous -----------------
 function nextQuestion() {
     if (currentQuestion < questions.length - 1) {
         currentQuestion++;
@@ -1177,212 +1192,122 @@ function changeLanguage() {
     loadQuestion(currentQuestion);
 }
 
+// ----------------- Final Submit -----------------
 function submitQuiz() {
-    clearInterval(timerInterval);
-    let attempted = 0,
-        notAttempted = 0,
-        score = 0;
+    let confirmation = confirm("Are you sure you want to submit the test?");
+    if (!confirmation) return;
 
-    questions.forEach((q) => {
+    let attempted = 0;
+    let notAttempted = 0;
+    let score = 0;
+    const results = [];
+
+    questions.forEach(q => {
         if (q.attempted) {
             attempted++;
-            if (q.selected === q.answer_en || q.selected === q.answer_hi) score++;
-        } else notAttempted++;
+
+            if (q.selected === q.answer_en || q.selected === q.answer_hi) {
+                score++;
+            }
+        } else {
+            notAttempted++;
+        }
+
+        results.push({
+            question: language === "en" ? q.question_en : q.question_hi,
+            selected: q.selected || "Not Answered",
+            correct: language === "en" ? q.answer_en : q.answer_hi
+        });
     });
 
-    alert(
-        `Quiz submitted!\nAttempted: ${attempted}\nNot Attempted: ${notAttempted}\nScore: ${score}/${questions.length}`
-    );
+    localStorage.setItem("attempted", attempted);
+    localStorage.setItem("notAttempted", notAttempted);
+    localStorage.setItem("score", score);
+    localStorage.setItem("results", JSON.stringify(results));
+
+    let viewResult = confirm("Test submitted! Do you want to view result?");
+    if (viewResult) {
+        window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
+    }
 }
 
+// ----------------- Navigation Circles -----------------
+function updateNavigation() {
+    const nav = document.getElementById("circleContainer");
+    nav.innerHTML = "";
+
+    questions.forEach((q, i) => {
+        let color = "gray"; // default: not visited
+
+        if (i === currentQuestion) {
+            color = "blue"; // current question
+        } 
+        else if (q.attempted) {
+            color = "green"; // answered
+        } 
+        else if (q.visited) {
+            color = "white"; // visited but not answered
+        }
+
+        nav.innerHTML += `
+            <div class="circle" style="background:${color}; border:1px solid black;"
+            onclick="jumpToQuestion(${i})">${i + 1}</div>
+        `;
+    });
+}
+
+function jumpToQuestion(index) {
+    currentQuestion = index;
+    loadQuestion(index);
+}
+
+// ----------------- Timer -----------------
 function startTimer() {
     const timerElement = document.getElementById("timer");
-    clearInterval(timerInterval);
+
     timerInterval = setInterval(() => {
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
             alert("Time's up!");
             submitQuiz();
         } else {
-            const hours = Math.floor(timeLeft / 3600);
-            const minutes = Math.floor((timeLeft % 3600) / 60);
-            const seconds = timeLeft % 60;
-            timerElement.textContent = `Time Left: ${hours
-                .toString()
-                .padStart(2, "0")}:${minutes
-                .toString()
-                .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+            const hours = String(Math.floor(timeLeft / 3600)).padStart(2, "0");
+            const minutes = String(Math.floor((timeLeft % 3600) / 60)).padStart(2, "0");
+            const seconds = String(timeLeft % 60).padStart(2, "0");
+
+            timerElement.textContent = `Time Left: ${hours}:${minutes}:${seconds}`;
             timeLeft--;
         }
     }, 1000);
 }
 
-// submit 
-function jumpToQuestion(index) {
-            currentQuestion = index;
-            loadQuestion(index);
-        }
-
-        function submitQuiz() {
-            let confirmation = confirm("Are you sure you want to submit the test?");
-            
-            if (!confirmation) {
-                return; // अगर यूज़र 'Cancel' करता है तो आगे नहीं बढ़ेंगे
-            }
-
-            let attempted = 0;
-            let notAttempted = 0;
-            let score = 0;
-            const results = [];
-
-            questions.forEach(q => {
-                if (q.attempted) {
-                    attempted++;
-                    if (q.selected === q.answer) {
-                        score++;
-                    }
-                } else {
-                    notAttempted++;
-                }
-                results.push({ question: q.question, selected: q.selected || "Not Answered", correct: q.answer });
-            });
-
-            localStorage.setItem("attempted", attempted);
-            localStorage.setItem("notAttempted", notAttempted);
-            localStorage.setItem("score", score);
-            localStorage.setItem("results", JSON.stringify(results));
-
-            // रिजल्ट देखने से पहले एक और कन्फर्मेशन ले सकते हैं
-            let viewResult = confirm("Test submitted successfully! Do you want to view your result?");
-            if (viewResult) {
-                window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
-            }
-        }
-        window.onload = () => {
-            loadQuestion(currentQuestion);
-        };
-
-
-function updateNavigation() {
-    const nav = document.getElementById("circleContainer");
-    nav.innerHTML = "";
-    questions.forEach((q, i) => {
-        let color = "gray";
-        if (i === currentQuestion) color = "blue";
-        else if (q.attempted) color = "green";
-        nav.innerHTML += `<div class='circle' style='background-color:${color}' onclick='loadQuestion(${i})'>${i + 1}</div>`;
-    });
-}
-
-// ----------------- Camera & Movement Logic -----------------
+// ----------------- Camera & Movement Detection -----------------
 let videoStream;
 let movementCount = 0;
 
 function startCamera() {
     const container = document.createElement("div");
     container.id = "camera-container";
-    container.style.position = "fixed";
-    container.style.top = "10px";
-    container.style.left = "10px"; // ✅ Left side
-    container.style.width = "130px";
-    container.style.height = "130px";
-    container.style.zIndex = "9999";
-    container.style.borderRadius = "50%";
-    container.style.overflow = "hidden";
-    container.style.border = "3px solid red";
-    container.style.boxShadow = "0 0 10px rgba(0,0,0,0.3)";
-    container.style.cursor = "grab";
-    container.style.minWidth = "80px";
-    container.style.minHeight = "80px";
-    container.style.maxWidth = "250px";
-    container.style.maxHeight = "250px";
-    container.style.background = "#000";
+    container.style = `
+        position:fixed; top:10px; left:10px; width:130px; height:130px;
+        border-radius:50%; overflow:hidden; border:3px solid red; z-index:9999;
+    `;
+
     document.body.appendChild(container);
 
     const video = document.createElement("video");
-    video.setAttribute("autoplay", true);
-    video.setAttribute("playsinline", true);
-    video.style.width = "100%";
-    video.style.height = "100%";
-    video.style.objectFit = "cover";
+    video.autoplay = true;
+    video.playsinline = true;
+    video.style = "width:100%; height:100%; object-fit:cover;";
     container.appendChild(video);
 
-    // ✅ Resize handle
-    const resizeHandle = document.createElement("div");
-    resizeHandle.style.position = "absolute";
-    resizeHandle.style.bottom = "2px";
-    resizeHandle.style.right = "2px";
-    resizeHandle.style.width = "15px";
-    resizeHandle.style.height = "15px";
-    resizeHandle.style.background = "rgba(255,255,255,0.7)";
-    resizeHandle.style.borderRadius = "4px";
-    resizeHandle.style.cursor = "se-resize";
-    container.appendChild(resizeHandle);
-
-    // ✅ Drag logic
-    let isDragging = false;
-    let offsetX, offsetY;
-
-    container.addEventListener("mousedown", (e) => {
-        if (e.target === resizeHandle) return;
-        isDragging = true;
-        offsetX = e.clientX - container.offsetLeft;
-        offsetY = e.clientY - container.offsetTop;
-        container.style.cursor = "grabbing";
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isDragging) return;
-        let x = e.clientX - offsetX;
-        let y = e.clientY - offsetY;
-        x = Math.max(0, Math.min(window.innerWidth - container.offsetWidth, x));
-        y = Math.max(0, Math.min(window.innerHeight - container.offsetHeight, y));
-        container.style.left = `${x}px`;
-        container.style.top = `${y}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isDragging = false;
-        container.style.cursor = "grab";
-    });
-
-    // ✅ Resize logic
-    let isResizing = false;
-    let startWidth, startHeight, startX, startY;
-
-    resizeHandle.addEventListener("mousedown", (e) => {
-        e.stopPropagation();
-        isResizing = true;
-        startWidth = container.offsetWidth;
-        startHeight = container.offsetHeight;
-        startX = e.clientX;
-        startY = e.clientY;
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isResizing) return;
-        const dx = e.clientX - startX;
-        const dy = e.clientY - startY;
-        const newSize = Math.max(80, Math.min(250, Math.max(startWidth + dx, startHeight + dy)));
-        container.style.width = `${newSize}px`;
-        container.style.height = `${newSize}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isResizing = false;
-    });
-
-    // ✅ Camera stream
     navigator.mediaDevices.getUserMedia({ video: true })
         .then(stream => {
             video.srcObject = stream;
             videoStream = stream;
             detectMovement(video);
         })
-        .catch(err => {
-            console.error("Camera error:", err);
-            alert("Camera not accessible!");
-        });
+        .catch(() => alert("Camera access denied!"));
 }
 
 function detectMovement(video) {
@@ -1390,51 +1315,51 @@ function detectMovement(video) {
     const ctx = canvas.getContext("2d");
     canvas.width = 160;
     canvas.height = 160;
-    let lastImageData = null;
+
+    let lastData = null;
 
     setInterval(() => {
-        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(video, 0, 0, 160, 160);
+        const data = ctx.getImageData(0, 0, 160, 160);
 
-        if (lastImageData) {
+        if (lastData) {
             let diff = 0;
-            for (let i = 0; i < imageData.data.length; i += 4) {
-                diff += Math.abs(imageData.data[i] - lastImageData.data[i]);
+            for (let i = 0; i < data.data.length; i += 4) {
+                diff += Math.abs(data.data[i] - lastData.data[i]);
             }
 
             if (diff > 1000000) {
                 movementCount++;
-                if (movementCount === 1) {
-                    alert("⚠️ Alert 1: Face is not move");
-                } else if (movementCount === 2) {
-                    alert("⚠️ Alert 2: Head is not move");
-                } else if (movementCount === 3) {
-                    alert("⚠️ Alert 3: Test series is restarting...");
+
+                if (movementCount === 1) alert("⚠ Alert 1: No movement detected!");
+                if (movementCount === 2) alert("⚠ Alert 2: Head not moving!");
+                if (movementCount === 3) {
+                    alert("⚠ Alert 3: Restarting test...");
                     restartTest();
                 }
             }
         }
-        lastImageData = imageData;
+        lastData = data;
+
     }, 2000);
 }
 
 function restartTest() {
-    if (videoStream) {
-        videoStream.getTracks().forEach(track => track.stop());
-    }
-    const camContainer = document.getElementById("camera-container");
-    if (camContainer) camContainer.remove();
+    if (videoStream) videoStream.getTracks().forEach(t => t.stop());
+
+    const cam = document.getElementById("camera-container");
+    if (cam) cam.remove();
 
     movementCount = 0;
     currentQuestion = 0;
-    timeLeft = 180 * 60;
+    timeLeft = 60 * 60;
 
     questions.forEach(q => {
         q.attempted = false;
         q.selected = null;
     });
 
-    loadQuestion(currentQuestion);
+    loadQuestion(0);
     startTimer();
     startCamera();
 }
@@ -1443,8 +1368,5 @@ function restartTest() {
 window.onload = function () {
     loadQuestion(currentQuestion);
     startTimer();
-    startCamera(); // ✅ Camera starts with test
+    startCamera();
 };
-
-
-///////////////////////////////////////

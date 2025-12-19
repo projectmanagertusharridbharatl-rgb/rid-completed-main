@@ -1,1163 +1,1169 @@
-const questions = [
-    {
-        "num": 1,
-        "question_en": "Which part of the plant conducts photosynthesis?",
-        "question_hi": "पौधे का कौन सा भाग प्रकाश संश्लेषण करता है?",
-        "options_en": ["Root", "Stem", "Leaf", "Flower"],
-        "options_hi": ["जड़", "तना", "पत्ती", "फूल"],
-        "answer_en": "Leaf",
-        "answer_hi": "पत्ती",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 2,
-        "question_en": "What is the chemical formula of Quicklime?",
-        "question_hi": "बिना बुझा चूना का रासायनिक सूत्र क्या है?",
-        "options_en": ["CaO", "Ca(OH)₂", "CaCO₃", "CaSO₄"],
-        "options_hi": ["CaO", "Ca(OH)₂", "CaCO₃", "CaSO₄"],
-        "answer_en": "CaO",
-        "answer_hi": "CaO",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 3,
-        "question_en": "Who invented the Steam Engine?",
-        "question_hi": "स्टीम इंजन का आविष्कार किसने किया?",
-        "options_en": ["James Watt", "Thomas Edison", "Alexander Graham Bell", "Michael Faraday"],
-        "options_hi": ["जेम्स वाट", "थॉमस एडिसन", "अलेक्जेंडर ग्राहम बेल", "माइकल फैराडे"],
-        "answer_en": "James Watt",
-        "answer_hi": "जेम्स वाट",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 4,
-        "question_en": "What is the value of (a + b)²?",
-        "question_hi": "(a + b)² का मान क्या है?",
-        "options_en": ["a² + b²", "a² + 2ab + b²", "a² - 2ab + b²", "a² + b² - 2ab"],
-        "options_hi": ["a² + b²", "a² + 2ab + b²", "a² - 2ab + b²", "a² + b² - 2ab"],
-        "answer_en": "a² + 2ab + b²",
-        "answer_hi": "a² + 2ab + b²",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 5,
-        "question_en": "Which is the national bird of India?",
-        "question_hi": "भारत का राष्ट्रीय पक्षी कौन सा है?",
-        "options_en": ["Peacock", "Sparrow", "Parrot", "Crow"],
-        "options_hi": ["मोर", "गौरैया", "तोता", "कौआ"],
-        "answer_en": "Peacock",
-        "answer_hi": "मोर",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 6,
-        "question_en": "What is the SI unit of pressure?",
-        "question_hi": "दबाव की SI इकाई क्या है?",
-        "options_en": ["Pascal", "Newton", "Joule", "Watt"],
-        "options_hi": ["पास्कल", "न्यूटन", "जूल", "वाट"],
-        "answer_en": "Pascal",
-        "answer_hi": "पास्कल",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 7,
-        "question_en": "Which gas is known as Marsh Gas?",
-        "question_hi": "किस गैस को मार्श गैस के नाम से जाना जाता है?",
-        "options_en": ["Methane", "Ethane", "Propane", "Butane"],
-        "options_hi": ["मीथेन", "ईथेन", "प्रोपेन", "ब्यूटेन"],
-        "answer_en": "Methane",
-        "answer_hi": "मीथेन",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 8,
-        "question_en": "What is the chemical symbol for Neon?",
-        "question_hi": "नियॉन का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Ne", "No", "N", "Na"],
-        "options_hi": ["Ne", "No", "N", "Na"],
-        "answer_en": "Ne",
-        "answer_hi": "Ne",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 9,
-        "question_en": "Who wrote 'Madhushala'?",
-        "question_hi": "'मधुशाला' किसने लिखी?",
-        "options_en": ["Harivansh Rai Bachchan", "Mahadevi Verma", "Suryakant Tripathi", "Jaishankar Prasad"],
-        "options_hi": ["हरिवंश राय बच्चन", "महादेवी वर्मा", "सूर्यकांत त्रिपाठी", "जयशंकर प्रसाद"],
-        "answer_en": "Harivansh Rai Bachchan",
-        "answer_hi": "हरिवंश राय बच्चन",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 10,
-        "question_en": "Which is the largest country by area?",
-        "question_hi": "क्षेत्रफल के हिसाब से सबसे बड़ा देश कौन सा है?",
-        "options_en": ["China", "USA", "Russia", "Canada"],
-        "options_hi": ["चीन", "अमेरिका", "रूस", "कनाडा"],
-        "answer_en": "Russia",
-        "answer_hi": "रूस",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 11,
-        "question_en": "What is the atomic mass of Hydrogen?",
-        "question_hi": "हाइड्रोजन का परमाणु द्रव्यमान क्या है?",
-        "options_en": ["1", "2", "3", "4"],
-        "options_hi": ["1", "2", "3", "4"],
-        "answer_en": "1",
-        "answer_hi": "1",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 12,
-        "question_en": "What is the capital of Brazil?",
-        "question_hi": "ब्राजील की राजधानी क्या है?",
-        "options_en": ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"],
-        "options_hi": ["रियो डी जनेरियो", "साओ पाउलो", "ब्रासीलिया", "साल्वाडोर"],
-        "answer_en": "Brasília",
-        "answer_hi": "ब्रासीलिया",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 13,
-        "question_en": "Which blood cells help in clotting?",
-        "question_hi": "कौन सी रक्त कोशिकाएं थक्का जमाने में मदद करती हैं?",
-        "options_en": ["Red blood cells", "White blood cells", "Platelets", "Plasma"],
-        "options_hi": ["लाल रक्त कोशिकाएं", "श्वेत रक्त कोशिकाएं", "प्लेटलेट्स", "प्लाज्मा"],
-        "answer_en": "Platelets",
-        "answer_hi": "प्लेटलेट्स",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 14,
-        "question_en": "What is the cube of 4?",
-        "question_hi": "4 का घन क्या है?",
-        "options_en": ["16", "64", "32", "128"],
-        "options_hi": ["16", "64", "32", "128"],
-        "answer_en": "64",
-        "answer_hi": "64",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 15,
-        "question_en": "Which gas is used by plants in respiration?",
-        "question_hi": "पौधे श्वसन में किस गैस का उपयोग करते हैं?",
-        "options_en": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
-        "options_hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "नाइट्रोजन", "हाइड्रोजन"],
-        "answer_en": "Oxygen",
-        "answer_hi": "ऑक्सीजन",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 16,
-        "question_en": "Who was the first Prime Minister of India?",
-        "question_hi": "भारत के पहले प्रधानमंत्री कौन थे?",
-        "options_en": ["Mahatma Gandhi", "Jawaharlal Nehru", "Sardar Patel", "Rajendra Prasad"],
-        "options_hi": ["महात्मा गांधी", "जवाहरलाल नेहरू", "सरदार पटेल", "राजेंद्र प्रसाद"],
-        "answer_en": "Jawaharlal Nehru",
-        "answer_hi": "जवाहरलाल नेहरू",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 17,
-        "question_en": "What is the chemical formula of Bleaching Powder?",
-        "question_hi": "विरंजक चूर्ण का रासायनिक सूत्र क्या है?",
-        "options_en": ["CaOCl₂", "NaCl", "CaCO₃", "NaOH"],
-        "options_hi": ["CaOCl₂", "NaCl", "CaCO₃", "NaOH"],
-        "answer_en": "CaOCl₂",
-        "answer_hi": "CaOCl₂",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 18,
-        "question_en": "Which is the smallest ocean?",
-        "question_hi": "सबसे छोटा महासागर कौन सा है?",
-        "options_en": ["Arctic Ocean", "Indian Ocean", "Southern Ocean", "Atlantic Ocean"],
-        "options_hi": ["आर्कटिक महासागर", "हिंद महासागर", "दक्षिणी महासागर", "अटलांटिक महासागर"],
-        "answer_en": "Arctic Ocean",
-        "answer_hi": "आर्कटिक महासागर",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 19,
-        "question_en": "What is the unit of electric charge?",
-        "question_hi": "विद्युत आवेश की इकाई क्या है?",
-        "options_en": ["Coulomb", "Ampere", "Volt", "Ohm"],
-        "options_hi": ["कूलॉम", "एम्पियर", "वोल्ट", "ओम"],
-        "answer_en": "Coulomb",
-        "answer_hi": "कूलॉम",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 20,
-        "question_en": "Which metal is used in thermometers?",
-        "question_hi": "थर्मामीटर में किस धातु का उपयोग किया जाता है?",
-        "options_en": ["Mercury", "Iron", "Copper", "Aluminum"],
-        "options_hi": ["पारा", "लोहा", "तांबा", "एल्युमिनियम"],
-        "answer_en": "Mercury",
-        "answer_hi": "पारा",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 21,
-        "question_en": "What is the value of sin 45°?",
-        "question_hi": "sin 45° का मान क्या है?",
-        "options_en": ["1/√2", "1", "√3/2", "0"],
-        "options_hi": ["1/√2", "1", "√3/2", "0"],
-        "answer_en": "1/√2",
-        "answer_hi": "1/√2",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 22,
-        "question_en": "Which vitamin is known as Sunshine Vitamin?",
-        "question_hi": "किस विटामिन को सनशाइन विटामिन के नाम से जाना जाता है?",
-        "options_en": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
-        "options_hi": ["विटामिन A", "विटामिन B", "विटामिन C", "विटामिन D"],
-        "answer_en": "Vitamin D",
-        "answer_hi": "विटामिन D",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 23,
-        "question_en": "What is the chemical formula of Plaster of Paris?",
-        "question_hi": "प्लास्टर ऑफ पेरिस का रासायनिक सूत्र क्या है?",
-        "options_en": ["CaSO₄.½H₂O", "CaSO₄.2H₂O", "CaCO₃", "CaO"],
-        "options_hi": ["CaSO₄.½H₂O", "CaSO₄.2H₂O", "CaCO₃", "CaO"],
-        "answer_en": "CaSO₄.½H₂O",
-        "answer_hi": "CaSO₄.½H₂O",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 24,
-        "question_en": "Who invented the Telephone?",
-        "question_hi": "टेलीफोन का आविष्कार किसने किया?",
-        "options_en": ["Alexander Graham Bell", "Thomas Edison", "Nikola Tesla", "Guglielmo Marconi"],
-        "options_hi": ["अलेक्जेंडर ग्राहम बेल", "थॉमस एडिसन", "निकोला टेस्ला", "गुग्लिल्मो मार्कोनी"],
-        "answer_en": "Alexander Graham Bell",
-        "answer_hi": "अलेक्जेंडर ग्राहम बेल",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 25,
-        "question_en": "Which planet is known as the Morning Star?",
-        "question_hi": "किस ग्रह को मॉर्निंग स्टार के नाम से जाना जाता है?",
-        "options_en": ["Mars", "Venus", "Jupiter", "Mercury"],
-        "options_hi": ["मंगल", "शुक्र", "बृहस्पति", "बुध"],
-        "answer_en": "Venus",
-        "answer_hi": "शुक्र",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 26,
-        "question_en": "Which gas is produced during fermentation?",
-        "question_hi": "किण्वन के दौरान कौन सी गैस उत्पन्न होती है?",
-        "options_en": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
-        "options_hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "नाइट्रोजन", "हाइड्रोजन"],
-        "answer_en": "Carbon dioxide",
-        "answer_hi": "कार्बन डाइऑक्साइड",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 27,
-        "question_en": "What is the chemical symbol for Argon?",
-        "question_hi": "आर्गन का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Ar", "Ag", "A", "An"],
-        "options_hi": ["Ar", "Ag", "A", "An"],
-        "answer_en": "Ar",
-        "answer_hi": "Ar",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 28,
-        "question_en": "Who wrote 'Meghdoot'?",
-        "question_hi": "'मेघदूत' किसने लिखा?",
-        "options_en": ["Kalidasa", "Bhavabhuti", "Bhasa", "Sudraka"],
-        "options_hi": ["कालिदास", "भवभूति", "भास", "शूद्रक"],
-        "answer_en": "Kalidasa",
-        "answer_hi": "कालिदास",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 29,
-        "question_en": "What is the formula for the area of a trapezium?",
-        "question_hi": "समलंब चतुर्भुज के क्षेत्रफल का सूत्र क्या है?",
-        "options_en": ["½(a+b)h", "a×b", "a+b", "a²+b²"],
-        "options_hi": ["½(a+b)h", "a×b", "a+b", "a²+b²"],
-        "answer_en": "½(a+b)h",
-        "answer_hi": "½(a+b)h",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 30,
-        "question_en": "Which organ produces red blood cells?",
-        "question_hi": "कौन सा अंग लाल रक्त कोशिकाएं उत्पन्न करता है?",
-        "options_en": ["Liver", "Spleen", "Bone marrow", "Kidneys"],
-        "options_hi": ["यकृत", "तिल्ली", "बोन मैरो", "गुर्दे"],
-        "answer_en": "Bone marrow",
-        "answer_hi": "बोन मैरो",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 31,
-        "question_en": "What is the boiling point of mercury?",
-        "question_hi": "पारे का क्वथनांक क्या है?",
-        "options_en": ["357°C", "100°C", "78°C", "200°C"],
-        "options_hi": ["357°C", "100°C", "78°C", "200°C"],
-        "answer_en": "357°C",
-        "answer_hi": "357°C",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 32,
-        "question_en": "Which is the fastest bird?",
-        "question_hi": "सबसे तेज उड़ने वाला पक्षी कौन सा है?",
-        "options_en": ["Eagle", "Peregrine Falcon", "Ostrich", "Hummingbird"],
-        "options_hi": ["ईगल", "पेरेग्रिन फाल्कन", "शुतुरमुर्ग", "हमिंगबर्ड"],
-        "answer_en": "Peregrine Falcon",
-        "answer_hi": "पेरेग्रिन फाल्कन",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 33,
-        "question_en": "What is the chemical formula of Nitric Acid?",
-        "question_hi": "नाइट्रिक एसिड का रासायनिक सूत्र क्या है?",
-        "options_en": ["HNO₃", "H₂SO₄", "HCl", "H₃PO₄"],
-        "options_hi": ["HNO₃", "H₂SO₄", "HCl", "H₃PO₄"],
-        "answer_en": "HNO₃",
-        "answer_hi": "HNO₃",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 34,
-        "question_en": "Who was the first Indian to win an Oscar?",
-        "question_hi": "ऑस्कर जीतने वाले पहले भारतीय कौन थे?",
-        "options_en": ["A.R. Rahman", "Bhanu Athaiya", "Satyajit Ray", "Gulzar"],
-        "options_hi": ["ए.आर. रहमान", "भानु अथैया", "सत्यजित रे", "गुलज़ार"],
-        "answer_en": "Bhanu Athaiya",
-        "answer_hi": "भानु अथैया",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 35,
-        "question_en": "What is the formula for work done?",
-        "question_hi": "किए गए कार्य का सूत्र क्या है?",
-        "options_en": ["Force × Distance", "Mass × Acceleration", "Pressure × Volume", "Power × Time"],
-        "options_hi": ["बल × दूरी", "द्रव्यमान × त्वरण", "दबाव × आयतन", "शक्ति × समय"],
-        "answer_en": "Force × Distance",
-        "answer_hi": "बल × दूरी",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 36,
-        "question_en": "Which gas is used in neon signs?",
-        "question_hi": "नियॉन साइन में किस गैस का उपयोग किया जाता है?",
-        "options_en": ["Neon", "Argon", "Helium", "Xenon"],
-        "options_hi": ["नियॉन", "आर्गन", "हीलियम", "जेनॉन"],
-        "answer_en": "Neon",
-        "answer_hi": "नियॉन",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 37,
-        "question_en": "What is the chemical symbol for Tungsten?",
-        "question_hi": "टंगस्टन का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Tu", "Tg", "W", "Ts"],
-        "options_hi": ["Tu", "Tg", "W", "Ts"],
-        "answer_en": "W",
-        "answer_hi": "W",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 38,
-        "question_en": "Who painted 'The Last Supper'?",
-        "question_hi": "'द लास्ट सपर' की पेंटिंग किसने बनाई?",
-        "options_en": ["Michelangelo", "Leonardo da Vinci", "Raphael", "Donatello"],
-        "options_hi": ["माइकलएंजेलो", "लियोनार्डो दा विंची", "राफेल", "डोनाटेलो"],
-        "answer_en": "Leonardo da Vinci",
-        "answer_hi": "लियोनार्डो दा विंची",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 39,
-        "question_en": "What is the value of cos 90°?",
-        "question_hi": "cos 90° का मान क्या है?",
-        "options_en": ["0", "1", "0.5", "√3/2"],
-        "options_hi": ["0", "1", "0.5", "√3/2"],
-        "answer_en": "0",
-        "answer_hi": "0",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 40,
-        "question_en": "Which vitamin deficiency causes Beriberi?",
-        "question_hi": "किस विटामिन की कमी से बेरीबेरी रोग होता है?",
-        "options_en": ["Vitamin B1", "Vitamin B2", "Vitamin B6", "Vitamin B12"],
-        "options_hi": ["विटामिन B1", "विटामिन B2", "विटामिन B6", "विटामिन B12"],
-        "answer_en": "Vitamin B1",
-        "answer_hi": "विटामिन B1",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 41,
-        "question_en": "What is the chemical formula of Carbon Monoxide?",
-        "question_hi": "कार्बन मोनोऑक्साइड का रासायनिक सूत्र क्या है?",
-        "options_en": ["CO", "CO₂", "C₂O", "C₃O₂"],
-        "options_hi": ["CO", "CO₂", "C₂O", "C₃O₂"],
-        "answer_en": "CO",
-        "answer_hi": "CO",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 42,
-        "question_en": "Who discovered the Sea Route to India?",
-        "question_hi": "भारत के समुद्री मार्ग की खोज किसने की?",
-        "options_en": ["Vasco da Gama", "Christopher Columbus", "Marco Polo", "James Cook"],
-        "options_hi": ["वास्को डी गामा", "क्रिस्टोफर कोलंबस", "मार्को पोलो", "जेम्स कुक"],
-        "answer_en": "Vasco da Gama",
-        "answer_hi": "वास्को डी गामा",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 43,
-        "question_en": "What is the highest mountain in the world?",
-        "question_hi": "दुनिया की सबसे ऊंची पर्वत चोटी कौन सी है?",
-        "options_en": ["K2", "Mount Everest", "Kangchenjunga", "Makalu"],
-        "options_hi": ["K2", "माउंट एवरेस्ट", "कंचनजंगा", "मकालु"],
-        "answer_en": "Mount Everest",
-        "answer_hi": "माउंट एवरेस्ट",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 44,
-        "question_en": "Which gas is used in making semiconductors?",
-        "question_hi": "सेमीकंडक्टर बनाने में किस गैस का उपयोग किया जाता है?",
-        "options_en": ["Silane", "Methane", "Ethane", "Propane"],
-        "options_hi": ["सिलेन", "मीथेन", "ईथेन", "प्रोपेन"],
-        "answer_en": "Silane",
-        "answer_hi": "सिलेन",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 45,
-        "question_en": "What is the chemical symbol for Cobalt?",
-        "question_hi": "कोबाल्ट का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Cb", "Co", "Ct", "Ca"],
-        "options_hi": ["Cb", "Co", "Ct", "Ca"],
-        "answer_en": "Co",
-        "answer_hi": "Co",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 46,
-        "question_en": "Who wrote 'Nirmala'?",
-        "question_hi": "'निर्मला' किसने लिखा?",
-        "options_en": ["Premchand", "Jaishankar Prasad", "Mahadevi Verma", "Suryakant Tripathi"],
-        "options_hi": ["प्रेमचंद", "जयशंकर प्रसाद", "महादेवी वर्मा", "सूर्यकांत त्रिपाठी"],
-        "answer_en": "Premchand",
-        "answer_hi": "प्रेमचंद",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 47,
-        "question_en": "What is the formula for the volume of a cone?",
-        "question_hi": "शंकु के आयतन का सूत्र क्या है?",
-        "options_en": ["⅓πr²h", "πr²h", "⅓πrh", "πrh"],
-        "options_hi": ["⅓πr²h", "πr²h", "⅓πrh", "πrh"],
-        "answer_en": "⅓πr²h",
-        "answer_hi": "⅓πr²h",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 48,
-        "question_en": "Which organ stores fat in the human body?",
-        "question_hi": "मानव शरीर में कौन सा अंग वसा संग्रहीत करता है?",
-        "options_en": ["Liver", "Adipose tissue", "Muscles", "Skin"],
-        "options_hi": ["यकृत", "वसा ऊतक", "मांसपेशियां", "त्वचा"],
-        "answer_en": "Adipose tissue",
-        "answer_hi": "वसा ऊतक",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 49,
-        "question_en": "What is the freezing point of alcohol?",
-        "question_hi": "अल्कोहल का हिमांक क्या है?",
-        "options_en": ["-114°C", "0°C", "-78°C", "-100°C"],
-        "options_hi": ["-114°C", "0°C", "-78°C", "-100°C"],
-        "answer_en": "-114°C",
-        "answer_hi": "-114°C",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 50,
-        "question_en": "Which is the largest gland in human body?",
-        "question_hi": "मानव शरीर की सबसे बड़ी ग्रंथि कौन सी है?",
-        "options_en": ["Liver", "Pancreas", "Thyroid", "Pituitary"],
-        "options_hi": ["यकृत", "अग्न्याशय", "थायरॉइड", "पिट्यूटरी"],
-        "answer_en": "Liver",
-        "answer_hi": "यकृत",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 51,
-        "question_en": "What is the chemical formula of Acetic Acid?",
-        "question_hi": "एसिटिक एसिड का रासायनिक सूत्र क्या है?",
-        "options_en": ["CH₃COOH", "HCOOH", "C₂H₅OH", "CH₃OH"],
-        "options_hi": ["CH₃COOH", "HCOOH", "C₂H₅OH", "CH₃OH"],
-        "answer_en": "CH₃COOH",
-        "answer_hi": "CH₃COOH",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 52,
-        "question_en": "Who was the first Indian woman to win Miss World?",
-        "question_hi": "मिस वर्ल्ड जीतने वाली पहली भारतीय महिला कौन थीं?",
-        "options_en": ["Aishwarya Rai", "Sushmita Sen", "Priyanka Chopra", "Reita Faria"],
-        "options_hi": ["ऐश्वर्या राय", "सुष्मिता सेन", "प्रियंका चोपड़ा", "रीता फारिया"],
-        "answer_en": "Reita Faria",
-        "answer_hi": "रीता फारिया",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 53,
-        "question_en": "What is the formula for density?",
-        "question_hi": "घनत्व का सूत्र क्या है?",
-        "options_en": ["Mass/Volume", "Volume/Mass", "Mass × Volume", "Mass + Volume"],
-        "options_hi": ["द्रव्यमान/आयतन", "आयतन/द्रव्यमान", "द्रव्यमान × आयतन", "द्रव्यमान + आयतन"],
-        "answer_en": "Mass/Volume",
-        "answer_hi": "द्रव्यमान/आयतन",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 54,
-        "question_en": "Which gas is used in making soda water?",
-        "question_hi": "सोडा वाटर बनाने में किस गैस का उपयोग किया जाता है?",
-        "options_en": ["Carbon dioxide", "Oxygen", "Nitrogen", "Hydrogen"],
-        "options_hi": ["कार्बन डाइऑक्साइड", "ऑक्सीजन", "नाइट्रोजन", "हाइड्रोजन"],
-        "answer_en": "Carbon dioxide",
-        "answer_hi": "कार्बन डाइऑक्साइड",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 55,
-        "question_en": "What is the chemical symbol for Nickel?",
-        "question_hi": "निकल का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Ni", "N", "Nk", "Ne"],
-        "options_hi": ["Ni", "N", "Nk", "Ne"],
-        "answer_en": "Ni",
-        "answer_hi": "Ni",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 56,
-        "question_en": "Who wrote 'Ashadh Ka Ek Din'?",
-        "question_hi": "'आषाढ़ का एक दिन' किसने लिखा?",
-        "options_en": ["Mohan Rakesh", "Jaishankar Prasad", "Bhisham Sahni", "Dharamvir Bharati"],
-        "options_hi": ["मोहन राकेश", "जयशंकर प्रसाद", "भीष्म साहनी", "धर्मवीर भारती"],
-        "answer_en": "Mohan Rakesh",
-        "answer_hi": "मोहन राकेश",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 57,
-        "question_en": "What is the value of tan 45°?",
-        "question_hi": "tan 45° का मान क्या है?",
-        "options_en": ["1", "0", "√3", "1/√3"],
-        "options_hi": ["1", "0", "√3", "1/√3"],
-        "answer_en": "1",
-        "answer_hi": "1",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 58,
-        "question_en": "Which vitamin deficiency causes Pellagra?",
-        "question_hi": "किस विटामिन की कमी से पेलाग्रा रोग होता है?",
-        "options_en": ["Vitamin B3", "Vitamin B1", "Vitamin B2", "Vitamin B12"],
-        "options_hi": ["विटामिन B3", "विटामिन B1", "विटामिन B2", "विटामिन B12"],
-        "answer_en": "Vitamin B3",
-        "answer_hi": "विटामिन B3",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 59,
-        "question_en": "What is the chemical formula of Propane?",
-        "question_hi": "प्रोपेन का रासायनिक सूत्र क्या है?",
-        "options_en": ["C₃H₈", "CH₄", "C₂H₆", "C₄H₁₀"],
-        "options_hi": ["C₃H₈", "CH₄", "C₂H₆", "C₄H₁₀"],
-        "answer_en": "C₃H₈",
-        "answer_hi": "C₃H₈",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 60,
-        "question_en": "Who discovered the Cell?",
-        "question_hi": "कोशिका की खोज किसने की?",
-        "options_en": ["Robert Hooke", "Anton van Leeuwenhoek", "Louis Pasteur", "Robert Koch"],
-        "options_hi": ["रॉबर्ट हुक", "एंटोन वैन ल्यूवेनहॉक", "लुई पाश्चर", "रॉबर्ट कोच"],
-        "answer_en": "Robert Hooke",
-        "answer_hi": "रॉबर्ट हुक",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 61,
-        "question_en": "What is the formula for compound interest?",
-        "question_hi": "चक्रवृद्धि ब्याज का सूत्र क्या है?",
-        "options_en": ["P(1+R/100)ᵀ", "PRT/100", "P + I", "P(1+RT)"],
-        "options_hi": ["P(1+R/100)ᵀ", "PRT/100", "P + I", "P(1+RT)"],
-        "answer_en": "P(1+R/100)ᵀ",
-        "answer_hi": "P(1+R/100)ᵀ",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 62,
-        "question_en": "Which gas is used in making PVC?",
-        "question_hi": "PVC बनाने में किस गैस का उपयोग किया जाता है?",
-        "options_en": ["Vinyl chloride", "Ethylene", "Propylene", "Acetylene"],
-        "options_hi": ["विनाइल क्लोराइड", "एथिलीन", "प्रोपिलीन", "एसिटिलीन"],
-        "answer_en": "Vinyl chloride",
-        "answer_hi": "विनाइल क्लोराइड",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 63,
-        "question_en": "What is the chemical symbol for Platinum?",
-        "question_hi": "प्लैटिनम का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Pl", "Pt", "Pn", "Pm"],
-        "options_hi": ["Pl", "Pt", "Pn", "Pm"],
-        "answer_en": "Pt",
-        "answer_hi": "Pt",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 64,
-        "question_en": "Who wrote 'Rashmirathi'?",
-        "question_hi": "'रश्मिरथी' किसने लिखा?",
-        "options_en": ["Ramdhari Singh Dinkar", "Harivansh Rai Bachchan", "Suryakant Tripathi", "Mahadevi Verma"],
-        "options_hi": ["रामधारी सिंह दिनकर", "हरिवंश राय बच्चन", "सूर्यकांत त्रिपाठी", "महादेवी वर्मा"],
-        "answer_en": "Ramdhari Singh Dinkar",
-        "answer_hi": "रामधारी सिंह दिनकर",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 65,
-        "question_en": "What is the formula for the perimeter of a square?",
-        "question_hi": "वर्ग की परिधि का सूत्र क्या है?",
-        "options_en": ["4a", "a²", "2(a+b)", "a+b+c"],
-        "options_hi": ["4a", "a²", "2(a+b)", "a+b+c"],
-        "answer_en": "4a",
-        "answer_hi": "4a",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 66,
-        "question_en": "Which organ produces white blood cells?",
-        "question_hi": "कौन सा अंग श्वेत रक्त कोशिकाएं उत्पन्न करता है?",
-        "options_en": ["Liver", "Spleen", "Bone marrow", "Thymus"],
-        "options_hi": ["यकृत", "तिल्ली", "बोन मैरो", "थाइमस"],
-        "answer_en": "Bone marrow",
-        "answer_hi": "बोन मैरो",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 67,
-        "question_en": "What is the chemical formula of Formic Acid?",
-        "question_hi": "फॉर्मिक एसिड का रासायनिक सूत्र क्या है?",
-        "options_en": ["HCOOH", "CH₃COOH", "C₂H₅COOH", "H₂CO₃"],
-        "options_hi": ["HCOOH", "CH₃COOH", "C₂H₅COOH", "H₂CO₃"],
-        "answer_en": "HCOOH",
-        "answer_hi": "HCOOH",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 68,
-        "question_en": "Who was the first Indian to win a Grand Slam?",
-        "question_hi": "ग्रैंड स्लैम जीतने वाले पहले भारतीय कौन थे?",
-        "options_en": ["Leander Paes", "Mahesh Bhupathi", "Sania Mirza", "Ramanathan Krishnan"],
-        "options_hi": ["लिएंडर पेस", "महेश भूपति", "सानिया मिर्जा", "रमणाथन कृष्णन"],
-        "answer_en": "Mahesh Bhupathi",
-        "answer_hi": "महेश भूपति",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 69,
-        "question_en": "What is the formula for acceleration?",
-        "question_hi": "त्वरण का सूत्र क्या है?",
-        "options_en": ["(v-u)/t", "v×t", "u+at", "v²-u²"],
-        "options_hi": ["(v-u)/t", "v×t", "u+at", "v²-u²"],
-        "answer_en": "(v-u)/t",
-        "answer_hi": "(v-u)/t",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 70,
-        "question_en": "Which gas is used in making polystyrene?",
-        "question_hi": "पॉलीस्टाइरीन बनाने में किस गैस का उपयोग किया जाता है?",
-        "options_en": ["Styrene", "Ethylene", "Propylene", "Butylene"],
-        "options_hi": ["स्टाइरीन", "एथिलीन", "प्रोपिलीन", "ब्यूटिलीन"],
-        "answer_en": "Styrene",
-        "answer_hi": "स्टाइरीन",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 71,
-        "question_en": "What is the chemical symbol for Radium?",
-        "question_hi": "रेडियम का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Ra", "Rd", "Rm", "Rn"],
-        "options_hi": ["Ra", "Rd", "Rm", "Rn"],
-        "answer_en": "Ra",
-        "answer_hi": "Ra",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 72,
-        "question_en": "Who wrote 'Chandrakanta'?",
-        "question_hi": "'चंद्रकांता' किसने लिखा?",
-        "options_en": ["Devaki Nandan Khatri", "Premchand", "Jaishankar Prasad", "Mahadevi Verma"],
-        "options_hi": ["देवकी नंदन खत्री", "प्रेमचंद", "जयशंकर प्रसाद", "महादेवी वर्मा"],
-        "answer_en": "Devaki Nandan Khatri",
-        "answer_hi": "देवकी नंदन खत्री",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 73,
-        "question_en": "What is the value of sec 45°?",
-        "question_hi": "sec 45° का मान क्या है?",
-        "options_en": ["√2", "1", "2", "1/√2"],
-        "options_hi": ["√2", "1", "2", "1/√2"],
-        "answer_en": "√2",
-        "answer_hi": "√2",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 74,
-        "question_en": "Which vitamin deficiency causes Rickets?",
-        "question_hi": "किस विटामिन की कमी से रिकेट्स रोग होता है?",
-        "options_en": ["Vitamin D", "Vitamin C", "Vitamin A", "Vitamin K"],
-        "options_hi": ["विटामिन D", "विटामिन C", "विटामिन A", "विटामिन K"],
-        "answer_en": "Vitamin D",
-        "answer_hi": "विटामिन D",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 75,
-        "question_en": "What is the chemical formula of Ethylene?",
-        "question_hi": "एथिलीन का रासायनिक सूत्र क्या है?",
-        "options_en": ["C₂H₄", "C₂H₆", "CH₄", "C₃H₆"],
-        "options_hi": ["C₂H₄", "C₂H₆", "CH₄", "C₃H₆"],
-        "answer_en": "C₂H₄",
-        "answer_hi": "C₂H₄",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 76,
-        "question_en": "Who discovered the Laws of Inheritance?",
-        "question_hi": "आनुवंशिकता के नियमों की खोज किसने की?",
-        "options_en": ["Gregor Mendel", "Charles Darwin", "Louis Pasteur", "Robert Koch"],
-        "options_hi": ["ग्रेगर मेंडल", "चार्ल्स डार्विन", "लुई पाश्चर", "रॉबर्ट कोच"],
-        "answer_en": "Gregor Mendel",
-        "answer_hi": "ग्रेगर मेंडल",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 77,
-        "question_en": "What is the formula for the area of a rhombus?",
-        "question_hi": "समचतुर्भुज के क्षेत्रफल का सूत्र क्या है?",
-        "options_en": ["½ × d₁ × d₂", "a²", "a × b", "½ × a × h"],
-        "options_hi": ["½ × d₁ × d₂", "a²", "a × b", "½ × a × h"],
-        "answer_en": "½ × d₁ × d₂",
-        "answer_hi": "½ × d₁ × d₂",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 78,
-        "question_en": "Which gas is used in making fertilizers?",
-        "question_hi": "उर्वरक बनाने में किस गैस का उपयोग किया जाता है?",
-        "options_en": ["Ammonia", "Methane", "Carbon dioxide", "Oxygen"],
-        "options_hi": ["अमोनिया", "मीथेन", "कार्बन डाइऑक्साइड", "ऑक्सीजन"],
-        "answer_en": "Ammonia",
-        "answer_hi": "अमोनिया",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 79,
-        "question_en": "What is the chemical symbol for Uranium?",
-        "question_hi": "यूरेनियम का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Ur", "U", "Un", "Um"],
-        "options_hi": ["Ur", "U", "Un", "Um"],
-        "answer_en": "U",
-        "answer_hi": "U",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 80,
-        "question_en": "Who wrote 'Maila Anchal'?",
-        "question_hi": "'मैला आंचल' किसने लिखा?",
-        "options_en": ["Phanishwar Nath Renu", "Premchand", "Jaishankar Prasad", "Mahadevi Verma"],
-        "options_hi": ["फणीश्वर नाथ रेणु", "प्रेमचंद", "जयशंकर प्रसाद", "महादेवी वर्मा"],
-        "answer_en": "Phanishwar Nath Renu",
-        "answer_hi": "फणीश्वर नाथ रेणु",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 81,
-        "question_en": "What is the value of cosec 45°?",
-        "question_hi": "cosec 45° का मान क्या है?",
-        "options_en": ["√2", "1", "2", "1/√2"],
-        "options_hi": ["√2", "1", "2", "1/√2"],
-        "answer_en": "√2",
-        "answer_hi": "√2",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 82,
-        "question_en": "Which vitamin is known as Retinol?",
-        "question_hi": "किस विटामिन को रेटिनॉल के नाम से जाना जाता है?",
-        "options_en": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
-        "options_hi": ["विटामिन A", "विटामिन B", "विटामिन C", "विटामिन D"],
-        "answer_en": "Vitamin A",
-        "answer_hi": "विटामिन A",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 83,
-        "question_en": "What is the chemical formula of Butane?",
-        "question_hi": "ब्यूटेन का रासायनिक सूत्र क्या है?",
-        "options_en": ["C₄H₁₀", "C₃H₈", "C₂H₆", "CH₄"],
-        "options_hi": ["C₄H₁₀", "C₃H₈", "C₂H₆", "CH₄"],
-        "answer_en": "C₄H₁₀",
-        "answer_hi": "C₄H₁₀",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 84,
-        "question_en": "Who discovered the Radioactivity?",
-        "question_hi": "रेडियोधर्मिता की खोज किसने की?",
-        "options_en": ["Marie Curie", "Pierre Curie", "Henri Becquerel", "Ernest Rutherford"],
-        "options_hi": ["मैरी क्यूरी", "पियरे क्यूरी", "हेनरी बेकरेल", "अर्नेस्ट रदरफोर्ड"],
-        "answer_en": "Henri Becquerel",
-        "answer_hi": "हेनरी बेकरेल",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 85,
-        "question_en": "What is the formula for the surface area of a sphere?",
-        "question_hi": "गोले के पृष्ठीय क्षेत्रफल का सूत्र क्या है?",
-        "options_en": ["4πr²", "πr²", "2πr²", "3πr²"],
-        "options_hi": ["4πr²", "πr²", "2πr²", "3πr²"],
-        "answer_en": "4πr²",
-        "answer_hi": "4πr²",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 86,
-        "question_en": "Which organ produces digestive enzymes?",
-        "question_hi": "कौन सा अंग पाचक एंजाइम उत्पन्न करता है?",
-        "options_en": ["Pancreas", "Liver", "Stomach", "Small intestine"],
-        "options_hi": ["अग्न्याशय", "यकृत", "आमाशय", "छोटी आंत"],
-        "answer_en": "Pancreas",
-        "answer_hi": "अग्न्याशय",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 87,
-        "question_en": "What is the chemical formula of Citric Acid?",
-        "question_hi": "सिट्रिक एसिड का रासायनिक सूत्र क्या है?",
-        "options_en": ["C₆H₈O₇", "CH₃COOH", "HCOOH", "C₃H₆O₃"],
-        "options_hi": ["C₆H₈O₇", "CH₃COOH", "HCOOH", "C₃H₆O₃"],
-        "answer_en": "C₆H₈O₇",
-        "answer_hi": "C₆H₈O₇",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 88,
-        "question_en": "Who was the first Indian woman to win an Olympic medal?",
-        "question_hi": "ओलंपिक पदक जीतने वाली पहली भारतीय महिला कौन थीं?",
-        "options_en": ["Karnam Malleswari", "P.T. Usha", "Mary Kom", "Saina Nehwal"],
-        "options_hi": ["कर्णम मल्लेश्वरी", "पी.टी. उषा", "मैरी कॉम", "साइना नेहवाल"],
-        "answer_en": "Karnam Malleswari",
-        "answer_hi": "कर्णम मल्लेश्वरी",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 89,
-        "question_en": "What is the formula for potential energy?",
-        "question_hi": "स्थितिज ऊर्जा का सूत्र क्या है?",
-        "options_en": ["mgh", "½mv²", "Fd", "ma"],
-        "options_hi": ["mgh", "½mv²", "Fd", "ma"],
-        "answer_en": "mgh",
-        "answer_hi": "mgh",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 90,
-        "question_en": "Which gas is used in making synthetic rubber?",
-        "question_hi": "सिंथेटिक रबर बनाने में किस गैस का उपयोग किया जाता है?",
-        "options_en": ["Butadiene", "Ethylene", "Propylene", "Acetylene"],
-        "options_hi": ["ब्यूटाडाइन", "एथिलीन", "प्रोपिलीन", "एसिटिलीन"],
-        "answer_en": "Butadiene",
-        "answer_hi": "ब्यूटाडाइन",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 91,
-        "question_en": "What is the chemical symbol for Krypton?",
-        "question_hi": "क्रिप्टन का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Kp", "Kr", "K", "Ky"],
-        "options_hi": ["Kp", "Kr", "K", "Ky"],
-        "answer_en": "Kr",
-        "answer_hi": "Kr",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 92,
-        "question_en": "Who wrote 'Gaban'?",
-        "question_hi": "'गबन' किसने लिखा?",
-        "options_en": ["Premchand", "Jaishankar Prasad", "Mahadevi Verma", "Suryakant Tripathi"],
-        "options_hi": ["प्रेमचंद", "जयशंकर प्रसाद", "महादेवी वर्मा", "सूर्यकांत त्रिपाठी"],
-        "answer_en": "Premchand",
-        "answer_hi": "प्रेमचंद",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 93,
-        "question_en": "What is the value of cot 60°?",
-        "question_hi": "cot 60° का मान क्या है?",
-        "options_en": ["1/√3", "√3", "1", "0"],
-        "options_hi": ["1/√3", "√3", "1", "0"],
-        "answer_en": "1/√3",
-        "answer_hi": "1/√3",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 94,
-        "question_en": "Which vitamin deficiency causes Scurvy?",
-        "question_hi": "किस विटामिन की कमी से स्कर्वी रोग होता है?",
-        "options_en": ["Vitamin C", "Vitamin B", "Vitamin A", "Vitamin D"],
-        "options_hi": ["विटामिन C", "विटामिन B", "विटामिन A", "विटामिन D"],
-        "answer_en": "Vitamin C",
-        "answer_hi": "विटामिन C",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 95,
-        "question_en": "What is the chemical formula of TNT?",
-        "question_hi": "TNT का रासायनिक सूत्र क्या है?",
-        "options_en": ["C₇H₅N₃O₆", "C₆H₆", "C₆H₁₂O₆", "CH₄"],
-        "options_hi": ["C₇H₅N₃O₆", "C₆H₆", "C₆H₁₂O₆", "CH₄"],
-        "answer_en": "C₇H₅N₃O₆",
-        "answer_hi": "C₇H₅N₃O₆",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 96,
-        "question_en": "Who discovered the Vaccination?",
-        "question_hi": "टीकाकरण की खोज किसने की?",
-        "options_en": ["Edward Jenner", "Louis Pasteur", "Alexander Fleming", "Robert Koch"],
-        "options_hi": ["एडवर्ड जेनर", "लुई पाश्चर", "अलेक्जेंडर फ्लेमिंग", "रॉबर्ट कोच"],
-        "answer_en": "Edward Jenner",
-        "answer_hi": "एडवर्ड जेनर",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 97,
-        "question_en": "What is the formula for the volume of a pyramid?",
-        "question_hi": "पिरामिड के आयतन का सूत्र क्या है?",
-        "options_en": ["⅓ × base area × height", "base area × height", "½ × base area × height", "⅔ × base area × height"],
-        "options_hi": ["⅓ × आधार क्षेत्रफल × ऊंचाई", "आधार क्षेत्रफल × ऊंचाई", "½ × आधार क्षेत्रफल × ऊंचाई", "⅔ × आधार क्षेत्रफल × ऊंचाई"],
-        "answer_en": "⅓ × base area × height",
-        "answer_hi": "⅓ × आधार क्षेत्रफल × ऊंचाई",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 98,
-        "question_en": "Which gas is used in making glass?",
-        "question_hi": "कांच बनाने में किस गैस का उपयोग किया जाता है?",
-        "options_en": ["Carbon dioxide", "Oxygen", "Nitrogen", "Argon"],
-        "options_hi": ["कार्बन डाइऑक्साइड", "ऑक्सीजन", "नाइट्रोजन", "आर्गन"],
-        "answer_en": "Carbon dioxide",
-        "answer_hi": "कार्बन डाइऑक्साइड",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 99,
-        "question_en": "What is the chemical symbol for Xenon?",
-        "question_hi": "जेनॉन का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Xe", "Xn", "X", "Xo"],
-        "options_hi": ["Xe", "Xn", "X", "Xo"],
-        "answer_en": "Xe",
-        "answer_hi": "Xe",
-        "attempted": false,
-        "selected": ""
-    },
-    {
-        "num": 100,
-        "question_en": "Who wrote 'Saket'?",
-        "question_hi": "'साकेत' किसने लिखा?",
-        "options_en": ["Maithili Sharan Gupt", "Jaishankar Prasad", "Mahadevi Verma", "Suryakant Tripathi"],
-        "options_hi": ["मैथिलीशरण गुप्त", "जयशंकर प्रसाद", "महादेवी वर्मा", "सूर्यकांत त्रिपाठी"],
-        "answer_en": "Maithili Sharan Gupt",
-        "answer_hi": "मैथिलीशरण गुप्त",
-        "attempted": false,
-        "selected": ""
-    }     
-// Add more questions here...
-];
+const questions =[
+  {
+    "num": 1,
+    "question_en": "What is TypeScript primarily used for?",
+    "question_hi": "TypeScript मुख्य रूप से किसके लिए उपयोग किया जाता है?",
+    "options_en": ["Adding static types to JavaScript", "Styling HTML pages", "Managing databases", "Creating CSS animations"],
+    "options_hi": ["JavaScript में static types जोड़ने के लिए", "HTML पेज स्टाइल करने के लिए", "Databases manage करने के लिए", "CSS animations बनाने के लिए"],
+    "answer_en": "Adding static types to JavaScript",
+    "answer_hi": "JavaScript में static types जोड़ने के लिए",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 2,
+    "question_en": "Which TypeScript keyword is used to define a variable whose value cannot change?",
+    "question_hi": "कौन सा TypeScript keyword variable define करता है जिसकी value change नहीं हो सकती?",
+    "options_en": ["const", "let", "var", "readonly"],
+    "options_hi": ["const", "let", "var", "readonly"],
+    "answer_en": "const",
+    "answer_hi": "const",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 3,
+    "question_en": "Which TypeScript type is safer than 'any' because it forces type checking before usage?",
+    "question_hi": "कौन सा TypeScript type 'any' से safer है क्योंकि यह usage से पहले type checking force करता है?",
+    "options_en": ["unknown", "any", "void", "never"],
+    "options_hi": ["unknown", "any", "void", "never"],
+    "answer_en": "unknown",
+    "answer_hi": "unknown",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 4,
+    "question_en": "Which TypeScript feature allows creating a new type from an existing type with modifications?",
+    "question_hi": "कौन सा TypeScript feature existing type से modifications के साथ नया type बनाने देता है?",
+    "options_en": ["mapped types", "union types", "interfaces", "enums"],
+    "options_hi": ["mapped types", "union types", "interfaces", "enums"],
+    "answer_en": "mapped types",
+    "answer_hi": "mapped types",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 5,
+    "question_en": "Which TypeScript keyword declares an interface?",
+    "question_hi": "कौन सा TypeScript keyword interface declare करता है?",
+    "options_en": ["interface", "type", "class", "enum"],
+    "options_hi": ["interface", "type", "class", "enum"],
+    "answer_en": "interface",
+    "answer_hi": "interface",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 6,
+    "question_en": "Which TypeScript keyword allows defining a type alias?",
+    "question_hi": "कौन सा TypeScript keyword type alias define करने के लिए use होता है?",
+    "options_en": ["type", "interface", "class", "enum"],
+    "options_hi": ["type", "interface", "class", "enum"],
+    "answer_en": "type",
+    "answer_hi": "type",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 7,
+    "question_en": "Which TypeScript feature allows defining multiple possible types for a variable?",
+    "question_hi": "कौन सा TypeScript feature variable के लिए multiple possible types define करने देता है?",
+    "options_en": ["union types", "intersection types", "generics", "any"],
+    "options_hi": ["union types", "intersection types", "generics", "any"],
+    "answer_en": "union types",
+    "answer_hi": "union types",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 8,
+    "question_en": "Which TypeScript feature allows combining multiple types into one?",
+    "question_hi": "कौन सा TypeScript feature multiple types को combine करके एक type बनाता है?",
+    "options_en": ["intersection types", "union types", "any", "unknown"],
+    "options_hi": ["intersection types", "union types", "any", "unknown"],
+    "answer_en": "intersection types",
+    "answer_hi": "intersection types",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 9,
+    "question_en": "Which TypeScript keyword is used to define an enumeration?",
+    "question_hi": "कौन सा TypeScript keyword enumeration define करता है?",
+    "options_en": ["enum", "type", "interface", "class"],
+    "options_hi": ["enum", "type", "interface", "class"],
+    "answer_en": "enum",
+    "answer_hi": "enum",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 10,
+    "question_en": "Which TypeScript keyword prevents a class from being instantiated directly?",
+    "question_hi": "कौन सा TypeScript keyword class को directly instantiate होने से रोकता है?",
+    "options_en": ["abstract", "readonly", "private", "final"],
+    "options_hi": ["abstract", "readonly", "private", "final"],
+    "answer_en": "abstract",
+    "answer_hi": "abstract",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 11,
+    "question_en": "Which TypeScript keyword allows a class to implement multiple interfaces?",
+    "question_hi": "कौन सा TypeScript keyword class को multiple interfaces implement करने देता है?",
+    "options_en": ["implements", "extends", "interface", "type"],
+    "options_hi": ["implements", "extends", "interface", "type"],
+    "answer_en": "implements",
+    "answer_hi": "implements",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 12,
+    "question_en": "Which TypeScript feature allows extracting a subset of properties from a type?",
+    "question_hi": "कौन सा TypeScript feature type से कुछ selected properties extract करने देता है?",
+    "options_en": ["Pick", "Omit", "Partial", "Required"],
+    "options_hi": ["Pick", "Omit", "Partial", "Required"],
+    "answer_en": "Pick",
+    "answer_hi": "Pick",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 13,
+    "question_en": "Which TypeScript feature removes selected properties from a type?",
+    "question_hi": "कौन सा TypeScript feature type से selected properties remove करता है?",
+    "options_en": ["Omit", "Pick", "Partial", "Required"],
+    "options_hi": ["Omit", "Pick", "Partial", "Required"],
+    "answer_en": "Omit",
+    "answer_hi": "Omit",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 14,
+    "question_en": "Which TypeScript utility type makes all properties optional?",
+    "question_hi": "कौन सा TypeScript utility type किसी type की सभी properties optional बनाता है?",
+    "options_en": ["Partial<T>", "Required<T>", "Readonly<T>", "Pick<T>"],
+    "options_hi": ["Partial<T>", "Required<T>", "Readonly<T>", "Pick<T>"],
+    "answer_en": "Partial<T>",
+    "answer_hi": "Partial<T>",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 15,
+    "question_en": "Which keyword is used for class inheritance?",
+    "question_hi": "Class inheritance के लिए कौन सा keyword उपयोग होता है?",
+    "options_en": ["extends", "implements", "inherits", "super"],
+    "options_hi": ["extends", "implements", "inherits", "super"],
+    "answer_en": "extends",
+    "answer_hi": "extends",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 16,
+    "question_en": "Which TypeScript type represents a function that never returns?",
+    "question_hi": "कौन सा TypeScript type ऐसे function को represent करता है जो कभी return नहीं करता?",
+    "options_en": ["never", "void", "any", "unknown"],
+    "options_hi": ["never", "void", "any", "unknown"],
+    "answer_en": "never",
+    "answer_hi": "never",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 17,
+    "question_en": "Which TypeScript keyword declares a variable that can be reassigned?",
+    "question_hi": "कौन सा TypeScript keyword variable declare करता है जिसे reassigned किया जा सकता है?",
+    "options_en": ["let", "const", "var", "readonly"],
+    "options_hi": ["let", "const", "var", "readonly"],
+    "answer_en": "let",
+    "answer_hi": "let",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 18,
+    "question_en": "Which TypeScript type allows assigning either a number or a string?",
+    "question_hi": "कौन सा TypeScript type number या string assign करने देता है?",
+    "options_en": ["union type", "intersection type", "any", "unknown"],
+    "options_hi": ["union type", "intersection type", "any", "unknown"],
+    "answer_en": "union type",
+    "answer_hi": "union type",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 19,
+    "question_en": "Which TypeScript keyword declares a constant class property that cannot be changed?",
+    "question_hi": "कौन सा TypeScript keyword class की property declare करता है जिसे बदला नहीं जा सकता?",
+    "options_en": ["readonly", "const", "private", "protected"],
+    "options_hi": ["readonly", "const", "private", "protected"],
+    "answer_en": "readonly",
+    "answer_hi": "readonly",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 20,
+    "question_en": "Which TypeScript keyword allows pausing execution inside an async function?",
+    "question_hi": "कौन सा keyword async function के अंदर execution को रोकता है?",
+    "options_en": ["await", "async", "pause", "stop"],
+    "options_hi": ["await", "async", "pause", "stop"],
+    "answer_en": "await",
+    "answer_hi": "await",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 21,
+    "question_en": "Which TypeScript utility type makes all properties required?",
+    "question_hi": "कौन सा TypeScript utility type सभी properties required बनाता है?",
+    "options_en": ["Required<T>", "Partial<T>", "Readonly<T>", "Pick<T>"],
+    "options_hi": ["Required<T>", "Partial<T>", "Readonly<T>", "Pick<T>"],
+    "answer_en": "Required<T>",
+    "answer_hi": "Required<T>",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 22,
+    "question_en": "Which TypeScript utility type makes all properties readonly?",
+    "question_hi": "कौन सा TypeScript utility type सभी properties readonly बनाता है?",
+    "options_en": ["Readonly<T>", "Partial<T>", "Required<T>", "Pick<T>"],
+    "options_hi": ["Readonly<T>", "Partial<T>", "Required<T>", "Pick<T>"],
+    "answer_en": "Readonly<T>",
+    "answer_hi": "Readonly<T>",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 23,
+    "question_en": "Which TypeScript utility type picks specific properties from a type?",
+    "question_hi": "कौन सा TypeScript utility type type से specific properties select करता है?",
+    "options_en": ["Pick<T, K>", "Omit<T, K>", "Partial<T>", "Required<T>"],
+    "options_hi": ["Pick<T, K>", "Omit<T, K>", "Partial<T>", "Required<T>"],
+    "answer_en": "Pick<T, K>",
+    "answer_hi": "Pick<T, K>",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 24,
+    "question_en": "Which TypeScript utility type removes specific properties from a type?",
+    "question_hi": "कौन सा TypeScript utility type type से specific properties remove करता है?",
+    "options_en": ["Omit<T, K>", "Pick<T, K>", "Partial<T>", "Required<T>"],
+    "options_hi": ["Omit<T, K>", "Pick<T, K>", "Partial<T>", "Required<T>"],
+    "answer_en": "Omit<T, K>",
+    "answer_hi": "Omit<T, K>",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 25,
+    "question_en": "Which TypeScript type represents a function that does not return anything?",
+    "question_hi": "कौन सा TypeScript type function को represent करता है जो कुछ return नहीं करता?",
+    "options_en": ["void", "never", "any", "unknown"],
+    "options_hi": ["void", "never", "any", "unknown"],
+    "answer_en": "void",
+    "answer_hi": "void",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 26,
+    "question_en": "Which TypeScript keyword is used to define a generic type parameter?",
+    "question_hi": "कौन सा TypeScript keyword generic type parameter define करने के लिए use होता है?",
+    "options_en": ["<T>", "type", "interface", "class"],
+    "options_hi": ["<T>", "type", "interface", "class"],
+    "answer_en": "<T>",
+    "answer_hi": "<T>",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 27,
+    "question_en": "Which TypeScript feature allows combining multiple types into one variable?",
+    "question_hi": "कौन सा TypeScript feature multiple types को एक variable में combine करता है?",
+    "options_en": ["union type", "intersection type", "any", "unknown"],
+    "options_hi": ["union type", "intersection type", "any", "unknown"],
+    "answer_en": "union type",
+    "answer_hi": "union type",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 28,
+    "question_en": "Which TypeScript feature ensures a variable satisfies multiple type constraints simultaneously?",
+    "question_hi": "कौन सा TypeScript feature variable को multiple type constraints satisfy करने देता है?",
+    "options_en": ["intersection type", "union type", "any", "unknown"],
+    "options_hi": ["intersection type", "union type", "any", "unknown"],
+    "answer_en": "intersection type",
+    "answer_hi": "intersection type",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 29,
+    "question_en": "Which TypeScript keyword allows declaring an optional property in an interface?",
+    "question_hi": "कौन सा TypeScript keyword interface में optional property declare करने के लिए use होता है?",
+    "options_en": ["?", "readonly", "optional", "const"],
+    "options_hi": ["?", "readonly", "optional", "const"],
+    "answer_en": "?",
+    "answer_hi": "?",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 30,
+    "question_en": "Which TypeScript type represents a value that can never occur?",
+    "question_hi": "कौन सा TypeScript type ऐसे value को represent करता है जो कभी occur नहीं हो सकता?",
+    "options_en": ["never", "void", "any", "unknown"],
+    "options_hi": ["never", "void", "any", "unknown"],
+    "answer_en": "never",
+    "answer_hi": "never",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 31,
+    "question_en": "Which keyword is used to declare a class constructor parameter as a class property?",
+    "question_hi": "कौन सा keyword class constructor parameter को class property के रूप में declare करने के लिए use होता है?",
+    "options_en": ["public", "private", "protected", "readonly"],
+    "options_hi": ["public", "private", "protected", "readonly"],
+    "answer_en": "public",
+    "answer_hi": "public",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 32,
+    "question_en": "Which TypeScript feature allows defining default values for function parameters?",
+    "question_hi": "कौन सा TypeScript feature function parameters के लिए default values define करने देता है?",
+    "options_en": ["default parameters", "optional parameters", "rest parameters", "any"],
+    "options_hi": ["default parameters", "optional parameters", "rest parameters", "any"],
+    "answer_en": "default parameters",
+    "answer_hi": "default parameters",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 33,
+    "question_en": "Which TypeScript feature allows passing an indefinite number of arguments as an array?",
+    "question_hi": "कौन सा TypeScript feature arguments की indefinite संख्या को array के रूप में पास करने देता है?",
+    "options_en": ["rest parameters", "spread operator", "optional parameters", "any"],
+    "options_hi": ["rest parameters", "spread operator", "optional parameters", "any"],
+    "answer_en": "rest parameters",
+    "answer_hi": "rest parameters",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 34,
+    "question_en": "Which TypeScript feature allows spreading elements of an array into another array?",
+    "question_hi": "कौन सा TypeScript feature array के elements को दूसरे array में spread करने देता है?",
+    "options_en": ["spread operator", "rest parameters", "union type", "intersection type"],
+    "options_hi": ["spread operator", "rest parameters", "union type", "intersection type"],
+    "answer_en": "spread operator",
+    "answer_hi": "spread operator",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 35,
+    "question_en": "Which TypeScript feature allows creating a new type based on existing type but with some modifications?",
+    "question_hi": "कौन सा TypeScript feature existing type के आधार पर modifications के साथ नया type बनाता है?",
+    "options_en": ["mapped types", "union types", "intersection types", "any"],
+    "options_hi": ["mapped types", "union types", "intersection types", "any"],
+    "answer_en": "mapped types",
+    "answer_hi": "mapped types",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 36,
+    "question_en": "Which TypeScript feature ensures type safety when dealing with unknown values?",
+    "question_hi": "कौन सा TypeScript feature unknown values के साथ deal करते समय type safety सुनिश्चित करता है?",
+    "options_en": ["type guards", "any", "void", "never"],
+    "options_hi": ["type guards", "any", "void", "never"],
+    "answer_en": "type guards",
+    "answer_hi": "type guards",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 37,
+    "question_en": "Which TypeScript type represents a value that may be null or undefined?",
+    "question_hi": "कौन सा TypeScript type value को represent करता है जो null या undefined हो सकता है?",
+    "options_en": ["nullable type", "any", "unknown", "never"],
+    "options_hi": ["nullable type", "any", "unknown", "never"],
+    "answer_en": "nullable type",
+    "answer_hi": "nullable type",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 38,
+    "question_en": "Which TypeScript feature allows defining multiple call signatures for a function?",
+    "question_hi": "कौन सा TypeScript feature function के लिए multiple call signatures define करने देता है?",
+    "options_en": ["function overloading", "optional parameters", "rest parameters", "any"],
+    "options_hi": ["function overloading", "optional parameters", "rest parameters", "any"],
+    "answer_en": "function overloading",
+    "answer_hi": "function overloading",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 39,
+    "question_en": "Which TypeScript keyword declares a static property in a class?",
+    "question_hi": "कौन सा TypeScript keyword class में static property declare करता है?",
+    "options_en": ["static", "readonly", "public", "private"],
+    "options_hi": ["static", "readonly", "public", "private"],
+    "answer_en": "static",
+    "answer_hi": "static",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 40,
+    "question_en": "Which TypeScript feature creates a type with all properties of T except the ones specified?",
+    "question_hi": "कौन सा TypeScript feature T की सभी properties के साथ type बनाता है सिवाय उन properties के जिन्हें specify किया गया हो?",
+    "options_en": ["Omit", "Pick", "Partial", "Record"],
+    "options_hi": ["Omit", "Pick", "Partial", "Record"],
+    "answer_en": "Omit",
+    "answer_hi": "Omit",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 41,
+    "question_en": "Which TypeScript feature creates a type with only the selected properties of T?",
+    "question_hi": "कौन सा TypeScript feature T की केवल selected properties के साथ type बनाता है?",
+    "options_en": ["Pick", "Omit", "Partial", "Required"],
+    "options_hi": ["Pick", "Omit", "Partial", "Required"],
+    "answer_en": "Pick",
+    "answer_hi": "Pick",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 42,
+    "question_en": "Which TypeScript keyword is used to create a read-only array?",
+    "question_hi": "कौन सा TypeScript keyword read-only array बनाने के लिए use होता है?",
+    "options_en": ["readonly", "const", "immutable", "final"],
+    "options_hi": ["readonly", "const", "immutable", "final"],
+    "answer_en": "readonly",
+    "answer_hi": "readonly",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 43,
+    "question_en": "Which TypeScript type ensures the variable cannot be assigned null or undefined?",
+    "question_hi": "कौन सा TypeScript type variable को null या undefined assign होने से रोकता है?",
+    "options_en": ["non-null assertion", "any", "unknown", "never"],
+    "options_hi": ["non-null assertion", "any", "unknown", "never"],
+    "answer_en": "non-null assertion",
+    "answer_hi": "non-null assertion",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 44,
+    "question_en": "Which TypeScript keyword declares a method that cannot be overridden in a subclass?",
+    "question_hi": "कौन सा TypeScript keyword subclass में method override होने से रोकता है?",
+    "options_en": ["final", "readonly", "private", "abstract"],
+    "options_hi": ["final", "readonly", "private", "abstract"],
+    "answer_en": "final",
+    "answer_hi": "final",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 45,
+    "question_en": "Which TypeScript keyword declares a private property or method?",
+    "question_hi": "कौन सा TypeScript keyword private property या method declare करता है?",
+    "options_en": ["private", "protected", "public", "readonly"],
+    "options_hi": ["private", "protected", "public", "readonly"],
+    "answer_en": "private",
+    "answer_hi": "private",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 46,
+    "question_en": "Which TypeScript keyword declares a property or method accessible only to the class and its subclasses?",
+    "question_hi": "कौन सा TypeScript keyword property या method को केवल class और इसके subclasses के लिए accessible बनाता है?",
+    "options_en": ["protected", "private", "public", "readonly"],
+    "options_hi": ["protected", "private", "public", "readonly"],
+    "answer_en": "protected",
+    "answer_hi": "protected",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 47,
+    "question_en": "Which TypeScript keyword allows a subclass to call a method of its parent class?",
+    "question_hi": "कौन सा TypeScript keyword subclass को parent class की method call करने देता है?",
+    "options_en": ["super", "this", "base", "parent"],
+    "options_hi": ["super", "this", "base", "parent"],
+    "answer_en": "super",
+    "answer_hi": "super",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 48,
+    "question_en": "Which TypeScript feature allows you to define a function that never returns normally?",
+    "question_hi": "कौन सा TypeScript feature function को define करने देता है जो कभी normal return नहीं करता?",
+    "options_en": ["never type", "void type", "any", "unknown"],
+    "options_hi": ["never type", "void type", "any", "unknown"],
+    "answer_en": "never type",
+    "answer_hi": "never type",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 49,
+    "question_en": "Which TypeScript keyword is used to define an abstract class?",
+    "question_hi": "कौन सा TypeScript keyword abstract class define करने के लिए use होता है?",
+    "options_en": ["abstract", "interface", "class", "final"],
+    "options_hi": ["abstract", "interface", "class", "final"],
+    "answer_en": "abstract",
+    "answer_hi": "abstract",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 50,
+    "question_en": "Which TypeScript keyword defines a type-safe enum with string values?",
+    "question_hi": "कौन सा TypeScript keyword string values के साथ type-safe enum define करता है?",
+    "options_en": ["enum", "type", "interface", "const enum"],
+    "options_hi": ["enum", "type", "interface", "const enum"],
+    "answer_en": "const enum",
+    "answer_hi": "const enum",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 51,
+    "question_en": "Which TypeScript keyword allows declaring a tuple type?",
+    "question_hi": "कौन सा TypeScript keyword tuple type declare करने के लिए use होता है?",
+    "options_en": ["[ ]", "tuple", "array", "any"],
+    "options_hi": ["[ ]", "tuple", "array", "any"],
+    "answer_en": "[ ]",
+    "answer_hi": "[ ]",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 52,
+    "question_en": "Which TypeScript feature allows you to define a type with dynamic keys?",
+    "question_hi": "कौन सा TypeScript feature dynamic keys के साथ type define करने देता है?",
+    "options_en": ["index signature", "mapped types", "union types", "intersection types"],
+    "options_hi": ["index signature", "mapped types", "union types", "intersection types"],
+    "answer_en": "index signature",
+    "answer_hi": "index signature",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 53,
+    "question_en": "Which TypeScript feature allows enforcing immutability for objects?",
+    "question_hi": "कौन सा TypeScript feature objects के लिए immutability enforce करता है?",
+    "options_en": ["Readonly<T>", "Partial<T>", "Required<T>", "Pick<T>"],
+    "options_hi": ["Readonly<T>", "Partial<T>", "Required<T>", "Pick<T>"],
+    "answer_en": "Readonly<T>",
+    "answer_hi": "Readonly<T>",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 54,
+    "question_en": "Which TypeScript type allows representing multiple types in a single variable?",
+    "question_hi": "कौन सा TypeScript type single variable में multiple types represent करने देता है?",
+    "options_en": ["union type", "intersection type", "any", "unknown"],
+    "options_hi": ["union type", "intersection type", "any", "unknown"],
+    "answer_en": "union type",
+    "answer_hi": "union type",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 55,
+    "question_en": "Which TypeScript feature allows creating a type by combining multiple types?",
+    "question_hi": "कौन सा TypeScript feature multiple types को combine करके नया type बनाता है?",
+    "options_en": ["intersection type", "union type", "any", "unknown"],
+    "options_hi": ["intersection type", "union type", "any", "unknown"],
+    "answer_en": "intersection type",
+    "answer_hi": "intersection type",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 56,
+    "question_en": "Which TypeScript keyword allows type assertion to override the inferred type?",
+    "question_hi": "कौन सा TypeScript keyword type assertion के लिए use होता है जिससे inferred type override किया जा सके?",
+    "options_en": ["as", "<type>", "typeof", "instanceof"],
+    "options_hi": ["as", "<type>", "typeof", "instanceof"],
+    "answer_en": "as",
+    "answer_hi": "as",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 57,
+    "question_en": "Which TypeScript feature allows declaring constants with specific literal types?",
+    "question_hi": "कौन सा TypeScript feature constants को specific literal types के साथ declare करने देता है?",
+    "options_en": ["literal types", "enum", "any", "unknown"],
+    "options_hi": ["literal types", "enum", "any", "unknown"],
+    "answer_en": "literal types",
+    "answer_hi": "literal types",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 58,
+    "question_en": "Which TypeScript keyword is used to define a namespace?",
+    "question_hi": "कौन सा TypeScript keyword namespace define करने के लिए use होता है?",
+    "options_en": ["namespace", "module", "package", "interface"],
+    "options_hi": ["namespace", "module", "package", "interface"],
+    "answer_en": "namespace",
+    "answer_hi": "namespace",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 59,
+    "question_en": "Which TypeScript feature allows defining a type that depends on a condition?",
+    "question_hi": "कौन सा TypeScript feature conditional type define करने देता है जो condition पर depend करता है?",
+    "options_en": ["conditional types", "mapped types", "union types", "intersection types"],
+    "options_hi": ["conditional types", "mapped types", "union types", "intersection types"],
+    "answer_en": "conditional types",
+    "answer_hi": "conditional types",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 60,
+    "question_en": "Which TypeScript keyword is used to declare an interface?",
+    "question_hi": "कौन सा TypeScript keyword interface declare करने के लिए use होता है?",
+    "options_en": ["interface", "type", "class", "enum"],
+    "options_hi": ["interface", "type", "class", "enum"],
+    "answer_en": "interface",
+    "answer_hi": "interface",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 61,
+    "question_en": "Which TypeScript feature allows extending interfaces?",
+    "question_hi": "कौन सा TypeScript feature interfaces को extend करने देता है?",
+    "options_en": ["extends", "implements", "inherits", "super"],
+    "options_hi": ["extends", "implements", "inherits", "super"],
+    "answer_en": "extends",
+    "answer_hi": "extends",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 62,
+    "question_en": "Which TypeScript feature allows merging multiple interfaces with the same name?",
+    "question_hi": "कौन सा TypeScript feature same name वाले multiple interfaces merge करने देता है?",
+    "options_en": ["declaration merging", "interface merging", "type merging", "union merging"],
+    "options_hi": ["declaration merging", "interface merging", "type merging", "union merging"],
+    "answer_en": "declaration merging",
+    "answer_hi": "declaration merging",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 63,
+    "question_en": "Which TypeScript keyword allows defining a type alias?",
+    "question_hi": "कौन सा TypeScript keyword type alias define करने के लिए use होता है?",
+    "options_en": ["type", "interface", "enum", "class"],
+    "options_hi": ["type", "interface", "enum", "class"],
+    "answer_en": "type",
+    "answer_hi": "type",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 64,
+    "question_en": "Which TypeScript feature allows mapping properties of one type to another?",
+    "question_hi": "कौन सा TypeScript feature एक type की properties को दूसरे type में map करता है?",
+    "options_en": ["mapped types", "conditional types", "union types", "intersection types"],
+    "options_hi": ["mapped types", "conditional types", "union types", "intersection types"],
+    "answer_en": "mapped types",
+    "answer_hi": "mapped types",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 65,
+    "question_en": "Which TypeScript keyword is used to define an abstract method inside a class?",
+    "question_hi": "कौन सा TypeScript keyword class के अंदर abstract method define करने के लिए use होता है?",
+    "options_en": ["abstract", "override", "virtual", "interface"],
+    "options_hi": ["abstract", "override", "virtual", "interface"],
+    "answer_en": "abstract",
+    "answer_hi": "abstract",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 66,
+    "question_en": "Which TypeScript keyword pauses execution inside an async function?",
+    "question_hi": "कौन सा keyword async function के अंदर execution को रोकता है?",
+    "options_en": ["await", "async", "pause", "stop"],
+    "options_hi": ["await", "async", "pause", "stop"],
+    "answer_en": "await",
+    "answer_hi": "await",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 67,
+    "question_en": "Which TypeScript keyword declares a function as asynchronous?",
+    "question_hi": "कौन सा TypeScript keyword function को asynchronous declare करता है?",
+    "options_en": ["async", "await", "defer", "async function"],
+    "options_hi": ["async", "await", "defer", "async function"],
+    "answer_en": "async",
+    "answer_hi": "async",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 68,
+    "question_en": "Which TypeScript type represents the type of a class constructor?",
+    "question_hi": "कौन सा TypeScript type class constructor का type represent करता है?",
+    "options_en": ["new()", "constructor", "class", "function"],
+    "options_hi": ["new()", "constructor", "class", "function"],
+    "answer_en": "new()",
+    "answer_hi": "new()",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 69,
+    "question_en": "Which TypeScript feature allows narrowing types inside conditional blocks?",
+    "question_hi": "कौन सा TypeScript feature conditional blocks के अंदर types narrow करता है?",
+    "options_en": ["type guards", "type assertions", "union types", "intersection types"],
+    "options_hi": ["type guards", "type assertions", "union types", "intersection types"],
+    "answer_en": "type guards",
+    "answer_hi": "type guards",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 70,
+    "question_en": "Which TypeScript type represents an object with unknown property keys and values?",
+    "question_hi": "कौन सा TypeScript type ऐसे object को represent करता है जिसके property keys और values unknown हों?",
+    "options_en": ["Record<string, any>", "object", "any", "unknown"],
+    "options_hi": ["Record<string, any>", "object", "any", "unknown"],
+    "answer_en": "Record<string, any>",
+    "answer_hi": "Record<string, any>",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 71,
+    "question_en": "Which TypeScript keyword ensures a method must be implemented in subclasses?",
+    "question_hi": "कौन सा TypeScript keyword subclasses में method implement करने को अनिवार्य बनाता है?",
+    "options_en": ["abstract", "override", "final", "interface"],
+    "options_hi": ["abstract", "override", "final", "interface"],
+    "answer_en": "abstract",
+    "answer_hi": "abstract",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 72,
+    "question_en": "Which TypeScript keyword allows creating a singleton pattern for a class?",
+    "question_hi": "कौन सा TypeScript keyword class के लिए singleton pattern बनाने देता है?",
+    "options_en": ["private constructor", "static", "readonly", "protected"],
+    "options_hi": ["private constructor", "static", "readonly", "protected"],
+    "answer_en": "private constructor",
+    "answer_hi": "private constructor",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 73,
+    "question_en": "Which TypeScript feature allows extracting return type of a function?",
+    "question_hi": "कौन सा TypeScript feature function का return type extract करने देता है?",
+    "options_en": ["ReturnType<T>", "Parameters<T>", "typeof", "instanceof"],
+    "options_hi": ["ReturnType<T>", "Parameters<T>", "typeof", "instanceof"],
+    "answer_en": "ReturnType<T>",
+    "answer_hi": "ReturnType<T>",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 74,
+    "question_en": "Which TypeScript feature extracts parameter types of a function as a tuple?",
+    "question_hi": "कौन सा TypeScript feature function के parameter types को tuple के रूप में extract करता है?",
+    "options_en": ["Parameters<T>", "ReturnType<T>", "typeof", "instanceof"],
+    "options_hi": ["Parameters<T>", "ReturnType<T>", "typeof", "instanceof"],
+    "answer_en": "Parameters<T>",
+    "answer_hi": "Parameters<T>",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 75,
+    "question_en": "Which TypeScript feature allows declaring multiple types for a single property?",
+    "question_hi": "कौन सा TypeScript feature single property के लिए multiple types declare करने देता है?",
+    "options_en": ["union type", "intersection type", "any", "unknown"],
+    "options_hi": ["union type", "intersection type", "any", "unknown"],
+    "answer_en": "union type",
+    "answer_hi": "union type",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 76,
+    "question_en": "Which TypeScript feature combines multiple types into one type?",
+    "question_hi": "कौन सा TypeScript feature multiple types को combine करके एक type बनाता है?",
+    "options_en": ["intersection type", "union type", "any", "unknown"],
+    "options_hi": ["intersection type", "union type", "any", "unknown"],
+    "answer_en": "intersection type",
+    "answer_hi": "intersection type",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 77,
+    "question_en": "Which TypeScript utility type constructs type with all properties of T set to optional?",
+    "question_hi": "कौन सा TypeScript utility type T की सभी properties को optional बनाता है?",
+    "options_en": ["Partial<T>", "Required<T>", "Readonly<T>", "Pick<T>"],
+    "options_hi": ["Partial<T>", "Required<T>", "Readonly<T>", "Pick<T>"],
+    "answer_en": "Partial<T>",
+    "answer_hi": "Partial<T>",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 78,
+    "question_en": "Which TypeScript utility type constructs type with all properties of T set to required?",
+    "question_hi": "कौन सा TypeScript utility type T की सभी properties को required बनाता है?",
+    "options_en": ["Required<T>", "Partial<T>", "Readonly<T>", "Pick<T>"],
+    "options_hi": ["Required<T>", "Partial<T>", "Readonly<T>", "Pick<T>"],
+    "answer_en": "Required<T>",
+    "answer_hi": "Required<T>",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 79,
+    "question_en": "Which TypeScript feature ensures a value matches one of the specified literal types?",
+    "question_hi": "कौन सा TypeScript feature value को specified literal types में से किसी एक से match करवाता है?",
+    "options_en": ["literal types", "enum", "any", "unknown"],
+    "options_hi": ["literal types", "enum", "any", "unknown"],
+    "answer_en": "literal types",
+    "answer_hi": "literal types",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 80,
+    "question_en": "Which TypeScript keyword allows extending a class?",
+    "question_hi": "कौन सा TypeScript keyword class extend करने के लिए use होता है?",
+    "options_en": ["extends", "implements", "super", "inherits"],
+    "options_hi": ["extends", "implements", "super", "inherits"],
+    "answer_en": "extends",
+    "answer_hi": "extends",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 81,
+    "question_en": "Which TypeScript keyword allows a class to implement an interface?",
+    "question_hi": "कौन सा TypeScript keyword class को interface implement करने देता है?",
+    "options_en": ["implements", "extends", "super", "inherits"],
+    "options_hi": ["implements", "extends", "super", "inherits"],
+    "answer_en": "implements",
+    "answer_hi": "implements",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 82,
+    "question_en": "Which TypeScript keyword allows defining a read-only property in a class?",
+    "question_hi": "कौन सा TypeScript keyword class में read-only property define करता है?",
+    "options_en": ["readonly", "private", "protected", "public"],
+    "options_hi": ["readonly", "private", "protected", "public"],
+    "answer_en": "readonly",
+    "answer_hi": "readonly",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 83,
+    "question_en": "Which TypeScript feature allows defining type-safe enums?",
+    "question_hi": "कौन सा TypeScript feature type-safe enums define करने देता है?",
+    "options_en": ["enum", "literal types", "union types", "intersection types"],
+    "options_hi": ["enum", "literal types", "union types", "intersection types"],
+    "answer_en": "enum",
+    "answer_hi": "enum",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 84,
+    "question_en": "Which TypeScript keyword declares a generic class or function?",
+    "question_hi": "कौन सा TypeScript keyword generic class या function declare करने के लिए use होता है?",
+    "options_en": ["<T>", "type", "interface", "class"],
+    "options_hi": ["<T>", "type", "interface", "class"],
+    "answer_en": "<T>",
+    "answer_hi": "<T>",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 85,
+    "question_en": "Which TypeScript keyword is used to check the type of a variable at runtime?",
+    "question_hi": "कौन सा TypeScript keyword runtime में variable के type को check करने के लिए use होता है?",
+    "options_en": ["typeof", "instanceof", "as", "is"],
+    "options_hi": ["typeof", "instanceof", "as", "is"],
+    "answer_en": "typeof",
+    "answer_hi": "typeof",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 86,
+    "question_en": "Which TypeScript keyword is used to check if an object is an instance of a class?",
+    "question_hi": "कौन सा TypeScript keyword object को class का instance check करने के लिए use होता है?",
+    "options_en": ["instanceof", "typeof", "as", "is"],
+    "options_hi": ["instanceof", "typeof", "as", "is"],
+    "answer_en": "instanceof",
+    "answer_hi": "instanceof",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 87,
+    "question_en": "Which TypeScript feature allows defining a type conditionally based on another type?",
+    "question_hi": "कौन सा TypeScript feature type को दूसरे type के आधार पर conditionally define करता है?",
+    "options_en": ["conditional types", "mapped types", "union types", "intersection types"],
+    "options_hi": ["conditional types", "mapped types", "union types", "intersection types"],
+    "answer_en": "conditional types",
+    "answer_hi": "conditional types",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 88,
+    "question_en": "Which TypeScript feature allows defining a type by picking properties from another type?",
+    "question_hi": "कौन सा TypeScript feature एक type से properties pick करके नया type define करता है?",
+    "options_en": ["Pick<T, K>", "Omit<T, K>", "Partial<T>", "Required<T>"],
+    "options_hi": ["Pick<T, K>", "Omit<T, K>", "Partial<T>", "Required<T>"],
+    "answer_en": "Pick<T, K>",
+    "answer_hi": "Pick<T, K>",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 89,
+    "question_en": "Which TypeScript feature allows defining a type by excluding certain properties from another type?",
+    "question_hi": "कौन सा TypeScript feature कुछ properties को exclude करके नया type define करता है?",
+    "options_en": ["Omit<T, K>", "Pick<T, K>", "Partial<T>", "Required<T>"],
+    "options_hi": ["Omit<T, K>", "Pick<T, K>", "Partial<T>", "Required<T>"],
+    "answer_en": "Omit<T, K>",
+    "answer_hi": "Omit<T, K>",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 90,
+    "question_en": "Which TypeScript utility type makes all properties optional?",
+    "question_hi": "कौन सा TypeScript utility type सभी properties को optional बनाता है?",
+    "options_en": ["Partial<T>", "Required<T>", "Readonly<T>", "Pick<T>"],
+    "options_hi": ["Partial<T>", "Required<T>", "Readonly<T>", "Pick<T>"],
+    "answer_en": "Partial<T>",
+    "answer_hi": "Partial<T>",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 91,
+    "question_en": "Which TypeScript utility type makes all properties required?",
+    "question_hi": "कौन सा TypeScript utility type सभी properties को required बनाता है?",
+    "options_en": ["Required<T>", "Partial<T>", "Readonly<T>", "Pick<T>"],
+    "options_hi": ["Required<T>", "Partial<T>", "Readonly<T>", "Pick<T>"],
+    "answer_en": "Required<T>",
+    "answer_hi": "Required<T>",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 92,
+    "question_en": "Which TypeScript utility type sets all properties of T to readonly?",
+    "question_hi": "कौन सा TypeScript utility type T की सभी properties को readonly बनाता है?",
+    "options_en": ["Readonly<T>", "Partial<T>", "Required<T>", "Pick<T>"],
+    "options_hi": ["Readonly<T>", "Partial<T>", "Required<T>", "Pick<T>"],
+    "answer_en": "Readonly<T>",
+    "answer_hi": "Readonly<T>",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 93,
+    "question_en": "Which TypeScript utility type constructs type by excluding undefined and null from T?",
+    "question_hi": "कौन सा TypeScript utility type T से undefined और null exclude करके type बनाता है?",
+    "options_en": ["NonNullable<T>", "Partial<T>", "Required<T>", "Readonly<T>"],
+    "options_hi": ["NonNullable<T>", "Partial<T>", "Required<T>", "Readonly<T>"],
+    "answer_en": "NonNullable<T>",
+    "answer_hi": "NonNullable<T>",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 94,
+    "question_en": "Which TypeScript utility type returns the type of all property names of T?",
+    "question_hi": "कौन सा TypeScript utility type T की सभी property names का type return करता है?",
+    "options_en": ["keyof T", "Partial<T>", "Required<T>", "Readonly<T>"],
+    "options_hi": ["keyof T", "Partial<T>", "Required<T>", "Readonly<T>"],
+    "answer_en": "keyof T",
+    "answer_hi": "keyof T",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 95,
+    "question_en": "Which TypeScript feature allows conditional checks based on type using 'extends'?",
+    "question_hi": "कौन सा TypeScript feature 'extends' के माध्यम से type पर conditional checks करने देता है?",
+    "options_en": ["conditional types", "mapped types", "union types", "intersection types"],
+    "options_hi": ["conditional types", "mapped types", "union types", "intersection types"],
+    "answer_en": "conditional types",
+    "answer_hi": "conditional types",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 96,
+    "question_en": "Which TypeScript feature extracts the return type of a function?",
+    "question_hi": "कौन सा TypeScript feature function का return type extract करता है?",
+    "options_en": ["ReturnType<T>", "Parameters<T>", "typeof", "instanceof"],
+    "options_hi": ["ReturnType<T>", "Parameters<T>", "typeof", "instanceof"],
+    "answer_en": "ReturnType<T>",
+    "answer_hi": "ReturnType<T>",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 97,
+    "question_en": "Which TypeScript feature extracts the parameter types of a function as a tuple?",
+    "question_hi": "कौन सा TypeScript feature function के parameter types को tuple में extract करता है?",
+    "options_en": ["Parameters<T>", "ReturnType<T>", "typeof", "instanceof"],
+    "options_hi": ["Parameters<T>", "ReturnType<T>", "typeof", "instanceof"],
+    "answer_en": "Parameters<T>",
+    "answer_hi": "Parameters<T>",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 98,
+    "question_en": "Which TypeScript type represents a value that never occurs?",
+    "question_hi": "कौन सा TypeScript type ऐसे value को represent करता है जो कभी occur नहीं होता?",
+    "options_en": ["never", "void", "any", "unknown"],
+    "options_hi": ["never", "void", "any", "unknown"],
+    "answer_en": "never",
+    "answer_hi": "never",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 99,
+    "question_en": "Which TypeScript type represents a function that does not return a value?",
+    "question_hi": "कौन सा TypeScript type ऐसे function को represent करता है जो कोई value return नहीं करता?",
+    "options_en": ["void", "never", "any", "unknown"],
+    "options_hi": ["void", "never", "any", "unknown"],
+    "answer_en": "void",
+    "answer_hi": "void",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 100,
+    "question_en": "Which TypeScript keyword pauses execution inside an async function?",
+    "question_hi": "कौन सा keyword async function के अंदर execution को रोकता है?",
+    "options_en": ["await", "async", "pause", "stop"],
+    "options_hi": ["await", "async", "pause", "stop"],
+    "answer_en": "await",
+    "answer_hi": "await",
+    "attempted": false,
+    "selected": ""
+  }
+]
 
 
-let currentQuestion = 0; 
+
+let currentQuestion = 0;
 let language = "en";
-// let timeLeft = 180 * 60; // 180 minutes
-let timeLeft = 60 * 60; // 60 minutes
+let timeLeft = 60 * 60; 
 let timerInterval;
 
-// ----------------- Quiz Logic -----------------
+// ----------------- Load Question -----------------
 function loadQuestion(index) {
     const q = questions[index];
-    document.getElementById("question").textContent = `${q.num}. ${
-        language === "en" ? q.question_en : q.question_hi
-    }`;
-    document.getElementById("questionCounter").textContent = `Question ${index + 1} of ${questions.length}`;
+    if (!q) return; //  undefined error fix
+   questions[index].visited = true;
+    document.getElementById("question").textContent =
+       `${q.num}. ${language === "en" ? q.question_en : q.question_hi}`;
+
+    document.getElementById("questionCounter").textContent =
+       ` Question ${index + 1} of ${questions.length}`;
 
     const optionsElement = document.getElementById("options");
     optionsElement.innerHTML = "";
 
     const options = language === "en" ? q.options_en : q.options_hi;
 
-    options.forEach((option) => {
+    options.forEach(option => {
         const isSelected = q.selected === option;
-        const optionDiv = document.createElement("div");
-        optionDiv.className = "option-box";
-        optionDiv.style = `
+
+        const div = document.createElement("div");
+        div.className = "option-box";
+
+        div.style = `
             border: 2px solid ${isSelected ? "#007bff" : "#ccc"};
             background-color: ${isSelected ? "#e7f1ff" : "white"};
             padding: 10px;
             border-radius: 8px;
             margin: 6px 0;
             cursor: pointer;
-            transition: all 0.2s;
         `;
 
-        optionDiv.innerHTML = `
-            <input type="radio" name="option" value="${option}" ${isSelected ? "checked" : ""} style="margin-right:8px;">
+        div.innerHTML = `
+            <input type="radio" name="option" value="${option}" 
+            ${isSelected ? "checked" : ""} style="margin-right:8px;">
             ${option}
         `;
 
-        optionDiv.addEventListener("click", () => {
+        div.addEventListener("click", () => {
             markAttempted(index, option);
             loadQuestion(index);
         });
 
-        optionsElement.appendChild(optionDiv);
+        optionsElement.appendChild(div);
     });
 
     updateNavigation();
 }
 
+// ----------------- Attempt Mark -----------------
 function markAttempted(index, selectedAnswer) {
     questions[index].attempted = true;
     questions[index].selected = selectedAnswer;
     updateNavigation();
 }
 
+// ----------------- Next / Previous -----------------
 function nextQuestion() {
     if (currentQuestion < questions.length - 1) {
         currentQuestion++;
@@ -1177,229 +1183,122 @@ function changeLanguage() {
     loadQuestion(currentQuestion);
 }
 
+// ----------------- Final Submit -----------------
 function submitQuiz() {
-    clearInterval(timerInterval);
-    let attempted = 0,
-        notAttempted = 0,
-        score = 0;
+    let confirmation = confirm("Are you sure you want to submit the test?");
+    if (!confirmation) return;
 
-    questions.forEach((q) => {
+    let attempted = 0;
+    let notAttempted = 0;
+    let score = 0;
+    const results = [];
+
+    questions.forEach(q => {
         if (q.attempted) {
             attempted++;
-            if (q.selected === q.answer_en || q.selected === q.answer_hi) score++;
-        } else notAttempted++;
+
+            if (q.selected === q.answer_en || q.selected === q.answer_hi) {
+                score++;
+            }
+        } else {
+            notAttempted++;
+        }
+
+        results.push({
+            question: language === "en" ? q.question_en : q.question_hi,
+            selected: q.selected || "Not Answered",
+            correct: language === "en" ? q.answer_en : q.answer_hi
+        });
     });
 
-    alert(
-        `Quiz submitted!\nAttempted: ${attempted}\nNot Attempted: ${notAttempted}\nScore: ${score}/${questions.length}`
-    );
+    localStorage.setItem("attempted", attempted);
+    localStorage.setItem("notAttempted", notAttempted);
+    localStorage.setItem("score", score);
+    localStorage.setItem("results", JSON.stringify(results));
+
+    let viewResult = confirm("Test submitted! Do you want to view result?");
+    if (viewResult) {
+        window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
+    }
 }
 
+// ----------------- Navigation Circles -----------------
+function updateNavigation() {
+    const nav = document.getElementById("circleContainer");
+    nav.innerHTML = "";
+
+    questions.forEach((q, i) => {
+        let color = "gray"; // default: not visited
+
+        if (i === currentQuestion) {
+            color = "blue"; // current question
+        } 
+        else if (q.attempted) {
+            color = "green"; // answered
+        } 
+        else if (q.visited) {
+            color = "white"; // visited but not answered
+        }
+
+        nav.innerHTML += `
+            <div class="circle" style="background:${color}; border:1px solid black;"
+            onclick="jumpToQuestion(${i})">${i + 1}</div>
+        `;
+    });
+}
+
+function jumpToQuestion(index) {
+    currentQuestion = index;
+    loadQuestion(index);
+}
+
+// ----------------- Timer -----------------
 function startTimer() {
     const timerElement = document.getElementById("timer");
-    clearInterval(timerInterval);
+
     timerInterval = setInterval(() => {
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
             alert("Time's up!");
             submitQuiz();
         } else {
-            const hours = Math.floor(timeLeft / 3600);
-            const minutes = Math.floor((timeLeft % 3600) / 60);
-            const seconds = timeLeft % 60;
-            timerElement.textContent = `Time Left: ${hours
-                .toString()
-                .padStart(2, "0")}:${minutes
-                .toString()
-                .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+            const hours = String(Math.floor(timeLeft / 3600)).padStart(2, "0");
+            const minutes = String(Math.floor((timeLeft % 3600) / 60)).padStart(2, "0");
+            const seconds = String(timeLeft % 60).padStart(2, "0");
+
+            timerElement.textContent = `Time Left: ${hours}:${minutes}:${seconds}`;
             timeLeft--;
         }
     }, 1000);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////all file and folder me code add karna hai 
-
-
-// submit 
-function jumpToQuestion(index) {
-            currentQuestion = index;
-            loadQuestion(index);
-        }
-
-        function submitQuiz() {
-            let confirmation = confirm("Are you sure you want to submit the test?");
-            
-            if (!confirmation) {
-                return; // अगर यूज़र 'Cancel' करता है तो आगे नहीं बढ़ेंगे
-            }
-
-            let attempted = 0;
-            let notAttempted = 0;
-            let score = 0;
-            const results = [];
-
-            questions.forEach(q => {
-                if (q.attempted) {
-                    attempted++;
-                    if (q.selected === q.answer) {
-                        score++;
-                    }
-                } else {
-                    notAttempted++;
-                }
-                results.push({ question: q.question, selected: q.selected || "Not Answered", correct: q.answer });
-            });
-
-            localStorage.setItem("attempted", attempted);
-            localStorage.setItem("notAttempted", notAttempted);
-            localStorage.setItem("score", score);
-            localStorage.setItem("results", JSON.stringify(results));
-
-            // रिजल्ट देखने से पहले एक और कन्फर्मेशन ले सकते हैं
-            let viewResult = confirm("Test submitted successfully! Do you want to view your result?");
-            if (viewResult) {
-                window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
-            }
-        }
-        window.onload = () => {
-            loadQuestion(currentQuestion);
-        };
-
-
-function updateNavigation() {
-    const nav = document.getElementById("circleContainer");
-    nav.innerHTML = "";
-    questions.forEach((q, i) => {
-        let color = "gray";
-        if (i === currentQuestion) color = "blue";
-        else if (q.attempted) color = "green";
-        nav.innerHTML += `<div class='circle' style='background-color:${color}' onclick='loadQuestion(${i})'>${i + 1}</div>`;
-    });
-}
-
-// ----------------- Camera & Movement Logic -----------------
+// ----------------- Camera & Movement Detection -----------------
 let videoStream;
 let movementCount = 0;
 
 function startCamera() {
     const container = document.createElement("div");
     container.id = "camera-container";
-    container.style.position = "fixed";
-    container.style.top = "10px";
-    container.style.left = "10px"; // ✅ Left side
-    container.style.width = "130px";
-    container.style.height = "130px";
-    container.style.zIndex = "9999";
-    container.style.borderRadius = "50%";
-    container.style.overflow = "hidden";
-    container.style.border = "3px solid red";
-    container.style.boxShadow = "0 0 10px rgba(0,0,0,0.3)";
-    container.style.cursor = "grab";
-    container.style.minWidth = "80px";
-    container.style.minHeight = "80px";
-    container.style.maxWidth = "250px";
-    container.style.maxHeight = "250px";
-    container.style.background = "#000";
+    container.style = `
+        position:fixed; top:10px; left:10px; width:130px; height:130px;
+        border-radius:50%; overflow:hidden; border:3px solid red; z-index:9999;
+    `;
+
     document.body.appendChild(container);
 
     const video = document.createElement("video");
-    video.setAttribute("autoplay", true);
-    video.setAttribute("playsinline", true);
-    video.style.width = "100%";
-    video.style.height = "100%";
-    video.style.objectFit = "cover";
+    video.autoplay = true;
+    video.playsinline = true;
+    video.style = "width:100%; height:100%; object-fit:cover;";
     container.appendChild(video);
 
-    // ✅ Resize handle
-    const resizeHandle = document.createElement("div");
-    resizeHandle.style.position = "absolute";
-    resizeHandle.style.bottom = "2px";
-    resizeHandle.style.right = "2px";
-    resizeHandle.style.width = "15px";
-    resizeHandle.style.height = "15px";
-    resizeHandle.style.background = "rgba(255,255,255,0.7)";
-    resizeHandle.style.borderRadius = "4px";
-    resizeHandle.style.cursor = "se-resize";
-    container.appendChild(resizeHandle);
-
-    // ✅ Drag logic
-    let isDragging = false;
-    let offsetX, offsetY;
-
-    container.addEventListener("mousedown", (e) => {
-        if (e.target === resizeHandle) return;
-        isDragging = true;
-        offsetX = e.clientX - container.offsetLeft;
-        offsetY = e.clientY - container.offsetTop;
-        container.style.cursor = "grabbing";
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isDragging) return;
-        let x = e.clientX - offsetX;
-        let y = e.clientY - offsetY;
-        x = Math.max(0, Math.min(window.innerWidth - container.offsetWidth, x));
-        y = Math.max(0, Math.min(window.innerHeight - container.offsetHeight, y));
-        container.style.left = `${x}px`;
-        container.style.top = `${y}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isDragging = false;
-        container.style.cursor = "grab";
-    });
-
-    // ✅ Resize logic
-    let isResizing = false;
-    let startWidth, startHeight, startX, startY;
-
-    resizeHandle.addEventListener("mousedown", (e) => {
-        e.stopPropagation();
-        isResizing = true;
-        startWidth = container.offsetWidth;
-        startHeight = container.offsetHeight;
-        startX = e.clientX;
-        startY = e.clientY;
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isResizing) return;
-        const dx = e.clientX - startX;
-        const dy = e.clientY - startY;
-        const newSize = Math.max(80, Math.min(250, Math.max(startWidth + dx, startHeight + dy)));
-        container.style.width = `${newSize}px`;
-        container.style.height = `${newSize}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isResizing = false;
-    });
-
-    // ✅ Camera stream
     navigator.mediaDevices.getUserMedia({ video: true })
         .then(stream => {
             video.srcObject = stream;
             videoStream = stream;
             detectMovement(video);
         })
-        .catch(err => {
-            console.error("Camera error:", err);
-            alert("Camera not accessible!");
-        });
+        .catch(() => alert("Camera access denied!"));
 }
 
 function detectMovement(video) {
@@ -1407,51 +1306,51 @@ function detectMovement(video) {
     const ctx = canvas.getContext("2d");
     canvas.width = 160;
     canvas.height = 160;
-    let lastImageData = null;
+
+    let lastData = null;
 
     setInterval(() => {
-        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(video, 0, 0, 160, 160);
+        const data = ctx.getImageData(0, 0, 160, 160);
 
-        if (lastImageData) {
+        if (lastData) {
             let diff = 0;
-            for (let i = 0; i < imageData.data.length; i += 4) {
-                diff += Math.abs(imageData.data[i] - lastImageData.data[i]);
+            for (let i = 0; i < data.data.length; i += 4) {
+                diff += Math.abs(data.data[i] - lastData.data[i]);
             }
 
             if (diff > 1000000) {
                 movementCount++;
-                if (movementCount === 1) {
-                    alert("⚠️ Alert 1: Face is not move");
-                } else if (movementCount === 2) {
-                    alert("⚠️ Alert 2: Head is not move");
-                } else if (movementCount === 3) {
-                    alert("⚠️ Alert 3: Test series is restarting...");
+
+                if (movementCount === 1) alert("⚠ Alert 1: No movement detected!");
+                if (movementCount === 2) alert("⚠ Alert 2: Head not moving!");
+                if (movementCount === 3) {
+                    alert("⚠ Alert 3: Restarting test...");
                     restartTest();
                 }
             }
         }
-        lastImageData = imageData;
+        lastData = data;
+
     }, 2000);
 }
 
 function restartTest() {
-    if (videoStream) {
-        videoStream.getTracks().forEach(track => track.stop());
-    }
-    const camContainer = document.getElementById("camera-container");
-    if (camContainer) camContainer.remove();
+    if (videoStream) videoStream.getTracks().forEach(t => t.stop());
+
+    const cam = document.getElementById("camera-container");
+    if (cam) cam.remove();
 
     movementCount = 0;
     currentQuestion = 0;
-    timeLeft = 180 * 60;
+    timeLeft = 60 * 60;
 
     questions.forEach(q => {
         q.attempted = false;
         q.selected = null;
     });
 
-    loadQuestion(currentQuestion);
+    loadQuestion(0);
     startTimer();
     startCamera();
 }
@@ -1460,8 +1359,5 @@ function restartTest() {
 window.onload = function () {
     loadQuestion(currentQuestion);
     startTimer();
-    startCamera(); // ✅ Camera starts with test
+    startCamera();
 };
-
-
-///////////////////////////////////////

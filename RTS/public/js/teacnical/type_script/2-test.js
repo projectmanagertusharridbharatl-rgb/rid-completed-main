@@ -1,1165 +1,1168 @@
 const questions = [
-          {
-                "num": 1,
-                "question_en": "A particle of mass m moves in a circular path of radius r under the action of a force F = -k/r². The time period of revolution is proportional to:",
-                "question_hi": "m द्रव्यमान का एक कण F = -k/r² बल के अधीन r त्रिज्या के वृत्तीय पथ पर गति करता है। परिक्रमण का आवर्तकाल किसके अनुक्रमानुपाती है?",
-                "options_en": ["r^0", "r^(1/2)", "r^(3/2)", "r^2"],
-                "options_hi": ["r^0", "r^(1/2)", "r^(3/2)", "r^2"],
-                "answer_en": "r^(3/2)",
-                "answer_hi": "r^(3/2)",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 2,
-                "question_en": "A uniform rod of length L and mass M is pivoted at one end. What is the minimum speed required at its other end to make it rotate in a vertical circle?",
-                "question_hi": "L लंबाई और M द्रव्यमान की एक समरूप छड़ एक सिरे पर कब्जित है। इसे ऊर्ध्वाधर वृत्त में घुमाने के लिए इसके दूसरे सिरे पर आवश्यक न्यूनतम चाल क्या है?",
-                "options_en": ["√(2gL)", "√(3gL)", "√(5gL)", "√(gL)"],
-                "options_hi": ["√(2gL)", "√(3gL)", "√(5gL)", "√(gL)"],
-                "answer_en": "√(3gL)",
-                "answer_hi": "√(3gL)",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 3,
-                "question_en": "A photon of wavelength λ is scattered by an electron initially at rest. If the photon is scattered at 90°, the wavelength of the scattered photon is:",
-                "question_hi": "λ तरंगदैर्ध्य का एक फोटॉन प्रारंभ में विरामावस्था में एक इलेक्ट्रॉन द्वारा प्रकीर्णित होता है। यदि फोटॉन 90° पर प्रकीर्णित होता है, तो प्रकीर्णित फोटॉन की तरंगदैर्ध्य है:",
-                "options_en": ["λ + h/mc", "λ + 2h/mc", "λ + h/2mc", "λ"],
-                "options_hi": ["λ + h/mc", "λ + 2h/mc", "λ + h/2mc", "λ"],
-                "answer_en": "λ + h/mc",
-                "answer_hi": "λ + h/mc",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 4,
-                "question_en": "A parallel plate capacitor is charged and then disconnected from the battery. If the plates are pulled apart, which of the following remains constant?",
-                "question_hi": "एक समानांतर प्लेट संधारित्र को आवेशित किया जाता है और फिर बैटरी से अलग कर दिया जाता है। यदि प्लेटों को अलग खींचा जाता है, तो निम्नलिखित में से कौन स्थिर रहता है?",
-                "options_en": ["Capacitance", "Charge", "Energy", "Electric field"],
-                "options_hi": ["धारिता", "आवेश", "ऊर्जा", "विद्युत क्षेत्र"],
-                "answer_en": "Charge",
-                "answer_hi": "आवेश",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 5,
-                "question_en": "In a Young's double slit experiment, the intensity at a point on the screen is I. If one of the slits is closed, the intensity at that point becomes I₀. The ratio I/I₀ is:",
-                "question_hi": "यंग के द्वि-छिद्र प्रयोग में, स्क्रीन पर एक बिंदु पर तीव्रता I है। यदि एक छिद्र बंद कर दिया जाता है, तो उस बिंदु पर तीव्रता I₀ हो जाती है। अनुपात I/I₀ है:",
-                "options_en": ["1", "2", "3", "4"],
-                "options_hi": ["1", "2", "3", "4"],
-                "answer_en": "4",
-                "answer_hi": "4",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 6,
-                "question_en": "A particle executes SHM with amplitude A and time period T. The minimum time taken by the particle to travel half the amplitude from the equilibrium position is:",
-                "question_hi": "एक कण A आयाम और T आवर्तकाल के साथ सरल आवर्त गति करता है। संतुलन स्थिति से आधे आयाम की यात्रा करने में कण द्वारा लिया गया न्यूनतम समय है:",
-                "options_en": ["T/2", "T/4", "T/6", "T/8"],
-                "options_hi": ["T/2", "T/4", "T/6", "T/8"],
-                "answer_en": "T/12",
-                "answer_hi": "T/12",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 7,
-                "question_en": "A wire of resistance R is bent to form a circle. The resistance between two diametrically opposite points is:",
-                "question_hi": "R प्रतिरोध के एक तार को मोड़कर एक वृत्त बनाया जाता है। दो व्यासीय विपरीत बिंदुओं के बीच प्रतिरोध है:",
-                "options_en": ["R", "R/2", "R/4", "2R"],
-                "options_hi": ["R", "R/2", "R/4", "2R"],
-                "answer_en": "R/4",
-                "answer_hi": "R/4",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 8,
-                "question_en": "The ratio of the radii of gyration of a circular disc and a circular ring of the same radii about a tangential axis parallel to their planes is:",
-                "question_hi": "समान त्रिज्या वाले एक वृत्तीय डिस्क और एक वृत्तीय वलय के उनके तलों के समानांतर स्पर्शरेखीय अक्ष के परितः परिभ्रमण त्रिज्याओं का अनुपात है:",
-                "options_en": ["1:√2", "√2:1", "2:3", "1:2"],
-                "options_hi": ["1:√2", "√2:1", "2:3", "1:2"],
-                "answer_en": "1:√2",
-                "answer_hi": "1:√2",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 9,
-                "question_en": "A radioactive nucleus decays by emitting one alpha and two beta particles. The daughter nucleus is:",
-                "question_hi": "एक रेडियोधर्मी नाभिक एक अल्फा और दो बीटा कणों का उत्सर्जन करके क्षय होता है। पुत्री नाभिक है:",
-                "options_en": ["An isotope of parent", "An isobar of parent", "An isotone of parent", "An isomer of parent"],
-                "options_hi": ["मूल का एक समस्थानिक", "मूल का एक समभारिक", "मूल का एक समन्यूट्रॉनिक", "मूल का एक समावयवी"],
-                "answer_en": "An isotope of parent",
-                "answer_hi": "मूल का एक समस्थानिक",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 10,
-                "question_en": "A Carnot engine operates between 227°C and 127°C. If it absorbs 10⁴ J at the higher temperature, the work done per cycle is:",
-                "question_hi": "एक कार्नोट इंजन 227°C और 127°C के बीच कार्य करता है। यदि यह उच्च तापमान पर 10⁴ J अवशोषित करता है, तो प्रति चक्र किया गया कार्य है:",
-                "options_en": ["2000 J", "4000 J", "8000 J", "5600 J"],
-                "options_hi": ["2000 J", "4000 J", "8000 J", "5600 J"],
-                "answer_en": "2000 J",
-                "answer_hi": "2000 J",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 11,
-                "question_en": "The dimensional formula for angular momentum is:",
-                "question_hi": "कोणीय संवेग का विमीय सूत्र है:",
-                "options_en": ["[ML²T⁻¹]", "[MLT⁻¹]", "[ML²T⁻²]", "[MLT]"],
-                "options_hi": ["[ML²T⁻¹]", "[MLT⁻¹]", "[ML²T⁻²]", "[MLT]"],
-                "answer_en": "[ML²T⁻¹]",
-                "answer_hi": "[ML²T⁻¹]",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 12,
-                "question_en": "A convex lens of focal length 20 cm forms a real image at 40 cm. What is the object distance?",
-                "question_hi": "20 cm फोकस दूरी वाले उत्तल लेंस द्वारा 40 cm पर वास्तविक प्रतिबिंब बनता है। वस्तु की दूरी क्या है?",
-                "options_en": ["10 cm", "20 cm", "30 cm", "40 cm"],
-                "options_hi": ["10 सेमी", "20 सेमी", "30 सेमी", "40 सेमी"],
-                "answer_en": "40 cm",
-                "answer_hi": "40 सेमी",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 13,
-                "question_en": "The work done in moving a charge of 2 C across two points with a potential difference of 10 V is:",
-                "question_hi": "10 V के विभवांतर वाले दो बिंदुओं के बीच 2 C आवेश को ले जाने में किया गया कार्य है:",
-                "options_en": ["5 J", "10 J", "20 J", "40 J"],
-                "options_hi": ["5 J", "10 J", "20 J", "40 J"],
-                "answer_en": "20 J",
-                "answer_hi": "20 J",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 14,
-                "question_en": "Newton's third law of motion is applicable for:",
-                "question_hi": "न्यूटन का गति का तीसरा नियम लागू होता है:",
-                "options_en": ["Contact forces only", "Non-contact forces only", "Both contact and non-contact forces", "None"],
-                "options_hi": ["केवल संपर्क बल", "केवल असंपर्क बल", "संपर्क और असंपर्क दोनों बल", "कोई नहीं"],
-                "answer_en": "Both contact and non-contact forces",
-                "answer_hi": "संपर्क और असंपर्क दोनों बल",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 15,
-                "question_en": "The time period of a simple pendulum depends on:",
-                "question_hi": "सरल लोलक का आवर्तकाल निर्भर करता है:",
-                "options_en": ["Mass of bob", "Length of string", "Amplitude", "Material of bob"],
-                "options_hi": ["गोलक का द्रव्यमान", "धागे की लंबाई", "आयाम", "गोलक का पदार्थ"],
-                "answer_en": "Length of string",
-                "answer_hi": "धागे की लंबाई",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 16,
-                "question_en": "The SI unit of magnetic flux is:",
-                "question_hi": "चुंबकीय फ्लक्स की SI इकाई है:",
-                "options_en": ["Tesla", "Weber", "Henry", "Farad"],
-                "options_hi": ["टेस्ला", "वेबर", "हेनरी", "फैरड"],
-                "answer_en": "Weber",
-                "answer_hi": "वेबर",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 17,
-                "question_en": "A car accelerates from 0 to 20 m/s in 5 seconds. What is its acceleration?",
-                "question_hi": "एक कार 0 से 20 m/s तक 5 सेकंड में त्वरित होती है। इसका त्वरण क्या है?",
-                "options_en": ["1 m/s²", "2 m/s²", "4 m/s²", "5 m/s²"],
-                "options_hi": ["1 m/s²", "2 m/s²", "4 m/s²", "5 m/s²"],
-                "answer_en": "4 m/s²",
-                "answer_hi": "4 m/s²",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 18,
-                "question_en": "The refractive index of water is 1.33. What is the speed of light in water?",
-                "question_hi": "पानी का अपवर्तनांक 1.33 है। पानी में प्रकाश की गति क्या है?",
-                "options_en": ["2.25 × 10⁸ m/s", "2.5 × 10⁸ m/s", "3 × 10⁸ m/s", "1.33 × 10⁸ m/s"],
-                "options_hi": ["2.25 × 10⁸ m/s", "2.5 × 10⁸ m/s", "3 × 10⁸ m/s", "1.33 × 10⁸ m/s"],
-                "answer_en": "2.25 × 10⁸ m/s",
-                "answer_hi": "2.25 × 10⁸ m/s",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 19,
-                "question_en": "The energy stored in a capacitor is given by:",
-                "question_hi": "संधारित्र में संचित ऊर्जा दी जाती है:",
-                "options_en": ["½ CV²", "CV²", "C/V", "V²/C"],
-                "options_hi": ["½ CV²", "CV²", "C/V", "V²/C"],
-                "answer_en": "½ CV²",
-                "answer_hi": "½ CV²",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 20,
-                "question_en": "Which law states that entropy of the universe always increases?",
-                "question_hi": "कौन सा नियम कहता है कि ब्रह्मांड की एन्ट्रॉपी हमेशा बढ़ती है?",
-                "options_en": ["First Law of Thermodynamics", "Second Law of Thermodynamics", "Zeroth Law", "Third Law"],
-                "options_hi": ["ऊष्मागतिकी का पहला नियम", "ऊष्मागतिकी का दूसरा नियम", "शून्यवाँ नियम", "तीसरा नियम"],
-                "answer_en": "Second Law of Thermodynamics",
-                "answer_hi": "ऊष्मागतिकी का दूसरा नियम",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 21,
-                "question_en": "The unit of electric field intensity is:",
-                "question_hi": "विद्युत क्षेत्र की तीव्रता की इकाई है:",
-                "options_en": ["N/C", "J/C", "V/m", "Both N/C and V/m"],
-                "options_hi": ["N/C", "J/C", "V/m", "N/C और V/m दोनों"],
-                "answer_en": "Both N/C and V/m",
-                "answer_hi": "N/C और V/m दोनों",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 22,
-                "question_en": "A body of mass 2 kg is moving with a velocity of 3 m/s. Its kinetic energy is:",
-                "question_hi": "2 kg द्रव्यमान का एक पिंड 3 m/s के वेग से गतिमान है। इसकी गतिज ऊर्जा है:",
-                "options_en": ["3 J", "6 J", "9 J", "18 J"],
-                "options_hi": ["3 J", "6 J", "9 J", "18 J"],
-                "answer_en": "9 J",
-                "answer_hi": "9 J",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 23,
-                "question_en": "The force acting on a charge q in an electric field E is:",
-                "question_hi": "विद्युत क्षेत्र E में आवेश q पर लगने वाला बल है:",
-                "options_en": ["qE", "E/q", "q²E", "q/E"],
-                "options_hi": ["qE", "E/q", "q²E", "q/E"],
-                "answer_en": "qE",
-                "answer_hi": "qE",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 24,
-                "question_en": "The wavelength of light in a medium decreases by 25%. What is the refractive index?",
-                "question_hi": "एक माध्यम में प्रकाश की तरंगदैर्ध्य 25% कम हो जाती है। अपवर्तनांक क्या है?",
-                "options_en": ["1.25", "1.33", "1.5", "1.75"],
-                "options_hi": ["1.25", "1.33", "1.5", "1.75"],
-                "answer_en": "1.33",
-                "answer_hi": "1.33",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 25,
-                "question_en": "The time period of a satellite orbiting Earth depends on:",
-                "question_hi": "पृथ्वी की परिक्रमा करने वाले उपग्रह का आवर्तकाल निर्भर करता है:",
-                "options_en": ["Mass of satellite", "Radius of orbit", "Both", "None"],
-                "options_hi": ["उपग्रह का द्रव्यमान", "कक्षा की त्रिज्या", "दोनों", "कोई नहीं"],
-                "answer_en": "Radius of orbit",
-                "answer_hi": "कक्षा की त्रिज्या",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 26,
-                "question_en": "If a wire is stretched to double its length, what happens to its resistance?",
-                "question_hi": "यदि एक तार को खींचकर उसकी लंबाई दुगनी कर दी जाए, तो उसका प्रतिरोध क्या होगा?",
-                "options_en": ["Remains same", "Becomes half", "Becomes double", "Becomes four times"],
-                "options_hi": ["जैसा था वैसा ही रहेगा", "आधा हो जाएगा", "दोगुना हो जाएगा", "चार गुना हो जाएगा"],
-                "answer_en": "Becomes four times",
-                "answer_hi": "चार गुना हो जाएगा",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 27,
-                "question_en": "Which of the following species is paramagnetic?",
-                "question_hi": "निम्नलिखित में से कौन-सी प्रजाति पेरामैग्नेटिक है?",
-                "options_en": ["O2", "N2", "CO2", "H2O"],
-                "options_hi": ["O2", "N2", "CO2", "H2O"],
-                "answer_en": "O2",
-                "answer_hi": "O2",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 28,
-                "question_en": "A capacitor of 10μF is charged to 100V. Energy stored is:",
-                "question_hi": "10μF का एक संधारित्र 100V पर चार्ज किया गया है। संचित ऊर्जा क्या होगी?",
-                "options_en": ["0.05 J", "0.1 J", "0.25 J", "0.5 J"],
-                "options_hi": ["0.05 जूल", "0.1 जूल", "0.25 जूल", "0.5 जूल"],
-                "answer_en": "0.05 J",
-                "answer_hi": "0.05 जूल",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 29,
-                "question_en": "In Young's double slit experiment, the fringe width is 0.5 mm. If immersed in water (μ = 4/3), what is the new fringe width?",
-                "question_hi": "यंग के डबल स्लिट प्रयोग में फ्रिंज की चौड़ाई 0.5 mm है। यदि जल (μ = 4/3) में डुबोया जाए, तो नई फ्रिंज चौड़ाई क्या होगी?",
-                "options_en": ["0.375 mm", "0.5 mm", "0.667 mm", "1.5 mm"],
-                "options_hi": ["0.375 मिमी", "0.5 मिमी", "0.667 मिमी", "1.5 मिमी"],
-                "answer_en": "0.375 mm",
-                "answer_hi": "0.375 मिमी",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 30,
-                "question_en": "A projectile is thrown at an angle of 60° with speed 20 m/s. What is the maximum height attained?",
-                "question_hi": "एक प्रक्षेप्य को 60° कोण पर 20 m/s की गति से फेंका जाता है। अधिकतम ऊँचाई क्या होगी?",
-                "options_en": ["5 m", "10 m", "15 m", "20 m"],
-                "options_hi": ["5 मी", "10 मी", "15 मी", "20 मी"],
-                "answer_en": "15 m",
-                "answer_hi": "15 मी",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 31,
-                "question_en": "Which orbital has the highest energy in a multi-electron atom?",
-                "question_hi": "किस कक्षा में बहु-इलेक्ट्रॉन परमाणु में सबसे अधिक ऊर्जा होती है?",
-                "options_en": ["3s", "3p", "4s", "3d"],
-                "options_hi": ["3s", "3p", "4s", "3d"],
-                "answer_en": "3d",
-                "answer_hi": "3d",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 32,
-                "question_en": "The magnetic field at center of circular loop of radius R carrying current I is:",
-                "question_hi": "त्रिज्या R की एक करंट लेती वृत्तीय लूप के केंद्र पर चुम्बकीय क्षेत्र क्या होगा?",
-                "options_en": ["μ₀I/2R", "μ₀I/4πR", "μ₀IR²", "μ₀IR/2"],
-                "options_hi": ["μ₀I/2R", "μ₀I/4πR", "μ₀IR²", "μ₀IR/2"],
-                "answer_en": "μ₀I/2R",
-                "answer_hi": "μ₀I/2R",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 33,
-                "question_en": "Which one of the following has zero dipole moment?",
-                "question_hi": "निम्नलिखित में से किसका द्विध्रुव आघूर्ण शून्य होता है?",
-                "options_en": ["CO₂", "NH₃", "H₂O", "SO₂"],
-                "options_hi": ["CO₂", "NH₃", "H₂O", "SO₂"],
-                "answer_en": "CO₂",
-                "answer_hi": "CO₂",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 34,
-                "question_en": "The general solution of dy/dx = y is:",
-                "question_hi": "dy/dx = y का सामान्य हल क्या है?",
-                "options_en": ["y = x", "y = e^x", "y = Ae^x", "y = A/x"],
-                "options_hi": ["y = x", "y = e^x", "y = Ae^x", "y = A/x"],
-                "answer_en": "y = Ae^x",
-                "answer_hi": "y = Ae^x",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 35,
-                "question_en": "The relation between focal length f and radius of curvature R for a spherical mirror is:",
-                "question_hi": "गोलाकार दर्पण के लिए फोकस दूरी f और वक्रता त्रिज्या R में क्या संबंध है?",
-                "options_en": ["f = R", "f = R/2", "f = 2R", "f = R²"],
-                "options_hi": ["f = R", "f = R/2", "f = 2R", "f = R²"],
-                "answer_en": "f = R/2",
-                "answer_hi": "f = R/2",
-                "attempted": false,
-                "selected": ""
-            },
-            // Chemistry questions (36-70)
-            {
-                "num": 36,
-                "question_en": "The oxidation state of chromium in K₂Cr₂O₇ is:",
-                "question_hi": "K₂Cr₂O₇ में क्रोमियम की ऑक्सीकरण अवस्था है:",
-                "options_en": ["+3", "+4", "+5", "+6"],
-                "options_hi": ["+3", "+4", "+5", "+6"],
-                "answer_en": "+6",
-                "answer_hi": "+6",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 37,
-                "question_en": "Which of the following is a non-polar molecule?",
-                "question_hi": "निम्नलिखित में से कौन एक अध्रुवीय अणु है?",
-                "options_en": ["H₂O", "NH₃", "CO₂", "HCl"],
-                "options_hi": ["H₂O", "NH₃", "CO₂", "HCl"],
-                "answer_en": "CO₂",
-                "answer_hi": "CO₂",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 38,
-                "question_en": "The IUPAC name of CH₃-CH₂-CHO is:",
-                "question_hi": "CH₃-CH₂-CHO का IUPAC नाम है:",
-                "options_en": ["Propanal", "Propanone", "Ethanal", "Butanal"],
-                "options_hi": ["प्रोपेनल", "प्रोपेनोन", "एथेनल", "ब्यूटेनल"],
-                "answer_en": "Propanal",
-                "answer_hi": "प्रोपेनल",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 39,
-                "question_en": "The number of sigma bonds in ethene (C₂H₄) is:",
-                "question_hi": "ईथीन (C₂H₄) में सिग्मा बंधों की संख्या है:",
-                "options_en": ["3", "5", "7", "9"],
-                "options_hi": ["3", "5", "7", "9"],
-                "answer_en": "5",
-                "answer_hi": "5",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 40,
-                "question_en": "Which of the following is a noble gas?",
-                "question_hi": "निम्नलिखित में से कौन एक अक्रिय गैस है?",
-                "options_en": ["Oxygen", "Nitrogen", "Argon", "Chlorine"],
-                "options_hi": ["ऑक्सीजन", "नाइट्रोजन", "ऑर्गन", "क्लोरीन"],
-                "answer_en": "Argon",
-                "answer_hi": "ऑर्गन",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 41,
-                "question_en": "The pH of a neutral solution at 25°C is:",
-                "question_hi": "25°C पर एक उदासीन विलयन का pH है:",
-                "options_en": ["5", "7", "10", "14"],
-                "options_hi": ["5", "7", "10", "14"],
-                "answer_en": "7",
-                "answer_hi": "7",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 42,
-                "question_en": "Which element has the atomic number 12?",
-                "question_hi": "किस तत्व का परमाणु क्रमांक 12 है?",
-                "options_en": ["Sodium", "Magnesium", "Aluminum", "Silicon"],
-                "options_hi": ["सोडियम", "मैग्नीशियम", "एल्युमिनियम", "सिलिकॉन"],
-                "answer_en": "Magnesium",
-                "answer_hi": "मैग्नीशियम",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 43,
-                "question_en": "The hybridization of carbon in ethyne (C₂H₂) is:",
-                "question_hi": "एथाइन (C₂H₂) में कार्बन का संकरण है:",
-                "options_en": ["sp", "sp²", "sp³", "sp³d"],
-                "options_hi": ["sp", "sp²", "sp³", "sp³d"],
-                "answer_en": "sp",
-                "answer_hi": "sp",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 44,
-                "question_en": "Which of the following is a reducing agent?",
-                "question_hi": "निम्नलिखित में से कौन एक अपचायक है?",
-                "options_en": ["H₂O₂", "KMnO₄", "NaBH₄", "O₃"],
-                "options_hi": ["H₂O₂", "KMnO₄", "NaBH₄", "O₃"],
-                "answer_en": "NaBH₄",
-                "answer_hi": "NaBH₄",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 45,
-                "question_en": "The molecular formula of benzene is:",
-                "question_hi": "बेंजीन का आणविक सूत्र है:",
-                "options_en": ["C₆H₆", "C₆H₁₂", "C₆H₅OH", "C₆H₁₀"],
-                "options_hi": ["C₆H₆", "C₆H₁₂", "C₆H₅OH", "C₆H₁₀"],
-                "answer_en": "C₆H₆",
-                "answer_hi": "C₆H₆",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 46,
-                "question_en": "The compound that does not show geometrical isomerism is:",
-                "question_hi": "वह यौगिक जो ज्यामितीय समावयवता नहीं दर्शाता है:",
-                "options_en": ["1,2-dichloropropene", "1,2-dichlorocyclopropane", "1,1-dichloropropene", "1,2-dichlorobut-2-ene"],
-                "options_hi": ["1,2-डाइक्लोरोप्रोपीन", "1,2-डाइक्लोरोसाइक्लोप्रोपेन", "1,1-डाइक्लोरोप्रोपीन", "1,2-डाइक्लोरोब्यूट-2-ईन"],
-                "answer_en": "1,1-dichloropropene",
-                "answer_hi": "1,1-डाइक्लोरोप्रोपीन",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 47,
-                "question_en": "The correct order of bond angles in H₂O, NH₃, CH₄ and CO₂ is:",
-                "question_hi": "H₂O, NH₃, CH₄ और CO₂ में बंध कोणों का सही क्रम है:",
-                "options_en": ["H₂O < NH₃ < CH₄ < CO₂", "H₂O < NH₃ < CO₂ < CH₄", "CO₂ < H₂O < NH₃ < CH₄", "CO₂ < CH₄ < NH₃ < H₂O"],
-                "options_hi": ["H₂O < NH₃ < CH₄ < CO₂", "H₂O < NH₃ < CO₂ < CH₄", "CO₂ < H₂O < NH₃ < CH₄", "CO₂ < CH₄ < NH₃ < H₂O"],
-                "answer_en": "H₂O < NH₃ < CH₄ < CO₂",
-                "answer_hi": "H₂O < NH₃ < CH₄ < CO₂",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 48,
-                "question_en": "The compound that gives a positive iodoform test is:",
-                "question_hi": "वह यौगिक जो धनात्मक आयोडोफॉर्म परीक्षण देता है:",
-                "options_en": ["Phenol", "2-pentanone", "3-pentanone", "Benzaldehyde"],
-                "options_hi": ["फीनॉल", "2-पेंटेनोन", "3-पेंटेनोन", "बेंजाल्डिहाइड"],
-                "answer_en": "2-pentanone",
-                "answer_hi": "2-पेंटेनोन",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 49,
-                "question_en": "The number of water molecules in Mohr's salt, FeSO₄.(NH₄)₂SO₄.6H₂O is:",
-                "question_hi": "मोहर लवण, FeSO₄.(NH₄)₂SO₄.6H₂O में जल के अणुओं की संख्या है:",
-                "options_en": ["4", "5", "6", "7"],
-                "options_hi": ["4", "5", "6", "7"],
-                "answer_en": "6",
-                "answer_hi": "6",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 50,
-                "question_en": "The correct order of stability of carbocations is:",
-                "question_hi": "कार्बोकैटायनों की स्थिरता का सही क्रम है:",
-                "options_en": ["Methyl < Primary < Secondary < Tertiary", "Methyl < Secondary < Primary < Tertiary", "Tertiary < Secondary < Primary < Methyl", "Primary < Secondary < Tertiary < Methyl"],
-                "options_hi": ["मेथिल < प्राथमिक < द्वितीयक < तृतीयक", "मेथिल < द्वितीयक < प्राथमिक < तृतीयक", "तृतीयक < द्वितीयक < प्राथमिक < मेथिल", "प्राथमिक < द्वितीयक < तृतीयक < मेथिल"],
-                "answer_en": "Methyl < Primary < Secondary < Tertiary",
-                "answer_hi": "मेथिल < प्राथमिक < द्वितीयक < तृतीयक",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 51,
-                "question_en": "The compound that exhibits both Frenkel and Schottky defects is:",
-                "question_hi": "वह यौगिक जो फ्रेंकेल और शॉट्की दोनों दोष प्रदर्शित करता है:",
-                "options_en": ["NaCl", "AgBr", "KCl", "CsCl"],
-                "options_hi": ["NaCl", "AgBr", "KCl", "CsCl"],
-                "answer_en": "AgBr",
-                "answer_hi": "AgBr",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 52,
-                "question_en": "The number of structural isomers possible for C₄H₁₀O is:",
-                "question_hi": "C₄H₁₀O के लिए संभावित संरचनात्मक समावयवियों की संख्या है:",
-                "options_en": ["4", "5", "6", "7"],
-                "options_hi": ["4", "5", "6", "7"],
-                "answer_en": "7",
-                "answer_hi": "7",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 53,
-                "question_en": "The complex that can show optical activity is:",
-                "question_hi": "वह संकुल जो प्रकाशिक सक्रियता दर्शा सकता है:",
-                "options_en": ["[Co(NH₃)₄Cl₂]⁺", "[Pt(NH₃)₂Cl₂]", "[Co(en)₃]³⁺", "[Ni(CN)₄]²⁻"],
-                "options_hi": ["[Co(NH₃)₄Cl₂]⁺", "[Pt(NH₃)₂Cl₂]", "[Co(en)₃]³⁺", "[Ni(CN)₄]²⁻"],
-                "answer_en": "[Co(en)₃]³⁺",
-                "answer_hi": "[Co(en)₃]³⁺",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 54,
-                "question_en": "The correct order of acidic strength is:",
-                "question_hi": "अम्लीय सामर्थ्य का सही क्रम है:",
-                "options_en": ["HClO < HClO₂ < HClO₃ < HClO₄", "HClO₄ < HClO₃ < HClO₂ < HClO", "HClO < HClO₄ < HClO₃ < HClO₂", "HClO₄ < HClO₂ < HClO₃ < HClO"],
-                "options_hi": ["HClO < HClO₂ < HClO₃ < HClO₄", "HClO₄ < HClO₃ < HClO₂ < HClO", "HClO < HClO₄ < HClO₃ < HClO₂", "HClO₄ < HClO₂ < HClO₃ < HClO"],
-                "answer_en": "HClO < HClO₂ < HClO₃ < HClO₄",
-                "answer_hi": "HClO < HClO₂ < HClO₃ < HClO₄",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 55,
-                "question_en": "The number of π bonds in benzene is:",
-                "question_hi": "बेंजीन में π बंधों की संख्या है:",
-                "options_en": ["3", "6", "9", "12"],
-                "options_hi": ["3", "6", "9", "12"],
-                "answer_en": "3",
-                "answer_hi": "3",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 56,
-                "question_en": "What is the IUPAC name of CH3-CH2-OH?",
-                "question_hi": "CH3-CH2-OH का IUPAC नाम क्या है?",
-                "options_en": ["Methanol", "Propanol", "Ethanol", "Butanol"],
-                "options_hi": ["मेथनॉल", "प्रोपेनॉल", "एथनॉल", "ब्यूटनॉल"],
-                "answer_en": "Ethanol",
-                "answer_hi": "एथनॉल",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 57,
-                "question_en": "The molarity of 49 g of H₂SO₄ in 1 liter solution is:",
-                "question_hi": "1 लीटर विलयन में 49 ग्राम H₂SO₄ की मोलरता क्या है?",
-                "options_en": ["0.25 M", "0.5 M", "1 M", "2 M"],
-                "options_hi": ["0.25 M", "0.5 M", "1 M", "2 M"],
-                "answer_en": "0.5 M",
-                "answer_hi": "0.5 M",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 58,
-                "question_en": "Which of the following elements has the highest first ionization energy?",
-                "question_hi": "निम्न में से किस तत्व की प्रथम आयनीकरण ऊर्जा सबसे अधिक है?",
-                "options_en": ["Na", "Mg", "Al", "Ne"],
-                "options_hi": ["Na", "Mg", "Al", "Ne"],
-                "answer_en": "Ne",
-                "answer_hi": "Ne",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 59,
-                "question_en": "Which gas is used in Haber process?",
-                "question_hi": "हैबर प्रक्रिया में कौन सी गैस प्रयुक्त होती है?",
-                "options_en": ["O₂", "H₂", "Cl₂", "He"],
-                "options_hi": ["O₂", "H₂", "Cl₂", "He"],
-                "answer_en": "H₂",
-                "answer_hi": "H₂",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 60,
-                "question_en": "Which of the following has maximum boiling point?",
-                "question_hi": "निम्नलिखित में से किसका क्वथनांक सबसे अधिक है?",
-                "options_en": ["H₂O", "H₂S", "H₂Se", "H₂Te"],
-                "options_hi": ["H₂O", "H₂S", "H₂Se", "H₂Te"],
-                "answer_en": "H₂O",
-                "answer_hi": "H₂O",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 61,
-                "question_en": "The shortest wavelength in Lyman series corresponds to:",
-                "question_hi": "लाइमैन श्रंखला में सबसे छोटी तरंगदैर्ध्य किसके लिए होती है?",
-                "options_en": ["n = ∞ to n = 1", "n = 2 to n = 1", "n = 3 to n = 1", "n = 4 to n = 1"],
-                "options_hi": ["n = ∞ से n = 1", "n = 2 से n = 1", "n = 3 से n = 1", "n = 4 से n = 1"],
-                "answer_en": "n = ∞ to n = 1",
-                "answer_hi": "n = ∞ से n = 1",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 62,
-                "question_en": "The correct order of bond angles in H₂O, NH₃ and CH₄ is:",
-                "question_hi": "H₂O, NH₃ और CH₄ में बंध कोणों का सही क्रम है:",
-                "options_en": ["H₂O < NH₃ < CH₄", "NH₃ < H₂O < CH₄", "CH₄ < NH₃ < H₂O", "CH₄ < H₂O < NH₃"],
-                "options_hi": ["H₂O < NH₃ < CH₄", "NH₃ < H₂O < CH₄", "CH₄ < NH₃ < H₂O", "CH₄ < H₂O < NH₃"],
-                "answer_en": "H₂O < NH₃ < CH₄",
-                "answer_hi": "H₂O < NH₃ < CH₄",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 63,
-                "question_en": "The compound that does not show geometrical isomerism is:",
-                "question_hi": "वह यौगिक जो ज्यामितीय समावयवता नहीं दर्शाता है:",
-                "options_en": ["1,2-dichloroethene", "2-butene", "1,2-dichlorocyclopropane", "1,1-dichloroethene"],
-                "options_hi": ["1,2-डाइक्लोरोईथीन", "2-ब्यूटीन", "1,2-डाइक्लोरोसाइक्लोप्रोपेन", "1,1-डाइक्लोरोईथीन"],
-                "answer_en": "1,1-dichloroethene",
-                "answer_hi": "1,1-डाइक्लोरोईथीन",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 64,
-                "question_en": "The number of isomers for C₄H₈ is:",
-                "question_hi": "C₄H₈ के लिए समावयवियों की संख्या है:",
-                "options_en": ["3", "4", "5", "6"],
-                "options_hi": ["3", "4", "5", "6"],
-                "answer_en": "5",
-                "answer_hi": "5",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 65,
-                "question_en": "Which of the following is not a colligative property?",
-                "question_hi": "निम्नलिखित में से कौन सा अणुसंख्य गुणधर्म नहीं है?",
-                "options_en": ["Osmotic pressure", "Lowering of vapor pressure", "Elevation in boiling point", "Viscosity"],
-                "options_hi": ["परासरण दाब", "वाष्प दाब में कमी", "क्वथनांक में उन्नयन", "श्यानता"],
-                "answer_en": "Viscosity",
-                "answer_hi": "श्यानता",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 66,
-                "question_en": "The number of d-electrons in Fe²⁺ (Z=26) is:",
-                "question_hi": "Fe²⁺ (Z=26) में d-इलेक्ट्रॉनों की संख्या है:",
-                "options_en": ["4", "5", "6", "7"],
-                "options_hi": ["4", "5", "6", "7"],
-                "answer_en": "6",
-                "answer_hi": "6",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 67,
-                "question_en": "The geometry of XeF₄ is:",
-                "question_hi": "XeF₄ की ज्यामिति है:",
-                "options_en": ["Square planar", "Tetrahedral", "Octahedral", "Trigonal bipyramidal"],
-                "options_hi": ["वर्ग समतलीय", "चतुष्फलकीय", "अष्टफलकीय", "त्रिकोणीय द्विपिरैमिडी"],
-                "answer_en": "Square planar",
-                "answer_hi": "वर्ग समतलीय",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 68,
-                "question_en": "Which of the following is an example of a condensation polymer?",
-                "question_hi": "निम्नलिखित में से कौन संघनन बहुलक का उदाहरण है?",
-                "options_en": ["Polythene", "PVC", "Nylon-6,6", "Teflon"],
-                "options_hi": ["पॉलिथीन", "PVC", "नायलॉन-6,6", "टेफ्लॉन"],
-                "answer_en": "Nylon-6,6",
-                "answer_hi": "नायलॉन-6,6",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 69,
-                "question_en": "The number of moles of KMnO₄ required to oxidize one mole of FeC₂O₄ in acidic medium is:",
-                "question_hi": "अम्लीय माध्यम में FeC₂O₄ के एक मोल को ऑक्सीकृत करने के लिए आवश्यक KMnO₄ के मोलों की संख्या है:",
-                "options_en": ["0.2", "0.6", "0.4", "0.8"],
-                "options_hi": ["0.2", "0.6", "0.4", "0.8"],
-                "answer_en": "0.6",
-                "answer_hi": "0.6",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 70,
-                "question_en": "The compound used in anti-malarial drug is:",
-                "question_hi": "एंटी-मलेरिया दवा में प्रयुक्त यौगिक है:",
-                "options_en": ["Chloroquine", "Bithionol", "Paracetamol", "Aspirin"],
-                "options_hi": ["क्लोरोक्वीन", "बिथायोनॉल", "पैरासिटामोल", "एस्पिरिन"],
-                "answer_en": "Chloroquine",
-                "answer_hi": "क्लोरोक्वीन",
-                "attempted": false,
-                "selected": ""
-            },
-            // Mathematics questions (71-100)
-            {
-                "num": 71,
-                "question_en": "The number of real solutions of the equation |x|² - 3|x| + 2 = 0 is:",
-                "question_hi": "समीकरण |x|² - 3|x| + 2 = 0 के वास्तविक हलों की संख्या है:",
-                "options_en": ["1", "2", "3", "4"],
-                "options_hi": ["1", "2", "3", "4"],
-                "answer_en": "4",
-                "answer_hi": "4",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 72,
-                "question_en": "If the sum of the first n terms of an AP is 3n² + 5n, then its nth term is:",
-                "question_hi": "यदि किसी समांतर श्रेणी के पहले n पदों का योग 3n² + 5n है, तो इसका nवाँ पद है:",
-                "options_en": ["6n + 2", "6n - 2", "3n + 2", "3n - 2"],
-                "options_hi": ["6n + 2", "6n - 2", "3n + 2", "3n - 2"],
-                "answer_en": "6n + 2",
-                "answer_hi": "6n + 2",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 73,
-                "question_en": "The number of ways in which 5 boys and 3 girls can be seated in a row so that no two girls are together is:",
-                "question_hi": "5 लड़कों और 3 लड़कियों को एक पंक्ति में इस प्रकार बैठाने के तरीकों की संख्या कि कोई भी दो लड़कियाँ एक साथ न बैठें:",
-                "options_en": ["14400", "28800", "24000", "36000"],
-                "options_hi": ["14400", "28800", "24000", "36000"],
-                "answer_en": "14400",
-                "answer_hi": "14400",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 74,
-                "question_en": "The value of ∫(0 to π/2) log(sin x) dx is:",
-                "question_hi": "∫(0 से π/2) log(sin x) dx का मान है:",
-                "options_en": ["-π/2 log 2", "-π log 2", "π/2 log 2", "π log 2"],
-                "options_hi": ["-π/2 log 2", "-π log 2", "π/2 log 2", "π log 2"],
-                "answer_en": "-π/2 log 2",
-                "answer_hi": "-π/2 log 2",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 75,
-                "question_en": "If A and B are two events such that P(A) = 0.3, P(B) = 0.4 and P(A∩B) = 0.2, then P(A|B') is:",
-                "question_hi": "यदि A और B दो घटनाएँ इस प्रकार हैं कि P(A) = 0.3, P(B) = 0.4 और P(A∩B) = 0.2, तो P(A|B') है:",
-                "options_en": ["1/6", "1/3", "1/2", "2/3"],
-                "options_hi": ["1/6", "1/3", "1/2", "2/3"],
-                "answer_en": "1/6",
-                "answer_hi": "1/6",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 76,
-                "question_en": "The equation of the normal to the curve y = x + sin x cos x at x = π/2 is:",
-                "question_hi": "वक्र y = x + sin x cos x के x = π/2 पर अभिलंब का समीकरण है:",
-                "options_en": ["x = π/2", "x = π", "y = π/2", "y = π"],
-                "options_hi": ["x = π/2", "x = π", "y = π/2", "y = π"],
-                "answer_en": "x = π/2",
-                "answer_hi": "x = π/2",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 77,
-                "question_en": "The number of common tangents to the circles x² + y² = 4 and x² + y² - 6x - 8y = 24 is:",
-                "question_hi": "वृत्तों x² + y² = 4 और x² + y² - 6x - 8y = 24 की उभयनिष्ठ स्पर्श रेखाओं की संख्या है:",
-                "options_en": ["0", "1", "2", "3"],
-                "options_hi": ["0", "1", "2", "3"],
-                "answer_en": "3",
-                "answer_hi": "3",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 78,
-                "question_en": "The value of lim(x→0) (tan x - sin x)/x³ is:",
-                "question_hi": "lim(x→0) (tan x - sin x)/x³ का मान है:",
-                "options_en": ["0", "1", "1/2", "1/3"],
-                "options_hi": ["0", "1", "1/2", "1/3"],
-                "answer_en": "1/2",
-                "answer_hi": "1/2",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 79,
-                "question_en": "If the vectors a = i + 2j + 3k, b = 2i - j + k and c = 3i + j + 4k are coplanar, then the value of λ is:",
-                "question_hi": "यदि सदिश a = i + 2j + 3k, b = 2i - j + k और c = 3i + j + 4k समतलीय हैं, तो λ का मान है:",
-                "options_en": ["-2", "-1", "0", "1"],
-                "options_hi": ["-2", "-1", "0", "1"],
-                "answer_en": "-2",
-                "answer_hi": "-2",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 80,
-                "question_en": "The area bounded by the curves y = |x| - 1 and y = -|x| + 1 is:",
-                "question_hi": "वक्रों y = |x| - 1 और y = -|x| + 1 से घिरा क्षेत्रफल है:",
-                "options_en": ["1", "2", "4", "8"],
-                "options_hi": ["1", "2", "4", "8"],
-                "answer_en": "2",
-                "answer_hi": "2",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 81,
-                "question_en": "The limit of (sin x)/x as x approaches 0 is:",
-                "question_hi": "जब x → 0 होता है, तब (sin x)/x का मान क्या होता है?",
-                "options_en": ["0", "1", "∞", "Does not exist"],
-                "options_hi": ["0", "1", "∞", "अस्तित्व नहीं है"],
-                "answer_en": "1",
-                "answer_hi": "1",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 82,
-                "question_en": "If the sum of first n terms of a series is Sₙ = 3n² + 2n, what is the nth term?",
-                "question_hi": "यदि किसी श्रेणी के पहले n पदों का योग Sₙ = 3n² + 2n है, तो nवाँ पद क्या होगा?",
-                "options_en": ["6n + 2", "6n - 1", "3n + 2", "6n + 5"],
-                "options_hi": ["6n + 2", "6n - 1", "3n + 2", "6n + 5"],
-                "answer_en": "6n + 2",
-                "answer_hi": "6n + 2",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 83,
-                "question_en": "The value of (1 + tan²θ)/(1 + cot²θ) is:",
-                "question_hi": "(1 + tan²θ)/(1 + cot²θ) का मान क्या है?",
-                "options_en": ["tan²θ", "cot²θ", "tan⁴θ", "1"],
-                "options_hi": ["tan²θ", "cot²θ", "tan⁴θ", "1"],
-                "answer_en": "tan²θ",
-                "answer_hi": "tan²θ",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 84,
-                "question_en": "If A = [[1, 2], [3, 4]], then the determinant of A is:",
-                "question_hi": "यदि A = [[1, 2], [3, 4]] है, तो A का निर्धारक क्या है?",
-                "options_en": ["-2", "2", "10", "0"],
-                "options_hi": ["-2", "2", "10", "0"],
-                "answer_en": "-2",
-                "answer_hi": "-2",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 85,
-                "question_en": "The integral ∫sin²x dx equals:",
-                "question_hi": "∫sin²x dx का हल है:",
-                "options_en": ["x - sinx cosx + C", "x/2 - sin2x/4 + C", "x + C", "cos²x + C"],
-                "options_hi": ["x - sinx cosx + C", "x/2 - sin2x/4 + C", "x + C", "cos²x + C"],
-                "answer_en": "x/2 - sin2x/4 + C",
-                "answer_hi": "x/2 - sin2x/4 + C",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 86,
-                "question_en": "If logₐb = x, then b equals:",
-                "question_hi": "यदि logₐb = x, तो b का मान होगा:",
-                "options_en": ["a^x", "x^a", "a/x", "logx(a)"],
-                "options_hi": ["a^x", "x^a", "a/x", "logx(a)"],
-                "answer_en": "a^x",
-                "answer_hi": "a^x",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 87,
-                "question_en": "The derivative of x^x is:",
-                "question_hi": "x^x का अवकलज क्या है?",
-                "options_en": ["x^x ln(x)", "x^x (1 + ln x)", "x^x x ln x", "x^x/x"],
-                "options_hi": ["x^x ln(x)", "x^x (1 + ln x)", "x^x x ln x", "x^x/x"],
-                "answer_en": "x^x (1 + ln x)",
-                "answer_hi": "x^x (1 + ln x)",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 88,
-                "question_en": "Is f(x) = |x - 2| differentiable at x = 2?",
-                "question_hi": "क्या f(x) = |x - 2| x = 2 पर अवकलनीय है?",
-                "options_en": ["Yes", "No", "Partially", "Only from right"],
-                "options_hi": ["हाँ", "नहीं", "आंशिक रूप से", "केवल दाएँ से"],
-                "answer_en": "No",
-                "answer_hi": "नहीं",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 89,
-                "question_en": "The number of terms in the expansion of (1 + x + x²)¹⁰ is:",
-                "question_hi": "(1 + x + x²)¹⁰ के प्रसार में पदों की संख्या है:",
-                "options_en": ["10", "11", "21", "30"],
-                "options_hi": ["10", "11", "21", "30"],
-                "answer_en": "21",
-                "answer_hi": "21",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 90,
-                "question_en": "The solution of the differential equation dy/dx = y/x is:",
-                "question_hi": "अवकल समीकरण dy/dx = y/x का हल है:",
-                "options_en": ["y = kx", "y = k/x", "y = kx²", "y = k"],
-                "options_hi": ["y = kx", "y = k/x", "y = kx²", "y = k"],
-                "answer_en": "y = kx",
-                "answer_hi": "y = kx",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 91,
-                "question_en": "The value of sin(75°) is:",
-                "question_hi": "sin(75°) का मान है:",
-                "options_en": ["(√6 + √2)/4", "(√6 - √2)/4", "(√3 + 1)/2√2", "(√3 - 1)/2√2"],
-                "options_hi": ["(√6 + √2)/4", "(√6 - √2)/4", "(√3 + 1)/2√2", "(√3 - 1)/2√2"],
-                "answer_en": "(√6 + √2)/4",
-                "answer_hi": "(√6 + √2)/4",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 92,
-                "question_en": "The distance between the lines 3x + 4y = 9 and 6x + 8y = 15 is:",
-                "question_hi": "रेखाओं 3x + 4y = 9 और 6x + 8y = 15 के बीच की दूरी है:",
-                "options_en": ["0.3", "0.5", "0.7", "0.9"],
-                "options_hi": ["0.3", "0.5", "0.7", "0.9"],
-                "answer_en": "0.3",
-                "answer_hi": "0.3",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 93,
-                "question_en": "The number of diagonals in a polygon with 10 sides is:",
-                "question_hi": "10 भुजाओं वाले बहुभुज में विकर्णों की संख्या है:",
-                "options_en": ["35", "40", "45", "50"],
-                "options_hi": ["35", "40", "45", "50"],
-                "answer_en": "35",
-                "answer_hi": "35",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 94,
-                "question_en": "The sum of the series 1 + 3 + 5 + ... + (2n-1) is:",
-                "question_hi": "श्रेणी 1 + 3 + 5 + ... + (2n-1) का योग है:",
-                "options_en": ["n²", "n(n+1)", "n(n+1)/2", "2n²"],
-                "options_hi": ["n²", "n(n+1)", "n(n+1)/2", "2n²"],
-                "answer_en": "n²",
-                "answer_hi": "n²",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 95,
-                "question_en": "The value of ∫(1/(1+x²)) dx from 0 to 1 is:",
-                "question_hi": "0 से 1 तक ∫(1/(1+x²)) dx का मान है:",
-                "options_en": ["π/2", "π/4", "π/6", "π/8"],
-                "options_hi": ["π/2", "π/4", "π/6", "π/8"],
-                "answer_en": "π/4",
-                "answer_hi": "π/4",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 96,
-                "question_en": "The equation of the circle with center (2,3) and radius 4 is:",
-                "question_hi": "केंद्र (2,3) और त्रिज्या 4 वाले वृत्त का समीकरण है:",
-                "options_en": ["(x-2)² + (y-3)² = 16", "(x+2)² + (y+3)² = 16", "(x-2)² + (y-3)² = 4", "(x+2)² + (y+3)² = 4"],
-                "options_hi": ["(x-2)² + (y-3)² = 16", "(x+2)² + (y+3)² = 16", "(x-2)² + (y-3)² = 4", "(x+2)² + (y+3)² = 4"],
-                "answer_en": "(x-2)² + (y-3)² = 16",
-                "answer_hi": "(x-2)² + (y-3)² = 16",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 97,
-                "question_en": "If tan θ = 3/4, then sin θ is:",
-                "question_hi": "यदि tan θ = 3/4, तो sin θ है:",
-                "options_en": ["3/5", "4/5", "5/3", "5/4"],
-                "options_hi": ["3/5", "4/5", "5/3", "5/4"],
-                "answer_en": "3/5",
-                "answer_hi": "3/5",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 98,
-                "question_en": "The number of terms in the expansion of (a+b)ⁿ is:",
-                "question_hi": "(a+b)ⁿ के प्रसार में पदों की संख्या है:",
-                "options_en": ["n", "n+1", "n-1", "2n"],
-                "options_hi": ["n", "n+1", "n-1", "2n"],
-                "answer_en": "n+1",
-                "answer_hi": "n+1",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 99,
-                "question_en": "The value of cos(π/3) is:",
-                "question_hi": "cos(π/3) का मान है:",
-                "options_en": ["1/2", "√3/2", "1", "0"],
-                "options_hi": ["1/2", "√3/2", "1", "0"],
-                "answer_en": "1/2",
-                "answer_hi": "1/2",
-                "attempted": false,
-                "selected": ""
-            },
-            {
-                "num": 100,
-                "question_en": "The solution of the equation 2x + 3 = 7 is:",
-                "question_hi": "समीकरण 2x + 3 = 7 का हल है:",
-                "options_en": ["x = 1", "x = 2", "x = 3", "x = 4"],
-                "options_hi": ["x = 1", "x = 2", "x = 3", "x = 4"],
-                "answer_en": "x = 2",
-                "answer_hi": "x = 2",
-                "attempted": false,
-                "selected": ""
-            }
-// Add more questions here...
+    {
+        "num": 101,
+        "question_en": "What is the purpose of 'noImplicitAny' compiler option?",
+        "question_hi": "'noImplicitAny' कंपाइलर ऑप्शन का उद्देश्य क्या है?",
+        "options_en": ["Disallow implicit 'any' types", "Allow implicit 'any' types", "Remove all 'any' types", "Convert 'any' to 'unknown'"],
+        "options_hi": ["इम्प्लिसिट 'any' टाइप को अस्वीकार करना", "इम्प्लिसिट 'any' टाइप को अनुमति देना", "सभी 'any' टाइप को हटाना", "'any' को 'unknown' में बदलना"],
+        "answer_en": "Disallow implicit 'any' types",
+        "answer_hi": "इम्प्लिसिट 'any' टाइप को अस्वीकार करना",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 102,
+        "question_en": "What does 'strictNullChecks' compiler option do?",
+        "question_hi": "'strictNullChecks' कंपाइलर ऑप्शन क्या करता है?",
+        "options_en": ["Enforce null and undefined checks", "Allow null and undefined everywhere", "Remove null and undefined", "Convert null to undefined"],
+        "options_hi": ["null और undefined चेक को लागू करना", "null और undefined को हर जगह अनुमति देना", "null और undefined को हटाना", "null को undefined में बदलना"],
+        "answer_en": "Enforce null and undefined checks",
+        "answer_hi": "null और undefined चेक को लागू करना",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 103,
+        "question_en": "How do you define a type that can be either string or number?",
+        "question_hi": "एक टाइप को कैसे परिभाषित करें जो स्ट्रिंग या नंबर हो सकता है?",
+        "options_en": ["string | number", "string & number", "string or number", "string, number"],
+        "options_hi": ["string | number", "string & number", "string or number", "string, number"],
+        "answer_en": "string | number",
+        "answer_hi": "string | number",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 104,
+        "question_en": "What is the 'keyof' operator used for?",
+        "question_hi": "'keyof' ऑपरेटर का उपयोग किसके लिए किया जाता है?",
+        "options_en": ["Get union of object keys", "Get object values", "Check key existence", "Create new keys"],
+        "options_hi": ["ऑब्जेक्ट कीज़ का यूनियन प्राप्त करना", "ऑब्जेक्ट वैल्यू प्राप्त करना", "कुंजी के अस्तित्व की जाँच करना", "नई कुंजियाँ बनाना"],
+        "answer_en": "Get union of object keys",
+        "answer_hi": "ऑब्जेक्ट कीज़ का यूनियन प्राप्त करना",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 105,
+        "question_en": "What does 'readonly' modifier do for arrays?",
+        "question_hi": "ऐरे के लिए 'readonly' मॉडिफायर क्या करता है?",
+        "options_en": ["Makes array immutable", "Makes array readable only", "Both A and B", "Makes array writeable"],
+        "options_hi": ["ऐरे को अपरिवर्तनीय बनाता है", "ऐरे को केवल पठनीय बनाता है", "A और B दोनों", "ऐरे को लिखने योग्य बनाता है"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 106,
+        "question_en": "How do you define an index signature in TypeScript?",
+        "question_hi": "TypeScript में इंडेक्स सिग्नेचर को कैसे परिभाषित करते हैं?",
+        "options_en": ["[key: string]: type", "{key: type}", "index: type", "string: type"],
+        "options_hi": ["[key: string]: type", "{key: type}", "index: type", "string: type"],
+        "answer_en": "[key: string]: type",
+        "answer_hi": "[key: string]: type",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 107,
+        "question_en": "What is the 'in' operator used for in type contexts?",
+        "question_hi": "टाइप कॉन्टेक्स्ट में 'in' ऑपरेटर का उपयोग किसके लिए किया जाता है?",
+        "options_en": ["Iterate over union types", "Check property existence", "Both A and B", "None of the above"],
+        "options_hi": ["यूनियन टाइप पर इटरेट करना", "प्रॉपर्टी के अस्तित्व की जाँच करना", "A और B दोनों", "उपरोक्त में से कोई नहीं"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 108,
+        "question_en": "What is 'type narrowing' with 'typeof'?",
+        "question_hi": "'typeof' के साथ 'टाइप नैरोइंग' क्या है?",
+        "options_en": ["Narrow type based on typeof check", "Widen type based on typeof", "Change type completely", "Remove type"],
+        "options_hi": ["typeof चेक के आधार पर टाइप को नैरो करना", "typeof के आधार पर टाइप को विडेन करना", "टाइप को पूरी तरह बदलना", "टाइप को हटाना"],
+        "answer_en": "Narrow type based on typeof check",
+        "answer_hi": "typeof चेक के आधार पर टाइप को नैरो करना",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 109,
+        "question_en": "How do you create a type that excludes null and undefined?",
+        "question_hi": "एक टाइप कैसे बनाएं जो null और undefined को बाहर करता है?",
+        "options_en": ["NonNullable<T>", "NotNull<T>", "T extends {}", "All of the above"],
+        "options_hi": ["NonNullable<T>", "NotNull<T>", "T extends {}", "उपरोक्त सभी"],
+        "answer_en": "All of the above",
+        "answer_hi": "उपरोक्त सभी",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 110,
+        "question_en": "What is 'const enum' in TypeScript?",
+        "question_hi": "TypeScript में 'const enum' क्या है?",
+        "options_en": ["Enum that gets inlined", "Constant enum values", "Both A and B", "None of the above"],
+        "options_hi": ["ऐनम जो इनलाइन हो जाता है", "कॉन्स्टेंट ऐनम वैल्यू", "A और B दोनों", "उपरोक्त में से कोई नहीं"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 111,
+        "question_en": "How do you define a function type?",
+        "question_hi": "फंक्शन टाइप को कैसे परिभाषित करते हैं?",
+        "options_en": ["(param: type) => returnType", "function(param: type): returnType", "Both A and B", "None of the above"],
+        "options_hi": ["(param: type) => returnType", "function(param: type): returnType", "A और B दोनों", "उपरोक्त में से कोई नहीं"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 112,
+        "question_en": "What is 'method overloading' in TypeScript?",
+        "question_hi": "TypeScript में 'मेथड ओवरलोडिंग' क्या है?",
+        "options_en": ["Multiple function signatures", "Same method name with different parameters", "Both A and B", "Different method names"],
+        "options_hi": ["एकाधिक फंक्शन सिग्नेचर", "अलग-अलग पैरामीटर के साथ समान मेथड नाम", "A और B दोनों", "अलग-अलग मेथड नाम"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 113,
+        "question_en": "How do you make a class property protected?",
+        "question_hi": "क्लास प्रॉपर्टी को प्रोटेक्टेड कैसे बनाते हैं?",
+        "options_en": ["protected property: type", "property: protected type", "protected(property): type", "property protected: type"],
+        "options_hi": ["protected property: type", "property: protected type", "protected(property): type", "property protected: type"],
+        "answer_en": "protected property: type",
+        "answer_hi": "protected property: type",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 114,
+        "question_en": "What is 'abstract method' in TypeScript?",
+        "question_hi": "TypeScript में 'एब्स्ट्रैक्ट मेथड' क्या है?",
+        "options_en": ["Method without implementation", "Method that must be implemented", "Both A and B", "Concrete method"],
+        "options_hi": ["बिना इम्प्लीमेंटेशन के मेथड", "मेथड जिसे इम्प्लीमेंट करना होगा", "A और B दोनों", "कंक्रीट मेथड"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 115,
+        "question_en": "How do you define a generic interface?",
+        "question_hi": "जेनेरिक इंटरफेस को कैसे परिभाषित करते हैं?",
+        "options_en": ["interface Name<T>", "interface<T> Name", "generic interface Name<T>", "interface Name generic<T>"],
+        "options_hi": ["interface Name<T>", "interface<T> Name", "generic interface Name<T>", "interface Name generic<T>"],
+        "answer_en": "interface Name<T>",
+        "answer_hi": "interface Name<T>",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 116,
+        "question_en": "What is 'type predicate' with custom guard?",
+        "question_hi": "कस्टम गार्ड के साथ 'टाइप प्रेडिकेट' क्या है?",
+        "options_en": ["Function returning type predicate", "param is Type syntax", "Both A and B", "Boolean function"],
+        "options_hi": ["फंक्शन जो टाइप प्रेडिकेट रिटर्न करता है", "param is Type सिंटैक्स", "A और B दोनों", "बूलियन फंक्शन"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 117,
+        "question_en": "How do you create a mapped type that makes all properties optional?",
+        "question_hi": "एक मैप्ड टाइप कैसे बनाएं जो सभी प्रॉपर्टी को ऑप्शनल बनाता है?",
+        "options_en": ["{ [K in keyof T]?: T[K] }", "{ [K in keyof T]: T[K]? }", "{ [K in keyof T]?: T[K]? }", "Partial<T>"],
+        "options_hi": ["{ [K in keyof T]?: T[K] }", "{ [K in keyof T]: T[K]? }", "{ [K in keyof T]?: T[K]? }", "Partial<T>"],
+        "answer_en": "{ [K in keyof T]?: T[K] }",
+        "answer_hi": "{ [K in keyof T]?: T[K] }",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 118,
+        "question_en": "What is 'conditional type' with infer?",
+        "question_hi": "infer के साथ 'कंडीशनल टाइप' क्या है?",
+        "options_en": ["Type that infers types in conditions", "T extends infer U ? X : Y", "Both A and B", "Simple if-else for types"],
+        "options_hi": ["ऐसा टाइप जो शर्तों में टाइप को इन्फर करता है", "T extends infer U ? X : Y", "A और B दोनों", "टाइप के लिए साधारण if-else"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 119,
+        "question_en": "How do you extract the element type of an array?",
+        "question_hi": "ऐरे के एलिमेंट टाइप को कैसे निकालते हैं?",
+        "options_en": ["T[number]", "T[0]", "ElementType<T>", "All of the above"],
+        "options_hi": ["T[number]", "T[0]", "ElementType<T>", "उपरोक्त सभी"],
+        "answer_en": "T[number]",
+        "answer_hi": "T[number]",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 120,
+        "question_en": "What is 'template literal type' with unions?",
+        "question_hi": "यूनियन के साथ 'टेम्पलेट लिटरल टाइप' क्या है?",
+        "options_en": ["Dynamic string types", `\`\${A}-\${B}\``, "Both A and B", "Static string types"],
+        "options_hi": ["डायनामिक स्ट्रिंग टाइप", `\`\${A}-\${B}\``, "A और B दोनों", "स्टैटिक स्ट्रिंग टाइप"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 121,
+        "question_en": "How do you create a type that requires at least one property?",
+        "question_hi": "एक टाइप कैसे बनाएं जो कम से कम एक प्रॉपर्टी की आवश्यकता हो?",
+        "options_en": ["Partial<T> & { [K in keyof T]: Required<Pick<T, K>> }[keyof T]", "AtLeastOne<T>", "Both A and B", "RequireOne<T>"],
+        "options_hi": ["Partial<T> & { [K in keyof T]: Required<Pick<T, K>> }[keyof T]", "AtLeastOne<T>", "A और B दोनों", "RequireOne<T>"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 122,
+        "question_en": "What is 'type only import'?",
+        "question_hi": "'टाइप ओनली इम्पोर्ट' क्या है?",
+        "options_en": ["import type { T }", "Import for type information only", "Both A and B", "Import for runtime"],
+        "options_hi": ["import type { T }", "केवल टाइप इन्फॉर्मेशन के लिए इम्पोर्ट", "A और B दोनों", "रनटाइम के लिए इम्पोर्ट"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 123,
+        "question_en": "How do you define a constructor type?",
+        "question_hi": "कंस्ट्रक्टर टाइप को कैसे परिभाषित करते हैं?",
+        "options_en": ["new (...args: any[]) => T", "constructor(...args: any[]): T", "Both A and B", "None of the above"],
+        "options_hi": ["new (...args: any[]) => T", "constructor(...args: any[]): T", "A और B दोनों", "उपरोक्त में से कोई नहीं"],
+        "answer_en": "new (...args: any[]) => T",
+        "answer_hi": "new (...args: any[]) => T",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 124,
+        "question_en": "What is 'assertion signature' in TypeScript?",
+        "question_hi": "TypeScript में 'असर्शन सिग्नेचर' क्या है?",
+        "options_en": ["Function that asserts condition", "asserts condition syntax", "Both A and B", "Type assertion"],
+        "options_hi": ["फंक्शन जो कंडीशन को असर्ट करता है", "asserts condition सिंटैक्स", "A और B दोनों", "टाइप असर्शन"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 125,
+        "question_en": "How do you create a recursive type for linked list?",
+        "question_hi": "लिंक्ड लिस्ट के लिए रिकर्सिव टाइप कैसे बनाएं?",
+        "options_en": ["type List = { value: number; next: List | null }", "interface List { value: number; next: List | null }", "Both A and B", "None of the above"],
+        "options_hi": ["type List = { value: number; next: List | null }", "interface List { value: number; next: List | null }", "A और B दोनों", "उपरोक्त में से कोई नहीं"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 126,
+        "question_en": "What is 'type spreading' for objects?",
+        "question_hi": "ऑब्जेक्ट के लिए 'टाइप स्प्रेडिंग' क्या है?",
+        "options_en": ["...T syntax in types", "Merging object types", "Both A and B", "Copying objects"],
+        "options_hi": ["टाइप में ...T सिंटैक्स", "ऑब्जेक्ट टाइप को मर्ज करना", "A और B दोनों", "ऑब्जेक्ट को कॉपी करना"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 127,
+        "question_en": "How do you define a type for function that may throw?",
+        "question_hi": "ऐसे फंक्शन के लिए टाइप कैसे परिभाषित करें जो throw कर सकता है?",
+        "options_en": ["() => T | never", "() => T | Error", "() => T", "() => T | void"],
+        "options_hi": ["() => T | never", "() => T | Error", "() => T", "() => T | void"],
+        "answer_en": "() => T | never",
+        "answer_hi": "() => T | never",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 128,
+        "question_en": "What is 'branded type' for nominal typing?",
+        "question_hi": "नॉमिनल टाइपिंग के लिए 'ब्रांडेड टाइप' क्या है?",
+        "options_en": ["type Branded<T, B> = T & { __brand: B }", "Type with unique brand", "Both A and B", "Type with name"],
+        "options_hi": ["type Branded<T, B> = T & { __brand: B }", "यूनिक ब्रांड वाला टाइप", "A और B दोनों", "नाम वाला टाइप"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 129,
+        "question_en": "How do you extract optional properties from a type?",
+        "question_hi": "किसी टाइप से ऑप्शनल प्रॉपर्टी को कैसे निकालते हैं?",
+        "options_en": ["{ [K in keyof T as undefined extends T[K] ? K : never]: T[K] }", "OptionalProperties<T>", "Both A and B", "PickOptional<T>"],
+        "options_hi": ["{ [K in keyof T as undefined extends T[K] ? K : never]: T[K] }", "OptionalProperties<T>", "A और B दोनों", "PickOptional<T>"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 130,
+        "question_en": "What is 'type-level programming' in TypeScript?",
+        "question_hi": "TypeScript में 'टाइप-लेवल प्रोग्रामिंग' क्या है?",
+        "options_en": ["Programming at type level", "Using types for computations", "Both A and B", "Runtime programming"],
+        "options_hi": ["टाइप लेवल पर प्रोग्रामिंग", "कंप्यूटेशन के लिए टाइप का उपयोग", "A और B दोनों", "रनटाइम प्रोग्रामिंग"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 131,
+        "question_en": "How do you create a type that deep partial?",
+        "question_hi": "डीप पार्शियल टाइप कैसे बनाएं?",
+        "options_en": ["type DeepPartial<T> = { [K in keyof T]?: DeepPartial<T[K]> }", "Recursive Partial", "Both A and B", "Shallow Partial"],
+        "options_hi": ["type DeepPartial<T> = { [K in keyof T]?: DeepPartial<T[K]> }", "रिकर्सिव पार्शियल", "A और B दोनों", "शैलो पार्शियल"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 132,
+        "question_en": "What is 'type isomorphism' in TypeScript?",
+        "question_hi": "TypeScript में 'टाइप आइसोमॉर्फिज्म' क्या है?",
+        "options_en": ["Two types with same structure", "Bi-directional type conversion", "Both A and B", "Different types"],
+        "options_hi": ["समान संरचना वाले दो टाइप", "द्वि-दिशात्मक टाइप रूपांतरण", "A और B दोनों", "अलग-अलग टाइप"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 133,
+        "question_en": "How do you define a type for CSS properties?",
+        "question_hi": "CSS प्रॉपर्टी के लिए टाइप कैसे परिभाषित करें?",
+        "options_en": ["type CSSProperties = { [K in keyof CSSStyleDeclaration]?: string }", "Record<string, string>", "Both A and B", "None of the above"],
+        "options_hi": ["type CSSProperties = { [K in keyof CSSStyleDeclaration]?: string }", "Record<string, string>", "A और B दोनों", "उपरोक्त में से कोई नहीं"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 134,
+        "question_en": "What is 'type-safe event emitter'?",
+        "question_hi": "'टाइप-सेफ इवेंट एमिटर' क्या है?",
+        "options_en": ["Event emitter with typed events", "Generic event emitter", "Both A and B", "Untyped event emitter"],
+        "options_hi": ["टाइप्ड इवेंट वाला इवेंट एमिटर", "जेनेरिक इवेंट एमिटर", "A और B दोनों", "अनटाइप्ड इवेंट एमिटर"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 135,
+        "question_en": "How do you create a type that excludes methods?",
+        "question_hi": "एक टाइप कैसे बनाएं जो मेथड को बाहर करता है?",
+        "options_en": ["{ [K in keyof T as T[K] extends Function ? never : K]: T[K] }", "PropertiesOnly<T>", "Both A and B", "MethodsOnly<T>"],
+        "options_hi": ["{ [K in keyof T as T[K] extends Function ? never : K]: T[K] }", "PropertiesOnly<T>", "A और B दोनों", "MethodsOnly<T>"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 136,
+        "question_en": "What is 'type-level integers' in TypeScript?",
+        "question_hi": "TypeScript में 'टाइप-लेवल इंटीजर' क्या है?",
+        "options_en": ["Representing numbers at type level", "Using tuples for counting", "Both A and B", "Runtime numbers"],
+        "options_hi": ["टाइप लेवल पर नंबर को रिप्रेजेंट करना", "काउंटिंग के लिए टुपल का उपयोग", "A और B दोनों", "रनटाइम नंबर"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 137,
+        "question_en": "How do you define a type for API response?",
+        "question_hi": "API रिस्पॉन्स के लिए टाइप कैसे परिभाषित करें?",
+        "options_en": ["type ApiResponse<T> = { data: T; status: number }", "Generic response type", "Both A and B", "Any response type"],
+        "options_hi": ["type ApiResponse<T> = { data: T; status: number }", "जेनेरिक रिस्पॉन्स टाइप", "A और B दोनों", "कोई भी रिस्पॉन्स टाइप"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 138,
+        "question_en": "What is 'type-safe dictionary'?",
+        "question_hi": "'टाइप-सेफ डिक्शनरी' क्या है?",
+        "options_en": ["Record<K, V>", "{ [key: K]: V }", "Both A and B", "Map object"],
+        "options_hi": ["Record<K, V>", "{ [key: K]: V }", "A और B दोनों", "Map ऑब्जेक्ट"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 139,
+        "question_en": "How do you create a type that makes all properties mutable?",
+        "question_hi": "एक टाइप कैसे बनाएं जो सभी प्रॉपर्टी को mutable बनाता है?",
+        "options_en": ["{ -readonly [K in keyof T]: T[K] }", "Mutable<T>", "Both A and B", "Readonly<T>"],
+        "options_hi": ["{ -readonly [K in keyof T]: T[K] }", "Mutable<T>", "A और B दोनों", "Readonly<T>"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 140,
+        "question_en": "What is 'type-level state machine'?",
+        "question_hi": "'टाइप-लेवल स्टेट मशीन' क्या है?",
+        "options_en": ["State machine implemented in types", "Using union types for states", "Both A and B", "Runtime state machine"],
+        "options_hi": ["टाइप में इम्प्लीमेंटेड स्टेट मशीन", "स्टेट के लिए यूनियन टाइप का उपयोग", "A और B दोनों", "रनटाइम स्टेट मशीन"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 141,
+        "question_en": "How do you define a type for React component props?",
+        "question_hi": "React कंपोनेंट प्रॉप्स के लिए टाइप कैसे परिभाषित करें?",
+        "options_en": ["type Props = { children?: ReactNode }", "interface Props { children?: ReactNode }", "Both A and B", "Any props"],
+        "options_hi": ["type Props = { children?: ReactNode }", "interface Props { children?: ReactNode }", "A और B दोनों", "कोई भी प्रॉप्स"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 142,
+        "question_en": "What is 'type-level validation'?",
+        "question_hi": "'टाइप-लेवल वैलिडेशन' क्या है?",
+        "options_en": ["Validation using types", "Compile-time validation", "Both A and B", "Runtime validation"],
+        "options_hi": ["टाइप का उपयोग करके वैलिडेशन", "कंपाइल-टाइम वैलिडेशन", "A और B दोनों", "रनटाइम वैलिडेशन"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 143,
+        "question_en": "How do you create a type that requires specific properties?",
+        "question_hi": "एक टाइप कैसे बनाएं जो विशिष्ट प्रॉपर्टी की आवश्यकता हो?",
+        "options_en": ["T & Required<Pick<T, K>>", "WithRequired<T, K>", "Both A and B", "Partial<T>"],
+        "options_hi": ["T & Required<Pick<T, K>>", "WithRequired<T, K>", "A और B दोनों", "Partial<T>"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 144,
+        "question_en": "What is 'type-level arithmetic'?",
+        "question_hi": "'टाइप-लेवल अरिथमेटिक' क्या है?",
+        "options_en": ["Arithmetic operations at type level", "Using tuples for math", "Both A and B", "Runtime arithmetic"],
+        "options_hi": ["टाइप लेवल पर अरिथमेटिक ऑपरेशन", "मैथ के लिए टुपल का उपयोग", "A और B दोनों", "रनटाइम अरिथमेटिक"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 145,
+        "question_en": "How do you define a type for error boundaries?",
+        "question_hi": "एरर बाउंडरी के लिए टाइप कैसे परिभाषित करें?",
+        "options_en": ["type ErrorBoundaryState = { hasError: boolean; error?: Error }", "interface ErrorBoundaryState { hasError: boolean; error?: Error }", "Both A and B", "Any state"],
+        "options_hi": ["type ErrorBoundaryState = { hasError: boolean; error?: Error }", "interface ErrorBoundaryState { hasError: boolean; error?: Error }", "A और B दोनों", "कोई भी स्टेट"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 146,
+        "question_en": "What is 'type-level string manipulation'?",
+        "question_hi": "'टाइप-लेवल स्ट्रिंग मैनिपुलेशन' क्या है?",
+        "options_en": ["String operations at type level", "Template literal types", "Both A and B", "Runtime string operations"],
+        "options_hi": ["टाइप लेवल पर स्ट्रिंग ऑपरेशन", "टेम्पलेट लिटरल टाइप", "A और B दोनों", "रनटाइम स्ट्रिंग ऑपरेशन"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 147,
+        "question_en": "How do you create a type that deep required?",
+        "question_hi": "डीप रिक्वायर्ड टाइप कैसे बनाएं?",
+        "options_en": ["type DeepRequired<T> = { [K in keyof T]-?: DeepRequired<T[K]> }", "Recursive Required", "Both A and B", "Shallow Required"],
+        "options_hi": ["type DeepRequired<T> = { [K in keyof T]-?: DeepRequired<T[K]> }", "रिकर्सिव रिक्वायर्ड", "A और B दोनों", "शैलो रिक्वायर्ड"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 148,
+        "question_en": "What is 'type-level conditionals' with recursion?",
+        "question_hi": "रिकर्शन के साथ 'टाइप-लेवल कंडीशनल' क्या है?",
+        "options_en": ["Recursive conditional types", "Types that call themselves", "Both A and B", "Simple conditionals"],
+        "options_hi": ["रिकर्सिव कंडीशनल टाइप", "ऐसे टाइप जो स्वयं को कॉल करते हैं", "A और B दोनों", "साधारण कंडीशनल"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 149,
+        "question_en": "How do you define a type for paginated data?",
+        "question_hi": "पैजिनेटेड डेटा के लिए टाइप कैसे परिभाषित करें?",
+        "options_en": ["type Paginated<T> = { data: T[]; total: number; page: number }", "Generic pagination type", "Both A and B", "Array type"],
+        "options_hi": ["type Paginated<T> = { data: T[]; total: number; page: number }", "जेनेरिक पैजिनेशन टाइप", "A और B दोनों", "ऐरे टाइप"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 150,
+        "question_en": "What is 'type-level finite state machine'?",
+        "question_hi": "'टाइप-लेवल फाइनाइट स्टेट मशीन' क्या है?",
+        "options_en": ["FSM implemented in types", "Using union types for finite states", "Both A and B", "Infinite state machine"],
+        "options_hi": ["टाइप में इम्प्लीमेंटेड FSM", "फाइनाइट स्टेट के लिए यूनियन टाइप का उपयोग", "A और B दोनों", "इनफाइनाइट स्टेट मशीन"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 151,
+        "question_en": "How do you create a type that extracts union from tuple?",
+        "question_hi": "एक टाइप कैसे बनाएं जो टुपल से यूनियन निकालता है?",
+        "options_en": ["T[number]", "TupleToUnion<T>", "Both A and B", "UnionToTuple<T>"],
+        "options_hi": ["T[number]", "TupleToUnion<T>", "A और B दोनों", "UnionToTuple<T>"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 152,
+        "question_en": "What is 'type-level object path'?",
+        "question_hi": "'टाइप-लेवल ऑब्जेक्ट पाथ' क्या है?",
+        "options_en": ["Type-safe object path access", "Using template literals for paths", "Both A and B", "Runtime path access"],
+        "options_hi": ["टाइप-सेफ ऑब्जेक्ट पाथ एक्सेस", "पाथ के लिए टेम्पलेट लिटरल का उपयोग", "A और B दोनों", "रनटाइम पाथ एक्सेस"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 153,
+        "question_en": "How do you define a type for async action?",
+        "question_hi": "एसिंक एक्शन के लिए टाइप कैसे परिभाषित करें?",
+        "options_en": ["type AsyncAction = () => Promise<void>", "type AsyncAction<T> = () => Promise<T>", "Both A and B", "Sync action type"],
+        "options_hi": ["type AsyncAction = () => Promise<void>", "type AsyncAction<T> = () => Promise<T>", "A और B दोनों", "सिंक एक्शन टाइप"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 154,
+        "question_en": "What is 'type-level pattern matching'?",
+        "question_hi": "'टाइप-लेवल पैटर्न मैचिंग' क्या है?",
+        "options_en": ["Pattern matching with conditional types", "Using infer for extraction", "Both A and B", "Runtime pattern matching"],
+        "options_hi": ["कंडीशनल टाइप के साथ पैटर्न मैचिंग", "एक्सट्रैक्शन के लिए infer का उपयोग", "A और B दोनों", "रनटाइम पैटर्न मैचिंग"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 155,
+        "question_en": "How do you create a type that makes properties readonly recursively?",
+        "question_hi": "एक टाइप कैसे बनाएं जो प्रॉपर्टी को रिकर्सिवली रीडओनली बनाता है?",
+        "options_en": ["type DeepReadonly<T> = { readonly [K in keyof T]: DeepReadonly<T[K]> }", "Recursive Readonly", "Both A and B", "Shallow Readonly"],
+        "options_hi": ["type DeepReadonly<T> = { readonly [K in keyof T]: DeepReadonly<T[K]> }", "रिकर्सिव रीडओनली", "A और B दोनों", "शैलो रीडओनली"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 156,
+        "question_en": "What is 'type-level dependency injection'?",
+        "question_hi": "'टाइप-लेवल डिपेंडेंसी इंजेक्शन' क्या है?",
+        "options_en": ["DI implemented with types", "Using generics for dependencies", "Both A and B", "Runtime DI"],
+        "options_hi": ["टाइप के साथ इम्प्लीमेंटेड DI", "डिपेंडेंसी के लिए जेनेरिक का उपयोग", "A और B दोनों", "रनटाइम DI"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 157,
+        "question_en": "How do you define a type for form validation?",
+        "question_hi": "फॉर्म वैलिडेशन के लिए टाइप कैसे परिभाषित करें?",
+        "options_en": ["type ValidationResult = { isValid: boolean; errors: string[] }", "interface ValidationResult { isValid: boolean; errors: string[] }", "Both A and B", "Boolean type"],
+        "options_hi": ["type ValidationResult = { isValid: boolean; errors: string[] }", "interface ValidationResult { isValid: boolean; errors: string[] }", "A और B दोनों", "बूलियन टाइप"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 158,
+        "question_en": "What is 'type-level linked list'?",
+        "question_hi": "'टाइप-लेवल लिंक्ड लिस्ट' क्या है?",
+        "options_en": ["Linked list implemented in types", "Using recursive types", "Both A and B", "Array type"],
+        "options_hi": ["टाइप में इम्प्लीमेंटेड लिंक्ड लिस्ट", "रिकर्सिव टाइप का उपयोग", "A और B दोनों", "ऐरे टाइप"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 159,
+        "question_en": "How do you create a type that extracts promise type?",
+        "question_hi": "एक टाइप कैसे बनाएं जो प्रॉमिस टाइप निकालता है?",
+        "options_en": ["type Awaited<T> = T extends Promise<infer U> ? U : T", "UnwrapPromise<T>", "Both A and B", "Promise type"],
+        "options_hi": ["type Awaited<T> = T extends Promise<infer U> ? U : T", "UnwrapPromise<T>", "A और B दोनों", "प्रॉमिस टाइप"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 160,
+        "question_en": "What is 'type-level configuration'?",
+        "question_hi": "'टाइप-लेवल कॉन्फिगरेशन' क्या है?",
+        "options_en": ["Configuration using types", "Compile-time configuration", "Both A and B", "Runtime configuration"],
+        "options_hi": ["टाइप का उपयोग करके कॉन्फिगरेशन", "कंपाइल-टाइम कॉन्फिगरेशन", "A और B दोनों", "रनटाइम कॉन्फिगरेशन"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 161,
+        "question_en": "How do you define a type for middleware chain?",
+        "question_hi": "मिडलवेयर चेन के लिए टाइप कैसे परिभाषित करें?",
+        "options_en": ["type Middleware<T> = (context: T, next: () => Promise<void>) => Promise<void>", "Generic middleware type", "Both A and B", "Function type"],
+        "options_hi": ["type Middleware<T> = (context: T, next: () => Promise<void>) => Promise<void>", "जेनेरिक मिडलवेयर टाइप", "A और B दोनों", "फंक्शन टाइप"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 162,
+        "question_en": "What is 'type-level parser'?",
+        "question_hi": "'टाइप-लेवल पार्सर' क्या है?",
+        "options_en": ["Parser implemented in types", "String parsing at type level", "Both A and B", "Runtime parser"],
+        "options_hi": ["टाइप में इम्प्लीमेंटेड पार्सर", "टाइप लेवल पर स्ट्रिंग पार्सिंग", "A और B दोनों", "रनटाइम पार्सर"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 163,
+        "question_en": "How do you create a type that requires exact properties?",
+        "question_hi": "एक टाइप कैसे बनाएं जो एक्सैक्ट प्रॉपर्टी की आवश्यकता हो?",
+        "options_en": ["type Exact<T, U extends T> = T & Record<Exclude<keyof U, keyof T>, never>", "Strict type", "Both A and B", "Loose type"],
+        "options_hi": ["type Exact<T, U extends T> = T & Record<Exclude<keyof U, keyof T>, never>", "स्ट्रिक्ट टाइप", "A और B दोनों", "लूज़ टाइप"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 164,
+        "question_en": "What is 'type-level JSON schema'?",
+        "question_hi": "'टाइप-लेवल JSON स्कीमा' क्या है?",
+        "options_en": ["JSON schema validation with types", "Type-safe JSON parsing", "Both A and B", "Runtime JSON parsing"],
+        "options_hi": ["टाइप के साथ JSON स्कीमा वैलिडेशन", "टाइप-सेफ JSON पार्सिंग", "A और B दोनों", "रनटाइम JSON पार्सिंग"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 165,
+        "question_en": "How do you define a type for tree structure?",
+        "question_hi": "ट्री स्ट्रक्चर के लिए टाइप कैसे परिभाषित करें?",
+        "options_en": ["type Tree<T> = { value: T; children: Tree<T>[] }", "Recursive tree type", "Both A and B", "Flat structure"],
+        "options_hi": ["type Tree<T> = { value: T; children: Tree<T>[] }", "रिकर्सिव ट्री टाइप", "A और B दोनों", "फ्लैट स्ट्रक्चर"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 166,
+        "question_en": "What is 'type-level unit testing'?",
+        "question_hi": "'टाइप-लेवल यूनिट टेस्टिंग' क्या है?",
+        "options_en": ["Testing types with assertions", "Type-level test cases", "Both A and B", "Runtime testing"],
+        "options_hi": ["असर्शन के साथ टाइप का टेस्टिंग", "टाइप-लेवल टेस्ट केस", "A और B दोनों", "रनटाइम टेस्टिंग"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 167,
+        "question_en": "How do you create a type that extracts function parameters?",
+        "question_hi": "एक टाइप कैसे बनाएं जो फंक्शन पैरामीटर निकालता है?",
+        "options_en": ["Parameters<T>", "T extends (...args: infer P) => any ? P : never", "Both A and B", "ReturnType<T>"],
+        "options_hi": ["Parameters<T>", "T extends (...args: infer P) => any ? P : never", "A और B दोनों", "ReturnType<T>"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 168,
+        "question_en": "What is 'type-level database'?",
+        "question_hi": "'टाइप-लेवल डेटाबेस' क्या है?",
+        "options_en": ["Database schema in types", "Type-safe database operations", "Both A and B", "Runtime database"],
+        "options_hi": ["टाइप में डेटाबेस स्कीमा", "टाइप-सेफ डेटाबेस ऑपरेशन", "A और B दोनों", "रनटाइम डेटाबेस"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 169,
+        "question_en": "How do you define a type for state management?",
+        "question_hi": "स्टेट मैनेजमेंट के लिए टाइप कैसे परिभाषित करें?",
+        "options_en": ["type State = { [key: string]: any }", "Generic state type", "Both A and B", "Any state"],
+        "options_hi": ["type State = { [key: string]: any }", "जेनेरिक स्टेट टाइप", "A और B दोनों", "कोई भी स्टेट"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 170,
+        "question_en": "What is 'type-level compiler'?",
+        "question_hi": "'टाइप-लेवल कंपाइलर' क्या है?",
+        "options_en": ["Compiler implemented in types", "Type transformation system", "Both A and B", "Runtime compiler"],
+        "options_hi": ["टाइप में इम्प्लीमेंटेड कंपाइलर", "टाइप ट्रांसफॉर्मेशन सिस्टम", "A और B दोनों", "रनटाइम कंपाइलर"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 171,
+        "question_en": "How do you create a type that requires all or none?",
+        "question_hi": "एक टाइप कैसे बनाएं जो सभी या कोई नहीं की आवश्यकता हो?",
+        "options_en": ["type AllOrNone<T> = T | { [K in keyof T]?: never }", "Mutually exclusive properties", "Both A and B", "Partial properties"],
+        "options_hi": ["type AllOrNone<T> = T | { [K in keyof T]?: never }", "पारस्परिक रूप से अनन्य गुण", "A और B दोनों", "आंशिक गुण"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 172,
+        "question_en": "What is 'type-level virtual machine'?",
+        "question_hi": "'टाइप-लेवल वर्चुअल मशीन' क्या है?",
+        "options_en": ["VM implemented in types", "Type-level execution", "Both A and B", "Runtime VM"],
+        "options_hi": ["टाइप में इम्प्लीमेंटेड VM", "टाइप-लेवल एक्सीक्यूशन", "A और B दोनों", "रनटाइम VM"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 173,
+        "question_en": "How do you define a type for plugin system?",
+        "question_hi": "प्लगइन सिस्टम के लिए टाइप कैसे परिभाषित करें?",
+        "options_en": ["type Plugin<T> = (config: T) => void", "Generic plugin type", "Both A and B", "Function type"],
+        "options_hi": ["type Plugin<T> = (config: T) => void", "जेनेरिक प्लगइन टाइप", "A और B दोनों", "फंक्शन टाइप"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 174,
+        "question_en": "What is 'type-level algebra'?",
+        "question_hi": "'टाइप-लेवल अलजेब्रा' क्या है?",
+        "options_en": ["Algebraic structures in types", "Type-level math operations", "Both A and B", "Runtime algebra"],
+        "options_hi": ["टाइप में बीजगणितीय संरचनाएं", "टाइप-लेवल मैथ ऑपरेशन", "A और B दोनों", "रनटाइम अलजेब्रा"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 175,
+        "question_en": "How do you create a type that requires mutual exclusion?",
+        "question_hi": "एक टाइप कैसे बनाएं जो म्यूचुअल एक्सक्लूजन की आवश्यकता हो?",
+        "options_en": ["type XOR<T, U> = T | U extends object ? (Without<T, U> & U) | (Without<U, T> & T) : T | U", "Mutually exclusive types", "Both A and B", "Union types"],
+        "options_hi": ["type XOR<T, U> = T | U extends object ? (Without<T, U> & U) | (Without<U, T> & T) : T | U", "पारस्परिक रूप से अनन्य प्रकार", "A और B दोनों", "यूनियन टाइप"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 176,
+        "question_en": "What is 'type-level cryptography'?",
+        "question_hi": "'टाइप-लेवल क्रिप्टोग्राफी' क्या है?",
+        "options_en": ["Crypto operations in types", "Type-safe encryption", "Both A and B", "Runtime cryptography"],
+        "options_hi": ["टाइप में क्रिप्टो ऑपरेशन", "टाइप-सेफ एन्क्रिप्शन", "A और B दोनों", "रनटाइम क्रिप्टोग्राफी"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 177,
+        "question_en": "How do you define a type for event system?",
+        "question_hi": "इवेंट सिस्टम के लिए टाइप कैसे परिभाषित करें?",
+        "options_en": ["type EventMap = { [event: string]: any[] }", "Generic event map", "Both A and B", "Any events"],
+        "options_hi": ["type EventMap = { [event: string]: any[] }", "जेनेरिक इवेंट मैप", "A और B दोनों", "कोई भी इवेंट"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 178,
+        "question_en": "What is 'type-level game'?",
+        "question_hi": "'टाइप-लेवल गेम' क्या है?",
+        "options_en": ["Game implemented in types", "Type-level game logic", "Both A and B", "Runtime game"],
+        "options_hi": ["टाइप में इम्प्लीमेंटेड गेम", "टाइप-लेवल गेम लॉजिक", "A और B दोनों", "रनटाइम गेम"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 179,
+        "question_en": "How do you create a type that requires specific keys?",
+        "question_hi": "एक टाइप कैसे बनाएं जो विशिष्ट कुंजियों की आवश्यकता हो?",
+        "options_en": ["type RequireKeys<T, K extends keyof T> = T & Required<Pick<T, K>>", "WithRequired<T, K>", "Both A and B", "Partial<T>"],
+        "options_hi": ["type RequireKeys<T, K extends keyof T> = T & Required<Pick<T, K>>", "WithRequired<T, K>", "A और B दोनों", "Partial<T>"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 180,
+        "question_en": "What is 'type-level operating system'?",
+        "question_hi": "'टाइप-लेवल ऑपरेटिंग सिस्टम' क्या है?",
+        "options_en": ["OS concepts in types", "Type-level process management", "Both A and B", "Runtime OS"],
+        "options_hi": ["टाइप में OS अवधारणाएं", "टाइप-लेवल प्रोसेस मैनेजमेंट", "A और B दोनों", "रनटाइम OS"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 181,
+        "question_en": "How do you define a type for cache system?",
+        "question_hi": "कैश सिस्टम के लिए टाइप कैसे परिभाषित करें?",
+        "options_en": ["type Cache<K, V> = Map<K, V>", "Generic cache type", "Both A and B", "Object type"],
+        "options_hi": ["type Cache<K, V> = Map<K, V>", "जेनेरिक कैश टाइप", "A और B दोनों", "ऑब्जेक्ट टाइप"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 182,
+        "question_en": "What is 'type-level neural network'?",
+        "question_hi": "'टाइप-लेवल न्यूरल नेटवर्क' क्या है?",
+        "options_en": ["Neural network in types", "Type-level machine learning", "Both A and B", "Runtime neural network"],
+        "options_hi": ["टाइप में न्यूरल नेटवर्क", "टाइप-लेवल मशीन लर्निंग", "A और B दोनों", "रनटाइम न्यूरल नेटवर्क"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 183,
+        "question_en": "How do you create a type that requires at most one?",
+        "question_hi": "एक टाइप कैसे बनाएं जो अधिकतम एक की आवश्यकता हो?",
+        "options_en": ["type AtMostOne<T> = { [K in keyof T]: Pick<T, K> & Partial<Record<Exclude<keyof T, K>, never>> }[keyof T]", "Mutually exclusive optional", "Both A and B", "All properties"],
+        "options_hi": ["type AtMostOne<T> = { [K in keyof T]: Pick<T, K> & Partial<Record<Exclude<keyof T, K>, never>> }[keyof T]", "पारस्परिक रूप से अनन्य वैकल्पिक", "A और B दोनों", "सभी गुण"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 184,
+        "question_en": "What is 'type-level quantum computing'?",
+        "question_hi": "'टाइप-लेवल क्वांटम कंप्यूटिंग' क्या है?",
+        "options_en": ["Quantum concepts in types", "Type-level quantum operations", "Both A and B", "Runtime quantum computing"],
+        "options_hi": ["टाइप में क्वांटम अवधारणाएं", "टाइप-लेवल क्वांटम ऑपरेशन", "A और B दोनों", "रनटाइम क्वांटम कंप्यूटिंग"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 185,
+        "question_en": "How do you define a type for streaming data?",
+        "question_hi": "स्ट्रीमिंग डेटा के लिए टाइप कैसे परिभाषित करें?",
+        "options_en": ["type Stream<T> = AsyncIterable<T>", "Generic stream type", "Both A and B", "Array type"],
+        "options_hi": ["type Stream<T> = AsyncIterable<T>", "जेनेरिक स्ट्रीम टाइप", "A और B दोनों", "ऐरे टाइप"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 186,
+        "question_en": "What is 'type-level blockchain'?",
+        "question_hi": "'टाइप-लेवल ब्लॉकचेन' क्या है?",
+        "options_en": ["Blockchain in types", "Type-level distributed ledger", "Both A and B", "Runtime blockchain"],
+        "options_hi": ["टाइप में ब्लॉकचेन", "टाइप-लेवल डिस्ट्रिब्यूटेड लेजर", "A और B दोनों", "रनटाइम ब्लॉकचेन"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 187,
+        "question_en": "How do you create a type that requires exact shape?",
+        "question_hi": "एक टाइप कैसे बनाएं जो एक्सैक्ट शेप की आवश्यकता हो?",
+        "options_en": ["type ExactShape<T, U extends T> = T & Record<Exclude<keyof U, keyof T>, never>", "Strict shape type", "Both A and B", "Loose shape"],
+        "options_hi": ["type ExactShape<T, U extends T> = T & Record<Exclude<keyof U, keyof T>, never>", "स्ट्रिक्ट शेप टाइप", "A और B दोनों", "लूज़ शेप"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 188,
+        "question_en": "What is 'type-level artificial intelligence'?",
+        "question_hi": "'टाइप-लेवल आर्टिफिशियल इंटेलिजेंस' क्या है?",
+        "options_en": ["AI concepts in types", "Type-level AI algorithms", "Both A and B", "Runtime AI"],
+        "options_hi": ["टाइप में AI अवधारणाएं", "टाइप-लेवल AI एल्गोरिदम", "A और B दोनों", "रनटाइम AI"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 189,
+        "question_en": "How do you define a type for real-time data?",
+        "question_hi": "रियल-टाइम डेटा के लिए टाइप कैसे परिभाषित करें?",
+        "options_en": ["type RealTimeData<T> = { data: T; timestamp: number }", "Generic real-time type", "Both A and B", "Simple data type"],
+        "options_hi": ["type RealTimeData<T> = { data: T; timestamp: number }", "जेनेरिक रियल-टाइम टाइप", "A और B दोनों", "सरल डेटा टाइप"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 190,
+        "question_en": "What is 'type-level universe'?",
+        "question_hi": "'टाइप-लेवल यूनिवर्स' क्या है?",
+        "options_en": ["Complete type system", "All possible types", "Both A and B", "Limited types"],
+        "options_hi": ["पूर्ण टाइप सिस्टम", "सभी संभावित प्रकार", "A और B दोनों", "सीमित प्रकार"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 191,
+        "question_en": "How do you create a type that requires specific pattern?",
+        "question_hi": "एक टाइप कैसे बनाएं जो विशिष्ट पैटर्न की आवश्यकता हो?",
+        "options_en": ["type Pattern<T extends string> = \`prefix-\${T}-suffix\`", "Template literal pattern", "Both A and B", "String type"],
+        "options_hi": ["type Pattern<T extends string> = \`prefix-\${T}-suffix\`", "टेम्पलेट लिटरल पैटर्न", "A और B दोनों", "स्ट्रिंग टाइप"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 192,
+        "question_en": "What is 'type-level multiverse'?",
+        "question_hi": "'टाइप-लेवल मल्टीवर्स' क्या है?",
+        "options_en": ["Multiple type universes", "Advanced type systems", "Both A and B", "Single type system"],
+        "options_hi": ["एकाधिक टाइप यूनिवर्स", "उन्नत टाइप सिस्टम", "A और B दोनों", "एकल टाइप सिस्टम"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 193,
+        "question_en": "How do you define a type for time series data?",
+        "question_hi": "टाइम सीरीज डेटा के लिए टाइप कैसे परिभाषित करें?",
+        "options_en": ["type TimeSeries<T> = { timestamp: number; value: T }[]", "Generic time series type", "Both A and B", "Array type"],
+        "options_hi": ["type TimeSeries<T> = { timestamp: number; value: T }[]", "जेनेरिक टाइम सीरीज टाइप", "A और B दोनों", "ऐरे टाइप"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 194,
+        "question_en": "What is 'type-level singularity'?",
+        "question_hi": "'टाइप-लेवल सिंगुलैरिटी' क्या है?",
+        "options_en": ["Ultimate type system", "Type system convergence", "Both A and B", "Basic type system"],
+        "options_hi": ["अंतिम टाइप सिस्टम", "टाइप सिस्टम अभिसरण", "A और B दोनों", "बेसिक टाइप सिस्टम"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 195,
+        "question_en": "How do you create a type that requires specific format?",
+        "question_hi": "एक टाइप कैसे बनाएं जो विशिष्ट फॉर्मेट की आवश्यकता हो?",
+        "options_en": ["type Email = \`\${string}@\${string}.\${string}\`", "Template literal format", "Both A and B", "String type"],
+        "options_hi": ["type Email = \`\${string}@\${string}.\${string}\`", "टेम्पलेट लिटरल फॉर्मेट", "A और B दोनों", "स्ट्रिंग टाइप"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 196,
+        "question_en": "What is 'type-level consciousness'?",
+        "question_hi": "'टाइप-लेवल कॉन्शसनेस' क्या है?",
+        "options_en": ["Self-aware type system", "Intelligent types", "Both A and B", "Basic types"],
+        "options_hi": ["स्व-जागरूक टाइप सिस्टम", "बुद्धिमान प्रकार", "A और B दोनों", "बेसिक टाइप"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 197,
+        "question_en": "How do you define a type for spatial data?",
+        "question_hi": "स्पेशियल डेटा के लिए टाइप कैसे परिभाषित करें?",
+        "options_en": ["type Point = { x: number; y: number }", "type Rectangle = { x: number; y: number; width: number; height: number }", "Both A and B", "Number type"],
+        "options_hi": ["type Point = { x: number; y: number }", "type Rectangle = { x: number; y: number; width: number; height: number }", "A और B दोनों", "नंबर टाइप"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 198,
+        "question_en": "What is 'type-level eternity'?",
+        "question_hi": "'टाइप-लेवल इटरनिटी' क्या है?",
+        "options_en": ["Infinite type system", "Never-ending types", "Both A and B", "Finite types"],
+        "options_hi": ["अनंत टाइप सिस्टम", "कभी न खत्म होने वाले प्रकार", "A और B दोनों", "सीमित प्रकार"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 199,
+        "question_en": "How do you create a type that requires specific constraints?",
+        "question_hi": "एक टाइप कैसे बनाएं जो विशिष्ट कंस्ट्रेंट की आवश्यकता हो?",
+        "options_en": ["type Constrained<T extends constraint> = T", "Generic with constraints", "Both A and B", "Unconstrained type"],
+        "options_hi": ["type Constrained<T extends constraint> = T", "कंस्ट्रेंट के साथ जेनेरिक", "A और B दोनों", "अनकंस्ट्रेंड टाइप"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    },
+    {
+        "num": 200,
+        "question_en": "What is 'type-level infinity'?",
+        "question_hi": "'टाइप-लेवल इनफिनिटी' क्या है?",
+        "options_en": ["Unbounded type system", "Limitless types", "Both A and B", "Bounded types"],
+        "options_hi": ["असीमित टाइप सिस्टम", "असीमित प्रकार", "A और B दोनों", "सीमित प्रकार"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
+        "attempted": false,
+        "selected": ""
+    }
 ];
 
 
-let currentQuestion = 0; 
+let currentQuestion = 0;
 let language = "en";
-// let timeLeft = 180 * 60; // 180 minutes
-let timeLeft = 60 * 60; // 60 minutes
+let timeLeft = 60 * 60; 
 let timerInterval;
 
-// ----------------- Quiz Logic -----------------
+// ----------------- Load Question -----------------
 function loadQuestion(index) {
     const q = questions[index];
-    document.getElementById("question").textContent = `${q.num}. ${
-        language === "en" ? q.question_en : q.question_hi
-    }`;
-    document.getElementById("questionCounter").textContent = `Question ${index + 1} of ${questions.length}`;
+    if (!q) return; //  undefined error fix
+   questions[index].visited = true;
+    document.getElementById("question").textContent =
+       `${q.num}. ${language === "en" ? q.question_en : q.question_hi}`;
+
+    document.getElementById("questionCounter").textContent =
+       ` Question ${index + 1} of ${questions.length}`;
 
     const optionsElement = document.getElementById("options");
     optionsElement.innerHTML = "";
 
     const options = language === "en" ? q.options_en : q.options_hi;
 
-    options.forEach((option) => {
+    options.forEach(option => {
         const isSelected = q.selected === option;
-        const optionDiv = document.createElement("div");
-        optionDiv.className = "option-box";
-        optionDiv.style = `
+
+        const div = document.createElement("div");
+        div.className = "option-box";
+
+        div.style = `
             border: 2px solid ${isSelected ? "#007bff" : "#ccc"};
             background-color: ${isSelected ? "#e7f1ff" : "white"};
             padding: 10px;
             border-radius: 8px;
             margin: 6px 0;
             cursor: pointer;
-            transition: all 0.2s;
         `;
 
-        optionDiv.innerHTML = `
-            <input type="radio" name="option" value="${option}" ${isSelected ? "checked" : ""} style="margin-right:8px;">
+        div.innerHTML = `
+            <input type="radio" name="option" value="${option}" 
+            ${isSelected ? "checked" : ""} style="margin-right:8px;">
             ${option}
         `;
 
-        optionDiv.addEventListener("click", () => {
+        div.addEventListener("click", () => {
             markAttempted(index, option);
             loadQuestion(index);
         });
 
-        optionsElement.appendChild(optionDiv);
+        optionsElement.appendChild(div);
     });
 
     updateNavigation();
 }
 
+// ----------------- Attempt Mark -----------------
 function markAttempted(index, selectedAnswer) {
     questions[index].attempted = true;
     questions[index].selected = selectedAnswer;
     updateNavigation();
 }
 
+// ----------------- Next / Previous -----------------
 function nextQuestion() {
     if (currentQuestion < questions.length - 1) {
         currentQuestion++;
@@ -1179,229 +1182,122 @@ function changeLanguage() {
     loadQuestion(currentQuestion);
 }
 
+// ----------------- Final Submit -----------------
 function submitQuiz() {
-    clearInterval(timerInterval);
-    let attempted = 0,
-        notAttempted = 0,
-        score = 0;
+    let confirmation = confirm("Are you sure you want to submit the test?");
+    if (!confirmation) return;
 
-    questions.forEach((q) => {
+    let attempted = 0;
+    let notAttempted = 0;
+    let score = 0;
+    const results = [];
+
+    questions.forEach(q => {
         if (q.attempted) {
             attempted++;
-            if (q.selected === q.answer_en || q.selected === q.answer_hi) score++;
-        } else notAttempted++;
+
+            if (q.selected === q.answer_en || q.selected === q.answer_hi) {
+                score++;
+            }
+        } else {
+            notAttempted++;
+        }
+
+        results.push({
+            question: language === "en" ? q.question_en : q.question_hi,
+            selected: q.selected || "Not Answered",
+            correct: language === "en" ? q.answer_en : q.answer_hi
+        });
     });
 
-    alert(
-        `Quiz submitted!\nAttempted: ${attempted}\nNot Attempted: ${notAttempted}\nScore: ${score}/${questions.length}`
-    );
+    localStorage.setItem("attempted", attempted);
+    localStorage.setItem("notAttempted", notAttempted);
+    localStorage.setItem("score", score);
+    localStorage.setItem("results", JSON.stringify(results));
+
+    let viewResult = confirm("Test submitted! Do you want to view result?");
+    if (viewResult) {
+        window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
+    }
 }
 
+// ----------------- Navigation Circles -----------------
+function updateNavigation() {
+    const nav = document.getElementById("circleContainer");
+    nav.innerHTML = "";
+
+    questions.forEach((q, i) => {
+        let color = "gray"; // default: not visited
+
+        if (i === currentQuestion) {
+            color = "blue"; // current question
+        } 
+        else if (q.attempted) {
+            color = "green"; // answered
+        } 
+        else if (q.visited) {
+            color = "white"; // visited but not answered
+        }
+
+        nav.innerHTML += `
+            <div class="circle" style="background:${color}; border:1px solid black;"
+            onclick="jumpToQuestion(${i})">${i + 1}</div>
+        `;
+    });
+}
+
+function jumpToQuestion(index) {
+    currentQuestion = index;
+    loadQuestion(index);
+}
+
+// ----------------- Timer -----------------
 function startTimer() {
     const timerElement = document.getElementById("timer");
-    clearInterval(timerInterval);
+
     timerInterval = setInterval(() => {
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
             alert("Time's up!");
             submitQuiz();
         } else {
-            const hours = Math.floor(timeLeft / 3600);
-            const minutes = Math.floor((timeLeft % 3600) / 60);
-            const seconds = timeLeft % 60;
-            timerElement.textContent = `Time Left: ${hours
-                .toString()
-                .padStart(2, "0")}:${minutes
-                .toString()
-                .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+            const hours = String(Math.floor(timeLeft / 3600)).padStart(2, "0");
+            const minutes = String(Math.floor((timeLeft % 3600) / 60)).padStart(2, "0");
+            const seconds = String(timeLeft % 60).padStart(2, "0");
+
+            timerElement.textContent = `Time Left: ${hours}:${minutes}:${seconds}`;
             timeLeft--;
         }
     }, 1000);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////all file and folder me code add karna hai 
-
-
-// submit 
-function jumpToQuestion(index) {
-            currentQuestion = index;
-            loadQuestion(index);
-        }
-
-        function submitQuiz() {
-            let confirmation = confirm("Are you sure you want to submit the test?");
-            
-            if (!confirmation) {
-                return; // अगर यूज़र 'Cancel' करता है तो आगे नहीं बढ़ेंगे
-            }
-
-            let attempted = 0;
-            let notAttempted = 0;
-            let score = 0;
-            const results = [];
-
-            questions.forEach(q => {
-                if (q.attempted) {
-                    attempted++;
-                    if (q.selected === q.answer) {
-                        score++;
-                    }
-                } else {
-                    notAttempted++;
-                }
-                results.push({ question: q.question, selected: q.selected || "Not Answered", correct: q.answer });
-            });
-
-            localStorage.setItem("attempted", attempted);
-            localStorage.setItem("notAttempted", notAttempted);
-            localStorage.setItem("score", score);
-            localStorage.setItem("results", JSON.stringify(results));
-
-            // रिजल्ट देखने से पहले एक और कन्फर्मेशन ले सकते हैं
-            let viewResult = confirm("Test submitted successfully! Do you want to view your result?");
-            if (viewResult) {
-                window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
-            }
-        }
-        window.onload = () => {
-            loadQuestion(currentQuestion);
-        };
-
-
-function updateNavigation() {
-    const nav = document.getElementById("circleContainer");
-    nav.innerHTML = "";
-    questions.forEach((q, i) => {
-        let color = "gray";
-        if (i === currentQuestion) color = "blue";
-        else if (q.attempted) color = "green";
-        nav.innerHTML += `<div class='circle' style='background-color:${color}' onclick='loadQuestion(${i})'>${i + 1}</div>`;
-    });
-}
-
-// ----------------- Camera & Movement Logic -----------------
+// ----------------- Camera & Movement Detection -----------------
 let videoStream;
 let movementCount = 0;
 
 function startCamera() {
     const container = document.createElement("div");
     container.id = "camera-container";
-    container.style.position = "fixed";
-    container.style.top = "10px";
-    container.style.left = "10px"; // ✅ Left side
-    container.style.width = "130px";
-    container.style.height = "130px";
-    container.style.zIndex = "9999";
-    container.style.borderRadius = "50%";
-    container.style.overflow = "hidden";
-    container.style.border = "3px solid red";
-    container.style.boxShadow = "0 0 10px rgba(0,0,0,0.3)";
-    container.style.cursor = "grab";
-    container.style.minWidth = "80px";
-    container.style.minHeight = "80px";
-    container.style.maxWidth = "250px";
-    container.style.maxHeight = "250px";
-    container.style.background = "#000";
+    container.style = `
+        position:fixed; top:10px; left:10px; width:130px; height:130px;
+        border-radius:50%; overflow:hidden; border:3px solid red; z-index:9999;
+    `;
+
     document.body.appendChild(container);
 
     const video = document.createElement("video");
-    video.setAttribute("autoplay", true);
-    video.setAttribute("playsinline", true);
-    video.style.width = "100%";
-    video.style.height = "100%";
-    video.style.objectFit = "cover";
+    video.autoplay = true;
+    video.playsinline = true;
+    video.style = "width:100%; height:100%; object-fit:cover;";
     container.appendChild(video);
 
-    // ✅ Resize handle
-    const resizeHandle = document.createElement("div");
-    resizeHandle.style.position = "absolute";
-    resizeHandle.style.bottom = "2px";
-    resizeHandle.style.right = "2px";
-    resizeHandle.style.width = "15px";
-    resizeHandle.style.height = "15px";
-    resizeHandle.style.background = "rgba(255,255,255,0.7)";
-    resizeHandle.style.borderRadius = "4px";
-    resizeHandle.style.cursor = "se-resize";
-    container.appendChild(resizeHandle);
-
-    // ✅ Drag logic
-    let isDragging = false;
-    let offsetX, offsetY;
-
-    container.addEventListener("mousedown", (e) => {
-        if (e.target === resizeHandle) return;
-        isDragging = true;
-        offsetX = e.clientX - container.offsetLeft;
-        offsetY = e.clientY - container.offsetTop;
-        container.style.cursor = "grabbing";
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isDragging) return;
-        let x = e.clientX - offsetX;
-        let y = e.clientY - offsetY;
-        x = Math.max(0, Math.min(window.innerWidth - container.offsetWidth, x));
-        y = Math.max(0, Math.min(window.innerHeight - container.offsetHeight, y));
-        container.style.left = `${x}px`;
-        container.style.top = `${y}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isDragging = false;
-        container.style.cursor = "grab";
-    });
-
-    // ✅ Resize logic
-    let isResizing = false;
-    let startWidth, startHeight, startX, startY;
-
-    resizeHandle.addEventListener("mousedown", (e) => {
-        e.stopPropagation();
-        isResizing = true;
-        startWidth = container.offsetWidth;
-        startHeight = container.offsetHeight;
-        startX = e.clientX;
-        startY = e.clientY;
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isResizing) return;
-        const dx = e.clientX - startX;
-        const dy = e.clientY - startY;
-        const newSize = Math.max(80, Math.min(250, Math.max(startWidth + dx, startHeight + dy)));
-        container.style.width = `${newSize}px`;
-        container.style.height = `${newSize}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isResizing = false;
-    });
-
-    // ✅ Camera stream
     navigator.mediaDevices.getUserMedia({ video: true })
         .then(stream => {
             video.srcObject = stream;
             videoStream = stream;
             detectMovement(video);
         })
-        .catch(err => {
-            console.error("Camera error:", err);
-            alert("Camera not accessible!");
-        });
+        .catch(() => alert("Camera access denied!"));
 }
 
 function detectMovement(video) {
@@ -1409,51 +1305,51 @@ function detectMovement(video) {
     const ctx = canvas.getContext("2d");
     canvas.width = 160;
     canvas.height = 160;
-    let lastImageData = null;
+
+    let lastData = null;
 
     setInterval(() => {
-        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(video, 0, 0, 160, 160);
+        const data = ctx.getImageData(0, 0, 160, 160);
 
-        if (lastImageData) {
+        if (lastData) {
             let diff = 0;
-            for (let i = 0; i < imageData.data.length; i += 4) {
-                diff += Math.abs(imageData.data[i] - lastImageData.data[i]);
+            for (let i = 0; i < data.data.length; i += 4) {
+                diff += Math.abs(data.data[i] - lastData.data[i]);
             }
 
             if (diff > 1000000) {
                 movementCount++;
-                if (movementCount === 1) {
-                    alert("⚠️ Alert 1: Face is not move");
-                } else if (movementCount === 2) {
-                    alert("⚠️ Alert 2: Head is not move");
-                } else if (movementCount === 3) {
-                    alert("⚠️ Alert 3: Test series is restarting...");
+
+                if (movementCount === 1) alert("⚠ Alert 1: No movement detected!");
+                if (movementCount === 2) alert("⚠ Alert 2: Head not moving!");
+                if (movementCount === 3) {
+                    alert("⚠ Alert 3: Restarting test...");
                     restartTest();
                 }
             }
         }
-        lastImageData = imageData;
+        lastData = data;
+
     }, 2000);
 }
 
 function restartTest() {
-    if (videoStream) {
-        videoStream.getTracks().forEach(track => track.stop());
-    }
-    const camContainer = document.getElementById("camera-container");
-    if (camContainer) camContainer.remove();
+    if (videoStream) videoStream.getTracks().forEach(t => t.stop());
+
+    const cam = document.getElementById("camera-container");
+    if (cam) cam.remove();
 
     movementCount = 0;
     currentQuestion = 0;
-    timeLeft = 180 * 60;
+    timeLeft = 60 * 60;
 
     questions.forEach(q => {
         q.attempted = false;
         q.selected = null;
     });
 
-    loadQuestion(currentQuestion);
+    loadQuestion(0);
     startTimer();
     startCamera();
 }
@@ -1462,8 +1358,5 @@ function restartTest() {
 window.onload = function () {
     loadQuestion(currentQuestion);
     startTimer();
-    startCamera(); // ✅ Camera starts with test
+    startCamera();
 };
-
-
-///////////////////////////////////////

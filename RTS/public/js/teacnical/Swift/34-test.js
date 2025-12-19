@@ -1,1122 +1,1120 @@
-const questions = [
-    {
+const questions=[
+     {
         "num": 1,
-        "question_en": "What is the process of cell division that results in two identical daughter cells?",
-        "question_hi": "कोशिका विभाजन की वह प्रक्रिया क्या है जिससे दो समान संतति कोशिकाएं बनती हैं?",
-        "options_en": ["Mitosis", "Meiosis", "Binary fission", "Budding"],
-        "options_hi": ["समसूत्री विभाजन", "अर्धसूत्री विभाजन", "द्विखंडन", "मुकुलन"],
-        "answer_en": "Mitosis",
-        "answer_hi": "समसूत्री विभाजन",
+        "question_en": "What is the entry point of every Rust program?",
+        "question_hi": "हर Rust प्रोग्राम का एंट्री पॉइंट क्या है?",
+        "options_en": ["fn main()", "function main()", "pub fn main()", "start main()"],
+        "options_hi": ["fn main()", "function main()", "pub fn main()", "start main()"],
+        "answer_en": "fn main()",
+        "answer_hi": "fn main()",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 2,
-        "question_en": "What is the chemical formula of Benzene?",
-        "question_hi": "बेंजीन का रासायनिक सूत्र क्या है?",
-        "options_en": ["C₆H₆", "C₆H₁₂", "C₆H₅OH", "C₆H₅COOH"],
-        "options_hi": ["C₆H₆", "C₆H₁₂", "C₆H₅OH", "C₆H₅COOH"],
-        "answer_en": "C₆H₆",
-        "answer_hi": "C₆H₆",
+        "question_en": "How do you declare an immutable variable in Rust?",
+        "question_hi": "Rust में अपरिवर्तनीय वेरिएबल कैसे घोषित करते हैं?",
+        "options_en": ["let x = 5;", "const x = 5;", "immutable x = 5;", "let immut x = 5;"],
+        "options_hi": ["let x = 5;", "const x = 5;", "immutable x = 5;", "let immut x = 5;"],
+        "answer_en": "let x = 5;",
+        "answer_hi": "let x = 5;",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 3,
-        "question_en": "Who proposed the Theory of Relativity?",
-        "question_hi": "सापेक्षता के सिद्धांत को किसने प्रस्तावित किया?",
-        "options_en": ["Isaac Newton", "Albert Einstein", "Niels Bohr", "Stephen Hawking"],
-        "options_hi": ["आइजैक न्यूटन", "अल्बर्ट आइंस्टीन", "नील्स बोहर", "स्टीफन हॉकिंग"],
-        "answer_en": "Albert Einstein",
-        "answer_hi": "अल्बर्ट आइंस्टीन",
+        "question_en": "What is the main purpose of Rust's ownership system?",
+        "question_hi": "Rust के स्वामित्व प्रणाली का मुख्य उद्देश्य क्या है?",
+        "options_en": ["Memory safety without garbage collection", "Faster execution speed", "Automatic memory management", "Dynamic typing support"],
+        "options_hi": ["गार्बेज कलेक्शन के बिना मेमोरी सुरक्षा", "तेज एक्जिक्यूशन स्पीड", "स्वचालित मेमोरी प्रबंधन", "डायनामिक टाइपिंग समर्थन"],
+        "answer_en": "Memory safety without garbage collection",
+        "answer_hi": "गार्बेज कलेक्शन के बिना मेमोरी सुरक्षा",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 4,
-        "question_en": "What is the derivative of sin(x) with respect to x?",
-        "question_hi": "sin(x) का x के सापेक्ष अवकलज क्या है?",
-        "options_en": ["cos(x)", "-cos(x)", "sin(x)", "-sin(x)"],
-        "options_hi": ["cos(x)", "-cos(x)", "sin(x)", "-sin(x)"],
-        "answer_en": "cos(x)",
-        "answer_hi": "cos(x)",
+        "question_en": "How do you print to standard output in Rust?",
+        "question_hi": "Rust में स्टैंडर्ड आउटपुट पर प्रिंट कैसे करते हैं?",
+        "options_en": ["println!(\"Hello\")", "print!(\"Hello\")", "console.log(\"Hello\")", "printf(\"Hello\")"],
+        "options_hi": ["println!(\"Hello\")", "print!(\"Hello\")", "console.log(\"Hello\")", "printf(\"Hello\")"],
+        "answer_en": "println!(\"Hello\")",
+        "answer_hi": "println!(\"Hello\")",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 5,
-        "question_en": "Which of these is a poetic device used in Hindi literature?",
-        "question_hi": "हिंदी साहित्य में प्रयुक्त होने वाला यह कौन सा काव्य शिल्प है?",
-        "options_en": ["Metaphor", "Simile", "Yamak", "Alliteration"],
-        "options_hi": ["रूपक", "उपमा", "यमक", "अनुप्रास"],
-        "answer_en": "Yamak",
-        "answer_hi": "यमक",
+        "question_en": "What is the default integer type in Rust?",
+        "question_hi": "Rust में डिफॉल्ट इंटीजर प्रकार क्या है?",
+        "options_en": ["i32", "i64", "int", "usize"],
+        "options_hi": ["i32", "i64", "int", "usize"],
+        "answer_en": "i32",
+        "answer_hi": "i32",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 6,
-        "question_en": "What is the SI unit of electric potential?",
-        "question_hi": "विद्युत विभव की SI इकाई क्या है?",
-        "options_en": ["Volt", "Ampere", "Ohm", "Watt"],
-        "options_hi": ["वोल्ट", "एम्पियर", "ओम", "वाट"],
-        "answer_en": "Volt",
-        "answer_hi": "वोल्ट",
+        "question_en": "How do you create a constant in Rust?",
+        "question_hi": "Rust में कॉन्स्टेंट कैसे बनाते हैं?",
+        "options_en": ["const MAX: u32 = 100_000;", "let const MAX = 100000;", "constant MAX = 100000;", "static MAX: u32 = 100000;"],
+        "options_hi": ["const MAX: u32 = 100_000;", "let const MAX = 100000;", "constant MAX = 100000;", "static MAX: u32 = 100000;"],
+        "answer_en": "const MAX: u32 = 100_000;",
+        "answer_hi": "const MAX: u32 = 100_000;",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 7,
-        "question_en": "Which gas is produced during anaerobic respiration in muscles?",
-        "question_hi": "मांसपेशियों में अवायवीय श्वसन के दौरान कौन सी गैस उत्पन्न होती है?",
-        "options_en": ["Lactic acid", "Ethanol", "Carbon dioxide", "Oxygen"],
-        "options_hi": ["लैक्टिक अम्ल", "एथनॉल", "कार्बन डाइऑक्साइड", "ऑक्सीजन"],
-        "answer_en": "Lactic acid",
-        "answer_hi": "लैक्टिक अम्ल",
+        "question_en": "What is a tuple in Rust?",
+        "question_hi": "Rust में टपल क्या है?",
+        "options_en": ["A collection of values of different types", "An array of same type values", "A key-value store", "A string type"],
+        "options_hi": ["विभिन्न प्रकार के मानों का संग्रह", "समान प्रकार के मानों की सरणी", "कुंजी-मान भंडार", "स्ट्रिंग प्रकार"],
+        "answer_en": "A collection of values of different types",
+        "answer_hi": "विभिन्न प्रकार के मानों का संग्रह",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 8,
-        "question_en": "What is the IUPAC name of CH₃COOH?",
-        "question_hi": "CH₃COOH का IUPAC नाम क्या है?",
-        "options_en": ["Acetic acid", "Ethanoic acid", "Methanoic acid", "Propanoic acid"],
-        "options_hi": ["एसिटिक अम्ल", "एथेनोइक अम्ल", "मेथेनोइक अम्ल", "प्रोपेनोइक अम्ल"],
-        "answer_en": "Ethanoic acid",
-        "answer_hi": "एथेनोइक अम्ल",
+        "question_en": "How do you access tuple elements?",
+        "question_hi": "टपल एलिमेंट्स तक कैसे पहुंचते हैं?",
+        "options_en": ["tuple.0", "tuple[0]", "tuple(0)", "tuple->0"],
+        "options_hi": ["tuple.0", "tuple[0]", "tuple(0)", "tuple->0"],
+        "answer_en": "tuple.0",
+        "answer_hi": "tuple.0",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 9,
-        "question_en": "Who wrote the novel 'War and Peace'?",
-        "question_hi": "'वॉर एंड पीस' उपन्यास किसने लिखा?",
-        "options_en": ["Fyodor Dostoevsky", "Leo Tolstoy", "Anton Chekhov", "Victor Hugo"],
-        "options_hi": ["फ्योडोर दोस्तोवस्की", "लियो टॉल्स्टॉय", "एंटोन चेखव", "विक्टर ह्यूगो"],
-        "answer_en": "Leo Tolstoy",
-        "answer_hi": "लियो टॉल्स्टॉय",
+        "question_en": "What is an array in Rust?",
+        "question_hi": "Rust में ऐरे क्या है?",
+        "options_en": ["Fixed-size collection of same type elements", "Dynamic collection of elements", "Key-value pairs", "A string buffer"],
+        "options_hi": ["समान प्रकार के तत्वों का निश्चित आकार संग्रह", "तत्वों का गतिशील संग्रह", "कुंजी-मान जोड़े", "स्ट्रिंग बफर"],
+        "answer_en": "Fixed-size collection of same type elements",
+        "answer_hi": "समान प्रकार के तत्वों का निश्चित आकार संग्रह",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 10,
-        "question_en": "What is the value of ∫(2x dx) from 0 to 2?",
-        "question_hi": "0 से 2 तक ∫(2x dx) का मान क्या है?",
-        "options_en": ["2", "4", "6", "8"],
-        "options_hi": ["2", "4", "6", "8"],
-        "answer_en": "4",
-        "answer_hi": "4",
+        "question_en": "How do you create an array with 5 zeros?",
+        "question_hi": "5 जीरो वाला ऐरे कैसे बनाते हैं?",
+        "options_en": ["let arr = [0; 5];", "let arr = [0, 0, 0, 0, 0];", "let arr = Array::new(5, 0);", "let arr = [5]0;"],
+        "options_hi": ["let arr = [0; 5];", "let arr = [0, 0, 0, 0, 0];", "let arr = Array::new(5, 0);", "let arr = [5]0;"],
+        "answer_en": "let arr = [0; 5];",
+        "answer_hi": "let arr = [0; 5];",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 11,
-        "question_en": "Which part of the human brain is responsible for balance and coordination?",
-        "question_hi": "मानव मस्तिष्क का कौन सा भाग संतुलन और समन्वय के लिए जिम्मेदार है?",
-        "options_en": ["Cerebrum", "Cerebellum", "Medulla", "Hypothalamus"],
-        "options_hi": ["सेरेब्रम", "सेरेबेलम", "मेडुला", "हाइपोथैलेमस"],
-        "answer_en": "Cerebellum",
-        "answer_hi": "सेरेबेलम",
+        "question_en": "What is the purpose of the 'mut' keyword?",
+        "question_hi": "'mut' कीवर्ड का उद्देश्य क्या है?",
+        "options_en": ["To make variables mutable", "To create constants", "For function mutability", "For module mutability"],
+        "options_hi": ["वेरिएबल्स को परिवर्तनशील बनाने के लिए", "कॉन्स्टेंट्स बनाने के लिए", "फंक्शन म्यूटेबिलिटी के लिए", "मॉड्यूल म्यूटेबिलिटी के लिए"],
+        "answer_en": "To make variables mutable",
+        "answer_hi": "वेरिएबल्स को परिवर्तनशील बनाने के लिए",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 12,
-        "question_en": "What is the coordination number in a face-centered cubic structure?",
-        "question_hi": "फलक-केंद्रित घनीय संरचना में उपसहसंयोजन संख्या क्या है?",
-        "options_en": ["6", "8", "12", "4"],
-        "options_hi": ["6", "8", "12", "4"],
-        "answer_en": "12",
-        "answer_hi": "12",
+        "question_en": "How do you create a slice from an array?",
+        "question_hi": "ऐरे से स्लाइस कैसे बनाते हैं?",
+        "options_en": ["&arr[1..3]", "arr.slice(1, 3)", "slice(arr, 1, 3)", "arr[1..3]"],
+        "options_hi": ["&arr[1..3]", "arr.slice(1, 3)", "slice(arr, 1, 3)", "arr[1..3]"],
+        "answer_en": "&arr[1..3]",
+        "answer_hi": "&arr[1..3]",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 13,
-        "question_en": "Which electromagnetic wave has the shortest wavelength?",
-        "question_hi": "किस विद्युत चुम्बकीय तरंग की तरंगदैर्ध्य सबसे कम होती है?",
-        "options_en": ["Radio waves", "Microwaves", "X-rays", "Gamma rays"],
-        "options_hi": ["रेडियो तरंगें", "माइक्रोवेव", "एक्स-रे", "गामा किरणें"],
-        "answer_en": "Gamma rays",
-        "answer_hi": "गामा किरणें",
+        "question_en": "What is the range operator in Rust?",
+        "question_hi": "Rust में रेंज ऑपरेटर क्या है?",
+        "options_en": ["..", "...", "to", "range"],
+        "options_hi": ["..", "...", "to", "range"],
+        "answer_en": "..",
+        "answer_hi": "..",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 14,
-        "question_en": "What is the value of lim(x→0) sin(x)/x?",
-        "question_hi": "lim(x→0) sin(x)/x का मान क्या है?",
-        "options_en": ["0", "1", "∞", "Undefined"],
-        "options_hi": ["0", "1", "∞", "अपरिभाषित"],
-        "answer_en": "1",
-        "answer_hi": "1",
+        "question_en": "How do you write an infinite loop?",
+        "question_hi": "अनंत लूप कैसे लिखते हैं?",
+        "options_en": ["loop { }", "while true { }", "for ;; { }", "All of the above"],
+        "options_hi": ["loop { }", "while true { }", "for ;; { }", "उपरोक्त सभी"],
+        "answer_en": "loop { }",
+        "answer_hi": "loop { }",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 15,
-        "question_en": "Who is known as the 'Father of Hindi Poetry'?",
-        "question_hi": "'हिंदी कविता के जनक' के रूप में किसे जाना जाता है?",
-        "options_en": ["Tulsidas", "Kabir", "Bhartrihari", "Chand Bardai"],
-        "options_hi": ["तुलसीदास", "कबीर", "भर्तृहरि", "चंद बरदाई"],
-        "answer_en": "Chand Bardai",
-        "answer_hi": "चंद बरदाई",
+        "question_en": "What is the 'while' loop used for?",
+        "question_hi": "'while' लूप का उपयोग किस लिए किया जाता है?",
+        "options_en": ["Conditional repetition", "Infinite looping", "Collection iteration", "Error handling"],
+        "options_hi": ["सशर्त पुनरावृत्ति", "अनंत लूपिंग", "संग्रह पुनरावृत्ति", "त्रुटि प्रबंधन"],
+        "answer_en": "Conditional repetition",
+        "answer_hi": "सशर्त पुनरावृत्ति",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 16,
-        "question_en": "What is the process of converting ammonia to nitrates called?",
-        "question_hi": "अमोनिया को नाइट्रेट में परिवर्तित करने की प्रक्रिया को क्या कहते हैं?",
-        "options_en": ["Nitrogen fixation", "Nitrification", "Denitrification", "Ammonification"],
-        "options_hi": ["नाइट्रोजन स्थिरीकरण", "नाइट्रीकरण", "विनाइट्रीकरण", "अमोनीकरण"],
-        "answer_en": "Nitrification",
-        "answer_hi": "नाइट्रीकरण",
+        "question_en": "How do you break out of a loop?",
+        "question_hi": "लूप से कैसे बाहर निकलते हैं?",
+        "options_en": ["break;", "exit;", "stop;", "return;"],
+        "options_hi": ["break;", "exit;", "stop;", "return;"],
+        "answer_en": "break;",
+        "answer_hi": "break;",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 17,
-        "question_en": "Which of the following is a strong electrolyte?",
-        "question_hi": "निम्नलिखित में से कौन सा प्रबल विद्युत अपघट्य है?",
-        "options_en": ["Acetic acid", "Ammonia", "Sodium chloride", "Carbonic acid"],
-        "options_hi": ["एसिटिक अम्ल", "अमोनिया", "सोडियम क्लोराइड", "कार्बोनिक अम्ल"],
-        "answer_en": "Sodium chloride",
-        "answer_hi": "सोडियम क्लोराइड",
+        "question_en": "What does 'continue' do in a loop?",
+        "question_hi": "लूप में 'continue' क्या करता है?",
+        "options_en": ["Skips to next iteration", "Exits the loop", "Restarts the loop", "Pauses the loop"],
+        "options_hi": ["अगले पुनरावृत्ति पर जाता है", "लूप से बाहर निकलता है", "लूप को पुनः आरंभ करता है", "लूप को रोकता है"],
+        "answer_en": "Skips to next iteration",
+        "answer_hi": "अगले पुनरावृत्ति पर जाता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 18,
-        "question_en": "What is the principle behind the working of a transformer?",
-        "question_hi": "ट्रांसफॉर्मर के कार्य करने का सिद्धांत क्या है?",
-        "options_en": ["Ohm's law", "Faraday's law", "Coulomb's law", "Ampere's law"],
-        "options_hi": ["ओम का नियम", "फैराडे का नियम", "कूलॉम का नियम", "एम्पियर का नियम"],
-        "answer_en": "Faraday's law",
-        "answer_hi": "फैराडे का नियम",
+        "question_en": "How do you write a 'for' loop in Rust?",
+        "question_hi": "Rust में 'for' लूप कैसे लिखते हैं?",
+        "options_en": ["for i in 0..10 { }", "for (i = 0; i < 10; i++) { }", "for i in range(10) { }", "for i from 0 to 10 { }"],
+        "options_hi": ["for i in 0..10 { }", "for (i = 0; i < 10; i++) { }", "for i in range(10) { }", "for i from 0 to 10 { }"],
+        "answer_en": "for i in 0..10 { }",
+        "answer_hi": "for i in 0..10 { }",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 19,
-        "question_en": "What is the probability of getting a prime number when a die is thrown?",
-        "question_hi": "पासा फेंकने पर अभाज्य संख्या आने की प्रायिकता क्या है?",
-        "options_en": ["1/2", "1/3", "1/4", "2/3"],
-        "options_hi": ["1/2", "1/3", "1/4", "2/3"],
-        "answer_en": "1/2",
-        "answer_hi": "1/2",
+        "question_en": "What is a struct in Rust?",
+        "question_hi": "Rust में स्ट्रक्चर क्या है?",
+        "options_en": ["A custom data type that groups related data", "A function type", "A collection type", "A pointer type"],
+        "options_hi": ["एक कस्टम डेटा प्रकार जो संबंधित डेटा को समूहित करता है", "एक फंक्शन प्रकार", "एक संग्रह प्रकार", "एक पॉइंटर प्रकार"],
+        "answer_en": "A custom data type that groups related data",
+        "answer_hi": "एक कस्टम डेटा प्रकार जो संबंधित डेटा को समूहित करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 20,
-        "question_en": "Who wrote the play 'Andha Yug'?",
-        "question_hi": "'अंधा युग' नाटक किसने लिखा?",
-        "options_en": ["Mohan Rakesh", "Dharamvir Bharati", "Bhisham Sahni", "Vijay Tendulkar"],
-        "options_hi": ["मोहन राकेश", "धर्मवीर भारती", "भीष्म साहनी", "विजय तेंदुलकर"],
-        "answer_en": "Dharamvir Bharati",
-        "answer_hi": "धर्मवीर भारती",
+        "question_en": "How do you define a struct?",
+        "question_hi": "स्ट्रक्चर कैसे परिभाषित करते हैं?",
+        "options_en": ["struct User { name: String, age: u32 }", "class User { name: String, age: u32 }", "type User = { name: String, age: u32 };", "def struct User { name: String, age: u32 }"],
+        "options_hi": ["struct User { name: String, age: u32 }", "class User { name: String, age: u32 }", "type User = { name: String, age: u32 };", "def struct User { name: String, age: u32 }"],
+        "answer_en": "struct User { name: String, age: u32 }",
+        "answer_hi": "struct User { name: String, age: u32 }",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 21,
-        "question_en": "Which hormone regulates blood calcium levels?",
-        "question_hi": "कौन सा हार्मोन रक्त कैल्शियम स्तर को नियंत्रित करता है?",
-        "options_en": ["Insulin", "Thyroxine", "Parathyroid hormone", "Adrenaline"],
-        "options_hi": ["इंसुलिन", "थायरॉक्सिन", "पैराथाइरॉइड हार्मोन", "एड्रेनालिन"],
-        "answer_en": "Parathyroid hormone",
-        "answer_hi": "पैराथाइरॉइड हार्मोन",
+        "question_en": "How do you create an instance of a struct?",
+        "question_hi": "स्ट्रक्चर का इंस्टेंस कैसे बनाते हैं?",
+        "options_en": ["let user = User { name: String::from(\"Alice\"), age: 30 };", "let user = new User(\"Alice\", 30);", "let user = User::new(\"Alice\", 30);", "let user = User(\"Alice\", 30);"],
+        "options_hi": ["let user = User { name: String::from(\"Alice\"), age: 30 };", "let user = new User(\"Alice\", 30);", "let user = User::new(\"Alice\", 30);", "let user = User(\"Alice\", 30);"],
+        "answer_en": "let user = User { name: String::from(\"Alice\"), age: 30 };",
+        "answer_hi": "let user = User { name: String::from(\"Alice\"), age: 30 };",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 22,
-        "question_en": "What is the hybridization of carbon in ethyne?",
-        "question_hi": "एथाइन में कार्बन का संकरण क्या है?",
-        "options_en": ["sp", "sp²", "sp³", "sp³d"],
-        "options_hi": ["sp", "sp²", "sp³", "sp³d"],
-        "answer_en": "sp",
-        "answer_hi": "sp",
+        "question_en": "What is pattern matching in Rust?",
+        "question_hi": "Rust में पैटर्न मिलान क्या है?",
+        "options_en": ["Comparing values against patterns", "String comparison", "Regular expressions", "Image recognition"],
+        "options_hi": ["पैटर्न के विरुद्ध मानों की तुलना करना", "स्ट्रिंग तुलना", "रेगुलर एक्सप्रेशन", "छवि पहचान"],
+        "answer_en": "Comparing values against patterns",
+        "answer_hi": "पैटर्न के विरुद्ध मानों की तुलना करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 23,
-        "question_en": "What is the dimensional formula of power?",
-        "question_hi": "शक्ति का विमीय सूत्र क्या है?",
-        "options_en": ["[ML²T⁻³]", "[MLT⁻²]", "[ML²T⁻²]", "[MLT⁻¹]"],
-        "options_hi": ["[ML²T⁻³]", "[MLT⁻²]", "[ML²T⁻²]", "[MLT⁻¹]"],
-        "answer_en": "[ML²T⁻³]",
-        "answer_hi": "[ML²T⁻³]",
+        "question_en": "How do you use the 'match' keyword?",
+        "question_hi": "'match' कीवर्ड का उपयोग कैसे करते हैं?",
+        "options_en": ["match value { pattern => expression, _ => () }", "switch value { case pattern: }", "if value matches pattern { }", "case value of pattern ->"],
+        "options_hi": ["match value { pattern => expression, _ => () }", "switch value { case pattern: }", "if value matches pattern { }", "case value of pattern ->"],
+        "answer_en": "match value { pattern => expression, _ => () }",
+        "answer_hi": "match value { pattern => expression, _ => () }",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 24,
-        "question_en": "What is the value of i³ (where i is iota)?",
-        "question_hi": "i³ का मान क्या है (जहाँ i आयोटा है)?",
-        "options_en": ["1", "-1", "i", "-i"],
-        "options_hi": ["1", "-1", "i", "-i"],
-        "answer_en": "-i",
-        "answer_hi": "-i",
+        "question_en": "What is the '_' pattern in match?",
+        "question_hi": "match में '_' पैटर्न क्या है?",
+        "options_en": ["Catch-all pattern", "Ignore value", "Wildcard character", "Private pattern"],
+        "options_hi": ["सभी को पकड़ने वाला पैटर्न", "मान को अनदेखा करना", "वाइल्डकार्ड वर्ण", "निजी पैटर्न"],
+        "answer_en": "Catch-all pattern",
+        "answer_hi": "सभी को पकड़ने वाला पैटर्न",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 25,
-        "question_en": "Which literary work is written by Jaishankar Prasad?",
-        "question_hi": "जयशंकर प्रसाद द्वारा रचित साहित्यिक कृति कौन सी है?",
-        "options_en": ["Godan", "Kamayani", "Gaban", "Nirmala"],
-        "options_hi": ["गोदान", "कामायनी", "गबन", "निर्मला"],
-        "answer_en": "Kamayani",
-        "answer_hi": "कामायनी",
+        "question_en": "How do you define an enum in Rust?",
+        "question_hi": "Rust में एनम कैसे परिभाषित करते हैं?",
+        "options_en": ["enum IpAddr { V4, V6 }", "struct enum IpAddr { V4, V6 }", "type IpAddr = V4 | V6;", "union IpAddr { V4, V6 }"],
+        "options_hi": ["enum IpAddr { V4, V6 }", "struct enum IpAddr { V4, V6 }", "type IpAddr = V4 | V6;", "union IpAddr { V4, V6 }"],
+        "answer_en": "enum IpAddr { V4, V6 }",
+        "answer_hi": "enum IpAddr { V4, V6 }",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 26,
-        "question_en": "What is the site of photosynthesis in plant cells?",
-        "question_hi": "पादप कोशिकाओं में प्रकाश संश्लेषण का स्थल क्या है?",
-        "options_en": ["Mitochondria", "Chloroplast", "Ribosome", "Nucleus"],
-        "options_hi": ["माइटोकॉन्ड्रिया", "हरितलवक", "राइबोसोम", "केंद्रक"],
-        "answer_en": "Chloroplast",
-        "answer_hi": "हरितलवक",
+        "question_en": "What are enum variants?",
+        "question_hi": "एनम वेरिएंट क्या हैं?",
+        "options_en": ["Possible values of an enum", "Enum methods", "Enum parameters", "Enum traits"],
+        "options_hi": ["एनम के संभावित मान", "एनम विधियाँ", "एनम पैरामीटर", "एनम ट्रेट्स"],
+        "answer_en": "Possible values of an enum",
+        "answer_hi": "एनम के संभावित मान",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 27,
-        "question_en": "Which of the following is a Lewis acid?",
-        "question_hi": "निम्नलिखित में से कौन सा लुईस अम्ल है?",
-        "options_en": ["NH₃", "H₂O", "BF₃", "CH₄"],
-        "options_hi": ["NH₃", "H₂O", "BF₃", "CH₄"],
-        "answer_en": "BF₃",
-        "answer_hi": "BF₃",
+        "question_en": "How do you use the 'if let' syntax?",
+        "question_hi": "'if let' सिंटैक्स का उपयोग कैसे करते हैं?",
+        "options_en": ["if let pattern = value { }", "if value matches pattern { }", "let if pattern = value { }", "if value == pattern { }"],
+        "options_hi": ["if let pattern = value { }", "if value matches pattern { }", "let if pattern = value { }", "if value == pattern { }"],
+        "answer_en": "if let pattern = value { }",
+        "answer_hi": "if let pattern = value { }",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 28,
-        "question_en": "What is the unit of magnetic flux?",
-        "question_hi": "चुंबकीय फ्लक्स की इकाई क्या है?",
-        "options_en": ["Tesla", "Weber", "Henry", "Gauss"],
-        "options_hi": ["टेस्ला", "वेबर", "हेनरी", "गॉस"],
-        "answer_en": "Weber",
-        "answer_hi": "वेबर",
+        "question_en": "What is a module in Rust?",
+        "question_hi": "Rust में मॉड्यूल क्या है?",
+        "options_en": ["A namespace that contains definitions", "A function group", "A struct implementation", "A trait definition"],
+        "options_hi": ["एक नेमस्पेस जिसमें परिभाषाएँ होती हैं", "एक फंक्शन समूह", "एक स्ट्रक्चर कार्यान्वयन", "एक ट्रेट परिभाषा"],
+        "answer_en": "A namespace that contains definitions",
+        "answer_hi": "एक नेमस्पेस जिसमें परिभाषाएँ होती हैं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 29,
-        "question_en": "What is the solution of the differential equation dy/dx = y?",
-        "question_hi": "अवकल समीकरण dy/dx = y का हल क्या है?",
-        "options_en": ["y = e^x", "y = e^x + C", "y = Ce^x", "y = ln x"],
-        "options_hi": ["y = e^x", "y = e^x + C", "y = Ce^x", "y = ln x"],
-        "answer_en": "y = Ce^x",
-        "answer_hi": "y = Ce^x",
+        "question_en": "How do you define a module?",
+        "question_hi": "मॉड्यूल कैसे परिभाषित करते हैं?",
+        "options_en": ["mod my_module { }", "module my_module { }", "def mod my_module { }", "namespace my_module { }"],
+        "options_hi": ["mod my_module { }", "module my_module { }", "def mod my_module { }", "namespace my_module { }"],
+        "answer_en": "mod my_module { }",
+        "answer_hi": "mod my_module { }",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 30,
-        "question_en": "Who wrote 'Rashmirathi'?",
-        "question_hi": "'रश्मिरथी' किसने लिखी?",
-        "options_en": ["Ramdhari Singh Dinkar", "Harivansh Rai Bachchan", "Suryakant Tripathi", "Mahadevi Verma"],
-        "options_hi": ["रामधारी सिंह दिनकर", "हरिवंश राय बच्चन", "सूर्यकांत त्रिपाठी", "महादेवी वर्मा"],
-        "answer_en": "Ramdhari Singh Dinkar",
-        "answer_hi": "रामधारी सिंह दिनकर",
+        "question_en": "How do you use items from another module?",
+        "question_hi": "दूसरे मॉड्यूल से आइटम्स का उपयोग कैसे करते हैं?",
+        "options_en": ["use my_module::MyStruct;", "import my_module.MyStruct;", "include my_module::MyStruct;", "from my_module import MyStruct"],
+        "options_hi": ["use my_module::MyStruct;", "import my_module.MyStruct;", "include my_module::MyStruct;", "from my_module import MyStruct"],
+        "answer_en": "use my_module::MyStruct;",
+        "answer_hi": "use my_module::MyStruct;",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 31,
-        "question_en": "What is the function of the enzyme pepsin?",
-        "question_hi": "एंजाइम पेप्सिन का कार्य क्या है?",
-        "options_en": ["Breakdown of proteins", "Breakdown of fats", "Breakdown of carbohydrates", "Breakdown of nucleic acids"],
-        "options_hi": ["प्रोटीन का विघटन", "वसा का विघटन", "कार्बोहाइड्रेट का विघटन", "न्यूक्लिक अम्ल का विघटन"],
-        "answer_en": "Breakdown of proteins",
-        "answer_hi": "प्रोटीन का विघटन",
+        "question_en": "What is the 'pub' keyword used for?",
+        "question_hi": "'pub' कीवर्ड का उपयोग किस लिए किया जाता है?",
+        "options_en": ["To make items public", "To make items private", "To publish crates", "For public functions only"],
+        "options_hi": ["आइटम्स को सार्वजनिक बनाने के लिए", "आइटम्स को निजी बनाने के लिए", "क्रेट्स प्रकाशित करने के लिए", "केवल सार्वजनिक फंक्शन्स के लिए"],
+        "answer_en": "To make items public",
+        "answer_hi": "आइटम्स को सार्वजनिक बनाने के लिए",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 32,
-        "question_en": "What is the oxidation state of chromium in K₂Cr₂O₇?",
-        "question_hi": "K₂Cr₂O₇ में क्रोमियम की ऑक्सीकरण अवस्था क्या है?",
-        "options_en": ["+3", "+5", "+6", "+7"],
-        "options_hi": ["+3", "+5", "+6", "+7"],
-        "answer_en": "+6",
-        "answer_hi": "+6",
+        "question_en": "How do you create a new vector?",
+        "question_hi": "नया वेक्टर कैसे बनाते हैं?",
+        "options_en": ["let v = vec![1, 2, 3];", "let v = Vector::new();", "let v = [1, 2, 3].to_vec();", "let v = new_vec![1, 2, 3];"],
+        "options_hi": ["let v = vec![1, 2, 3];", "let v = Vector::new();", "let v = [1, 2, 3].to_vec();", "let v = new_vec![1, 2, 3];"],
+        "answer_en": "let v = vec![1, 2, 3];",
+        "answer_hi": "let v = vec![1, 2, 3];",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 33,
-        "question_en": "What is the principle of conservation of energy?",
-        "question_hi": "ऊर्जा संरक्षण का सिद्धांत क्या है?",
-        "options_en": ["Energy can be created", "Energy can be destroyed", "Energy remains constant", "Energy decreases with time"],
-        "options_hi": ["ऊर्जा बनाई जा सकती है", "ऊर्जा नष्ट की जा सकती है", "ऊर्जा स्थिर रहती है", "ऊर्जा समय के साथ घटती है"],
-        "answer_en": "Energy remains constant",
-        "answer_hi": "ऊर्जा स्थिर रहती है",
+        "question_en": "How do you add an element to a vector?",
+        "question_hi": "वेक्टर में एलिमेंट कैसे जोड़ते हैं?",
+        "options_en": ["v.push(4);", "v.add(4);", "v.insert(4);", "v.append(4);"],
+        "options_hi": ["v.push(4);", "v.add(4);", "v.insert(4);", "v.append(4);"],
+        "answer_en": "v.push(4);",
+        "answer_hi": "v.push(4);",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 34,
-        "question_en": "What is the value of tan(π/4)?",
-        "question_hi": "tan(π/4) का मान क्या है?",
-        "options_en": ["0", "1", "√3", "1/√3"],
-        "options_hi": ["0", "1", "√3", "1/√3"],
-        "answer_en": "1",
-        "answer_hi": "1",
+        "question_en": "What is a String in Rust?",
+        "question_hi": "Rust में स्ट्रिंग क्या है?",
+        "options_en": ["A UTF-8 encoded, growable string", "A fixed-size string", "An ASCII string only", "A character array"],
+        "options_hi": ["एक UTF-8 एनकोडेड, बढ़ने योग्य स्ट्रिंग", "एक निश्चित आकार की स्ट्रिंग", "केवल एक ASCII स्ट्रिंग", "एक वर्ण सरणी"],
+        "answer_en": "A UTF-8 encoded, growable string",
+        "answer_hi": "एक UTF-8 एनकोडेड, बढ़ने योग्य स्ट्रिंग",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 35,
-        "question_en": "Who is the author of 'Gunahon Ka Devta'?",
-        "question_hi": "'गुनाहों का देवता' के लेखक कौन हैं?",
-        "options_en": ["Dharamvir Bharati", "Mohan Rakesh", "Bhisham Sahni", "Agyeya"],
-        "options_hi": ["धर्मवीर भारती", "मोहन राकेश", "भीष्म साहनी", "अज्ञेय"],
-        "answer_en": "Dharamvir Bharati",
-        "answer_hi": "धर्मवीर भारती",
+        "question_en": "How do you create a new String?",
+        "question_hi": "नई स्ट्रिंग कैसे बनाते हैं?",
+        "options_en": ["String::from(\"hello\")", "new String(\"hello\")", "\"hello\".to_string()", "Both A and C"],
+        "options_hi": ["String::from(\"hello\")", "new String(\"hello\")", "\"hello\".to_string()", "A और C दोनों"],
+        "answer_en": "Both A and C",
+        "answer_hi": "A और C दोनों",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 36,
-        "question_en": "What is the genetic material in HIV?",
-        "question_hi": "HIV में आनुवंशिक पदार्थ क्या है?",
-        "options_en": ["DNA", "RNA", "Protein", "Lipid"],
-        "options_hi": ["DNA", "RNA", "प्रोटीन", "लिपिड"],
-        "answer_en": "RNA",
-        "answer_hi": "RNA",
+        "question_en": "What is a string slice (&str)?",
+        "question_hi": "स्ट्रिंग स्लाइस (&str) क्या है?",
+        "options_en": ["A reference to a UTF-8 string sequence", "A mutable string", "An owned string", "A string builder"],
+        "options_hi": ["एक UTF-8 स्ट्रिंग अनुक्रम का संदर्भ", "एक परिवर्तनशील स्ट्रिंग", "एक स्वामित्व वाली स्ट्रिंग", "एक स्ट्रिंग बिल्डर"],
+        "answer_en": "A reference to a UTF-8 string sequence",
+        "answer_hi": "एक UTF-8 स्ट्रिंग अनुक्रम का संदर्भ",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 37,
-        "question_en": "What is the common name of sodium carbonate?",
-        "question_hi": "सोडियम कार्बोनेट का सामान्य नाम क्या है?",
-        "options_en": ["Baking soda", "Washing soda", "Caustic soda", "Baking powder"],
-        "options_hi": ["बेकिंग सोडा", "धोने का सोडा", "कास्टिक सोडा", "बेकिंग पाउडर"],
-        "answer_en": "Washing soda",
-        "answer_hi": "धोने का सोडा",
+        "question_en": "How do you concatenate strings?",
+        "question_hi": "स्ट्रिंग्स को कैसे जोड़ते हैं?",
+        "options_en": ["let s = s1 + &s2;", "let s = s1 + s2;", "let s = s1.concat(s2);", "let s = concat(s1, s2);"],
+        "options_hi": ["let s = s1 + &s2;", "let s = s1 + s2;", "let s = s1.concat(s2);", "let s = concat(s1, s2);"],
+        "answer_en": "let s = s1 + &s2;",
+        "answer_hi": "let s = s1 + &s2;",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 38,
-        "question_en": "What is the SI unit of luminous intensity?",
-        "question_hi": "ज्योति तीव्रता की SI इकाई क्या है?",
-        "options_en": ["Lumen", "Lux", "Candela", "Watt"],
-        "options_hi": ["लुमेन", "लक्स", "कैंडेला", "वाट"],
-        "answer_en": "Candela",
-        "answer_hi": "कैंडेला",
+        "question_en": "What is a HashMap in Rust?",
+        "question_hi": "Rust में HashMap क्या है?",
+        "options_en": ["A key-value store with hashing", "A sorted map", "An array with keys", "A linked list with keys"],
+        "options_hi": ["हैशिंग के साथ एक कुंजी-मान भंडार", "एक क्रमबद्ध मानचित्र", "कुंजियों के साथ एक सरणी", "कुंजियों के साथ एक लिंक्ड सूची"],
+        "answer_en": "A key-value store with hashing",
+        "answer_hi": "हैशिंग के साथ एक कुंजी-मान भंडार",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 39,
-        "question_en": "What is the value of log₁₀100?",
-        "question_hi": "log₁₀100 का मान क्या है?",
-        "options_en": ["1", "2", "10", "100"],
-        "options_hi": ["1", "2", "10", "100"],
-        "answer_en": "2",
-        "answer_hi": "2",
+        "question_en": "How do you create a new HashMap?",
+        "question_hi": "नया HashMap कैसे बनाते हैं?",
+        "options_en": ["use std::collections::HashMap; let map = HashMap::new();", "let map = new HashMap();", "let map = HashMap::create();", "use HashMap; let map = HashMap()"],
+        "options_hi": ["use std::collections::HashMap; let map = HashMap::new();", "let map = new HashMap();", "let map = HashMap::create();", "use HashMap; let map = HashMap()"],
+        "answer_en": "use std::collections::HashMap; let map = HashMap::new();",
+        "answer_hi": "use std::collections::HashMap; let map = HashMap::new();",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 40,
-        "question_en": "Who wrote 'Kitne Pakistan'?",
-        "question_hi": "'कितने पाकिस्तान' किसने लिखा?",
-        "options_en": ["Kamleshwar", "Rahi Masoom Raza", "Krishna Sobti", "Nirmal Verma"],
-        "options_hi": ["कमलेश्वर", "राही मासूम रज़ा", "कृष्णा सोबती", "निर्मल वर्मा"],
-        "answer_en": "Kamleshwar",
-        "answer_hi": "कमलेश्वर",
+        "question_en": "How do you insert into a HashMap?",
+        "question_hi": "HashMap में कैसे इन्सर्ट करते हैं?",
+        "options_en": ["map.insert(key, value);", "map.add(key, value);", "map[key] = value;", "map.set(key, value);"],
+        "options_hi": ["map.insert(key, value);", "map.add(key, value);", "map[key] = value;", "map.set(key, value);"],
+        "answer_en": "map.insert(key, value);",
+        "answer_hi": "map.insert(key, value);",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 41,
-        "question_en": "What is the function of the ribosomes in a cell?",
-        "question_hi": "कोशिका में राइबोसोम का कार्य क्या है?",
-        "options_en": ["Protein synthesis", "Lipid synthesis", "DNA replication", "Energy production"],
-        "options_hi": ["प्रोटीन संश्लेषण", "लिपिड संश्लेषण", "DNA प्रतिकृति", "ऊर्जा उत्पादन"],
-        "answer_en": "Protein synthesis",
-        "answer_hi": "प्रोटीन संश्लेषण",
+        "question_en": "What is the '?' operator used for?",
+        "question_hi": "'?' ऑपरेटर का उपयोग किस लिए किया जाता है?",
+        "options_en": ["Error propagation", "Optional chaining", "Null checking", "Boolean conversion"],
+        "options_hi": ["त्रुटि प्रसार", "वैकल्पिक श्रृंखलन", "शून्य जांच", "बूलियन रूपांतरण"],
+        "answer_en": "Error propagation",
+        "answer_hi": "त्रुटि प्रसार",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 42,
-        "question_en": "What is the pH of a neutral solution?",
-        "question_hi": "उदासीन विलयन का pH क्या होता है?",
-        "options_en": ["0", "7", "14", "1"],
-        "options_hi": ["0", "7", "14", "1"],
-        "answer_en": "7",
-        "answer_hi": "7",
+        "question_en": "What is the difference between Result and Option?",
+        "question_hi": "Result और Option में क्या अंतर है?",
+        "options_en": ["Result is for errors, Option for optional values", "Result is for success, Option for failure", "No difference", "Result is for numbers, Option for strings"],
+        "options_hi": ["Result त्रुटियों के लिए है, Option वैकल्पिक मानों के लिए", "Result सफलता के लिए है, Option विफलता के लिए", "कोई अंतर नहीं", "Result संख्याओं के लिए है, Option स्ट्रिंग्स के लिए"],
+        "answer_en": "Result is for errors, Option for optional values",
+        "answer_hi": "Result त्रुटियों के लिए है, Option वैकल्पिक मानों के लिए",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 43,
-        "question_en": "What is the law of conservation of momentum?",
-        "question_hi": "संवेग संरक्षण का नियम क्या है?",
-        "options_en": ["Momentum can be created", "Momentum can be destroyed", "Total momentum remains constant", "Momentum increases with time"],
-        "options_hi": ["संवेग बनाया जा सकता है", "संवेग नष्ट किया जा सकता है", "कुल संवेग स्थिर रहता है", "संवेग समय के साथ बढ़ता है"],
-        "answer_en": "Total momentum remains constant",
-        "answer_hi": "कुल संवेग स्थिर रहता है",
+        "question_en": "How do you handle a Result with match?",
+        "question_hi": "Result को match से कैसे संभालते हैं?",
+        "options_en": ["match result { Ok(val) => val, Err(e) => panic!() }", "match result { Some(val) => val, None => panic!() }", "switch result { case Ok: case Err: }", "if result.is_ok() { }"],
+        "options_hi": ["match result { Ok(val) => val, Err(e) => panic!() }", "match result { Some(val) => val, None => panic!() }", "switch result { case Ok: case Err: }", "if result.is_ok() { }"],
+        "answer_en": "match result { Ok(val) => val, Err(e) => panic!() }",
+        "answer_hi": "match result { Ok(val) => val, Err(e) => panic!() }",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 44,
-        "question_en": "What is the value of sin²θ + cos²θ?",
-        "question_hi": "sin²θ + cos²θ का मान क्या है?",
-        "options_en": ["0", "1", "2", "sin2θ"],
-        "options_hi": ["0", "1", "2", "sin2θ"],
-        "answer_en": "1",
-        "answer_hi": "1",
+        "question_en": "What does 'unwrap()' do on a Result?",
+        "question_hi": "Result पर 'unwrap()' क्या करता है?",
+        "options_en": ["Returns value or panics on error", "Returns value or default", "Converts to Option", "Ignores error"],
+        "options_hi": ["मान लौटाता है या त्रुटि पर पैनिक करता है", "मान लौटाता है या डिफॉल्ट", "Option में परिवर्तित करता है", "त्रुटि को अनदेखा करता है"],
+        "answer_en": "Returns value or panics on error",
+        "answer_hi": "मान लौटाता है या त्रुटि पर पैनिक करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 45,
-        "question_en": "Who wrote 'Maila Anchal'?",
-        "question_hi": "'मैला आंचल' किसने लिखा?",
-        "options_en": ["Phanishwar Nath Renu", "Premchand", "Jaishankar Prasad", "Mahadevi Verma"],
-        "options_hi": ["फणीश्वर नाथ रेणु", "प्रेमचंद", "जयशंकर प्रसाद", "महादेवी वर्मा"],
-        "answer_en": "Phanishwar Nath Renu",
-        "answer_hi": "फणीश्वर नाथ रेणु",
+        "question_en": "What is 'expect()' used for?",
+        "question_hi": "'expect()' का उपयोग किस लिए किया जाता है?",
+        "options_en": ["Unwrap with custom panic message", "Error handling without panic", "Convert to Option", "Check if value exists"],
+        "options_hi": ["कस्टम पैनिक संदेश के साथ अनरैप", "पैनिक के बिना त्रुटि प्रबंधन", "Option में परिवर्तित करना", "जांचना कि मान मौजूद है या नहीं"],
+        "answer_en": "Unwrap with custom panic message",
+        "answer_hi": "कस्टम पैनिक संदेश के साथ अनरैप",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 46,
-        "question_en": "What is the process of DNA replication called?",
-        "question_hi": "DNA प्रतिकृति की प्रक्रिया को क्या कहते हैं?",
-        "options_en": ["Transcription", "Translation", "Semi-conservative replication", "Conservative replication"],
-        "options_hi": ["ट्रांसक्रिप्शन", "ट्रांसलेशन", "अर्ध-संरक्षी प्रतिकृति", "संरक्षी प्रतिकृति"],
-        "answer_en": "Semi-conservative replication",
-        "answer_hi": "अर्ध-संरक्षी प्रतिकृति",
+        "question_en": "How do you define a generic function?",
+        "question_hi": "जेनेरिक फंक्शन कैसे परिभाषित करते हैं?",
+        "options_en": ["fn func<T>(param: T) -> T {}", "generic fn func<T>(param: T) {}", "fn func generic<T>(param: T) {}", "function<T> func(param: T) {}"],
+        "options_hi": ["fn func<T>(param: T) -> T {}", "generic fn func<T>(param: T) {}", "fn func generic<T>(param: T) {}", "function<T> func(param: T) {}"],
+        "answer_en": "fn func<T>(param: T) -> T {}",
+        "answer_hi": "fn func<T>(param: T) -> T {}",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 47,
-        "question_en": "What is the formula of benzene?",
-        "question_hi": "बेंजीन का सूत्र क्या है?",
-        "options_en": ["C₆H₆", "C₆H₁₂", "C₆H₅OH", "C₆H₅COOH"],
-        "options_hi": ["C₆H₆", "C₆H₁₂", "C₆H₅OH", "C₆H₅COOH"],
-        "answer_en": "C₆H₆",
-        "answer_hi": "C₆H₆",
+        "question_en": "What are traits in Rust?",
+        "question_hi": "Rust में ट्रेट्स क्या हैं?",
+        "options_en": ["Interfaces that define shared behavior", "Class inheritance", "Function templates", "Type aliases"],
+        "options_hi": ["इंटरफेस जो साझा व्यवहार को परिभाषित करते हैं", "क्लास इनहेरिटेंस", "फंक्शन टेम्पलेट्स", "टाइप अलायसेस"],
+        "answer_en": "Interfaces that define shared behavior",
+        "answer_hi": "इंटरफेस जो साझा व्यवहार को परिभाषित करते हैं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 48,
-        "question_en": "What is the unit of frequency?",
-        "question_hi": "आवृत्ति की इकाई क्या है?",
-        "options_en": ["Hertz", "Decibel", "Newton", "Joule"],
-        "options_hi": ["हर्ट्ज", "डेसिबल", "न्यूटन", "जूल"],
-        "answer_en": "Hertz",
-        "answer_hi": "हर्ट्ज",
+        "question_en": "How do you define a trait?",
+        "question_hi": "ट्रेट कैसे परिभाषित करते हैं?",
+        "options_en": ["trait MyTrait { fn method(&self); }", "struct trait MyTrait { }", "interface MyTrait { }", "define trait MyTrait;"],
+        "options_hi": ["trait MyTrait { fn method(&self); }", "struct trait MyTrait { }", "interface MyTrait { }", "define trait MyTrait;"],
+        "answer_en": "trait MyTrait { fn method(&self); }",
+        "answer_hi": "trait MyTrait { fn method(&self); }",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 49,
-        "question_en": "What is the value of d/dx(e^x)?",
-        "question_hi": "d/dx(e^x) का मान क्या है?",
-        "options_en": ["e^x", "xe^x", "e^x/x", "ln x"],
-        "options_hi": ["e^x", "xe^x", "e^x/x", "ln x"],
-        "answer_en": "e^x",
-        "answer_hi": "e^x",
+        "question_en": "How do you implement a trait for a type?",
+        "question_hi": "किसी प्रकार के लिए ट्रेट कैसे लागू करते हैं?",
+        "options_en": ["impl MyTrait for MyStruct {}", "trait impl for MyStruct {}", "MyStruct implements MyTrait {}", "implement MyTrait for MyStruct {}"],
+        "options_hi": ["impl MyTrait for MyStruct {}", "trait impl for MyStruct {}", "MyStruct implements MyTrait {}", "implement MyTrait for MyStruct {}"],
+        "answer_en": "impl MyTrait for MyStruct {}",
+        "answer_hi": "impl MyTrait for MyStruct {}",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 50,
-        "question_en": "Who wrote 'Raag Darbari'?",
-        "question_hi": "'राग दरबारी' किसने लिखा?",
-        "options_en": ["Shrilal Shukla", "Rahi Masoom Raza", "Kamleshwar", "Nirmal Verma"],
-        "options_hi": ["श्रीलाल शुक्ल", "राही मासूम रज़ा", "कमलेश्वर", "निर्मल वर्मा"],
-        "answer_en": "Shrilal Shukla",
-        "answer_hi": "श्रीलाल शुक्ल",
+        "question_en": "What is the 'self' parameter in methods?",
+        "question_hi": "मेथड्स में 'self' पैरामीटर क्या है?",
+        "options_en": ["A reference to the instance", "A static method marker", "A return value", "An error parameter"],
+        "options_hi": ["इंस्टेंस का एक संदर्भ", "एक स्थिर मेथड मार्कर", "एक रिटर्न वैल्यू", "एक त्रुटि पैरामीटर"],
+        "answer_en": "A reference to the instance",
+        "answer_hi": "इंस्टेंस का एक संदर्भ",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 51,
-        "question_en": "What is the function of mitochondria?",
-        "question_hi": "माइटोकॉन्ड्रिया का कार्य क्या है?",
-        "options_en": ["Protein synthesis", "Energy production", "Lipid synthesis", "Waste elimination"],
-        "options_hi": ["प्रोटीन संश्लेषण", "ऊर्जा उत्पादन", "लिपिड संश्लेषण", "अपशिष्ट निष्कासन"],
-        "answer_en": "Energy production",
-        "answer_hi": "ऊर्जा उत्पादन",
+        "question_en": "What is the difference between &self and self?",
+        "question_hi": "&self और self में क्या अंतर है?",
+        "options_en": ["&self borrows, self takes ownership", "&self is mutable, self is immutable", "No difference", "&self for static, self for instance"],
+        "options_hi": ["&self उधार लेता है, self स्वामित्व लेता है", "&self परिवर्तनशील है, self अपरिवर्तनीय है", "कोई अंतर नहीं", "&self स्थिर के लिए, self इंस्टेंस के लिए"],
+        "answer_en": "&self borrows, self takes ownership",
+        "answer_hi": "&self उधार लेता है, self स्वामित्व लेता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 52,
-        "question_en": "What is the atomic number of carbon?",
-        "question_hi": "कार्बन की परमाणु संख्या क्या है?",
-        "options_en": ["6", "12", "14", "8"],
-        "options_hi": ["6", "12", "14", "8"],
-        "answer_en": "6",
-        "answer_hi": "6",
+        "question_en": "How do you create a new thread?",
+        "question_hi": "नया थ्रेड कैसे बनाते हैं?",
+        "options_en": ["std::thread::spawn(|| {})", "thread::new(|| {})", "spawn_thread(|| {})", "Thread::create(|| {})"],
+        "options_hi": ["std::thread::spawn(|| {})", "thread::new(|| {})", "spawn_thread(|| {})", "Thread::create(|| {})"],
+        "answer_en": "std::thread::spawn(|| {})",
+        "answer_hi": "std::thread::spawn(|| {})",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 53,
-        "question_en": "What is Newton's first law of motion?",
-        "question_hi": "न्यूटन की गति का पहला नियम क्या है?",
-        "options_en": ["F = ma", "Action and reaction", "Inertia", "Conservation of energy"],
-        "options_hi": ["F = ma", "क्रिया और प्रतिक्रिया", "जड़त्व", "ऊर्जा संरक्षण"],
-        "answer_en": "Inertia",
-        "answer_hi": "जड़त्व",
+        "question_en": "What is the 'move' keyword in closures?",
+        "question_hi": "क्लोजर में 'move' कीवर्ड क्या है?",
+        "options_en": ["Takes ownership of captured variables", "Moves closure to heap", "Makes closure mutable", "Moves closure between threads"],
+        "options_hi": ["कैप्चर वेरिएबल्स का स्वामित्व लेता है", "क्लोजर को हीप पर ले जाता है", "क्लोजर को परिवर्तनशील बनाता है", "क्लोजर को थ्रेड्स के बीच ले जाता है"],
+        "answer_en": "Takes ownership of captured variables",
+        "answer_hi": "कैप्चर वेरिएबल्स का स्वामित्व लेता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 54,
-        "question_en": "What is the value of ∫dx?",
-        "question_hi": "∫dx का मान क्या है?",
-        "options_en": ["x", "x + C", "1", "0"],
-        "options_hi": ["x", "x + C", "1", "0"],
-        "answer_en": "x + C",
-        "answer_hi": "x + C",
+        "question_en": "What is a closure in Rust?",
+        "question_hi": "Rust में क्लोजर क्या है?",
+        "options_en": ["An anonymous function that captures its environment", "A named function", "A function pointer", "A method"],
+        "options_hi": ["एक अनाम फंक्शन जो अपने वातावरण को कैप्चर करता है", "एक नामित फंक्शन", "एक फंक्शन पॉइंटर", "एक मेथड"],
+        "answer_en": "An anonymous function that captures its environment",
+        "answer_hi": "एक अनाम फंक्शन जो अपने वातावरण को कैप्चर करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 55,
-        "question_en": "Who wrote 'Tamas'?",
-        "question_hi": "'तमस' किसने लिखा?",
-        "options_en": ["Bhisham Sahni", "Mohan Rakesh", "Dharamvir Bharati", "Kamleshwar"],
-        "options_hi": ["भीष्म साहनी", "मोहन राकेश", "धर्मवीर भारती", "कमलेश्वर"],
-        "answer_en": "Bhisham Sahni",
-        "answer_hi": "भीष्म साहनी",
+        "question_en": "How do you define a closure?",
+        "question_hi": "क्लोजर कैसे परिभाषित करते हैं?",
+        "options_en": ["let closure = |x| x + 1;", "closure |x| x + 1;", "let closure = function(x) { x + 1 };", "fn closure(x) { x + 1 }"],
+        "options_hi": ["let closure = |x| x + 1;", "closure |x| x + 1;", "let closure = function(x) { x + 1 };", "fn closure(x) { x + 1 }"],
+        "answer_en": "let closure = |x| x + 1;",
+        "answer_hi": "let closure = |x| x + 1;",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 56,
-        "question_en": "What is the site of cellular respiration?",
-        "question_hi": "कोशिकीय श्वसन का स्थल क्या है?",
-        "options_en": ["Mitochondria", "Chloroplast", "Ribosome", "Nucleus"],
-        "options_hi": ["माइटोकॉन्ड्रिया", "हरितलवक", "राइबोसोम", "केंद्रक"],
-        "answer_en": "Mitochondria",
-        "answer_hi": "माइटोकॉन्ड्रिया",
+        "question_en": "What are the Fn traits?",
+        "question_hi": "Fn ट्रेट्स क्या हैं?",
+        "options_en": ["Traits for callable types", "Function definitions", "Closure parameters", "Method signatures"],
+        "options_hi": ["कॉलेबल प्रकारों के लिए ट्रेट्स", "फंक्शन परिभाषाएँ", "क्लोजर पैरामीटर", "मेथड सिग्नेचर"],
+        "answer_en": "Traits for callable types",
+        "answer_hi": "कॉलेबल प्रकारों के लिए ट्रेट्स",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 57,
-        "question_en": "What is the formula of sulfuric acid?",
-        "question_hi": "सल्फ्यूरिक अम्ल का सूत्र क्या है?",
-        "options_en": ["H₂SO₄", "HCl", "HNO₃", "H₃PO₄"],
-        "options_hi": ["H₂SO₄", "HCl", "HNO₃", "H₃PO₄"],
-        "answer_en": "H₂SO₄",
-        "answer_hi": "H₂SO₄",
+        "question_en": "What is the difference between Fn, FnMut, and FnOnce?",
+        "question_hi": "Fn, FnMut, और FnOnce में क्या अंतर है?",
+        "options_en": ["Different borrowing requirements for captured variables", "Different return types", "Different parameter counts", "No difference"],
+        "options_hi": ["कैप्चर वेरिएबल्स के लिए अलग-अलग उधार आवश्यकताएँ", "अलग-अलग रिटर्न प्रकार", "अलग-अलग पैरामीटर संख्या", "कोई अंतर नहीं"],
+        "answer_en": "Different borrowing requirements for captured variables",
+        "answer_hi": "कैप्चर वेरिएबल्स के लिए अलग-अलग उधार आवश्यकताएँ",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 58,
-        "question_en": "What is the unit of electric current?",
-        "question_hi": "विद्युत धारा की इकाई क्या है?",
-        "options_en": ["Volt", "Ampere", "Ohm", "Watt"],
-        "options_hi": ["वोल्ट", "एम्पियर", "ओम", "वाट"],
-        "answer_en": "Ampere",
-        "answer_hi": "एम्पियर",
+        "question_en": "How do you return a closure from a function?",
+        "question_hi": "फंक्शन से क्लोजर कैसे लौटाते हैं?",
+        "options_en": ["Box<dyn Fn() -> i32>", "impl Fn() -> i32", "Closure trait", "Both A and B"],
+        "options_hi": ["Box<dyn Fn() -> i32>", "impl Fn() -> i32", "Closure trait", "A और B दोनों"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 59,
-        "question_en": "What is the value of cos(π/2)?",
-        "question_hi": "cos(π/2) का मान क्या है?",
-        "options_en": ["0", "1", "-1", "1/2"],
-        "options_hi": ["0", "1", "-1", "1/2"],
-        "answer_en": "0",
-        "answer_hi": "0",
+        "question_en": "What is a smart pointer in Rust?",
+        "question_hi": "Rust में स्मार्ट पॉइंटर क्या है?",
+        "options_en": ["A pointer with additional metadata and capabilities", "A raw pointer", "A reference", "A function pointer"],
+        "options_hi": ["अतिरिक्त मेटाडेटा और क्षमताओं वाला एक पॉइंटर", "एक रॉ पॉइंटर", "एक संदर्भ", "एक फंक्शन पॉइंटर"],
+        "answer_en": "A pointer with additional metadata and capabilities",
+        "answer_hi": "अतिरिक्त मेटाडेटा और क्षमताओं वाला एक पॉइंटर",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 60,
-        "question_en": "Who wrote 'Ashadh Ka Ek Din'?",
-        "question_hi": "'आषाढ़ का एक दिन' किसने लिखा?",
-        "options_en": ["Mohan Rakesh", "Dharamvir Bharati", "Bhisham Sahni", "Vijay Tendulkar"],
-        "options_hi": ["मोहन राकेश", "धर्मवीर भारती", "भीष्म साहनी", "विजय तेंदुलकर"],
-        "answer_en": "Mohan Rakesh",
-        "answer_hi": "मोहन राकेश",
+        "question_en": "What is Box<T> used for?",
+        "question_hi": "Box<T> का उपयोग किस लिए किया जाता है?",
+        "options_en": ["Heap allocation with ownership", "Reference counting", "Automatic dereferencing", "Thread safety"],
+        "options_hi": ["स्वामित्व के साथ हीप आवंटन", "संदर्भ गिनती", "स्वचालित डीरेफरेंसिंग", "थ्रेड सुरक्षा"],
+        "answer_en": "Heap allocation with ownership",
+        "answer_hi": "स्वामित्व के साथ हीप आवंटन",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 61,
-        "question_en": "What is the function of the nucleus in a cell?",
-        "question_hi": "कोशिका में केंद्रक का कार्य क्या है?",
-        "options_en": ["Energy production", "Protein synthesis", "Genetic control", "Waste elimination"],
-        "options_hi": ["ऊर्जा उत्पादन", "प्रोटीन संश्लेषण", "आनुवंशिक नियंत्रण", "अपशिष्ट निष्कासन"],
-        "answer_en": "Genetic control",
-        "answer_hi": "आनुवंशिक नियंत्रण",
+        "question_en": "What is Rc<T> used for?",
+        "question_hi": "Rc<T> का उपयोग किस लिए किया जाता है?",
+        "options_en": ["Reference counting for single-threaded scenarios", "Thread-safe reference counting", "Automatic memory management", "Heap allocation"],
+        "options_hi": ["सिंगल-थ्रेडेड परिदृश्यों के लिए संदर्भ गिनती", "थ्रेड-सुरक्षित संदर्भ गिनती", "स्वचालित मेमोरी प्रबंधन", "हीप आवंटन"],
+        "answer_en": "Reference counting for single-threaded scenarios",
+        "answer_hi": "सिंगल-थ्रेडेड परिदृश्यों के लिए संदर्भ गिनती",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 62,
-        "question_en": "What is the pH of pure water?",
-        "question_hi": "शुद्ध जल का pH क्या होता है?",
-        "options_en": ["0", "7", "14", "1"],
-        "options_hi": ["0", "7", "14", "1"],
-        "answer_en": "7",
-        "answer_hi": "7",
+        "question_en": "What is Arc<T> used for?",
+        "question_hi": "Arc<T> का उपयोग किस लिए किया जाता है?",
+        "options_en": ["Atomic reference counting for thread safety", "Automatic memory cleanup", "Stack allocation", "Single ownership"],
+        "options_hi": ["थ्रेड सुरक्षा के लिए परमाणु संदर्भ गिनती", "स्वचालित मेमोरी सफाई", "स्टैक आवंटन", "एकल स्वामित्व"],
+        "answer_en": "Atomic reference counting for thread safety",
+        "answer_hi": "थ्रेड सुरक्षा के लिए परमाणु संदर्भ गिनती",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 63,
-        "question_en": "What is the law of gravitation?",
-        "question_hi": "गुरुत्वाकर्षण का नियम क्या है?",
-        "options_en": ["F = G(m₁m₂/r²)", "F = ma", "E = mc²", "PV = nRT"],
-        "options_hi": ["F = G(m₁m₂/r²)", "F = ma", "E = mc²", "PV = nRT"],
-        "answer_en": "F = G(m₁m₂/r²)",
-        "answer_hi": "F = G(m₁m₂/r²)",
+        "question_en": "What is RefCell<T> used for?",
+        "question_hi": "RefCell<T> का उपयोग किस लिए किया जाता है?",
+        "options_en": ["Interior mutability with runtime borrowing checks", "Compile-time borrowing checks", "Thread safety", "Automatic memory management"],
+        "options_hi": ["रनटाइम उधार जांच के साथ आंतरिक परिवर्तनशीलता", "कंपाइल-टाइम उधार जांच", "थ्रेड सुरक्षा", "स्वचालित मेमोरी प्रबंधन"],
+        "answer_en": "Interior mutability with runtime borrowing checks",
+        "answer_hi": "रनटाइम उधार जांच के साथ आंतरिक परिवर्तनशीलता",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 64,
-        "question_en": "What is the value of sin(π)?",
-        "question_hi": "sin(π) का मान क्या है?",
-        "options_en": ["0", "1", "-1", "1/2"],
-        "options_hi": ["0", "1", "-1", "1/2"],
-        "answer_en": "0",
-        "answer_hi": "0",
+        "question_en": "What is Cell<T> used for?",
+        "question_hi": "Cell<T> का उपयोग किस लिए किया जाता है?",
+        "options_en": ["Interior mutability for Copy types", "Thread safety", "Automatic memory management", "Reference counting"],
+        "options_hi": ["Copy प्रकारों के लिए आंतरिक परिवर्तनशीलता", "थ्रेड सुरक्षा", "स्वचालित मेमोरी प्रबंधन", "संदर्भ गिनती"],
+        "answer_en": "Interior mutability for Copy types",
+        "answer_hi": "Copy प्रकारों के लिए आंतरिक परिवर्तनशीलता",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 65,
-        "question_en": "Who wrote 'Kafan'?",
-        "question_hi": "'कफन' किसने लिखा?",
-        "options_en": ["Premchand", "Jaishankar Prasad", "Mahadevi Verma", "Suryakant Tripathi"],
-        "options_hi": ["प्रेमचंद", "जयशंकर प्रसाद", "महादेवी वर्मा", "सूर्यकांत त्रिपाठी"],
-        "answer_en": "Premchand",
-        "answer_hi": "प्रेमचंद",
+        "question_en": "What is the difference between Cell and RefCell?",
+        "question_hi": "Cell और RefCell में क्या अंतर है?",
+        "options_en": ["Cell works with Copy types, RefCell with any type", "Cell is thread-safe, RefCell is not", "No difference", "Cell uses references, RefCell uses values"],
+        "options_hi": ["Cell Copy प्रकारों के साथ काम करता है, RefCell किसी भी प्रकार के साथ", "Cell थ्रेड-सुरक्षित है, RefCell नहीं है", "कोई अंतर नहीं", "Cell संदर्भों का उपयोग करता है, RefCell मानों का उपयोग करता है"],
+        "answer_en": "Cell works with Copy types, RefCell with any type",
+        "answer_hi": "Cell Copy प्रकारों के साथ काम करता है, RefCell किसी भी प्रकार के साथ",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 66,
-        "question_en": "What is the process of water movement in plants called?",
-        "question_hi": "पौधों में जल के संचलन की प्रक्रिया को क्या कहते हैं?",
-        "options_en": ["Transpiration", "Photosynthesis", "Respiration", "Osmosis"],
-        "options_hi": ["वाष्पोत्सर्जन", "प्रकाश संश्लेषण", "श्वसन", "परासरण"],
-        "answer_en": "Transpiration",
-        "answer_hi": "वाष्पोत्सर्जन",
+        "question_en": "What is the Drop trait?",
+        "question_hi": "Drop ट्रेट क्या है?",
+        "options_en": ["Custom cleanup when value goes out of scope", "Automatic memory allocation", "Error handling", "Pattern matching"],
+        "options_hi": ["मान के स्कोप से बाहर जाने पर कस्टम सफाई", "स्वचालित मेमोरी आवंटन", "त्रुटि प्रबंधन", "पैटर्न मिलान"],
+        "answer_en": "Custom cleanup when value goes out of scope",
+        "answer_hi": "मान के स्कोप से बाहर जाने पर कस्टम सफाई",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 67,
-        "question_en": "What is the formula of methane?",
-        "question_hi": "मीथेन का सूत्र क्या है?",
-        "options_en": ["CH₄", "C₂H₆", "C₃H₈", "C₄H₁₀"],
-        "options_hi": ["CH₄", "C₂H₆", "C₃H₈", "C₄H₁₀"],
-        "answer_en": "CH₄",
-        "answer_hi": "CH₄",
+        "question_en": "What is the Clone trait?",
+        "question_hi": "Clone ट्रेट क्या है?",
+        "options_en": ["Explicit duplication of values", "Automatic copying", "Memory management", "Error handling"],
+        "options_hi": ["मानों की स्पष्ट प्रतिलिपि", "स्वचालित कॉपीिंग", "मेमोरी प्रबंधन", "त्रुटि प्रबंधन"],
+        "answer_en": "Explicit duplication of values",
+        "answer_hi": "मानों की स्पष्ट प्रतिलिपि",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 68,
-        "question_en": "What is the unit of force?",
-        "question_hi": "बल की इकाई क्या है?",
-        "options_en": ["Newton", "Joule", "Watt", "Pascal"],
-        "options_hi": ["न्यूटन", "जूल", "वाट", "पास्कल"],
-        "answer_en": "Newton",
-        "answer_hi": "न्यूटन",
+        "question_en": "What is the Copy trait?",
+        "question_hi": "Copy ट्रेट क्या है?",
+        "options_en": ["Mark types that can be copied bitwise", "Automatic duplication", "Memory management", "Error handling"],
+        "options_hi": ["उन प्रकारों को चिह्नित करें जिन्हें बिटवाइज कॉपी किया जा सकता है", "स्वचालित प्रतिलिपि", "मेमोरी प्रबंधन", "त्रुटि प्रबंधन"],
+        "answer_en": "Mark types that can be copied bitwise",
+        "answer_hi": "उन प्रकारों को चिह्नित करें जिन्हें बिटवाइज कॉपी किया जा सकता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 69,
-        "question_en": "What is the value of tan(π)?",
-        "question_hi": "tan(π) का मान क्या है?",
-        "options_en": ["0", "1", "-1", "∞"],
-        "options_hi": ["0", "1", "-1", "∞"],
-        "answer_en": "0",
-        "answer_hi": "0",
+        "question_en": "What is the difference between Clone and Copy?",
+        "question_hi": "Clone और Copy में क्या अंतर है?",
+        "options_en": ["Clone is explicit, Copy is implicit", "Clone for heap, Copy for stack", "No difference", "Clone for structs, Copy for enums"],
+        "options_hi": ["Clone स्पष्ट है, Copy अंतर्निहित है", "Clone हीप के लिए, Copy स्टैक के लिए", "कोई अंतर नहीं", "Clone स्ट्रक्चर के लिए, Copy एनम के लिए"],
+        "answer_en": "Clone is explicit, Copy is implicit",
+        "answer_hi": "Clone स्पष्ट है, Copy अंतर्निहित है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 70,
-        "question_en": "Who wrote 'Chandrakanta'?",
-        "question_hi": "'चंद्रकांता' किसने लिखा?",
-        "options_en": ["Devaki Nandan Khatri", "Premchand", "Jaishankar Prasad", "Mahadevi Verma"],
-        "options_hi": ["देवकी नंदन खत्री", "प्रेमचंद", "जयशंकर प्रसाद", "महादेवी वर्मा"],
-        "answer_en": "Devaki Nandan Khatri",
-        "answer_hi": "देवकी नंदन खत्री",
+        "question_en": "What is the Default trait?",
+        "question_hi": "Default ट्रेट क्या है?",
+        "options_en": ["Provide default values for types", "Memory allocation", "Error handling", "Pattern matching"],
+        "options_hi": ["प्रकारों के लिए डिफॉल्ट मान प्रदान करना", "मेमोरी आवंटन", "त्रुटि प्रबंधन", "पैटर्न मिलान"],
+        "answer_en": "Provide default values for types",
+        "answer_hi": "प्रकारों के लिए डिफॉल्ट मान प्रदान करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 71,
-        "question_en": "What is the function of chlorophyll in plants?",
-        "question_hi": "पौधों में क्लोरोफिल का कार्य क्या है?",
-        "options_en": ["Water absorption", "Photosynthesis", "Respiration", "Protein synthesis"],
-        "options_hi": ["जल अवशोषण", "प्रकाश संश्लेषण", "श्वसन", "प्रोटीन संश्लेषण"],
-        "answer_en": "Photosynthesis",
-        "answer_hi": "प्रकाश संश्लेषण",
+        "question_en": "What is the From trait?",
+        "question_hi": "From ट्रेट क्या है?",
+        "options_en": ["Type conversion with guaranteed success", "Error handling", "Memory allocation", "Pattern matching"],
+        "options_hi": ["गारंटीकृत सफलता के साथ प्रकार रूपांतरण", "त्रुटि प्रबंधन", "मेमोरी आवंटन", "पैटर्न मिलान"],
+        "answer_en": "Type conversion with guaranteed success",
+        "answer_hi": "गारंटीकृत सफलता के साथ प्रकार रूपांतरण",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 72,
-        "question_en": "What is the atomic mass of oxygen?",
-        "question_hi": "ऑक्सीजन का परमाणु द्रव्यमान क्या है?",
-        "options_en": ["16", "32", "8", "64"],
-        "options_hi": ["16", "32", "8", "64"],
-        "answer_en": "16",
-        "answer_hi": "16",
+        "question_en": "What is the Into trait?",
+        "question_hi": "Into ट्रेट क्या है?",
+        "options_en": ["Reciprocal of From trait", "Error conversion", "Memory allocation", "Type checking"],
+        "options_hi": ["From ट्रेट का पारस्परिक", "त्रुटि रूपांतरण", "मेमोरी आवंटन", "प्रकार जांच"],
+        "answer_en": "Reciprocal of From trait",
+        "answer_hi": "From ट्रेट का पारस्परिक",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 73,
-        "question_en": "What is the speed of light in vacuum?",
-        "question_hi": "निर्वात में प्रकाश की गति क्या है?",
-        "options_en": ["3×10⁸ m/s", "3×10⁶ m/s", "3×10⁵ m/s", "3×10¹⁰ m/s"],
-        "options_hi": ["3×10⁸ मी/से", "3×10⁶ मी/से", "3×10⁵ मी/से", "3×10¹⁰ मी/से"],
-        "answer_en": "3×10⁸ m/s",
-        "answer_hi": "3×10⁸ मी/से",
+        "question_en": "What is the Deref trait?",
+        "question_hi": "Deref ट्रेट क्या है?",
+        "options_en": ["Enable dereference operator (*) overloading", "Memory allocation", "Error handling", "Pattern matching"],
+        "options_hi": ["डीरेफरेंस ऑपरेटर (*) ओवरलोडिंग सक्षम करना", "मेमोरी आवंटन", "त्रुटि प्रबंधन", "पैटर्न मिलान"],
+        "answer_en": "Enable dereference operator (*) overloading",
+        "answer_hi": "डीरेफरेंस ऑपरेटर (*) ओवरलोडिंग सक्षम करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 74,
-        "question_en": "What is the value of log₁₀1000?",
-        "question_hi": "log₁₀1000 का मान क्या है?",
-        "options_en": ["1", "2", "3", "4"],
-        "options_hi": ["1", "2", "3", "4"],
-        "answer_en": "3",
-        "answer_hi": "3",
+        "question_en": "What is the AsRef trait?",
+        "question_hi": "AsRef ट्रेट क्या है?",
+        "options_en": ["Enable cheap reference-to-reference conversion", "Memory allocation", "Error handling", "Pattern matching"],
+        "options_hi": ["सस्ता संदर्भ-से-संदर्भ रूपांतरण सक्षम करना", "मेमोरी आवंटन", "त्रुटि प्रबंधन", "पैटर्न मिलान"],
+        "answer_en": "Enable cheap reference-to-reference conversion",
+        "answer_hi": "सस्ता संदर्भ-से-संदर्भ रूपांतरण सक्षम करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 75,
-        "question_en": "Who wrote 'Saket'?",
-        "question_hi": "'साकेत' किसने लिखा?",
-        "options_en": ["Maithili Sharan Gupt", "Jaishankar Prasad", "Mahadevi Verma", "Suryakant Tripathi"],
-        "options_hi": ["मैथिलीशरण गुप्त", "जयशंकर प्रसाद", "महादेवी वर्मा", "सूर्यकांत त्रिपाठी"],
-        "answer_en": "Maithili Sharan Gupt",
-        "answer_hi": "मैथिलीशरण गुप्त",
+        "question_en": "What is the Borrow trait?",
+        "question_hi": "Borrow ट्रेट क्या है?",
+        "options_en": ["Similar to AsRef but with additional semantic meaning", "Memory allocation", "Error handling", "Pattern matching"],
+        "options_hi": ["AsRef के समान लेकिन अतिरिक्त अर्थ के साथ", "मेमोरी आवंटन", "त्रुटि प्रबंधन", "पैटर्न मिलान"],
+        "answer_en": "Similar to AsRef but with additional semantic meaning",
+        "answer_hi": "AsRef के समान लेकिन अतिरिक्त अर्थ के साथ",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 76,
-        "question_en": "What is the process of cell division in reproductive cells?",
-        "question_hi": "प्रजनन कोशिकाओं में कोशिका विभाजन की प्रक्रिया क्या है?",
-        "options_en": ["Mitosis", "Meiosis", "Binary fission", "Budding"],
-        "options_hi": ["समसूत्री विभाजन", "अर्धसूत्री विभाजन", "द्विखंडन", "मुकुलन"],
-        "answer_en": "Meiosis",
-        "answer_hi": "अर्धसूत्री विभाजन",
+        "question_en": "What is the ToOwned trait?",
+        "question_hi": "ToOwned ट्रेट क्या है?",
+        "options_en": ["Create owned data from borrowed data", "Memory allocation", "Error handling", "Pattern matching"],
+        "options_hi": ["उधार डेटा से स्वामित्व वाला डेटा बनाना", "मेमोरी आवंटन", "त्रुटि प्रबंधन", "पैटर्न मिलान"],
+        "answer_en": "Create owned data from borrowed data",
+        "answer_hi": "उधार डेटा से स्वामित्व वाला डेटा बनाना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 77,
-        "question_en": "What is the formula of carbon dioxide?",
-        "question_hi": "कार्बन डाइऑक्साइड का सूत्र क्या है?",
-        "options_en": ["CO", "CO₂", "C₂O", "C₃O₂"],
-        "options_hi": ["CO", "CO₂", "C₂O", "C₃O₂"],
-        "answer_en": "CO₂",
-        "answer_hi": "CO₂",
+        "question_en": "What is the Cow (Clone on Write) type?",
+        "question_hi": "Cow (Clone on Write) प्रकार क्या है?",
+        "options_en": ["Efficient borrowing with optional cloning", "Automatic copying", "Memory allocation", "Thread synchronization"],
+        "options_hi": ["वैकल्पिक क्लोनिंग के साथ कुशल उधार", "स्वचालित कॉपीिंग", "मेमोरी आवंटन", "थ्रेड सिंक्रनाइज़ेशन"],
+        "answer_en": "Efficient borrowing with optional cloning",
+        "answer_hi": "वैकल्पिक क्लोनिंग के साथ कुशल उधार",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 78,
-        "question_en": "What is the unit of energy?",
-        "question_hi": "ऊर्जा की इकाई क्या है?",
-        "options_en": ["Joule", "Newton", "Watt", "Pascal"],
-        "options_hi": ["जूल", "न्यूटन", "वाट", "पास्कल"],
-        "answer_en": "Joule",
-        "answer_hi": "जूल",
+        "question_en": "What is the Send trait?",
+        "question_hi": "Send ट्रेट क्या है?",
+        "options_en": ["Mark types that can be transferred across threads", "Automatic serialization", "Memory safety", "Error handling"],
+        "options_hi": ["उन प्रकारों को चिह्नित करें जिन्हें थ्रेड्स के बीच स्थानांतरित किया जा सकता है", "स्वचालित क्रमबद्धता", "मेमोरी सुरक्षा", "त्रुटि प्रबंधन"],
+        "answer_en": "Mark types that can be transferred across threads",
+        "answer_hi": "उन प्रकारों को चिह्नित करें जिन्हें थ्रेड्स के बीच स्थानांतरित किया जा सकता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 79,
-        "question_en": "What is the value of cos(0)?",
-        "question_hi": "cos(0) का मान क्या है?",
-        "options_en": ["0", "1", "-1", "1/2"],
-        "options_hi": ["0", "1", "-1", "1/2"],
-        "answer_en": "1",
-        "answer_hi": "1",
+        "question_en": "What is the Sync trait?",
+        "question_hi": "Sync ट्रेट क्या है?",
+        "options_en": ["Mark types safe to share references between threads", "Thread creation", "Memory allocation", "Error handling"],
+        "options_hi": ["उन प्रकारों को चिह्नित करें जो थ्रेड्स के बीच संदर्भ साझा करने के लिए सुरक्षित हैं", "थ्रेड निर्माण", "मेमोरी आवंटन", "त्रुटि प्रबंधन"],
+        "answer_en": "Mark types safe to share references between threads",
+        "answer_hi": "उन प्रकारों को चिह्नित करें जो थ्रेड्स के बीच संदर्भ साझा करने के लिए सुरक्षित हैं",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 80,
-        "question_en": "Who wrote 'Nirmala'?",
-        "question_hi": "'निर्मला' किसने लिखा?",
-        "options_en": ["Premchand", "Jaishankar Prasad", "Mahadevi Verma", "Suryakant Tripathi"],
-        "options_hi": ["प्रेमचंद", "जयशंकर प्रसाद", "महादेवी वर्मा", "सूर्यकांत त्रिपाठी"],
-        "answer_en": "Premchand",
-        "answer_hi": "प्रेमचंद",
+        "question_en": "What is the 'unsafe' keyword used for?",
+        "question_hi": "'unsafe' कीवर्ड का उपयोग किस लिए किया जाता है?",
+        "options_en": ["Enable operations that bypass compiler checks", "Disable all safety checks", "Make code faster", "Handle errors"],
+        "options_hi": ["कंपाइलर जांच को बायपास करने वाले ऑपरेशन सक्षम करना", "सभी सुरक्षा जांच अक्षम करना", "कोड को तेज बनाना", "त्रुटियों को संभालना"],
+        "answer_en": "Enable operations that bypass compiler checks",
+        "answer_hi": "कंपाइलर जांच को बायपास करने वाले ऑपरेशन सक्षम करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 81,
-        "question_en": "What is the function of the cell membrane?",
-        "question_hi": "कोशिका झिल्ली का कार्य क्या है?",
-        "options_en": ["Protein synthesis", "Selective permeability", "Energy production", "DNA replication"],
-        "options_hi": ["प्रोटीन संश्लेषण", "वरणात्मक पारगम्यता", "ऊर्जा उत्पादन", "DNA प्रतिकृति"],
-        "answer_en": "Selective permeability",
-        "answer_hi": "वरणात्मक पारगम्यता",
+        "question_en": "What can you do in unsafe Rust?",
+        "question_hi": "unsafe Rust में आप क्या कर सकते हैं?",
+        "options_en": ["Dereference raw pointers, call unsafe functions, access mutable statics", "Ignore all borrow checker rules", "Make any code memory safe", "Automatically fix memory errors"],
+        "options_hi": ["रॉ पॉइंटर्स को डीरेफरेंस करना, unsafe फंक्शन कॉल करना, म्यूटेबल स्टैटिक्स एक्सेस करना", "सभी उधार चेकर नियमों को अनदेखा करना", "किसी भी कोड को मेमोरी सुरक्षित बनाना", "मेमोरी त्रुटियों को स्वचालित रूप से ठीक करना"],
+        "answer_en": "Dereference raw pointers, call unsafe functions, access mutable statics",
+        "answer_hi": "रॉ पॉइंटर्स को डीरेफरेंस करना, unsafe फंक्शन कॉल करना, म्यूटेबल स्टैटिक्स एक्सेस करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 82,
-        "question_en": "What is the formula of water?",
-        "question_hi": "जल का सूत्र क्या है?",
-        "options_en": ["H₂O", "H₂O₂", "HO", "H₃O"],
-        "options_hi": ["H₂O", "H₂O₂", "HO", "H₃O"],
-        "answer_en": "H₂O",
-        "answer_hi": "H₂O",
+        "question_en": "How do you create a raw pointer?",
+        "question_hi": "रॉ पॉइंटर कैसे बनाते हैं?",
+        "options_en": ["let ptr: *const i32 = &x;", "let ptr = raw_ptr(&x);", "let ptr: &raw i32 = &x;", "let ptr = Pointer::new(&x);"],
+        "options_hi": ["let ptr: *const i32 = &x;", "let ptr = raw_ptr(&x);", "let ptr: &raw i32 = &x;", "let ptr = Pointer::new(&x);"],
+        "answer_en": "let ptr: *const i32 = &x;",
+        "answer_hi": "let ptr: *const i32 = &x;",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 83,
-        "question_en": "What is the unit of power?",
-        "question_hi": "शक्ति की इकाई क्या है?",
-        "options_en": ["Watt", "Joule", "Newton", "Pascal"],
-        "options_hi": ["वाट", "जूल", "न्यूटन", "पास्कल"],
-        "answer_en": "Watt",
-        "answer_hi": "वाट",
+        "question_en": "What is a function pointer?",
+        "question_hi": "फंक्शन पॉइंटर क्या है?",
+        "options_en": ["A pointer that points to code rather than data", "A reference to a function", "A closure", "A method"],
+        "options_hi": ["एक पॉइंटर जो डेटा के बजाय कोड की ओर इशारा करता है", "एक फंक्शन का संदर्भ", "एक क्लोजर", "एक मेथड"],
+        "answer_en": "A pointer that points to code rather than data",
+        "answer_hi": "एक पॉइंटर जो डेटा के बजाय कोड की ओर इशारा करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 84,
-        "question_en": "What is the value of sin(π/2)?",
-        "question_hi": "sin(π/2) का मान क्या है?",
-        "options_en": ["0", "1", "-1", "1/2"],
-        "options_hi": ["0", "1", "-1", "1/2"],
-        "answer_en": "1",
-        "answer_hi": "1",
+        "question_en": "How do you define a function pointer type?",
+        "question_hi": "फंक्शन पॉइंटर प्रकार कैसे परिभाषित करते हैं?",
+        "options_en": ["type FnPtr = fn(i32) -> i32;", "fn type FnPtr(i32) -> i32;", "function FnPtr = fn(i32) -> i32;", "def FnPtr: fn(i32) -> i32;"],
+        "options_hi": ["type FnPtr = fn(i32) -> i32;", "fn type FnPtr(i32) -> i32;", "function FnPtr = fn(i32) -> i32;", "def FnPtr: fn(i32) -> i32;"],
+        "answer_en": "type FnPtr = fn(i32) -> i32;",
+        "answer_hi": "type FnPtr = fn(i32) -> i32;",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 85,
-        "question_en": "Who wrote 'Godan'?",
-        "question_hi": "'गोदान' किसने लिखा?",
-        "options_en": ["Premchand", "Jaishankar Prasad", "Mahadevi Verma", "Suryakant Tripathi"],
-        "options_hi": ["प्रेमचंद", "जयशंकर प्रसाद", "महादेवी वर्मा", "सूर्यकांत त्रिपाठी"],
-        "answer_en": "Premchand",
-        "answer_hi": "प्रेमचंद",
+        "question_en": "What is a trait object?",
+        "question_hi": "ट्रेट ऑब्जेक्ट क्या है?",
+        "options_en": ["Runtime polymorphism using traits", "Compile-time trait resolution", "Trait instance", "Trait reference"],
+        "options_hi": ["ट्रेट्स का उपयोग करके रनटाइम पॉलीमॉर्फिज्म", "कंपाइल-टाइम ट्रेट रेजोल्यूशन", "ट्रेट इंस्टेंस", "ट्रेट संदर्भ"],
+        "answer_en": "Runtime polymorphism using traits",
+        "answer_hi": "ट्रेट्स का उपयोग करके रनटाइम पॉलीमॉर्फिज्म",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 86,
-        "question_en": "What is the process of protein synthesis called?",
-        "question_hi": "प्रोटीन संश्लेषण की प्रक्रिया को क्या कहते हैं?",
-        "options_en": ["Transcription", "Translation", "Replication", "Transformation"],
-        "options_hi": ["ट्रांसक्रिप्शन", "ट्रांसलेशन", "प्रतिकृति", "रूपांतरण"],
-        "answer_en": "Translation",
-        "answer_hi": "ट्रांसलेशन",
+        "question_en": "How do you create a trait object?",
+        "question_hi": "ट्रेट ऑब्जेक्ट कैसे बनाते हैं?",
+        "options_en": ["let obj: &dyn MyTrait = &instance;", "let obj = instance as dyn MyTrait;", "let obj = MyTrait::from(instance);", "let obj = dyn MyTrait::new(instance);"],
+        "options_hi": ["let obj: &dyn MyTrait = &instance;", "let obj = instance as dyn MyTrait;", "let obj = MyTrait::from(instance);", "let obj = dyn MyTrait::new(instance);"],
+        "answer_en": "let obj: &dyn MyTrait = &instance;",
+        "answer_hi": "let obj: &dyn MyTrait = &instance;",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 87,
-        "question_en": "What is the formula of ammonia?",
-        "question_hi": "अमोनिया का सूत्र क्या है?",
-        "options_en": ["NH₃", "NH₄", "N₂H₄", "NH₂"],
-        "options_hi": ["NH₃", "NH₄", "N₂H₄", "NH₂"],
-        "answer_en": "NH₃",
-        "answer_hi": "NH₃",
+        "question_en": "What is the 'dyn' keyword?",
+        "question_hi": "'dyn' कीवर्ड क्या है?",
+        "options_en": ["Indicates trait object dynamic dispatch", "Dynamic typing", "Memory allocation", "Error handling"],
+        "options_hi": ["ट्रेट ऑब्जेक्ट डायनामिक डिस्पैच को इंगित करता है", "डायनामिक टाइपिंग", "मेमोरी आवंटन", "त्रुटि प्रबंधन"],
+        "answer_en": "Indicates trait object dynamic dispatch",
+        "answer_hi": "ट्रेट ऑब्जेक्ट डायनामिक डिस्पैच को इंगित करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 88,
-        "question_en": "What is the unit of electric charge?",
-        "question_hi": "विद्युत आवेश की इकाई क्या है?",
-        "options_en": ["Coulomb", "Ampere", "Volt", "Ohm"],
-        "options_hi": ["कूलॉम", "एम्पियर", "वोल्ट", "ओम"],
-        "answer_en": "Coulomb",
-        "answer_hi": "कूलॉम",
+        "question_en": "What is associated type in traits?",
+        "question_hi": "ट्रेट्स में एसोसिएटेड टाइप क्या है?",
+        "options_en": ["Type placeholder in trait definition", "Generic type parameter", "Type alias", "Type constructor"],
+        "options_hi": ["ट्रेट परिभाषा में टाइप प्लेसहोल्डर", "जेनेरिक टाइप पैरामीटर", "टाइप अलायस", "टाइप कंस्ट्रक्टर"],
+        "answer_en": "Type placeholder in trait definition",
+        "answer_hi": "ट्रेट परिभाषा में टाइप प्लेसहोल्डर",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 89,
-        "question_en": "What is the value of e⁰?",
-        "question_hi": "e⁰ का मान क्या है?",
-        "options_en": ["0", "1", "e", "∞"],
-        "options_hi": ["0", "1", "e", "∞"],
-        "answer_en": "1",
-        "answer_hi": "1",
+        "question_en": "How do you define associated types in traits?",
+        "question_hi": "ट्रेट्स में एसोसिएटेड टाइप्स कैसे परिभाषित करते हैं?",
+        "options_en": ["trait MyTrait { type Output; }", "trait MyTrait<Output> {}", "trait MyTrait with Output {}", "trait MyTrait where type Output {}"],
+        "options_hi": ["trait MyTrait { type Output; }", "trait MyTrait<Output> {}", "trait MyTrait with Output {}", "trait MyTrait where type Output {}"],
+        "answer_en": "trait MyTrait { type Output; }",
+        "answer_hi": "trait MyTrait { type Output; }",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 90,
-        "question_en": "Who wrote 'Madhushala'?",
-        "question_hi": "'मधुशाला' किसने लिखी?",
-        "options_en": ["Harivansh Rai Bachchan", "Mahadevi Verma", "Suryakant Tripathi", "Jaishankar Prasad"],
-        "options_hi": ["हरिवंश राय बच्चन", "महादेवी वर्मा", "सूर्यकांत त्रिपाठी", "जयशंकर प्रसाद"],
-        "answer_en": "Harivansh Rai Bachchan",
-        "answer_hi": "हरिवंश राय बच्चन",
+        "question_en": "What are generic constraints?",
+        "question_hi": "जेनेरिक कंस्ट्रेंट्स क्या हैं?",
+        "options_en": ["Restrictions on generic type parameters", "Generic type defaults", "Generic function parameters", "Generic trait bounds"],
+        "options_hi": ["जेनेरिक टाइप पैरामीटर पर प्रतिबंध", "जेनेरिक टाइप डिफॉल्ट", "जेनेरिक फंक्शन पैरामीटर", "जेनेरिक ट्रेट बाउंड्स"],
+        "answer_en": "Restrictions on generic type parameters",
+        "answer_hi": "जेनेरिक टाइप पैरामीटर पर प्रतिबंध",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 91,
-        "question_en": "What is the function of the endoplasmic reticulum?",
-        "question_hi": "अंतर्द्रव्यी जालिका का कार्य क्या है?",
-        "options_en": ["Protein synthesis and transport", "Energy production", "DNA replication", "Waste elimination"],
-        "options_hi": ["प्रोटीन संश्लेषण और परिवहन", "ऊर्जा उत्पादन", "DNA प्रतिकृति", "अपशिष्ट निष्कासन"],
-        "answer_en": "Protein synthesis and transport",
-        "answer_hi": "प्रोटीन संश्लेषण और परिवहन",
+        "question_en": "How do you specify trait bounds?",
+        "question_hi": "ट्रेट बाउंड्स कैसे निर्दिष्ट करते हैं?",
+        "options_en": ["fn func<T: MyTrait>(param: T) {}", "fn func<T where T: MyTrait>(param: T) {}", "fn func<T impl MyTrait>(param: T) {}", "Both A and B"],
+        "options_hi": ["fn func<T: MyTrait>(param: T) {}", "fn func<T where T: MyTrait>(param: T) {}", "fn func<T impl MyTrait>(param: T) {}", "A और B दोनों"],
+        "answer_en": "Both A and B",
+        "answer_hi": "A और B दोनों",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 92,
-        "question_en": "What is the atomic number of hydrogen?",
-        "question_hi": "हाइड्रोजन की परमाणु संख्या क्या है?",
-        "options_en": ["1", "2", "3", "4"],
-        "options_hi": ["1", "2", "3", "4"],
-        "answer_en": "1",
-        "answer_hi": "1",
+        "question_en": "What is the 'impl Trait' syntax?",
+        "question_hi": "'impl Trait' सिंटैक्स क्या है?",
+        "options_en": ["Return type that implements a trait", "Trait implementation", "Generic trait", "Trait object"],
+        "options_hi": ["रिटर्न टाइप जो एक ट्रेट लागू करता है", "ट्रेट कार्यान्वयन", "जेनेरिक ट्रेट", "ट्रेट ऑब्जेक्ट"],
+        "answer_en": "Return type that implements a trait",
+        "answer_hi": "रिटर्न टाइप जो एक ट्रेट लागू करता है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 93,
-        "question_en": "What is Newton's third law of motion?",
-        "question_hi": "न्यूटन की गति का तीसरा नियम क्या है?",
-        "options_en": ["F = ma", "Action and reaction", "Inertia", "Conservation of energy"],
-        "options_hi": ["F = ma", "क्रिया और प्रतिक्रिया", "जड़त्व", "ऊर्जा संरक्षण"],
-        "answer_en": "Action and reaction",
-        "answer_hi": "क्रिया और प्रतिक्रिया",
+        "question_en": "How do you use 'impl Trait' in return position?",
+        "question_hi": "रिटर्न पोजिशन में 'impl Trait' का उपयोग कैसे करते हैं?",
+        "options_en": ["fn func() -> impl MyTrait {}", "fn func() -> dyn MyTrait {}", "fn func() -> trait MyTrait {}", "fn func() -> MyTrait {}"],
+        "options_hi": ["fn func() -> impl MyTrait {}", "fn func() -> dyn MyTrait {}", "fn func() -> trait MyTrait {}", "fn func() -> MyTrait {}"],
+        "answer_en": "fn func() -> impl MyTrait {}",
+        "answer_hi": "fn func() -> impl MyTrait {}",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 94,
-        "question_en": "What is the value of ∫x dx?",
-        "question_hi": "∫x dx का मान क्या है?",
-        "options_en": ["x²", "x²/2", "x²/2 + C", "2x"],
-        "options_hi": ["x²", "x²/2", "x²/2 + C", "2x"],
-        "answer_en": "x²/2 + C",
-        "answer_hi": "x²/2 + C",
+        "question_en": "What are lifetimes in Rust?",
+        "question_hi": "Rust में लाइफटाइम्स क्या हैं?",
+        "options_en": ["Scope of references to prevent dangling references", "Memory allocation time", "Program execution time", "Garbage collection intervals"],
+        "options_hi": ["डैंगलिंग संदर्भों को रोकने के लिए संदर्भों का दायरा", "मेमोरी आवंटन समय", "प्रोग्राम निष्पादन समय", "गार्बेज कलेक्शन अंतराल"],
+        "answer_en": "Scope of references to prevent dangling references",
+        "answer_hi": "डैंगलिंग संदर्भों को रोकने के लिए संदर्भों का दायरा",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 95,
-        "question_en": "Who wrote 'Kamlaya'?",
-        "question_hi": "'कमलाया' किसने लिखा?",
-        "options_en": ["Suryakant Tripathi", "Mahadevi Verma", "Jaishankar Prasad", "Harivansh Rai Bachchan"],
-        "options_hi": ["सूर्यकांत त्रिपाठी", "महादेवी वर्मा", "जयशंकर प्रसाद", "हरिवंश राय बच्चन"],
-        "answer_en": "Suryakant Tripathi",
-        "answer_hi": "सूर्यकांत त्रिपाठी",
+        "question_en": "How do you define a lifetime parameter?",
+        "question_hi": "लाइफटाइम पैरामीटर कैसे परिभाषित करते हैं?",
+        "options_en": ["fn func<'a>(param: &'a str) -> &'a str {}", "fn func<lifetime a>(param: &a str) {}", "fn func(param: &'a str) -> &'a str {}", "lifetime fn func<'a>(param: &str) {}"],
+        "options_hi": ["fn func<'a>(param: &'a str) -> &'a str {}", "fn func<lifetime a>(param: &a str) {}", "fn func(param: &'a str) -> &'a str {}", "lifetime fn func<'a>(param: &str) {}"],
+        "answer_en": "fn func<'a>(param: &'a str) -> &'a str {}",
+        "answer_hi": "fn func<'a>(param: &'a str) -> &'a str {}",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 96,
-        "question_en": "What is the process of DNA to RNA called?",
-        "question_hi": "DNA से RNA बनने की प्रक्रिया को क्या कहते हैं?",
-        "options_en": ["Transcription", "Translation", "Replication", "Transformation"],
-        "options_hi": ["ट्रांसक्रिप्शन", "ट्रांसलेशन", "प्रतिकृति", "रूपांतरण"],
-        "answer_en": "Transcription",
-        "answer_hi": "ट्रांसक्रिप्शन",
+        "question_en": "What is the 'static lifetime?",
+        "question_hi": "'static लाइफटाइम क्या है?",
+        "options_en": ["Lifetime that lasts for entire program duration", "Shortest possible lifetime", "Lifetime of static variables", "Both A and C"],
+        "options_hi": ["लाइफटाइम जो पूरे प्रोग्राम अवधि तक रहती है", "संभव सबसे छोटी लाइफटाइम", "स्टैटिक वेरिएबल्स की लाइफटाइम", "A और C दोनों"],
+        "answer_en": "Both A and C",
+        "answer_hi": "A और C दोनों",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 97,
-        "question_en": "What is the formula of sodium chloride?",
-        "question_hi": "सोडियम क्लोराइड का सूत्र क्या है?",
-        "options_en": ["NaCl", "Na₂Cl", "NaCl₂", "Na₂Cl₂"],
-        "options_hi": ["NaCl", "Na₂Cl", "NaCl₂", "Na₂Cl₂"],
-        "answer_en": "NaCl",
-        "answer_hi": "NaCl",
+        "question_en": "What is lifetime elision?",
+        "question_hi": "लाइफटाइम एलिशन क्या है?",
+        "options_en": ["Compiler inference of lifetimes in common patterns", "Manual lifetime specification", "Lifetime elimination", "Lifetime extension"],
+        "options_hi": ["सामान्य पैटर्न में लाइफटाइम्स का कंपाइलर अनुमान", "मैनुअल लाइफटाइम विशिष्टता", "लाइफटाइम उन्मूलन", "लाइफटाइम विस्तार"],
+        "answer_en": "Compiler inference of lifetimes in common patterns",
+        "answer_hi": "सामान्य पैटर्न में लाइफटाइम्स का कंपाइलर अनुमान",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 98,
-        "question_en": "What is the unit of pressure?",
-        "question_hi": "दबाव की इकाई क्या है?",
-        "options_en": ["Pascal", "Newton", "Joule", "Watt"],
-        "options_hi": ["पास्कल", "न्यूटन", "जूल", "वाट"],
-        "answer_en": "Pascal",
-        "answer_hi": "पास्कल",
+        "question_en": "What are the three lifetime elision rules?",
+        "question_hi": "तीन लाइफटाइम एलिशन नियम क्या हैं?",
+        "options_en": ["Each parameter gets its own lifetime, if one input lifetime it applies to output, if &self or &mut self then self lifetime applies to output", "All references have same lifetime, output lifetime is 'static, no lifetime needed for primitive types", "Lifetimes are inherited, lifetimes can be omitted in structs, functions have default lifetimes", "No rules, compiler always requires explicit lifetimes"],
+        "options_hi": ["प्रत्येक पैरामीटर को अपनी लाइफटाइम मिलती है, यदि एक इनपुट लाइफटाइम है तो यह आउटपुट पर लागू होती है, यदि &self या &mut self है तो self लाइफटाइम आउटपुट पर लागू होती है", "सभी संदर्भों की समान लाइफटाइम होती है, आउटपुट लाइफटाइम 'static है, आदिम प्रकारों के लिए लाइफटाइम की आवश्यकता नहीं है", "लाइफटाइम्स विरासत में मिलती हैं, लाइफटाइम्स को स्ट्रक्चर में छोड़ा जा सकता है, फंक्शन्स में डिफॉल्ट लाइफटाइम्स होती हैं", "कोई नियम नहीं, कंपाइलर को हमेशा स्पष्ट लाइफटाइम्स की आवश्यकता होती है"],
+        "answer_en": "Each parameter gets its own lifetime, if one input lifetime it applies to output, if &self or &mut self then self lifetime applies to output",
+        "answer_hi": "प्रत्येक पैरामीटर को अपनी लाइफटाइम मिलती है, यदि एक इनपुट लाइफटाइम है तो यह आउटपुट पर लागू होती है, यदि &self या &mut self है तो self लाइफटाइम आउटपुट पर लागू होती है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 99,
-        "question_en": "What is the value of sec(0)?",
-        "question_hi": "sec(0) का मान क्या है?",
-        "options_en": ["0", "1", "-1", "∞"],
-        "options_hi": ["0", "1", "-1", "∞"],
-        "answer_en": "1",
-        "answer_hi": "1",
+        "question_en": "What is the purpose of the '?' operator in error handling?",
+        "question_hi": "त्रुटि प्रबंधन में '?' ऑपरेटर का उद्देश्य क्या है?",
+        "options_en": ["Propagate errors automatically", "Ignore errors", "Panic on errors", "Log errors"],
+        "options_hi": ["त्रुटियों को स्वचालित रूप से प्रसारित करना", "त्रुटियों को अनदेखा करना", "त्रुटियों पर पैनिक करना", "त्रुटियों को लॉग करना"],
+        "answer_en": "Propagate errors automatically",
+        "answer_hi": "त्रुटियों को स्वचालित रूप से प्रसारित करना",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 100,
-        "question_en": "Who wrote 'Chitralekha'?",
-        "question_hi": "'चित्रलेखा' किसने लिखा?",
-        "options_en": ["Bhagwati Charan Verma", "Premchand", "Jaishankar Prasad", "Mahadevi Verma"],
-        "options_hi": ["भगवती चरण वर्मा", "प्रेमचंद", "जयशंकर प्रसाद", "महादेवी वर्मा"],
-        "answer_en": "Bhagwati Charan Verma",
-        "answer_hi": "भगवती चरण वर्मा",
+        "question_en": "How do you create a mutable static variable?",
+        "question_hi": "म्यूटेबल स्टैटिक वेरिएबल कैसे बनाते हैं?",
+        "options_en": ["static mut COUNTER: i32 = 0;", "static mut let COUNTER = 0;", "static COUNTER: mut i32 = 0;", "mut static COUNTER: i32 = 0;"],
+        "options_hi": ["static mut COUNTER: i32 = 0;", "static mut let COUNTER = 0;", "static COUNTER: mut i32 = 0;", "mut static COUNTER: i32 = 0;"],
+        "answer_en": "static mut COUNTER: i32 = 0;",
+        "answer_hi": "static mut COUNTER: i32 = 0;",
         "attempted": false,
         "selected": ""
     }
-        
-// Add more questions here...
 ];
-
-
-let currentQuestion = 0; 
+// --------------------------- GLOBAL VARS -----------------------------
+let currentQuestion = 0;
 let language = "en";
-// let timeLeft = 180 * 60; // 180 minutes
-let timeLeft = 60 * 60; // 60 minutes
+let timeLeft = 60 * 60;   // 60 minutes timer
 let timerInterval;
 
-// ----------------- Quiz Logic -----------------
+// --------------------------- LOAD QUESTION ----------------------------
 function loadQuestion(index) {
     const q = questions[index];
-    document.getElementById("question").textContent = `${q.num}. ${
-        language === "en" ? q.question_en : q.question_hi
-    }`;
-    document.getElementById("questionCounter").textContent = `Question ${index + 1} of ${questions.length}`;
+
+    document.getElementById("question").textContent =
+        `${q.num}. ${language === "en" ? q.question_en : q.question_hi}`;
+
+    document.getElementById("questionCounter").textContent =
+        `Question ${index + 1} of ${questions.length}`;
 
     const optionsElement = document.getElementById("options");
     optionsElement.innerHTML = "";
@@ -1126,6 +1124,7 @@ function loadQuestion(index) {
     options.forEach((option) => {
         const isSelected = q.selected === option;
         const optionDiv = document.createElement("div");
+
         optionDiv.className = "option-box";
         optionDiv.style = `
             border: 2px solid ${isSelected ? "#007bff" : "#ccc"};
@@ -1134,12 +1133,11 @@ function loadQuestion(index) {
             border-radius: 8px;
             margin: 6px 0;
             cursor: pointer;
-            transition: all 0.2s;
         `;
 
         optionDiv.innerHTML = `
-            <input type="radio" name="option" value="${option}" ${isSelected ? "checked" : ""} style="margin-right:8px;">
-            ${option}
+            <input type="radio" name="option"
+            value="${option}" ${isSelected ? "checked" : ""} /> ${option}
         `;
 
         optionDiv.addEventListener("click", () => {
@@ -1153,12 +1151,14 @@ function loadQuestion(index) {
     updateNavigation();
 }
 
+// --------------------------- MARK ATTEMPT ----------------------------
 function markAttempted(index, selectedAnswer) {
     questions[index].attempted = true;
     questions[index].selected = selectedAnswer;
     updateNavigation();
 }
 
+// --------------------------- NEXT / PREV -----------------------------
 function nextQuestion() {
     if (currentQuestion < questions.length - 1) {
         currentQuestion++;
@@ -1173,296 +1173,150 @@ function prevQuestion() {
     }
 }
 
+// --------------------------- LANGUAGE CHANGE -------------------------
 function changeLanguage() {
     language = document.getElementById("languageSelect").value;
     loadQuestion(currentQuestion);
 }
 
-function submitQuiz() {
-    clearInterval(timerInterval);
-    let attempted = 0,
-        notAttempted = 0,
-        score = 0;
-
-    questions.forEach((q) => {
-        if (q.attempted) {
-            attempted++;
-            if (q.selected === q.answer_en || q.selected === q.answer_hi) score++;
-        } else notAttempted++;
-    });
-
-    alert(
-        `Quiz submitted!\nAttempted: ${attempted}\nNot Attempted: ${notAttempted}\nScore: ${score}/${questions.length}`
-    );
-}
-
+// --------------------------- TIMER -------------------------------
 function startTimer() {
     const timerElement = document.getElementById("timer");
     clearInterval(timerInterval);
+
     timerInterval = setInterval(() => {
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
-            alert("Time's up!");
+            alert("⏳ Time Over!");
             submitQuiz();
-        } else {
-            const hours = Math.floor(timeLeft / 3600);
-            const minutes = Math.floor((timeLeft % 3600) / 60);
-            const seconds = timeLeft % 60;
-            timerElement.textContent = `Time Left: ${hours
-                .toString()
-                .padStart(2, "0")}:${minutes
-                .toString()
-                .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
-            timeLeft--;
+            return;
         }
+
+        const h = Math.floor(timeLeft / 3600);
+        const m = Math.floor((timeLeft % 3600) / 60);
+        const s = timeLeft % 60;
+
+        timerElement.textContent =
+            `Time Left: ${h.toString().padStart(2, "0")}:${m
+                .toString().padStart(2, "0")}:${s.toString().padStart(2, "0")}`;
+
+        timeLeft--;
     }, 1000);
 }
 
+// --------------------------- SUBMIT QUIZ ---------------------
+function submitQuiz() {
+    let confirmation = confirm("Are you sure you want to submit the test?");
+    if (!confirmation) return;
 
+    clearInterval(timerInterval);
 
+    // Calculate time spent
+    const totalTimeSpent = (60 * 60) - timeLeft;
+    const mins = Math.floor(totalTimeSpent / 60);
+    const secs = totalTimeSpent % 60;
 
+    // Save to localStorage
+    localStorage.setItem("timeTaken", `${mins} min ${secs} sec`);
 
+    let attempted = 0;
+    let notAttempted = 0;
+    let score = 0;
+    const results = [];
 
-
-
-
-
-
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////all file and folder me code add karna hai 
-
-
-// submit 
-function jumpToQuestion(index) {
-            currentQuestion = index;
-            loadQuestion(index);
+    questions.forEach(q => {
+        if (q.attempted) {
+            attempted++;
+            if (q.selected === q.answer_en || q.selected === q.answer_hi) {
+                score++;
+            }
+        } else {
+            notAttempted++;
         }
 
-        function submitQuiz() {
-            let confirmation = confirm("Are you sure you want to submit the test?");
-            
-            if (!confirmation) {
-                return; // अगर यूज़र 'Cancel' करता है तो आगे नहीं बढ़ेंगे
-            }
+        results.push({
+            question: language === "en" ? q.question_en : q.question_hi,
+            selected: q.selected || "Not Answered",
+            correct: language === "en" ? q.answer_en : q.answer_hi
+        });
+    });
 
-            let attempted = 0;
-            let notAttempted = 0;
-            let score = 0;
-            const results = [];
+    // Save result data
+    localStorage.setItem("attempted", attempted);
+    localStorage.setItem("notAttempted", notAttempted);
+    localStorage.setItem("score", score);
+    localStorage.setItem("results", JSON.stringify(results));
 
-            questions.forEach(q => {
-                if (q.attempted) {
-                    attempted++;
-                    if (q.selected === q.answer) {
-                        score++;
-                    }
-                } else {
-                    notAttempted++;
-                }
-                results.push({ question: q.question, selected: q.selected || "Not Answered", correct: q.answer });
-            });
+    // Stop camera stream if active
+    if (videoStream) {
+        videoStream.getTracks().forEach(track => track.stop());
+    }
 
-            localStorage.setItem("attempted", attempted);
-            localStorage.setItem("notAttempted", notAttempted);
-            localStorage.setItem("score", score);
-            localStorage.setItem("results", JSON.stringify(results));
+    // Redirect
+    window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
+}
 
-            // रिजल्ट देखने से पहले एक और कन्फर्मेशन ले सकते हैं
-            let viewResult = confirm("Test submitted successfully! Do you want to view your result?");
-            if (viewResult) {
-                window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
-            }
-        }
-        window.onload = () => {
-            loadQuestion(currentQuestion);
-        };
-
-
+// --------------------------- NAVIGATION ------------------------------
 function updateNavigation() {
     const nav = document.getElementById("circleContainer");
     nav.innerHTML = "";
+
     questions.forEach((q, i) => {
         let color = "gray";
         if (i === currentQuestion) color = "blue";
         else if (q.attempted) color = "green";
-        nav.innerHTML += `<div class='circle' style='background-color:${color}' onclick='loadQuestion(${i})'>${i + 1}</div>`;
+
+        const circle = document.createElement("div");
+        circle.className = "circle";
+        circle.style.background = color;
+        circle.textContent = i + 1;
+        circle.onclick = () => jumpToQuestion(i);
+        nav.appendChild(circle);
     });
 }
 
-// ----------------- Camera & Movement Logic -----------------
+function jumpToQuestion(i) {
+    currentQuestion = i;
+    loadQuestion(i);
+}
+
+// --------------------------- CAMERA ----------------------
 let videoStream;
-let movementCount = 0;
 
 function startCamera() {
     const container = document.createElement("div");
     container.id = "camera-container";
     container.style.position = "fixed";
     container.style.top = "10px";
-    container.style.left = "10px"; // ✅ Left side
+    container.style.left = "10px";
     container.style.width = "130px";
     container.style.height = "130px";
-    container.style.zIndex = "9999";
     container.style.borderRadius = "50%";
     container.style.overflow = "hidden";
-    container.style.border = "3px solid red";
-    container.style.boxShadow = "0 0 10px rgba(0,0,0,0.3)";
-    container.style.cursor = "grab";
-    container.style.minWidth = "80px";
-    container.style.minHeight = "80px";
-    container.style.maxWidth = "250px";
-    container.style.maxHeight = "250px";
     container.style.background = "#000";
+    container.style.border = "3px solid red";
+    container.style.zIndex = "9999";
     document.body.appendChild(container);
 
     const video = document.createElement("video");
-    video.setAttribute("autoplay", true);
-    video.setAttribute("playsinline", true);
+    video.autoplay = true;
+    video.playsInline = true;
     video.style.width = "100%";
     video.style.height = "100%";
     video.style.objectFit = "cover";
     container.appendChild(video);
 
-    // ✅ Resize handle
-    const resizeHandle = document.createElement("div");
-    resizeHandle.style.position = "absolute";
-    resizeHandle.style.bottom = "2px";
-    resizeHandle.style.right = "2px";
-    resizeHandle.style.width = "15px";
-    resizeHandle.style.height = "15px";
-    resizeHandle.style.background = "rgba(255,255,255,0.7)";
-    resizeHandle.style.borderRadius = "4px";
-    resizeHandle.style.cursor = "se-resize";
-    container.appendChild(resizeHandle);
-
-    // ✅ Drag logic
-    let isDragging = false;
-    let offsetX, offsetY;
-
-    container.addEventListener("mousedown", (e) => {
-        if (e.target === resizeHandle) return;
-        isDragging = true;
-        offsetX = e.clientX - container.offsetLeft;
-        offsetY = e.clientY - container.offsetTop;
-        container.style.cursor = "grabbing";
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isDragging) return;
-        let x = e.clientX - offsetX;
-        let y = e.clientY - offsetY;
-        x = Math.max(0, Math.min(window.innerWidth - container.offsetWidth, x));
-        y = Math.max(0, Math.min(window.innerHeight - container.offsetHeight, y));
-        container.style.left = `${x}px`;
-        container.style.top = `${y}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isDragging = false;
-        container.style.cursor = "grab";
-    });
-
-    // ✅ Resize logic
-    let isResizing = false;
-    let startWidth, startHeight, startX, startY;
-
-    resizeHandle.addEventListener("mousedown", (e) => {
-        e.stopPropagation();
-        isResizing = true;
-        startWidth = container.offsetWidth;
-        startHeight = container.offsetHeight;
-        startX = e.clientX;
-        startY = e.clientY;
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isResizing) return;
-        const dx = e.clientX - startX;
-        const dy = e.clientY - startY;
-        const newSize = Math.max(80, Math.min(250, Math.max(startWidth + dx, startHeight + dy)));
-        container.style.width = `${newSize}px`;
-        container.style.height = `${newSize}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isResizing = false;
-    });
-
-    // ✅ Camera stream
     navigator.mediaDevices.getUserMedia({ video: true })
         .then(stream => {
             video.srcObject = stream;
             videoStream = stream;
-            detectMovement(video);
         })
-        .catch(err => {
-            console.error("Camera error:", err);
-            alert("Camera not accessible!");
-        });
+        .catch(() => alert("Camera not accessible!"));
 }
 
-function detectMovement(video) {
-    const canvas = document.createElement("canvas");
-    const ctx = canvas.getContext("2d");
-    canvas.width = 160;
-    canvas.height = 160;
-    let lastImageData = null;
-
-    setInterval(() => {
-        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-
-        if (lastImageData) {
-            let diff = 0;
-            for (let i = 0; i < imageData.data.length; i += 4) {
-                diff += Math.abs(imageData.data[i] - lastImageData.data[i]);
-            }
-
-            if (diff > 1000000) {
-                movementCount++;
-                if (movementCount === 1) {
-                    alert("⚠️ Alert 1: Face is not move");
-                } else if (movementCount === 2) {
-                    alert("⚠️ Alert 2: Head is not move");
-                } else if (movementCount === 3) {
-                    alert("⚠️ Alert 3: Test series is restarting...");
-                    restartTest();
-                }
-            }
-        }
-        lastImageData = imageData;
-    }, 2000);
-}
-
-function restartTest() {
-    if (videoStream) {
-        videoStream.getTracks().forEach(track => track.stop());
-    }
-    const camContainer = document.getElementById("camera-container");
-    if (camContainer) camContainer.remove();
-
-    movementCount = 0;
-    currentQuestion = 0;
-    timeLeft = 180 * 60;
-
-    questions.forEach(q => {
-        q.attempted = false;
-        q.selected = null;
-    });
-
-    loadQuestion(currentQuestion);
-    startTimer();
-    startCamera();
-}
-
-// ----------------- Page Load -----------------
+// --------------------------- PAGE LOAD --------------------------
 window.onload = function () {
     loadQuestion(currentQuestion);
     startTimer();
-    startCamera(); // ✅ Camera starts with test
+    startCamera();
 };
-
-
-///////////////////////////////////////

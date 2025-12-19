@@ -1,1164 +1,1169 @@
 const questions = [
     {
         "num": 1,
-        "question_en": "What is the value of π (pi) approximately?",
-        "question_hi": "π (पाई) का मान लगभग कितना होता है?",
-        "options_en": ["3.14", "3.41", "2.71", "1.61"],
-        "options_hi": ["3.14", "3.41", "2.71", "1.61"],
-        "answer_en": "3.14",
-        "answer_hi": "3.14",
+        "question_en": "Which TypeScript utility type makes all properties optional?",
+        "question_hi": "TypeScript में कौन सा utility type सभी properties को optional बनाता है?",
+        "options_en": ["Partial", "Readonly", "Pick", "Omit"],
+        "options_hi": ["Partial", "Readonly", "Pick", "Omit"],
+        "answer_en": "Partial",
+        "answer_hi": "Partial",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 2,
-        "question_en": "Who wrote 'Romeo and Juliet'?",
-        "question_hi": "'रोमियो और जूलियट' किसने लिखा?",
-        "options_en": ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
-        "options_hi": ["चार्ल्स डिकेंस", "विलियम शेक्सपियर", "जेन ऑस्टेन", "मार्क ट्वेन"],
-        "answer_en": "William Shakespeare",
-        "answer_hi": "विलियम शेक्सपियर",
+        "question_en": "Which TypeScript utility type allows picking specific properties from a type?",
+        "question_hi": "TypeScript में कौन सा utility type किसी type से specific properties चुनने की अनुमति देता है?",
+        "options_en": ["Pick", "Partial", "Omit", "Readonly"],
+        "options_hi": ["Pick", "Partial", "Omit", "Readonly"],
+        "answer_en": "Pick",
+        "answer_hi": "Pick",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 3,
-        "question_en": "What is the capital of Australia?",
-        "question_hi": "ऑस्ट्रेलिया की राजधानी क्या है?",
-        "options_en": ["Sydney", "Melbourne", "Canberra", "Perth"],
-        "options_hi": ["सिडनी", "मेलबोर्न", "कैनबरा", "पर्थ"],
-        "answer_en": "Canberra",
-        "answer_hi": "कैनबरा",
+        "question_en": "Which TypeScript utility type removes specific properties from a type?",
+        "question_hi": "TypeScript में कौन सा utility type किसी type से specific properties हटाता है?",
+        "options_en": ["Omit", "Pick", "Partial", "Readonly"],
+        "options_hi": ["Omit", "Pick", "Partial", "Readonly"],
+        "answer_en": "Omit",
+        "answer_hi": "Omit",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 4,
-        "question_en": "Solve: 2x + 5 = 15",
-        "question_hi": "हल करें: 2x + 5 = 15",
-        "options_en": ["x = 5", "x = 10", "x = 7.5", "x = 2.5"],
-        "options_hi": ["x = 5", "x = 10", "x = 7.5", "x = 2.5"],
-        "answer_en": "x = 5",
-        "answer_hi": "x = 5",
+        "question_en": "Which TypeScript utility type makes all properties read-only?",
+        "question_hi": "TypeScript में कौन सा utility type सभी properties को read-only बनाता है?",
+        "options_en": ["Readonly", "Partial", "Pick", "Omit"],
+        "options_hi": ["Readonly", "Partial", "Pick", "Omit"],
+        "answer_en": "Readonly",
+        "answer_hi": "Readonly",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 5,
-        "question_en": "Which gas is known as 'Marsh Gas'?",
-        "question_hi": "किस गैस को 'मार्श गैस' के नाम से जाना जाता है?",
-        "options_en": ["Methane", "Ethane", "Propane", "Butane"],
-        "options_hi": ["मीथेन", "ईथेन", "प्रोपेन", "ब्यूटेन"],
-        "answer_en": "Methane",
-        "answer_hi": "मीथेन",
+        "question_en": "What is the TypeScript type for a function that returns a promise of string?",
+        "question_hi": "TypeScript में function का type जो string का promise return करता है क्या है?",
+        "options_en": ["Promise<string>", "string", "any", "Observable<string>"],
+        "options_hi": ["Promise<string>", "string", "any", "Observable<string>"],
+        "answer_en": "Promise<string>",
+        "answer_hi": "Promise<string>",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 6,
-        "question_en": "What is the square root of 144?",
-        "question_hi": "144 का वर्गमूल क्या है?",
-        "options_en": ["12", "14", "16", "18"],
-        "options_hi": ["12", "14", "16", "18"],
-        "answer_en": "12",
-        "answer_hi": "12",
+        "question_en": "Which TypeScript type allows you to create a new type by excluding properties from another type?",
+        "question_hi": "TypeScript में किस type का उपयोग करके आप किसी type से properties exclude कर नई type बना सकते हैं?",
+        "options_en": ["Omit", "Pick", "Partial", "Readonly"],
+        "options_hi": ["Omit", "Pick", "Partial", "Readonly"],
+        "answer_en": "Omit",
+        "answer_hi": "Omit",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 7,
-        "question_en": "Who discovered penicillin?",
-        "question_hi": "पेनिसिलिन की खोज किसने की?",
-        "options_en": ["Alexander Fleming", "Louis Pasteur", "Marie Curie", "Robert Koch"],
-        "options_hi": ["अलेक्जेंडर फ्लेमिंग", "लुई पाश्चर", "मैरी क्यूरी", "रॉबर्ट कोच"],
-        "answer_en": "Alexander Fleming",
-        "answer_hi": "अलेक्जेंडर फ्लेमिंग",
+        "question_en": "What is the difference between 'unknown' and 'any' in TypeScript?",
+        "question_hi": "TypeScript में 'unknown' और 'any' में क्या अंतर है?",
+        "options_en": ["unknown is safer than any", "any is safer than unknown", "Both are same", "unknown allows implicit operations"],
+        "options_hi": ["unknown अधिक सुरक्षित है", "any अधिक सुरक्षित है", "दोनों समान हैं", "unknown implicit operations की अनुमति देता है"],
+        "answer_en": "unknown is safer than any",
+        "answer_hi": "unknown अधिक सुरक्षित है",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 8,
-        "question_en": "What is the chemical symbol for potassium?",
-        "question_hi": "पोटैशियम का रासायनिक प्रतीक क्या है?",
-        "options_en": ["P", "Pt", "K", "Po"],
-        "options_hi": ["P", "Pt", "K", "Po"],
-        "answer_en": "K",
-        "answer_hi": "K",
+        "question_en": "Which TypeScript type represents a fixed-length array with different types?",
+        "question_hi": "TypeScript में किस type का उपयोग fixed-length array में विभिन्न types के लिए किया जाता है?",
+        "options_en": ["tuple", "array", "enum", "interface"],
+        "options_hi": ["tuple", "array", "enum", "interface"],
+        "answer_en": "tuple",
+        "answer_hi": "tuple",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 9,
-        "question_en": "Which is the longest river in the world?",
-        "question_hi": "दुनिया की सबसे लंबी नदी कौन सी है?",
-        "options_en": ["Amazon", "Nile", "Yangtze", "Mississippi"],
-        "options_hi": ["अमेज़न", "नील", "यांग्त्ज़ी", "मिसिसिपी"],
-        "answer_en": "Nile",
-        "answer_hi": "नील",
+        "question_en": "Which TypeScript feature allows constraining a generic type to extend another type?",
+        "question_hi": "TypeScript में कौन सी सुविधा generic type को किसी अन्य type का extension constrain करने की अनुमति देती है?",
+        "options_en": ["generic constraints", "utility types", "type guards", "interfaces"],
+        "options_hi": ["generic constraints", "utility types", "type guards", "interfaces"],
+        "answer_en": "generic constraints",
+        "answer_hi": "generic constraints",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 10,
-        "question_en": "What is the formula for area of a circle?",
-        "question_hi": "वृत्त के क्षेत्रफल का सूत्र क्या है?",
-        "options_en": ["πr²", "2πr", "πd", "2πr²"],
-        "options_hi": ["πr²", "2πr", "πd", "2πr²"],
-        "answer_en": "πr²",
-        "answer_hi": "πr²",
+        "question_en": "Which TypeScript feature allows narrowing types in conditional checks?",
+        "question_hi": "TypeScript में conditional checks में types narrow करने की सुविधा कौन देती है?",
+        "options_en": ["type guards", "type inference", "union types", "generics"],
+        "options_hi": ["type guards", "type inference", "union types", "generics"],
+        "answer_en": "type guards",
+        "answer_hi": "type guards",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 11,
-        "question_en": "Which planet is known as the 'Giant Planet'?",
-        "question_hi": "किस ग्रह को 'विशाल ग्रह' के नाम से जाना जाता है?",
-        "options_en": ["Saturn", "Jupiter", "Uranus", "Neptune"],
-        "options_hi": ["शनि", "बृहस्पति", "अरुण", "वरुण"],
-        "answer_en": "Jupiter",
-        "answer_hi": "बृहस्पति",
+        "question_en": "Which TypeScript keyword is used to define a literal type?",
+        "question_hi": "TypeScript में literal type define करने के लिए कौन सा keyword उपयोग होता है?",
+        "options_en": ["literal type = value", "type", "interface", "enum"],
+        "options_hi": ["literal type = value", "type", "interface", "enum"],
+        "answer_en": "type",
+        "answer_hi": "type",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 12,
-        "question_en": "What is the past tense of 'go'?",
-        "question_hi": "'go' का past tense क्या है?",
-        "options_en": ["goed", "went", "gone", "going"],
-        "options_hi": ["goed", "went", "gone", "going"],
-        "answer_en": "went",
-        "answer_hi": "went",
+        "question_en": "Which TypeScript feature allows the use of optional parameters in functions?",
+        "question_hi": "TypeScript में functions में optional parameters use करने की सुविधा कौन देती है?",
+        "options_en": ["?", "default value", "union type", "any"],
+        "options_hi": ["?", "default value", "union type", "any"],
+        "answer_en": "?",
+        "answer_hi": "?",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 13,
-        "question_en": "Who was the first President of India?",
-        "question_hi": "भारत के प्रथम राष्ट्रपति कौन थे?",
-        "options_en": ["Dr. Rajendra Prasad", "Jawaharlal Nehru", "S. Radhakrishnan", "Zakir Hussain"],
-        "options_hi": ["डॉ. राजेंद्र प्रसाद", "जवाहरलाल नेहरू", "एस. राधाकृष्णन", "जाकिर हुसैन"],
-        "answer_en": "Dr. Rajendra Prasad",
-        "answer_hi": "डॉ. राजेंद्र प्रसाद",
+        "question_en": "Which TypeScript feature allows defining a variable that can hold multiple types?",
+        "question_hi": "TypeScript में variable define करने की सुविधा जो multiple types hold कर सके?",
+        "options_en": ["union types", "tuple", "enum", "interface"],
+        "options_hi": ["union types", "tuple", "enum", "interface"],
+        "answer_en": "union types",
+        "answer_hi": "union types",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 14,
-        "question_en": "What is the value of sin 90°?",
-        "question_hi": "sin 90° का मान क्या है?",
-        "options_en": ["0", "1", "0.5", "√2/2"],
-        "options_hi": ["0", "1", "0.5", "√2/2"],
-        "answer_en": "1",
-        "answer_hi": "1",
+        "question_en": "Which TypeScript feature allows ensuring exhaustive checks in switch statements?",
+        "question_hi": "TypeScript में switch statements में exhaustive checks सुनिश्चित करने की सुविधा कौन देती है?",
+        "options_en": ["never type", "any", "unknown", "void"],
+        "options_hi": ["never type", "any", "unknown", "void"],
+        "answer_en": "never type",
+        "answer_hi": "never type",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 15,
-        "question_en": "Which element has the highest electronegativity?",
-        "question_hi": "किस तत्व की विद्युत ऋणात्मकता सबसे अधिक है?",
-        "options_en": ["Fluorine", "Chlorine", "Oxygen", "Nitrogen"],
-        "options_hi": ["फ्लोरीन", "क्लोरीन", "ऑक्सीजन", "नाइट्रोजन"],
-        "answer_en": "Fluorine",
-        "answer_hi": "फ्लोरीन",
+        "question_en": "Which TypeScript feature allows combining multiple types into one using '&'?",
+        "question_hi": "TypeScript में multiple types को '&' का उपयोग करके एक में combine करने की सुविधा कौन देती है?",
+        "options_en": ["intersection types", "union types", "tuple", "enum"],
+        "options_hi": ["intersection types", "union types", "tuple", "enum"],
+        "answer_en": "intersection types",
+        "answer_hi": "intersection types",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 16,
-        "question_en": "What is the SI unit of force?",
-        "question_hi": "बल की SI इकाई क्या है?",
-        "options_en": ["Joule", "Newton", "Watt", "Pascal"],
-        "options_hi": ["जूल", "न्यूटन", "वाट", "पास्कल"],
-        "answer_en": "Newton",
-        "answer_hi": "न्यूटन",
+        "question_en": "Which TypeScript keyword allows defining a variable with block scope that cannot be reassigned?",
+        "question_hi": "TypeScript में block scope वाला variable define करने और उसे reassigned होने से रोकने के लिए कौन सा keyword है?",
+        "options_en": ["const", "let", "var", "readonly"],
+        "options_hi": ["const", "let", "var", "readonly"],
+        "answer_en": "const",
+        "answer_hi": "const",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 17,
-        "question_en": "Which is the national animal of India?",
-        "question_hi": "भारत का राष्ट्रीय पशु कौन सा है?",
-        "options_en": ["Lion", "Elephant", "Tiger", "Peacock"],
-        "options_hi": ["शेर", "हाथी", "बाघ", "मोर"],
-        "answer_en": "Tiger",
-        "answer_hi": "बाघ",
+        "question_en": "Which TypeScript type allows representing a function that never returns?",
+        "question_hi": "TypeScript में ऐसा function जो कभी return नहीं करता, किस type से दर्शाया जाता है?",
+        "options_en": ["never", "void", "unknown", "any"],
+        "options_hi": ["never", "void", "unknown", "any"],
+        "answer_en": "never",
+        "answer_hi": "never",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 18,
-        "question_en": "Solve: (a + b)² = ?",
-        "question_hi": "हल करें: (a + b)² = ?",
-        "options_en": ["a² + b²", "a² + 2ab + b²", "a² - 2ab + b²", "a² + b² + ab"],
-        "options_hi": ["a² + b²", "a² + 2ab + b²", "a² - 2ab + b²", "a² + b² + ab"],
-        "answer_en": "a² + 2ab + b²",
-        "answer_hi": "a² + 2ab + b²",
+        "question_en": "Which TypeScript utility type converts all properties of a type to required?",
+        "question_hi": "TypeScript में कौन सा utility type किसी type की सभी properties को required बनाता है?",
+        "options_en": ["Required", "Partial", "Readonly", "Pick"],
+        "options_hi": ["Required", "Partial", "Readonly", "Pick"],
+        "answer_en": "Required",
+        "answer_hi": "Required",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 19,
-        "question_en": "What is the pH value of pure water?",
-        "question_hi": "शुद्ध जल का pH मान क्या होता है?",
-        "options_en": ["5", "6", "7", "8"],
-        "options_hi": ["5", "6", "7", "8"],
-        "answer_en": "7",
-        "answer_hi": "7",
+        "question_en": "Which TypeScript type is used when the type is unknown but safe checks are enforced?",
+        "question_hi": "TypeScript में ऐसा type जो unknown हो लेकिन safe checks लागू हों?",
+        "options_en": ["unknown", "any", "never", "void"],
+        "options_hi": ["unknown", "any", "never", "void"],
+        "answer_en": "unknown",
+        "answer_hi": "unknown",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 20,
-        "question_en": "Who painted the Mona Lisa?",
-        "question_hi": "मोना लिसा की पेंटिंग किसने बनाई?",
-        "options_en": ["Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso", "Michelangelo"],
-        "options_hi": ["विंसेंट वैन गॉग", "लियोनार्डो दा विंची", "पाब्लो पिकासो", "माइकलएंजेलो"],
-        "answer_en": "Leonardo da Vinci",
-        "answer_hi": "लियोनार्डो दा विंची",
+        "question_en": "Which TypeScript feature allows narrowing types using 'typeof'?",
+        "question_hi": "TypeScript में 'typeof' का उपयोग करके types narrow करने की सुविधा कौन देती है?",
+        "options_en": ["type guards", "type inference", "union types", "intersection types"],
+        "options_hi": ["type guards", "type inference", "union types", "intersection types"],
+        "answer_en": "type guards",
+        "answer_hi": "type guards",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 21,
-        "question_en": "What is the chemical formula of ozone?",
-        "question_hi": "ओजोन का रासायनिक सूत्र क्या है?",
-        "options_en": ["O₂", "O₃", "O₄", "HO₃"],
-        "options_hi": ["O₂", "O₃", "O₄", "HO₃"],
-        "answer_en": "O₃",
-        "answer_hi": "O₃",
+        "question_en": "Which TypeScript keyword allows defining a module without using external files?",
+        "question_hi": "TypeScript में external files का उपयोग किए बिना module define करने के लिए कौन सा keyword है?",
+        "options_en": ["namespace", "module", "export", "import"],
+        "options_hi": ["namespace", "module", "export", "import"],
+        "answer_en": "namespace",
+        "answer_hi": "namespace",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 22,
-        "question_en": "Which is the smallest continent?",
-        "question_hi": "सबसे छोटा महाद्वीप कौन सा है?",
-        "options_en": ["Australia", "Europe", "Antarctica", "South America"],
-        "options_hi": ["ऑस्ट्रेलिया", "यूरोप", "अंटार्कटिका", "दक्षिण अमेरिका"],
-        "answer_en": "Australia",
-        "answer_hi": "ऑस्ट्रेलिया",
+        "question_en": "Which TypeScript feature allows defining a function overload?",
+        "question_hi": "TypeScript में function overload define करने की सुविधा कौन देती है?",
+        "options_en": ["function overload signatures", "generics", "interfaces", "tuple"],
+        "options_hi": ["function overload signatures", "generics", "interfaces", "tuple"],
+        "answer_en": "function overload signatures",
+        "answer_hi": "function overload signatures",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 23,
-        "question_en": "What is the value of 5! (5 factorial)?",
-        "question_hi": "5! (5 फैक्टोरियल) का मान क्या है?",
-        "options_en": ["60", "120", "24", "720"],
-        "options_hi": ["60", "120", "24", "720"],
-        "answer_en": "120",
-        "answer_hi": "120",
+        "question_en": "Which TypeScript utility type excludes undefined and null from a type?",
+        "question_hi": "TypeScript में कौन सा utility type किसी type से undefined और null को exclude करता है?",
+        "options_en": ["NonNullable", "Partial", "Required", "Readonly"],
+        "options_hi": ["NonNullable", "Partial", "Required", "Readonly"],
+        "answer_en": "NonNullable",
+        "answer_hi": "NonNullable",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 24,
-        "question_en": "Which gas is produced during respiration?",
-        "question_hi": "श्वसन के दौरान कौन सी गैस उत्पन्न होती है?",
-        "options_en": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
-        "options_hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "नाइट्रोजन", "हाइड्रोजन"],
-        "answer_en": "Carbon dioxide",
-        "answer_hi": "कार्बन डाइऑक्साइड",
+        "question_en": "Which TypeScript type allows representing a function with multiple signatures?",
+        "question_hi": "TypeScript में ऐसे function को represent करने के लिए type कौन सा है जिसके multiple signatures हों?",
+        "options_en": ["overloads", "union types", "tuple", "interface"],
+        "options_hi": ["overloads", "union types", "tuple", "interface"],
+        "answer_en": "overloads",
+        "answer_hi": "overloads",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 25,
-        "question_en": "What is the capital of Japan?",
-        "question_hi": "जापान की राजधानी क्या है?",
-        "options_en": ["Seoul", "Beijing", "Tokyo", "Osaka"],
-        "options_hi": ["सियोल", "बीजिंग", "टोक्यो", "ओसाका"],
-        "answer_en": "Tokyo",
-        "answer_hi": "टोक्यो",
+        "question_en": "Which TypeScript keyword is used to provide ambient type declarations?",
+        "question_hi": "TypeScript में ambient type declarations provide करने के लिए कौन सा keyword है?",
+        "options_en": ["declare", "interface", "type", "module"],
+        "options_hi": ["declare", "interface", "type", "module"],
+        "answer_en": "declare",
+        "answer_hi": "declare",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 26,
-        "question_en": "Who developed the theory of relativity?",
-        "question_hi": "सापेक्षता का सिद्धांत किसने विकसित किया?",
-        "options_en": ["Isaac Newton", "Albert Einstein", "Stephen Hawking", "Galileo Galilei"],
-        "options_hi": ["आइजैक न्यूटन", "अल्बर्ट आइंस्टीन", "स्टीफन हॉकिंग", "गैलीलियो गैलीली"],
-        "answer_en": "Albert Einstein",
-        "answer_hi": "अल्बर्ट आइंस्टीन",
+        "question_en": "Which TypeScript feature allows narrowing types using 'instanceof'?",
+        "question_hi": "TypeScript में 'instanceof' का उपयोग करके types narrow करने की सुविधा कौन देती है?",
+        "options_en": ["type guards", "type inference", "union types", "intersection types"],
+        "options_hi": ["type guards", "type inference", "union types", "intersection types"],
+        "answer_en": "type guards",
+        "answer_hi": "type guards",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 27,
-        "question_en": "What is the chemical symbol for silver?",
-        "question_hi": "चांदी का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Si", "Ag", "Au", "Sv"],
-        "options_hi": ["Si", "Ag", "Au", "Sv"],
-        "answer_en": "Ag",
-        "answer_hi": "Ag",
+        "question_en": "Which TypeScript type allows representing a readonly array?",
+        "question_hi": "TypeScript में readonly array को represent करने के लिए कौन सा type है?",
+        "options_en": ["ReadonlyArray<T>", "Array<T>", "tuple", "any"],
+        "options_hi": ["ReadonlyArray<T>", "Array<T>", "tuple", "any"],
+        "answer_en": "ReadonlyArray<T>",
+        "answer_hi": "ReadonlyArray<T>",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 28,
-        "question_en": "Which is the longest bone in human body?",
-        "question_hi": "मानव शरीर की सबसे लंबी हड्डी कौन सी है?",
-        "options_en": ["Femur", "Tibia", "Fibula", "Humerus"],
-        "options_hi": ["फीमर", "टिबिया", "फिबुला", "ह्यूमरस"],
-        "answer_en": "Femur",
-        "answer_hi": "फीमर",
+        "question_en": "Which TypeScript keyword allows extending an interface?",
+        "question_hi": "TypeScript में interface extend करने के लिए कौन सा keyword है?",
+        "options_en": ["extends", "implements", "interface", "class"],
+        "options_hi": ["extends", "implements", "interface", "class"],
+        "answer_en": "extends",
+        "answer_hi": "extends",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 29,
-        "question_en": "What is the value of log₁₀100?",
-        "question_hi": "log₁₀100 का मान क्या है?",
-        "options_en": ["1", "2", "10", "100"],
-        "options_hi": ["1", "2", "10", "100"],
-        "answer_en": "2",
-        "answer_hi": "2",
+        "question_en": "Which TypeScript feature allows type narrowing using custom type predicates?",
+        "question_hi": "TypeScript में custom type predicates का उपयोग करके type narrowing करने की सुविधा कौन देती है?",
+        "options_en": ["user-defined type guards", "utility types", "generics", "enums"],
+        "options_hi": ["user-defined type guards", "utility types", "generics", "enums"],
+        "answer_en": "user-defined type guards",
+        "answer_hi": "user-defined type guards",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 30,
-        "question_en": "Which is the national flower of India?",
-        "question_hi": "भारत का राष्ट्रीय फूल कौन सा है?",
-        "options_en": ["Rose", "Lotus", "Sunflower", "Marigold"],
-        "options_hi": ["गुलाब", "कमल", "सूरजमुखी", "गेंदा"],
-        "answer_en": "Lotus",
-        "answer_hi": "कमल",
+        "question_en": "Which TypeScript utility type allows constructing a type by picking the return type of a function?",
+        "question_hi": "TypeScript में कौन सा utility type function के return type को pick करके नया type बनाता है?",
+        "options_en": ["ReturnType<T>", "Parameters<T>", "Partial<T>", "Readonly<T>"],
+        "options_hi": ["ReturnType<T>", "Parameters<T>", "Partial<T>", "Readonly<T>"],
+        "answer_en": "ReturnType<T>",
+        "answer_hi": "ReturnType<T>",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 31,
-        "question_en": "What is the formula for Newton's second law of motion?",
-        "question_hi": "न्यूटन के गति के दूसरे नियम का सूत्र क्या है?",
-        "options_en": ["F = ma", "F = mv", "F = m/a", "F = m + a"],
-        "options_hi": ["F = ma", "F = mv", "F = m/a", "F = m + a"],
-        "answer_en": "F = ma",
-        "answer_hi": "F = ma",
+        "question_en": "Which TypeScript utility type constructs a type consisting of the parameter types of a function?",
+        "question_hi": "TypeScript में कौन सा utility type function के parameter types से नया type बनाता है?",
+        "options_en": ["Parameters<T>", "ReturnType<T>", "Partial<T>", "Required<T>"],
+        "options_hi": ["Parameters<T>", "ReturnType<T>", "Partial<T>", "Required<T>"],
+        "answer_en": "Parameters<T>",
+        "answer_hi": "Parameters<T>",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 32,
-        "question_en": "Who wrote the Indian National Anthem?",
-        "question_hi": "भारत का राष्ट्रगान किसने लिखा?",
-        "options_en": ["Rabindranath Tagore", "Bankim Chandra Chatterjee", "Sarojini Naidu", "Mahatma Gandhi"],
-        "options_hi": ["रबींद्रनाथ टैगोर", "बंकिम चंद्र चटर्जी", "सरोजिनी नायडू", "महात्मा गांधी"],
-        "answer_en": "Rabindranath Tagore",
-        "answer_hi": "रबींद्रनाथ टैगोर",
+        "question_en": "Which TypeScript feature allows defining a type alias for a union of string literals?",
+        "question_hi": "TypeScript में string literals के union के लिए type alias define करने की सुविधा कौन देती है?",
+        "options_en": ["literal types", "enum", "tuple", "interface"],
+        "options_hi": ["literal types", "enum", "tuple", "interface"],
+        "answer_en": "literal types",
+        "answer_hi": "literal types",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 33,
-        "question_en": "What is the chemical formula of glucose?",
-        "question_hi": "ग्लूकोज का रासायनिक सूत्र क्या है?",
-        "options_en": ["C₆H₁₂O₆", "C₁₂H₂₂O₁₁", "C₂H₅OH", "CH₃COOH"],
-        "options_hi": ["C₆H₁₂O₆", "C₁₂H₂₂O₁₁", "C₂H₅OH", "CH₃COOH"],
-        "answer_en": "C₆H₁₂O₆",
-        "answer_hi": "C₆H₁₂O₆",
+        "question_en": "Which TypeScript feature allows safely accessing nested object properties that may be undefined?",
+        "question_hi": "TypeScript में nested object properties को safely access करने की सुविधा जो undefined हो सकते हैं?",
+        "options_en": ["optional chaining (?.)", "nullish coalescing (??)", "type guards", "union types"],
+        "options_hi": ["optional chaining (?.)", "nullish coalescing (??)", "type guards", "union types"],
+        "answer_en": "optional chaining (?.)",
+        "answer_hi": "optional chaining (?.)",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 34,
-        "question_en": "Which is the largest ocean?",
-        "question_hi": "सबसे बड़ा महासागर कौन सा है?",
-        "options_en": ["Atlantic", "Indian", "Pacific", "Arctic"],
-        "options_hi": ["अटलांटिक", "हिंद", "प्रशांत", "आर्कटिक"],
-        "answer_en": "Pacific",
-        "answer_hi": "प्रशांत",
+        "question_en": "Which TypeScript operator allows providing a default value when a variable is null or undefined?",
+        "question_hi": "TypeScript में कौन सा operator variable null या undefined होने पर default value provide करता है?",
+        "options_en": ["nullish coalescing (??)", "optional chaining (?.)", "union types", "any"],
+        "options_hi": ["nullish coalescing (??)", "optional chaining (?.)", "union types", "any"],
+        "answer_en": "nullish coalescing (??)",
+        "answer_hi": "nullish coalescing (??)",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 35,
-        "question_en": "What is the value of cos 60°?",
-        "question_hi": "cos 60° का मान क्या है?",
-        "options_en": ["1", "0.5", "√3/2", "0"],
-        "options_hi": ["1", "0.5", "√3/2", "0"],
-        "answer_en": "0.5",
-        "answer_hi": "0.5",
+        "question_en": "Which TypeScript feature allows creating mapped types to transform existing types?",
+        "question_hi": "TypeScript में existing types को transform करने के लिए mapped types create करने की सुविधा कौन देती है?",
+        "options_en": ["mapped types", "utility types", "generics", "interfaces"],
+        "options_hi": ["mapped types", "utility types", "generics", "interfaces"],
+        "answer_en": "mapped types",
+        "answer_hi": "mapped types",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 36,
-        "question_en": "Which gas is used in photosynthesis?",
-        "question_hi": "प्रकाश संश्लेषण में किस गैस का उपयोग होता है?",
-        "options_en": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
-        "options_hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "नाइट्रोजन", "हाइड्रोजन"],
-        "answer_en": "Carbon dioxide",
-        "answer_hi": "कार्बन डाइऑक्साइड",
+        "question_en": "Which TypeScript feature allows creating discriminated unions for type-safe object variants?",
+        "question_hi": "TypeScript में type-safe object variants के लिए discriminated unions create करने की सुविधा कौन देती है?",
+        "options_en": ["tagged unions", "intersection types", "tuple", "interface"],
+        "options_hi": ["tagged unions", "intersection types", "tuple", "interface"],
+        "answer_en": "tagged unions",
+        "answer_hi": "tagged unions",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 37,
-        "question_en": "What is the capital of Brazil?",
-        "question_hi": "ब्राजील की राजधानी क्या है?",
-        "options_en": ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"],
-        "options_hi": ["रियो डी जनेरियो", "साओ पाउलो", "ब्रासीलिया", "साल्वाडोर"],
-        "answer_en": "Brasília",
-        "answer_hi": "ब्रासीलिया",
+        "question_en": "Which TypeScript feature allows narrowing union types using 'in' operator?",
+        "question_hi": "TypeScript में 'in' operator का उपयोग करके union types narrow करने की सुविधा कौन देती है?",
+        "options_en": ["type guards", "type inference", "union types", "intersection types"],
+        "options_hi": ["type guards", "type inference", "union types", "intersection types"],
+        "answer_en": "type guards",
+        "answer_hi": "type guards",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 38,
-        "question_en": "Who discovered gravity?",
-        "question_hi": "गुरुत्वाकर्षण की खोज किसने की?",
-        "options_en": ["Albert Einstein", "Isaac Newton", "Galileo Galilei", "Stephen Hawking"],
-        "options_hi": ["अल्बर्ट आइंस्टीन", "आइजैक न्यूटन", "गैलीलियो गैलीली", "स्टीफन हॉकिंग"],
-        "answer_en": "Isaac Newton",
-        "answer_hi": "आइजैक न्यूटन",
+        "question_en": "Which TypeScript type allows representing all possible keys of an object type?",
+        "question_hi": "TypeScript में object type की सभी possible keys represent करने के लिए कौन सा type है?",
+        "options_en": ["keyof", "typeof", "any", "unknown"],
+        "options_hi": ["keyof", "typeof", "any", "unknown"],
+        "answer_en": "keyof",
+        "answer_hi": "keyof",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 39,
-        "question_en": "What is the chemical formula of water?",
-        "question_hi": "पानी का रासायनिक सूत्र क्या है?",
-        "options_en": ["H₂O", "HO₂", "H₂O₂", "HO"],
-        "options_hi": ["H₂O", "HO₂", "H₂O₂", "HO"],
-        "answer_en": "H₂O",
-        "answer_hi": "H₂O",
+        "question_en": "Which TypeScript feature allows creating an array type from the types of a tuple?",
+        "question_hi": "TypeScript में tuple के types से array type create करने की सुविधा कौन देती है?",
+        "options_en": ["typeof tuple[number]", "tuple", "array", "union types"],
+        "options_hi": ["typeof tuple[number]", "tuple", "array", "union types"],
+        "answer_en": "typeof tuple[number]",
+        "answer_hi": "typeof tuple[number]",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 40,
-        "question_en": "Which is the fastest land animal?",
-        "question_hi": "सबसे तेज भूमि जानवर कौन सा है?",
-        "options_en": ["Cheetah", "Lion", "Tiger", "Horse"],
-        "options_hi": ["चीता", "शेर", "बाघ", "घोड़ा"],
-        "answer_en": "Cheetah",
-        "answer_hi": "चीता",
+        "question_en": "Which TypeScript feature allows representing optional properties in a type?",
+        "question_hi": "TypeScript में type में optional properties represent करने की सुविधा कौन देती है?",
+        "options_en": ["?", "readonly", "default", "any"],
+        "options_hi": ["?", "readonly", "default", "any"],
+        "answer_en": "?",
+        "answer_hi": "?",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 41,
-        "question_en": "What is the value of 2³ × 3²?",
-        "question_hi": "2³ × 3² का मान क्या है?",
-        "options_en": ["36", "72", "54", "48"],
-        "options_hi": ["36", "72", "54", "48"],
-        "answer_en": "72",
-        "answer_hi": "72",
+        "question_en": "Which TypeScript keyword allows implementing multiple interfaces in a class?",
+        "question_hi": "TypeScript में class में multiple interfaces implement करने के लिए कौन सा keyword है?",
+        "options_en": ["implements", "extends", "interface", "super"],
+        "options_hi": ["implements", "extends", "interface", "super"],
+        "answer_en": "implements",
+        "answer_hi": "implements",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 42,
-        "question_en": "Who was the first woman Prime Minister of India?",
-        "question_hi": "भारत की पहली महिला प्रधानमंत्री कौन थीं?",
-        "options_en": ["Sarojini Naidu", "Indira Gandhi", "Pratibha Patil", "Sonia Gandhi"],
-        "options_hi": ["सरोजिनी नायडू", "इंदिरा गांधी", "प्रतिभा पाटिल", "सोनिया गांधी"],
-        "answer_en": "Indira Gandhi",
-        "answer_hi": "इंदिरा गांधी",
+        "question_en": "Which TypeScript utility type constructs a type with all properties of T except those in K?",
+        "question_hi": "TypeScript में कौन सा utility type T की सभी properties को construct करता है सिवाय K में मौजूद properties के?",
+        "options_en": ["Omit<T, K>", "Pick<T, K>", "Partial<T>", "Required<T>"],
+        "options_hi": ["Omit<T, K>", "Pick<T, K>", "Partial<T>", "Required<T>"],
+        "answer_en": "Omit<T, K>",
+        "answer_hi": "Omit<T, K>",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 43,
-        "question_en": "What is the SI unit of electric current?",
-        "question_hi": "विद्युत धारा की SI इकाई क्या है?",
-        "options_en": ["Volt", "Ampere", "Ohm", "Watt"],
-        "options_hi": ["वोल्ट", "एम्पियर", "ओम", "वाट"],
-        "answer_en": "Ampere",
-        "answer_hi": "एम्पियर",
+        "question_en": "Which TypeScript feature allows constraining a generic type to a set of string literals?",
+        "question_hi": "TypeScript में generic type को string literals के set तक constrain करने की सुविधा कौन देती है?",
+        "options_en": ["generic constraints", "union types", "literal types", "enum"],
+        "options_hi": ["generic constraints", "union types", "literal types", "enum"],
+        "answer_en": "generic constraints",
+        "answer_hi": "generic constraints",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 44,
-        "question_en": "Which planet is known as the 'Red Planet'?",
-        "question_hi": "किस ग्रह को 'लाल ग्रह' के नाम से जाना जाता है?",
-        "options_en": ["Venus", "Mars", "Jupiter", "Saturn"],
-        "options_hi": ["शुक्र", "मंगल", "बृहस्पति", "शनि"],
-        "answer_en": "Mars",
-        "answer_hi": "मंगल",
+        "question_en": "Which TypeScript feature allows defining a type that represents the type of a variable?",
+        "question_hi": "TypeScript में variable के type को represent करने के लिए कौन सी सुविधा है?",
+        "options_en": ["typeof", "keyof", "any", "unknown"],
+        "options_hi": ["typeof", "keyof", "any", "unknown"],
+        "answer_en": "typeof",
+        "answer_hi": "typeof",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 45,
-        "question_en": "What is the formula for volume of a sphere?",
-        "question_hi": "गोले के आयतन का सूत्र क्या है?",
-        "options_en": ["4/3πr³", "πr²h", "2πr", "4πr²"],
-        "options_hi": ["4/3πr³", "πr²h", "2πr", "4πr²"],
-        "answer_en": "4/3πr³",
-        "answer_hi": "4/3πr³",
+        "question_en": "Which TypeScript feature allows representing a variable that can hold values of any type safely?",
+        "question_hi": "TypeScript में variable जो किसी भी type की value hold कर सकता है, उसे safely represent करने की सुविधा कौन देती है?",
+        "options_en": ["unknown", "any", "never", "void"],
+        "options_hi": ["unknown", "any", "never", "void"],
+        "answer_en": "unknown",
+        "answer_hi": "unknown",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 46,
-        "question_en": "Which gas is most abundant in Earth's atmosphere?",
-        "question_hi": "पृथ्वी के वायुमंडल में कौन सी गैस सबसे अधिक मात्रा में है?",
-        "options_en": ["Oxygen", "Nitrogen", "Carbon dioxide", "Argon"],
-        "options_hi": ["ऑक्सीजन", "नाइट्रोजन", "कार्बन डाइऑक्साइड", "आर्गन"],
-        "answer_en": "Nitrogen",
-        "answer_hi": "नाइट्रोजन",
+        "question_en": "Which TypeScript utility type constructs a type that makes all properties required?",
+        "question_hi": "TypeScript में कौन सा utility type सभी properties को required बनाता है?",
+        "options_en": ["Required<T>", "Partial<T>", "Readonly<T>", "Pick<T, K>"],
+        "options_hi": ["Required<T>", "Partial<T>", "Readonly<T>", "Pick<T, K>"],
+        "answer_en": "Required<T>",
+        "answer_hi": "Required<T>",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 47,
-        "question_en": "What is the value of tan 45°?",
-        "question_hi": "tan 45° का मान क्या है?",
-        "options_en": ["0", "1", "√3", "1/√3"],
-        "options_hi": ["0", "1", "√3", "1/√3"],
-        "answer_en": "1",
-        "answer_hi": "1",
+        "question_en": "Which TypeScript feature allows creating type aliases for complex types?",
+        "question_hi": "TypeScript में complex types के लिए type aliases create करने की सुविधा कौन देती है?",
+        "options_en": ["type", "interface", "enum", "class"],
+        "options_hi": ["type", "interface", "enum", "class"],
+        "answer_en": "type",
+        "answer_hi": "type",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 48,
-        "question_en": "Who wrote 'Geetanjali'?",
-        "question_hi": "'गीतांजलि' किसने लिखी?",
-        "options_en": ["Mahadevi Verma", "Rabindranath Tagore", "Premchand", "Harivansh Rai Bachchan"],
-        "options_hi": ["महादेवी वर्मा", "रबींद्रनाथ टैगोर", "प्रेमचंद", "हरिवंश राय बच्चन"],
-        "answer_en": "Rabindranath Tagore",
-        "answer_hi": "रबींद्रनाथ टैगोर",
+        "question_en": "Which TypeScript keyword allows creating abstract classes?",
+        "question_hi": "TypeScript में abstract classes create करने के लिए कौन सा keyword है?",
+        "options_en": ["abstract", "readonly", "final", "const"],
+        "options_hi": ["abstract", "readonly", "final", "const"],
+        "answer_en": "abstract",
+        "answer_hi": "abstract",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 49,
-        "question_en": "What is the chemical symbol for gold?",
-        "question_hi": "सोने का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Go", "Gd", "Au", "Ag"],
-        "options_hi": ["Go", "Gd", "Au", "Ag"],
-        "answer_en": "Au",
-        "answer_hi": "Au",
+        "question_en": "Which TypeScript feature allows creating a type-safe enum using string values?",
+        "question_hi": "TypeScript में string values के साथ type-safe enum create करने की सुविधा कौन देती है?",
+        "options_en": ["string enums", "numeric enums", "union types", "literal types"],
+        "options_hi": ["string enums", "numeric enums", "union types", "literal types"],
+        "answer_en": "string enums",
+        "answer_hi": "string enums",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 50,
-        "question_en": "Which is the national bird of India?",
-        "question_hi": "भारत का राष्ट्रीय पक्षी कौन सा है?",
-        "options_en": ["Peacock", "Parrot", "Sparrow", "Eagle"],
-        "options_hi": ["मोर", "तोता", "गौरैया", "गरुड़"],
-        "answer_en": "Peacock",
-        "answer_hi": "मोर",
+        "question_en": "Which TypeScript feature allows using generic types with constraints to ensure type safety?",
+        "question_hi": "TypeScript में generic types को constraints के साथ use करके type safety सुनिश्चित करने की सुविधा कौन देती है?",
+        "options_en": ["constrained generics", "utility types", "mapped types", "intersection types"],
+        "options_hi": ["constrained generics", "utility types", "mapped types", "intersection types"],
+        "answer_en": "constrained generics",
+        "answer_hi": "constrained generics",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 51,
-        "question_en": "What is the formula for acceleration?",
-        "question_hi": "त्वरण का सूत्र क्या है?",
-        "options_en": ["v/t", "d/t", "m×a", "F/m"],
-        "options_hi": ["v/t", "d/t", "m×a", "F/m"],
-        "answer_en": "v/t",
-        "answer_hi": "v/t",
+        "question_en": "Which TypeScript keyword is used to create a read-only property in a class?",
+        "question_hi": "TypeScript में class में read-only property create करने के लिए कौन सा keyword है?",
+        "options_en": ["readonly", "const", "let", "final"],
+        "options_hi": ["readonly", "const", "let", "final"],
+        "answer_en": "readonly",
+        "answer_hi": "readonly",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 52,
-        "question_en": "Who invented the telephone?",
-        "question_hi": "टेलीफोन का आविष्कार किसने किया?",
-        "options_en": ["Thomas Edison", "Alexander Graham Bell", "Nikola Tesla", "Guglielmo Marconi"],
-        "options_hi": ["थॉमस एडिसन", "अलेक्जेंडर ग्राहम बेल", "निकोला टेस्ला", "गुग्लिल्मो मार्कोनी"],
-        "answer_en": "Alexander Graham Bell",
-        "answer_hi": "अलेक्जेंडर ग्राहम बेल",
+        "question_en": "Which TypeScript type allows representing multiple possible types using a pipe '|'?",
+        "question_hi": "TypeScript में pipe '|' का उपयोग करके multiple possible types represent करने के लिए कौन सा type है?",
+        "options_en": ["union types", "intersection types", "tuple", "any"],
+        "options_hi": ["union types", "intersection types", "tuple", "any"],
+        "answer_en": "union types",
+        "answer_hi": "union types",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 53,
-        "question_en": "What is the chemical formula of common salt?",
-        "question_hi": "साधारण नमक का रासायनिक सूत्र क्या है?",
-        "options_en": ["NaCl", "KCl", "CaCl₂", "MgCl₂"],
-        "options_hi": ["NaCl", "KCl", "CaCl₂", "MgCl₂"],
-        "answer_en": "NaCl",
-        "answer_hi": "NaCl",
+        "question_en": "Which TypeScript feature allows combining multiple types into one using '&'?",
+        "question_hi": "TypeScript में '&' का उपयोग करके multiple types को combine करने की सुविधा कौन देती है?",
+        "options_en": ["intersection types", "union types", "tuple", "enum"],
+        "options_hi": ["intersection types", "union types", "tuple", "enum"],
+        "answer_en": "intersection types",
+        "answer_hi": "intersection types",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 54,
-        "question_en": "Which is the largest desert in the world?",
-        "question_hi": "दुनिया का सबसे बड़ा रेगिस्तान कौन सा है?",
-        "options_en": ["Sahara", "Arabian", "Gobi", "Kalahari"],
-        "options_hi": ["सहारा", "अरब", "गोबी", "कालाहारी"],
-        "answer_en": "Sahara",
-        "answer_hi": "सहारा",
+        "question_en": "Which TypeScript type represents functions that return no value?",
+        "question_hi": "TypeScript में functions जो कोई value return नहीं करते, किस type से दर्शाए जाते हैं?",
+        "options_en": ["void", "never", "any", "unknown"],
+        "options_hi": ["void", "never", "any", "unknown"],
+        "answer_en": "void",
+        "answer_hi": "void",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 55,
-        "question_en": "What is the value of 7 × 8 + 4 ÷ 2?",
-        "question_hi": "7 × 8 + 4 ÷ 2 का मान क्या है?",
-        "options_en": ["58", "60", "56", "54"],
-        "options_hi": ["58", "60", "56", "54"],
-        "answer_en": "58",
-        "answer_hi": "58",
+        "question_en": "Which TypeScript feature allows creating generic functions?",
+        "question_hi": "TypeScript में generic functions create करने की सुविधा कौन देती है?",
+        "options_en": ["generics", "utility types", "type guards", "interfaces"],
+        "options_hi": ["generics", "utility types", "type guards", "interfaces"],
+        "answer_en": "generics",
+        "answer_hi": "generics",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 56,
-        "question_en": "Which gas is used in photosynthesis?",
-        "question_hi": "प्रकाश संश्लेषण में किस गैस का उपयोग होता है?",
-        "options_en": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
-        "options_hi": ["ऑक्सीजन", "कार्बन डाइऑक्साइड", "नाइट्रोजन", "हाइड्रोजन"],
-        "answer_en": "Carbon dioxide",
-        "answer_hi": "कार्बन डाइऑक्साइड",
+        "question_en": "Which TypeScript type allows representing a variable that can never occur?",
+        "question_hi": "TypeScript में variable जो कभी occur नहीं हो सकता, उसे किस type से दर्शाया जाता है?",
+        "options_en": ["never", "void", "any", "unknown"],
+        "options_hi": ["never", "void", "any", "unknown"],
+        "answer_en": "never",
+        "answer_hi": "never",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 57,
-        "question_en": "What is the capital of France?",
-        "question_hi": "फ्रांस की राजधानी क्या है?",
-        "options_en": ["London", "Berlin", "Paris", "Rome"],
-        "options_hi": ["लंदन", "बर्लिन", "पेरिस", "रोम"],
-        "answer_en": "Paris",
-        "answer_hi": "पेरिस",
+        "question_en": "Which TypeScript feature allows defining optional chaining with '?.' operator?",
+        "question_hi": "TypeScript में optional chaining define करने के लिए कौन सा operator है?",
+        "options_en": ["?.", "??", "|", "&"],
+        "options_hi": ["?.", "??", "|", "&"],
+        "answer_en": "?.",
+        "answer_hi": "?.",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 58,
-        "question_en": "Who discovered X-rays?",
-        "question_hi": "एक्स-रे की खोज किसने की?",
-        "options_en": ["Marie Curie", "Wilhelm Roentgen", "Thomas Edison", "Alexander Fleming"],
-        "options_hi": ["मैरी क्यूरी", "विल्हेम रोएंटजेन", "थॉमस एडिसन", "अलेक्जेंडर फ्लेमिंग"],
-        "answer_en": "Wilhelm Roentgen",
-        "answer_hi": "विल्हेम रोएंटजेन",
+        "question_en": "Which TypeScript utility type allows making all properties of a type optional?",
+        "question_hi": "TypeScript में कौन सा utility type type की सभी properties को optional बनाता है?",
+        "options_en": ["Partial<T>", "Required<T>", "Readonly<T>", "Pick<T, K>"],
+        "options_hi": ["Partial<T>", "Required<T>", "Readonly<T>", "Pick<T, K>"],
+        "answer_en": "Partial<T>",
+        "answer_hi": "Partial<T>",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 59,
-        "question_en": "What is the chemical formula of carbon dioxide?",
-        "question_hi": "कार्बन डाइऑक्साइड का रासायनिक सूत्र क्या है?",
-        "options_en": ["CO", "CO₂", "C₂O", "CO₃"],
-        "options_hi": ["CO", "CO₂", "C₂O", "CO₃"],
-        "answer_en": "CO₂",
-        "answer_hi": "CO₂",
+        "question_en": "Which TypeScript utility type constructs a type with all properties required?",
+        "question_hi": "TypeScript में कौन सा utility type type की सभी properties को required बनाता है?",
+        "options_en": ["Required<T>", "Partial<T>", "Readonly<T>", "Omit<T, K>"],
+        "options_hi": ["Required<T>", "Partial<T>", "Readonly<T>", "Omit<T, K>"],
+        "answer_en": "Required<T>",
+        "answer_hi": "Required<T>",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 60,
-        "question_en": "Which is the tallest mountain in the world?",
-        "question_hi": "दुनिया की सबसे ऊंची पर्वत चोटी कौन सी है?",
-        "options_en": ["K2", "Mount Everest", "Kangchenjunga", "Makalu"],
-        "options_hi": ["K2", "माउंट एवरेस्ट", "कंचनजंगा", "मकालू"],
-        "answer_en": "Mount Everest",
-        "answer_hi": "माउंट एवरेस्ट",
+        "question_en": "Which TypeScript feature allows representing tuple types?",
+        "question_hi": "TypeScript में tuple types represent करने की सुविधा कौन देती है?",
+        "options_en": ["tuple", "array", "enum", "union types"],
+        "options_hi": ["tuple", "array", "enum", "union types"],
+        "answer_en": "tuple",
+        "answer_hi": "tuple",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 61,
-        "question_en": "What is the value of 15% of 200?",
-        "question_hi": "200 का 15% कितना होता है?",
-        "options_en": ["15", "30", "45", "60"],
-        "options_hi": ["15", "30", "45", "60"],
-        "answer_en": "30",
-        "answer_hi": "30",
+        "question_en": "Which TypeScript feature allows defining enums with numeric values by default?",
+        "question_hi": "TypeScript में numeric values के साथ enums define करने की सुविधा कौन देती है?",
+        "options_en": ["numeric enums", "string enums", "union types", "literal types"],
+        "options_hi": ["numeric enums", "string enums", "union types", "literal types"],
+        "answer_en": "numeric enums",
+        "answer_hi": "numeric enums",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 62,
-        "question_en": "Who was the first Prime Minister of India?",
-        "question_hi": "भारत के प्रथम प्रधानमंत्री कौन थे?",
-        "options_en": ["Mahatma Gandhi", "Jawaharlal Nehru", "Sardar Patel", "Dr. Rajendra Prasad"],
-        "options_hi": ["महात्मा गांधी", "जवाहरलाल नेहरू", "सरदार पटेल", "डॉ. राजेंद्र प्रसाद"],
-        "answer_en": "Jawaharlal Nehru",
-        "answer_hi": "जवाहरलाल नेहरू",
+        "question_en": "Which TypeScript keyword is used to define a constant value?",
+        "question_hi": "TypeScript में constant value define करने के लिए कौन सा keyword है?",
+        "options_en": ["const", "let", "var", "readonly"],
+        "options_hi": ["const", "let", "var", "readonly"],
+        "answer_en": "const",
+        "answer_hi": "const",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 63,
-        "question_en": "What is the SI unit of power?",
-        "question_hi": "शक्ति की SI इकाई क्या है?",
-        "options_en": ["Joule", "Newton", "Watt", "Pascal"],
-        "options_hi": ["जूल", "न्यूटन", "वाट", "पास्कल"],
-        "answer_en": "Watt",
-        "answer_hi": "वाट",
+        "question_en": "Which TypeScript feature allows defining interface for object structure?",
+        "question_hi": "TypeScript में object structure के लिए interface define करने की सुविधा कौन देती है?",
+        "options_en": ["interface", "type", "class", "enum"],
+        "options_hi": ["interface", "type", "class", "enum"],
+        "answer_en": "interface",
+        "answer_hi": "interface",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 64,
-        "question_en": "Which planet is known as the 'Blue Planet'?",
-        "question_hi": "किस ग्रह को 'नीला ग्रह' कहा जाता है?",
-        "options_en": ["Earth", "Neptune", "Uranus", "Mars"],
-        "options_hi": ["पृथ्वी", "वरुण", "अरुण", "मंगल"],
-        "answer_en": "Earth",
-        "answer_hi": "पृथ्वी",
+        "question_en": "Which TypeScript feature allows defining a union of types?",
+        "question_hi": "TypeScript में multiple types के union define करने की सुविधा कौन देती है?",
+        "options_en": ["union types", "intersection types", "tuple", "any"],
+        "options_hi": ["union types", "intersection types", "tuple", "any"],
+        "answer_en": "union types",
+        "answer_hi": "union types",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 65,
-        "question_en": "What is the formula for area of a triangle?",
-        "question_hi": "त्रिभुज के क्षेत्रफल का सूत्र क्या है?",
-        "options_en": ["½ × base × height", "base × height", "½ × base + height", "base + height"],
-        "options_hi": ["½ × आधार × ऊंचाई", "आधार × ऊंचाई", "½ × आधार + ऊंचाई", "आधार + ऊंचाई"],
-        "answer_en": "½ × base × height",
-        "answer_hi": "½ × आधार × ऊंचाई",
+        "question_en": "Which TypeScript utility type picks specific properties from a type?",
+        "question_hi": "TypeScript में कौन सा utility type type से specific properties pick करता है?",
+        "options_en": ["Pick<T, K>", "Omit<T, K>", "Partial<T>", "Required<T>"],
+        "options_hi": ["Pick<T, K>", "Omit<T, K>", "Partial<T>", "Required<T>"],
+        "answer_en": "Pick<T, K>",
+        "answer_hi": "Pick<T, K>",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 66,
-        "question_en": "Which gas is used in balloons to make them float?",
-        "question_hi": "गुब्बारों को उड़ाने के लिए किस गैस का उपयोग किया जाता है?",
-        "options_en": ["Oxygen", "Hydrogen", "Helium", "Nitrogen"],
-        "options_hi": ["ऑक्सीजन", "हाइड्रोजन", "हीलियम", "नाइट्रोजन"],
-        "answer_en": "Helium",
-        "answer_hi": "हीलियम",
+        "question_en": "Which TypeScript utility type excludes certain properties from a type?",
+        "question_hi": "TypeScript में कौन सा utility type type से कुछ properties exclude करता है?",
+        "options_en": ["Omit<T, K>", "Pick<T, K>", "Partial<T>", "Required<T>"],
+        "options_hi": ["Omit<T, K>", "Pick<T, K>", "Partial<T>", "Required<T>"],
+        "answer_en": "Omit<T, K>",
+        "answer_hi": "Omit<T, K>",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 67,
-        "question_en": "What is the value of sin 30°?",
-        "question_hi": "sin 30° का मान क्या है?",
-        "options_en": ["0", "0.5", "1", "√3/2"],
-        "options_hi": ["0", "0.5", "1", "√3/2"],
-        "answer_en": "0.5",
-        "answer_hi": "0.5",
+        "question_en": "Which TypeScript feature allows representing the type of a variable?",
+        "question_hi": "TypeScript में variable का type represent करने की सुविधा कौन देती है?",
+        "options_en": ["typeof", "keyof", "any", "unknown"],
+        "options_hi": ["typeof", "keyof", "any", "unknown"],
+        "answer_en": "typeof",
+        "answer_hi": "typeof",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 68,
-        "question_en": "Who wrote 'Mahabharata'?",
-        "question_hi": "'महाभारत' किसने लिखी?",
-        "options_en": ["Valmiki", "Ved Vyas", "Tulsidas", "Kalidas"],
-        "options_hi": ["वाल्मीकि", "वेद व्यास", "तुलसीदास", "कालिदास"],
-        "answer_en": "Ved Vyas",
-        "answer_hi": "वेद व्यास",
+        "question_en": "Which TypeScript feature allows narrowing types using the 'in' operator?",
+        "question_hi": "TypeScript में 'in' operator का उपयोग करके types narrow करने की सुविधा कौन देती है?",
+        "options_en": ["type guards", "type inference", "union types", "intersection types"],
+        "options_hi": ["type guards", "type inference", "union types", "intersection types"],
+        "answer_en": "type guards",
+        "answer_hi": "type guards",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 69,
-        "question_en": "What is the chemical symbol for iron?",
-        "question_hi": "लोहे का रासायनिक प्रतीक क्या है?",
-        "options_en": ["Ir", "Fe", "In", "Io"],
-        "options_hi": ["Ir", "Fe", "In", "Io"],
-        "answer_en": "Fe",
-        "answer_hi": "Fe",
+        "question_en": "Which TypeScript feature allows defining a type that represents keys of an object?",
+        "question_hi": "TypeScript में object के keys represent करने वाला type कौन सा है?",
+        "options_en": ["keyof", "typeof", "any", "unknown"],
+        "options_hi": ["keyof", "typeof", "any", "unknown"],
+        "answer_en": "keyof",
+        "answer_hi": "keyof",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 70,
-        "question_en": "Which is the national tree of India?",
-        "question_hi": "भारत का राष्ट्रीय वृक्ष कौन सा है?",
-        "options_en": ["Banyan", "Neem", "Peepal", "Mango"],
-        "options_hi": ["बरगद", "नीम", "पीपल", "आम"],
-        "answer_en": "Banyan",
-        "answer_hi": "बरगद",
+        "question_en": "Which TypeScript feature allows creating abstract classes?",
+        "question_hi": "TypeScript में abstract classes create करने की सुविधा कौन देती है?",
+        "options_en": ["abstract", "readonly", "const", "final"],
+        "options_hi": ["abstract", "readonly", "const", "final"],
+        "answer_en": "abstract",
+        "answer_hi": "abstract",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 71,
-        "question_en": "What is the formula for density?",
-        "question_hi": "घनत्व का सूत्र क्या है?",
-        "options_en": ["mass/volume", "volume/mass", "mass × volume", "mass + volume"],
-        "options_hi": ["द्रव्यमान/आयतन", "आयतन/द्रव्यमान", "द्रव्यमान × आयतन", "द्रव्यमान + आयतन"],
-        "answer_en": "mass/volume",
-        "answer_hi": "द्रव्यमान/आयतन",
+        "question_en": "Which TypeScript feature allows defining a generic type constrained to another type?",
+        "question_hi": "TypeScript में generic type को किसी अन्य type तक constrain करने की सुविधा कौन देती है?",
+        "options_en": ["generic constraints", "union types", "utility types", "intersection types"],
+        "options_hi": ["generic constraints", "union types", "utility types", "intersection types"],
+        "answer_en": "generic constraints",
+        "answer_hi": "generic constraints",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 72,
-        "question_en": "Who invented the computer?",
-        "question_hi": "कंप्यूटर का आविष्कार किसने किया?",
-        "options_en": ["Charles Babbage", "Alan Turing", "Bill Gates", "Steve Jobs"],
-        "options_hi": ["चार्ल्स बैबेज", "एलन ट्यूरिंग", "बिल गेट्स", "स्टीव जॉब्स"],
-        "answer_en": "Charles Babbage",
-        "answer_hi": "चार्ल्स बैबेज",
+        "question_en": "Which TypeScript utility type constructs a type by making all properties readonly?",
+        "question_hi": "TypeScript में कौन सा utility type type की सभी properties readonly बनाता है?",
+        "options_en": ["Readonly<T>", "Partial<T>", "Required<T>", "Pick<T, K>"],
+        "options_hi": ["Readonly<T>", "Partial<T>", "Required<T>", "Pick<T, K>"],
+        "answer_en": "Readonly<T>",
+        "answer_hi": "Readonly<T>",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 73,
-        "question_en": "What is the chemical formula of sulfuric acid?",
-        "question_hi": "सल्फ्यूरिक अम्ल का रासायनिक सूत्र क्या है?",
-        "options_en": ["H₂SO₄", "HCl", "HNO₃", "H₃PO₄"],
-        "options_hi": ["H₂SO₄", "HCl", "HNO₃", "H₃PO₄"],
-        "answer_en": "H₂SO₄",
-        "answer_hi": "H₂SO₄",
+        "question_en": "Which TypeScript feature allows type narrowing using custom functions returning boolean?",
+        "question_hi": "TypeScript में custom functions जो boolean return करते हैं, उनके द्वारा type narrowing करने की सुविधा कौन देती है?",
+        "options_en": ["user-defined type guards", "utility types", "mapped types", "literal types"],
+        "options_hi": ["user-defined type guards", "utility types", "mapped types", "literal types"],
+        "answer_en": "user-defined type guards",
+        "answer_hi": "user-defined type guards",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 74,
-        "question_en": "Which is the smallest country in the world?",
-        "question_hi": "दुनिया का सबसे छोटा देश कौन सा है?",
-        "options_en": ["Monaco", "Vatican City", "San Marino", "Liechtenstein"],
-        "options_hi": ["मोनाको", "वेटिकन सिटी", "सैन मैरिनो", "लिकटेंस्टीन"],
-        "answer_en": "Vatican City",
-        "answer_hi": "वेटिकन सिटी",
+        "question_en": "Which TypeScript operator allows safely accessing nested properties?",
+        "question_hi": "TypeScript में nested properties को safely access करने के लिए कौन सा operator है?",
+        "options_en": ["?.", "??", "|", "&"],
+        "options_hi": ["?.", "??", "|", "&"],
+        "answer_en": "?.",
+        "answer_hi": "?.",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 75,
-        "question_en": "What is the value of 3² + 4²?",
-        "question_hi": "3² + 4² का मान क्या है?",
-        "options_en": ["7", "12", "25", "49"],
-        "options_hi": ["7", "12", "25", "49"],
-        "answer_en": "25",
-        "answer_hi": "25",
+        "question_en": "Which TypeScript utility type extracts return type of a function?",
+        "question_hi": "TypeScript में function के return type को extract करने वाला utility type कौन सा है?",
+        "options_en": ["ReturnType<T>", "Parameters<T>", "Partial<T>", "Readonly<T>"],
+        "options_hi": ["ReturnType<T>", "Parameters<T>", "Partial<T>", "Readonly<T>"],
+        "answer_en": "ReturnType<T>",
+        "answer_hi": "ReturnType<T>",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 76,
-        "question_en": "Which gas is known as 'Laughing Gas'?",
-        "question_hi": "किस गैस को 'हंसाने वाली गैस' कहा जाता है?",
-        "options_en": ["Oxygen", "Nitrous oxide", "Carbon dioxide", "Helium"],
-        "options_hi": ["ऑक्सीजन", "नाइट्रस ऑक्साइड", "कार्बन डाइऑक्साइड", "हीलियम"],
-        "answer_en": "Nitrous oxide",
-        "answer_hi": "नाइट्रस ऑक्साइड",
+        "question_en": "Which TypeScript utility type extracts parameters of a function as a tuple?",
+        "question_hi": "TypeScript में function के parameters को tuple के रूप में extract करने वाला utility type कौन सा है?",
+        "options_en": ["Parameters<T>", "ReturnType<T>", "Partial<T>", "Required<T>"],
+        "options_hi": ["Parameters<T>", "ReturnType<T>", "Partial<T>", "Required<T>"],
+        "answer_en": "Parameters<T>",
+        "answer_hi": "Parameters<T>",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 77,
-        "question_en": "What is the capital of China?",
-        "question_hi": "चीन की राजधानी क्या है?",
-        "options_en": ["Shanghai", "Beijing", "Hong Kong", "Guangzhou"],
-        "options_hi": ["शंघाई", "बीजिंग", "हांगकांग", "ग्वांगझोउ"],
-        "answer_en": "Beijing",
-        "answer_hi": "बीजिंग",
+        "question_en": "Which TypeScript feature allows representing a variable that can be any type safely?",
+        "question_hi": "TypeScript में variable जो किसी भी type की value hold कर सकता है, उसे safely represent करने का feature कौन देता है?",
+        "options_en": ["unknown", "any", "never", "void"],
+        "options_hi": ["unknown", "any", "never", "void"],
+        "answer_en": "unknown",
+        "answer_hi": "unknown",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 78,
-        "question_en": "Who discovered America?",
-        "question_hi": "अमेरिका की खोज किसने की?",
-        "options_en": ["Christopher Columbus", "Vasco da Gama", "Marco Polo", "Ferdinand Magellan"],
-        "options_hi": ["क्रिस्टोफर कोलंबस", "वास्को डी गामा", "मार्को पोलो", "फर्डिनेंड मैगलन"],
-        "answer_en": "Christopher Columbus",
-        "answer_hi": "क्रिस्टोफर कोलंबस",
+        "question_en": "Which TypeScript keyword allows extending a class?",
+        "question_hi": "TypeScript में class extend करने के लिए कौन सा keyword है?",
+        "options_en": ["extends", "implements", "interface", "super"],
+        "options_hi": ["extends", "implements", "interface", "super"],
+        "answer_en": "extends",
+        "answer_hi": "extends",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 79,
-        "question_en": "What is the chemical formula of ammonia?",
-        "question_hi": "अमोनिया का रासायनिक सूत्र क्या है?",
-        "options_en": ["NH₃", "NH₄", "N₂H₄", "HNO₃"],
-        "options_hi": ["NH₃", "NH₄", "N₂H₄", "HNO₃"],
-        "answer_en": "NH₃",
-        "answer_hi": "NH₃",
+        "question_en": "Which TypeScript utility type constructs a type with all properties optional?",
+        "question_hi": "TypeScript में कौन सा utility type type की सभी properties को optional बनाता है?",
+        "options_en": ["Partial<T>", "Required<T>", "Readonly<T>", "Pick<T, K>"],
+        "options_hi": ["Partial<T>", "Required<T>", "Readonly<T>", "Pick<T, K>"],
+        "answer_en": "Partial<T>",
+        "answer_hi": "Partial<T>",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 80,
-        "question_en": "Which is the largest mammal?",
-        "question_hi": "सबसे बड़ा स्तनपायी कौन सा है?",
-        "options_en": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
-        "options_hi": ["हाथी", "ब्लू व्हेल", "जिराफ", "दरियाई घोड़ा"],
-        "answer_en": "Blue Whale",
-        "answer_hi": "ब्लू व्हेल",
+        "question_en": "Which TypeScript feature allows creating discriminated unions for safe type checks?",
+        "question_hi": "TypeScript में safe type checks के लिए discriminated unions create करने की सुविधा कौन देती है?",
+        "options_en": ["tagged unions", "intersection types", "tuple", "literal types"],
+        "options_hi": ["tagged unions", "intersection types", "tuple", "literal types"],
+        "answer_en": "tagged unions",
+        "answer_hi": "tagged unions",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 81,
-        "question_en": "What is the value of √144?",
-        "question_hi": "√144 का मान क्या है?",
-        "options_en": ["12", "14", "16", "18"],
-        "options_hi": ["12", "14", "16", "18"],
-        "answer_en": "12",
-        "answer_hi": "12",
+        "question_en": "Which TypeScript feature allows combining multiple types into one using '&'?",
+        "question_hi": "TypeScript में '&' का उपयोग करके multiple types को combine करने की सुविधा कौन देती है?",
+        "options_en": ["intersection types", "union types", "tuple", "any"],
+        "options_hi": ["intersection types", "union types", "tuple", "any"],
+        "answer_en": "intersection types",
+        "answer_hi": "intersection types",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 82,
-        "question_en": "Who was the first woman to win Nobel Prize?",
-        "question_hi": "नोबेल पुरस्कार जीतने वाली पहली महिला कौन थीं?",
-        "options_en": ["Marie Curie", "Mother Teresa", "Rosalind Franklin", "Dorothy Hodgkin"],
-        "options_hi": ["मैरी क्यूरी", "मदर टेरेसा", "रोजालिंड फ्रैंकलिन", "डोरोथी हॉजकिन"],
-        "answer_en": "Marie Curie",
-        "answer_hi": "मैरी क्यूरी",
+        "question_en": "Which TypeScript keyword allows implementing multiple interfaces in a class?",
+        "question_hi": "TypeScript में class में multiple interfaces implement करने के लिए कौन सा keyword है?",
+        "options_en": ["implements", "extends", "interface", "abstract"],
+        "options_hi": ["implements", "extends", "interface", "abstract"],
+        "answer_en": "implements",
+        "answer_hi": "implements",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 83,
-        "question_en": "What is the SI unit of temperature?",
-        "question_hi": "तापमान की SI इकाई क्या है?",
-        "options_en": ["Celsius", "Fahrenheit", "Kelvin", "Rankine"],
-        "options_hi": ["सेल्सियस", "फारेनहाइट", "केल्विन", "रैंकिन"],
-        "answer_en": "Kelvin",
-        "answer_hi": "केल्विन",
+        "question_en": "Which TypeScript type allows representing all keys of a given type?",
+        "question_hi": "TypeScript में किसी दिए गए type की सभी keys represent करने के लिए कौन सा type है?",
+        "options_en": ["keyof", "typeof", "any", "unknown"],
+        "options_hi": ["keyof", "typeof", "any", "unknown"],
+        "answer_en": "keyof",
+        "answer_hi": "keyof",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 84,
-        "question_en": "Which planet has the most moons?",
-        "question_hi": "किस ग्रह के सबसे अधिक चंद्रमा हैं?",
-        "options_en": ["Jupiter", "Saturn", "Uranus", "Neptune"],
-        "options_hi": ["बृहस्पति", "शनि", "अरुण", "वरुण"],
-        "answer_en": "Saturn",
-        "answer_hi": "शनि",
+        "question_en": "Which TypeScript feature allows creating a type from another type but excluding some properties?",
+        "question_hi": "TypeScript में किसी type से नया type create करने की सुविधा जो कुछ properties exclude करता है?",
+        "options_en": ["Omit<T, K>", "Pick<T, K>", "Partial<T>", "Required<T>"],
+        "options_hi": ["Omit<T, K>", "Pick<T, K>", "Partial<T>", "Required<T>"],
+        "answer_en": "Omit<T, K>",
+        "answer_hi": "Omit<T, K>",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 85,
-        "question_en": "What is the formula for perimeter of a rectangle?",
-        "question_hi": "आयत के परिमाप का सूत्र क्या है?",
-        "options_en": ["2(l + b)", "l × b", "l + b", "4 × side"],
-        "options_hi": ["2(l + b)", "l × b", "l + b", "4 × भुजा"],
-        "answer_en": "2(l + b)",
-        "answer_hi": "2(l + b)",
+        "question_en": "Which TypeScript feature allows creating tuple types with fixed types and length?",
+        "question_hi": "TypeScript में fixed types और length वाले tuple types create करने की सुविधा कौन देती है?",
+        "options_en": ["tuple", "array", "union types", "any"],
+        "options_hi": ["tuple", "array", "union types", "any"],
+        "answer_en": "tuple",
+        "answer_hi": "tuple",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 86,
-        "question_en": "Which gas is used in refrigerators?",
-        "question_hi": "रेफ्रिजरेटर में किस गैस का उपयोग किया जाता है?",
-        "options_en": ["Ammonia", "Freon", "Both A and B", "Carbon dioxide"],
-        "options_hi": ["अमोनिया", "फ्रेऑन", "A और B दोनों", "कार्बन डाइऑक्साइड"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which TypeScript feature allows representing string literal unions?",
+        "question_hi": "TypeScript में string literal unions represent करने की सुविधा कौन देती है?",
+        "options_en": ["literal types", "enum", "union types", "intersection types"],
+        "options_hi": ["literal types", "enum", "union types", "intersection types"],
+        "answer_en": "literal types",
+        "answer_hi": "literal types",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 87,
-        "question_en": "What is the value of cos 90°?",
-        "question_hi": "cos 90° का मान क्या है?",
-        "options_en": ["0", "1", "0.5", "√3/2"],
-        "options_hi": ["0", "1", "0.5", "√3/2"],
-        "answer_en": "0",
-        "answer_hi": "0",
+        "question_en": "Which TypeScript utility type constructs a type by picking properties from another type?",
+        "question_hi": "TypeScript में किसी type से properties pick करके नया type create करने वाला utility type कौन सा है?",
+        "options_en": ["Pick<T, K>", "Omit<T, K>", "Partial<T>", "Required<T>"],
+        "options_hi": ["Pick<T, K>", "Omit<T, K>", "Partial<T>", "Required<T>"],
+        "answer_en": "Pick<T, K>",
+        "answer_hi": "Pick<T, K>",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 88,
-        "question_en": "Who wrote 'Ramcharitmanas'?",
-        "question_hi": "'रामचरितमानस' किसने लिखी?",
-        "options_en": ["Tulsidas", "Surdas", "Kabir", "Mirabai"],
-        "options_hi": ["तुलसीदास", "सूरदास", "कबीर", "मीराबाई"],
-        "answer_en": "Tulsidas",
-        "answer_hi": "तुलसीदास",
+        "question_en": "Which TypeScript feature allows defining enums with string values?",
+        "question_hi": "TypeScript में string values वाले enums define करने की सुविधा कौन देती है?",
+        "options_en": ["string enums", "numeric enums", "union types", "literal types"],
+        "options_hi": ["string enums", "numeric enums", "union types", "literal types"],
+        "answer_en": "string enums",
+        "answer_hi": "string enums",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 89,
-        "question_en": "What is the chemical symbol for sodium?",
-        "question_hi": "सोडियम का रासायनिक प्रतीक क्या है?",
-        "options_en": ["So", "Sd", "Na", "Nm"],
-        "options_hi": ["So", "Sd", "Na", "Nm"],
-        "answer_en": "Na",
-        "answer_hi": "Na",
+        "question_en": "Which TypeScript keyword allows creating abstract methods in a class?",
+        "question_hi": "TypeScript में class में abstract methods create करने के लिए कौन सा keyword है?",
+        "options_en": ["abstract", "readonly", "const", "final"],
+        "options_hi": ["abstract", "readonly", "const", "final"],
+        "answer_en": "abstract",
+        "answer_hi": "abstract",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 90,
-        "question_en": "Which is the national aquatic animal of India?",
-        "question_hi": "भारत का राष्ट्रीय जलीय जानवर कौन सा है?",
-        "options_en": ["Dolphin", "River Dolphin", "Whale", "Shark"],
-        "options_hi": ["डॉल्फिन", "रिवर डॉल्फिन", "व्हेल", "शार्क"],
-        "answer_en": "River Dolphin",
-        "answer_hi": "रिवर डॉल्फिन",
+        "question_en": "Which TypeScript feature allows safely accessing nested optional properties?",
+        "question_hi": "TypeScript में nested optional properties को safely access करने की सुविधा कौन देती है?",
+        "options_en": ["optional chaining (?.)", "nullish coalescing (??)", "union types", "type guards"],
+        "options_hi": ["optional chaining (?.)", "nullish coalescing (??)", "union types", "type guards"],
+        "answer_en": "optional chaining (?.)",
+        "answer_hi": "optional chaining (?.)",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 91,
-        "question_en": "What is the formula for speed?",
-        "question_hi": "गति का सूत्र क्या है?",
-        "options_en": ["distance/time", "time/distance", "distance × time", "distance + time"],
-        "options_hi": ["दूरी/समय", "समय/दूरी", "दूरी × समय", "दूरी + समय"],
-        "answer_en": "distance/time",
-        "answer_hi": "दूरी/समय",
+        "question_en": "Which TypeScript operator allows providing a default value for null or undefined?",
+        "question_hi": "TypeScript में null या undefined के लिए default value provide करने वाला operator कौन सा है?",
+        "options_en": ["nullish coalescing (??)", "optional chaining (?.)", "|", "&"],
+        "options_hi": ["nullish coalescing (??)", "optional chaining (?.)", "|", "&"],
+        "answer_en": "nullish coalescing (??)",
+        "answer_hi": "nullish coalescing (??)",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 92,
-        "question_en": "Who invented the light bulb?",
-        "question_hi": "बल्ब का आविष्कार किसने किया?",
-        "options_en": ["Thomas Edison", "Nikola Tesla", "Alexander Graham Bell", "Benjamin Franklin"],
-        "options_hi": ["थॉमस एडिसन", "निकोला टेस्ला", "अलेक्जेंडर ग्राहम बेल", "बेंजामिन फ्रैंकलिन"],
-        "answer_en": "Thomas Edison",
-        "answer_hi": "थॉमस एडिसन",
+        "question_en": "Which TypeScript feature allows creating mapped types to transform existing types?",
+        "question_hi": "TypeScript में existing types को transform करने के लिए mapped types create करने की सुविधा कौन देती है?",
+        "options_en": ["mapped types", "utility types", "generics", "interfaces"],
+        "options_hi": ["mapped types", "utility types", "generics", "interfaces"],
+        "answer_en": "mapped types",
+        "answer_hi": "mapped types",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 93,
-        "question_en": "What is the chemical formula of baking soda?",
-        "question_hi": "बेकिंग सोडा का रासायनिक सूत्र क्या है?",
-        "options_en": ["Na₂CO₃", "NaHCO₃", "NaOH", "NaCl"],
-        "options_hi": ["Na₂CO₃", "NaHCO₃", "NaOH", "NaCl"],
-        "answer_en": "NaHCO₃",
-        "answer_hi": "NaHCO₃",
+        "question_en": "Which TypeScript keyword allows checking the type of a variable at runtime?",
+        "question_hi": "TypeScript में runtime पर variable का type check करने के लिए कौन सा keyword है?",
+        "options_en": ["typeof", "keyof", "instanceof", "readonly"],
+        "options_hi": ["typeof", "keyof", "instanceof", "readonly"],
+        "answer_en": "typeof",
+        "answer_hi": "typeof",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 94,
-        "question_en": "Which is the largest island in the world?",
-        "question_hi": "दुनिया का सबसे बड़ा द्वीप कौन सा है?",
-        "options_en": ["Greenland", "Australia", "Borneo", "Madagascar"],
-        "options_hi": ["ग्रीनलैंड", "ऑस्ट्रेलिया", "बोर्नियो", "मेडागास्कर"],
-        "answer_en": "Greenland",
-        "answer_hi": "ग्रीनलैंड",
+        "question_en": "Which TypeScript feature allows creating type-safe object variants using tags?",
+        "question_hi": "TypeScript में tags का उपयोग करके type-safe object variants create करने की सुविधा कौन देती है?",
+        "options_en": ["tagged unions", "intersection types", "tuple", "literal types"],
+        "options_hi": ["tagged unions", "intersection types", "tuple", "literal types"],
+        "answer_en": "tagged unions",
+        "answer_hi": "tagged unions",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 95,
-        "question_en": "What is the value of 8² - 6²?",
-        "question_hi": "8² - 6² का मान क्या है?",
-        "options_en": ["4", "14", "28", "100"],
-        "options_hi": ["4", "14", "28", "100"],
-        "answer_en": "28",
-        "answer_hi": "28",
+        "question_en": "Which TypeScript feature allows narrowing union types with 'instanceof'?",
+        "question_hi": "TypeScript में 'instanceof' का उपयोग करके union types narrow करने की सुविधा कौन देती है?",
+        "options_en": ["type guards", "type inference", "union types", "intersection types"],
+        "options_hi": ["type guards", "type inference", "union types", "intersection types"],
+        "answer_en": "type guards",
+        "answer_hi": "type guards",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 96,
-        "question_en": "Which gas is used in welding?",
-        "question_hi": "वेल्डिंग में किस गैस का उपयोग किया जाता है?",
-        "options_en": ["Oxygen", "Acetylene", "Both A and B", "Hydrogen"],
-        "options_hi": ["ऑक्सीजन", "एसिटिलीन", "A और B दोनों", "हाइड्रोजन"],
-        "answer_en": "Both A and B",
-        "answer_hi": "A और B दोनों",
+        "question_en": "Which TypeScript feature allows representing functions that never return?",
+        "question_hi": "TypeScript में functions जो कभी return नहीं करते, उन्हें represent करने की सुविधा कौन देती है?",
+        "options_en": ["never", "void", "any", "unknown"],
+        "options_hi": ["never", "void", "any", "unknown"],
+        "answer_en": "never",
+        "answer_hi": "never",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 97,
-        "question_en": "What is the capital of Russia?",
-        "question_hi": "रूस की राजधानी क्या है?",
-        "options_en": ["St. Petersburg", "Moscow", "Kiev", "Warsaw"],
-        "options_hi": ["सेंट पीटर्सबर्ग", "मॉस्को", "कीव", "वारसॉ"],
-        "answer_en": "Moscow",
-        "answer_hi": "मॉस्को",
+        "question_en": "Which TypeScript feature allows defining a type alias for a union of string literals?",
+        "question_hi": "TypeScript में string literals के union के लिए type alias define करने की सुविधा कौन देती है?",
+        "options_en": ["literal types", "enum", "tuple", "interface"],
+        "options_hi": ["literal types", "enum", "tuple", "interface"],
+        "answer_en": "literal types",
+        "answer_hi": "literal types",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 98,
-        "question_en": "Who discovered the circulation of blood?",
-        "question_hi": "रक्त संचार की खोज किसने की?",
-        "options_en": ["William Harvey", "Louis Pasteur", "Robert Koch", "Alexander Fleming"],
-        "options_hi": ["विलियम हार्वे", "लुई पाश्चर", "रॉबर्ट कोच", "अलेक्जेंडर फ्लेमिंग"],
-        "answer_en": "William Harvey",
-        "answer_hi": "विलियम हार्वे",
+        "question_en": "Which TypeScript keyword allows creating a generic interface?",
+        "question_hi": "TypeScript में generic interface create करने के लिए कौन सा keyword है?",
+        "options_en": ["interface<T>", "type<T>", "class<T>", "enum<T>"],
+        "options_hi": ["interface<T>", "type<T>", "class<T>", "enum<T>"],
+        "answer_en": "interface<T>",
+        "answer_hi": "interface<T>",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 99,
-        "question_en": "What is the chemical formula of vinegar?",
-        "question_hi": "सिरका का रासायनिक सूत्र क्या है?",
-        "options_en": ["CH₃COOH", "H₂SO₄", "HCl", "HNO₃"],
-        "options_hi": ["CH₃COOH", "H₂SO₄", "HCl", "HNO₃"],
-        "answer_en": "CH₃COOH",
-        "answer_hi": "CH₃COOH",
+        "question_en": "Which TypeScript utility type constructs a type by excluding properties from another type?",
+        "question_hi": "TypeScript में किसी type से properties exclude करके नया type create करने वाला utility type कौन सा है?",
+        "options_en": ["Omit<T, K>", "Pick<T, K>", "Partial<T>", "Required<T>"],
+        "options_hi": ["Omit<T, K>", "Pick<T, K>", "Partial<T>", "Required<T>"],
+        "answer_en": "Omit<T, K>",
+        "answer_hi": "Omit<T, K>",
         "attempted": false,
         "selected": ""
     },
     {
         "num": 100,
-        "question_en": "Which is the fastest bird?",
-        "question_hi": "सबसे तेज उड़ने वाला पक्षी कौन सा है?",
-        "options_en": ["Eagle", "Peregrine Falcon", "Ostrich", "Hummingbird"],
-        "options_hi": ["गरुड़", "पेरेग्रिन फाल्कन", "शुतुरमुर्ग", "हमिंगबर्ड"],
-        "answer_en": "Peregrine Falcon",
-        "answer_hi": "पेरेग्रिन फाल्कन",
+        "question_en": "Which TypeScript feature allows defining optional properties in a type using '?'?",
+        "question_hi": "TypeScript में '?' का उपयोग करके type में optional properties define करने की सुविधा कौन देती है?",
+        "options_en": ["optional properties", "readonly properties", "default properties", "any"],
+        "options_hi": ["optional properties", "readonly properties", "default properties", "any"],
+        "answer_en": "optional properties",
+        "answer_hi": "optional properties",
         "attempted": false,
         "selected": ""
     }
-        
-// Add more questions here...
-];
+]
 
 
-let currentQuestion = 0; 
+
+let currentQuestion = 0;
 let language = "en";
-// let timeLeft = 180 * 60; // 180 minutes
-let timeLeft = 60 * 60; // 60 minutes
+let timeLeft = 60 * 60; 
 let timerInterval;
 
-// ----------------- Quiz Logic -----------------
+// ----------------- Load Question -----------------
 function loadQuestion(index) {
     const q = questions[index];
-    document.getElementById("question").textContent = `${q.num}. ${
-        language === "en" ? q.question_en : q.question_hi
-    }`;
-    document.getElementById("questionCounter").textContent = `Question ${index + 1} of ${questions.length}`;
+    if (!q) return; //  undefined error fix
+   questions[index].visited = true;
+    document.getElementById("question").textContent =
+       `${q.num}. ${language === "en" ? q.question_en : q.question_hi}`;
+
+    document.getElementById("questionCounter").textContent =
+       ` Question ${index + 1} of ${questions.length}`;
 
     const optionsElement = document.getElementById("options");
     optionsElement.innerHTML = "";
 
     const options = language === "en" ? q.options_en : q.options_hi;
 
-    options.forEach((option) => {
+    options.forEach(option => {
         const isSelected = q.selected === option;
-        const optionDiv = document.createElement("div");
-        optionDiv.className = "option-box";
-        optionDiv.style = `
+
+        const div = document.createElement("div");
+        div.className = "option-box";
+
+        div.style = `
             border: 2px solid ${isSelected ? "#007bff" : "#ccc"};
             background-color: ${isSelected ? "#e7f1ff" : "white"};
             padding: 10px;
             border-radius: 8px;
             margin: 6px 0;
             cursor: pointer;
-            transition: all 0.2s;
         `;
 
-        optionDiv.innerHTML = `
-            <input type="radio" name="option" value="${option}" ${isSelected ? "checked" : ""} style="margin-right:8px;">
+        div.innerHTML = `
+            <input type="radio" name="option" value="${option}" 
+            ${isSelected ? "checked" : ""} style="margin-right:8px;">
             ${option}
         `;
 
-        optionDiv.addEventListener("click", () => {
+        div.addEventListener("click", () => {
             markAttempted(index, option);
             loadQuestion(index);
         });
 
-        optionsElement.appendChild(optionDiv);
+        optionsElement.appendChild(div);
     });
 
     updateNavigation();
 }
 
+// ----------------- Attempt Mark -----------------
 function markAttempted(index, selectedAnswer) {
     questions[index].attempted = true;
     questions[index].selected = selectedAnswer;
     updateNavigation();
 }
 
+// ----------------- Next / Previous -----------------
 function nextQuestion() {
     if (currentQuestion < questions.length - 1) {
         currentQuestion++;
@@ -1178,229 +1183,122 @@ function changeLanguage() {
     loadQuestion(currentQuestion);
 }
 
+// ----------------- Final Submit -----------------
 function submitQuiz() {
-    clearInterval(timerInterval);
-    let attempted = 0,
-        notAttempted = 0,
-        score = 0;
+    let confirmation = confirm("Are you sure you want to submit the test?");
+    if (!confirmation) return;
 
-    questions.forEach((q) => {
+    let attempted = 0;
+    let notAttempted = 0;
+    let score = 0;
+    const results = [];
+
+    questions.forEach(q => {
         if (q.attempted) {
             attempted++;
-            if (q.selected === q.answer_en || q.selected === q.answer_hi) score++;
-        } else notAttempted++;
+
+            if (q.selected === q.answer_en || q.selected === q.answer_hi) {
+                score++;
+            }
+        } else {
+            notAttempted++;
+        }
+
+        results.push({
+            question: language === "en" ? q.question_en : q.question_hi,
+            selected: q.selected || "Not Answered",
+            correct: language === "en" ? q.answer_en : q.answer_hi
+        });
     });
 
-    alert(
-        `Quiz submitted!\nAttempted: ${attempted}\nNot Attempted: ${notAttempted}\nScore: ${score}/${questions.length}`
-    );
+    localStorage.setItem("attempted", attempted);
+    localStorage.setItem("notAttempted", notAttempted);
+    localStorage.setItem("score", score);
+    localStorage.setItem("results", JSON.stringify(results));
+
+    let viewResult = confirm("Test submitted! Do you want to view result?");
+    if (viewResult) {
+        window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
+    }
 }
 
+// ----------------- Navigation Circles -----------------
+function updateNavigation() {
+    const nav = document.getElementById("circleContainer");
+    nav.innerHTML = "";
+
+    questions.forEach((q, i) => {
+        let color = "gray"; // default: not visited
+
+        if (i === currentQuestion) {
+            color = "blue"; // current question
+        } 
+        else if (q.attempted) {
+            color = "green"; // answered
+        } 
+        else if (q.visited) {
+            color = "white"; // visited but not answered
+        }
+
+        nav.innerHTML += `
+            <div class="circle" style="background:${color}; border:1px solid black;"
+            onclick="jumpToQuestion(${i})">${i + 1}</div>
+        `;
+    });
+}
+
+function jumpToQuestion(index) {
+    currentQuestion = index;
+    loadQuestion(index);
+}
+
+// ----------------- Timer -----------------
 function startTimer() {
     const timerElement = document.getElementById("timer");
-    clearInterval(timerInterval);
+
     timerInterval = setInterval(() => {
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
             alert("Time's up!");
             submitQuiz();
         } else {
-            const hours = Math.floor(timeLeft / 3600);
-            const minutes = Math.floor((timeLeft % 3600) / 60);
-            const seconds = timeLeft % 60;
-            timerElement.textContent = `Time Left: ${hours
-                .toString()
-                .padStart(2, "0")}:${minutes
-                .toString()
-                .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+            const hours = String(Math.floor(timeLeft / 3600)).padStart(2, "0");
+            const minutes = String(Math.floor((timeLeft % 3600) / 60)).padStart(2, "0");
+            const seconds = String(timeLeft % 60).padStart(2, "0");
+
+            timerElement.textContent = `Time Left: ${hours}:${minutes}:${seconds}`;
             timeLeft--;
         }
     }, 1000);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////all file and folder me code add karna hai 
-
-
-// submit 
-function jumpToQuestion(index) {
-            currentQuestion = index;
-            loadQuestion(index);
-        }
-
-        function submitQuiz() {
-            let confirmation = confirm("Are you sure you want to submit the test?");
-            
-            if (!confirmation) {
-                return; // अगर यूज़र 'Cancel' करता है तो आगे नहीं बढ़ेंगे
-            }
-
-            let attempted = 0;
-            let notAttempted = 0;
-            let score = 0;
-            const results = [];
-
-            questions.forEach(q => {
-                if (q.attempted) {
-                    attempted++;
-                    if (q.selected === q.answer) {
-                        score++;
-                    }
-                } else {
-                    notAttempted++;
-                }
-                results.push({ question: q.question, selected: q.selected || "Not Answered", correct: q.answer });
-            });
-
-            localStorage.setItem("attempted", attempted);
-            localStorage.setItem("notAttempted", notAttempted);
-            localStorage.setItem("score", score);
-            localStorage.setItem("results", JSON.stringify(results));
-
-            // रिजल्ट देखने से पहले एक और कन्फर्मेशन ले सकते हैं
-            let viewResult = confirm("Test submitted successfully! Do you want to view your result?");
-            if (viewResult) {
-                window.location.href = "/RTS/public/Deshbord/category/test/submit-test.html";
-            }
-        }
-        window.onload = () => {
-            loadQuestion(currentQuestion);
-        };
-
-
-function updateNavigation() {
-    const nav = document.getElementById("circleContainer");
-    nav.innerHTML = "";
-    questions.forEach((q, i) => {
-        let color = "gray";
-        if (i === currentQuestion) color = "blue";
-        else if (q.attempted) color = "green";
-        nav.innerHTML += `<div class='circle' style='background-color:${color}' onclick='loadQuestion(${i})'>${i + 1}</div>`;
-    });
-}
-
-// ----------------- Camera & Movement Logic -----------------
+// ----------------- Camera & Movement Detection -----------------
 let videoStream;
 let movementCount = 0;
 
 function startCamera() {
     const container = document.createElement("div");
     container.id = "camera-container";
-    container.style.position = "fixed";
-    container.style.top = "10px";
-    container.style.left = "10px"; // ✅ Left side
-    container.style.width = "130px";
-    container.style.height = "130px";
-    container.style.zIndex = "9999";
-    container.style.borderRadius = "50%";
-    container.style.overflow = "hidden";
-    container.style.border = "3px solid red";
-    container.style.boxShadow = "0 0 10px rgba(0,0,0,0.3)";
-    container.style.cursor = "grab";
-    container.style.minWidth = "80px";
-    container.style.minHeight = "80px";
-    container.style.maxWidth = "250px";
-    container.style.maxHeight = "250px";
-    container.style.background = "#000";
+    container.style = `
+        position:fixed; top:10px; left:10px; width:130px; height:130px;
+        border-radius:50%; overflow:hidden; border:3px solid red; z-index:9999;
+    `;
+
     document.body.appendChild(container);
 
     const video = document.createElement("video");
-    video.setAttribute("autoplay", true);
-    video.setAttribute("playsinline", true);
-    video.style.width = "100%";
-    video.style.height = "100%";
-    video.style.objectFit = "cover";
+    video.autoplay = true;
+    video.playsinline = true;
+    video.style = "width:100%; height:100%; object-fit:cover;";
     container.appendChild(video);
 
-    // ✅ Resize handle
-    const resizeHandle = document.createElement("div");
-    resizeHandle.style.position = "absolute";
-    resizeHandle.style.bottom = "2px";
-    resizeHandle.style.right = "2px";
-    resizeHandle.style.width = "15px";
-    resizeHandle.style.height = "15px";
-    resizeHandle.style.background = "rgba(255,255,255,0.7)";
-    resizeHandle.style.borderRadius = "4px";
-    resizeHandle.style.cursor = "se-resize";
-    container.appendChild(resizeHandle);
-
-    // ✅ Drag logic
-    let isDragging = false;
-    let offsetX, offsetY;
-
-    container.addEventListener("mousedown", (e) => {
-        if (e.target === resizeHandle) return;
-        isDragging = true;
-        offsetX = e.clientX - container.offsetLeft;
-        offsetY = e.clientY - container.offsetTop;
-        container.style.cursor = "grabbing";
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isDragging) return;
-        let x = e.clientX - offsetX;
-        let y = e.clientY - offsetY;
-        x = Math.max(0, Math.min(window.innerWidth - container.offsetWidth, x));
-        y = Math.max(0, Math.min(window.innerHeight - container.offsetHeight, y));
-        container.style.left = `${x}px`;
-        container.style.top = `${y}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isDragging = false;
-        container.style.cursor = "grab";
-    });
-
-    // ✅ Resize logic
-    let isResizing = false;
-    let startWidth, startHeight, startX, startY;
-
-    resizeHandle.addEventListener("mousedown", (e) => {
-        e.stopPropagation();
-        isResizing = true;
-        startWidth = container.offsetWidth;
-        startHeight = container.offsetHeight;
-        startX = e.clientX;
-        startY = e.clientY;
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        if (!isResizing) return;
-        const dx = e.clientX - startX;
-        const dy = e.clientY - startY;
-        const newSize = Math.max(80, Math.min(250, Math.max(startWidth + dx, startHeight + dy)));
-        container.style.width = `${newSize}px`;
-        container.style.height = `${newSize}px`;
-    });
-
-    document.addEventListener("mouseup", () => {
-        isResizing = false;
-    });
-
-    // ✅ Camera stream
     navigator.mediaDevices.getUserMedia({ video: true })
         .then(stream => {
             video.srcObject = stream;
             videoStream = stream;
             detectMovement(video);
         })
-        .catch(err => {
-            console.error("Camera error:", err);
-            alert("Camera not accessible!");
-        });
+        .catch(() => alert("Camera access denied!"));
 }
 
 function detectMovement(video) {
@@ -1408,51 +1306,51 @@ function detectMovement(video) {
     const ctx = canvas.getContext("2d");
     canvas.width = 160;
     canvas.height = 160;
-    let lastImageData = null;
+
+    let lastData = null;
 
     setInterval(() => {
-        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(video, 0, 0, 160, 160);
+        const data = ctx.getImageData(0, 0, 160, 160);
 
-        if (lastImageData) {
+        if (lastData) {
             let diff = 0;
-            for (let i = 0; i < imageData.data.length; i += 4) {
-                diff += Math.abs(imageData.data[i] - lastImageData.data[i]);
+            for (let i = 0; i < data.data.length; i += 4) {
+                diff += Math.abs(data.data[i] - lastData.data[i]);
             }
 
             if (diff > 1000000) {
                 movementCount++;
-                if (movementCount === 1) {
-                    alert("⚠️ Alert 1: Face is not move");
-                } else if (movementCount === 2) {
-                    alert("⚠️ Alert 2: Head is not move");
-                } else if (movementCount === 3) {
-                    alert("⚠️ Alert 3: Test series is restarting...");
+
+                if (movementCount === 1) alert("⚠ Alert 1: No movement detected!");
+                if (movementCount === 2) alert("⚠ Alert 2: Head not moving!");
+                if (movementCount === 3) {
+                    alert("⚠ Alert 3: Restarting test...");
                     restartTest();
                 }
             }
         }
-        lastImageData = imageData;
+        lastData = data;
+
     }, 2000);
 }
 
 function restartTest() {
-    if (videoStream) {
-        videoStream.getTracks().forEach(track => track.stop());
-    }
-    const camContainer = document.getElementById("camera-container");
-    if (camContainer) camContainer.remove();
+    if (videoStream) videoStream.getTracks().forEach(t => t.stop());
+
+    const cam = document.getElementById("camera-container");
+    if (cam) cam.remove();
 
     movementCount = 0;
     currentQuestion = 0;
-    timeLeft = 180 * 60;
+    timeLeft = 60 * 60;
 
     questions.forEach(q => {
         q.attempted = false;
         q.selected = null;
     });
 
-    loadQuestion(currentQuestion);
+    loadQuestion(0);
     startTimer();
     startCamera();
 }
@@ -1461,8 +1359,5 @@ function restartTest() {
 window.onload = function () {
     loadQuestion(currentQuestion);
     startTimer();
-    startCamera(); // ✅ Camera starts with test
+    startCamera();
 };
-
-
-///////////////////////////////////////
