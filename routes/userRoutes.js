@@ -38,6 +38,7 @@ const User = require("../models/user");
 
 router.post("/register", userController.registerUser);
 
+
 router.get("/me", isAuthenticated, async (req, res) => {
   try {
     const user = await User.findById(req.id).select("-password");

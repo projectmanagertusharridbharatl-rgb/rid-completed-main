@@ -1,117 +1,63 @@
-// const User = require("../models/user");
-// const bcrypt = require("bcrypt");
-// const { generateToken } = require("../utils/jwt");
-
-// exports.registerUser = async (req, res) => {
-//   try {
-//     const { username, lastname, email, password, phone, dob, gender, role } =
-//       req.body;
-
-//     // Check if the email is already registered
-//     const existingUser = await User.findOne({ email });
-//     if (existingUser) {
-//       return renderError(res, "Email already exists", username, lastname);
-//     }
-
-//     // Create and save a new user with hashed password
-//     const hashedPassword = await bcrypt.hash(password, 10); // 10 rounds for salt
-//     const newUser = new User({
-//       name: username,
-//       lastname,
-//       email,
-//       password: hashedPassword,
-//       phone,
-//       dob,
-//       gender,
-//       role,
-//     });
-
-//     const savedUser = await newUser.save();
-
-//     // Generate JWT token
-//     const token = generateToken({
-//       id: savedUser._id,
-//       userName: `${savedUser.name} ${savedUser.lastname}`,
-//     });
-//     console.log("Token generated:", token);
-
-//     // Render success page
-//     return renderSuccess(
-//       res,
-//       "User successfully registered",
-//       username,
-//       lastname
-//     );
-//   } catch (error) {
-//     console.error("Registration error:", error);
-//     return renderError(
-//       res,
-//       "Registration failed. Please try again later.",
-//       req.body.username,
-//       req.body.lastname
-//     );
-//   }
-// };
-
-// // Helper function to render error
-// const renderError = (res, message, username, lastname) => {
-//   return res.render("error", {
-//     message,
-//     userName: `${username} ${lastname}`,
-//   });
-// };
-
-// // Helper function to render success
-// const renderSuccess = (res, message, username, lastname) => {
-//   return res.render("success", {
-//     message,
-//     userName: `${username} ${lastname}`,
-//   });
-// };
-
-
-
-
-const User = require("../models/user");
 const bcrypt = require("bcryptjs");
 
-const { generateToken } = require("../utils/jwt");
+const User = require("../models/user");
+const Teacher = require("../models/Teacher");
+const Organisation = require("../models/Organisation");
 
 exports.registerUser = async (req, res) => {
   try {
-    const { username, lastname, email, password, phone, dob, gender, role } = req.body;
-
-    const existingUser = await User.findOne({ email });
-    if (existingUser) {
-      return renderError(res, "Email already exists", username, lastname);
-    }
-
-    const hashedPassword = await bcrypt.hash(password, 10);
-    const newUser = new User({
-      name: username,
+    const {
+      username,
       lastname,
       email,
-      password: hashedPassword,
+      password,
       phone,
       dob,
       gender,
+      role
+    } = req.body;
+
+    let Model;
+
+    // 🔹 ROLE BASED MODEL
+    if (role === "student") Model = User;
+    else if (role === "teacher") Model = Teacher;
+    else if (role === "organisation") Model = Organisation;
+    else return res.status(400).send("Invalid role");
+
+    // 🔹 Email duplicate check (role wise)
+    const existingUser = await Model.findOne({ email });
+    if (existingUser) {
+      return res.send("Email already exists");
+    }
+
+    // 🔹 Password hash
+    const hashedPassword = await bcrypt.hash(password, 10);
+
+    // 🔹 Common data
+    const data = {
+      name: username,
+      email,
+      password: hashedPassword,
+      phone,
       role,
-    });
+    };
 
-    const savedUser = await newUser.save();
-    const token = generateToken({ id: savedUser._id });
+    // 🔹 Student / Teacher extra fields
+    if (role !== "organisation") {
+      data.lastname = lastname;
+      data.dob = dob;
+      data.gender = gender;
+    }
 
-    return renderSuccess(res, "User successfully registered", username, lastname);
+    // 🔹 Save to correct collection
+    await Model.create(data);
+
+    // ✅ SIGNUP SUCCESS → LOGIN PAGE
+    return res.redirect("/login");
+
   } catch (error) {
     console.error("Registration error:", error);
-    return renderError(res, "Registration failed. Please try again later.", req.body.username, req.body.lastname);
+    res.status(500).send("Registration failed");
   }
-};
-
-const renderError = (res, message, username, lastname) => {
-  return res.render("error", { message, userName: `${username} ${lastname}` });
-};
-
-const renderSuccess = (res, message, username, lastname) => {
-  return res.render("success", { message, userName: `${username} ${lastname}` });
 };
