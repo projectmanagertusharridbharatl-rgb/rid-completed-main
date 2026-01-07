@@ -1460,7 +1460,9 @@
             line-height: 1.6;
         }
 
+        /* ✅ FOOTER REMOVED - CSS से Hide कर दिया */
         .footer {
+            display: none !important;
             background: var(--white-95);
             backdrop-filter: blur(20px);
             border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -1942,7 +1944,7 @@
                    <img src="../assets/final_logo.svg" alt="RID Bharat Logo" onerror="this.src='https://via.placeholder.com/260x70/083d5d/FFFFFF?text=RID+Bharat+Logo'" style="max-width: 100%; height: auto;">
                 </a>
                 <div class="nav-actions">
-                    <!-- ✅ NEW: Mobile Library Toggle in Navbar -->
+                  
                     <div class="mobile-library-toggle">
                         <button class="mobile-library-toggle-btn" id="mobileToggleSidebar">
                             <i class="fas fa-info-circle"></i>
@@ -1950,7 +1952,7 @@
                         </button>
                     </div>
                     
-                    <% if (typeof user !== 'undefined' && user) { %>
+                   <!--  <% if (typeof user !== 'undefined' && user) { %>
                         <a href="<%= typeof basePath !== 'undefined' ? basePath + '/upload' : '/ebook/upload' %>" class="btn btn-primary">
                             <i class="fas fa-plus"></i>
                             Add New Book
@@ -1961,7 +1963,7 @@
                             Add New Book
                         </a>
                     <% } %>
-                </div>
+                </div> -->
             </nav>
         </header>
 
@@ -2296,19 +2298,7 @@
             </div>
         </div>
 
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-links">
-                    <a href="<%= typeof basePath !== 'undefined' ? basePath + '/' : '/ebook/' %>" class="footer-link">Home</a>
-                    <a href="<%= typeof basePath !== 'undefined' ? basePath + '/upload' : '/ebook/upload' %>" class="footer-link">Upload</a>
-                    <a href="<%= typeof basePath !== 'undefined' ? basePath + '/api/stats' : '/ebook/api/stats' %>" class="footer-link">Statistics</a>
-                    <a href="<%= typeof basePath !== 'undefined' ? basePath + '/health' : '/ebook/health' %>" class="footer-link">Health</a>
-                </div>
-                <div class="footer-copyright">
-                    &copy; 2024 ReadVault. Made with ❤️ for book lovers.
-                </div>
-            </div>
-        </footer>
+        <!-- ✅ FOOTER REMOVED: इस section को पूरी तरह हटा दिया गया है -->
     </div>
 
     <script>

@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Mobile Reader - <%= pdf.title %> | ReadVault</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- PWA Support -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/ajax/libs">
+    <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js">
     <style>
         /* Mobile-First Base Styles */
         * {
@@ -25,7 +33,8 @@
             min-height: 100vh;
             color: white;
             overflow: hidden;
-            touch-action: pan-x pan-y;
+            touch-action: manipulation;
+            -webkit-text-size-adjust: 100%;
         }
 
         /* Security Overlay - Mobile Optimized */
@@ -46,7 +55,6 @@
             color: rgba(255, 255, 255, 0.02);
             pointer-events: none;
             z-index: 10000;
-            transform: rotate(-45deg);
             white-space: nowrap;
             font-weight: 900;
             text-align: center;
@@ -58,8 +66,9 @@
 
         /* Mobile-Optimized Header */
         .security-header {
-            background: rgba(0, 0, 0, 0.9);
+            background: rgba(0, 0, 0, 0.95);
             backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             padding: 0.5rem 1rem;
             display: flex;
@@ -73,18 +82,23 @@
             height: 50px;
             flex-wrap: nowrap;
             gap: 0.5rem;
-            transition: all 0.3s ease-in-out;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            will-change: transform;
+            pointer-events: all;
+            transform: translateZ(0);
         }
 
         /* Header Hide/Show Animation */
         .header-hidden {
             transform: translateY(-100%) !important;
             opacity: 0 !important;
+            pointer-events: none !important;
         }
 
         .header-visible {
             transform: translateY(0) !important;
             opacity: 1 !important;
+            pointer-events: all !important;
         }
 
         .logo {
@@ -150,7 +164,7 @@
             flex-direction: column;
         }
 
-        /* PDF Container - Touch Optimized */
+        /* PDF Container - Enhanced for Zoom */
         .pdf-container {
             flex: 1;
             background: #1a1a1a;
@@ -158,34 +172,90 @@
             position: relative;
             -webkit-overflow-scrolling: touch;
             overscroll-behavior: contain;
+            touch-action: pan-x pan-y pinch-zoom;
+            width: 100%;
+            height: 100%;
+            overscroll-behavior-y: contain;
         }
 
-        /* Canvas Container - Mobile First */
+        /* Canvas Container - Enhanced for Zoom */
         .canvas-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 10px;
-            padding: 10px;
+            justify-content: flex-start;
+            gap: 20px;
+            padding: 20px;
             min-height: min-content;
             width: 100%;
             margin: 0 auto;
             box-sizing: border-box;
+            position: relative;
+            overflow: visible !important;
+            transform-origin: center center;
+            will-change: transform;
         }
 
-        /* Mobile-Optimized Canvas */
+        /* Mobile-Optimized Canvas - Enhanced for Zoom */
         .page-canvas {
             display: block;
             background: white;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-            border-radius: 4px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            border-radius: 8px;
             cursor: default;
             position: relative;
-            max-width: 100% !important;
+            max-width: none !important;
             height: auto !important;
             image-rendering: -webkit-optimize-contrast;
             image-rendering: crisp-edges;
             touch-action: none;
+            transform-origin: center center;
+            transition: transform 0.2s ease-out;
+            will-change: transform;
+            margin: 0 auto;
+            overflow: hidden;
+            transform: translateZ(0);
+            backface-visibility: hidden;
+            perspective: 1000;
+            -webkit-backface-visibility: hidden;
+            -webkit-perspective: 1000;
+        }
+
+        /* Page Skeleton for Loading */
+        .page-skeleton {
+            width: 90%;
+            max-width: 400px;
+            height: 500px;
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: loading 1.5s infinite;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+
+        @keyframes loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        /* Network Status */
+        .network-status {
+            position: fixed;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(37, 99, 235, 0.9);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            z-index: 1001;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            white-space: nowrap;
+            animation: fade-in 0.3s ease;
+            pointer-events: none;
         }
 
         /* Mobile Navigation Controls - FIXED LAYOUT */
@@ -200,10 +270,13 @@
             gap: 1rem;
             align-items: center;
             backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             z-index: 100;
             border-top: 1px solid rgba(255, 255, 255, 0.2);
             justify-content: space-between;
-            transition: all 0.3s ease-in-out;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            will-change: transform;
+            pointer-events: all;
         }
 
         /* Navigation Hide/Show Animation */
@@ -251,6 +324,9 @@
             min-height: 44px;
             min-width: 44px;
             backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            touch-action: manipulation;
+            pointer-events: all;
         }
 
         .nav-btn:active {
@@ -261,7 +337,7 @@
         .nav-btn:disabled {
             opacity: 0.4;
             cursor: not-allowed;
-            transform: none;
+            transform: none !important;
         }
 
         .nav-btn span {
@@ -285,6 +361,8 @@
             background: rgba(255, 255, 255, 0.1);
             border-radius: 8px;
             min-width: 100px;
+            transition: background 0.3s ease;
+            pointer-events: none;
         }
 
         /* Back button */
@@ -307,7 +385,10 @@
             min-height: 44px;
             min-width: 44px;
             backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             gap: 0.5rem;
+            touch-action: manipulation;
+            pointer-events: all;
         }
 
         .back-btn:active {
@@ -335,9 +416,12 @@
             flex-direction: column;
             gap: 0.5rem;
             backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             z-index: 100;
             border: 1px solid rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease-in-out;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            will-change: transform;
+            pointer-events: all;
         }
 
         /* Zoom Controls Hide/Show Animation */
@@ -366,7 +450,10 @@
             justify-content: center;
             font-size: 1rem;
             backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             transition: all 0.2s ease;
+            touch-action: manipulation;
+            pointer-events: all;
         }
 
         .zoom-btn:active {
@@ -380,6 +467,108 @@
             text-align: center;
             margin-top: 5px;
             font-weight: 600;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+
+        /* Zoom Hint Styling */
+        .zoom-hint {
+            position: fixed;
+            bottom: 120px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(37, 99, 235, 0.9);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            z-index: 1001;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            white-space: nowrap;
+            animation: slide-up 0.3s ease;
+            pointer-events: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Controls Hint Styling */
+        .controls-hint {
+            position: fixed;
+            top: 70px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.7rem;
+            z-index: 1001;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            white-space: nowrap;
+            animation: fade-in 0.3s ease;
+            pointer-events: none;
+        }
+
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+            to { opacity: 1; transform: translateX(-50%) translateY(0); }
+        }
+
+        /* Click Feedback Animation */
+        .click-feedback {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(37, 99, 235, 0.3);
+            pointer-events: none;
+            z-index: 10;
+            animation: ripple 0.6s ease-out;
+            transform: translate(-50%, -50%);
+        }
+
+        @keyframes ripple {
+            0% {
+                width: 0;
+                height: 0;
+                opacity: 0.5;
+            }
+            100% {
+                width: 100px;
+                height: 100px;
+                opacity: 0;
+            }
+        }
+
+        /* Double click zone indicator */
+        .double-click-zone {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 80%;
+            border: 2px dashed rgba(37, 99, 235, 0.3);
+            border-radius: 10px;
+            pointer-events: none;
+            z-index: 5;
+            display: none;
+        }
+
+        /* Show double click zone only when needed */
+        .show-double-click-zone .double-click-zone {
+            display: block;
+            animation: pulse-border 2s infinite;
+        }
+
+        @keyframes pulse-border {
+            0%, 100% {
+                border-color: rgba(37, 99, 235, 0.3);
+            }
+            50% {
+                border-color: rgba(37, 99, 235, 0.6);
+            }
         }
 
         /* Security Warning - Mobile */
@@ -399,6 +588,7 @@
             max-width: 90vw;
             text-align: center;
             backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
@@ -417,6 +607,8 @@
             z-index: 50;
             padding: 1rem;
             text-align: center;
+            contain: layout paint style;
+            content-visibility: auto;
         }
 
         .loading-spinner {
@@ -434,6 +626,22 @@
             100% { transform: rotate(360deg); }
         }
 
+        /* Progress Bar */
+        .progress-bar {
+            width: 200px;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+            overflow: hidden;
+            margin: 1rem 0;
+        }
+
+        .progress-bar .progress {
+            height: 100%;
+            background: linear-gradient(90deg, #2563eb, #3b82f6);
+            transition: width 0.3s ease;
+        }
+
         /* Mobile Gesture Hints */
         .gesture-hint {
             position: fixed;
@@ -448,8 +656,10 @@
             z-index: 90;
             display: none;
             backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
             transition: all 0.3s ease;
+            pointer-events: none;
         }
 
         .gesture-hint.hidden {
@@ -471,6 +681,7 @@
             z-index: 10;
             display: none;
             backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
         }
 
         /* Keyboard Feedback Animation */
@@ -489,6 +700,7 @@
             font-size: 24px;
             z-index: 1000;
             animation: pulse-fade 0.5s ease-out;
+            pointer-events: none;
         }
 
         @keyframes pulse-fade {
@@ -520,9 +732,11 @@
             z-index: 90;
             display: none;
             backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.2);
             white-space: nowrap;
             animation: slide-up 0.3s ease;
+            pointer-events: none;
         }
 
         @keyframes slide-up {
@@ -639,6 +853,7 @@
             text-align: center;
             padding: 2rem;
             backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
         }
 
         .print-warning-content {
@@ -647,6 +862,25 @@
             border-radius: 12px;
             max-width: 400px;
             width: 90%;
+        }
+
+        /* Controls Toggle Button (For Debug) */
+        .controls-toggle {
+            position: fixed;
+            top: 60px;
+            right: 10px;
+            background: rgba(37, 99, 235, 0.9);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            z-index: 1001;
+            cursor: pointer;
+            display: none; /* Hidden by default, enable for debug */
         }
 
         /* For desktop users - show keyboard hints */
@@ -830,6 +1064,10 @@
                 animation-iteration-count: 1 !important;
                 transition-duration: 0.01ms !important;
             }
+            
+            .page-canvas {
+                transition: none !important;
+            }
         }
 
         /* Button hover effects for desktop */
@@ -880,20 +1118,23 @@
     </div>
 
     <!-- Keyboard Shortcuts Hint -->
-    <div class="keyboard-hint" id="keyboardHint">
+    <!-- <div class="keyboard-hint" id="keyboardHint">
         <i class="fas fa-keyboard"></i> 
         Navigate: 
         <kbd>←</kbd>/<kbd>→</kbd> or 
         <kbd>Space</kbd> • 
         Zoom: <kbd>Ctrl</kbd>+<kbd>+</kbd>/<kbd>-</kbd>
+    </div> -->
+
+    <!-- Debug Toggle Button (Hidden by default) -->
+    <div class="controls-toggle" id="debugToggle" title="Debug: Toggle Controls">
+        <i class="fas fa-bug"></i>
     </div>
 
     <!-- Mobile Header -->
     <div class="security-header header-visible">
         <div class="logo">
             <a href="<%= typeof basePath !== 'undefined' ? basePath + '/' : '/ebook/' %>" style="color: white; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
-                <div class="logo-icon">RV</div>
-                <span class="logo-text">ReadVault</span>
             </a>
         </div>
         
@@ -916,6 +1157,9 @@
         <div class="loading-state" id="loadingState">
             <div class="loading-spinner"></div>
             <div>Loading Mobile Reader...</div>
+            <div class="progress-bar">
+                <div class="progress" id="loadingProgress" style="width: 0%"></div>
+            </div>
             <div style="font-size: 0.7rem; margin-top: 1rem; color: #ccc;">
                 Optimized for mobile viewing
             </div>
@@ -924,7 +1168,11 @@
         <!-- PDF Container -->
         <div class="pdf-container" id="pdfContainer" style="display: none;">
             <div class="canvas-container" id="canvasContainer">
-                <!-- PDF pages will be rendered here -->
+                <!-- PDF skeleton will be shown immediately -->
+                <div class="page-skeleton" id="pageSkeleton"></div>
+                
+                <!-- Double Click Zone Indicator -->
+                <div class="double-click-zone" id="doubleClickZone"></div>
             </div>
         </div>
 
@@ -950,6 +1198,14 @@
         <!-- Navigation Controls - FIXED LAYOUT -->
         <div class="navigation-controls navigation-visible" id="mainNavigation">
             <div class="nav-buttons-container">
+                <!-- Back Button -->
+                <div class="back-btn-container">
+                    <button class="back-btn" id="backButton" title="Go Back (Esc)">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Back</span>
+                    </button>
+                </div>
+                
                 <div class="page-navigation">
                     <button class="nav-btn" id="prevPage" title="Previous Page (Left Arrow)">
                         <i class="fas fa-chevron-left"></i>
@@ -967,14 +1223,6 @@
                         <span>Next</span>
                     </button>
                 </div>
-                
-                <!-- Back Button -->
-                <div class="back-btn-container">
-                    <button class="back-btn" id="backButton" title="Go Back (Esc)">
-                        <i class="fas fa-arrow-left"></i>
-                        <span>Back</span>
-                    </button>
-                </div>
             </div>
         </div>
     </div>
@@ -989,7 +1237,40 @@
         const MOBILE_CONFIG = {
             logEndpoint: '<%= typeof basePath !== "undefined" ? basePath + "/api/security/log" : "/ebook/api/security/log" %>',
             pdfId: '<%= pdf._id %>',
-            sessionToken: '<%= sessionToken %>'
+            sessionToken: '<%= sessionToken %>',
+            enablePinchZoom: true,
+            smoothZoom: true,
+            zoomAnimationDuration: 200,
+            controlsAutoHide: true,
+            controlsHideDelay: 3000
+        };
+
+        // Mobile Performance Configuration
+        const MOBILE_PERFORMANCE_CONFIG = {
+            // Network optimization
+            enableRangeLoading: true,
+            maxChunkSize: 65536, // 64KB chunks for mobile
+            
+            // Rendering optimization
+            lowResFirst: true,
+            lowResScale: 0.5,
+            fullResDelay: 1000, // Wait 1s for full res
+            
+            // Memory optimization
+            maxCanvasCache: 3, // Keep only 3 canvases in memory
+            clearUnusedCanvases: true,
+            
+            // Mobile detection
+            isSlowConnection: () => {
+                // Check connection type
+                const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+                if (connection) {
+                    return connection.effectiveType === 'slow-2g' || 
+                           connection.effectiveType === '2g' ||
+                           connection.saveData === true;
+                }
+                return false;
+            }
         };
 
         // Mobile-Optimized State
@@ -997,19 +1278,46 @@
         let currentPage = 1;
         let totalPages = 0;
         let currentScale = 1.0;
-        let isPinching = false;
-        let lastTouchDistance = 0;
+        
+        // Zoom Toggle State
+        let isZoomedIn = false;
+        let originalScale = 1.0;
+        let zoomInScale = 3.0; // 300% zoom
+        
+        // Touch State Variables
+        let touchState = {
+            isPinching: false,
+            wasPinching: false,
+            initialDistance: 0,
+            initialScale: 1,
+            lastScale: 1,
+            initialX: 0,
+            initialY: 0,
+            currentX: 0,
+            currentY: 0,
+            isDragging: false,
+            isSwiping: false,
+            swipeStartX: 0,
+            swipeEndX: 0
+        };
+        
+        // Click/Tap State Variables
+        let clickState = {
+            lastClickTime: 0,
+            clickCount: 0,
+            clickTimer: null
+        };
         
         // Auto-Hide State Variables
         let hideControlsTimeout;
         let isControlsVisible = true;
         let lastActivityTime = Date.now();
-        const INACTIVITY_TIMEOUT = 3000; // 3 seconds
+        const INACTIVITY_TIMEOUT = MOBILE_CONFIG.controlsHideDelay;
         
         // Mobile-optimized scale settings
         const MOBILE_SCALE_FACTOR = 0.2;
         const MOBILE_MIN_SCALE = 0.5;
-        const MOBILE_MAX_SCALE = 3.0;
+        const MOBILE_MAX_SCALE = 5.0; // Increased for 300% zoom
 
         // HD Rendering Configuration
         const HD_CONFIG = {
@@ -1018,16 +1326,1748 @@
             renderQuality: 'high'
         };
 
+        // ==================== NETWORK AWARE CONFIG ====================
+
+        // Network-aware loading strategy
+        function getNetworkAwareConfig() {
+            const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+            
+            if (!connection) {
+                return {
+                    quality: 'medium',
+                    pixelRatio: 1.0,
+                    preloadPages: 1,
+                    enableWebGL: true,
+                    lowResFirst: false
+                };
+            }
+            
+            switch(connection.effectiveType) {
+                case 'slow-2g':
+                case '2g':
+                    return {
+                        quality: 'low',
+                        pixelRatio: 0.75,
+                        preloadPages: 0,
+                        enableWebGL: false,
+                        lowResFirst: true,
+                        maxImageSize: 512 * 512
+                    };
+                    
+                case '3g':
+                    return {
+                        quality: 'medium',
+                        pixelRatio: 1.0,
+                        preloadPages: 1,
+                        enableWebGL: false,
+                        lowResFirst: true,
+                        maxImageSize: 768 * 768
+                    };
+                    
+                case '4g':
+                default:
+                    return {
+                        quality: 'high',
+                        pixelRatio: Math.min(1.5, window.devicePixelRatio),
+                        preloadPages: 2,
+                        enableWebGL: true,
+                        lowResFirst: false,
+                        maxImageSize: 1024 * 1024
+                    };
+            }
+        }
+
         // Calculate mobile-optimized initial scale
         function calculateMobileScale() {
             const screenWidth = window.innerWidth;
             const screenHeight = window.innerHeight;
+            const isPortrait = screenHeight > screenWidth;
             
-            if (screenWidth < 360) return 0.6;  // Very small phones
-            if (screenWidth < 414) return 0.7;  // Small phones
-            if (screenWidth < 768) return 0.8;  // Medium phones
-            return 1.0; // Tablets and larger
+            if (screenWidth < 360) return isPortrait ? 0.6 : 0.8;
+            if (screenWidth < 414) return isPortrait ? 0.7 : 0.9;
+            if (screenWidth < 768) return isPortrait ? 0.8 : 1.0;
+            if (screenWidth < 1024) return isPortrait ? 1.0 : 1.2;
+            return 1.2; // Desktop
         }
+
+        // ==================== PERFORMANCE OPTIMIZED PDF LOADING ====================
+
+        // Progressive PDF loading with network awareness
+        async function loadPDF() {
+            try {
+                console.log('📱 Mobile-optimized PDF loading...');
+                
+                // Detect network speed
+                const networkConfig = getNetworkAwareConfig();
+                console.log('📶 Network config:', networkConfig);
+                
+                // Show network status to user
+                showNetworkStatus(networkConfig.quality);
+                
+                const basePath = '<%= typeof basePath !== "undefined" ? basePath : "" %>';
+                const streamingUrl = `${basePath}/api/stream-pdf?token=<%= sessionToken %>`;
+                
+                const loadingTask = pdfjsLib.getDocument({
+                    url: streamingUrl,
+                    withCredentials: false,
+                    cMapUrl: 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/cmaps/',
+                    cMapPacked: true,
+                    enableXfa: networkConfig.quality !== 'low',
+                    
+                    // Adaptive settings based on network
+                    disableAutoFetch: networkConfig.quality === 'low',
+                    disableStream: false,
+                    disableRange: false,
+                    maxImageSize: networkConfig.maxImageSize || 1024 * 1024,
+                    pdfBug: false,
+                    verbosity: 0,
+                    isEvalSupported: true,
+                    disableFontFace: networkConfig.quality === 'low'
+                });
+                
+                // Show loading state with network info
+                showLoadingState(networkConfig.quality);
+                
+                // Track loading progress
+                loadingTask.onProgress = (progress) => {
+                    const percent = Math.round((progress.loaded / progress.total) * 100);
+                    updateProgressBar(percent);
+                };
+
+                // Load document metadata first (fast)
+                pdfDoc = await loadingTask.promise;
+                totalPages = pdfDoc.numPages;
+                
+                console.log(`✅ PDF metadata loaded: ${totalPages} pages`);
+                
+                // Update UI immediately
+                document.getElementById('totalPages').textContent = totalPages;
+                
+                // Hide loading spinner, show PDF container
+                document.getElementById('loadingState').style.display = 'none';
+                document.getElementById('pdfContainer').style.display = 'block';
+                
+                // Set initial scale
+                originalScale = calculateMobileScale();
+                currentScale = originalScale;
+                
+                // Render first page with network-appropriate settings
+                await renderPageAdaptive(currentPage, networkConfig);
+                
+                // Preload next pages based on network
+                if (networkConfig.preloadPages > 0) {
+                    setTimeout(() => {
+                        for (let i = 1; i <= networkConfig.preloadPages; i++) {
+                            preloadPage(currentPage + i);
+                        }
+                    }, 500);
+                }
+                
+                // Initialize auto-hide
+                setTimeout(() => {
+                    setupAutoHide();
+                    resetHideTimeout(); // Start auto-hide timer
+                }, 1000);
+                
+                // Full resolution render after initial display (for non-low quality)
+                if (!networkConfig.lowResFirst) {
+                    setTimeout(async () => {
+                        await reRenderPageAtScale(currentPage, currentScale, networkConfig);
+                        console.log('🔄 Full resolution rendered');
+                    }, networkConfig.fullResDelay || 1000);
+                }
+                
+                logSecurityEvent('MOBILE_PDF_LOADED', {
+                    pageCount: totalPages,
+                    networkQuality: networkConfig.quality,
+                    screenSize: `${window.innerWidth}x${window.innerHeight}`,
+                    lowResFirst: networkConfig.lowResFirst
+                });
+                
+            } catch (error) {
+                console.error('Mobile PDF error:', error);
+                showMobileError(error);
+            }
+        }
+
+        // Adaptive page rendering
+        async function renderPageAdaptive(pageNum, networkConfig) {
+            try {
+                const page = await pdfDoc.getPage(pageNum);
+                const container = document.getElementById('canvasContainer');
+                
+                // Clear skeleton
+                const skeleton = document.getElementById('pageSkeleton');
+                if (skeleton) skeleton.remove();
+                
+                // Clear container
+                container.innerHTML = '';
+                
+                // Create canvas
+                const canvas = document.createElement('canvas');
+                canvas.className = 'page-canvas';
+                canvas.id = `page-${pageNum}`;
+                canvas.dataset.page = pageNum;
+                
+                // Enhanced security attributes
+                canvas.setAttribute('draggable', 'false');
+                canvas.setAttribute('ondragstart', 'return false');
+                canvas.setAttribute('onselectstart', 'return false');
+                canvas.style.userSelect = 'none';
+                canvas.style.webkitUserSelect = 'none';
+                canvas.style.MozUserSelect = 'none';
+                canvas.style.msUserSelect = 'none';
+                
+                const ctx = canvas.getContext('2d', { 
+                    alpha: false,
+                    willReadFrequently: true // Better for mobile
+                });
+                
+                // Adaptive viewport based on network
+                let renderScale = currentScale;
+                if (networkConfig.lowResFirst) {
+                    renderScale = currentScale * 0.5; // Half resolution initially
+                }
+                
+                const viewport = page.getViewport({ scale: renderScale });
+                
+                // Adaptive pixel ratio
+                const pixelRatio = networkConfig.pixelRatio || 1.0;
+                canvas.width = Math.floor(viewport.width * pixelRatio);
+                canvas.height = Math.floor(viewport.height * pixelRatio);
+                canvas.style.width = `${viewport.width}px`;
+                canvas.style.height = `${viewport.height}px`;
+                
+                // Scale context
+                ctx.scale(pixelRatio, pixelRatio);
+                
+                // Adaptive rendering quality
+                ctx.imageSmoothingEnabled = networkConfig.quality !== 'low';
+                ctx.imageSmoothingQuality = networkConfig.quality === 'high' ? 'high' : 'medium';
+                
+                // Add to container
+                container.appendChild(canvas);
+                
+                const renderContext = {
+                    canvasContext: ctx,
+                    viewport: viewport,
+                    enableWebGL: networkConfig.enableWebGL,
+                    background: 'white'
+                };
+
+                await page.render(renderContext).promise;
+                
+                console.log(`⚡ Page ${pageNum} rendered (${networkConfig.quality} quality)`);
+                
+                // Setup touch events
+                setTimeout(() => {
+                    setupEnhancedTouchEvents(canvas);
+                }, 50);
+                
+                updateNavigation();
+                
+                // Cache page for faster access
+                if (!window.pageCache) window.pageCache = {};
+                window.pageCache[pageNum] = page;
+                
+            } catch (error) {
+                console.error(`Adaptive render error:`, error);
+                throw error;
+            }
+        }
+
+        // Preload next page
+        async function preloadPage(pageNum) {
+            if (pageNum < 1 || pageNum > totalPages) return;
+            
+            try {
+                const page = await pdfDoc.getPage(pageNum);
+                
+                // Just load the page object, don't render
+                console.log(`📖 Preloaded page ${pageNum}`);
+                
+                // Store for quick access
+                if (!window.pageCache) window.pageCache = {};
+                window.pageCache[pageNum] = page;
+                
+            } catch (error) {
+                console.error(`Preload error for page ${pageNum}:`, error);
+            }
+        }
+
+        // Enhanced re-render with cache
+        async function reRenderPageAtScale(pageNum, scale, networkConfig = null) {
+            if (!pdfDoc) return;
+            
+            try {
+                // Use cached page if available
+                const page = window.pageCache && window.pageCache[pageNum] 
+                    ? window.pageCache[pageNum] 
+                    : await pdfDoc.getPage(pageNum);
+                
+                const canvas = document.getElementById(`page-${pageNum}`);
+                if (!canvas) return;
+                
+                const ctx = canvas.getContext('2d');
+                const viewport = page.getViewport({ scale: scale });
+                
+                // Get network config if not provided
+                if (!networkConfig) {
+                    networkConfig = getNetworkAwareConfig();
+                }
+                
+                // Adaptive pixel ratio
+                const pixelRatio = networkConfig.pixelRatio || Math.min(1.5, window.devicePixelRatio);
+                canvas.width = Math.floor(viewport.width * pixelRatio);
+                canvas.height = Math.floor(viewport.height * pixelRatio);
+                canvas.style.width = `${viewport.width}px`;
+                canvas.style.height = `${viewport.height}px`;
+                
+                // Scale context
+                ctx.scale(pixelRatio, pixelRatio);
+                
+                // Enable smoothing only for good connections
+                ctx.imageSmoothingEnabled = networkConfig.quality !== 'low';
+                ctx.imageSmoothingQuality = networkConfig.quality === 'high' ? 'high' : 'medium';
+                
+                // Clear and re-render
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                const renderContext = {
+                    canvasContext: ctx,
+                    viewport: viewport,
+                    enableWebGL: networkConfig.enableWebGL,
+                    background: 'white'
+                };
+                
+                await page.render(renderContext).promise;
+                
+                console.log(`✅ Page ${pageNum} full resolution rendered`);
+                
+                // Cleanup old canvases to save memory
+                cleanupOldCanvases(pageNum);
+                
+            } catch (error) {
+                console.error('Re-render error:', error);
+            }
+        }
+
+        // Cleanup old canvases
+        function cleanupOldCanvases(currentPage) {
+            if (!MOBILE_PERFORMANCE_CONFIG.clearUnusedCanvases) return;
+            
+            const maxCache = MOBILE_PERFORMANCE_CONFIG.maxCanvasCache;
+            const allCanvases = document.querySelectorAll('.page-canvas');
+            
+            // Remove canvases that are far from current page
+            allCanvases.forEach(canvas => {
+                const canvasPage = parseInt(canvas.id.split('-')[1]);
+                const distance = Math.abs(canvasPage - currentPage);
+                
+                if (distance > maxCache) {
+                    console.log(`🗑️ Removing canvas for page ${canvasPage}`);
+                    canvas.remove();
+                    
+                    // Clear from cache
+                    if (window.pageCache && window.pageCache[canvasPage]) {
+                        delete window.pageCache[canvasPage];
+                    }
+                }
+            });
+        }
+
+        // ==================== UI HELPERS ====================
+
+        // Show network status
+        function showNetworkStatus(quality) {
+            const messages = {
+                'low': 'Slow connection detected. Optimizing for mobile data...',
+                'medium': 'Moderate connection. Loading optimized version...',
+                'high': 'Good connection. Loading HD version...'
+            };
+            
+            const statusDiv = document.createElement('div');
+            statusDiv.className = 'network-status';
+            statusDiv.innerHTML = `
+                <i class="fas fa-signal"></i>
+                ${messages[quality]}
+            `;
+            
+            document.body.appendChild(statusDiv);
+            
+            setTimeout(() => {
+                statusDiv.remove();
+            }, 3000);
+        }
+
+        // Show loading state with network info
+        function showLoadingState(quality) {
+            const loadingText = document.querySelector('#loadingState div:nth-child(2)');
+            if (loadingText && quality === 'low') {
+                loadingText.innerHTML = 'Loading optimized version for slow network...';
+            }
+        }
+
+        // Show mobile error
+        function showMobileError(error) {
+            const loadingState = document.getElementById('loadingState');
+            if (loadingState) {
+                loadingState.innerHTML = `
+                    <div style="text-align: center; color: #ef4444;">
+                        <i class="fas fa-exclamation-triangle" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                        <div>Failed to load PDF</div>
+                        <div style="font-size: 0.7rem; margin-top: 0.5rem;">${error.message}</div>
+                        <div style="font-size: 0.7rem; margin-top: 0.5rem; color: #ccc;">
+                            Please check your internet connection
+                        </div>
+                        <button onclick="window.location.reload()" class="nav-btn" style="margin-top: 1rem;">
+                            <i class="fas fa-redo"></i>
+                            Retry
+                        </button>
+                        <button onclick="goBack()" class="nav-btn" style="margin-top: 0.5rem; background: rgba(255, 255, 255, 0.1);">
+                            <i class="fas fa-arrow-left"></i>
+                            Go Back
+                        </button>
+                    </div>
+                `;
+            }
+        }
+
+        // Update progress bar
+        function updateProgressBar(percent) {
+            const progressBar = document.getElementById('loadingProgress');
+            if (progressBar) {
+                progressBar.style.width = `${percent}%`;
+            }
+        }
+
+        // Show PDF skeleton immediately
+        function showPDFSkeleton() {
+            const container = document.getElementById('canvasContainer');
+            if (container) {
+                container.innerHTML = '<div class="page-skeleton" id="pageSkeleton"></div>';
+            }
+        }
+
+        // ==================== FIXED CLICK & DOUBLE CLICK HANDLING ====================
+
+        // Enhanced Touch Gestures Setup with proper controls handling
+        function setupEnhancedTouchEvents(canvas) {
+            if (!canvas) return;
+            
+            // Variables for smooth zoom and pan
+            let scale = currentScale;
+            let posX = 0;
+            let posY = 0;
+            let lastZoom = scale;
+            
+            // Prevent default touch behaviors
+            canvas.style.touchAction = 'none';
+            
+            // Single click/tap handler
+            function handleSingleClick(e) {
+                console.log('👆 Single click - toggle controls');
+                
+                // Show click feedback
+                const rect = canvas.getBoundingClientRect();
+                const x = e.clientX || (e.touches && e.touches[0].clientX) || rect.left + rect.width/2;
+                const y = e.clientY || (e.touches && e.touches[0].clientY) || rect.top + rect.height/2;
+                showClickFeedback(x, y, 'single');
+                
+                toggleControls();
+            }
+            
+            // Double click/tap handler
+            function handleDoubleClick(e) {
+                console.log('👆👆 Double click - toggle zoom');
+                
+                // Show click feedback
+                const rect = canvas.getBoundingClientRect();
+                const x = e.clientX || (e.touches && e.touches[0].clientX) || rect.left + rect.width/2;
+                const y = e.clientY || (e.touches && e.touches[0].clientY) || rect.top + rect.height/2;
+                showClickFeedback(x, y, 'double');
+                
+                toggleZoom(canvas);
+            }
+            
+            // Touch start handler - ONLY FOR PINCH/PAN
+            canvas.addEventListener('touchstart', (e) => {
+                if (e.touches.length === 2) {
+                    // Pinch zoom start
+                    touchState.isPinching = true;
+                    touchState.wasPinching = false;
+                    touchState.initialDistance = getTouchDistance(e.touches);
+                    touchState.initialScale = scale;
+                    e.preventDefault();
+                    
+                    // Hide controls during pinch
+                    hideControls();
+                }
+                
+                if (e.touches.length === 1) {
+                    const touch = e.touches[0];
+                    touchState.isSwiping = true;
+                    touchState.swipeStartX = touch.clientX;
+                    touchState.swipeEndX = touch.clientX;
+                    
+                    if (scale > 1) {
+                        touchState.isDragging = true;
+                        touchState.initialX = touch.clientX - posX;
+                        touchState.initialY = touch.clientY - posY;
+                    }
+                    
+                    touchState.wasPinching = false;
+                }
+            }, { passive: false });
+            
+            // SIMPLE CLICK HANDLER FOR CANVAS - FIXED
+            canvas.addEventListener('click', function(e) {
+                console.log('Canvas click event - single click for controls');
+                
+                // Reset double click timer
+                clearTimeout(clickState.clickTimer);
+                clickState.clickCount = 0;
+                
+                // Handle single click after delay
+                setTimeout(() => {
+                    handleSingleClick(e);
+                }, 50);
+            });
+            
+            // SEPARATE DOUBLE CLICK HANDLER
+            canvas.addEventListener('dblclick', function(e) {
+                console.log('Canvas dblclick event - double click for zoom');
+                e.preventDefault();
+                e.stopPropagation();
+                
+                // Cancel any pending single click
+                clearTimeout(clickState.clickTimer);
+                clickState.clickCount = 0;
+                
+                handleDoubleClick(e);
+            });
+            
+            // SIMPLE TOUCH HANDLER FOR TAP DETECTION
+            let lastTapTime = 0;
+            let tapCount = 0;
+            let tapTimer = null;
+            
+            canvas.addEventListener('touchend', function(e) {
+                if (e.touches.length === 0 && e.changedTouches.length === 1) {
+                    const currentTime = Date.now();
+                    const tap = e.changedTouches[0];
+                    
+                    // Check if this is a double tap
+                    if (currentTime - lastTapTime < 300) {
+                        // Double tap detected
+                        clearTimeout(tapTimer);
+                        tapCount = 0;
+                        
+                        console.log('Double tap detected for zoom');
+                        handleDoubleClick({
+                            clientX: tap.clientX,
+                            clientY: tap.clientY
+                        });
+                    } else {
+                        // Single tap
+                        tapCount = 1;
+                        clearTimeout(tapTimer);
+                        
+                        tapTimer = setTimeout(() => {
+                            if (tapCount === 1) {
+                                console.log('Single tap detected for controls');
+                                handleSingleClick({
+                                    clientX: tap.clientX,
+                                    clientY: tap.clientY
+                                });
+                            }
+                            tapCount = 0;
+                        }, 300);
+                    }
+                    
+                    lastTapTime = currentTime;
+                }
+            }, { passive: true });
+            
+            // Touch move handler - ONLY FOR PINCH/PAN/SWIPE
+            canvas.addEventListener('touchmove', (e) => {
+                if (touchState.isPinching && e.touches.length === 2) {
+                    // Pinch zoom in progress
+                    e.preventDefault();
+                    
+                    const currentDistance = getTouchDistance(e.touches);
+                    const scaleChange = currentDistance / touchState.initialDistance;
+                    
+                    // Calculate new scale with limits
+                    let newScale = touchState.initialScale * scaleChange;
+                    newScale = Math.max(MOBILE_MIN_SCALE, Math.min(newScale, MOBILE_MAX_SCALE));
+                    
+                    // Update scale
+                    scale = newScale;
+                    currentScale = scale;
+                    
+                    // Apply visual scale transform
+                    canvas.style.transform = `scale(${scale})`;
+                    canvas.style.transformOrigin = 'center center';
+                    
+                    // Update zoom level display
+                    updateZoomLevel();
+                    
+                } else if (touchState.isDragging && scale > 1 && e.touches.length === 1) {
+                    // Pan when zoomed
+                    e.preventDefault();
+                    
+                    const touch = e.touches[0];
+                    posX = touch.clientX - touchState.initialX;
+                    posY = touch.clientY - touchState.initialY;
+                    
+                    // Limit panning to keep canvas in view
+                    const canvasRect = canvas.getBoundingClientRect();
+                    const maxX = (canvasRect.width * (scale - 1)) / 2;
+                    const maxY = (canvasRect.height * (scale - 1)) / 2;
+                    
+                    posX = Math.max(-maxX, Math.min(maxX, posX));
+                    posY = Math.max(-maxY, Math.min(maxY, posY));
+                    
+                    canvas.style.transform = `translate(${posX}px, ${posY}px) scale(${scale})`;
+                    
+                } else if (touchState.isSwiping && e.touches.length === 1 && scale <= 1) {
+                    // Track swipe for page navigation
+                    const touch = e.touches[0];
+                    touchState.swipeEndX = touch.clientX;
+                }
+                
+                // Reset activity timer
+                resetHideTimeout();
+            }, { passive: false });
+            
+            // Touch end handler for gestures
+            canvas.addEventListener('touchend', (e) => {
+                // Handle swipe for page navigation
+                if (touchState.isSwiping && scale <= 1) {
+                    const swipeDistance = touchState.swipeEndX - touchState.swipeStartX;
+                    const swipeThreshold = 50;
+                    
+                    if (Math.abs(swipeDistance) > swipeThreshold) {
+                        if (swipeDistance > 0) {
+                            // Swipe right - previous page
+                            goToPreviousPage();
+                        } else {
+                            // Swipe left - next page
+                            goToNextPage();
+                        }
+                        e.preventDefault();
+                    }
+                }
+                
+                // IMPORTANT: If user was pinching, show controls after a short delay
+                if (touchState.isPinching) {
+                    touchState.wasPinching = true;
+                    setTimeout(() => {
+                        if (touchState.wasPinching) {
+                            forceShowControls();
+                            touchState.wasPinching = false;
+                        }
+                    }, 500);
+                }
+                
+                // Reset touch states
+                touchState.isPinching = false;
+                touchState.isDragging = false;
+                touchState.isSwiping = false;
+                
+                // Re-render at new scale if needed
+                if (Math.abs(scale - lastZoom) > 0.1) {
+                    lastZoom = scale;
+                    setTimeout(() => {
+                        reRenderPageAtScale(currentPage, scale);
+                    }, 100);
+                }
+                
+                // Reset transform
+                canvas.style.transform = '';
+                
+                // Show controls after interaction
+                if (!touchState.wasPinching) {
+                    setTimeout(() => showControlsTemporarily(), 300);
+                }
+                
+                // Reset activity timer
+                resetHideTimeout();
+            });
+        }
+
+        // Helper function for touch distance
+        function getTouchDistance(touches) {
+            const dx = touches[0].clientX - touches[1].clientX;
+            const dy = touches[0].clientY - touches[1].clientY;
+            return Math.sqrt(dx * dx + dy * dy);
+        }
+
+        // ==================== FIXED ZOOM TOGGLE FUNCTION ====================
+
+        // Toggle zoom between original and 300%
+        async function toggleZoom(canvas) {
+            if (!canvas) return;
+            
+            // First, show controls
+            showControlsTemporarily();
+            
+            if (!isZoomedIn) {
+                // Zoom in to 300%
+                console.log('Zooming in to 300%');
+                originalScale = currentScale;
+                await zoomToPercentage(300);
+                isZoomedIn = true;
+                
+                // Show zoom hint
+                showZoomHint('Zoomed in 300% (Double click to zoom out)');
+            } else {
+                // Zoom back to original
+                console.log('Zooming out to original size');
+                await zoomResetToOriginal();
+                isZoomedIn = false;
+                
+                // Show zoom hint
+                showZoomHint('Zoomed out (Double click to zoom in)');
+            }
+        }
+
+        // Reset to original scale
+        async function zoomResetToOriginal() {
+            const canvas = document.getElementById(`page-${currentPage}`);
+            if (!canvas) return;
+            
+            // Smooth zoom animation
+            canvas.style.transition = 'transform 0.3s ease-out';
+            currentScale = originalScale;
+            canvas.style.transform = `scale(${currentScale})`;
+            
+            setTimeout(async () => {
+                canvas.style.transition = '';
+                canvas.style.transform = '';
+                await reRenderPageAtScale(currentPage, currentScale);
+                updateZoomLevel();
+            }, 300);
+            
+            logSecurityEvent('MOBILE_ZOOM_RESET_TO_ORIGINAL', { 
+                scale: currentScale
+            });
+        }
+
+        // Simple zoom to percentage
+        async function zoomToPercentage(percentage) {
+            const canvas = document.getElementById(`page-${currentPage}`);
+            if (!canvas) return;
+            
+            const targetScale = percentage / 100;
+            
+            // Smooth zoom animation
+            canvas.style.transition = 'transform 0.3s ease-out';
+            currentScale = Math.max(MOBILE_MIN_SCALE, Math.min(targetScale, MOBILE_MAX_SCALE));
+            canvas.style.transform = `scale(${currentScale})`;
+            
+            setTimeout(async () => {
+                canvas.style.transition = '';
+                canvas.style.transform = '';
+                await reRenderPageAtScale(currentPage, currentScale);
+                updateZoomLevel();
+            }, 300);
+            
+            logSecurityEvent('MOBILE_ZOOM_TO_PERCENTAGE', { 
+                scale: currentScale,
+                percentage: percentage 
+            });
+        }
+
+        // ==================== UI HELPERS ====================
+
+        // Show controls hint
+        function showControlsHint(message) {
+            // Remove existing hint if any
+            const existingHint = document.querySelector('.controls-hint');
+            if (existingHint) {
+                existingHint.remove();
+            }
+            
+            const hint = document.createElement('div');
+            hint.className = 'controls-hint';
+            hint.innerHTML = `<i class="fas fa-hand-point-up"></i> ${message}`;
+            hint.style.cssText = `
+                position: fixed;
+                top: 70px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: rgba(0, 0, 0, 0.85);
+                color: white;
+                padding: 0.5rem 1rem;
+                border-radius: 8px;
+                font-size: 0.7rem;
+                z-index: 1001;
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                white-space: nowrap;
+                animation: fade-in 0.3s ease;
+                pointer-events: none;
+            `;
+            
+            document.body.appendChild(hint);
+            
+            // Auto hide after 1.5 seconds
+            setTimeout(() => {
+                if (hint.parentNode) {
+                    hint.style.opacity = '0';
+                    hint.style.transition = 'opacity 0.3s ease';
+                    setTimeout(() => {
+                        if (hint.parentNode) {
+                            hint.parentNode.removeChild(hint);
+                        }
+                    }, 300);
+                }
+            }, 1500);
+        }
+
+        // Show zoom hint
+        function showZoomHint(message) {
+            // Remove existing hint if any
+            const existingHint = document.querySelector('.zoom-hint');
+            if (existingHint) {
+                existingHint.remove();
+            }
+            
+            const hint = document.createElement('div');
+            hint.className = 'zoom-hint';
+            hint.innerHTML = `<i class="fas fa-search"></i> ${message}`;
+            hint.style.cssText = `
+                position: fixed;
+                bottom: 120px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: rgba(37, 99, 235, 0.9);
+                color: white;
+                padding: 0.75rem 1.5rem;
+                border-radius: 12px;
+                font-size: 0.8rem;
+                z-index: 1001;
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                white-space: nowrap;
+                animation: slide-up 0.3s ease;
+                pointer-events: none;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            `;
+            
+            document.body.appendChild(hint);
+            
+            // Auto hide after 2 seconds
+            setTimeout(() => {
+                if (hint.parentNode) {
+                    hint.style.opacity = '0';
+                    hint.style.transition = 'opacity 0.3s ease';
+                    setTimeout(() => {
+                        if (hint.parentNode) {
+                            hint.parentNode.removeChild(hint);
+                        }
+                    }, 300);
+                }
+            }, 2000);
+        }
+
+        // Add click feedback animation
+        function showClickFeedback(x, y, type = 'single') {
+            const feedback = document.createElement('div');
+            feedback.className = 'click-feedback';
+            feedback.style.left = `${x}px`;
+            feedback.style.top = `${y}px`;
+            
+            if (type === 'double') {
+                feedback.style.background = 'rgba(34, 197, 94, 0.3)';
+                feedback.style.width = '80px';
+                feedback.style.height = '80px';
+            } else {
+                feedback.style.width = '60px';
+                feedback.style.height = '60px';
+            }
+            
+            document.body.appendChild(feedback);
+            
+            setTimeout(() => {
+                if (feedback.parentNode) {
+                    feedback.parentNode.removeChild(feedback);
+                }
+            }, 600);
+        }
+
+        // Show double tap hint
+        function showDoubleTapHint() {
+            const hint = document.getElementById('doubleTapHint');
+            if (hint) {
+                hint.style.display = 'block';
+                
+                setTimeout(() => {
+                    hint.style.display = 'none';
+                }, 1000);
+            }
+        }
+
+        // ==================== CONTROLS MANAGEMENT ====================
+
+        // Show controls with animation
+        function showControls() {
+            // Don't show if currently pinching
+            if (touchState.isPinching) {
+                return;
+            }
+            
+            const header = document.querySelector('.security-header');
+            const navigation = document.querySelector('.navigation-controls');
+            const zoom = document.querySelector('.zoom-controls');
+            const gestureHint = document.getElementById('gestureHint');
+            
+            // Show header
+            if (header) {
+                header.classList.remove('header-hidden');
+                header.classList.add('header-visible');
+                header.style.pointerEvents = 'all';
+                header.style.opacity = '1';
+                header.style.transform = 'translateY(0)';
+            }
+            
+            // Show navigation
+            if (navigation) {
+                navigation.classList.remove('navigation-hidden');
+                navigation.classList.add('navigation-visible');
+                navigation.style.pointerEvents = 'all';
+                navigation.style.opacity = '1';
+                navigation.style.transform = 'translateY(0)';
+            }
+            
+            // Show zoom controls
+            if (zoom) {
+                zoom.classList.remove('zoom-hidden');
+                zoom.classList.add('zoom-visible');
+                zoom.style.pointerEvents = 'all';
+                zoom.style.opacity = '1';
+                zoom.style.transform = 'translateX(0)';
+            }
+            
+            // Show gesture hint
+            if (gestureHint) {
+                gestureHint.style.display = 'block';
+                setTimeout(() => {
+                    if (gestureHint) gestureHint.classList.remove('hidden');
+                }, 10);
+            }
+            
+            // Hide double click zone
+            const pdfContainer = document.getElementById('pdfContainer');
+            if (pdfContainer) {
+                pdfContainer.classList.remove('show-double-click-zone');
+            }
+            
+            // Update state
+            isControlsVisible = true;
+            
+            // Reset auto-hide timeout
+            resetHideTimeout();
+            
+            console.log('👆 Controls shown');
+        }
+
+        // Hide controls with animation
+        function hideControls() {
+            const header = document.querySelector('.security-header');
+            const navigation = document.querySelector('.navigation-controls');
+            const zoom = document.querySelector('.zoom-controls');
+            const gestureHint = document.getElementById('gestureHint');
+            
+            // Hide header
+            if (header) {
+                header.classList.remove('header-visible');
+                header.classList.add('header-hidden');
+                header.style.pointerEvents = 'none';
+            }
+            
+            // Hide navigation
+            if (navigation) {
+                navigation.classList.remove('navigation-visible');
+                navigation.classList.add('navigation-hidden');
+                navigation.style.pointerEvents = 'none';
+            }
+            
+            // Hide zoom controls
+            if (zoom) {
+                zoom.classList.remove('zoom-visible');
+                zoom.classList.add('zoom-hidden');
+                zoom.style.pointerEvents = 'none';
+            }
+            
+            // Hide gesture hint
+            if (gestureHint) {
+                gestureHint.classList.add('hidden');
+                setTimeout(() => {
+                    if (gestureHint) gestureHint.style.display = 'none';
+                }, 300);
+            }
+            
+            // Show double click zone hint
+            const pdfContainer = document.getElementById('pdfContainer');
+            if (pdfContainer) {
+                pdfContainer.classList.add('show-double-click-zone');
+                setTimeout(() => {
+                    if (pdfContainer) pdfContainer.classList.remove('show-double-click-zone');
+                }, 3000);
+            }
+            
+            // Update state
+            isControlsVisible = false;
+            
+            console.log('👇 Controls hidden');
+        }
+
+        // Toggle controls visibility
+        function toggleControls() {
+            // Don't toggle during pinch or drag
+            if (touchState.isPinching || touchState.isDragging) {
+                return;
+            }
+            
+            if (isControlsVisible) {
+                hideControls();
+                showControlsHint('Tap to show controls');
+            } else {
+                showControls();
+                showControlsHint('Tap to hide controls');
+            }
+            
+            // Reset auto-hide timeout
+            resetHideTimeout();
+        }
+
+        // Show controls temporarily (for user actions)
+        function showControlsTemporarily() {
+            showControls();
+            
+            // Reset hide timeout after showing
+            setTimeout(() => {
+                if (Date.now() - lastActivityTime > INACTIVITY_TIMEOUT - 1000) {
+                    resetHideTimeout();
+                }
+            }, 500);
+        }
+
+        // Force show controls (bypass all checks)
+        function forceShowControls() {
+            const header = document.querySelector('.security-header');
+            const navigation = document.querySelector('.navigation-controls');
+            const zoom = document.querySelector('.zoom-controls');
+            
+            if (header) {
+                header.classList.remove('header-hidden');
+                header.classList.add('header-visible');
+                header.style.pointerEvents = 'all';
+                header.style.opacity = '1';
+                header.style.transform = 'translateY(0)';
+            }
+            
+            if (navigation) {
+                navigation.classList.remove('navigation-hidden');
+                navigation.classList.add('navigation-visible');
+                navigation.style.pointerEvents = 'all';
+                navigation.style.opacity = '1';
+                navigation.style.transform = 'translateY(0)';
+            }
+            
+            if (zoom) {
+                zoom.classList.remove('zoom-hidden');
+                zoom.classList.add('zoom-visible');
+                zoom.style.pointerEvents = 'all';
+                zoom.style.opacity = '1';
+                zoom.style.transform = 'translateX(0)';
+            }
+            
+            // Hide double click zone
+            const pdfContainer = document.getElementById('pdfContainer');
+            if (pdfContainer) {
+                pdfContainer.classList.remove('show-double-click-zone');
+            }
+            
+            isControlsVisible = true;
+            lastActivityTime = Date.now();
+            
+            // Reset auto-hide timer
+            clearTimeout(hideControlsTimeout);
+            hideControlsTimeout = setTimeout(() => {
+                if (isControlsVisible && !touchState.isPinching) {
+                    hideControls();
+                }
+            }, INACTIVITY_TIMEOUT);
+            
+            console.log('🔧 Force show controls');
+        }
+
+        // Reset auto-hide timeout
+        function resetHideTimeout() {
+            clearTimeout(hideControlsTimeout);
+            lastActivityTime = Date.now();
+            
+            // Show keyboard hint briefly on desktop
+            if (window.innerWidth >= 768) {
+                const hint = document.getElementById('keyboardHint');
+                if (hint) {
+                    hint.style.display = 'block';
+                    setTimeout(() => {
+                        if (hint) hint.style.display = 'none';
+                    }, 3000);
+                }
+            }
+            
+            // Set new timeout
+            hideControlsTimeout = setTimeout(() => {
+                if (isControlsVisible && !touchState.isPinching) {
+                    hideControls();
+                }
+            }, INACTIVITY_TIMEOUT);
+        }
+
+        // Setup auto-hide functionality
+        function setupAutoHide() {
+            const pdfContainer = document.getElementById('pdfContainer');
+            
+            if (!pdfContainer) return;
+            
+            // Track activity to auto-hide
+            const activityEvents = ['mousemove', 'touchmove', 'keypress', 'click', 'scroll'];
+            activityEvents.forEach(event => {
+                document.addEventListener(event, resetHideTimeout, { passive: true });
+            });
+            
+            // Never hide when interacting with buttons
+            document.querySelectorAll('.nav-btn, .zoom-btn, .back-btn').forEach(btn => {
+                btn.addEventListener('touchstart', (e) => {
+                    e.stopPropagation();
+                    resetHideTimeout();
+                    showControls(); // Ensure controls are visible
+                });
+                
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    resetHideTimeout();
+                });
+            });
+            
+            console.log('✅ Auto-hide navigation initialized');
+        }
+
+        // ==================== KEYBOARD NAVIGATION ====================
+
+        // Mobile Keyboard Navigation
+        function setupKeyboardNavigation() {
+            console.log('⌨️ Keyboard navigation initialized');
+            
+            document.addEventListener('keydown', (e) => {
+                // Don't trigger if user is typing in an input field
+                if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+                    return;
+                }
+                
+                switch(e.key) {
+                    case 'ArrowRight':
+                    case 'Right':
+                    case ' ':
+                    case 'Spacebar':
+                        // Spacebar or Right Arrow for next page
+                        e.preventDefault();
+                        showKeyPressFeedback('right');
+                        goToNextPage();
+                        break;
+                        
+                    case 'ArrowLeft':
+                    case 'Left':
+                        // Left Arrow for previous page
+                        e.preventDefault();
+                        showKeyPressFeedback('left');
+                        goToPreviousPage();
+                        break;
+                        
+                    case '+':
+                    case '=':
+                        // Plus or Equals for zoom in
+                        e.preventDefault();
+                        if (e.ctrlKey || e.metaKey) {
+                            zoomIn();
+                        }
+                        break;
+                        
+                    case '-':
+                        // Minus for zoom out
+                        e.preventDefault();
+                        if (e.ctrlKey || e.metaKey) {
+                            zoomOut();
+                        }
+                        break;
+                        
+                    case '0':
+                        // Zero for reset zoom
+                        e.preventDefault();
+                        if (e.ctrlKey || e.metaKey) {
+                            zoomReset();
+                        }
+                        break;
+                        
+                    case 'Escape':
+                        // Escape to toggle controls
+                        e.preventDefault();
+                        toggleControls();
+                        break;
+                        
+                    case 'Home':
+                        // Home for first page
+                        e.preventDefault();
+                        goToPage(1);
+                        break;
+                        
+                    case 'End':
+                        // End for last page
+                        e.preventDefault();
+                        goToPage(totalPages);
+                        break;
+                }
+                
+                // Show controls when using keyboard
+                showControlsTemporarily();
+            });
+        }
+
+        // Visual feedback for keyboard navigation
+        function showKeyPressFeedback(direction) {
+            // Remove any existing feedback
+            const existingFeedback = document.querySelector('.keyboard-feedback');
+            if (existingFeedback) {
+                existingFeedback.remove();
+            }
+            
+            const feedback = document.createElement('div');
+            feedback.className = 'keyboard-feedback';
+            feedback.innerHTML = `<i class="fas fa-arrow-${direction}"></i>`;
+            
+            const isLeft = direction === 'left';
+            feedback.style.left = isLeft ? '20px' : 'auto';
+            feedback.style.right = isLeft ? 'auto' : '20px';
+            
+            document.body.appendChild(feedback);
+            
+            setTimeout(() => {
+                if (feedback.parentNode) {
+                    feedback.parentNode.removeChild(feedback);
+                }
+            }, 500);
+        }
+
+        // Focus management for keyboard users
+        function setupFocusManagement() {
+            const focusableElements = document.querySelectorAll(
+                'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+            );
+            
+            if (focusableElements.length === 0) return;
+            
+            const firstFocusable = focusableElements[0];
+            const lastFocusable = focusableElements[focusableElements.length - 1];
+            
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Tab') {
+                    if (e.shiftKey) {
+                        // Shift + Tab
+                        if (document.activeElement === firstFocusable) {
+                            e.preventDefault();
+                            lastFocusable.focus();
+                        }
+                    } else {
+                        // Tab
+                        if (document.activeElement === lastFocusable) {
+                            e.preventDefault();
+                            firstFocusable.focus();
+                        }
+                    }
+                    showControlsTemporarily();
+                }
+            });
+        }
+
+        // Update button tooltips
+        function updateButtonTooltips() {
+            const elements = {
+                'prevPage': 'Previous Page (Left Arrow)',
+                'nextPage': 'Next Page (Right Arrow or Space)',
+                'zoomIn': 'Zoom In (Ctrl + +)',
+                'zoomOut': 'Zoom Out (Ctrl + -)',
+                'zoomReset': 'Reset Zoom (Ctrl + 0)',
+                'backButton': 'Go Back (Esc)'
+            };
+            
+            Object.keys(elements).forEach(id => {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.title = elements[id];
+                }
+            });
+        }
+
+        // ==================== MOBILE SECURITY ====================
+
+        // Mobile Security System
+        function initializeMobileSecurity() {
+            console.log('📱 Initializing mobile security...');
+
+            // Set mobile-optimized scale
+            currentScale = calculateMobileScale();
+            originalScale = currentScale;
+
+            // Enhanced print protection
+            setupPrintProtection();
+
+            // Mobile-optimized security events
+            document.addEventListener('contextmenu', (e) => {
+                e.preventDefault();
+                showSecurityWarning('Right-click disabled');
+                logSecurityEvent('CONTEXT_MENU_BLOCKED');
+            });
+
+            document.addEventListener('selectstart', (e) => {
+                e.preventDefault();
+            });
+
+            // Prevent screenshot on some mobile devices
+            document.body.style.webkitUserSelect = 'none';
+            document.body.style.webkitTouchCallout = 'none';
+
+            // Handle mobile-specific security
+            document.addEventListener('touchmove', (e) => {
+                if (e.scale !== 1) {
+                    e.preventDefault();
+                }
+            }, { passive: false });
+
+            // Prevent drag and drop
+            document.addEventListener('dragstart', (e) => {
+                e.preventDefault();
+                return false;
+            });
+
+            console.log('✅ Mobile security initialized');
+        }
+
+        // Mobile-optimized security warning
+        function showSecurityWarning(message) {
+            const warning = document.getElementById('securityWarning');
+            if (warning) {
+                warning.innerHTML = `<i class="fas fa-shield-alt"></i> ${message}`;
+                warning.style.display = 'block';
+                
+                setTimeout(() => {
+                    warning.style.display = 'none';
+                }, 2000);
+            }
+        }
+
+        // Mobile-optimized logging
+        function logSecurityEvent(eventType, details = {}) {
+            console.log(`📱 Security: ${eventType}`, details);
+            
+            // Send log to server
+            if (MOBILE_CONFIG.logEndpoint) {
+                fetch(MOBILE_CONFIG.logEndpoint, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        eventType,
+                        pdfId: MOBILE_CONFIG.pdfId,
+                        details: {
+                            ...details,
+                            userAgent: navigator.userAgent,
+                            isMobile: true,
+                            screenSize: `${window.innerWidth}x${window.innerHeight}`,
+                            timestamp: new Date().toISOString()
+                        }
+                    })
+                }).catch(error => {
+                    console.error('Mobile log failed:', error);
+                });
+            }
+        }
+
+        // ==================== ZOOM FUNCTIONS ====================
+
+        // Enhanced zoom functions with smooth animations
+        async function zoomIn() {
+            if (currentScale < MOBILE_MAX_SCALE) {
+                const canvas = document.getElementById(`page-${currentPage}`);
+                if (canvas) {
+                    // Reset double click state
+                    isZoomedIn = false;
+                    
+                    // Smooth zoom animation
+                    canvas.style.transition = 'transform 0.2s ease-out';
+                    currentScale = Math.min(currentScale + MOBILE_SCALE_FACTOR, MOBILE_MAX_SCALE);
+                    canvas.style.transform = `scale(${currentScale})`;
+                    
+                    setTimeout(async () => {
+                        canvas.style.transition = '';
+                        canvas.style.transform = '';
+                        await reRenderPageAtScale(currentPage, currentScale);
+                        updateZoomLevel();
+                        showControlsTemporarily();
+                    }, 200);
+                    
+                    logSecurityEvent('MOBILE_ZOOM_IN', { 
+                        scale: currentScale,
+                        hd: true 
+                    });
+                }
+            }
+        }
+
+        async function zoomOut() {
+            if (currentScale > MOBILE_MIN_SCALE) {
+                const canvas = document.getElementById(`page-${currentPage}`);
+                if (canvas) {
+                    // Reset double click state
+                    isZoomedIn = false;
+                    
+                    // Smooth zoom animation
+                    canvas.style.transition = 'transform 0.2s ease-out';
+                    currentScale = Math.max(currentScale - MOBILE_SCALE_FACTOR, MOBILE_MIN_SCALE);
+                    canvas.style.transform = `scale(${currentScale})`;
+                    
+                    setTimeout(async () => {
+                        canvas.style.transition = '';
+                        canvas.style.transform = '';
+                        await reRenderPageAtScale(currentPage, currentScale);
+                        updateZoomLevel();
+                        showControlsTemporarily();
+                    }, 200);
+                    
+                    logSecurityEvent('MOBILE_ZOOM_OUT', { 
+                        scale: currentScale,
+                        hd: true 
+                    });
+                }
+            }
+        }
+
+        async function zoomReset() {
+            const canvas = document.getElementById(`page-${currentPage}`);
+            if (canvas) {
+                // Reset double click state
+                isZoomedIn = false;
+                
+                // Smooth reset animation
+                canvas.style.transition = 'transform 0.3s ease-out';
+                currentScale = originalScale;
+                canvas.style.transform = `scale(${currentScale})`;
+                
+                setTimeout(async () => {
+                    canvas.style.transition = '';
+                    canvas.style.transform = '';
+                    await reRenderPageAtScale(currentPage, currentScale);
+                    updateZoomLevel();
+                    showControlsTemporarily();
+                }, 300);
+                
+                logSecurityEvent('MOBILE_ZOOM_RESET');
+            }
+        }
+
+        function updateZoomLevel() {
+            const zoomLevelElement = document.getElementById('zoomLevel');
+            if (zoomLevelElement) {
+                zoomLevelElement.textContent = `${Math.round(currentScale * 100)}%`;
+            }
+        }
+
+        // ==================== PAGE NAVIGATION ====================
+
+        // Mobile navigation
+        function updateNavigation() {
+            const prevBtn = document.getElementById('prevPage');
+            const nextBtn = document.getElementById('nextPage');
+            
+            if (prevBtn) prevBtn.disabled = currentPage <= 1;
+            if (nextBtn) nextBtn.disabled = currentPage >= totalPages;
+            
+            // Update page info styling based on state
+            const pageInfo = document.querySelector('.page-info');
+            if (pageInfo) {
+                if (currentPage === 1) {
+                    pageInfo.style.background = 'rgba(59, 130, 246, 0.2)';
+                } else if (currentPage === totalPages) {
+                    pageInfo.style.background = 'rgba(239, 68, 68, 0.2)';
+                } else {
+                    pageInfo.style.background = 'rgba(255, 255, 255, 0.1)';
+                }
+            }
+        }
+
+        // Go to specific page function
+        async function goToPage(pageNum) {
+            if (pageNum >= 1 && pageNum <= totalPages && pageNum !== currentPage) {
+                currentPage = pageNum;
+                await renderPageAdaptive(currentPage, getNetworkAwareConfig());
+                document.getElementById('currentPage').textContent = currentPage;
+                updateNavigation();
+                showControlsTemporarily();
+                logSecurityEvent('MOBILE_PAGE_JUMP', { page: pageNum });
+            }
+        }
+
+        async function goToPreviousPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                await renderPageAdaptive(currentPage, getNetworkAwareConfig());
+                document.getElementById('currentPage').textContent = currentPage;
+                updateNavigation();
+                showControlsTemporarily();
+                logSecurityEvent('MOBILE_PAGE_PREV');
+            }
+        }
+
+        async function goToNextPage() {
+            if (currentPage < totalPages) {
+                currentPage++;
+                await renderPageAdaptive(currentPage, getNetworkAwareConfig());
+                document.getElementById('currentPage').textContent = currentPage;
+                updateNavigation();
+                showControlsTemporarily();
+                logSecurityEvent('MOBILE_PAGE_NEXT');
+            }
+        }
+
+        // ==================== BACK BUTTON ====================
+
+        // Back button functionality
+        function setupBackButton() {
+            const backButton = document.getElementById('backButton');
+            if (backButton) {
+                const basePath = '<%= typeof basePath !== "undefined" ? basePath : "/ebook" %>';
+                
+                backButton.addEventListener('click', function() {
+                    console.log('Back button clicked');
+                    window.location.href = basePath;
+                });
+                
+                // Touch events ke liye bhi
+                backButton.addEventListener('touchend', function(e) {
+                    e.preventDefault();
+                    console.log('Back button touched');
+                    window.location.href = basePath;
+                });
+            }
+        }
+
+        // ==================== EVENT LISTENERS ====================
+
+        // Mobile event listeners setup
+        function setupEventListeners() {
+            // Page navigation
+            const nextPageBtn = document.getElementById('nextPage');
+            const prevPageBtn = document.getElementById('prevPage');
+            
+            if (nextPageBtn) nextPageBtn.addEventListener('click', goToNextPage);
+            if (prevPageBtn) prevPageBtn.addEventListener('click', goToPreviousPage);
+            
+            // Zoom controls
+            const zoomInBtn = document.getElementById('zoomIn');
+            const zoomOutBtn = document.getElementById('zoomOut');
+            const zoomResetBtn = document.getElementById('zoomReset');
+            
+            if (zoomInBtn) zoomInBtn.addEventListener('click', zoomIn);
+            if (zoomOutBtn) zoomOutBtn.addEventListener('click', zoomOut);
+            if (zoomResetBtn) zoomResetBtn.addEventListener('click', zoomReset);
+            
+            // Mobile-optimized touch events for buttons
+            document.querySelectorAll('.nav-btn, .zoom-btn, .back-btn').forEach(btn => {
+                btn.addEventListener('touchstart', (e) => {
+                    e.currentTarget.style.transform = 'scale(0.95)';
+                });
+                
+                btn.addEventListener('touchend', (e) => {
+                    e.currentTarget.style.transform = 'scale(1)';
+                });
+            });
+            
+            // Double click zone visibility
+            const pdfContainer = document.getElementById('pdfContainer');
+            const doubleClickZone = document.getElementById('doubleClickZone');
+            
+            if (pdfContainer && doubleClickZone) {
+                // Show double click zone when controls are hidden
+                pdfContainer.addEventListener('mouseenter', () => {
+                    if (!isControlsVisible) {
+                        pdfContainer.classList.add('show-double-click-zone');
+                    }
+                });
+                
+                pdfContainer.addEventListener('mouseleave', () => {
+                    pdfContainer.classList.remove('show-double-click-zone');
+                });
+                
+                // Touch events for mobile
+                pdfContainer.addEventListener('touchstart', () => {
+                    if (!isControlsVisible) {
+                        pdfContainer.classList.add('show-double-click-zone');
+                        setTimeout(() => {
+                            pdfContainer.classList.remove('show-double-click-zone');
+                        }, 2000);
+                    }
+                });
+            }
+            
+            // Debug toggle button
+            const debugToggle = document.getElementById('debugToggle');
+            if (debugToggle) {
+                debugToggle.addEventListener('click', () => {
+                    toggleControls();
+                });
+            }
+        }
+
+        // ==================== INITIALIZATION ====================
+
+        // Mobile initialization
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                console.log('📱 HD Mobile Reader Initializing...');
+                
+                // Show PDF skeleton immediately for instant feedback
+                showPDFSkeleton();
+                
+                // Set initial zoom state
+                originalScale = calculateMobileScale();
+                currentScale = originalScale;
+                
+                // Test touch capabilities
+                testTouchCapabilities();
+                
+                // Initialize all systems
+                initializeMobileSecurity();
+                setupKeyboardNavigation();
+                setupFocusManagement();
+                setupBackButton();
+                setupEventListeners();
+                
+                // Load PDF
+                await loadPDF();
+                
+                // Update UI
+                updateNavigation();
+                updateZoomLevel();
+                updateButtonTooltips();
+                
+                // Performance monitoring
+                monitorPerformance();
+                
+                console.log('✅ HD Mobile Reader Ready!');
+                
+            } catch (error) {
+                console.error('❌ Mobile init error:', error);
+                showSecurityWarning('Failed to initialize');
+            }
+        });
+
+        // Mobile resize handling with HD optimization
+        let mobileResizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(mobileResizeTimeout);
+            mobileResizeTimeout = setTimeout(() => {
+                if (pdfDoc) {
+                    originalScale = calculateMobileScale();
+                    if (!isZoomedIn) {
+                        currentScale = originalScale;
+                        renderPageAdaptive(currentPage, getNetworkAwareConfig());
+                    }
+                }
+            }, 250);
+        });
+
+        // Mobile cleanup
+        window.addEventListener('beforeunload', () => {
+            if (pdfDoc) {
+                pdfDoc.destroy().catch(() => {});
+            }
+            clearTimeout(hideControlsTimeout);
+            
+            // Log user exit
+            logSecurityEvent('USER_EXIT', {
+                lastPage: currentPage,
+                sessionDuration: Date.now() - lastActivityTime
+            });
+        });
+
+        // Offline detection
+        window.addEventListener('offline', () => {
+            showSecurityWarning('You are offline');
+        });
+
+        // Online detection
+        window.addEventListener('online', () => {
+            showSecurityWarning('Connection restored');
+        });
+
+        // Go back function for error handling
+        window.goBack = function() {
+            const basePath = '<%= typeof basePath !== "undefined" ? basePath : "/ebook" %>';
+            window.location.href = basePath;
+        };
+
+        // Service Worker for PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').catch(error => {
+                    console.log('Service Worker registration failed:', error);
+                });
+            });
+        }
+
+        // Test touch capabilities
+        function testTouchCapabilities() {
+            const hasTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+            
+            console.log(`📱 Touch capabilities:`, {
+                hasTouch,
+                maxTouchPoints: navigator.maxTouchPoints || 0,
+                userAgent: navigator.userAgent,
+                platform: navigator.platform
+            });
+            
+            if (!hasTouch) {
+                console.warn('Device may not support touch gestures');
+                const gestureHint = document.getElementById('gestureHint');
+                if (gestureHint) gestureHint.style.display = 'none';
+            }
+            
+            return hasTouch;
+        }
+
+        // Performance monitoring
+        function monitorPerformance() {
+            const perfEntries = performance.getEntriesByType('navigation');
+            if (perfEntries.length > 0) {
+                const navEntry = perfEntries[0];
+                console.log('📊 Performance metrics:', {
+                    'DOM Load': navEntry.domContentLoadedEventEnd - navEntry.domContentLoadedEventStart,
+                    'Page Load': navEntry.loadEventEnd - navEntry.loadEventStart,
+                    'First Paint': performance.getEntriesByName('first-paint')[0]?.startTime,
+                    'First Contentful Paint': performance.getEntriesByName('first-contentful-paint')[0]?.startTime
+                });
+            }
+        }
+
+        // ==================== PRINT PROTECTION ====================
 
         // Enhanced Print Protection
         function setupPrintProtection() {
@@ -1081,836 +3121,22 @@
 
         function showPrintWarning() {
             const warning = document.getElementById('printWarning');
-            warning.style.display = 'flex';
-            
-            // Auto-hide after 5 seconds
-            setTimeout(() => {
-                closePrintWarning();
-            }, 5000);
+            if (warning) {
+                warning.style.display = 'flex';
+                
+                // Auto-hide after 5 seconds
+                setTimeout(() => {
+                    closePrintWarning();
+                }, 5000);
+            }
         }
 
         function closePrintWarning() {
             const warning = document.getElementById('printWarning');
-            warning.style.display = 'none';
-        }
-
-        // Auto-Hide Navigation Functions
-        function showControls() {
-            const header = document.querySelector('.security-header');
-            const navigation = document.querySelector('.navigation-controls');
-            const zoom = document.querySelector('.zoom-controls');
-            const gestureHint = document.getElementById('gestureHint');
-            
-            if (header) {
-                header.classList.remove('header-hidden');
-                header.classList.add('header-visible');
-            }
-            
-            if (navigation) {
-                navigation.classList.remove('navigation-hidden');
-                navigation.classList.add('navigation-visible');
-            }
-            
-            if (zoom) {
-                zoom.classList.remove('zoom-hidden');
-                zoom.classList.add('zoom-visible');
-            }
-            
-            if (gestureHint) {
-                gestureHint.classList.remove('hidden');
-            }
-            
-            isControlsVisible = true;
-            resetHideTimeout();
-        }
-
-        function hideControls() {
-            const header = document.querySelector('.security-header');
-            const navigation = document.querySelector('.navigation-controls');
-            const zoom = document.querySelector('.zoom-controls');
-            const gestureHint = document.getElementById('gestureHint');
-            
-            if (header) {
-                header.classList.remove('header-visible');
-                header.classList.add('header-hidden');
-            }
-            
-            if (navigation) {
-                navigation.classList.remove('navigation-visible');
-                navigation.classList.add('navigation-hidden');
-            }
-            
-            if (zoom) {
-                zoom.classList.remove('zoom-visible');
-                zoom.classList.add('zoom-hidden');
-            }
-            
-            if (gestureHint) {
-                gestureHint.classList.add('hidden');
-            }
-            
-            isControlsVisible = false;
-        }
-
-        function resetHideTimeout() {
-            clearTimeout(hideControlsTimeout);
-            lastActivityTime = Date.now();
-            
-            // Show keyboard hint briefly
-            if (window.innerWidth >= 768) {
-                const hint = document.getElementById('keyboardHint');
-                if (hint) {
-                    hint.style.display = 'block';
-                    setTimeout(() => {
-                        hint.style.display = 'none';
-                    }, 3000);
-                }
-            }
-            
-            hideControlsTimeout = setTimeout(() => {
-                if (isControlsVisible) {
-                    hideControls();
-                }
-            }, INACTIVITY_TIMEOUT);
-        }
-
-        function toggleControls() {
-            if (isControlsVisible) {
-                hideControls();
-            } else {
-                showControls();
-            }
-        }
-
-        function showControlsTemporarily() {
-            showControls();
-            setTimeout(() => {
-                if (Date.now() - lastActivityTime > INACTIVITY_TIMEOUT - 1000) {
-                    resetHideTimeout();
-                }
-            }, 500);
-        }
-
-        function setupAutoHide() {
-            const pdfContainer = document.getElementById('pdfContainer');
-            
-            if (!pdfContainer) return;
-            
-            // Single tap to toggle controls
-            let tapTimer;
-            let lastTapTime = 0;
-            let tapCount = 0;
-            
-            pdfContainer.addEventListener('touchstart', (e) => {
-                // Don't hide if tapping on controls
-                if (e.target.closest('.navigation-controls') || 
-                    e.target.closest('.zoom-controls') ||
-                    e.target.closest('.security-header')) {
-                    return;
-                }
-                
-                const currentTime = Date.now();
-                
-                if (currentTime - lastTapTime < 300) {
-                    // Double tap detected - don't toggle, let zoom handle it
-                    tapCount++;
-                    clearTimeout(tapTimer);
-                } else {
-                    tapCount = 1;
-                }
-                
-                lastTapTime = currentTime;
-                
-                if (tapCount === 1) {
-                    tapTimer = setTimeout(() => {
-                        // Single tap - toggle controls
-                        if (tapCount === 1) {
-                            toggleControls();
-                        }
-                        tapCount = 0;
-                    }, 300);
-                }
-            });
-            
-            pdfContainer.addEventListener('touchend', (e) => {
-                // Prevent default to avoid highlighting
-                if (!e.target.closest('.nav-btn') && !e.target.closest('.zoom-btn') && !e.target.closest('.back-btn')) {
-                    e.preventDefault();
-                }
-            });
-            
-            // Mouse click for desktop/tablet
-            pdfContainer.addEventListener('click', (e) => {
-                // Don't hide if clicking on controls
-                if (e.target.closest('.navigation-controls') || 
-                    e.target.closest('.zoom-controls') ||
-                    e.target.closest('.security-header')) {
-                    return;
-                }
-                
-                toggleControls();
-            });
-            
-            // Track activity to auto-hide
-            document.addEventListener('mousemove', resetHideTimeout);
-            document.addEventListener('touchmove', resetHideTimeout);
-            document.addEventListener('keypress', resetHideTimeout);
-            
-            // Pinch zoom ke liye alag handling
-            pdfContainer.addEventListener('touchstart', (e) => {
-                if (e.touches.length === 2) {
-                    // Pinch zoom shuru - hide controls
-                    hideControls();
-                }
-            });
-            
-            // Never hide when interacting with buttons
-            document.querySelectorAll('.nav-btn, .zoom-btn, .back-btn').forEach(btn => {
-                btn.addEventListener('touchstart', (e) => {
-                    e.stopPropagation();
-                    resetHideTimeout();
-                });
-                
-                btn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    resetHideTimeout();
-                });
-            });
-            
-            console.log('✅ Auto-hide navigation initialized');
-        }
-
-        // Mobile Keyboard Navigation
-        function setupKeyboardNavigation() {
-            console.log('⌨️ Keyboard navigation initialized');
-            
-            document.addEventListener('keydown', (e) => {
-                // Don't trigger if user is typing in an input field
-                if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
-                    return;
-                }
-                
-                switch(e.key) {
-                    case 'ArrowRight':
-                    case 'Right':
-                    case ' ':
-                    case 'Spacebar':
-                        // Spacebar or Right Arrow for next page
-                        e.preventDefault();
-                        showKeyPressFeedback('ArrowRight');
-                        goToNextPage();
-                        break;
-                        
-                    case 'ArrowLeft':
-                    case 'Left':
-                        // Left Arrow for previous page
-                        e.preventDefault();
-                        showKeyPressFeedback('ArrowLeft');
-                        goToPreviousPage();
-                        break;
-                        
-                    case '+':
-                    case '=':
-                        // Plus or Equals for zoom in
-                        e.preventDefault();
-                        if (e.ctrlKey || e.metaKey) {
-                            zoomIn();
-                        }
-                        break;
-                        
-                    case '-':
-                        // Minus for zoom out
-                        e.preventDefault();
-                        if (e.ctrlKey || e.metaKey) {
-                            zoomOut();
-                        }
-                        break;
-                        
-                    case '0':
-                        // Zero for reset zoom
-                        e.preventDefault();
-                        if (e.ctrlKey || e.metaKey) {
-                            zoomReset();
-                        }
-                        break;
-                        
-                    case 'Escape':
-                        // Escape to toggle controls
-                        e.preventDefault();
-                        toggleControls();
-                        break;
-                        
-                    case 'Home':
-                        // Home for first page
-                        e.preventDefault();
-                        goToPage(1);
-                        break;
-                        
-                    case 'End':
-                        // End for last page
-                        e.preventDefault();
-                        goToPage(totalPages);
-                        break;
-                }
-            });
-        }
-
-        // Go to specific page function
-        async function goToPage(pageNum) {
-            if (pageNum >= 1 && pageNum <= totalPages && pageNum !== currentPage) {
-                currentPage = pageNum;
-                await renderPage(currentPage);
-                document.getElementById('currentPage').textContent = currentPage;
-                updateNavigation();
-                showControlsTemporarily();
-                logSecurityEvent('MOBILE_PAGE_JUMP', { page: pageNum });
-            }
-        }
-
-        // Visual feedback for keyboard navigation
-        function showKeyPressFeedback(key) {
-            // Remove any existing feedback
-            const existingFeedback = document.querySelector('.keyboard-feedback');
-            if (existingFeedback) {
-                existingFeedback.remove();
-            }
-            
-            const feedback = document.createElement('div');
-            feedback.className = 'keyboard-feedback';
-            const arrowType = key.toLowerCase().replace('arrow', '');
-            feedback.innerHTML = `<i class="fas fa-arrow-${arrowType}"></i>`;
-            feedback.style.cssText = `
-                position: fixed;
-                top: 50%;
-                ${key === 'ArrowLeft' ? 'left: 20px' : 'right: 20px'};
-                transform: translateY(-50%);
-                background: rgba(37, 99, 235, 0.9);
-                color: white;
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 24px;
-                z-index: 1000;
-                animation: pulse-fade 0.5s ease-out;
-            `;
-            
-            document.body.appendChild(feedback);
-            
-            setTimeout(() => {
-                if (feedback.parentNode) {
-                    feedback.parentNode.removeChild(feedback);
-                }
-            }, 500);
-        }
-
-        // Focus management for keyboard users
-        function setupFocusManagement() {
-            const focusableElements = document.querySelectorAll(
-                'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
-            );
-            
-            const firstFocusable = focusableElements[0];
-            const lastFocusable = focusableElements[focusableElements.length - 1];
-            
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Tab') {
-                    if (e.shiftKey) {
-                        // Shift + Tab
-                        if (document.activeElement === firstFocusable) {
-                            e.preventDefault();
-                            lastFocusable.focus();
-                        }
-                    } else {
-                        // Tab
-                        if (document.activeElement === lastFocusable) {
-                            e.preventDefault();
-                            firstFocusable.focus();
-                        }
-                    }
-                    showControlsTemporarily();
-                }
-            });
-        }
-
-        // Update button tooltips
-        function updateButtonTooltips() {
-            document.getElementById('prevPage').title = 'Previous Page (Left Arrow)';
-            document.getElementById('nextPage').title = 'Next Page (Right Arrow or Space)';
-            document.getElementById('zoomIn').title = 'Zoom In (Ctrl + +)';
-            document.getElementById('zoomOut').title = 'Zoom Out (Ctrl + -)';
-            document.getElementById('zoomReset').title = 'Reset Zoom (Ctrl + 0)';
-            document.getElementById('backButton').title = 'Go Back (Esc)';
-        }
-
-        // Mobile Security System
-        function initializeMobileSecurity() {
-            console.log('📱 Initializing mobile security...');
-
-            // Set mobile-optimized scale
-            currentScale = calculateMobileScale();
-
-            // Enhanced print protection
-            setupPrintProtection();
-
-            // Mobile-optimized security events
-            document.addEventListener('contextmenu', (e) => {
-                e.preventDefault();
-                showSecurityWarning('Right-click disabled');
-                logSecurityEvent('CONTEXT_MENU_BLOCKED');
-            });
-
-            document.addEventListener('selectstart', (e) => {
-                e.preventDefault();
-            });
-
-            // Prevent screenshot on some mobile devices
-            document.body.style.webkitUserSelect = 'none';
-            document.body.style.webkitTouchCallout = 'none';
-
-            // Handle mobile-specific security
-            document.addEventListener('touchmove', (e) => {
-                if (e.scale !== 1) {
-                    e.preventDefault();
-                }
-            }, { passive: false });
-
-            // Prevent drag and drop
-            document.addEventListener('dragstart', (e) => {
-                e.preventDefault();
-                return false;
-            });
-
-            console.log('✅ Mobile security initialized');
-        }
-
-        // Mobile-optimized security warning
-        function showSecurityWarning(message) {
-            const warning = document.getElementById('securityWarning');
-            warning.innerHTML = `<i class="fas fa-shield-alt"></i> ${message}`;
-            warning.style.display = 'block';
-            
-            setTimeout(() => {
+            if (warning) {
                 warning.style.display = 'none';
-            }, 2000);
-        }
-
-        // Mobile-optimized logging
-        function logSecurityEvent(eventType, details = {}) {
-            console.log(`📱 Security: ${eventType}`, details);
-            
-            fetch(MOBILE_CONFIG.logEndpoint, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    eventType,
-                    pdfId: MOBILE_CONFIG.pdfId,
-                    details: {
-                        ...details,
-                        userAgent: navigator.userAgent,
-                        isMobile: true,
-                        screenSize: `${window.innerWidth}x${window.innerHeight}`,
-                        timestamp: new Date().toISOString()
-                    }
-                })
-            }).catch(error => {
-                console.error('Mobile log failed:', error);
-            });
-        }
-
-        // HD-optimized PDF loading
-        async function loadPDF() {
-            try {
-                console.log('📥 Loading PDF in HD...');
-
-                const streamingUrl = '<%= basePath %>/api/stream-pdf?token=<%= sessionToken %>';
-                
-                const loadingTask = pdfjsLib.getDocument({
-                    url: streamingUrl,
-                    withCredentials: false,
-                    cMapUrl: 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/cmaps/',
-                    cMapPacked: true,
-                    enableXfa: true
-                });
-
-                pdfDoc = await loadingTask.promise;
-                totalPages = pdfDoc.numPages;
-                
-                console.log(`✅ PDF loaded: ${totalPages} pages`);
-
-                // Update mobile UI
-                document.getElementById('totalPages').textContent = totalPages;
-                document.getElementById('loadingState').style.display = 'none';
-                document.getElementById('pdfContainer').style.display = 'block';
-                
-                // Initialize auto-hide
-                setTimeout(() => {
-                    setupAutoHide();
-                    resetHideTimeout(); // Start auto-hide timer
-                }, 1000);
-                
-                // Render first page in HD
-                await renderPage(currentPage);
-                
-                logSecurityEvent('MOBILE_PDF_LOADED', {
-                    pageCount: totalPages,
-                    screenSize: `${window.innerWidth}x${window.innerHeight}`,
-                    hdEnabled: true,
-                    pixelRatio: HD_CONFIG.pixelRatio
-                });
-                
-            } catch (error) {
-                console.error('Mobile PDF error:', error);
-                showSecurityWarning('Load failed: ' + error.message);
-                
-                document.getElementById('loadingState').innerHTML = `
-                    <div style="text-align: center; color: #ef4444;">
-                        <i class="fas fa-exclamation-triangle" style="font-size: 2rem; margin-bottom: 1rem;"></i>
-                        <div>Failed to load</div>
-                        <div style="font-size: 0.7rem; margin-top: 0.5rem;">${error.message}</div>
-                        <button onclick="goBack()" class="nav-btn" style="margin-top: 1rem;">
-                            <i class="fas fa-arrow-left"></i>
-                            Go Back
-                        </button>
-                    </div>
-                `;
             }
         }
-
-        // HD-optimized page rendering
-        async function renderPage(pageNum) {
-            try {
-                const page = await pdfDoc.getPage(pageNum);
-                const container = document.getElementById('canvasContainer');
-                
-                // Clear container
-                container.innerHTML = '';
-                
-                // Create HD-optimized canvas
-                const canvas = document.createElement('canvas');
-                canvas.className = 'page-canvas';
-                canvas.id = `page-${pageNum}`;
-                
-                // Enhanced security attributes
-                canvas.setAttribute('draggable', 'false');
-                canvas.setAttribute('ondragstart', 'return false');
-                canvas.setAttribute('onselectstart', 'return false');
-                canvas.style.userSelect = 'none';
-                canvas.style.webkitUserSelect = 'none';
-                canvas.style.MozUserSelect = 'none';
-                canvas.style.msUserSelect = 'none';
-                
-                const ctx = canvas.getContext('2d', { 
-                    alpha: false,
-                    desynchronized: true // Better performance
-                });
-                
-                // HD-optimized viewport
-                const viewport = page.getViewport({ scale: currentScale });
-                
-                // HD quality settings based on device
-                const pixelRatio = HD_CONFIG.pixelRatio;
-                canvas.width = Math.floor(viewport.width * pixelRatio);
-                canvas.height = Math.floor(viewport.height * pixelRatio);
-                canvas.style.width = `${viewport.width}px`;
-                canvas.style.height = `${viewport.height}px`;
-                
-                // Scale context for HD rendering
-                ctx.scale(pixelRatio, pixelRatio);
-                ctx.imageSmoothingEnabled = HD_CONFIG.imageSmoothing;
-                ctx.imageSmoothingQuality = HD_CONFIG.renderQuality;
-                
-                // Add mobile touch events
-                setupMobileTouchEvents(canvas);
-                
-                // Add to container
-                container.appendChild(canvas);
-                
-                // HD Render with optimizations
-                const renderContext = {
-                    canvasContext: ctx,
-                    viewport: viewport,
-                    enableWebGL: true, // Use hardware acceleration
-                    transform: undefined,
-                    background: 'white'
-                };
-
-                await page.render(renderContext).promise;
-                
-                console.log(`✅ Page ${pageNum} rendered in HD (${canvas.width}x${canvas.height})`);
-
-            } catch (error) {
-                console.error(`❌ HD render error:`, error);
-            }
-        }
-
-        // Mobile touch event setup
-        function setupMobileTouchEvents(canvas) {
-            let lastTap = 0;
-            let tapCount = 0;
-            let tapTimeout;
-            
-            // Double tap to reset zoom
-            canvas.addEventListener('touchend', (e) => {
-                const currentTime = new Date().getTime();
-                const tapLength = currentTime - lastTap;
-                
-                if (tapCount === 0) {
-                    tapCount = 1;
-                    lastTap = currentTime;
-                    
-                    tapTimeout = setTimeout(() => {
-                        tapCount = 0;
-                    }, 300);
-                } else {
-                    clearTimeout(tapTimeout);
-                    tapCount = 0;
-                    
-                    if (tapLength < 300) {
-                        // Double tap detected
-                        showDoubleTapHint();
-                        zoomReset();
-                    }
-                }
-                
-                e.preventDefault();
-            });
-
-            // Pinch to zoom
-            canvas.addEventListener('touchstart', (e) => {
-                if (e.touches.length === 2) {
-                    isPinching = true;
-                    lastTouchDistance = getTouchDistance(e.touches);
-                }
-            });
-
-            canvas.addEventListener('touchmove', (e) => {
-                if (isPinching && e.touches.length === 2) {
-                    e.preventDefault();
-                    
-                    const currentDistance = getTouchDistance(e.touches);
-                    const scaleChange = currentDistance / lastTouchDistance;
-                    
-                    if (scaleChange > 1.1) {
-                        zoomIn();
-                        lastTouchDistance = currentDistance;
-                    } else if (scaleChange < 0.9) {
-                        zoomOut();
-                        lastTouchDistance = currentDistance;
-                    }
-                }
-            });
-
-            canvas.addEventListener('touchend', (e) => {
-                if (e.touches.length < 2) {
-                    isPinching = false;
-                }
-            });
-        }
-
-        // Helper function for touch distance
-        function getTouchDistance(touches) {
-            const dx = touches[0].clientX - touches[1].clientX;
-            const dy = touches[0].clientY - touches[1].clientY;
-            return Math.sqrt(dx * dx + dy * dy);
-        }
-
-        // HD-optimized zoom functions
-        async function zoomIn() {
-            if (currentScale < MOBILE_MAX_SCALE) {
-                currentScale = Math.min(currentScale + MOBILE_SCALE_FACTOR, MOBILE_MAX_SCALE);
-                await renderPage(currentPage);
-                updateZoomLevel();
-                showControlsTemporarily();
-                logSecurityEvent('MOBILE_ZOOM_IN', { 
-                    scale: currentScale,
-                    hd: true 
-                });
-            }
-        }
-
-        async function zoomOut() {
-            if (currentScale > MOBILE_MIN_SCALE) {
-                currentScale = Math.max(currentScale - MOBILE_SCALE_FACTOR, MOBILE_MIN_SCALE);
-                await renderPage(currentPage);
-                updateZoomLevel();
-                showControlsTemporarily();
-                logSecurityEvent('MOBILE_ZOOM_OUT', { 
-                    scale: currentScale,
-                    hd: true 
-                });
-            }
-        }
-
-        async function zoomReset() {
-            currentScale = calculateMobileScale();
-            await renderPage(currentPage);
-            updateZoomLevel();
-            showControlsTemporarily();
-            logSecurityEvent('MOBILE_ZOOM_RESET');
-        }
-
-        function updateZoomLevel() {
-            const zoomLevelElement = document.getElementById('zoomLevel');
-            if (zoomLevelElement) {
-                zoomLevelElement.textContent = `${Math.round(currentScale * 100)}%`;
-            }
-        }
-
-        // Mobile navigation
-        function updateNavigation() {
-            const prevBtn = document.getElementById('prevPage');
-            const nextBtn = document.getElementById('nextPage');
-            
-            prevBtn.disabled = currentPage <= 1;
-            nextBtn.disabled = currentPage >= totalPages;
-            
-            // Update page info styling based on state
-            const pageInfo = document.querySelector('.page-info');
-            if (pageInfo) {
-                if (currentPage === 1) {
-                    pageInfo.style.background = 'rgba(59, 130, 246, 0.2)';
-                } else if (currentPage === totalPages) {
-                    pageInfo.style.background = 'rgba(239, 68, 68, 0.2)';
-                } else {
-                    pageInfo.style.background = 'rgba(255, 255, 255, 0.1)';
-                }
-            }
-        }
-
-        async function goToPreviousPage() {
-            if (currentPage > 1) {
-                currentPage--;
-                await renderPage(currentPage);
-                document.getElementById('currentPage').textContent = currentPage;
-                updateNavigation();
-                showControlsTemporarily();
-                logSecurityEvent('MOBILE_PAGE_PREV');
-            }
-        }
-
-        async function goToNextPage() {
-            if (currentPage < totalPages) {
-                currentPage++;
-                await renderPage(currentPage);
-                document.getElementById('currentPage').textContent = currentPage;
-                updateNavigation();
-                showControlsTemporarily();
-                logSecurityEvent('MOBILE_PAGE_NEXT');
-            }
-        }
-
-        // Mobile UI helpers
-        function showGestureHint() {
-            const hint = document.getElementById('gestureHint');
-            hint.style.display = 'block';
-            
-            setTimeout(() => {
-                hint.style.display = 'none';
-            }, 3000);
-        }
-
-        function showDoubleTapHint() {
-            const hint = document.getElementById('doubleTapHint');
-            hint.style.display = 'block';
-            
-            setTimeout(() => {
-                hint.style.display = 'none';
-            }, 1000);
-        }
-
-        // Back button functionality
-        document.getElementById('backButton').addEventListener('click', function() {
-            console.log('Back button clicked');
-            window.location.href = '/ebook/';
-        });
-
-        // Touch events ke liye bhi
-        document.getElementById('backButton').addEventListener('touchend', function(e) {
-            e.preventDefault();
-            console.log('Back button touched');
-            window.location.href = '/ebook/';
-        });
-
-        // Mobile event listeners
-        document.getElementById('nextPage').addEventListener('click', goToNextPage);
-        document.getElementById('prevPage').addEventListener('click', goToPreviousPage);
-
-        document.getElementById('zoomIn').addEventListener('click', zoomIn);
-        document.getElementById('zoomOut').addEventListener('click', zoomOut);
-        document.getElementById('zoomReset').addEventListener('click', zoomReset);
-
-        // Mobile-optimized touch events for buttons
-        document.querySelectorAll('.nav-btn, .zoom-btn, .back-btn').forEach(btn => {
-            btn.addEventListener('touchstart', (e) => {
-                e.currentTarget.style.transform = 'scale(0.95)';
-            });
-            
-            btn.addEventListener('touchend', (e) => {
-                e.currentTarget.style.transform = 'scale(1)';
-            });
-        });
-
-        // Mobile initialization
-        document.addEventListener('DOMContentLoaded', async () => {
-            try {
-                console.log('📱 HD Mobile Reader Initializing...');
-                
-                initializeMobileSecurity();
-                setupKeyboardNavigation();
-                setupFocusManagement();
-                await loadPDF();
-                updateNavigation();
-                updateZoomLevel();
-                updateButtonTooltips();
-                
-                console.log('✅ HD Mobile Reader Ready!');
-                
-            } catch (error) {
-                console.error('❌ Mobile init error:', error);
-                showSecurityWarning('Failed to initialize');
-            }
-        });
-
-        // Mobile resize handling with HD optimization
-        let mobileResizeTimeout;
-        window.addEventListener('resize', () => {
-            clearTimeout(mobileResizeTimeout);
-            mobileResizeTimeout = setTimeout(() => {
-                if (pdfDoc) {
-                    currentScale = calculateMobileScale();
-                    renderPage(currentPage);
-                }
-            }, 250);
-        });
-
-        // Mobile cleanup
-        window.addEventListener('beforeunload', () => {
-            if (pdfDoc) {
-                pdfDoc.destroy().catch(() => {});
-            }
-            clearTimeout(hideControlsTimeout);
-            
-            // Log user exit
-            logSecurityEvent('USER_EXIT', {
-                lastPage: currentPage,
-                sessionDuration: Date.now() - lastActivityTime
-            });
-        });
-
-        // Offline detection
-        window.addEventListener('offline', () => {
-            showSecurityWarning('You are offline');
-        });
-
-        // Go back function for error handling
-        window.goBack = function() {
-            window.location.href = '/ebook/';
-        };
     </script>
 </body>
 </html>

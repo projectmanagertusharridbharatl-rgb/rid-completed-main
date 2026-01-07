@@ -2337,7 +2337,7 @@
   display: inline-flex;
   align-items: center;
   white-space: nowrap;
-  animation: marqueeScroll 18s linear infinite;
+  animation: marqueeScroll 30s linear infinite;
   padding-left: 100%;
   padding-right: 120px; /* 🔥 LIVE badge safe space */
 }
